@@ -202,6 +202,22 @@ V2_CODEBASE_TOOLS = {
     "knowledge_code_platform_ci_readiness_build",
     "knowledge_code_platform_ci_readiness_read",
     "knowledge_code_platform_ci_release_report",
+    "knowledge_code_agent_productization_mcp_build",
+    "knowledge_code_agent_productization_mcp_read",
+    "knowledge_code_agent_productization_profile_build",
+    "knowledge_code_agent_productization_profile_read",
+    "knowledge_code_agent_productization_portal_build",
+    "knowledge_code_agent_productization_portal_read",
+    "knowledge_code_agent_productization_task_navigation_build",
+    "knowledge_code_agent_productization_task_navigation_read",
+    "knowledge_code_agent_productization_governance_feedback",
+    "knowledge_code_agent_productization_governance_rules_build",
+    "knowledge_code_agent_productization_governance_rule_review",
+    "knowledge_code_agent_productization_governance_overlay",
+    "knowledge_code_agent_productization_playbook_build",
+    "knowledge_code_agent_productization_playbook_read",
+    "knowledge_code_agent_productization_closure_build",
+    "knowledge_code_agent_productization_closure_read",
 }
 V2_TARGET_ROUTE_ADDITIONS = {
     ("POST", "/api/ocr/provider/health"),
@@ -328,6 +344,23 @@ V2_TARGET_ROUTE_ADDITIONS = {
     ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/platform/ci/readiness/build"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/platform/ci/readiness"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/platform/ci/release-report"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/mcp/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/mcp"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/profile/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/profile"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/portal/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/portal"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/portal/view"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/tasks"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/tasks/{task_id}"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/governance/feedback"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/governance/rules/build"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/governance/rules/{rule_id}/review"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/governance/overlay"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/playbooks"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/playbooks/{role}"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/closure/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-productization/closure"),
     ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/build"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/report"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/context-pack"),
@@ -530,7 +563,7 @@ def test_v16a_knowledge_cli_parser_matches_v15_public_surface_baseline():
             expected_nested[command] = sorted(set(expected_nested[command]) | set(additions or []))
 
     assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code"}
-    expected_nested["code"] = ["architecture", "architecture-intent", "archive", "coding-agent", "context-pack", "describe", "devwiki", "graph", "import", "inventory", "list", "overview", "platform", "quality", "snapshot", "symbols", "trace"]
+    expected_nested["code"] = ["agent-productization", "architecture", "architecture-intent", "archive", "coding-agent", "context-pack", "describe", "devwiki", "graph", "import", "inventory", "list", "overview", "platform", "quality", "snapshot", "symbols", "trace"]
     assert current_inventory == expected_nested
 
 

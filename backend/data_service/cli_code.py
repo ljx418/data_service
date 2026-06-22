@@ -13,6 +13,7 @@ from .cli_code_architecture import add_architecture_parser, architecture_tool_pa
 from .cli_code_architecture_intent import add_architecture_intent_parser, architecture_intent_tool_payload
 from .cli_code_coding_agent import add_coding_agent_parser, coding_agent_tool_payload
 from .cli_code_platform import add_platform_parser, platform_tool_payload
+from .cli_code_agent_productization import add_agent_productization_parser, agent_productization_tool_payload
 from .mcp_code_tools import handle_code_tool
 from .mcp_common import blocked, envelope
 from .mcp_workspace_runtime import WorkspaceRuntime
@@ -97,6 +98,7 @@ def add_code_parser(subparsers: argparse._SubParsersAction) -> None:
     add_architecture_intent_parser(code_subparsers)
     add_coding_agent_parser(code_subparsers)
     add_platform_parser(code_subparsers)
+    add_agent_productization_parser(code_subparsers)
 
     code_describe = code_subparsers.add_parser("describe", help="Describe one codebase asset")
     code_describe.add_argument("--workspace-root", help="Managed workspace root; overrides DATA_SERVICE_WORKSPACE_ROOT for this command")
@@ -111,7 +113,7 @@ def add_code_parser(subparsers: argparse._SubParsersAction) -> None:
 
 
 def run_code_command(args: argparse.Namespace) -> int:
-    if args.code_command not in {"import", "list", "snapshot", "inventory", "symbols", "trace", "overview", "context-pack", "devwiki", "graph", "quality", "architecture", "architecture-intent", "coding-agent", "platform", "describe", "archive"}:
+    if args.code_command not in {"import", "list", "snapshot", "inventory", "symbols", "trace", "overview", "context-pack", "devwiki", "graph", "quality", "architecture", "architecture-intent", "coding-agent", "platform", "agent-productization", "describe", "archive"}:
         raise ValueError(f"Unknown code command: {args.code_command}")
 
     root = Path(args.workspace_root).expanduser() if getattr(args, "workspace_root", None) else None
@@ -228,6 +230,8 @@ def run_code_command(args: argparse.Namespace) -> int:
         tool_name, payload_args = coding_agent_tool_payload(args)
     elif args.code_command == "platform":
         tool_name, payload_args = platform_tool_payload(args)
+    elif args.code_command == "agent-productization":
+        tool_name, payload_args = agent_productization_tool_payload(args)
     elif args.code_command == "describe":
         tool_name = "knowledge_codebase_describe"
         payload_args = {

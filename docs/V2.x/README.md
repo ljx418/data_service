@@ -268,6 +268,54 @@ V2.39-V2.45 remains evidence-first. It does not claim complete recovery of human
 - `V2_45_PHASE_122_PROFILE_TAXONOMY_REGRESSION_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
 - `V2_45_PHASE_122_PROFILE_TAXONOMY_REGRESSION_ACCEPTANCE_AUDIT_REPORT.md`
 
+## Primary V2.46-V2.52 Documents
+
+V2.46-V2.52 is the Agent productization and architecture reading portal roadmap. It turns the accepted V2.39-V2.45 evidence-first artifacts into a human-readable project portal, Codex/Copilot-oriented MCP usage flow, project profile onboarding workflow, task navigation/impact workflow, doc-code governance workflow, Agent playbooks, and multi-project continuous acceptance.
+
+This line remains evidence-first. It does not claim full call graph, data flow, control flow, production runtime topology, type inference, or complete recovery of human design intent.
+
+Current implementation status:
+
+- V2.46 Phase 123 MCP Productization is accepted for the implemented current-worktree scope. It generates registry-backed MCP usage guide, readable tool catalog, Agent workflows, Codex CLI guide, and service / HTTP / MCP / CLI readback.
+- V2.47 Phase 124 Project Profile Onboarding is accepted for the current-worktree scope. It generates draft profile, taxonomy, authority, path-pattern, and no-hardcode artifacts for data_service, HarnessOS, Navia, and codexPat.
+- V2.48 Phase 125 Human Architecture Portal is accepted for the current-worktree scope. It generates persisted portal model, inline SVG chart, and HTML report for data_service, HarnessOS, Navia, and codexPat.
+- V2.49 Phase 126 Task Navigation and Impact v2 is accepted for the current-worktree scope. It generates task-scoped reading order, impact candidates, and suggested tests for data_service, HarnessOS, Navia, and codexPat without claiming runtime call graph.
+- V2.50 Phase 127 Doc-Code Governance Workflow is accepted for the current-worktree scope. It records feedback, builds rules, supports approve/revoke, and applies read-time overlay without mutating Phase 123-126 artifacts.
+- V2.46-V2.52 Agent Productization is accepted for the current worktree. Phase 123-129 passed staged development, focused tests, real repo E2E, public surface guard, redaction checks, and closure audit.
+
+- `V2_46_52_AGENT_PRODUCTIZATION_PRD.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_TARGET_ARCHITECTURE.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_ARTIFACT_SCHEMA_AND_PUBLIC_CONTRACT.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_REAL_REPO_E2E_ACCEPTANCE_MATRIX.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_MILESTONES_AND_EXIT_GATES.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_GAP_ANALYSIS.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_PHASE_123_129_DETAILED_IMPLEMENTATION_PACKAGE.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_FULL_COVERAGE_MATRIX.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_USER_EXPERIENCE_ACCEPTANCE.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_DOCUMENT_AUDIT_REPORT.md`
+- `V2_46_52_AGENT_PRODUCTIZATION_TARGET_STATE.drawio`
+- `V2_46_PHASE_123_MCP_PRODUCTIZATION_DEVELOPMENT_PLAN.md`
+- `V2_46_PHASE_123_MCP_PRODUCTIZATION_ACCEPTANCE_PLAN.md`
+- `V2_46_PHASE_123_MCP_PRODUCTIZATION_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
+- `V2_46_PHASE_123_MCP_PRODUCTIZATION_ACCEPTANCE_AUDIT_REPORT.md`
+- `V2_47_PHASE_124_PROFILE_ONBOARDING_DEVELOPMENT_PLAN.md`
+- `V2_47_PHASE_124_PROFILE_ONBOARDING_ACCEPTANCE_PLAN.md`
+- `V2_47_PHASE_124_PROFILE_ONBOARDING_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
+- `V2_47_PHASE_124_PROFILE_ONBOARDING_ACCEPTANCE_AUDIT_REPORT.md`
+- `V2_48_PHASE_125_HUMAN_PORTAL_DEVELOPMENT_PLAN.md`
+- `V2_48_PHASE_125_HUMAN_PORTAL_ACCEPTANCE_PLAN.md`
+- `V2_48_PHASE_125_HUMAN_PORTAL_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
+- `V2_48_PHASE_125_HUMAN_PORTAL_ACCEPTANCE_AUDIT_REPORT.md`
+- `V2_49_PHASE_126_TASK_NAVIGATION_DEVELOPMENT_PLAN.md`
+- `V2_49_PHASE_126_TASK_NAVIGATION_ACCEPTANCE_PLAN.md`
+- `V2_49_PHASE_126_TASK_NAVIGATION_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
+- `V2_49_PHASE_126_TASK_NAVIGATION_ACCEPTANCE_AUDIT_REPORT.md`
+- `V2_50_PHASE_127_GOVERNANCE_WORKFLOW_DEVELOPMENT_PLAN.md`
+- `V2_50_PHASE_127_GOVERNANCE_WORKFLOW_ACCEPTANCE_PLAN.md`
+- `V2_50_PHASE_127_GOVERNANCE_WORKFLOW_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
+- `V2_50_PHASE_127_GOVERNANCE_WORKFLOW_ACCEPTANCE_AUDIT_REPORT.md`
+
 ## Primary V2.11-V2.15 Roadmap Documents
 
 V2.11-V2.15 is the Coding Agent Actionability roadmap. It extends the accepted project understanding and architecture evidence baseline into actionability, patch planning, runtime evidence, incremental intelligence, and an interactive review workbench.

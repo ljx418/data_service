@@ -1,0 +1,945 @@
+[
+  {
+    "project": "data_service",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/data_service",
+    "file_sample_count": 1227,
+    "top_suffixes": {
+      ".md": 705,
+      ".py": 407,
+      ".json": 44,
+      ".drawio": 24,
+      ".png": 15,
+      ".html": 10,
+      "<none>": 7,
+      ".ts": 4
+    },
+    "manifests": [],
+    "entry_candidates": [],
+    "readme_excerpt": "# Local Knowledge Governance Service\n\nAn independent MCP-first local knowledge governance service. It turns text, document blocks, meeting transcripts, code analysis artifacts, and local files into traceable knowledge units, entity-relation graphs, readable Wiki artifacts, quality rules, and retrievable context.\n\n## What This Is\n\nThis repository is the minimum separable service unit for local knowledge governance. Meeting apps, learning apps, interview tools, code assistants, and agents should call this service through MCP, CLI, or HTTP. They must not read or write the internal workspace layout directly.\n\nCurrent implementation components:\n\n- `backend/data_service`: current implementation carrier for orchestration, workspace lifecycle, distill, query, quality, CLI, and MCP.\n- `backend/app/llmwiki`: readable Wiki solidification engine.\n- `backend/app/graphrag`: built-in GraphRAG execution and graph query service.\n- `backend/app/api/v1/data_service.py`: HTTP boundary for service calls.\n- `frontend`: Knowledge Service Console, built as static assets and served by FastAPI at `/knowledge`.\n\n## Boundaries\n\nIncluded:\n\n- workspace / tenant management\n- source registry and recursive local f",
+    "docs": [
+      {
+        "path": "docs/V1.7/research-notebook-source-preview-contract.md",
+        "headings": [
+          "V1.7 ResearchNotebook Source Preview Contract",
+          "1. Scope",
+          "2. Capability Manifest",
+          "3. Source Preview",
+          "4. Error Semantics"
+        ]
+      },
+      {
+        "path": "docs/V1.7/README.md",
+        "headings": [
+          "data_service V1.7"
+        ]
+      },
+      {
+        "path": "docs/V1.6/PHASE-V1.6-C3-GRAPH-QUERY-REPORT-2026-05-14.md",
+        "headings": [
+          "Phase V1.6-C3 Graph Query Report",
+          "1. Scope",
+          "2. Baseline",
+          "3. Phase Overlay",
+          "4. Implemented Route And Command",
+          "5. Contract Summary"
+        ]
+      },
+      {
+        "path": "docs/V1.6/target-http-routes-plan.md",
+        "headings": [
+          "V1.6 Target HTTP Routes Plan",
+          "Baseline"
+        ]
+      },
+      {
+        "path": "docs/V1.6/PHASE-V1.6-F2-CONSOLE-GOVERNANCE-POLISH-REPORT-2026-05-16.md",
+        "headings": [
+          "Phase V1.6-F2 Console Governance Polish Report",
+          "1. Scope",
+          "2. Baseline",
+          "3. Implemented Console Evidence",
+          "4. Public Surface Scan",
+          "5. Frontend Build Result"
+        ]
+      },
+      {
+        "path": "docs/V1.6/session-ingest-query-build-contract-plan.md",
+        "headings": [
+          "V1.6-D3 Session Ingest / Query / Build Contract Plan",
+          "1. Scope",
+          "2. Current Boundary",
+          "3. Contract Matrix"
+        ]
+      },
+      {
+        "path": "docs/V1.6/PHASE-V1.6-D5-SESSION-QUERY-TARGET-HTTP-REPORT-2026-05-14.md",
+        "headings": [
+          "V1.6-D5 Session Query Target HTTP Report",
+          "1. Scope",
+          "2. Baseline",
+          "3. Phase Overlay",
+          "4. Implemented Route",
+          "5. Contract Summary"
+        ]
+      },
+      {
+        "path": "docs/V1.6/PHASE-V1.6-E2-QUALITY-CORRECTION-RULES-TARGET-HTTP-REPORT-2026-05-15.md",
+        "headings": [
+          "V1.6-E2 Quality Correction Rules Target HTTP Report",
+          "1. Scope",
+          "2. Baseline",
+          "3. Phase Overlay",
+          "4. Implemented Routes",
+          "5. Contract Summary"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "harnessOS",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/harnessOS",
+    "file_sample_count": 5001,
+    "top_suffixes": {
+      ".json": 1961,
+      ".lock": 1379,
+      ".jsonl": 1378,
+      ".py": 252,
+      ".md": 13,
+      "<none>": 7,
+      ".local": 2,
+      ".log": 2
+    },
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "entry_candidates": [
+      "main.py",
+      "pyproject.toml"
+    ],
+    "readme_excerpt": "# harnessOS\n\nMulti-functional AI framework based on Deep Agents/LangGraph.\n\n## Features\n\n- **Meeting Assistant**: Voice meeting transcription and analysis\n- **Interview Coach**: Interview preparation and coaching\n- **Knowledge Base**: Graph-based knowledge management with GraphRAG\n- **Video Production**: Media orchestration and rendering\n\n## Architecture\n\nBuilt on Deep Agents/LangGraph with a modular agent system:\n\n```\n┌─────────────────────────────────────────────────────┐\n│                    API Gateway                       │\n│              (FastAPI - apps/api/)                   │\n├─────────────────────────────────────────────────────┤\n│              Orchestration Layer                     │\n│    (Intent Router, Workflow Dispatcher)              │\n├─────────────────────────────────────────────────────┤\n│               Agent Kernel (Deep Agents)             │\n│   Lead Orchestrator │ Meeting Analyst │ Interview   │\n│   KB Curator │ Media Orchestrator                    │\n├─────────────────────────────────────────────────────┤\n│                 Core Services                        │\n│   (Memory, Tools, Execution, Workspace)              │\n└────────────────────────────────────────",
+    "docs": [
+      {
+        "path": "docs/design/V4.5/v4_5_long_running_engineering_workflow_plan.md",
+        "headings": [
+          "V4.5 Long-Running Engineering Workflow MVP Plan"
+        ]
+      },
+      {
+        "path": "docs/design/V4.5/v4_5_long_running_engineering_workflow_completion_note.md",
+        "headings": [
+          "V4.5 Long-Running Engineering Workflow MVP Completion Note",
+          "Allowed Claim",
+          "Forbidden Claims",
+          "Implementation Evidence",
+          "Verified Behavior",
+          "Validation Commands"
+        ]
+      },
+      {
+        "path": "docs/design/V4.5/v4_5_long_running_engineering_workflow_audit.md",
+        "headings": [
+          "V4.5 Long-Running Engineering Workflow MVP Audit",
+          "PRD Alignment",
+          "Spec Drift Evaluation",
+          "False Green Evaluation",
+          "Audit Opinion"
+        ]
+      },
+      {
+        "path": "docs/design/V4.5/v4_5_long_running_engineering_workflow_preimplementation_audit.md",
+        "headings": [
+          "V4.5 Long-Running Engineering Workflow MVP Preimplementation Audit"
+        ]
+      },
+      {
+        "path": "docs/design/V4.5/v4_5_long_running_engineering_workflow_acceptance.md",
+        "headings": [
+          "V4.5 Long-Running Engineering Workflow MVP Acceptance"
+        ]
+      },
+      {
+        "path": "docs/design/V4.5/evidence/engineering-workflow/result-summary.md",
+        "headings": [
+          "V4.5 Engineering Workflow Evidence Summary"
+        ]
+      },
+      {
+        "path": "docs/design/V4.2/v4_2_b_controlled_runtime_design_gate_completion_note.md",
+        "headings": [
+          "V4.2-B Controlled Runtime Design Gate Completion Note",
+          "1. Allowed Claim",
+          "2. Forbidden Claims",
+          "3. Implementation Evidence",
+          "4. Verified Behavior",
+          "5. Validation Commands"
+        ]
+      },
+      {
+        "path": "docs/design/V4.2/v4_2_headless_interaction_pivot_completion_note.md",
+        "headings": [
+          "V4.2-A Headless Interaction Pivot Completion Note",
+          "1. Allowed Claim",
+          "2. Forbidden Claims",
+          "3. Implementation Evidence",
+          "4. Verified Behavior"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "navia",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/navia",
+    "file_sample_count": 1813,
+    "top_suffixes": {
+      ".json": 926,
+      ".md": 278,
+      ".png": 204,
+      ".html": 152,
+      ".py": 84,
+      ".js": 81,
+      ".ts": 37,
+      ".mjs": 10
+    },
+    "manifests": [],
+    "entry_candidates": [],
+    "readme_excerpt": "# Navia / 伴航\n\nNavia is a Chrome companion-reading MVP with a local headless runtime. V1 frontend interaction follows `docs/active/project/interaction-prd/窗口交互_PRD.md`: an in-page floating ball opens an embedded dual-track AI panel that can read the current page, summarize it, answer page-grounded questions, and generate Mermaid mindmaps with traceable runtime events.\n\nV1.0 focuses on the functional loop and PRD-aligned in-page interaction skeleton. V1.1 is the frontend fidelity stage: it aligns the injected panel with the Figma Make prototype shape and visual-regression acceptance. V1.2 is currently a documentation-first architecture stage: it freezes the AI reading A/B/C/D module split, service/app workspace boundaries, and lightweight Adapter contracts before any parallel Codex implementation starts.\n\n## External Agent Quick Start\n\nIf you are an external coding agent or a developer joining one module, start with:\n\n```text\nAGENTS.md\ndocs/active/project/AGENT_ONBOARDING.md\ndocs/active/project/V1_2_AGENT_WORKPACKS.md\ndocs/active/README.md\n```\n\nThese documents define the V1.2 module workpacks, allowed edit directories, required contracts, evidence expectations, and Integration handof",
+    "docs": [
+      {
+        "path": "docs/history/README.md",
+        "headings": [
+          "Navia Documentation History",
+          "归档分类",
+          "使用规则",
+          "当前激活阶段"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_12_16_REAL_REPO_E2E_ACCEPTANCE_MATRIX.md",
+        "headings": [
+          "V1.12-V1.16 Real Repo E2E Acceptance Matrix",
+          "1. Repository Classes",
+          "2. Stage Matrix",
+          "3. V1.16 External Repo Matrix",
+          "4. Structured Blocker Standard"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_16_CONTRACT_FREEZE_SPEC.md",
+        "headings": [
+          "V1.16 Contract Freeze Spec",
+          "1. Scope",
+          "2. Public Artifact Schema Contract",
+          "3. MCP Tool Contract",
+          "4. Parity Contract"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_13_CONTROLLED_RUNTIME_EVIDENCE_TARGET_ARCHITECTURE.md",
+        "headings": [
+          "V1.13 Controlled Runtime Evidence Target Architecture",
+          "1. Flow",
+          "2. Components",
+          "3. Safety Rules"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_12_16_CODING_AGENT_ROADMAP_PRD.md",
+        "headings": [
+          "V1.12-V1.16 Coding Agent Roadmap PRD",
+          "1. Product Goal",
+          "2. User Experience Outcome",
+          "3. Scope",
+          "4. Stage Requirements",
+          "5. Acceptance Principles"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_16_DOCUMENT_AUDIT_REPORT.md",
+        "headings": [
+          "V1.16 Document Audit Report",
+          "1. Verdict",
+          "2. Audit Paths",
+          "3. Closed Planning Gaps",
+          "4. No-Go Conditions"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_13_15_DOCUMENT_AUDIT_REPORT.md",
+        "headings": [
+          "V1.13-V1.15 Document Audit Report",
+          "1. Verdict",
+          "2. Closed Gaps",
+          "3. Remaining Development Plan",
+          "4. Audit Paths",
+          "5. No-Go Conditions"
+        ]
+      },
+      {
+        "path": "docs/history/V1.13-V1.16/V1_12_ACCEPTANCE_AUDIT_REPORT.md",
+        "headings": [
+          "V1.12 Baseline Acceptance Audit Report",
+          "1. Purpose",
+          "2. Carry-Forward Rules",
+          "3. Open Carry-Forward Risk"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "codexPat",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/codexPat",
+    "file_sample_count": 5001,
+    "top_suffixes": {
+      "<none>": 1228,
+      ".md": 949,
+      ".png": 743,
+      ".json": 681,
+      ".timestamp": 576,
+      ".d": 165,
+      ".rmeta": 147,
+      ".mjs": 145
+    },
+    "manifests": [
+      "package.json",
+      "pnpm-workspace.yaml"
+    ],
+    "entry_candidates": [
+      "package.json"
+    ],
+    "readme_excerpt": "# agent-desktop-pet\n\n`agent-desktop-pet` 是一只可常驻桌面的开发者工作猫，用来把 Codex 和本地 AI Agent 的后台状态转译为低打扰、可感知的桌面反馈。\n\n它不是通用桌面宠物，不是通知中心，也不是聊天机器人。\n\n## Current Status\n\n当前 active 阶段：\n\n- V10.11 product experience rebaseline：在 V10.1-V10.10 已验收的动画工作猫基线上，把当前能力整理成外部用户能理解、能在三分钟内试用、并且有真实截图证据的产品体验。\n\n当前已具备的核心能力：\n\n- `macOS-first MVP ready: local desktop agent status pet with HTTP + petctl integration and safe sound feedback.`\n- `V3.1 ready: multi-instance Codex pet workflow stabilized with user onboarding, manager polish, repeatable runtime smoke, and migration guidance.`\n- `V3.7 Codex exec JSONL monitor state mapping passed for tested local wrapper-launched codex exec --json scenarios.`\n- `V10 product-grade animated 2D work-cat experience passed for tested local bundled work-cat-v1 scenarios.`\n\n当前推荐使用方式：\n\n- 普通本地桌宠：启动 Tauri app 后用托盘菜单打开设置页。\n- Codex 工作猫：使用 wrapper-launched `codex exec --json` JSONL monitor。\n- 手动集成：使用 local HTTP Event Bridge 或 `petctl notify`。\n\n当前不能声明：\n\n- `Claude Code integration verified`\n- `Third-party agent integration verified`\n- `unqualified multi-instance Codex verified beyond tested local scenarios`\n- `all Codex workflows verified`\n- `V3.6 selected Codex workflow hook coverage smoke passe",
+    "docs": [
+      {
+        "path": "docs/README.md",
+        "headings": [
+          "Documentation Map",
+          "目录分层",
+          "推荐阅读路径",
+          "active"
+        ]
+      },
+      {
+        "path": "docs/V7.15/v7_15-plan-audit.md",
+        "headings": [
+          "V7.15 Plan Audit",
+          "Audit Opinion",
+          "High-Risk False-Green Patterns",
+          "Required Mitigation",
+          "Audit Result"
+        ]
+      },
+      {
+        "path": "docs/V7.15/v7_15-acceptance-plan.md",
+        "headings": [
+          "V7.15 Acceptance Plan",
+          "Required Gates",
+          "Final Claim Selection",
+          "Required Regression",
+          "Blocking Rule",
+          "Go / No-Go"
+        ]
+      },
+      {
+        "path": "docs/V7.15/v7_15-final-acceptance-report.md",
+        "headings": [
+          "V7.15 Final Acceptance Report",
+          "Scope",
+          "Required Results",
+          "Evidence",
+          "Claim Basis Table",
+          "Final Decision"
+        ]
+      },
+      {
+        "path": "docs/V7.15/v7_15-claim-matrix.md",
+        "headings": [
+          "V7.15 Claim Matrix",
+          "Allowed Claims By Evidence",
+          "Forbidden Ready Claims"
+        ]
+      },
+      {
+        "path": "docs/V7.15/evidence/v7_15-advanced-productization-gate-smoke-2026-06-01.md",
+        "headings": [
+          "V7.15 Advanced Productization Gate Smoke",
+          "Scope",
+          "Claim Basis Table",
+          "Case Results",
+          "Final Decision"
+        ]
+      },
+      {
+        "path": "docs/V7.12/v7_12-acceptance-plan.md",
+        "headings": [
+          "V7.12 Acceptance Plan",
+          "Required Checks",
+          "Blocking Rule"
+        ]
+      },
+      {
+        "path": "docs/V7.12/v7_12-plan-audit.md",
+        "headings": [
+          "V7.12 Plan Audit",
+          "Audit Opinion",
+          "Risks",
+          "Required Mitigation",
+          "Current Decision"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "research-notebook",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/research-notebook",
+    "file_sample_count": 1027,
+    "top_suffixes": {
+      ".json": 400,
+      ".md": 328,
+      ".png": 174,
+      ".mjs": 51,
+      ".tsx": 22,
+      ".ts": 16,
+      ".html": 10,
+      ".drawio": 10
+    },
+    "manifests": [
+      "package.json"
+    ],
+    "entry_candidates": [
+      "package.json"
+    ],
+    "readme_excerpt": "# ResearchNotebook\n\nResearchNotebook is the independent frontend application layer for a source-grounded personal knowledge workspace. It integrates with the local `data_service` backend through `/api/workspaces/...` target routes only.\n\n## Current Status\n\nV1.0 is a source-grounded personal knowledge MVP release candidate.\n\nCurrent declaration:\n\n- V1.0 M0-M4 is integration-smoke-ready.\n- Source-level evidence metadata is supported.\n- Trace-unavailable fallback is supported.\n- Read-only graph context and lightweight feedback are supported.\n\nAccepted degraded / not ready:\n\n- source trace integration is not ready; RC6 confirmed registry `source_id` trace still returns 404;\n- source preview is not ready;\n- precise citation backjump is not ready;\n- multi-format ingestion is not ready;\n- assessment is not ready;\n- quality governance console is not ready;\n- graph editing/governance is not ready;\n- cloud sync/collaboration is not ready.\n\n## Local Setup\n\n```bash\nnpm install\nnpm run dev\n```\n\nThe app can run as a frontend shell without a backend, but integration smoke expects local `data_service`.\n\nDefault local backend:\n\n```text\nhttp://127.0.0.1:8003\n```\n\nOverride the backend URL with:\n\n```b",
+    "docs": [
+      {
+        "path": "docs/design/V2.7/v2_7_document_comparison_plan_audit.md",
+        "headings": [
+          "V2.7 Document Comparison Plan Audit",
+          "审计结论",
+          "审计检查表",
+          "规格漂移风险评估",
+          "虚假验收风险评估",
+          "实现风险评估"
+        ]
+      },
+      {
+        "path": "docs/design/V2.7/v2_7_document_comparison_report.md",
+        "headings": [
+          "V2.7 Document Comparison Report",
+          "最终结论",
+          "Comparison Generator 能力确认",
+          "出门声明",
+          "V2.7 子阶段状态",
+          "下一步"
+        ]
+      },
+      {
+        "path": "docs/design/V2.7/v2_7_document_comparison_plan.md",
+        "headings": [
+          "V2.7 Document Comparison",
+          "阶段目标",
+          "阶段 Entry Gate",
+          "子阶段",
+          "V2.7-A Compare Contract",
+          "V2.7-B Pairwise Comparison"
+        ]
+      },
+      {
+        "path": "docs/design/V2.6/v2_6_mindmap_report.md",
+        "headings": [
+          "V2.6 Mindmap Generation Report",
+          "最终结论",
+          "Mindmap Generator 能力确认",
+          "出门声明",
+          "V2.6 子阶段状态",
+          "下一步"
+        ]
+      },
+      {
+        "path": "docs/design/V2.6/v2_6_mindmap_plan_audit.md",
+        "headings": [
+          "V2.6 Mindmap Plan Audit",
+          "审计结论",
+          "审计检查表",
+          "规格漂移风险评估",
+          "虚假验收风险评估",
+          "实现风险评估"
+        ]
+      },
+      {
+        "path": "docs/design/V2.6/v2_6_mindmap_plan.md",
+        "headings": [
+          "V2.6 Mindmap Generation",
+          "阶段目标",
+          "阶段 Entry Gate",
+          "子阶段",
+          "V2.6-A Mindmap Schema",
+          "V2.6-B Mindmap Generator"
+        ]
+      },
+      {
+        "path": "docs/design/V2.1/v2_1_prd_mvp_gap_closure_report.md",
+        "headings": [
+          "V2.1 PRD MVP Gap Closure Report",
+          "当前结论",
+          "阶段完成状态",
+          "前置确认（已闭环）",
+          "验收结果",
+          "自动化 smoke"
+        ]
+      },
+      {
+        "path": "docs/design/V2.1/00_README.md",
+        "headings": [
+          "ResearchNotebook V2.1 PRD MVP Gap Closure",
+          "阶段目标",
+          "开发内容",
+          "验收标准",
+          "出门状态",
+          "文档索引"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "voice_service",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/voice_service",
+    "file_sample_count": 165,
+    "top_suffixes": {
+      ".whl": 81,
+      "<none>": 16,
+      ".py": 15,
+      ".md": 9,
+      ".gz": 8,
+      ".json": 6,
+      ".png": 6,
+      ".wav": 6
+    },
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "entry_candidates": [
+      "pyproject.toml"
+    ],
+    "readme_excerpt": "# Voice Service\n\nStandalone FunASR service extracted from `meeting-voice-assistant`.\n\n## Team Baseline\n\nThe target team baseline is the local `Python 3.12` virtual environment at `.venv`.\n\nCurrent policy:\n\n- Primary baseline: `.venv`\n- Bootstrap command: `./scripts/bootstrap_env.sh`\n- Distribution artifacts: `env-dist/`\n- Offline models: `models/`\n\nThe fallback interpreter is only for temporary local recovery. Team members should\nrestore the packaged `.venv` baseline once it is finalized.\n\nWhen `env-dist/wheels/` is present, `./scripts/bootstrap_env.sh` prefers those\nlocal artifacts instead of downloading packages again.\n\n## Entrypoints\n\n```bash\n./scripts/bootstrap_env.sh\nPYTHONPATH=. .venv/bin/python -m funasr_service.cli serve-http --host 0.0.0.0 --port 8001\nPYTHONPATH=. .venv/bin/python -m funasr_service.cli health\nPYTHONPATH=. .venv/bin/python -m funasr_service.cli recognize /path/to/audio.wav --json\nPYTHONPATH=. .venv/bin/python -m funasr_service.cli serve-mcp\n```\n\n## Recovery\n\nRestore Python dependencies from `env-dist/` and FunASR model weights from\n`models/`. Both directories are tracked by Git LFS.\n\nCurrent packaged artifacts:\n\n- `env-dist/requirements-lock.txt`\n- `env-dis",
+    "docs": []
+  },
+  {
+    "project": "interview_service",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/interview_service",
+    "file_sample_count": 1097,
+    "top_suffixes": {
+      ".ts": 660,
+      ".md": 181,
+      ".py": 52,
+      ".json": 35,
+      ".docx": 34,
+      ".png": 32,
+      "<none>": 25,
+      ".mjs": 15
+    },
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "docker-compose.yml"
+    ],
+    "entry_candidates": [
+      "package.json",
+      "pyproject.toml"
+    ],
+    "readme_excerpt": "# JobPilot AI\n\nJobPilot AI 是一个面向转行程序员的本地优先、免费开源 AI 求职 Agent 服务。默认入口是极简 Chatbox，但真正的核心是后端 Agent Tool Service：同一套能力后续可以被 Chatbox、HTTP API、CLI、MCP Client 或外部 Agent 调用。\n\n## 当前 MVP / P4 UX 基线\n\n当前骨架已经具备：\n\n- 本地 workspace 初始化；\n- 覆盖 PRD 主要实体的 SQLite schema；\n- chat session、artifact 和 tool invocation 持久化；\n- P0 输出 schema、source refs 和待确认分级；\n- 从本地文件或上传文件导入简历/项目资料；\n- CareerFact 与 SkillEvidence 抽取；\n- TechProject 项目卡生成；\n- JD 解析和岗位匹配报告；\n- Markdown-first 申请包导出和下载 API；\n- 面试准备、故事卡和模拟面试反馈；\n- 文本模式实时问题识别和 formal_assist 安全结构提示；\n- 面试复盘和训练任务；\n- 极简 React Chatbox 产物卡、确认按钮、Markdown 导出入口和最新本地会话恢复；\n- 后端 ChatCore 接入层，支持默认 `KeywordChatCore` 和 PiAgent adapter；\n- Pi Agent Core 可接管基础业务编排，Python Domain Tools 继续执行真实业务写入。\n\nP0 已冻结。P1 已完成本地可验收实现：OpenAI-compatible provider opt-in 基础、核心工具 provider-backed contract 路径、artifact 编辑/版本/regenerate、DOCX 正式导出和 Chatbox P1 UX。P2 已完成 examples-guided Chatbox 端到端体验、HTML 验收报告和 MiniMax opt-in provider 受控验收。\n\nP3 已完成本地自动化验收：Chatbox 已从“可演示的一键体验”推进到“真实用户可理解、可对话、可管理产物、可在窄屏使用”的求职工作台。默认验收仍使用 mock provider 和 examples 真实感数据；真实个人资料、真实外部调用和最终主观体验审查仍需人工确认。\n\n人工审查已认可 P3 验收报告的大部分内容，但对当前用户体验不完全认同。当前 P4 阶段优先做 UX 体验强化，包括信息架构、任务入口、产物卡可读性、状态反馈、响应式细节、Gemini 前端审查包和人工体验审查包。\n\n## 当前阶段设计文档\n\n当前阶段的执行依据在 `docs/active",
+    "docs": [
+      {
+        "path": "docs/archive/stage-reviews/M7_P0_MAINTENANCE_BUGFIX_UX_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M7 P0 Maintenance Bugfix 与小步 UX 计划",
+          "关联规格",
+          "开发计划",
+          "验收标准",
+          "审计意见",
+          "当前结论"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/M4_RELEASE_ACCEPTANCE_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M4 Eval Gates 与开源发布计划与审计",
+          "关联规格",
+          "开发计划",
+          "验收标准",
+          "审计意见",
+          "当前结论"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/M9_PIAGENT_CHAT_CORE_INTEGRATION_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M9 PiAgent Chat Core 接入计划与审计",
+          "关联规格",
+          "当前审计结论",
+          "开发计划",
+          "验收标准",
+          "审计意见"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/M2_ARTIFACT_CONFIRMATION_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M2 用户确认与产物闭环计划与审计",
+          "关联规格",
+          "开发计划",
+          "验收标准",
+          "审计意见",
+          "当前结论"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/M3_INTERVIEW_REALTIME_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M3 面试与实时提示安全计划与审计",
+          "关联规格",
+          "开发计划",
+          "验收标准",
+          "审计意见",
+          "当前结论"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/M5_P0_MAINTENANCE_HARDENING_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M5 P0 维护加固计划与审计",
+          "关联规格",
+          "开发计划",
+          "验收标准",
+          "审计意见",
+          "当前结论"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/M1_STRUCTURED_TOOL_OUTPUT_PLAN_AND_AUDIT.md",
+        "headings": [
+          "M1 结构化 Agent Tool 输出计划与审计",
+          "关联规格",
+          "开发计划",
+          "验收标准",
+          "审计意见",
+          "当前结论"
+        ]
+      },
+      {
+        "path": "docs/archive/stage-reviews/p1/P1_M4_WP5_EXPORT_SERVICE_PLAN_AND_AUDIT.md",
+        "headings": [
+          "P1-M4 / WP5 Export Service 开发计划与审计",
+          "1. 阶段目标",
+          "2. 开发范围",
+          "3. 实现计划",
+          "4. 验收标准",
+          "5. PRD 规格检视"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "meeting-voice-assistant",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/meeting-voice-assistant",
+    "file_sample_count": 5001,
+    "top_suffixes": {
+      ".py": 2948,
+      ".json": 973,
+      ".txt": 515,
+      "<none>": 186,
+      ".md": 151,
+      ".typed": 27,
+      ".ts": 24,
+      ".vue": 21
+    },
+    "manifests": [
+      "docker-compose.yml"
+    ],
+    "entry_candidates": [],
+    "readme_excerpt": "# 会议语音助手\n\n> 基于 Web 的实时语音识别会议助手，负责录音/转写/会议分析；知识治理能力已迁移到独立 `~/Desktop/workspace/data_service`。\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)\n[![Vue 3](https://img.shields.io/badge/Vue-3-42b883.svg)](https://vuejs.org/)\n[![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg)](https://fastapi.tiangolo.com/)\n\n---\n\n## 核心功能\n\n### 1. 实时语音识别\n- WebSocket 实时转写，延迟 ~2-3 秒\n- 支持中英文混合识别\n- 语音活动检测（VAD），自动断句\n\n### 2. 说话人分离\n- FunASR 本地模型，识别不同发言人\n- 自动标注 \"发言人 A/B/C...\"\n- 说话人时间统计与可视化\n\n### 3. 智能会议分析\n- LLM 自动生成会议摘要\n- 关键决策点提取\n- 行动项（待办）识别\n- 主题章节自动划分\n\n### 4. 外部知识服务接入\n- 会议应用只产生转写文本和会议分析结果\n- 知识固化、GraphRAG、LLMWiki、Source Trace 和质量治理由独立 Local Knowledge Governance Service 提供\n- 本项目通过 `/api/v1/knowledge/*` 兼容代理转发到 `~/Desktop/workspace/data_service`\n\n### 5. 音频播控\n- 支持全时长拖拽定位\n- 章节级跳转\n- 说话人时段高亮\n\n---\n\n## 系统架构\n\n```\n┌─────────────────────────────────────────────────────────────────┐\n│                     前端 (http://localhost:5173)                  │\n│              Vue 3 + TypeScript + Pinia + Vue Router             │\n├─────────────────────────────────────────────────────────────────┤\n│                                                                   │\n│  ┌───",
+    "docs": [
+      {
+        "path": "docs/README.md",
+        "headings": [
+          "项目技术文档",
+          "当前使用文档",
+          "通用参考文档",
+          "项目简介",
+          "技术栈",
+          "在线文档"
+        ]
+      },
+      {
+        "path": "docs/agent-team-config.md",
+        "headings": [
+          "AgentTeam 团队配置 - 可迁移模板",
+          "团队概述",
+          "核心概念",
+          "交互流程",
+          "团队成员（5人标准配置）",
+          "AgentTeam 激活规则"
+        ]
+      },
+      {
+        "path": "docs/architecture/overview.md",
+        "headings": [
+          "架构概述",
+          "系统架构图"
+        ]
+      },
+      {
+        "path": "docs/architecture/dataflow.md",
+        "headings": [
+          "数据流",
+          "音频数据流",
+          "消息数据流",
+          "1. 实时转写",
+          "2. 会议信息检测",
+          "状态机"
+        ]
+      },
+      {
+        "path": "docs/architecture/module-design.md",
+        "headings": [
+          "模块详细设计",
+          "1. ASR 适配器模块",
+          "1.1 基类接口",
+          "1.2 SenseVoice 适配器",
+          "1.3 ASR 工厂",
+          "2. 语义解析模块"
+        ]
+      },
+      {
+        "path": "docs/architecture/ADR-003-asr-interface-unification.md",
+        "headings": [
+          "ADR-003: ASR 适配器接口统一",
+          "Status",
+          "Context",
+          "Decision",
+          "1. 采用 `BaseTranscriber` 作为统一接口",
+          "2. 废弃 `ASRAdapterBase` 接口"
+        ]
+      },
+      {
+        "path": "docs/architecture/ADR-001-api-authentication.md",
+        "headings": [
+          "ADR-001: API 认证方案",
+          "Status",
+          "Context",
+          "Options Considered",
+          "Option A: JWT Bearer Token（无状态令牌）",
+          "Option B: Session Cookie（有状态会话）"
+        ]
+      },
+      {
+        "path": "docs/architecture/diagrams/system-architecture.md",
+        "headings": [
+          "会议语音助手 - 系统架构图",
+          "架构概览",
+          "核心数据流",
+          "ASR 适配器工厂模式"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "foodMap",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/foodMap",
+    "file_sample_count": 279,
+    "top_suffixes": {
+      ".md": 133,
+      ".ts": 51,
+      ".png": 45,
+      ".tsx": 21,
+      ".json": 9,
+      ".txt": 6,
+      ".drawio": 3,
+      ".mjs": 3
+    },
+    "manifests": [
+      "package.json"
+    ],
+    "entry_candidates": [
+      "package.json"
+    ],
+    "readme_excerpt": "# foodMap\n用于做一款美食地图\n",
+    "docs": [
+      {
+        "path": "docs/V1.0/map-provider-contract.md",
+        "headings": [
+          "FoodMap V1.0 Map Provider Contract",
+          "Summary",
+          "Adapter Types",
+          "Provider Selection",
+          "Marker Rules",
+          "Search Rules"
+        ]
+      },
+      {
+        "path": "docs/V1.0/visual-acceptance-checklist.md",
+        "headings": [
+          "FoodMap V1.0 Visual Acceptance Checklist",
+          "Summary",
+          "Required Tokens",
+          "Desktop Checklist",
+          "Mobile Checklist",
+          "Share View Checklist"
+        ]
+      },
+      {
+        "path": "docs/V1.0/repository-and-domain-api-contract.md",
+        "headings": [
+          "FoodMap V1.0 Repository And Domain API Contract",
+          "Summary",
+          "Domain Helpers",
+          "Repository APIs",
+          "Transaction Rules",
+          "Error Handling"
+        ]
+      },
+      {
+        "path": "docs/V1.0/final-acceptance-report.md",
+        "headings": [
+          "FoodMap V1.0 Final Acceptance Report",
+          "Implemented Scope",
+          "Acceptance Evidence",
+          "Known Limits"
+        ]
+      },
+      {
+        "path": "docs/V1.0/figma-prompts-scheme4.md",
+        "headings": [
+          "FoodMap V1.0 Figma 原型生成提示词",
+          "0. 使用方式建议",
+          "1. 全局 Figma 提示词",
+          "2. 桌面端工作台默认态提示词",
+          "3. 桌面端点位详情态提示词",
+          "4. 桌面端新增/编辑点位弹窗提示词"
+        ]
+      },
+      {
+        "path": "docs/V1.0/development-and-acceptance-plan.md",
+        "headings": [
+          "FoodMap V1.0 Development And Acceptance Plan",
+          "Summary",
+          "Complete Development And Acceptance Outline",
+          "M0: Documentation And Design Baseline"
+        ]
+      },
+      {
+        "path": "docs/V1.0/target-architecture.md",
+        "headings": [
+          "FoodMap V1.0 Target Architecture",
+          "Summary",
+          "Target Stack",
+          "Target Source Layout",
+          "Runtime Architecture",
+          "Core Routes"
+        ]
+      },
+      {
+        "path": "docs/V1.0/ux-audit-2026-06-04.md",
+        "headings": [
+          "FoodMap V1.0 UX Audit",
+          "Method",
+          "Critical Findings",
+          "Remaining UX Risks"
+        ]
+      }
+    ]
+  },
+  {
+    "project": "xpert",
+    "status": "readable",
+    "path": "/Users/Zhuanz/Desktop/workspace/xpert",
+    "file_sample_count": 5001,
+    "top_suffixes": {
+      "<none>": 2374,
+      ".ts": 1414,
+      ".json": 284,
+      ".md": 165,
+      ".scss": 131,
+      ".html": 91,
+      ".xsd": 78,
+      ".py": 68
+    },
+    "manifests": [
+      "package.json",
+      "pnpm-workspace.yaml",
+      "docker-compose.yml"
+    ],
+    "entry_candidates": [
+      "package.json"
+    ],
+    "readme_excerpt": "English | [中文](./README_zh.md)\n\n[uri_license]: https://www.gnu.org/licenses/agpl-3.0.html\n[uri_license_image]: https://img.shields.io/badge/License-AGPL%20v3-blue.svg\n\n<p align=\"center\">\n  <a href=\"https://xpertai.cn/en/\">\n    <img src=\"docs/images/logo.png\" alt=\"Xpert AI\" style=\"width: 240px; height: auto;\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://app.xpertai.cn/\">XpertAI Cloud</a> ·\n  <a href=\"https://docs.xpertai.cn/en/ai/getting-started/community\">Self-hosting</a> ·\n  <a href=\"https://docs.xpertai.cn/en/\">Documentation</a> ·\n  <a href=\"https://xpertai.cn/en/#connect\">Enterprise inquiry</a>\n</p>\n\n<p align=\"center\">\n  <em>Open-Source AI Platform for Enterprise Data Analysis, Indicator Management and Agents Orchestration</em>\n</p>\n<p align=\"center\">\n  <a href=\"https://github.com/xpert-ai/xpert/\" target=\"_blank\">\n    <img src=\"https://visitor-badge.laobi.icu/badge?page_id=meta-d.ocap\" alt=\"Visitors\">\n  </a>\n  <a href=\"https://www.npmjs.com/@xpert-ai/contracts\" target=\"_blank\">\n    <img src=\"https://img.shields.io/npm/v/@xpert-ai/contracts.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen\" alt=\"contracts on npm\" />\n  </a>&nbsp;\n  <a href=\"https://www.gnu.org/li",
+    "docs": [
+      {
+        "path": "docs/plans/PLAN_finite_observable_crud.md",
+        "headings": [
+          "前端 CRUD 请求有限流语义重构方案",
+          "Summary",
+          "问题定义",
+          "设计原则",
+          "目标状态",
+          "1. 方法命名与流语义一一对应"
+        ]
+      },
+      {
+        "path": "docs/plans/PLAN_remove_nx.md",
+        "headings": [
+          "Xpert 仓库分阶段去除 Nx（保留 pnpm，核心链路优先）",
+          "Summary",
+          "重要接口/契约变更（Public APIs / Interfaces / Types）",
+          "Phase 0：基线冻结与迁移护栏",
+          "Phase 1：核心流水线去 Nx（本阶段核心链路 0 Nx 依赖）"
+        ]
+      },
+      {
+        "path": "docs/plans/PLAN_xpert_user_groups_access.md",
+        "headings": [
+          "Xpert UserGroup 授权重构与 Assistant 安全加固",
+          "背景与问题分析",
+          "目标模型",
+          "核心设计",
+          "1. 数据模型",
+          "2. 运行时授权"
+        ]
+      },
+      {
+        "path": "docs/plans/PLAN_isolate_tenant_org.md",
+        "headings": [
+          "Tenant / Organization 作用域重构方案",
+          "Summary",
+          "Key Changes"
+        ]
+      },
+      {
+        "path": "docs/plans/PLAN_api_principal_identity.md",
+        "headings": [
+          "API Principal 与技术用户映射方案",
+          "背景",
+          "核心定义",
+          "1. 技术身份",
+          "2. 业务 user",
+          "3. `xpert.userId` 的业务含义"
+        ]
+      },
+      {
+        "path": "docs/plans/PLAN_angular_21.md",
+        "headings": [
+          "Angular 21 升级方案（含 Storybook 硬停用）",
+          "Summary",
+          "实施步骤"
+        ]
+      }
+    ]
+  }
+]

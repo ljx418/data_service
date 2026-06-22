@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace 项目理解展示</title>
+  <style>
+    :root {
+      --bg:#f5f7fb; --ink:#17202a; --muted:#5f6b7a; --line:#d9e0ea; --panel:#fff;
+      --blue:#1d64d8; --green:#0f8f5f; --orange:#b85c00; --violet:#6a35c2; --teal:#087c89; --red:#b42318;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.55}
+    .wrap{max-width:1220px;margin:0 auto;padding:28px}
+    .hero{background:#102033;color:white;border-radius:16px;padding:32px;box-shadow:0 18px 48px rgba(12,22,36,.18)}
+    .hero h1{margin:0 0 10px;font-size:30px;letter-spacing:0}
+    .hero p{margin:0;color:#d8e7f7;max-width:980px}
+    section{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 8px 22px rgba(18,28,45,.05)}
+    h2{margin:0 0 14px;font-size:22px} h3{margin:0 0 8px;font-size:16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+    .card{border:1px solid var(--line);background:#fbfcfe;border-radius:12px;padding:14px}
+    .badge{display:inline-block;border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700;border:1px solid transparent}
+    .ok{background:#e7f8ef;color:#05603a;border-color:#b7e4c7}.info{background:#eaf2ff;color:#174ea6;border-color:#bfd5ff}.warn{background:#fff4df;color:#8a4b00;border-color:#ffd89b}
+    .no{background:#fee4e2;color:#912018;border-color:#f5b5ae}
+    table{width:100%;border-collapse:collapse;margin-top:10px} th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top} th{background:#f0f4f9}
+    .diagram{overflow:auto;border:1px solid var(--line);border-radius:12px;background:#f8fafc;padding:10px}
+    svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",Arial,sans-serif}
+    .project{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:18px 0}
+    .project:first-of-type{border-top:0}
+    .name{font-size:18px;font-weight:800}.meta{color:var(--muted);font-size:13px;margin-top:4px}
+    .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{background:#eef3f8;border:1px solid #d8e0ea;border-radius:999px;padding:3px 8px;font-size:12px;color:#334155}
+    .note{font-size:13px;color:var(--muted)}
+    .quote{border-left:4px solid var(--blue);padding:8px 12px;background:#f7faff;color:#293647;border-radius:8px}
+    pre{white-space:pre-wrap;word-break:break-word;background:#101820;color:#d8f5df;border-radius:12px;padding:14px;font-size:12px;line-height:1.45}
+    @media(max-width:900px){.grid,.grid2,.project{grid-template-columns:1fr}.wrap{padding:14px}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <h1>Workspace 项目理解展示</h1>
+    <p>
+      这是用本项目的“项目阅读/证据优先”方式，对 workspace 下多个项目做出的面向人类展示。
+      结论来自 README、docs、manifest、文件类型分布和入口候选的本地读取；它是“辅助理解”，不是完整代码审计或完整设计意图重建。
+    </p>
+  </header>
+
+  <section>
+    <h2>1. 我能否理解 workspace 下其他项目？</h2>
+    <div class="grid">
+      <div class="card"><h3>能做到</h3><p><span class="badge ok">已验证可读</span></p><p>可以读取项目 README、docs、manifest、代码/文档分布，形成面向人的定位、架构线索、用户场景和下一步阅读路径。</p></div>
+      <div class="card"><h3>不能夸大</h3><p><span class="badge warn">需要证据边界</span></p><p>不能仅凭文档标题就声称完整理解运行时链路、调用图、生产拓扑或所有实现偏差。</p></div>
+      <div class="card"><h3>可继续深化</h3><p><span class="badge info">本项目方式</span></p><p>对重点项目可继续跑 profile、portal、task navigation、governance、playbook、closure，把理解变成可追溯 artifacts。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 展示方法：从证据到人类理解</h2>
+    <div class="diagram">
+      <svg width="1080" height="300" viewBox="0 0 1080 300" role="img" aria-label="项目理解流程图">
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#42526e"/></marker></defs>
+        <rect x="25" y="70" width="180" height="90" rx="10" fill="#eaf2ff" stroke="#1d64d8"/><text x="115" y="105" text-anchor="middle" font-size="15" font-weight="700">项目输入</text><text x="115" y="130" text-anchor="middle" font-size="12">README / docs / manifest</text>
+        <rect x="265" y="55" width="220" height="120" rx="10" fill="#fff" stroke="#d8dee6"/><text x="375" y="88" text-anchor="middle" font-size="15" font-weight="700">事实抽取</text><text x="375" y="114" text-anchor="middle" font-size="12">文件类型 / 入口候选</text><text x="375" y="138" text-anchor="middle" font-size="12">文档标题 / 技术线索</text>
+        <rect x="545" y="55" width="230" height="120" rx="10" fill="#e7f8ef" stroke="#0f8f5f"/><text x="660" y="88" text-anchor="middle" font-size="15" font-weight="700">人类理解层</text><text x="660" y="114" text-anchor="middle" font-size="12">项目定位 / 架构画像</text><text x="660" y="138" text-anchor="middle" font-size="12">用户场景 / 阅读路径</text>
+        <rect x="835" y="70" width="210" height="90" rx="10" fill="#fff4df" stroke="#b85c00"/><text x="940" y="105" text-anchor="middle" font-size="15" font-weight="700">边界与下一步</text><text x="940" y="130" text-anchor="middle" font-size="12">needs_review / 深度审计</text>
+        <line x1="205" y1="115" x2="265" y2="115" stroke="#42526e" stroke-width="2" marker-end="url(#arr)"/>
+        <line x1="485" y1="115" x2="545" y2="115" stroke="#42526e" stroke-width="2" marker-end="url(#arr)"/>
+        <line x1="775" y1="115" x2="835" y2="115" stroke="#42526e" stroke-width="2" marker-end="url(#arr)"/>
+      </svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Workspace 项目地图</h2>
+    <table>
+      <thead><tr><th>项目</th><th>我读到的定位</th><th>主要证据</th><th>理解可信度</th></tr></thead>
+      <tbody>
+        <tr><td>data_service</td><td>本地知识治理与项目智能服务，面向 MCP/CLI/HTTP 输出 traceable knowledge、graph、wiki、code intelligence 和 agent context。</td><td>README、V2.x 大量 PRD/架构/验收文档，Python 后端模块。</td><td><span class="badge ok">高：本项目内已深度实现和验收</span></td></tr>
+        <tr><td>harnessOS</td><td>基于 Deep Agents/LangGraph 的多功能 AI framework，覆盖会议、面试、知识库、视频制作，并有 V4/V6 runtime/governance 设计线。</td><td>README 架构图、pyproject、docs/design/V4.x/V6.x。</td><td><span class="badge info">中高：文档丰富，代码事实需专项核查</span></td></tr>
+        <tr><td>navia</td><td>Chrome companion-reading / 本地 headless runtime 项目，强调页面阅读、摘要、问答、Mermaid mindmap 和可追踪 runtime events。</td><td>README、docs/active、history docs、TS/JS/Python 混合。</td><td><span class="badge info">中高：活跃文档清楚，需验证 runtime 模块</span></td></tr>
+        <tr><td>codexPat</td><td>macOS-first 桌面 Agent 状态宠物，把 Codex/本地 Agent 后台状态转译成低打扰桌面反馈。</td><td>README、package/pnpm workspace、V3/V6/V7/V10/V22 docs。</td><td><span class="badge info">中：产品定位清楚，历史阶段很多需 authority 排序</span></td></tr>
+        <tr><td>research-notebook</td><td>source-grounded personal knowledge workspace 前端应用，依赖 data_service target routes。</td><td>README、package、V2.x design docs。</td><td><span class="badge info">中：与 data_service 关系明确</span></td></tr>
+        <tr><td>interview_service</td><td>JobPilot AI，本地优先的求职 Agent 服务，围绕简历、项目资料、JD 匹配、面试准备与申请包生成。</td><td>README、package + pyproject + docker-compose、stage review docs。</td><td><span class="badge info">中：产品叙事清楚，需接口级验证</span></td></tr>
+        <tr><td>meeting-voice-assistant</td><td>Web 实时语音识别会议助手，负责录音、转写、会议分析；知识治理已迁移到 data_service。</td><td>README、docs/architecture、Python/Vue 文件分布。</td><td><span class="badge info">中：边界清楚，需运行链路验证</span></td></tr>
+        <tr><td>voice_service</td><td>从会议助手抽离的独立 FunASR 服务，重视本地 Python 环境、离线模型和分发产物。</td><td>README、pyproject、models/env-dist 线索。</td><td><span class="badge warn">中低：README 明确但 docs 较少</span></td></tr>
+        <tr><td>foodMap</td><td>美食地图应用，包含地图 provider contract、视觉验收、repository/domain API contract。</td><td>README、package、V1.0 docs。</td><td><span class="badge info">中：范围小，文档直接</span></td></tr>
+        <tr><td>xpert</td><td>Xpert AI 大型 self-hosting / cloud 项目，含多租户、组织、CRUD、授权等改造计划。</td><td>README、package/pnpm、docker-compose、docs/plans。</td><td><span class="badge warn">中低：规模大，当前只做轻量阅读</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>4. 项目卡片：面向人的理解</h2>
+    <div class="project">
+      <div><div class="name">data_service</div><div class="meta">知识治理 / 项目智能中台</div><div class="chips"><span class="chip">Python</span><span class="chip">MCP</span><span class="chip">HTTP</span><span class="chip">Graph/Wiki</span></div></div>
+      <div>
+        <p>我理解它是 workspace 里的“知识与项目理解基础设施”：其他会议、学习、求职、代码助手类应用可以通过 MCP/CLI/HTTP 调它，而不是直接读内部 workspace。当前本阶段又补了 Agent Productization，使 Codex 类 Agent 能按 playbook 和 portal 快速读项目。</p>
+        <p class="quote">适合人类使用方式：导入项目 → 看 Portal → 让 Agent 读 Playbook → 针对任务生成阅读路径 → 用 closure/audit 判断是否可信。</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div><div class="name">harnessOS</div><div class="meta">多功能 AI framework / runtime governance</div><div class="chips"><span class="chip">Deep Agents</span><span class="chip">LangGraph</span><span class="chip">V4/V6 docs</span><span class="chip">Python</span></div></div>
+      <div>
+        <p>我理解它不是单一工具，而是一个面向多业务能力的 Agent framework：会议、面试、知识库、视频生产是产品能力；V4/V6 文档线显示它在持续建设 headless workflow、controlled runtime、identity/tenant、credential、audit、agent governance、distributed runtime 等控制面能力。</p>
+        <p>当前能看懂的重点：它非常依赖文档中的“Allowed Claim / Forbidden Claims / Evidence Gate”。因此对 HarnessOS 的正确展示不应只画目录图，而应把 docs 中的目标控制平面和代码中的当前实现事实分开核查。</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div><div class="name">navia</div><div class="meta">Chrome 阅读伴航 / headless runtime</div><div class="chips"><span class="chip">Chrome</span><span class="chip">Page Reading</span><span class="chip">TS/JS</span><span class="chip">Python</span></div></div>
+      <div>
+        <p>我理解 Navia 是一个网页阅读助手：页面内浮球打开双轨 AI 面板，读取当前页面、摘要、回答基于页面的问题，并生成可追踪的 Mermaid mindmap。它的 docs/active 结构显示它很适合拆成模块 workpack 给多个 Agent 并行开发。</p>
+        <p>适合用本项目辅助的点：先生成 active docs 的 authority registry，再让 coding agent 只读自己模块相关文档和 allowed directories，避免跨模块误改。</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div><div class="name">codexPat</div><div class="meta">桌面 Agent 状态宠物</div><div class="chips"><span class="chip">macOS</span><span class="chip">Tauri?</span><span class="chip">pnpm</span><span class="chip">Codex workflow</span></div></div>
+      <div>
+        <p>我理解 codexPat 是一个把 Codex/Agent 状态变成人类可感知桌面反馈的产品。它的文档非常强调“allowed claim / forbidden claim”，说明项目曾多次避免把局部 smoke 夸大成 MCP ready 或第三方 Agent 完整集成。</p>
+        <p>适合用本项目辅助的点：做阶段文档 authority 排序，避免历史 V3/V6/V7/V10/V22 文档互相冲突；再把当前 active claim 和实际 package/workspace 能力对齐。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. 如果继续用本项目深入理解这些项目</h2>
+    <div class="grid">
+      <div class="card"><h3>第一层：项目画像</h3><p>生成 profile、taxonomy、authority rules，把项目术语和历史阶段整理清楚。</p></div>
+      <div class="card"><h3>第二层：人类 Portal</h3><p>生成项目首页：目标、当前实现、模块地图、风险、推荐阅读路径。</p></div>
+      <div class="card"><h3>第三层：Agent 开发入口</h3><p>生成 coding_agent playbook 和 task navigation，让 Agent 先读最小上下文。</p></div>
+      <div class="card"><h3>第四层：文档代码核查</h3><p>对 docs claim 和代码事实做 supported / weak / unsupported 分类。</p></div>
+      <div class="card"><h3>第五层：治理闭环</h3><p>记录 feedback，生成 rules，approved 后做 read-time overlay，不改写原文档。</p></div>
+      <div class="card"><h3>第六层：持续验收</h3><p>每次项目变更后更新 closure matrix，确认哪些理解仍然可信。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. 证据与边界</h2>
+    <div class="grid2">
+      <div>
+        <h3>本次已实际读取的内容</h3>
+        <ul>
+          <li>workspace 下 10 个项目的 README / docs / manifest / 文件分布。</li>
+          <li>生成结构化摘要：<code>docs/V2.x/workspace_projects_human_summary.json</code></li>
+          <li>本 HTML 是基于该摘要和项目 README/docs 线索整理的人类展示。</li>
+        </ul>
+      </div>
+      <div>
+        <h3>不声明的内容</h3>
+        <ul>
+          <li>不声明已完整审计所有项目代码。</li>
+          <li>不声明已恢复完整运行时调用图。</li>
+          <li>不声明 docs 中所有架构 claim 均已被代码证实。</li>
+          <li>不声明所有项目均已通过本项目 closure。</li>
+        </ul>
+      </div>
+    </div>
+    <pre>可复核输入：
+docs/V2.x/workspace_projects_human_summary.json
+
+推荐下一步：
+对 HarnessOS、Navia、codexPat 分别运行完整 profile → portal → task navigation → governance → playbook → closure 流程，并把每个项目的 HTML Portal 固化为独立报告。</pre>
+  </section>
+</main>
+</body>
+</html>

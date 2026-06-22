@@ -1,0 +1,206 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6" pages="6">
+  <diagram id="01-current-gap" name="01 当前vs目标架构差异">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1200">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" value="V2.46-V2.52 当前 vs 目标架构差异" style="text;html=1;fontSize=26;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="900" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="当前已验收：V2.39-V2.45&#xa;- scale profile / scan budget&#xa;- language provider contract&#xa;- workflow/runtime candidates&#xa;- relationship chain v3&#xa;- document semantics v3&#xa;- token budget/cache&#xa;- profile/taxonomy regression" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ecfdf5;strokeColor=#059669;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="430" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" value="仍然存在的产品化 GAP&#xa;- MCP 使用路径不够标准&#xa;- 新项目 profile 接入不够流程化&#xa;- 报告可读性偏工程 artifact&#xa;- task navigation 没有形成标准开发动作&#xa;- doc-code finding 没有完整治理闭环&#xa;- 多项目持续回归未产品化" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fffbeb;strokeColor=#d97706;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="120" width="430" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="target1" value="目标：Agent Productization&#xa;- Codex CLI MCP 使用指南&#xa;- Project Profile Onboarding&#xa;- Human Architecture Portal&#xa;- Task Navigation and Impact v2&#xa;- Doc-Code Governance Workflow&#xa;- Agent Context Playbooks&#xa;- Multi-project Continuous Acceptance" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="120" width="430" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" source="c1" target="g1" parent="1" style="endArrow=block;html=1;strokeColor=#4b5563;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" source="g1" target="target1" parent="1" style="endArrow=block;html=1;strokeColor=#4b5563;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="guard1" value="硬边界：不声称 full call graph / data flow / control flow / runtime topology / type inference。Doc claim 不是 code fact。Structured blocker 不是 accepted。Profile 不能写成通用 hardcode。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fef2f2;strokeColor=#dc2626;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="1430" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="02-target-arch" name="02 目标架构">
+    <mxGraphModel dx="1580" dy="853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t2" parent="1" style="text;html=1;fontSize=26;fontStyle=1;strokeColor=none;fillColor=none;align=left;" value="V2.46-V2.52 目标架构：人类和 Agent 共享的项目理解服务" vertex="1">
+          <mxGeometry height="50" width="1100" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f8fafc;strokeColor=#64748b;align=center;" value="V2.0-V2.45 persisted artifacts&#xa;Snapshot / Surface / Symbol / Evidence / Graph / DevWiki / Relationship / Profile" vertex="1">
+          <mxGeometry height="130" width="360" x="80" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#eff6ff;strokeColor=#2563eb;align=center;" value="MCP Productization Layer&#xa;Codex config / tool catalog / workflow guide" vertex="1">
+          <mxGeometry height="130" width="300" x="520" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f0fdf4;strokeColor=#16a34a;align=center;" value="Project Profile Onboarding&#xa;taxonomy / authority / entrypoint / workflow patterns" vertex="1">
+          <mxGeometry height="130" width="300" x="900" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="d" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff7ed;strokeColor=#ea580c;align=center;" value="Human Architecture Portal&#xa;overview / diagrams / target-current-diff / risks" vertex="1">
+          <mxGeometry height="130" width="300" x="1280" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f3ff;strokeColor=#7c3aed;align=center;" value="Task Navigation and Impact v2&#xa;reading order / impact candidates / suggested tests" vertex="1">
+          <mxGeometry height="130" width="330" x="340" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="f" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fdf2f8;strokeColor=#db2777;align=center;" value="Doc-Code Governance Workflow&#xa;feedback / rule / review / plan / overlay" vertex="1">
+          <mxGeometry height="130" width="330" x="760" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="g" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ecfeff;strokeColor=#0891b2;align=center;" value="Agent Context Playbooks&#xa;maintainer / coding agent / doc agent / architect reviewer" vertex="1">
+          <mxGeometry height="130" width="330" x="340" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#111827;align=center;" value="Multi-project Continuous Acceptance&#xa;data_service / HarnessOS / Navia / codexPat" vertex="1">
+          <mxGeometry height="130" width="520" x="910" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="ab" edge="1" parent="1" source="a" style="endArrow=block;html=1;strokeColor=#4b5563;" target="b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bc" edge="1" parent="1" source="b" style="endArrow=block;html=1;strokeColor=#4b5563;" target="c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cd" edge="1" parent="1" source="c" style="endArrow=block;html=1;strokeColor=#4b5563;" target="d">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ce" edge="1" parent="1" source="c" style="endArrow=block;html=1;strokeColor=#4b5563;" target="e">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df" edge="1" parent="1" source="d" style="endArrow=block;html=1;strokeColor=#4b5563;" target="f">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eg" edge="1" parent="1" source="e" style="endArrow=block;html=1;strokeColor=#4b5563;" target="g">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fgh" edge="1" parent="1" source="f" style="endArrow=block;html=1;strokeColor=#4b5563;" target="h">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gh" edge="1" parent="1" source="g" style="endArrow=block;html=1;strokeColor=#4b5563;" target="h">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="03-plan" name="03 开发及验收计划">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1200">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t3" value="V2.46-V2.52 Phase 123-129 开发及验收计划" style="text;html=1;fontSize=26;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="1100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p123" value="Phase 123 MCP 使用产品化&#xa;验收：Codex CLI 指南可用；tool catalog 与 registry 一致；未配置返回结构化诊断" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p124" value="Phase 124 Project Profile Onboarding&#xa;验收：四项目 profile 或 unavailable；no-hardcode audit passed" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f0fdf4;strokeColor=#16a34a;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p125" value="Phase 125 Human Architecture Portal&#xa;验收：HTML 图表原位渲染；每个节点可追溯 artifact；不引入外部事实" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fff7ed;strokeColor=#ea580c;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="860" y="130" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p126" value="Phase 126 Task Navigation and Impact v2&#xa;验收：真实任务 reading order；impact candidate 不称为 runtime call；测试建议有 evidence" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f5f3ff;strokeColor=#7c3aed;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="130" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p127" value="Phase 127 Doc-Code Governance Workflow&#xa;验收：approve/revoke overlay；原始 artifact hash 不变" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fdf2f8;strokeColor=#db2777;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="420" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p128" value="Phase 128 Agent Context Playbooks&#xa;验收：四类角色 playbook；小预算不保留无证据建议" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ecfeff;strokeColor=#0891b2;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="720" y="420" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p129" value="Phase 129 Multi-project Continuous Acceptance&#xa;验收：四项目矩阵；HTTP/MCP/CLI parity；closure 无 fatal/major" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ffffff;strokeColor=#111827;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="420" width="360" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="04-milestones" name="04 项目里程碑">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1200">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t4" value="项目里程碑 M0-M7" style="text;html=1;fontSize=26;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="m0" value="M0 Pre-gate&#xa;V2.39-V2.45 closure 可读；真实项目路径确认；无 fatal/major" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f8fafc;strokeColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="M1 MCP Productized&#xa;Codex CLI 能接入；Agent 知道怎么调用" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#eff6ff;strokeColor=#2563eb;" vertex="1" parent="1">
+          <mxGeometry x="400" y="130" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" value="M2 Profile Onboarding&#xa;四项目 profile 或 structured unavailable" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f0fdf4;strokeColor=#16a34a;" vertex="1" parent="1">
+          <mxGeometry x="740" y="130" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" value="M3 Human Portal&#xa;人类可以快速理解项目结构、入口、风险" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fff7ed;strokeColor=#ea580c;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="130" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="M4 Task Navigation&#xa;Agent 能拿到任务阅读路径和测试建议" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f5f3ff;strokeColor=#7c3aed;" vertex="1" parent="1">
+          <mxGeometry x="230" y="370" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" value="M5 Governance Workflow&#xa;架构偏差可 review、approve、revoke、plan" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fdf2f8;strokeColor=#db2777;" vertex="1" parent="1">
+          <mxGeometry x="570" y="370" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m6" value="M6 Agent Playbooks&#xa;不同角色 Agent 有标准使用流程" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ecfeff;strokeColor=#0891b2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="370" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m7" value="M7 Closure&#xa;四项目持续回归；parity；redaction；无 fatal/major" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ffffff;strokeColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="370" width="300" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="05-exit-gates" name="05 验收门槛及出门条件">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1200">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t5" value="验收门槛及出门条件" style="text;html=1;fontSize=26;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gate1" value="证据门槛&#xa;- accepted 必须有 evidence_refs&#xa;- recommendation 必须有 evidence 或 needs_review&#xa;- artifact refs 必须可读回" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ecfdf5;strokeColor=#059669;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gate2" value="安全门槛&#xa;- 无绝对路径泄露&#xa;- 无 secret/token/raw traceback&#xa;- HTML 和 Mermaid escape 通过" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fef2f2;strokeColor=#dc2626;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="130" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gate3" value="架构边界&#xa;- relationship chain 不是 full call graph&#xa;- impact candidate 不是 runtime call&#xa;- doc claim 不是 code fact" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fffbeb;strokeColor=#d97706;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="130" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gate4" value="产品化门槛&#xa;- Codex CLI 可按指南接入&#xa;- Human Portal 可读&#xa;- Agent playbook 可执行&#xa;- 四项目持续回归矩阵可审计" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="920" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="06-user-scenarios" name="06 用户体验与应用场景">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1200">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t6" value="用户体验与应用场景" style="text;html=1;fontSize=26;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="场景 1：新人接手大项目&#xa;打开 Human Portal，先看项目定位、入口、模块图、风险和 recommended reading，再决定从哪些文件开始读。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="场景 2：Codex 修 bug&#xa;Agent 通过 MCP 请求 task context，拿到 relationship chain、impact candidates、suggested tests，避免全仓重复阅读。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f0fdf4;strokeColor=#16a34a;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="560" y="130" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" value="场景 3：架构设计看护&#xa;审计者比较 docs/drawio target 和 current code facts，看到 supported、weak、unsupported、contradicted，留下 governance feedback。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff7ed;strokeColor=#ea580c;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="130" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" value="场景 4：接入新项目&#xa;先生成 profile draft，再确认 taxonomy、authority、entrypoint、workflow patterns。项目专用知识进入 profile，不污染通用 extractor。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f3ff;strokeColor=#7c3aed;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" value="场景 5：多项目持续回归&#xa;每次能力扩展都在 data_service、HarnessOS、Navia、codexPat 上跑回归矩阵，防止只对单项目有效。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ecfeff;strokeColor=#0891b2;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="420" width="430" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
