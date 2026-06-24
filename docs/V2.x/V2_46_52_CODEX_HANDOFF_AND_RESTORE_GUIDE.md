@@ -170,7 +170,7 @@ Install project dependencies according to the repository baseline. If a virtual 
 ```bash
 python3 -m venv .venv
 ./.venv/bin/python -m pip install -U pip
-./.venv/bin/python -m pip install -e backend
+./.venv/bin/python -m pip install -e backend[test]
 ```
 
 Then run the focused acceptance suite:
@@ -185,6 +185,14 @@ Then run the focused acceptance suite:
   backend/tests/test_v2_52_continuous_acceptance.py \
   backend/tests/test_public_surface_guard.py
 ```
+
+For V2.53 and later restore checks, the canonical acceptance runner is:
+
+```bash
+./.venv/bin/python backend/scripts/v2_53_acceptance.py
+```
+
+If FastAPI `TestClient` tests hang in a restricted sandbox, rerun the acceptance command in a normal local process. The restored baseline is validated by the test result, not by the sandbox health.
 
 Open human reports:
 
@@ -242,4 +250,3 @@ Potential next directions discussed before handoff:
 - strengthen doc-code architecture verification;
 - continue large project architecture assistance for HarnessOS, Navia, codexPat, and other workspace projects;
 - keep every accepted claim evidence-backed.
-

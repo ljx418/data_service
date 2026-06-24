@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>data_service 自动化可视化验收报告</title>
+<style>
+:root { --ink:#172033; --muted:#5b6678; --line:#d7dee8; --bg:#f5f7fb; --panel:#fff; --accent:#1f6b8f; --ok:#126b37; --warn:#9a5b00; --bad:#9b1c1c; }
+* { box-sizing:border-box; } body { margin:0; font-family:Arial,'Microsoft YaHei',sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+header { background:#102d42; color:white; padding:34px 44px 28px; } header h1 { margin:0 0 10px; font-size:30px; } header p { margin:0; color:#dce9f3; max-width:1120px; }
+main { max-width:1240px; margin:0 auto; padding:28px 24px 56px; }
+section { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:20px; margin:0 0 18px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+h2 { margin:0 0 12px; font-size:22px; } h3 { margin:0 0 8px; font-size:18px; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:12px; } .kpi { background:#eef3f8; border:1px solid #d9e4ef; border-radius:8px; padding:12px; } .kpi b { display:block; font-size:24px; }
+table { width:100%; border-collapse:collapse; } td,th { border:1px solid var(--line); padding:9px; text-align:left; vertical-align:top; } th { background:#eef3f8; }
+.ok { color:var(--ok); font-weight:700; } .warn { color:var(--warn); font-weight:700; } .bad { color:var(--bad); font-weight:700; }
+.pill { display:inline-block; background:#e8f1ff; color:#174b7a; border:1px solid #c8dbf3; padding:3px 8px; border-radius:999px; font-size:12px; margin:0 6px 6px 0; }
+code, pre { background:#eef3f8; border-radius:6px; } code { padding:1px 4px; } pre { padding:14px; overflow:auto; border:1px solid var(--line); }
+.shot { border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:16px 0; background:white; } .shot-copy { padding:16px; border-bottom:1px solid var(--line); } .shot img { display:block; width:100%; height:auto; } .meta { color:var(--muted); font-size:13px; margin-bottom:0; }
+.notice { border-left:4px solid var(--accent); background:#eef7fb; } .risk { border-left:4px solid var(--warn); background:#fff8ea; }
+@media (max-width:900px) { .grid,.kpis { grid-template-columns:1fr; } header { padding:28px 22px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>data_service 自动化可视化验收报告</h1>
+  <p>本报告使用真实 data_service 仓库构建项目智能 artifact，并用 Windows Chrome headless 自动截图。未打开可见浏览器窗口，未进行焦点抢占。</p>
+</header>
+<main>
+<section class='notice'>
+  <h2>验收结论</h2>
+  <p><strong class='ok'>通过：自动化可视化展示与截图证据生成成功。</strong> 本结论仅覆盖当前本机环境、当前工作树、真实 data_service 仓库和本报告列出的场景；不声明外部项目完整验收，不声明 full call graph、runtime topology、data/control flow 或 type inference。</p>
+  <div class='kpis'>
+    <div class='kpi'><span>Snapshot 文件数</span><b>3147</b></div>
+    <div class='kpi'><span>公开 Surface 数</span><b>669</b></div>
+    <div class='kpi'><span>符号数</span><b>29644</b></div>
+    <div class='kpi'><span>截图数</span><b>5</b></div>
+  </div>
+</section>
+<section>
+  <h2>自动化方式</h2>
+  <table>
+    <tr><th>项目</th><th>结果</th></tr>
+    <tr><td>浏览器</td><td>Windows Chrome headless；Linux Playwright Chromium 因缺少系统库 <code>libnspr4.so</code> 未使用。</td></tr>
+    <tr><td>截图模式</td><td>命令行 <code>--headless=new --screenshot</code>，没有弹窗、没有焦点抢占。</td></tr>
+    <tr><td>截图校验</td><td>5 张截图均为 1440x1200，PIL 非空校验通过。</td></tr>
+    <tr><td>数据来源</td><td>真实导入当前 <code>data_service</code> 仓库并构建 snapshot、inventory、symbols、trace、overview、context pack、Portal、dashboard。</td></tr>
+  </table>
+</section>
+<section>
+  <h2>目标架构与当前实现</h2>
+  <div class='grid'>
+    <div>
+      <h3>目标架构</h3>
+      <p><span class='pill'>Codebase Asset</span><span class='pill'>Evidence Trace</span><span class='pill'>Agent Context</span><span class='pill'>Portal</span></p>
+      <ul>
+        <li>把本地代码仓库治理为可查询、可追踪、可验收的项目智能资产。</li>
+        <li>通过 MCP / CLI / HTTP 向 Agent 和维护者提供项目理解能力。</li>
+        <li>区分文档 claim、代码事实、evidence-backed 结论和 needs_review。</li>
+        <li>Portal/dashboard 展示目标体验、当前实现、风险、下一步动作。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>当前实现</h3>
+      <ul>
+        <li>真实构建 snapshot、inventory、symbols、trace、overview、context pack。</li>
+        <li>Portal V3 和维护者 dashboard 可从 persisted artifacts 生成 HTML。</li>
+        <li>Public surface baseline 当前 4 类 surface 兼容，breaking_count=0。</li>
+        <li>工作树 delivery 仅生成审查清单，不执行删除。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class='risk'>
+  <h2>非虚假验收边界</h2>
+  <ul>
+    <li><code>codexPat</code>、<code>HarnessOS</code>、<code>Navia</code> 在本机没有提供真实路径，因此保持 <code>structured_unavailable</code>，没有计入 accepted。</li>
+    <li>Dashboard 当前阶段状态为 <code>structured_unavailable</code>，原因是外部项目仍有非 accepted 状态。</li>
+    <li>Delivery exit gate 为 <code>needs_review</code>，因为存在 manual/local temp 审查项；<code>safe_to_delete_true_count=0</code>。</li>
+    <li>截图展示的是可视化验收证据，不替代所有业务逻辑测试。完整测试结果见此前全量 PRD 复审报告。</li>
+  </ul>
+</section>
+<section>
+  <h2>外部项目路径状态</h2>
+  <table><tr><th>项目</th><th>状态</th></tr><tr><td>HarnessOS</td><td><span class='warn'>structured_unavailable</span></td></tr><tr><td>Navia</td><td><span class='warn'>structured_unavailable</span></td></tr><tr><td>codexPat</td><td><span class='warn'>structured_unavailable</span></td></tr><tr><td>data_service</td><td><span class='ok'>accepted</span></td></tr></table>
+</section>
+<section>
+  <h2>用户场景体验路径截图</h2>
+
+    <article class='shot'>
+      <div class='shot-copy'>
+        <h3>目标架构与当前实现</h3>
+        <p>展示 PRD 目标架构、当前真实 artifact 指标和用户场景路径。</p>
+        <p class='meta'>文件：<code>visual_acceptance_assets/01_architecture_overview.png</code>；尺寸：1440x1200；大小：105391 bytes；非空：True</p>
+      </div>
+      <img src='visual_acceptance_assets/01_architecture_overview.png' alt='目标架构与当前实现 截图证据'>
+    </article>
+
+    <article class='shot'>
+      <div class='shot-copy'>
+        <h3>Portal V3 维护者首页</h3>
+        <p>展示 persisted artifacts 汇总页面，未隐藏非 accepted 状态。</p>
+        <p class='meta'>文件：<code>visual_acceptance_assets/02_portal_v3.png</code>；尺寸：1440x1200；大小：62519 bytes；非空：True</p>
+      </div>
+      <img src='visual_acceptance_assets/02_portal_v3.png' alt='Portal V3 维护者首页 截图证据'>
+    </article>
+
+    <article class='shot'>
+      <div class='shot-copy'>
+        <h3>维护者状态面板</h3>
+        <p>展示 path binding、E2E、delivery、baseline、Portal 继承状态。</p>
+        <p class='meta'>文件：<code>visual_acceptance_assets/03_maintainer_dashboard.png</code>；尺寸：1440x1200；大小：64467 bytes；非空：True</p>
+      </div>
+      <img src='visual_acceptance_assets/03_maintainer_dashboard.png' alt='维护者状态面板 截图证据'>
+    </article>
+
+    <article class='shot'>
+      <div class='shot-copy'>
+        <h3>Agent Productization 验收展示</h3>
+        <p>展示 V2.46-V2.52 已有 HTML 验收页面。</p>
+        <p class='meta'>文件：<code>visual_acceptance_assets/04_agent_productization_acceptance.png</code>；尺寸：1440x1200；大小：145895 bytes；非空：True</p>
+      </div>
+      <img src='visual_acceptance_assets/04_agent_productization_acceptance.png' alt='Agent Productization 验收展示 截图证据'>
+    </article>
+
+    <article class='shot'>
+      <div class='shot-copy'>
+        <h3>Workspace Projects Showcase</h3>
+        <p>展示工作区项目面向人类的可视化样例。</p>
+        <p class='meta'>文件：<code>visual_acceptance_assets/05_workspace_showcase.png</code>；尺寸：1440x1200；大小：131442 bytes；非空：True</p>
+      </div>
+      <img src='visual_acceptance_assets/05_workspace_showcase.png' alt='Workspace Projects Showcase 截图证据'>
+    </article>
+
+</section>
+<section>
+  <h2>真实 E2E 数据摘要</h2>
+  <pre>{
+  &quot;codebase_id&quot;: &quot;codebase_data_service&quot;,
+  &quot;context_guidance_count&quot;: 1,
+  &quot;context_pack_id&quot;: &quot;acp_81923d158e9c06953b62&quot;,
+  &quot;dashboard_stage_status&quot;: &quot;structured_unavailable&quot;,
+  &quot;dashboard_summary&quot;: {
+    &quot;accepted_panel_count&quot;: 1,
+    &quot;non_accepted_panel_count&quot;: 4,
+    &quot;panel_count&quot;: 5
+  },
+  &quot;delivery_exit_gate&quot;: {
+    &quot;reason&quot;: &quot;manual or local temp rows require human review&quot;,
+    &quot;safe_to_delete_true_count&quot;: 0,
+    &quot;status&quot;: &quot;needs_review&quot;
+  },
+  &quot;delivery_summary&quot;: {
+    &quot;commit_candidate_count&quot;: 34,
+    &quot;file_count&quot;: 194,
+    &quot;generated_evidence_count&quot;: 134,
+    &quot;local_temp_count&quot;: 1,
+    &quot;manual_review_count&quot;: 25,
+    &quot;safe_to_delete_true_count&quot;: 0
+  },
+  &quot;external_e2e_summary&quot;: {
+    &quot;accepted_count&quot;: 1,
+    &quot;data_service_status&quot;: &quot;accepted&quot;,
+    &quot;mock_only_accepted_count&quot;: 0,
+    &quot;non_accepted_count&quot;: 3,
+    &quot;project_count&quot;: 4,
+    &quot;unavailable_accepted_count&quot;: 0
+  },
+  &quot;inventory_surface_count&quot;: 669,
+  &quot;overview_has_summary&quot;: true,
+  &quot;path_binding_statuses&quot;: {
+    &quot;HarnessOS&quot;: &quot;structured_unavailable&quot;,
+    &quot;Navia&quot;: &quot;structured_unavailable&quot;,
+    &quot;codexPat&quot;: &quot;structured_unavailable&quot;,
+    &quot;data_service&quot;: &quot;accepted&quot;
+  },
+  &quot;portal_summary&quot;: {
+    &quot;non_accepted_panel_count&quot;: 6,
+    &quot;panel_count&quot;: 6,
+    &quot;raw_mermaid_visible&quot;: false
+  },
+  &quot;snapshot_file_count&quot;: 3147,
+  &quot;snapshot_id&quot;: &quot;snap_28f8f72c5820780f946f&quot;,
+  &quot;surface_baseline_summary&quot;: {
+    &quot;breaking_count&quot;: 0,
+    &quot;compatible_count&quot;: 4,
+    &quot;needs_review_count&quot;: 0,
+    &quot;surface_count&quot;: 4
+  },
+  &quot;symbol_count&quot;: 29644,
+  &quot;trace_surface_count&quot;: 669
+}</pre>
+</section>
+<section>
+  <h2>报告文件</h2>
+  <p>截图证据目录：<code>docs/V2.x/visual_acceptance_assets/</code></p>
+  <p>本报告：<code>docs/V2.x/V2_VISUAL_AUTOMATED_ACCEPTANCE_REPORT.html</code></p>
+</section>
+</main>
+</body>
+</html>

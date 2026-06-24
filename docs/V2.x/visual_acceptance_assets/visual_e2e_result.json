@@ -1,0 +1,55 @@
+{
+  "codebase_id": "codebase_data_service",
+  "context_guidance_count": 1,
+  "context_pack_id": "acp_81923d158e9c06953b62",
+  "dashboard_stage_status": "structured_unavailable",
+  "dashboard_summary": {
+    "accepted_panel_count": 1,
+    "non_accepted_panel_count": 4,
+    "panel_count": 5
+  },
+  "delivery_exit_gate": {
+    "reason": "manual or local temp rows require human review",
+    "safe_to_delete_true_count": 0,
+    "status": "needs_review"
+  },
+  "delivery_summary": {
+    "commit_candidate_count": 34,
+    "file_count": 194,
+    "generated_evidence_count": 134,
+    "local_temp_count": 1,
+    "manual_review_count": 25,
+    "safe_to_delete_true_count": 0
+  },
+  "external_e2e_summary": {
+    "accepted_count": 1,
+    "data_service_status": "accepted",
+    "mock_only_accepted_count": 0,
+    "non_accepted_count": 3,
+    "project_count": 4,
+    "unavailable_accepted_count": 0
+  },
+  "inventory_surface_count": 669,
+  "overview_has_summary": true,
+  "path_binding_statuses": {
+    "HarnessOS": "structured_unavailable",
+    "Navia": "structured_unavailable",
+    "codexPat": "structured_unavailable",
+    "data_service": "accepted"
+  },
+  "portal_summary": {
+    "non_accepted_panel_count": 6,
+    "panel_count": 6,
+    "raw_mermaid_visible": false
+  },
+  "snapshot_file_count": 3147,
+  "snapshot_id": "snap_28f8f72c5820780f946f",
+  "surface_baseline_summary": {
+    "breaking_count": 0,
+    "compatible_count": 4,
+    "needs_review_count": 0,
+    "surface_count": 4
+  },
+  "symbol_count": 29644,
+  "trace_surface_count": 669
+}

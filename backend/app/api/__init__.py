@@ -12,6 +12,9 @@ from .v1.code_assets_architecture_intent import router as code_assets_architectu
 from .v1.code_assets_coding_agent import router as code_assets_coding_agent_target_router
 from .v1.code_assets_platform import router as code_assets_platform_target_router
 from .v1.code_assets_agent_productization import router as code_assets_agent_productization_target_router
+from .v1.code_assets_human_agent_deepening import router as code_assets_human_agent_deepening_target_router
+from .v1.code_assets_stabilization_e2e_portal import router as code_assets_stabilization_e2e_portal_target_router
+from .v1.code_assets_external_e2e_portal_delivery import router as code_assets_external_e2e_portal_delivery_target_router
 from .v1.code_assets import router as code_assets_target_router
 from .v1.data_service import target_router as data_service_target_router
 from .v1.research_notebook import provider_router as research_notebook_provider_router
@@ -29,6 +32,9 @@ api_router.include_router(code_assets_architecture_intent_target_router)
 api_router.include_router(code_assets_coding_agent_target_router)
 api_router.include_router(code_assets_platform_target_router)
 api_router.include_router(code_assets_agent_productization_target_router)
+api_router.include_router(code_assets_human_agent_deepening_target_router)
+api_router.include_router(code_assets_stabilization_e2e_portal_target_router)
+api_router.include_router(code_assets_external_e2e_portal_delivery_target_router)
 api_router.include_router(research_notebook_target_router)
 api_router.include_router(research_notebook_provider_router)
 api_router.include_router(v1_router, prefix="/v1")

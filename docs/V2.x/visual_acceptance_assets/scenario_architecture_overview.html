@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>目标架构与当前实现 - 自动化验收场景</title>
+<style>
+body{font-family:Arial,"Microsoft YaHei",sans-serif;margin:0;background:#f5f7fb;color:#172033;line-height:1.55}
+header{background:#12324a;color:white;padding:28px 42px}
+main{padding:28px 42px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:white;border:1px solid #d7dee8;border-radius:8px;padding:18px;margin-bottom:18px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+h1,h2{margin:0 0 12px} .pill{display:inline-block;padding:3px 8px;border-radius:999px;background:#e8f1ff;color:#174b7a;font-size:12px;margin-right:6px}
+table{width:100%;border-collapse:collapse;background:white}td,th{border:1px solid #d7dee8;padding:8px;text-align:left;vertical-align:top}th{background:#eef3f8}
+.status-ok{color:#126b37;font-weight:700}.status-warn{color:#9a5b00;font-weight:700}
+code{background:#eef3f8;padding:1px 4px;border-radius:4px}
+</style>
+</head>
+<body>
+<header><h1>data_service 自动化可视化验收</h1><p>目标：用真实 data_service 仓库构建项目智能 artifact，并用无头 Chrome 截图记录用户可见体验。</p></header>
+<main>
+<div class="grid">
+<section class="card"><h2>目标架构</h2><p><span class="pill">PRD</span><span class="pill">Project Intelligence</span><span class="pill">Evidence-first</span></p><ul>
+<li>Codebase Asset Registry：导入本地代码仓库。</li>
+<li>Snapshot / Inventory / Symbol / Trace：生成结构化代码事实。</li>
+<li>Overview / DevWiki / Agent Context Pack：向人类和 Agent 输出项目理解材料。</li>
+<li>Architecture / Governance：文档 claim 与 code fact 分离。</li>
+<li>Portal / Dashboard：展示 accepted、needs_review、structured_unavailable，不隐藏风险。</li>
+</ul></section>
+<section class="card"><h2>当前实现</h2><ul>
+<li>真实仓库 snapshot 文件数：<strong>3147</strong></li>
+<li>公开 surface 数：<strong>669</strong></li>
+<li>符号数：<strong>29644</strong></li>
+<li>Dashboard 面板数：<strong>5</strong></li>
+<li>外部项目路径：data_service accepted；codexPat/HarnessOS/Navia structured_unavailable。</li>
+</ul></section>
+</div>
+<section class="card"><h2>用户场景路径</h2><table><tr><th>用户</th><th>路径</th><th>验收信号</th></tr>
+<tr><td>维护者</td><td>打开 Portal / Dashboard 查看当前能用什么、风险在哪里、下一步做什么。</td><td>非 accepted 状态保持可见；外部不可用未被误写 accepted。</td></tr>
+<tr><td>Coding Agent</td><td>读取 codebase snapshot、public surface、context pack、baseline，再决定修改入口。</td><td>所有关键输出有 artifact refs 或明确 unresolved。</td></tr>
+<tr><td>架构审计者</td><td>比对 PRD 目标、当前实现、public surface baseline 和 delivery manifest。</td><td>不声称 full call graph / runtime topology / data-control flow / type inference。</td></tr>
+</table></section>
+<section class="card"><h2>真实 E2E 结果</h2><pre>{
+  &quot;codebase_id&quot;: &quot;codebase_data_service&quot;,
+  &quot;context_guidance_count&quot;: 1,
+  &quot;context_pack_id&quot;: &quot;acp_81923d158e9c06953b62&quot;,
+  &quot;dashboard_stage_status&quot;: &quot;structured_unavailable&quot;,
+  &quot;dashboard_summary&quot;: {
+    &quot;accepted_panel_count&quot;: 1,
+    &quot;non_accepted_panel_count&quot;: 4,
+    &quot;panel_count&quot;: 5
+  },
+  &quot;delivery_exit_gate&quot;: {
+    &quot;reason&quot;: &quot;manual or local temp rows require human review&quot;,
+    &quot;safe_to_delete_true_count&quot;: 0,
+    &quot;status&quot;: &quot;needs_review&quot;
+  },
+  &quot;delivery_summary&quot;: {
+    &quot;commit_candidate_count&quot;: 34,
+    &quot;file_count&quot;: 194,
+    &quot;generated_evidence_count&quot;: 134,
+    &quot;local_temp_count&quot;: 1,
+    &quot;manual_review_count&quot;: 25,
+    &quot;safe_to_delete_true_count&quot;: 0
+  },
+  &quot;external_e2e_summary&quot;: {
+    &quot;accepted_count&quot;: 1,
+    &quot;data_service_status&quot;: &quot;accepted&quot;,
+    &quot;mock_only_accepted_count&quot;: 0,
+    &quot;non_accepted_count&quot;: 3,
+    &quot;project_count&quot;: 4,
+    &quot;unavailable_accepted_count&quot;: 0
+  },
+  &quot;inventory_surface_count&quot;: 669,
+  &quot;overview_has_summary&quot;: true,
+  &quot;path_binding_statuses&quot;: {
+    &quot;HarnessOS&quot;: &quot;structured_unavailable&quot;,
+    &quot;Navia&quot;: &quot;structured_unavailable&quot;,
+    &quot;codexPat&quot;: &quot;structured_unavailable&quot;,
+    &quot;data_service&quot;: &quot;accepted&quot;
+  },
+  &quot;portal_summary&quot;: {
+    &quot;non_accepted_panel_count&quot;: 6,
+    &quot;panel_count&quot;: 6,
+    &quot;raw_mermaid_visible&quot;: false
+  },
+  &quot;snapshot_file_count&quot;: 3147,
+  &quot;snapshot_id&quot;: &quot;snap_28f8f72c5820780f946f&quot;,
+  &quot;surface_baseline_summary&quot;: {
+    &quot;breaking_count&quot;: 0,
+    &quot;compatible_count&quot;: 4,
+    &quot;needs_review_count&quot;: 0,
+    &quot;surface_count&quot;: 4
+  },
+  &quot;symbol_count&quot;: 29644,
+  &quot;trace_surface_count&quot;: 669
+}</pre></section>
+</main>
+</body></html>

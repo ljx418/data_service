@@ -1,0 +1,266 @@
+<mxfile host="Electron" agent="Codex" pages="6">
+  <diagram id="v25962-01-experience" name="01 目标体验与阶段边界">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1-title" value="V2.59-V2.62 目标体验与阶段边界" style="text;html=1;fontSize=32;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="1300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-current" value="当前已验收基础&#xa;V2.54-V2.58 人机协作加深&#xa;&#xa;已具备：&#xa;• 人类门户加深&#xa;• 智能体任务工作流&#xa;• 文档-代码证据闭环&#xa;• 多项目回归验收&#xa;• 恢复体验&#xa;• 专项测试与真实 E2E 证据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#ecfdf5;strokeColor=#059669;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="520" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-gap" value="本阶段要补的交付缺口&#xa;&#xa;1. 公开接口有测试守护，但缺少合同快照与迁移说明。&#xa;2. HarnessOS / Navia 仍可能是结构化不可用。&#xa;3. 工作树含临时目录、测试依赖、脚本、文档，缺少交付清单。&#xa;4. 人类门户尚未统一展示合同稳定、真实 E2E、恢复状态、交付状态。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fffbeb;strokeColor=#d97706;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="840" y="150" width="520" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-target" value="目标体验&#xa;&#xa;维护者打开人类门户或验收摘要后，可以快速回答：&#xa;• 对外能力是否稳定&#xa;• 哪些接口有漂移&#xa;• 四项目 E2E 覆盖到哪里&#xa;• 失败属于哪类&#xa;• 哪些文件应提交或清理&#xa;• 下一步动作和出门条件是什么" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="150" width="520" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-human" value="人类维护者&#xa;看稳定状态、E2E 覆盖、交付清单、下一步动作" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1;fillColor=#eef2ff;strokeColor=#4f46e5;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="210" y="690" width="430" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-agent" value="Coding Agent&#xa;读合同快照、影响检查、必跑测试、停止条件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1;fillColor=#f0fdf4;strokeColor=#16a34a;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="700" y="690" width="430" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-auditor" value="架构审计者&#xa;查接口一致性、漂移、真实 E2E、清理安全、门户状态渲染" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1;fillColor=#fff7ed;strokeColor=#ea580c;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="690" width="430" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-newcomer" value="新接手者&#xa;按 handoff checklist 恢复验收并定位失败原因" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fontStyle=1;fillColor=#fdf2f8;strokeColor=#db2777;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="690" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-boundary" value="硬边界&#xa;不声称完整设计意图恢复；不声称完整调用图、运行时拓扑、数据/控制流或类型推断；不把文档声明当作代码事实；不把待审查、结构化不可用、结构化阻断写成已接受；不自动删除未确认归属文件；不修改受保护 legacy 大文件。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fef2f2;strokeColor=#dc2626;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1010" width="1760" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p1-current" target="p1-gap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p1-gap" target="p1-target">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v25962-02-architecture-diff" name="02 当前架构到目标架构">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p2-title" value="当前架构与目标架构的关联关系" style="text;html=1;fontSize=32;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="1300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-current" value="当前实现实体&#xa;&#xa;服务层：human_agent_deepening/&#xa;• human_portal.py&#xa;• task_workflow.py&#xa;• evidence_loop.py&#xa;• regression.py&#xa;• restore_ux.py&#xa;• persistence.py / shared.py&#xa;&#xa;出口：MCP、CLI、HTTP&#xa;守护：专项测试、公开接口守护测试&#xa;证据：V2.54-V2.58 审计报告 / 覆盖矩阵" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#ecfdf5;strokeColor=#059669;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="500" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-v259" value="V2.59 新增实体&#xa;公开接口合同登记器&#xa;&#xa;读取：MCP/CLI/HTTP 注册表&#xa;输出：合同快照、一致性矩阵、漂移报告、迁移说明&#xa;效果：知道接口是否稳定、哪里变了、如何迁移" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="500" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-v260" value="V2.60 新增实体&#xa;真实项目 E2E 扩展运行器&#xa;&#xa;读取：真实仓库、既有 artifacts、验收命令&#xa;输出：项目矩阵、失败诊断、产物可用性&#xa;效果：区分已接受、结构化不可用、结构化阻断" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f0fdf4;strokeColor=#16a34a;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="720" y="440" width="500" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-v261" value="V2.61 新增实体&#xa;验收交付包管理器&#xa;&#xa;读取：工作树、测试依赖、脚本、文档、验收产物&#xa;输出：交付清单、清理计划、交接清单、交付审计&#xa;效果：明确提交边界和恢复路径" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fff7ed;strokeColor=#ea580c;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="120" width="560" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-v262" value="V2.62 新增实体&#xa;人类门户集成层&#xa;&#xa;读取：V2.54-V2.61 持久化产物&#xa;输出：门户状态摘要、页面分区、验收面板、project_portal_v3.html&#xa;效果：一屏呈现稳定性、E2E、恢复、交付状态" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fdf2f8;strokeColor=#db2777;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="440" width="560" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-target" value="目标架构结果&#xa;现有能力不重写；新增稳定交付层围绕已验收服务工作：合同稳定、真实 E2E、交付清理、门户集成。所有已接受结论都必须有产物路径、专项测试、真实 E2E 或结构化理由。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;fillColor=#eef2ff;strokeColor=#4f46e5;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="310" y="900" width="1580" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#2563eb;strokeWidth=2;" edge="1" parent="1" source="p2-current" target="p2-v259">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#16a34a;strokeWidth=2;" edge="1" parent="1" source="p2-current" target="p2-v260">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#ea580c;strokeWidth=2;" edge="1" parent="1" source="p2-v259" target="p2-v261">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#db2777;strokeWidth=2;" edge="1" parent="1" source="p2-v260" target="p2-v262">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-e5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p2-v261" target="p2-target">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-e6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p2-v262" target="p2-target">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v25962-03-entity-relations" name="03 架构实体关系">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p3-title" value="目标架构实体与数据流关系" style="text;html=1;fontSize=32;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="1300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-source" value="输入来源&#xa;• 已验收 V2.54-V2.58 产物&#xa;• MCP / CLI / HTTP 注册表&#xa;• 专项测试 / 公开接口守护测试&#xa;• 真实仓库：data_service、codexPat、HarnessOS、Navia&#xa;• 工作树状态、依赖、交接文档" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f8fafc;strokeColor=#475569;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="70" y="180" width="430" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-contract" value="合同稳定层&#xa;公开接口合同登记器&#xa;&#xa;• 快照构建器&#xa;• 一致性检查器&#xa;• 漂移分类器&#xa;• 迁移说明生成器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="650" y="130" width="420" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e2e" value="真实验收层&#xa;真实项目 E2E 运行器&#xa;&#xa;• 项目定位器&#xa;• 产物构建器&#xa;• 失败诊断器&#xa;• 结构化不可用/阻断记录器" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f0fdf4;strokeColor=#16a34a;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="650" y="450" width="420" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-package" value="交付整理层&#xa;验收交付包管理器&#xa;&#xa;• 交付清单&#xa;• 清理计划&#xa;• 交接清单&#xa;• 脱敏审计" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fff7ed;strokeColor=#ea580c;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="130" width="420" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-portal" value="人类入口层&#xa;人类门户集成&#xa;&#xa;• 门户状态摘要&#xa;• 验收面板&#xa;• 交付清单分区&#xa;• project_portal_v3.html" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fdf2f8;strokeColor=#db2777;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="450" width="420" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-gates" value="验收门禁&#xa;• 专项测试&#xa;• 基线回归&#xa;• 真实 E2E 或结构化理由&#xa;• PRD/规格检视&#xa;• 虚假通过审计&#xa;• 受保护文件 diff 检查" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontStyle=1;fillColor=#fef2f2;strokeColor=#dc2626;align=left;verticalAlign=top;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="230" width="330" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-artifacts" value="输出 artifact 命名空间&#xa;stabilization/&#xa;e2e_expansion/&#xa;packaging/&#xa;portal_integration/&#xa;&#xa;所有 public output 必须 repo-relative 或 artifact URI，不暴露本地私有路径。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#eef2ff;strokeColor=#4f46e5;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="500" y="900" width="1200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p3-source" target="p3-contract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p3-source" target="p3-e2e">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p3-contract" target="p3-package">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p3-e2e" target="p3-portal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p3-package" target="p3-portal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#dc2626;strokeWidth=2;" edge="1" parent="1" source="p3-portal" target="p3-gates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-e7" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#4f46e5;strokeWidth=2;" edge="1" parent="1" source="p3-portal" target="p3-artifacts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v25962-04-plan" name="04 开发与验收计划">
+    <mxGraphModel dx="2066" dy="1053" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p4-title" parent="1" style="text;html=1;fontSize=32;fontStyle=1;strokeColor=none;fillColor=none;align=left;" value="开发与验收计划：每阶段先审计，后实现，再验收" vertex="1">
+          <mxGeometry height="60" width="1500" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-gate" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontStyle=1;fillColor=#fef2f2;strokeColor=#dc2626;align=left;verticalAlign=top;spacing=14;" value="阶段开始前固定门禁&#xa;1. phase development plan&#xa;2. phase acceptance plan&#xa;3. pre-implementation audit&#xa;4. 关闭 fatal / major finding&#xa;5. 确认可用真实项目和不可用结构化规则" vertex="1">
+          <mxGeometry height="300" width="420" x="70" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-v259" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eff6ff;strokeColor=#2563eb;align=left;verticalAlign=top;spacing=14;" value="V2.59&#xa;公开接口稳定化&#xa;&#xa;完成后体验：&#xa;维护者看到接口是否稳定；Agent 获得合同快照；审计者看到漂移与迁移说明。&#xa;&#xa;验收：快照、一致性、漂移、迁移说明、守护测试、真实 data_service E2E。" vertex="1">
+          <mxGeometry height="380" width="360" x="610" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-v260" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f0fdf4;strokeColor=#16a34a;align=left;verticalAlign=top;spacing=14;" value="V2.60&#xa;真实项目 E2E 扩展&#xa;&#xa;完成后体验：&#xa;维护者看到四项目验收状态和失败分类；不可用项目有复查动作。&#xa;&#xa;验收：data_service 已接受；外部项目已接受或有结构化理由；mock-only 拒绝。" vertex="1">
+          <mxGeometry height="380" width="360" x="1040" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-v261" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fff7ed;strokeColor=#ea580c;align=left;verticalAlign=top;spacing=14;" value="V2.61&#xa;Acceptance Packaging&#xa;&#xa;完成后体验：&#xa;维护者知道哪些文件应提交、哪些是临时产物；新接手者按 checklist 恢复。&#xa;&#xa;验收：manifest、cleanup plan、handoff、redaction、无自动删除。" vertex="1">
+          <mxGeometry height="380" width="360" x="1470" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-v262" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fdf2f8;strokeColor=#db2777;align=left;verticalAlign=top;spacing=14;" value="V2.62&#xa;人类门户体验集成&#xa;&#xa;完成后体验：&#xa;门户一屏展示稳定性、E2E、恢复、交付、下一步动作。&#xa;&#xa;验收：只读持久化产物、状态不混淆、HTML 烟测、PRD 检视、虚假通过审计。" vertex="1">
+          <mxGeometry height="370" width="360" x="1470" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-close" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#eef2ff;strokeColor=#4f46e5;align=left;verticalAlign=top;spacing=16;" value="总阶段收口&#xa;&#xa;• V2.46-V2.58 基线回归&#xa;• V2.59-V2.62 专项测试&#xa;• 公开接口守护测试&#xa;• 真实 E2E / 结构化理由&#xa;• compileall、diff check、受保护 diff&#xa;• PRD/规格检视、虚假通过审计、验收审计" vertex="1">
+          <mxGeometry height="300" width="790" x="410" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-e1" edge="1" parent="1" source="p4-gate" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" target="p4-v259">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-e2" edge="1" parent="1" source="p4-v259" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" target="p4-v260">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-e3" edge="1" parent="1" source="p4-v260" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" target="p4-v261">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-e4" edge="1" parent="1" source="p4-v261" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" target="p4-v262">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-e5" edge="1" parent="1" source="p4-v262" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" target="p4-close">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v25962-05-milestones" name="05 里程碑与出门条件">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p5-title" value="项目里程碑与出门条件" style="text;html=1;fontSize=32;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="1200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-m0" value="M0 阶段准备&#xa;• V2.54-V2.58 已接受&#xa;• 本阶段文档齐全&#xa;• 无致命/重大规划发现" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f8fafc;strokeColor=#475569;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="190" width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-m1" value="M1 V2.59&#xa;合同稳定出门&#xa;• 合同快照&#xa;• 一致性矩阵&#xa;• 漂移报告&#xa;• 迁移说明&#xa;• 守护测试 + 真实 E2E" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#eff6ff;strokeColor=#2563eb;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="430" y="190" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-m2" value="M2 V2.60&#xa;真实 E2E 出门&#xa;• data_service 已接受&#xa;• 外部项目有真实结果或结构化原因&#xa;• 不可用不计已接受&#xa;• mock-only 拒绝" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f0fdf4;strokeColor=#16a34a;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="780" y="190" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-m3" value="M3 V2.61&#xa;交付整理出门&#xa;• package manifest&#xa;• cleanup plan&#xa;• handoff checklist&#xa;• package audit&#xa;• 不自动删除未知文件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fff7ed;strokeColor=#ea580c;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="190" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-m4" value="M4 V2.62&#xa;门户集成出门&#xa;• 状态摘要&#xa;• 页面分区&#xa;• 验收面板&#xa;• portal_v3.html&#xa;• 状态不混淆" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fdf2f8;strokeColor=#db2777;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="190" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-m5" value="M5 总阶段收口&#xa;• 覆盖矩阵回填&#xa;• 基线回归&#xa;• 专项测试&#xa;• 真实 E2E / 结构化理由&#xa;• PRD/规格检视&#xa;• 虚假通过审计&#xa;• 受保护 diff 为空" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fontStyle=1;fillColor=#eef2ff;strokeColor=#4f46e5;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="190" width="300" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-reject" value="全局打回规则&#xa;1. 使用 mock-only evidence 作为真实 E2E。&#xa;2. 结构化不可用被写成已接受。&#xa;3. 门户隐藏未解决项或待审查项。&#xa;4. 清理动作删除未确认用户文件。&#xa;5. 文档声明被当作代码事实。&#xa;6. 声称完整调用图、运行时拓扑、数据/控制流或类型推断。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fef2f2;strokeColor=#dc2626;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="250" y="720" width="1700" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p5-m0" target="p5-m1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p5-m1" target="p5-m2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p5-m2" target="p5-m3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p5-m3" target="p5-m4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-e5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p5-m4" target="p5-m5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v25962-06-acceptance" name="06 验收门槛与目标能力">
+    <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p6-title" value="验收门槛：用户能体验到什么，项目能达成什么" style="text;html=1;fontSize=32;fontStyle=1;strokeColor=none;fillColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="1500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-user" value="用户可感知功能&#xa;&#xa;• 门户显示合同稳定状态&#xa;• 门户显示四项目 E2E 覆盖&#xa;• 门户显示恢复就绪状态&#xa;• 门户显示交付清单和下一步动作&#xa;• 验收报告显示每个失败的分类和处理建议" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#eef2ff;strokeColor=#4f46e5;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="170" width="500" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-project" value="项目达成能力&#xa;&#xa;• 公开接口有可审计快照&#xa;• MCP / CLI / HTTP 一致性有矩阵&#xa;• 漂移有分类和迁移说明&#xa;• 真实 E2E 不伪造通过&#xa;• 交付清单明确提交边界&#xa;• 门户只展示有产物支撑的状态" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#ecfdf5;strokeColor=#059669;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="850" y="170" width="500" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-evidence" value="必须提供的验收证据&#xa;&#xa;• 阶段开发计划 / 验收计划 / 实施前审计&#xa;• 专项测试结果&#xa;• 公开接口守护结果&#xa;• 基线回归结果&#xa;• 真实 E2E 结果或结构化理由&#xa;• PRD/规格检视&#xa;• 虚假通过审计&#xa;• 验收审计" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff7ed;strokeColor=#ea580c;align=left;verticalAlign=top;spacing=16;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="170" width="500" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-final" value="最终出门条件&#xa;V2.59-V2.62 覆盖矩阵没有无支撑的已接受行；所有范围内能力均为已接受、结构化不可用、结构化阻断、待审查或范围外；受保护 legacy 文件 diff 为空；无未关闭致命/重大问题。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;fillColor=#fef2f2;strokeColor=#dc2626;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="760" width="1680" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p6-user" target="p6-project">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#64748b;strokeWidth=2;" edge="1" parent="1" source="p6-project" target="p6-evidence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeColor=#dc2626;strokeWidth=2;" edge="1" parent="1" source="p6-evidence" target="p6-final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
