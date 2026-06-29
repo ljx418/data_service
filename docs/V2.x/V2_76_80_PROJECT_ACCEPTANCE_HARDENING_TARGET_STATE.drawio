@@ -1,0 +1,150 @@
+<mxfile host="app.diagrams.net" modified="2026-06-30T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="v27680-p01" name="01 阶段目标与目标体验">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p01_title" value="V2.76-V2.80 阶段目标：项目验收硬化与发布闭环&#xa;把 V2.71-V2.75 已验收能力推进为可重复接入、可削减 warning、可审计控制台、可发布恢复的闭环" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="820" height="80" as="geometry"/></mxCell>
+        <mxCell id="p01_legend" value="颜色说明&#xa;绿色=已实现复用实体&#xa;蓝色=本阶段待新增实体&#xa;黄色=需增强/人工审查&#xa;红色=禁止或阻断条件&#xa;灰色=外部条件或结构化不可用" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="930" y="30" width="300" height="120" as="geometry"/></mxCell>
+        <mxCell id="p01_baseline" value="当前基线（已实现复用）&#xa;V2.63-V2.75 已有 external E2E、path binding、delivery、surface baseline、dashboard、agent memory、interactive console、release restore&#xa;当前 data_service 真实 E2E accepted；外部项目仍 structured_unavailable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="50" y="170" width="380" height="150" as="geometry"/></mxCell>
+        <mxCell id="p01_target" value="目标体验（本阶段完成后）&#xa;维护者：一页判断能否发布、为何阻断、下一步运行什么&#xa;Agent：读取 evidence-backed 状态、stop conditions、建议测试&#xa;审计者：检查 accepted 是否有真实证据，non-accepted 是否保留" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="500" y="170" width="410" height="150" as="geometry"/></mxCell>
+        <mxCell id="p01_reject" value="明确拒绝（不能过度承诺）&#xa;不声称完整恢复复杂项目设计意图&#xa;不声称 full call graph / runtime topology / data-control flow / type inference&#xa;不把文档声明当代码事实&#xa;不把 needs_review / structured_unavailable 写成 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="980" y="170" width="420" height="150" as="geometry"/></mxCell>
+        <mxCell id="p01_e1" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="p01_baseline" target="p01_target"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p01_phase76" value="V2.76 验收矩阵回填&#xa;reconciled_matrix.json&#xa;status_diff.json&#xa;目标：文档状态与真实 evidence 一致" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="410" width="250" height="125" as="geometry"/></mxCell>
+        <mxCell id="p01_phase77" value="V2.77 外部真实项目接入&#xa;project_preflight.json&#xa;e2e_rerun_records.json&#xa;目标：真实路径、preflight、E2E rerun" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="340" y="410" width="250" height="125" as="geometry"/></mxCell>
+        <mxCell id="p01_phase78" value="V2.78 Warning Reduction&#xa;warning_inventory.json&#xa;release_warning_gate.json&#xa;目标：warning owner、预算、削减、阻断" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="620" y="410" width="250" height="125" as="geometry"/></mxCell>
+        <mxCell id="p01_phase79" value="V2.79 控制台产品化&#xa;experience_model.json&#xa;panel_contract.json&#xa;目标：面板、动作、证据跳转、人工入口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="900" y="410" width="250" height="125" as="geometry"/></mxCell>
+        <mxCell id="p01_phase80" value="V2.80 发布就绪闭环&#xa;readiness_gate.json&#xa;restore_verification.json&#xa;目标：restore、smoke、warning、external、approval gate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1180" y="410" width="270" height="125" as="geometry"/></mxCell>
+        <mxCell id="p01_exp" value="完成后的目标体验不是“全部绿色”，而是“状态真实可解释”：data_service 可 accepted；外部项目无真实路径保持 structured_unavailable；release 缺人工审批保持 needs_review；warning 超预算阻断 release gate。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="180" y="640" width="1120" height="90" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p02" name="02 当前架构与目标架构差异">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p02_title" value="当前架构到目标架构：复用既有 artifacts，新增 project_acceptance_hardening 分层，不改 legacy 大文件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="920" height="60" as="geometry"/></mxCell>
+        <mxCell id="p02_current" value="已实现复用 package&#xa;external_e2e_portal_delivery/&#xa;- external_e2e.py：真实项目 E2E matrix&#xa;- path_binding.py：外部项目路径状态&#xa;- worktree_delivery.py：交付清单&#xa;- surface_baseline.py：public surface baseline&#xa;- maintainer_dashboard.py：状态首页" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="360" height="230" as="geometry"/></mxCell>
+        <mxCell id="p02_current2" value="已实现复用 package&#xa;agent_memory_release/&#xa;- external_project_closure.py：外部项目 closure&#xa;- ci_warning_governance.py：warning budget / diagnosis&#xa;- agent_memory.py：memory/evidence/acceptance state&#xa;- interactive_console.py：artifact-backed console&#xa;- release_restore.py：manifest / smoke / runbook" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="60" y="430" width="360" height="260" as="geometry"/></mxCell>
+        <mxCell id="p02_gaps" value="当前缺口（需增强）&#xa;1. V2.71-V2.75 coverage matrix 仍有 planned baseline 回填风险&#xa;2. codexPat / HarnessOS / Navia 未绑定真实路径&#xa;3. warnings 可见但没有削减闭环和 release gate&#xa;4. 控制台仍偏 artifact HTML 原型&#xa;5. release readiness 仍需 restore/smoke/approval closure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="500" y="210" width="380" height="260" as="geometry"/></mxCell>
+        <mxCell id="p02_target" value="目标新增 package&#xa;project_acceptance_hardening/&#xa;- shared.py / persistence.py&#xa;- matrix_reconciliation.py&#xa;- external_project_binding.py&#xa;- warning_reduction.py&#xa;- console_productization.py&#xa;- release_readiness.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="960" y="170" width="380" height="230" as="geometry"/></mxCell>
+        <mxCell id="p02_surface" value="目标 public surface（planned）&#xa;MCP：knowledge_code_project_acceptance_hardening_*_build/read&#xa;CLI：python -m data_service code project-acceptance-hardening ...&#xa;HTTP：/project-acceptance-hardening/{capability}&#xa;Guard：test_public_surface_guard.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="960" y="450" width="380" height="190" as="geometry"/></mxCell>
+        <mxCell id="p02_no" value="禁止默认修改&#xa;backend/app/api/v1/data_service.py&#xa;backend/data_service/service.py&#xa;禁止用文档声明替代代码事实&#xa;禁止自动删除无法确认归属文件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="500" y="560" width="380" height="150" as="geometry"/></mxCell>
+        <mxCell id="p02_e1" value="只读输入" style="endArrow=block;html=1;rounded=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="p02_current" target="p02_gaps"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p02_e2" value="只读输入" style="endArrow=block;html=1;rounded=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="p02_current2" target="p02_gaps"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p02_e3" value="补齐缺口" style="endArrow=block;html=1;rounded=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="p02_gaps" target="p02_target"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p02_e4" value="build/read parity" style="endArrow=block;html=1;rounded=0;strokeColor=#6c8ebf;" edge="1" parent="1" source="p02_target" target="p02_surface"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p03" name="03 代码实体分层与强关联交互">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p03_title" value="代码实体分层与强关联交互：上游只读 artifacts → 新阶段服务 → 持久化输出 → MCP/CLI/HTTP → 用户体验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="1040" height="60" as="geometry"/></mxCell>
+        <mxCell id="p03_inputs" value="A. 上游只读输入（已实现）&#xa;V2.71-V2.75 coverage matrix / final audit / visual report&#xa;external_e2e、path_binding、external_project_closure&#xa;ci_warning_governance、interactive_console、release_restore&#xa;public surface baseline、maintainer dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="50" y="150" width="310" height="210" as="geometry"/></mxCell>
+        <mxCell id="p03_services" value="B. 新阶段服务（待新增）&#xa;AcceptanceMatrixReconciliationService&#xa;ExternalProjectRealBindingService&#xa;CIWarningReductionService&#xa;MaintainerConsoleProductizationService&#xa;ReleaseReadinessClosureService" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="430" y="150" width="350" height="210" as="geometry"/></mxCell>
+        <mxCell id="p03_outputs" value="C. 持久化输出 artifacts&#xa;acceptance_reconciliation/reconciled_matrix.json&#xa;external_project_binding/project_preflight.json&#xa;warning_reduction/release_warning_gate.json&#xa;console_productization/panel_contract.json&#xa;release_readiness/readiness_gate.json" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="860" y="150" width="380" height="210" as="geometry"/></mxCell>
+        <mxCell id="p03_surfaces" value="D. 对外读取 surface（planned）&#xa;MCP build/read：Agent 自动调用&#xa;CLI build/read：本地恢复与验收脚本&#xa;HTTP build/read：控制台或外部工具读取&#xa;所有 read 只能读 persisted artifacts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1320" y="150" width="310" height="210" as="geometry"/></mxCell>
+        <mxCell id="p03_consumers" value="E. 消费方体验&#xa;维护者：看到状态、阻断、下一步和出门条件&#xa;Coding Agent：读取 stop conditions、建议测试和 evidence refs&#xa;审计者：验证 accepted 是否真实、unresolved 是否保留" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="560" y="520" width="520" height="150" as="geometry"/></mxCell>
+        <mxCell id="p03_state" value="状态规则贯穿全链路&#xa;planned：仅规划&#xa;accepted：真实 artifact + command/result + PRD/spec review + false-green audit&#xa;needs_review：证据弱或需人工&#xa;structured_unavailable：外部条件不可用&#xa;structured_blocker：环境或流程阻断" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="50" y="500" width="390" height="190" as="geometry"/></mxCell>
+        <mxCell id="p03_edge1" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p03_inputs" target="p03_services"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p03_edge2" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p03_services" target="p03_outputs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p03_edge3" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p03_outputs" target="p03_surfaces"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p03_edge4" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p03_surfaces" target="p03_consumers"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p03_edge5" value="状态规则约束每层" style="endArrow=block;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="p03_state" target="p03_services"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p04" name="04 外部项目真实 E2E 闭环">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p04_title" value="V2.77 外部项目真实 E2E 闭环：只有真实路径 + preflight + E2E 证据齐全才能 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="920" height="60" as="geometry"/></mxCell>
+        <mxCell id="p04_paths" value="用户提供 project path map&#xa;data_service：当前仓库，可真实 E2E&#xa;codexPat：未提供时 structured_unavailable&#xa;HarnessOS：未提供时 structured_unavailable&#xa;Navia：未提供时 structured_unavailable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="310" height="180" as="geometry"/></mxCell>
+        <mxCell id="p04_preflight" value="project_preflight.json&#xa;检查项：路径存在、可读、repo root、依赖命令、沙箱限制&#xa;输出：repo_path_status / preflight_status / unresolved / next_action" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="450" y="150" width="350" height="180" as="geometry"/></mxCell>
+        <mxCell id="p04_e2e" value="e2e_rerun_records.json&#xa;真实运行：focused commands / artifact generation / result classification&#xa;不允许 mock-only evidence 证明 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="880" y="150" width="330" height="180" as="geometry"/></mxCell>
+        <mxCell id="p04_decision" value="binding_decision_report.md&#xa;accepted：真实路径 + preflight + E2E&#xa;structured_unavailable：路径缺失或不可读&#xa;structured_blocker：依赖/沙箱阻断&#xa;needs_review：证据弱或人工判断" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1280" y="150" width="340" height="180" as="geometry"/></mxCell>
+        <mxCell id="p04_block" value="阻断与出门规则&#xa;unavailable_accepted_count 必须为 0&#xa;外部项目 unavailable 不能计入 accepted_count&#xa;真实路径属于高风险输入，报告中不得泄露本地绝对路径&#xa;外部项目缺失不能阻止 data_service 本地验收，但必须保留结构化状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="300" y="480" width="880" height="150" as="geometry"/></mxCell>
+        <mxCell id="p04_e1" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p04_paths" target="p04_preflight"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p04_e2" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p04_preflight" target="p04_e2e"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p04_e3" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p04_e2e" target="p04_decision"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p05" name="05 CI Warning Reduction 与证据链">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p05_title" value="V2.78 CI Warning Reduction：从“warning 可见”推进到“可归因、可削减、可阻断 release”" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="900" height="60" as="geometry"/></mxCell>
+        <mxCell id="p05_input" value="真实输入&#xa;pytest warning summary&#xa;V2.72 warning_budget.json&#xa;test command result&#xa;public surface guard result&#xa;compileall / git diff check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="300" height="170" as="geometry"/></mxCell>
+        <mxCell id="p05_inv" value="warning_inventory.json&#xa;字段：warning_id、category、source、owner、baseline_count、current_count、evidence_refs&#xa;无 owner 时必须 needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="440" y="150" width="340" height="170" as="geometry"/></mxCell>
+        <mxCell id="p05_plan" value="reduction_plan.json&#xa;削减动作：依赖升级、代码修复、fixture 稳定化、隔离第三方 warning、人工 review&#xa;每个动作必须有建议测试" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="860" y="150" width="340" height="170" as="geometry"/></mxCell>
+        <mxCell id="p05_gate" value="release_warning_gate.json&#xa;accepted：未超预算且 evidence 完整&#xa;needs_review：owner/证据不足&#xa;structured_blocker：超预算或真实回归&#xa;输出影响 V2.80 readiness gate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1280" y="150" width="340" height="170" as="geometry"/></mxCell>
+        <mxCell id="p05_reject" value="false-green 拒绝&#xa;不能隐藏 warning&#xa;不能通过删除测试覆盖降低 warning&#xa;不能只改报告不改 evidence&#xa;不能超预算仍 release accepted&#xa;不能把第三方 warning 直接 out_of_scope，除非有 evidence 和 owner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="360" y="470" width="820" height="150" as="geometry"/></mxCell>
+        <mxCell id="p05_e1" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p05_input" target="p05_inv"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p05_e2" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p05_inv" target="p05_plan"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p05_e3" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p05_plan" target="p05_gate"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p06" name="06 维护者控制台产品化体验">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p06_title" value="V2.79 维护者控制台产品化：不是美化 HTML，而是定义可审计的信息架构、面板契约和动作入口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="980" height="60" as="geometry"/></mxCell>
+        <mxCell id="p06_sources" value="输入 artifacts&#xa;V2.70 maintainer_dashboard&#xa;V2.74 interactive_console&#xa;V2.76 reconciled_matrix&#xa;V2.77 external_binding&#xa;V2.78 warning_reduction&#xa;V2.80 release_readiness" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="300" height="210" as="geometry"/></mxCell>
+        <mxCell id="p06_experience" value="experience_model.json&#xa;首页摘要：能否发布、阻断原因、风险优先级&#xa;目标体验：维护者不用读源码即可知道下一步" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="440" y="140" width="330" height="150" as="geometry"/></mxCell>
+        <mxCell id="p06_panel" value="panel_contract.json&#xa;面板：验收矩阵、外部项目、warning、release、人工审批&#xa;字段：panel_id、status、source_artifact_ref、evidence_refs、unresolved" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="850" y="140" width="350" height="150" as="geometry"/></mxCell>
+        <mxCell id="p06_actions" value="action_registry.json&#xa;动作：运行 matrix build/read、external-binding preflight、warning reduction、release smoke、人工 approval review&#xa;每个动作必须映射 MCP/CLI/HTTP 或人工流程" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1280" y="140" width="350" height="150" as="geometry"/></mxCell>
+        <mxCell id="p06_user" value="用户可见效果&#xa;看到：状态、证据路径、阻断原因、下一步命令、人工决策入口&#xa;不会看到：被隐藏的 unavailable、被包装成绿色的 warning、没有证据的 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="440" y="430" width="760" height="130" as="geometry"/></mxCell>
+        <mxCell id="p06_reject" value="禁止设计&#xa;不做纯营销式页面&#xa;不做只有成功摘要的仪表盘&#xa;不在 UI 文案里创造 artifact 外事实&#xa;不隐藏 needs_review / structured_unavailable / structured_blocker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="1230" y="420" width="360" height="150" as="geometry"/></mxCell>
+        <mxCell id="p06_e1" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p06_sources" target="p06_experience"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p06_e2" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p06_experience" target="p06_panel"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p06_e3" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p06_panel" target="p06_actions"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p06_e4" value="驱动维护者体验" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p06_actions" target="p06_user"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p07" name="07 Release Readiness 与 Restore 闭环">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p07_title" value="V2.80 Release Readiness Closure：机器验收和人工审批分离，缺一项都不能伪装成 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="900" height="60" as="geometry"/></mxCell>
+        <mxCell id="p07_restore" value="restore_verification.json&#xa;干净环境恢复步骤&#xa;依赖 baseline&#xa;失败归因：dependency_drift / sandbox_limit / artifact_missing / real_regression / needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="150" width="330" height="170" as="geometry"/></mxCell>
+        <mxCell id="p07_smoke" value="smoke_run_records.json&#xa;MCP smoke&#xa;CLI smoke&#xa;HTTP smoke&#xa;focused tests&#xa;public surface guard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="470" y="150" width="300" height="170" as="geometry"/></mxCell>
+        <mxCell id="p07_gate" value="readiness_gate.json&#xa;聚合：restore_status、smoke_status、warning_gate_status、external_project_status、redaction_status、human_approval_status&#xa;输出 readiness_status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="850" y="150" width="390" height="170" as="geometry"/></mxCell>
+        <mxCell id="p07_human" value="人工审批 gate&#xa;缺失：needs_review&#xa;拒绝：structured_blocker&#xa;批准：可进入 release accepted 判断&#xa;不能由自动化脚本默认批准" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="1320" y="150" width="300" height="170" as="geometry"/></mxCell>
+        <mxCell id="p07_manifest" value="handoff_package_manifest.json / release_closure_report.md&#xa;列出 artifact、surface、restore runbook、smoke records、redaction result、unresolved、next actions&#xa;public output 不得泄露本地绝对路径、secret、token、raw traceback、private venv path" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="360" y="470" width="850" height="140" as="geometry"/></mxCell>
+        <mxCell id="p07_e1" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p07_restore" target="p07_smoke"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p07_e2" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p07_smoke" target="p07_gate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p07_e3" value="" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p07_gate" target="p07_human"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p07_e4" value="形成交付包" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="p07_gate" target="p07_manifest"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v27680-p08" name="08 里程碑、验收门槛与出门条件">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p08_title" value="开发与验收计划：每个子阶段先计划/审计，后实现；每个 accepted 都要有真实证据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2a33;fontColor=#ffffff;strokeColor=#1f2a33;fontStyle=1;fontSize=16;" vertex="1" parent="1"><mxGeometry x="50" y="30" width="920" height="60" as="geometry"/></mxCell>
+        <mxCell id="p08_m1" value="Phase 152 / V2.76&#xa;Acceptance Matrix Reconciliation&#xa;验收：planned/accepted diff、evidence requirement、needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="50" y="140" width="280" height="110" as="geometry"/></mxCell>
+        <mxCell id="p08_m2" value="Phase 153 / V2.77&#xa;External Project Real Binding&#xa;验收：真实路径、preflight、E2E rerun、unavailable_accepted_count=0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="360" y="140" width="300" height="110" as="geometry"/></mxCell>
+        <mxCell id="p08_m3" value="Phase 154 / V2.78&#xa;CI Warning Reduction&#xa;验收：owner、budget、reduction plan、release warning gate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="690" y="140" width="280" height="110" as="geometry"/></mxCell>
+        <mxCell id="p08_m4" value="Phase 155 / V2.79&#xa;Console Productization&#xa;验收：panel contract、action registry、non-accepted 可见" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1000" y="140" width="280" height="110" as="geometry"/></mxCell>
+        <mxCell id="p08_m5" value="Phase 156 / V2.80&#xa;Release Readiness Closure&#xa;验收：restore、smoke、warning、external、redaction、approval gate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1310" y="140" width="300" height="110" as="geometry"/></mxCell>
+        <mxCell id="p08_enter" value="进入开发门槛&#xa;1. phase-specific development plan&#xa;2. acceptance plan&#xa;3. pre-implementation audit&#xa;4. fatal/major=0&#xa;5. protected legacy strategy&#xa;6. real data E2E strategy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="120" y="380" width="360" height="180" as="geometry"/></mxCell>
+        <mxCell id="p08_exit" value="出门验收门槛&#xa;focused tests + public surface guard&#xa;真实 data_service E2E&#xa;外部项目 accepted 或 structured unavailable/blocker&#xa;PRD/spec review&#xa;false-green audit&#xa;protected legacy diff check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="560" y="380" width="420" height="180" as="geometry"/></mxCell>
+        <mxCell id="p08_stop" value="必须停止并回到计划&#xa;需要修改 protected legacy 文件&#xa;unavailable / needs_review 写成 accepted&#xa;mock-only evidence accepted&#xa;warning 通过删除测试覆盖消失&#xa;release 缺人工审批却 accepted&#xa;public artifact 泄露敏感信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1060" y="380" width="440" height="180" as="geometry"/></mxCell>
+        <mxCell id="p08_result" value="最终目标体验&#xa;维护者看到的是“真实可发布/真实阻断/真实待审”的状态，而不是全绿报告；Agent 获得可执行下一步；审计者能从每个结论追溯到 artifact、命令和证据。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="250" y="690" width="1040" height="90" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
