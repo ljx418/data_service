@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V2.71-V2.75 阶段性自动化可视化验收报告</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172026;
+      --muted: #5c6972;
+      --line: #d7dee3;
+      --bg: #f6f8f9;
+      --panel: #ffffff;
+      --ok: #0f7b55;
+      --warn: #9a5b00;
+      --block: #9c2436;
+      --blue: #2456a6;
+      --new: #e8f3ff;
+      --done: #e9f7ef;
+      --review: #fff4de;
+      --unavailable: #f7e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    header {
+      padding: 36px 44px 26px;
+      background: #1f2a33;
+      color: #fff;
+    }
+    header h1 { margin: 0 0 10px; font-size: 30px; letter-spacing: 0; }
+    header p { margin: 4px 0; color: #d9e2e8; max-width: 1180px; }
+    main { padding: 28px 44px 48px; max-width: 1440px; margin: 0 auto; }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 0 0 22px;
+    }
+    h2 { margin: 0 0 16px; font-size: 22px; }
+    h3 { margin: 20px 0 10px; font-size: 17px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fff;
+      min-height: 116px;
+    }
+    .card.done { background: var(--done); }
+    .card.new { background: var(--new); }
+    .card.review { background: var(--review); }
+    .card.unavailable { background: var(--unavailable); }
+    .label { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+    .value { font-size: 26px; font-weight: 700; }
+    .status {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid currentColor;
+    }
+    .accepted { color: var(--ok); }
+    .needs-review { color: var(--warn); }
+    .unavailable-status { color: var(--block); }
+    .muted { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid var(--line); padding: 10px 12px; vertical-align: top; text-align: left; }
+    th { background: #edf2f5; }
+    code {
+      background: #eef2f5;
+      border: 1px solid #d8e0e6;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-family: Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+    }
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 40px 1fr 40px 1fr;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .node {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: #fff;
+    }
+    .arrow { display: grid; place-items: center; color: var(--blue); font-weight: 700; }
+    figure { margin: 16px 0 0; }
+    figure img {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; }
+    .notice {
+      border-left: 4px solid var(--warn);
+      background: #fff8e8;
+      padding: 12px 14px;
+      margin: 14px 0;
+    }
+    @media (max-width: 900px) {
+      header, main { padding-left: 18px; padding-right: 18px; }
+      .grid, .grid.two, .flow { grid-template-columns: 1fr; }
+      .arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>V2.71-V2.75 阶段性自动化可视化验收报告</h1>
+    <p>验收日期：2026-06-29。语言：中文。证据来源：本地代码、原始 PRD/目标架构文档、focused tests、真实 data_service E2E、无头浏览器截图。</p>
+    <p>边界声明：本报告不声称完整恢复复杂项目设计意图，不声称 full call graph、runtime topology、data/control flow 或 type inference；不把 documentation claim 当成 code fact。</p>
+  </header>
+  <main>
+    <section id="verdict">
+      <h2>1. 验收结论</h2>
+      <div class="grid">
+        <div class="card done">
+          <div class="label">阶段测试</div>
+          <div class="value">67 passed</div>
+          <div class="muted">V2.46-V2.75 + public surface guard</div>
+        </div>
+        <div class="card review">
+          <div class="label">Warnings</div>
+          <div class="value">41</div>
+          <div class="muted">保留为 CI warning governance 可见治理项</div>
+        </div>
+        <div class="card done">
+          <div class="label">真实项目 E2E</div>
+          <div class="value">data_service</div>
+          <div class="muted">当前仓库真实导入并生成 artifact</div>
+        </div>
+        <div class="card review">
+          <div class="label">Release readiness</div>
+          <div class="value">needs_review</div>
+          <div class="muted">未伪装成 accepted</div>
+        </div>
+      </div>
+      <div class="notice">阶段性评价：实现与本阶段 PRD/目标架构主线一致，focused tests 与真实 data_service E2E 通过；外部项目无真实路径仍保持 structured_unavailable，发布审批仍保持 needs_review。</div>
+    </section>
+
+    <section id="architecture">
+      <h2>2. 目标架构与当前实现</h2>
+      <div class="flow">
+        <div class="node">
+          <h3>当前基线</h3>
+          <p>V2.63-V2.70 已提供 external E2E、path binding、worktree delivery、surface baseline、Portal V3+、maintainer dashboard。</p>
+          <p><span class="status accepted">已实现</span></p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="node">
+          <h3>本阶段新增核心</h3>
+          <p><code>agent_memory_release</code> 独立 package：external closure、CI warning governance、Agent memory、interactive console、release restore。</p>
+          <p><span class="status accepted">已实现并测试</span></p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="node">
+          <h3>对外能力</h3>
+          <p>MCP/CLI/HTTP build/read parity 已接入 public surface guard；控制台和报告只展示 artifact-backed 状态。</p>
+          <p><span class="status accepted">可调用</span></p>
+        </div>
+      </div>
+      <table>
+        <thead><tr><th>架构实体</th><th>当前实现状态</th><th>证据</th><th>边界</th></tr></thead>
+        <tbody>
+          <tr><td>External Project Closure</td><td><span class="status accepted">accepted</span></td><td>真实 E2E：accepted_count=1，unavailable_accepted_count=0</td><td>外部项目不可用不 accepted</td></tr>
+          <tr><td>CI Warning Governance</td><td><span class="status accepted">accepted</span></td><td>warning budget artifact 与 focused tests</td><td>warnings 不隐藏</td></tr>
+          <tr><td>Agent Long-term Memory</td><td><span class="status accepted">accepted</span></td><td>memory item=2，recommendation=2</td><td>不是通用聊天记忆</td></tr>
+          <tr><td>Interactive Maintainer Console</td><td><span class="status unavailable-status">structured_unavailable</span></td><td>控制台保留 non-accepted 状态</td><td>不硬编码 accepted</td></tr>
+          <tr><td>Release Restore Packaging</td><td><span class="status needs-review">needs_review</span></td><td>redaction_status=accepted，readiness_status=needs_review</td><td>发布审批需人工确认</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="test-coverage">
+      <h2>3. 自动化验收与覆盖</h2>
+      <table>
+        <thead><tr><th>检查项</th><th>命令/来源</th><th>结果</th><th>评价</th></tr></thead>
+        <tbody>
+          <tr><td>V2.46-V2.75 focused tests</td><td><code>pytest</code> 阶段测试集合</td><td>67 passed, 41 warnings</td><td>通过；warnings 保留治理</td></tr>
+          <tr><td>编译检查</td><td><code>python3 -m compileall</code></td><td>通过</td><td>未发现语法级失败</td></tr>
+          <tr><td>格式检查</td><td><code>git diff --check</code></td><td>通过</td><td>无 whitespace error</td></tr>
+          <tr><td>Legacy 边界</td><td><code>git diff --name-only</code></td><td>无输出</td><td>受保护 legacy 文件未改动</td></tr>
+          <tr><td>Public surface</td><td><code>test_public_surface_guard.py</code></td><td>通过</td><td>新增 MCP/CLI/HTTP surface 已纳入 guard</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="real-e2e">
+      <h2>4. 真实 data_service E2E 结果</h2>
+      <div class="grid">
+        <div class="card done"><div class="label">codebase_id</div><div class="value">codebase_data_service</div></div>
+        <div class="card done"><div class="label">external E2E accepted</div><div class="value">1 / 4</div></div>
+        <div class="card unavailable"><div class="label">structured_unavailable</div><div class="value">3</div></div>
+        <div class="card done"><div class="label">unavailable accepted</div><div class="value">0</div></div>
+      </div>
+      <table>
+        <thead><tr><th>字段</th><th>观测值</th><th>验收含义</th></tr></thead>
+        <tbody>
+          <tr><td>path_binding.accepted_count</td><td>1</td><td>当前 data_service 真实路径已绑定</td></tr>
+          <tr><td>closure.accepted_count</td><td>1</td><td>只接受有真实证据的 data_service</td></tr>
+          <tr><td>closure.structured_unavailable_count</td><td>3</td><td>codexPat、HarnessOS、Navia 未提供真实路径</td></tr>
+          <tr><td>surface_breaking_count</td><td>0</td><td>本轮未发现 breaking public surface drift</td></tr>
+          <tr><td>worktree_safe_to_delete_true_count</td><td>0</td><td>未自动把任何文件标记为可删除</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="screenshots">
+      <h2>5. 用户场景截图证据</h2>
+      <figure>
+        <img src="visual_acceptance_assets/v2_71_75/maintainer_console.png" alt="维护者控制台截图" />
+        <figcaption>场景 1：维护者打开交互控制台，看到阶段状态、non-accepted 状态、next actions 和证据入口。</figcaption>
+      </figure>
+      <figure>
+        <img src="visual_acceptance_assets/v2_71_75/portal_v3.png" alt="Portal V3+ 截图" />
+        <figcaption>场景 2：维护者查看 Portal V3+，从项目体验视角理解状态面板和导航。</figcaption>
+      </figure>
+      <figure>
+        <img src="visual_acceptance_assets/v2_71_75/maintainer_home.png" alt="维护者首页截图" />
+        <figcaption>场景 3：维护者首页展示验收状态和不可隐藏的 non-accepted 项。</figcaption>
+      </figure>
+      <figure>
+        <img src="visual_acceptance_assets/v2_71_75/report_summary.png" alt="报告摘要截图" />
+        <figcaption>场景 4：审计者阅读本报告摘要，快速确认测试、真实 E2E、release readiness 与边界声明。</figcaption>
+      </figure>
+    </section>
+
+    <section id="risk">
+      <h2>6. 未完成项与 false-green 风险</h2>
+      <table>
+        <thead><tr><th>风险/限制</th><th>当前状态</th><th>处理结论</th></tr></thead>
+        <tbody>
+          <tr><td>codexPat、HarnessOS、Navia 未提供真实路径</td><td><span class="status unavailable-status">structured_unavailable</span></td><td>不能 accepted；需要真实路径和真实 E2E 证据</td></tr>
+          <tr><td>Release readiness</td><td><span class="status needs-review">needs_review</span></td><td>需要发布前人工审批；本报告不声称可无条件发布</td></tr>
+          <tr><td>测试 warnings</td><td><span class="status needs-review">visible warnings</span></td><td>不是当前功能 blocker，但必须继续纳入 CI warning governance</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="final">
+      <h2>7. 最终验收评价</h2>
+      <p>本轮阶段性验收通过，结论限定为：V2.71-V2.75 在当前本地 data_service 真实项目范围内通过代码检视、文档审计、功能检查、focused tests、真实 E2E 和可视化截图验收。</p>
+      <p>不通过项没有被伪装：外部项目仍是 structured_unavailable，发布 readiness 仍是 needs_review，warnings 仍可见。后续若要声明外部多项目完整 accepted，必须补充真实 repo path、依赖环境和 E2E 证据。</p>
+    </section>
+  </main>
+</body>
+</html>

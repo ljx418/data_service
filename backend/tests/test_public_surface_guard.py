@@ -252,6 +252,16 @@ V2_CODEBASE_TOOLS = {
     "knowledge_code_external_e2e_portal_delivery_surface_baseline_read",
     "knowledge_code_external_e2e_portal_delivery_dashboard_build",
     "knowledge_code_external_e2e_portal_delivery_dashboard_read",
+    "knowledge_code_agent_memory_release_external_closure_build",
+    "knowledge_code_agent_memory_release_external_closure_read",
+    "knowledge_code_agent_memory_release_ci_governance_build",
+    "knowledge_code_agent_memory_release_ci_governance_read",
+    "knowledge_code_agent_memory_release_memory_build",
+    "knowledge_code_agent_memory_release_memory_read",
+    "knowledge_code_agent_memory_release_console_build",
+    "knowledge_code_agent_memory_release_console_read",
+    "knowledge_code_agent_memory_release_release_restore_build",
+    "knowledge_code_agent_memory_release_release_restore_read",
 }
 V2_TARGET_ROUTE_ADDITIONS = {
     ("POST", "/api/ocr/provider/health"),
@@ -433,6 +443,17 @@ V2_TARGET_ROUTE_ADDITIONS = {
     ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/external-e2e-portal-delivery/dashboard/build"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/external-e2e-portal-delivery/dashboard"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/external-e2e-portal-delivery/dashboard/view"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/external-closure/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/external-closure"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/ci-governance/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/ci-governance"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/memory/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/memory"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/console/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/console"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/console/view"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/release-restore/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/agent-memory-release/release-restore"),
     ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/build"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/report"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/context-pack"),
@@ -635,7 +656,7 @@ def test_v16a_knowledge_cli_parser_matches_v15_public_surface_baseline():
             expected_nested[command] = sorted(set(expected_nested[command]) | set(additions or []))
 
     assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code"}
-    expected_nested["code"] = ["agent-productization", "architecture", "architecture-intent", "archive", "coding-agent", "context-pack", "describe", "devwiki", "external-e2e-portal-delivery", "graph", "human-agent-deepening", "import", "inventory", "list", "overview", "platform", "quality", "snapshot", "stabilization-e2e-portal", "symbols", "trace"]
+    expected_nested["code"] = ["agent-memory-release", "agent-productization", "architecture", "architecture-intent", "archive", "coding-agent", "context-pack", "describe", "devwiki", "external-e2e-portal-delivery", "graph", "human-agent-deepening", "import", "inventory", "list", "overview", "platform", "quality", "snapshot", "stabilization-e2e-portal", "symbols", "trace"]
     assert current_inventory == expected_nested
 
 

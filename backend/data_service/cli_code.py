@@ -17,6 +17,7 @@ from .cli_code_agent_productization import add_agent_productization_parser, agen
 from .cli_code_human_agent_deepening import add_human_agent_deepening_parser, human_agent_deepening_tool_payload
 from .cli_code_stabilization_e2e_portal import add_stabilization_e2e_portal_parser, stabilization_e2e_portal_tool_payload
 from .cli_code_external_e2e_portal_delivery import add_external_e2e_portal_delivery_parser, external_e2e_portal_delivery_tool_payload
+from .cli_code_agent_memory_release import add_agent_memory_release_parser, agent_memory_release_tool_payload
 from .mcp_code_tools import handle_code_tool
 from .mcp_common import blocked, envelope
 from .mcp_workspace_runtime import WorkspaceRuntime
@@ -105,6 +106,7 @@ def add_code_parser(subparsers: argparse._SubParsersAction) -> None:
     add_human_agent_deepening_parser(code_subparsers)
     add_stabilization_e2e_portal_parser(code_subparsers)
     add_external_e2e_portal_delivery_parser(code_subparsers)
+    add_agent_memory_release_parser(code_subparsers)
 
     code_describe = code_subparsers.add_parser("describe", help="Describe one codebase asset")
     code_describe.add_argument("--workspace-root", help="Managed workspace root; overrides DATA_SERVICE_WORKSPACE_ROOT for this command")
@@ -119,7 +121,7 @@ def add_code_parser(subparsers: argparse._SubParsersAction) -> None:
 
 
 def run_code_command(args: argparse.Namespace) -> int:
-    if args.code_command not in {"import", "list", "snapshot", "inventory", "symbols", "trace", "overview", "context-pack", "devwiki", "graph", "quality", "architecture", "architecture-intent", "coding-agent", "platform", "agent-productization", "human-agent-deepening", "stabilization-e2e-portal", "external-e2e-portal-delivery", "describe", "archive"}:
+    if args.code_command not in {"import", "list", "snapshot", "inventory", "symbols", "trace", "overview", "context-pack", "devwiki", "graph", "quality", "architecture", "architecture-intent", "coding-agent", "platform", "agent-productization", "human-agent-deepening", "stabilization-e2e-portal", "external-e2e-portal-delivery", "agent-memory-release", "describe", "archive"}:
         raise ValueError(f"Unknown code command: {args.code_command}")
 
     root = Path(args.workspace_root).expanduser() if getattr(args, "workspace_root", None) else None
@@ -244,6 +246,8 @@ def run_code_command(args: argparse.Namespace) -> int:
         tool_name, payload_args = stabilization_e2e_portal_tool_payload(args)
     elif args.code_command == "external-e2e-portal-delivery":
         tool_name, payload_args = external_e2e_portal_delivery_tool_payload(args)
+    elif args.code_command == "agent-memory-release":
+        tool_name, payload_args = agent_memory_release_tool_payload(args)
     elif args.code_command == "describe":
         tool_name = "knowledge_codebase_describe"
         payload_args = {
