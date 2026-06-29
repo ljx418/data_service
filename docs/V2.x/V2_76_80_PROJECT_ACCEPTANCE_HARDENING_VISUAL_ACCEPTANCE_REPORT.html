@@ -134,7 +134,7 @@
   <div class="page">
     <header class="hero">
       <h1>V2.76-V2.80 项目验收硬化阶段性自动化可视化验收报告</h1>
-      <p>验收日期：2026-06-30。报告版本：v2，已补强为人类审计导向版本。</p>
+      <p>验收日期：2026-06-30。报告版本：v3，已补强为人类审计导向版本。</p>
       <p>证据来源：原始 PRD/目标架构、本地代码、focused tests、真实 data_service E2E、Windows Chrome headless 截图、Git 提交记录。</p>
       <p>边界声明：本报告不声称完整恢复复杂项目设计意图，不声称 full call graph、runtime topology、data/control flow 或 type inference；不把 documentation claim 当 code fact。</p>
     </header>
@@ -173,7 +173,8 @@
       <table>
         <thead><tr><th>审计目标</th><th>应检查证据</th><th>通过标准</th></tr></thead>
         <tbody>
-          <tr><td>确认审计对象</td><td>Commit `b2de815`，远端 `https://github.com/ljx418/data_service.git`</td><td>本地 `HEAD...origin/main` 为 `0 0`。</td></tr>
+          <tr><td>确认实现审计对象</td><td>实现提交 `b2de815 feat: add V2.76-V2.80 project acceptance hardening`，远端 `https://github.com/ljx418/data_service.git`。</td><td>实现范围由该提交引入。</td></tr>
+          <tr><td>确认报告修订对象</td><td>报告补强提交 `a733c1c docs: strengthen V2.76-V2.80 audit evidence report`，后续报告修订以 <code>git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html</code> 复核。</td><td>报告文件必须属于当前 `HEAD`，且 `HEAD...origin/main` 为 `0 0`。</td></tr>
           <tr><td>确认规格来源</td><td>`V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md` 与 `...TARGET_ARCHITECTURE.md`</td><td>五个阶段目标和代码实体一一对应。</td></tr>
           <tr><td>确认实现完整性</td><td>`backend/data_service/code_assets/project_acceptance_hardening/`</td><td>五个服务模块、shared、persistence 均存在。</td></tr>
           <tr><td>确认对外能力</td><td>MCP / CLI / HTTP 注册和 public surface guard</td><td>10 个 MCP tools、1 个 CLI command family、10 条 HTTP routes 被测试锁定。</td></tr>
@@ -186,14 +187,26 @@
       <h2>3. Git 与证据索引</h2>
       <div class="grid two">
         <div class="card">
-          <div class="label">提交</div>
+          <div class="label">实现提交</div>
           <div class="value">b2de815</div>
           <div class="mini">`feat: add V2.76-V2.80 project acceptance hardening`</div>
         </div>
         <div class="card">
+          <div class="label">报告补强提交</div>
+          <div class="value">a733c1c</div>
+          <div class="mini">`docs: strengthen V2.76-V2.80 audit evidence report`；当前报告所属提交用 git log 命令复核。</div>
+        </div>
+      </div>
+      <div class="grid two">
+        <div class="card">
           <div class="label">远端</div>
           <div class="value">origin/main</div>
           <div class="mini">`https://github.com/ljx418/data_service.git`</div>
+        </div>
+        <div class="card">
+          <div class="label">同步复核</div>
+          <div class="value">0 / 0</div>
+          <div class="mini">`git rev-list --left-right --count HEAD...origin/main`。</div>
         </div>
       </div>
       <table>
@@ -233,6 +246,15 @@ Result: passed
 
 git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py
 Result: no diff</pre>
+      <h3>4.3 Git 与报告归属复核</h3>
+      <pre>git log -1 --oneline
+Expected after v2 report fix: a733c1c docs: strengthen V2.76-V2.80 audit evidence report
+
+git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html
+Expected: latest commit touching this report; use this command rather than trusting a self-referential hash.
+
+git rev-list --left-right --count HEAD...origin/main
+Expected: 0 0</pre>
       <div class="notice">
         warnings 没有被隐藏：它们来自既有 datetime/httpx deprecation，不作为本阶段 accepted 的替代证据。
       </div>
@@ -382,7 +404,7 @@ Result: no diff</pre>
 
     <section id="final">
       <h2>12. 最终评价</h2>
-      <p>本报告 v1 因缺少 commit、命令、public surface 明细、代码实体映射和人工复核清单，被打回补强。v2 已补齐这些缺口，并新增结构化 evidence index。</p>
+      <p>本报告 v1 因缺少 commit、命令、public surface 明细、代码实体映射和人工复核清单，被打回补强。v2 补齐主体证据后，又发现实现提交与报告修订提交混写风险；v3 将二者拆开，并新增报告归属复核命令。</p>
       <p>阶段性结论：V2.76-V2.80 项目验收硬化能力在当前本地 data_service 真实项目范围内通过代码检视、文档审计、功能检查、focused tests、真实 E2E 和 headless 可视化截图验收。</p>
       <p>出门边界：最终 release 仍不能 accepted；外部项目真实路径和人工审批必须继续保持可见 blocker / needs_review。</p>
     </section>

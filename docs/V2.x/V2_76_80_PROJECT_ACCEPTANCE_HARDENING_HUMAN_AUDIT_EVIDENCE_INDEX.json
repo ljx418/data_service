@@ -2,12 +2,21 @@
   "schema_version": "v2.76-80-human-audit-evidence-index",
   "generated_for": "V2.76-V2.80 Project Acceptance Hardening",
   "audit_document": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html",
-  "commit": {
+  "implementation_commit": {
     "hash": "b2de815",
     "message": "feat: add V2.76-V2.80 project acceptance hardening",
     "remote": "https://github.com/ljx418/data_service.git",
-    "branch": "main",
-    "remote_sync": "HEAD...origin/main = 0 0 at prior push verification"
+    "branch": "main"
+  },
+  "audit_report_revision": {
+    "known_revision_hash": "a733c1c",
+    "known_revision_message": "docs: strengthen V2.76-V2.80 audit evidence report",
+    "verification_commands": [
+      "git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html",
+      "git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_HUMAN_AUDIT_EVIDENCE_INDEX.json",
+      "git rev-list --left-right --count HEAD...origin/main"
+    ],
+    "note": "A document cannot stably contain the hash of the same commit that stores it because changing the file changes the commit hash. Use the verification commands to identify the current report revision."
   },
   "source_documents": [
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md",
