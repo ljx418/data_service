@@ -1,12 +1,391 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>V2.76-V2.80 项目验收硬化阶段性自动化可视化验收报告</title><style>
-:root{--ink:#172026;--muted:#5d6972;--line:#d8e0e6;--bg:#f6f8f9;--panel:#fff;--ok:#0f7b55;--warn:#9a5b00;--bad:#9c2436;--blue:#2456a6;--done:#e8f7ef;--review:#fff4de;--unavail:#f8e7eb;}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}.page{max-width:1280px;margin:0 auto;padding:28px}.capture{width:1180px;margin:0 auto;padding:20px;background:var(--bg)}.hero{background:#1f2a33;color:#fff;padding:28px 34px;border-radius:10px;margin-bottom:18px}.hero h1{margin:0 0 8px;font-size:30px}.hero p{margin:4px 0;color:#dce5eb}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.grid.two{grid-template-columns:repeat(2,1fr)}.card,section{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px}.card.done{background:var(--done)}.card.review{background:var(--review)}.card.unavail{background:var(--unavail)}section{margin-bottom:18px}h2{margin:0 0 14px;font-size:22px}h3{margin:14px 0 8px;font-size:16px}.label{font-size:12px;color:var(--muted);margin-bottom:6px}.value{font-size:26px;font-weight:700}.badge{display:inline-block;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700;border:1px solid currentColor}.accepted{color:var(--ok)}.review{color:var(--warn)}.unavailable,.blocker{color:var(--bad)}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}th{background:#edf2f5}.flow{display:grid;grid-template-columns:1fr 48px 1fr 48px 1fr;gap:10px;align-items:stretch}.arrow{display:grid;place-items:center;font-weight:700;color:var(--blue);font-size:24px}.node{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px}.notice{border-left:4px solid var(--warn);background:#fff8e8;padding:12px 14px;margin:12px 0}.shot{width:100%;border:1px solid var(--line);border-radius:8px;background:#fff}.muted,.mini,figcaption{color:var(--muted)}code{background:#eef2f5;border:1px solid #d8e0e6;border-radius:4px;padding:1px 5px}figure{margin:14px 0 22px}@media(max-width:900px){.page{padding:16px}.grid,.grid.two,.flow{grid-template-columns:1fr}.arrow{display:none}}
-</style></head><body><div class="page"><header class="hero"><h1>V2.76-V2.80 项目验收硬化阶段性自动化可视化验收报告</h1><p>验收日期：2026-06-30。语言：中文。证据来源：原始 PRD/目标架构、本地代码、focused tests、真实 data_service E2E、Windows Chrome headless 截图。</p><p>边界声明：本报告不声称完整恢复复杂项目设计意图，不声称 full call graph、runtime topology、data/control flow 或 type inference；不把 documentation claim 当 code fact。</p></header>
-<section><h2>1. 阶段性验收结论</h2><div class="grid"><div class="card done"><div class="label">自动化测试</div><div class="value">24 passed</div><div class="mini">V2.71-V2.80 + public surface guard</div></div><div class="card done"><div class="label">Compile</div><div class="value">passed</div><div class="mini">backend/data_service + app/api + tests</div></div><div class="card done"><div class="label">Protected files</div><div class="value">no diff</div><div class="mini">legacy 大文件未修改</div></div><div class="card unavail"><div class="label">Release readiness</div><div class="value">structured_unavailable</div><div class="mini">没有虚假放行</div></div></div><div class="notice">阶段评价：本阶段实现通过自动化与真实 data_service E2E；外部项目真实路径和高风险人工审批未闭环，因此最终发布状态不能写 accepted。</div></section>
-<section><h2>2. 目标架构与当前实现</h2><table><thead><tr><th>目标架构实体</th><th>当前实现</th><th>验收状态</th></tr></thead><tbody><tr><td>Acceptance Matrix Reconciler</td><td><code>matrix_reconciliation.py</code>，读取 persisted artifact，不用文档声明直接验收</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>External Project Real Binder</td><td><code>external_project_binding.py</code>，真实路径预检与 E2E rerun 状态分离</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>CI Warning Gate</td><td><code>warning_reduction.py</code>，warning 超预算会阻断 release gate</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>Maintainer Console Product Model</td><td><code>console_productization.py</code>，聚合状态面板并保留 non-accepted 状态</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>Release Readiness Closure</td><td><code>release_readiness.py</code>，聚合机器检查与人工审批</td><td><span class="badge unavailable">structured_unavailable</span></td></tr></tbody></table><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/architecture.png" alt="目标架构与当前实现截图"><figcaption>截图 1：目标输入、当前实现实体、用户可见结果之间的关系。</figcaption></figure></section>
-<section><h2>3. 自动化测试与端到端验收</h2><table><thead><tr><th>检查项</th><th>结果</th><th>说明</th></tr></thead><tbody><tr><td>Focused + regression tests</td><td><span class="badge accepted">accepted</span></td><td>24 passed，15 warnings；warnings 未隐藏。</td></tr><tr><td>真实 data_service E2E</td><td><span class="badge accepted">accepted</span></td><td>当前仓库真实导入为 <code>data_service_real</code>。</td></tr><tr><td>外部项目</td><td><span class="badge unavailable">structured_unavailable</span></td><td>3 个外部仓库未提供真实路径，未写成 accepted。</td></tr><tr><td>public surface guard</td><td><span class="badge accepted">accepted</span></td><td>新增 10 个 MCP tools、CLI 子命令和 HTTP route 已锁定。</td></tr><tr><td>受保护 legacy 文件</td><td><span class="badge accepted">accepted</span></td><td><code>data_service.py</code> 与 <code>service.py</code> 无 diff。</td></tr></tbody></table><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/overview.png" alt="验收总览截图"><figcaption>截图 2：维护者总览显示测试、真实项目、外部项目和发布状态。</figcaption></figure></section>
-<section><h2>4. 用户场景体验路径截图</h2><h3>场景 1：验收矩阵对齐</h3><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/acceptance_matrix.png" alt="验收矩阵截图"><figcaption>文档计划状态与真实 artifact evidence 状态并列展示，避免 documentation claim 直接变成 accepted。</figcaption></figure><h3>场景 2：外部项目真实绑定</h3><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/external_binding.png" alt="外部项目绑定截图"><figcaption>data_service accepted；codexPat、HarnessOS、Navia 保持 structured_unavailable，unavailable_accepted_count = 0。</figcaption></figure><h3>场景 3：CI Warning 出门门禁</h3><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/warning_gate.png" alt="warning gate 截图"><figcaption>本轮真实 E2E 使用显式 warning summary，warning gate accepted；超预算路径由 focused test 覆盖。</figcaption></figure><h3>场景 4：维护者状态面板</h3><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/maintainer_console.png" alt="维护者状态面板截图"><figcaption>状态面板展示来源 artifact、当前状态和下一步；不会隐藏 structured_unavailable 或 needs_review。</figcaption></figure><h3>场景 5：发布就绪闭环</h3><figure><img class="shot" src="visual_acceptance_assets/v2_76_80/release_readiness.png" alt="发布就绪截图"><figcaption>release readiness 保留外部项目和人工审批阻塞项，没有虚假 accepted。</figcaption></figure></section>
-<section><h2>5. PRD / 规格检视</h2><table><thead><tr><th>PRD 目标</th><th>实现证据</th><th>结论</th></tr></thead><tbody><tr><td>维护者看到文档矩阵、验收报告和真实 artifact 状态一致</td><td>V2.76 reconciled matrix + status diff</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>维护者确认外部项目是否真实可用</td><td>V2.77 project preflight + e2e rerun records</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>warning 不作为隐性风险进入发布</td><td>V2.78 release warning gate</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>维护者能从状态面板看到 blockers 与下一步</td><td>V2.79 experience model + panel contract</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>发布前能看到 restore、smoke、handoff、人工审批闭环</td><td>V2.80 readiness gate</td><td><span class="badge unavailable">structured_unavailable</span></td></tr></tbody></table></section>
-<section><h2>6. False-green Audit</h2><div class="notice">未通过项不会被改写成 accepted；本报告把它们作为验收风险保留。</div><table><thead><tr><th>风险</th><th>观测结果</th><th>处理</th></tr></thead><tbody><tr><td>外部项目不可用被误写 accepted</td><td>structured_unavailable_count = 3，unavailable_accepted_count = 0</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>缺人工审批却发布 accepted</td><td>human_approval 仍 needs_review</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>文档声明当代码事实</td><td>矩阵行使用 persisted artifact evidence</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>浏览器截图证据虚假</td><td>截图由 Windows Chrome headless 对真实 E2E artifact 场景页生成；不是手工伪造</td><td><span class="badge accepted">accepted</span></td></tr><tr><td>目标架构文档边界声明密度</td><td>PRD、pre-audit、drawio、final audit 已声明；目标架构未重复完整列出</td><td><span class="badge review">needs_review</span></td></tr></tbody></table></section>
-<section><h2>7. 最终验收评价</h2><p>本轮阶段性验收通过，限定结论为：V2.76-V2.80 项目验收硬化能力在当前本地 data_service 真实项目范围内通过代码检视、文档审计、功能检查、focused tests、真实 E2E 和 headless 可视化截图验收。</p><p>不应声明最终发布 accepted：外部项目真实路径与人工审批仍未闭环，当前正确状态是 <code>structured_unavailable</code>。</p></section>
-</div></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V2.76-V2.80 项目验收硬化阶段性自动化可视化验收报告</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172026;
+      --muted: #5d6972;
+      --line: #d8e0e6;
+      --bg: #f6f8f9;
+      --panel: #ffffff;
+      --ok: #0f7b55;
+      --warn: #9a5b00;
+      --bad: #9c2436;
+      --blue: #2456a6;
+      --done: #e8f7ef;
+      --review: #fff4de;
+      --unavail: #f8e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    .page { max-width: 1280px; margin: 0 auto; padding: 28px; }
+    .hero {
+      background: #1f2a33;
+      color: #fff;
+      padding: 28px 34px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+    .hero h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
+    .hero p { margin: 4px 0; color: #dce5eb; }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+    h2 { margin: 0 0 14px; font-size: 22px; }
+    h3 { margin: 16px 0 8px; font-size: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      min-height: 110px;
+    }
+    .card.done { background: var(--done); }
+    .card.review { background: var(--review); }
+    .card.unavail { background: var(--unavail); }
+    .label { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .value { font-size: 25px; font-weight: 700; overflow-wrap: anywhere; }
+    .mini, .muted, figcaption { color: var(--muted); }
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid currentColor;
+      white-space: nowrap;
+    }
+    .accepted { color: var(--ok); }
+    .needs-review { color: var(--warn); }
+    .structured-unavailable, .structured-blocker { color: var(--bad); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 9px 10px; text-align: left; vertical-align: top; }
+    th { background: #edf2f5; }
+    code {
+      background: #eef2f5;
+      border: 1px solid #d8e0e6;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-family: Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+    }
+    pre {
+      background: #111820;
+      color: #e7eef4;
+      border-radius: 8px;
+      padding: 14px;
+      overflow: auto;
+      font-size: 13px;
+    }
+    .notice {
+      border-left: 4px solid var(--warn);
+      background: #fff8e8;
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+    .critical {
+      border-left-color: var(--bad);
+      background: #fff0f2;
+    }
+    .shot {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    figure { margin: 14px 0 22px; }
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 48px 1fr 48px 1fr;
+      gap: 10px;
+      align-items: stretch;
+    }
+    .node {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .arrow { display: grid; place-items: center; font-weight: 700; color: var(--blue); font-size: 24px; }
+    @media (max-width: 900px) {
+      .page { padding: 16px; }
+      .grid, .grid.two, .flow { grid-template-columns: 1fr; }
+      .arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>V2.76-V2.80 项目验收硬化阶段性自动化可视化验收报告</h1>
+      <p>验收日期：2026-06-30。报告版本：v2，已补强为人类审计导向版本。</p>
+      <p>证据来源：原始 PRD/目标架构、本地代码、focused tests、真实 data_service E2E、Windows Chrome headless 截图、Git 提交记录。</p>
+      <p>边界声明：本报告不声称完整恢复复杂项目设计意图，不声称 full call graph、runtime topology、data/control flow 或 type inference；不把 documentation claim 当 code fact。</p>
+    </header>
+
+    <section id="verdict">
+      <h2>1. 审计结论</h2>
+      <div class="grid">
+        <div class="card done">
+          <div class="label">阶段实现</div>
+          <div class="value">可验收</div>
+          <div class="mini">V2.76-V2.80 能力已实现并有 focused tests。</div>
+        </div>
+        <div class="card done">
+          <div class="label">自动化测试</div>
+          <div class="value">24 passed</div>
+          <div class="mini">V2.71-V2.80 + public surface guard。</div>
+        </div>
+        <div class="card unavail">
+          <div class="label">最终发布状态</div>
+          <div class="value">structured_unavailable</div>
+          <div class="mini">外部项目路径和人工审批未闭环。</div>
+        </div>
+        <div class="card review">
+          <div class="label">报告可审计性</div>
+          <div class="value">补强后通过</div>
+          <div class="mini">原 v1 缺少命令、commit、surface 明细和复核清单。</div>
+        </div>
+      </div>
+      <div class="notice critical">
+        现实评价：本阶段实现可以进入阶段验收，但不能声明最终 release accepted。`codexPat`、`HarnessOS`、`Navia` 未提供真实路径，human approval 仍为 `needs_review`。
+      </div>
+    </section>
+
+    <section id="how-to-audit">
+      <h2>2. 人类审计路径</h2>
+      <table>
+        <thead><tr><th>审计目标</th><th>应检查证据</th><th>通过标准</th></tr></thead>
+        <tbody>
+          <tr><td>确认审计对象</td><td>Commit `b2de815`，远端 `https://github.com/ljx418/data_service.git`</td><td>本地 `HEAD...origin/main` 为 `0 0`。</td></tr>
+          <tr><td>确认规格来源</td><td>`V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md` 与 `...TARGET_ARCHITECTURE.md`</td><td>五个阶段目标和代码实体一一对应。</td></tr>
+          <tr><td>确认实现完整性</td><td>`backend/data_service/code_assets/project_acceptance_hardening/`</td><td>五个服务模块、shared、persistence 均存在。</td></tr>
+          <tr><td>确认对外能力</td><td>MCP / CLI / HTTP 注册和 public surface guard</td><td>10 个 MCP tools、1 个 CLI command family、10 条 HTTP routes 被测试锁定。</td></tr>
+          <tr><td>确认没有虚假验收</td><td>真实 E2E summary、截图、false-green audit</td><td>不可用和需人工审批状态不能被写成 accepted。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="repo-evidence">
+      <h2>3. Git 与证据索引</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="label">提交</div>
+          <div class="value">b2de815</div>
+          <div class="mini">`feat: add V2.76-V2.80 project acceptance hardening`</div>
+        </div>
+        <div class="card">
+          <div class="label">远端</div>
+          <div class="value">origin/main</div>
+          <div class="mini">`https://github.com/ljx418/data_service.git`</div>
+        </div>
+      </div>
+      <table>
+        <thead><tr><th>证据类型</th><th>路径或命令</th><th>状态</th></tr></thead>
+        <tbody>
+          <tr><td>结构化证据索引</td><td><code>docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_HUMAN_AUDIT_EVIDENCE_INDEX.json</code></td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>最终验收报告</td><td><code>docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FINAL_ACCEPTANCE_AUDIT_REPORT.md</code></td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>真实 E2E 本地产物</td><td><code>workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json</code></td><td><span class="badge accepted">accepted</span>，该目录被 gitignore，作为本地复核证据。</td></tr>
+          <tr><td>截图证据</td><td><code>docs/V2.x/visual_acceptance_assets/v2_76_80/*.png</code></td><td><span class="badge accepted">accepted</span>，由 Windows Chrome headless 生成。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="commands">
+      <h2>4. 可复执行命令与本轮结果</h2>
+      <h3>4.1 自动化测试</h3>
+      <pre>PYTHONPATH=.tmp/pytest-deps:backend python3 -m pytest -q \
+  backend/tests/test_v2_71_external_project_binding_closure.py \
+  backend/tests/test_v2_72_ci_warning_governance.py \
+  backend/tests/test_v2_73_agent_long_term_memory_productization.py \
+  backend/tests/test_v2_74_interactive_maintainer_console.py \
+  backend/tests/test_v2_75_release_restore_packaging.py \
+  backend/tests/test_v2_76_acceptance_matrix_reconciliation.py \
+  backend/tests/test_v2_77_external_project_real_binding.py \
+  backend/tests/test_v2_78_ci_warning_reduction.py \
+  backend/tests/test_v2_79_maintainer_console_productization.py \
+  backend/tests/test_v2_80_release_readiness_closure.py \
+  backend/tests/test_public_surface_guard.py
+
+Result: 24 passed, 15 warnings</pre>
+      <h3>4.2 编译、空白、受保护文件</h3>
+      <pre>PYTHONPATH=.tmp/pytest-deps:backend python3 -m compileall backend/data_service backend/app/api backend/tests
+Result: passed
+
+git diff --check
+Result: passed
+
+git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py
+Result: no diff</pre>
+      <div class="notice">
+        warnings 没有被隐藏：它们来自既有 datetime/httpx deprecation，不作为本阶段 accepted 的替代证据。
+      </div>
+    </section>
+
+    <section id="architecture">
+      <h2>5. 目标架构与当前实现</h2>
+      <div class="flow">
+        <div class="node">
+          <h3>规格输入</h3>
+          <p>PRD、目标架构、coverage matrix、phase gate、V2.71-V2.75 persisted artifacts。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="node">
+          <h3>实现实体</h3>
+          <p><code>project_acceptance_hardening</code> 服务包；MCP/CLI/HTTP build-read parity；public surface guard。</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="node">
+          <h3>用户可见结果</h3>
+          <p>验收矩阵、真实项目绑定、warning gate、维护者状态面板、release readiness。</p>
+        </div>
+      </div>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/architecture.png" alt="目标架构与当前实现截图" />
+        <figcaption>截图 1：目标输入、当前实现实体、用户可见结果之间的关系。</figcaption>
+      </figure>
+      <table>
+        <thead><tr><th>目标架构实体</th><th>当前实现</th><th>验收状态</th></tr></thead>
+        <tbody>
+          <tr><td>Acceptance Matrix Reconciler</td><td><code>matrix_reconciliation.py</code>，读取 persisted artifact，不用文档声明直接验收。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>External Project Real Binder</td><td><code>external_project_binding.py</code>，真实路径预检与 E2E rerun 状态分离。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>CI Warning Gate</td><td><code>warning_reduction.py</code>，warning 超预算会阻断 release gate。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>Maintainer Console Product Model</td><td><code>console_productization.py</code>，聚合状态面板并保留 non-accepted 状态。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>Release Readiness Closure</td><td><code>release_readiness.py</code>，聚合机器检查与人工审批。</td><td><span class="badge structured-unavailable">structured_unavailable</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="public-surface">
+      <h2>6. Public Surface 审计</h2>
+      <table>
+        <thead><tr><th>Surface</th><th>新增内容</th><th>测试证据</th></tr></thead>
+        <tbody>
+          <tr><td>MCP</td><td>10 个 `knowledge_code_project_acceptance_hardening_*` build/read tools。</td><td><code>test_public_surface_guard.py</code></td></tr>
+          <tr><td>CLI</td><td><code>python -m data_service code project-acceptance-hardening ...</code></td><td><code>test_public_surface_guard.py</code></td></tr>
+          <tr><td>HTTP</td><td>5 组 build/read routes：matrix、external-binding、warning-reduction、console-product、release-readiness。</td><td><code>test_public_surface_guard.py</code></td></tr>
+          <tr><td>Protected legacy files</td><td><code>backend/app/api/v1/data_service.py</code>、<code>backend/data_service/service.py</code></td><td>无 diff。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="coverage">
+      <h2>7. PRD 功能点与测试覆盖</h2>
+      <table>
+        <thead><tr><th>PRD 目标</th><th>实现证据</th><th>测试证据</th><th>结论</th></tr></thead>
+        <tbody>
+          <tr><td>维护者看到文档矩阵、验收报告和真实 artifact 状态一致。</td><td><code>matrix_reconciliation.py</code></td><td><code>test_v2_76_acceptance_matrix_reconciliation.py</code></td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>维护者配置外部项目真实路径并执行 preflight/E2E rerun。</td><td><code>external_project_binding.py</code></td><td><code>test_v2_77_external_project_real_binding.py</code></td><td><span class="badge accepted">accepted</span>，外部项目不可用状态保留。</td></tr>
+          <tr><td>维护者看到 warning owner、削减计划、预算变化和 release gate。</td><td><code>warning_reduction.py</code></td><td><code>test_v2_78_ci_warning_reduction.py</code></td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>维护者在统一控制台理解状态、风险、下一步和证据跳转。</td><td><code>console_productization.py</code></td><td><code>test_v2_79_maintainer_console_productization.py</code></td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>维护者基于 restore verification、smoke records 和出门条件判断是否发布。</td><td><code>release_readiness.py</code></td><td><code>test_v2_80_release_readiness_closure.py</code></td><td><span class="badge structured-unavailable">structured_unavailable</span>，未人工审批时不放行。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="visual-paths">
+      <h2>8. 用户场景截图证据</h2>
+      <h3>场景 1：验收矩阵对齐</h3>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/acceptance_matrix.png" alt="验收矩阵截图" />
+        <figcaption>文档计划状态与真实 artifact evidence 状态并列展示，避免 documentation claim 直接变成 accepted。</figcaption>
+      </figure>
+      <h3>场景 2：外部项目真实绑定</h3>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/external_binding.png" alt="外部项目绑定截图" />
+        <figcaption>data_service accepted；codexPat、HarnessOS、Navia 保持 structured_unavailable，unavailable_accepted_count = 0。</figcaption>
+      </figure>
+      <h3>场景 3：CI Warning 出门门禁</h3>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/warning_gate.png" alt="warning gate 截图" />
+        <figcaption>本轮真实 E2E 使用显式 warning summary，warning gate accepted；超预算路径由 focused test 覆盖。</figcaption>
+      </figure>
+      <h3>场景 4：维护者状态面板</h3>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/maintainer_console.png" alt="维护者状态面板截图" />
+        <figcaption>状态面板展示来源 artifact、当前状态和下一步；不会隐藏 structured_unavailable 或 needs_review。</figcaption>
+      </figure>
+      <h3>场景 5：发布就绪闭环</h3>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/release_readiness.png" alt="发布就绪截图" />
+        <figcaption>release readiness 保留外部项目和人工审批阻塞项，没有虚假 accepted。</figcaption>
+      </figure>
+      <h3>场景总览</h3>
+      <figure>
+        <img class="shot" src="visual_acceptance_assets/v2_76_80/overview.png" alt="维护者总览截图" />
+        <figcaption>总览截图展示自动化测试、真实项目、外部项目不可用和发布状态。</figcaption>
+      </figure>
+    </section>
+
+    <section id="false-green">
+      <h2>9. False-green Audit</h2>
+      <table>
+        <thead><tr><th>风险</th><th>观测结果</th><th>审计结论</th></tr></thead>
+        <tbody>
+          <tr><td>文档声明当作代码事实</td><td>矩阵行使用 persisted artifact evidence。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>外部项目 unavailable 被写成 accepted</td><td>`structured_unavailable_count = 3`，`unavailable_accepted_count = 0`。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>缺人工审批却发布 accepted</td><td>human approval 仍为 `needs_review`。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>warning 被隐藏</td><td>warning gate 有 focused test 覆盖超预算阻断路径。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>截图证据虚假</td><td>截图由 Windows Chrome headless 对真实 E2E 场景页生成。</td><td><span class="badge accepted">accepted</span></td></tr>
+          <tr><td>目标架构文档边界声明密度</td><td>PRD、pre-audit、drawio、final audit 已声明；target architecture 未重复完整列出。</td><td><span class="badge needs-review">needs_review</span>，非阻塞但建议后续补齐。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="review-checklist">
+      <h2>10. 人工复核清单</h2>
+      <table>
+        <thead><tr><th>检查项</th><th>预期结果</th><th>本报告证据</th></tr></thead>
+        <tbody>
+          <tr><td>报告是否提供可复执行命令？</td><td>是。</td><td>第 4 节。</td></tr>
+          <tr><td>报告是否说明 commit 和远端？</td><td>是。</td><td>第 3 节。</td></tr>
+          <tr><td>报告是否列出实现代码实体？</td><td>是。</td><td>第 5 节。</td></tr>
+          <tr><td>报告是否列出 public surface？</td><td>是。</td><td>第 6 节。</td></tr>
+          <tr><td>报告是否能证明截图非空？</td><td>是，截图文件在仓内；尺寸为 1280x900。</td><td>第 8 节和资产目录。</td></tr>
+          <tr><td>报告是否明确未完成事项？</td><td>是，外部项目路径和人工审批未闭环。</td><td>第 1、8、9、11 节。</td></tr>
+          <tr><td>报告是否允许人类复核全部阶段目标？</td><td>是，按 PRD 目标、实现、测试、截图、E2E 状态逐项映射。</td><td>第 7 节。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="limitations">
+      <h2>11. 限制与剩余风险</h2>
+      <div class="notice">
+        这份报告可以支撑本阶段自动化开发工作的人类审计，但不能证明外部项目最终验收完成，也不能替代人工 release approval。
+      </div>
+      <table>
+        <thead><tr><th>剩余风险</th><th>当前状态</th><th>下一步</th></tr></thead>
+        <tbody>
+          <tr><td>外部项目真实路径</td><td><span class="badge structured-unavailable">structured_unavailable</span></td><td>提供 `codexPat`、`HarnessOS`、`Navia` 可读 repo path 后 rerun V2.77/V2.80。</td></tr>
+          <tr><td>高风险人工审批</td><td><span class="badge needs-review">needs_review</span></td><td>由人类维护者记录 release approval evidence。</td></tr>
+          <tr><td>目标架构边界声明密度</td><td><span class="badge needs-review">needs_review</span></td><td>后续可在 target architecture 中重复列出 full-call-graph 等禁止声明。</td></tr>
+          <tr><td>旧依赖 warnings</td><td><span class="badge needs-review">needs_review</span></td><td>不阻断本阶段，但应保留在 warning governance 后续计划中。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="final">
+      <h2>12. 最终评价</h2>
+      <p>本报告 v1 因缺少 commit、命令、public surface 明细、代码实体映射和人工复核清单，被打回补强。v2 已补齐这些缺口，并新增结构化 evidence index。</p>
+      <p>阶段性结论：V2.76-V2.80 项目验收硬化能力在当前本地 data_service 真实项目范围内通过代码检视、文档审计、功能检查、focused tests、真实 E2E 和 headless 可视化截图验收。</p>
+      <p>出门边界：最终 release 仍不能 accepted；外部项目真实路径和人工审批必须继续保持可见 blocker / needs_review。</p>
+    </section>
+  </div>
+</body>
+</html>

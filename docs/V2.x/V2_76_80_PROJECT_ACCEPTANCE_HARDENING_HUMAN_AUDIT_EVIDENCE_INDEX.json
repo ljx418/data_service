@@ -1,0 +1,110 @@
+{
+  "schema_version": "v2.76-80-human-audit-evidence-index",
+  "generated_for": "V2.76-V2.80 Project Acceptance Hardening",
+  "audit_document": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html",
+  "commit": {
+    "hash": "b2de815",
+    "message": "feat: add V2.76-V2.80 project acceptance hardening",
+    "remote": "https://github.com/ljx418/data_service.git",
+    "branch": "main",
+    "remote_sync": "HEAD...origin/main = 0 0 at prior push verification"
+  },
+  "source_documents": [
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md",
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_TARGET_ARCHITECTURE.md",
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FULL_COVERAGE_MATRIX.md",
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FINAL_ACCEPTANCE_AUDIT_REPORT.md"
+  ],
+  "implementation_entities": [
+    "backend/data_service/code_assets/project_acceptance_hardening/matrix_reconciliation.py",
+    "backend/data_service/code_assets/project_acceptance_hardening/external_project_binding.py",
+    "backend/data_service/code_assets/project_acceptance_hardening/warning_reduction.py",
+    "backend/data_service/code_assets/project_acceptance_hardening/console_productization.py",
+    "backend/data_service/code_assets/project_acceptance_hardening/release_readiness.py",
+    "backend/data_service/mcp_code_project_acceptance_hardening_tools.py",
+    "backend/data_service/cli_code_project_acceptance_hardening.py",
+    "backend/app/api/v1/code_assets_project_acceptance_hardening.py"
+  ],
+  "public_surface": {
+    "mcp_tool_count": 10,
+    "cli_command_family": "python -m data_service code project-acceptance-hardening",
+    "http_route_family": "/api/workspaces/{workspace_id}/codebases/{codebase_id}/project-acceptance-hardening/*",
+    "guard_test": "backend/tests/test_public_surface_guard.py"
+  },
+  "focused_tests": [
+    "backend/tests/test_v2_76_acceptance_matrix_reconciliation.py",
+    "backend/tests/test_v2_77_external_project_real_binding.py",
+    "backend/tests/test_v2_78_ci_warning_reduction.py",
+    "backend/tests/test_v2_79_maintainer_console_productization.py",
+    "backend/tests/test_v2_80_release_readiness_closure.py"
+  ],
+  "acceptance_commands": [
+    {
+      "command": "PYTHONPATH=.tmp/pytest-deps:backend python3 -m pytest -q backend/tests/test_v2_71_external_project_binding_closure.py backend/tests/test_v2_72_ci_warning_governance.py backend/tests/test_v2_73_agent_long_term_memory_productization.py backend/tests/test_v2_74_interactive_maintainer_console.py backend/tests/test_v2_75_release_restore_packaging.py backend/tests/test_v2_76_acceptance_matrix_reconciliation.py backend/tests/test_v2_77_external_project_real_binding.py backend/tests/test_v2_78_ci_warning_reduction.py backend/tests/test_v2_79_maintainer_console_productization.py backend/tests/test_v2_80_release_readiness_closure.py backend/tests/test_public_surface_guard.py",
+      "result": "24 passed, 15 warnings"
+    },
+    {
+      "command": "PYTHONPATH=.tmp/pytest-deps:backend python3 -m compileall backend/data_service backend/app/api backend/tests",
+      "result": "passed"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    {
+      "command": "git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py",
+      "result": "no diff"
+    }
+  ],
+  "real_e2e": {
+    "summary_path": "workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json",
+    "codebase_id": "data_service_real",
+    "data_service_status": "accepted",
+    "external_projects": {
+      "codexPat": "structured_unavailable",
+      "HarnessOS": "structured_unavailable",
+      "Navia": "structured_unavailable"
+    },
+    "unavailable_accepted_count": 0,
+    "release_readiness": "structured_unavailable"
+  },
+  "visual_evidence": [
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/overview.png",
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/architecture.png",
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/acceptance_matrix.png",
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/external_binding.png",
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/warning_gate.png",
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/maintainer_console.png",
+    "docs/V2.x/visual_acceptance_assets/v2_76_80/release_readiness.png"
+  ],
+  "false_green_guards": [
+    "documentation claim is not treated as code fact",
+    "needs_review is not rewritten to accepted",
+    "structured_unavailable is not rewritten to accepted",
+    "structured_blocker is not rewritten to accepted",
+    "external unavailable projects are counted separately from accepted",
+    "human approval remains required for final release readiness"
+  ],
+  "remaining_risks": [
+    {
+      "risk": "codexPat/HarnessOS/Navia real repository paths unavailable",
+      "status": "structured_unavailable",
+      "release_blocking": true
+    },
+    {
+      "risk": "human release approval not captured",
+      "status": "needs_review",
+      "release_blocking": true
+    },
+    {
+      "risk": "target architecture document does not repeat every prohibited over-claim phrase even though PRD/pre-audit/drawio/final audit do",
+      "status": "needs_review",
+      "release_blocking": false
+    }
+  ],
+  "audit_verdict": {
+    "stage_implementation": "accepted",
+    "final_release": "not accepted",
+    "reason": "external project availability and human approval remain open"
+  }
+}
