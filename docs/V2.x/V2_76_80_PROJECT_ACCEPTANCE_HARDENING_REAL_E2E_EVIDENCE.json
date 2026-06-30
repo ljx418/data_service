@@ -1,0 +1,150 @@
+{
+  "schema_version": "v2.76-80-real-e2e-evidence-snapshot",
+  "generated_for": "V2.76-V2.80 Project Acceptance Hardening",
+  "evidence_role": "committed_human_audit_snapshot",
+  "source": {
+    "local_reproduction_source": "workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json",
+    "local_reproduction_source_is_gitignored": true,
+    "committed_snapshot": true,
+    "absolute_paths_redacted": true,
+    "secret_or_token_redacted": true,
+    "raw_traceback_redacted": true,
+    "note": "The workspace source is useful for local reproduction, but this committed snapshot is the auditable evidence available from a remote clone."
+  },
+  "codebase_id": "data_service_real",
+  "acceptance_matrix": {
+    "accepted_count": 3,
+    "needs_review_count": 2,
+    "structured_unavailable_count": 0,
+    "structured_blocker_count": 0,
+    "rows": [
+      {
+        "capability_id": "external_project_closure",
+        "title": "External project closure",
+        "status": "needs_review",
+        "artifact_ref": "agent_memory_release://data_service_real/external_project_closure/project_binding_closure.json",
+        "next_action": "review upstream artifact status"
+      },
+      {
+        "capability_id": "ci_warning_governance",
+        "title": "CI warning governance",
+        "status": "accepted",
+        "artifact_ref": "agent_memory_release://data_service_real/ci_warning_governance/ci_matrix.json",
+        "next_action": "none"
+      },
+      {
+        "capability_id": "agent_memory",
+        "title": "Agent long-term memory",
+        "status": "accepted",
+        "artifact_ref": "agent_memory_release://data_service_real/agent_memory/acceptance_state.json",
+        "next_action": "none"
+      },
+      {
+        "capability_id": "interactive_console",
+        "title": "Interactive maintainer console",
+        "status": "accepted",
+        "artifact_ref": "agent_memory_release://data_service_real/interactive_console/status_panels.json",
+        "next_action": "none"
+      },
+      {
+        "capability_id": "release_restore",
+        "title": "Release restore packaging",
+        "status": "needs_review",
+        "artifact_ref": "agent_memory_release://data_service_real/release_restore/release_manifest.json",
+        "next_action": "review upstream artifact status"
+      }
+    ]
+  },
+  "external_project_binding_rerun": {
+    "accepted_count": 1,
+    "needs_review_count": 0,
+    "structured_unavailable_count": 3,
+    "structured_blocker_count": 0,
+    "unavailable_accepted_count": 0,
+    "projects": [
+      {
+        "project_id": "data_service",
+        "preflight_status": "accepted",
+        "status": "accepted",
+        "evidence_refs": [
+          "repo://data_service/real_path_preflight",
+          "repo://data_service/real_e2e_rerun"
+        ],
+        "next_action": "none"
+      },
+      {
+        "project_id": "codexPat",
+        "preflight_status": "structured_unavailable",
+        "status": "structured_unavailable",
+        "reason": "real readable project path is not available",
+        "next_action": "provide real repository path"
+      },
+      {
+        "project_id": "HarnessOS",
+        "preflight_status": "structured_unavailable",
+        "status": "structured_unavailable",
+        "reason": "real readable project path is not available",
+        "next_action": "provide real repository path"
+      },
+      {
+        "project_id": "Navia",
+        "preflight_status": "structured_unavailable",
+        "status": "structured_unavailable",
+        "reason": "real readable project path is not available",
+        "next_action": "provide real repository path"
+      }
+    ]
+  },
+  "warning_gate": {
+    "status": "accepted",
+    "observed_warning_count": 0,
+    "warning_budget": 1,
+    "blocking_warning_count": 0,
+    "next_action": "none"
+  },
+  "maintainer_console": {
+    "stage_status": "structured_unavailable",
+    "panels": [
+      {
+        "panel_id": "acceptance_reconciliation",
+        "title": "验收矩阵对齐",
+        "status": "accepted"
+      },
+      {
+        "panel_id": "external_project_binding",
+        "title": "真实项目绑定",
+        "status": "structured_unavailable"
+      },
+      {
+        "panel_id": "warning_reduction",
+        "title": "CI warning 出门门禁",
+        "status": "accepted"
+      },
+      {
+        "panel_id": "release_readiness",
+        "title": "发布就绪闭环",
+        "status": "structured_unavailable"
+      }
+    ]
+  },
+  "release_readiness": {
+    "status": "structured_unavailable",
+    "final_release_accepted": false,
+    "blocking_reasons": [
+      "codexPat/HarnessOS/Navia real repository paths are not available",
+      "human release approval remains needs_review"
+    ]
+  },
+  "false_green_checks": {
+    "needs_review_rewritten_to_accepted": false,
+    "structured_unavailable_rewritten_to_accepted": false,
+    "structured_blocker_rewritten_to_accepted": false,
+    "unavailable_accepted_count": 0,
+    "final_release_not_accepted": true
+  },
+  "audit_verdict": {
+    "stage_implementation": "accepted",
+    "final_release": "not accepted",
+    "reason": "data_service real-project evidence is accepted, while unavailable external projects and human approval remain explicitly unresolved."
+  }
+}

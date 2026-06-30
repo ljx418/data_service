@@ -178,7 +178,7 @@
           <tr><td>确认规格来源</td><td>`V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md` 与 `...TARGET_ARCHITECTURE.md`</td><td>五个阶段目标和代码实体一一对应。</td></tr>
           <tr><td>确认实现完整性</td><td>`backend/data_service/code_assets/project_acceptance_hardening/`</td><td>五个服务模块、shared、persistence 均存在。</td></tr>
           <tr><td>确认对外能力</td><td>MCP / CLI / HTTP 注册和 public surface guard</td><td>10 个 MCP tools、1 个 CLI command family、10 条 HTTP routes 被测试锁定。</td></tr>
-          <tr><td>确认没有虚假验收</td><td>真实 E2E summary、截图、false-green audit</td><td>不可用和需人工审批状态不能被写成 accepted。</td></tr>
+          <tr><td>确认没有虚假验收</td><td>已提交的真实 E2E 证据快照、截图、false-green audit</td><td>不可用和需人工审批状态不能被写成 accepted；远端 clone 不依赖 gitignored workspace 文件。</td></tr>
         </tbody>
       </table>
     </section>
@@ -214,7 +214,8 @@
         <tbody>
           <tr><td>结构化证据索引</td><td><code>docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_HUMAN_AUDIT_EVIDENCE_INDEX.json</code></td><td><span class="badge accepted">accepted</span></td></tr>
           <tr><td>最终验收报告</td><td><code>docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FINAL_ACCEPTANCE_AUDIT_REPORT.md</code></td><td><span class="badge accepted">accepted</span></td></tr>
-          <tr><td>真实 E2E 本地产物</td><td><code>workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json</code></td><td><span class="badge accepted">accepted</span>，该目录被 gitignore，作为本地复核证据。</td></tr>
+          <tr><td>真实 E2E 提交证据</td><td><code>docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_REAL_E2E_EVIDENCE.json</code></td><td><span class="badge accepted">accepted</span>，远端 clone 可直接审计。</td></tr>
+          <tr><td>真实 E2E 本地复现来源</td><td><code>workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json</code></td><td><span class="badge review">needs_review</span>，该目录被 gitignore，只作为本机复现来源，不作为唯一验收证据。</td></tr>
           <tr><td>截图证据</td><td><code>docs/V2.x/visual_acceptance_assets/v2_76_80/*.png</code></td><td><span class="badge accepted">accepted</span>，由 Windows Chrome headless 生成。</td></tr>
         </tbody>
       </table>

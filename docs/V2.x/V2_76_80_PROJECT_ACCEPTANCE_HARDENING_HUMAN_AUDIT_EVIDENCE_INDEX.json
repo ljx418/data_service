@@ -22,7 +22,8 @@
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md",
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_TARGET_ARCHITECTURE.md",
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FULL_COVERAGE_MATRIX.md",
-    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FINAL_ACCEPTANCE_AUDIT_REPORT.md"
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FINAL_ACCEPTANCE_AUDIT_REPORT.md",
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_REAL_E2E_EVIDENCE.json"
   ],
   "implementation_entities": [
     "backend/data_service/code_assets/project_acceptance_hardening/matrix_reconciliation.py",
@@ -66,7 +67,10 @@
     }
   ],
   "real_e2e": {
-    "summary_path": "workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json",
+    "summary_path": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_REAL_E2E_EVIDENCE.json",
+    "local_reproduction_summary_path": "workspace/v2_76_80_real_workspace/v2_76_80_real_e2e_summary.json",
+    "local_reproduction_summary_is_gitignored": true,
+    "remote_audit_uses_committed_snapshot": true,
     "codebase_id": "data_service_real",
     "data_service_status": "accepted",
     "external_projects": {
