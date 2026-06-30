@@ -223,6 +223,11 @@
 
     <section id="commands">
       <h2>4. 可复执行命令与本轮结果</h2>
+      <h3>4.0 测试依赖恢复</h3>
+      <pre>python3 -m pip install -q -r backend/requirements-test.txt -t .tmp/pytest-deps
+Result: passed
+
+Note: .tmp/pytest-deps is a local dependency cache for reproducible audit commands. It is not delivery evidence and should not be committed.</pre>
       <h3>4.1 自动化测试</h3>
       <pre>PYTHONPATH=.tmp/pytest-deps:backend python3 -m pytest -q \
   backend/tests/test_v2_71_external_project_binding_closure.py \

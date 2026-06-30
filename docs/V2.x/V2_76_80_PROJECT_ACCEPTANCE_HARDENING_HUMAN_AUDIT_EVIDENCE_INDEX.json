@@ -50,6 +50,12 @@
   ],
   "acceptance_commands": [
     {
+      "command": "python3 -m pip install -q -r backend/requirements-test.txt -t .tmp/pytest-deps",
+      "result": "passed",
+      "evidence_role": "local audit dependency restore",
+      "commit_policy": ".tmp/pytest-deps is not delivery evidence and should not be committed"
+    },
+    {
       "command": "PYTHONPATH=.tmp/pytest-deps:backend python3 -m pytest -q backend/tests/test_v2_71_external_project_binding_closure.py backend/tests/test_v2_72_ci_warning_governance.py backend/tests/test_v2_73_agent_long_term_memory_productization.py backend/tests/test_v2_74_interactive_maintainer_console.py backend/tests/test_v2_75_release_restore_packaging.py backend/tests/test_v2_76_acceptance_matrix_reconciliation.py backend/tests/test_v2_77_external_project_real_binding.py backend/tests/test_v2_78_ci_warning_reduction.py backend/tests/test_v2_79_maintainer_console_productization.py backend/tests/test_v2_80_release_readiness_closure.py backend/tests/test_public_surface_guard.py",
       "result": "24 passed, 15 warnings"
     },
