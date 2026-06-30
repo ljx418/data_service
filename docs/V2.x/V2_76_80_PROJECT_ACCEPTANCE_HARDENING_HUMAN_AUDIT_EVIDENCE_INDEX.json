@@ -23,7 +23,8 @@
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_TARGET_ARCHITECTURE.md",
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FULL_COVERAGE_MATRIX.md",
     "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_FINAL_ACCEPTANCE_AUDIT_REPORT.md",
-    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_REAL_E2E_EVIDENCE.json"
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_REAL_E2E_EVIDENCE.json",
+    "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_EVIDENCE_MANIFEST.json"
   ],
   "implementation_entities": [
     "backend/data_service/code_assets/project_acceptance_hardening/matrix_reconciliation.py",
@@ -96,6 +97,7 @@
     "docs/V2.x/visual_acceptance_assets/v2_76_80/maintainer_console.png",
     "docs/V2.x/visual_acceptance_assets/v2_76_80/release_readiness.png"
   ],
+  "visual_evidence_manifest": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_EVIDENCE_MANIFEST.json",
   "false_green_guards": [
     "documentation claim is not treated as code fact",
     "needs_review is not rewritten to accepted",

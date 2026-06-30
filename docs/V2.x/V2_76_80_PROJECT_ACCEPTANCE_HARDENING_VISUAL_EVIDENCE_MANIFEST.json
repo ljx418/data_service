@@ -1,0 +1,95 @@
+{
+  "schema_version": "v2.76-80-visual-evidence-manifest",
+  "generated_for": "V2.76-V2.80 Project Acceptance Hardening",
+  "evidence_role": "committed_visual_audit_manifest",
+  "audit_document": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html",
+  "asset_directory": "docs/V2.x/visual_acceptance_assets/v2_76_80",
+  "capture_scope": {
+    "mode": "headless browser visual acceptance evidence",
+    "note": "The manifest verifies committed screenshot assets. It does not replace focused tests, real E2E evidence, or PRD/spec review."
+  },
+  "validation_summary": {
+    "screenshot_count": 7,
+    "expected_width": 1280,
+    "expected_height": 900,
+    "all_expected_assets_present": true,
+    "all_assets_nonblank_by_color_count": true
+  },
+  "screenshots": [
+    {
+      "id": "architecture",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/architecture.png",
+      "report_section": "5. Target architecture and current implementation",
+      "user_visible_claim": "Shows PRD inputs, implemented code entities, and user-visible outcomes.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 561,
+      "nonblank": true
+    },
+    {
+      "id": "acceptance_matrix",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/acceptance_matrix.png",
+      "report_section": "8. User scenario evidence",
+      "user_visible_claim": "Shows documented plan status next to persisted artifact evidence status.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 913,
+      "nonblank": true
+    },
+    {
+      "id": "external_binding",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/external_binding.png",
+      "report_section": "8. User scenario evidence",
+      "user_visible_claim": "Shows data_service accepted while codexPat, HarnessOS, and Navia remain structured_unavailable.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 904,
+      "nonblank": true
+    },
+    {
+      "id": "warning_gate",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/warning_gate.png",
+      "report_section": "8. User scenario evidence",
+      "user_visible_claim": "Shows warning gate accepted for this run while warning over-budget is covered by focused tests.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 838,
+      "nonblank": true
+    },
+    {
+      "id": "maintainer_console",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/maintainer_console.png",
+      "report_section": "8. User scenario evidence",
+      "user_visible_claim": "Shows status panels with artifact source, current status, and next actions.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 911,
+      "nonblank": true
+    },
+    {
+      "id": "release_readiness",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/release_readiness.png",
+      "report_section": "8. User scenario evidence",
+      "user_visible_claim": "Shows release readiness preserving external project and human approval blockers.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 969,
+      "nonblank": true
+    },
+    {
+      "id": "overview",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_76_80/overview.png",
+      "report_section": "8. User scenario evidence",
+      "user_visible_claim": "Shows automation, real project status, unavailable external projects, and release status summary.",
+      "width": 1280,
+      "height": 900,
+      "color_count": 1745,
+      "nonblank": true
+    }
+  ],
+  "false_green_boundaries": [
+    "Screenshots are committed visual evidence, not proof that final release is accepted.",
+    "Screenshot captions must not rewrite needs_review or structured_unavailable as accepted.",
+    "Visual evidence must be read together with focused tests and real E2E evidence snapshot."
+  ]
+}
