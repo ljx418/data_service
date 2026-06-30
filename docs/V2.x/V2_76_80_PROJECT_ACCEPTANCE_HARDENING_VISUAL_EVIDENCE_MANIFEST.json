@@ -3,6 +3,8 @@
   "generated_for": "V2.76-V2.80 Project Acceptance Hardening",
   "evidence_role": "committed_visual_audit_manifest",
   "audit_document": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html",
+  "source_page": "docs/V2.x/visual_acceptance_assets/v2_76_80/scenario_capture.html",
+  "reproduction_guide": "docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_REPRODUCTION_GUIDE.md",
   "asset_directory": "docs/V2.x/visual_acceptance_assets/v2_76_80",
   "capture_scope": {
     "mode": "headless browser visual acceptance evidence",
