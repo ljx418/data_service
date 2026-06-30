@@ -9,8 +9,8 @@
     "branch": "main"
   },
   "audit_report_revision": {
-    "known_revision_hash": "a733c1c",
-    "known_revision_message": "docs: strengthen V2.76-V2.80 audit evidence report",
+    "embedded_revision_hash": null,
+    "embedded_revision_hash_policy": "not_embedded_by_design",
     "verification_commands": [
       "git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html",
       "git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_HUMAN_AUDIT_EVIDENCE_INDEX.json",

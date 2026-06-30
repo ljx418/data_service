@@ -174,7 +174,7 @@
         <thead><tr><th>审计目标</th><th>应检查证据</th><th>通过标准</th></tr></thead>
         <tbody>
           <tr><td>确认实现审计对象</td><td>实现提交 `b2de815 feat: add V2.76-V2.80 project acceptance hardening`，远端 `https://github.com/ljx418/data_service.git`。</td><td>实现范围由该提交引入。</td></tr>
-          <tr><td>确认报告修订对象</td><td>报告补强提交 `a733c1c docs: strengthen V2.76-V2.80 audit evidence report`，后续报告修订以 <code>git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html</code> 复核。</td><td>报告文件必须属于当前 `HEAD`，且 `HEAD...origin/main` 为 `0 0`。</td></tr>
+          <tr><td>确认报告修订对象</td><td>不要依赖报告正文中的固定提交号；用 <code>git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html</code> 复核当前报告文件归属。</td><td>报告文件必须属于当前 `HEAD`，且 `HEAD...origin/main` 为 `0 0`。</td></tr>
           <tr><td>确认规格来源</td><td>`V2_76_80_PROJECT_ACCEPTANCE_HARDENING_PRD.md` 与 `...TARGET_ARCHITECTURE.md`</td><td>五个阶段目标和代码实体一一对应。</td></tr>
           <tr><td>确认实现完整性</td><td>`backend/data_service/code_assets/project_acceptance_hardening/`</td><td>五个服务模块、shared、persistence 均存在。</td></tr>
           <tr><td>确认对外能力</td><td>MCP / CLI / HTTP 注册和 public surface guard</td><td>10 个 MCP tools、1 个 CLI command family、10 条 HTTP routes 被测试锁定。</td></tr>
@@ -192,9 +192,9 @@
           <div class="mini">`feat: add V2.76-V2.80 project acceptance hardening`</div>
         </div>
         <div class="card">
-          <div class="label">报告补强提交</div>
-          <div class="value">a733c1c</div>
-          <div class="mini">`docs: strengthen V2.76-V2.80 audit evidence report`；当前报告所属提交用 git log 命令复核。</div>
+          <div class="label">报告归属</div>
+          <div class="value">命令复核</div>
+          <div class="mini">报告不能稳定自引用自身提交 hash；使用第 4.3 节命令确认当前报告归属。</div>
         </div>
       </div>
       <div class="grid two">
@@ -248,7 +248,7 @@ git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py
 Result: no diff</pre>
       <h3>4.3 Git 与报告归属复核</h3>
       <pre>git log -1 --oneline
-Expected after v2 report fix: a733c1c docs: strengthen V2.76-V2.80 audit evidence report
+Expected: 当前 HEAD；不要用报告正文里的固定提交号替代该命令。
 
 git log -1 --oneline -- docs/V2.x/V2_76_80_PROJECT_ACCEPTANCE_HARDENING_VISUAL_ACCEPTANCE_REPORT.html
 Expected: latest commit touching this report; use this command rather than trusting a self-referential hash.
@@ -404,7 +404,7 @@ Expected: 0 0</pre>
 
     <section id="final">
       <h2>12. 最终评价</h2>
-      <p>本报告 v1 因缺少 commit、命令、public surface 明细、代码实体映射和人工复核清单，被打回补强。v2 补齐主体证据后，又发现实现提交与报告修订提交混写风险；v3 将二者拆开，并新增报告归属复核命令。</p>
+      <p>本报告 v1 因缺少 commit、命令、public surface 明细、代码实体映射和人工复核清单，被打回补强。v2 补齐主体证据后，又发现实现提交与报告修订提交混写风险；v3 移除报告修订提交硬编码，只保留实现提交和报告归属复核命令。</p>
       <p>阶段性结论：V2.76-V2.80 项目验收硬化能力在当前本地 data_service 真实项目范围内通过代码检视、文档审计、功能检查、focused tests、真实 E2E 和 headless 可视化截图验收。</p>
       <p>出门边界：最终 release 仍不能 accepted；外部项目真实路径和人工审批必须继续保持可见 blocker / needs_review。</p>
     </section>
