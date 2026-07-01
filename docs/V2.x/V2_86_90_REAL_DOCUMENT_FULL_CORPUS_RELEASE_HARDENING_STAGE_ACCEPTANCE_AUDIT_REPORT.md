@@ -37,7 +37,7 @@ Phase-specific planning and pre-implementation audit baselines are now recorded 
 
 - Input repository: current `data_service` working tree.
 - Full corpus input: `docs/V2.x`.
-- Full corpus result: `accepted`, 867 processed document rows.
+- Full corpus result: `accepted`, 879 processed document rows in the latest visual-audit rerun.
 - Route A result: `needs_review`, because no user representative real document pack or manual review evidence was provided.
 - Quality review result: `needs_review`, because no actual human quality-review decisions were provided.
 - External project result: `structured_unavailable`, because `codexPat`, `HarnessOS`, and `Navia` paths were not available.

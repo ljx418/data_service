@@ -20,7 +20,7 @@ Date: 2026-07-01
 
 | PRD 能力 | 实现状态 | 真实仓库验收状态 | 证据 |
 | --- | --- | --- | --- |
-| 全量真实文档构建 | implemented | accepted | `backend/tests/test_v2_86_full_corpus_e2e_hardening.py`，真实 `docs/V2.x` 处理 867 行 |
+| 全量真实文档构建 | implemented | accepted | `backend/tests/test_v2_86_full_corpus_e2e_hardening.py`，最新可视化审计复跑真实 `docs/V2.x` 处理 879 行 |
 | HTML extractor 失败分类 | implemented | accepted | focused test 覆盖 `extractor_bug` structured blocker；真实仓库本轮无 parser failure |
 | 全量检索与 Source trace | implemented | accepted | full corpus rows 使用 `repo://docs/V2.x/...` source refs，并保留 GraphRAG claim boundary |
 | Route A 资料包合同 | implemented | needs_review | 缺用户代表性真实资料；`needs_review` 保留 |
