@@ -145,6 +145,31 @@
   </section>
 
   <section class="section">
+    <h2>审计充分性复核</h2>
+    <div class="grid two">
+      <div class="card warn">
+        <h3>初版报告判定</h3>
+        <p>初版 HTML 能帮助快速理解目标体验、架构和截图证据，但不足以让人类完整、完全、完备地审计本阶段自动化开发。</p>
+        <p>原因：命令退出码、提交/远端同步、PRD 到测试映射、实现文件清单、protected 文件检查没有作为一等证据呈现。</p>
+      </div>
+      <div class="card ok">
+        <h3>补强后判定</h3>
+        <p>已补充机器可复核证据日志和审查充分性说明，本 HTML 与证据索引组合后可以支撑阶段级人工审计。</p>
+        <p>补强文件：<code>visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md</code></p>
+      </div>
+    </div>
+    <table>
+      <tr><th>审计项</th><th>补强证据</th><th>状态</th></tr>
+      <tr><td>提交与远端同步</td><td>被审计实现提交为 <code>c89ad3f</code>；证据日志中 <code>HEAD...origin/main</code> 为 <code>0 0</code>。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>focused tests</td><td>V2.81-V2.85 focused tests + public surface guard 退出码为 0。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>构建与格式</td><td><code>compileall</code>、<code>git diff --check</code> 退出码为 0。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>受保护文件</td><td><code>git diff --name-only HEAD^ HEAD -- backend/app/api/v1/data_service.py backend/data_service/service.py</code> 输出为空。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>截图证据</td><td>8 张 PNG 均为 <code>1280x720</code>，由 headless Chrome 生成。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>最终发布边界</td><td>V2.84 为 <code>needs_review</code>，V2.85 为 <code>structured_unavailable</code>。</td><td><span class="badge accepted">未虚假放行</span></td></tr>
+    </table>
+  </section>
+
+  <section class="section">
     <h2>目标架构与当前实现</h2>
     <div class="grid two">
       <div class="card">
@@ -215,6 +240,38 @@ backend/.venv/bin/python -m compileall backend/data_service backend/app/api back
 git diff --check
 git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</div>
     <p>截图完整性检查：8 张 PNG 均为 <code>1280x720</code>，像素统计非空白。证据索引见 <code>docs/V2.x/visual_acceptance_assets/v2_81_85/visual_evidence_manifest.json</code>。</p>
+    <p>完整命令输出与退出码见 <code>docs/V2.x/visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md</code>。该日志用于人类审计，不替代真实用户代表性资料验收。</p>
+  </section>
+
+  <section class="section">
+    <h2>PRD 到测试覆盖映射</h2>
+    <table>
+      <tr><th>PRD 能力</th><th>测试文件</th><th>审计说明</th></tr>
+      <tr><td>真实资料样本契约</td><td><code>backend/tests/test_v2_81_real_document_sample_contract.py</code></td><td>验证样本来源、脱敏说明、manual scenario 和 Route A needs_review。</td></tr>
+      <tr><td>真实资料导入与 Wiki artifact</td><td><code>backend/tests/test_v2_82_real_document_import_wiki.py</code></td><td>验证仓库真实文档导入、artifact refs 和 wiki review。</td></tr>
+      <tr><td>检索、GraphRAG、Source trace</td><td><code>backend/tests/test_v2_83_retrieval_graphrag_source_trace.py</code></td><td>验证 source refs 保留，并禁止完整调用图或运行拓扑声明。</td></tr>
+      <tr><td>质量治理与纠错</td><td><code>backend/tests/test_v2_84_quality_governance_real_document.py</code></td><td>验证人工质量 review 缺失时保持 <code>needs_review</code>。</td></tr>
+      <tr><td>发布闭环重跑</td><td><code>backend/tests/test_v2_85_release_closure_rerun.py</code></td><td>验证外部项目路径和 human approval 缺失时保持 <code>structured_unavailable</code>。</td></tr>
+      <tr><td>对外接口稳定性</td><td><code>backend/tests/test_public_surface_guard.py</code></td><td>验证 MCP、CLI、HTTP surface 被 guard 覆盖。</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>实现变更清单</h2>
+    <div class="pre">backend/data_service/code_assets/real_document_acceptance/
+backend/data_service/mcp_code_real_document_acceptance_tools.py
+backend/data_service/cli_code_real_document_acceptance.py
+backend/app/api/v1/code_assets_real_document_acceptance.py
+backend/data_service/mcp_code_tools.py
+backend/data_service/cli_code.py
+backend/app/api/__init__.py
+backend/tests/test_v2_81_real_document_sample_contract.py
+backend/tests/test_v2_82_real_document_import_wiki.py
+backend/tests/test_v2_83_retrieval_graphrag_source_trace.py
+backend/tests/test_v2_84_quality_governance_real_document.py
+backend/tests/test_v2_85_release_closure_rerun.py
+backend/tests/test_public_surface_guard.py</div>
+    <p>受保护 legacy 文件 <code>backend/app/api/v1/data_service.py</code> 与 <code>backend/data_service/service.py</code> 未进入本阶段提交变更列表。</p>
   </section>
 
   <section class="section">
@@ -247,6 +304,8 @@ git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</
       <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md</code></td><td>文档一致性和支撑度审计。</td></tr>
       <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_VISUAL_ACCEPTANCE_REPORT.html</code></td><td>本可视化验收报告。</td></tr>
       <tr><td><code>docs/V2.x/visual_acceptance_assets/v2_81_85/visual_evidence_manifest.json</code></td><td>截图和运行证据索引。</td></tr>
+      <tr><td><code>docs/V2.x/visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md</code></td><td>命令、退出码、提交同步、protected 文件和截图尺寸证据日志。</td></tr>
+      <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_VISUAL_REPORT_AUDIT_REVIEW.md</code></td><td>本 HTML 报告的充分性复核和修复说明。</td></tr>
     </table>
   </section>
 </main>
