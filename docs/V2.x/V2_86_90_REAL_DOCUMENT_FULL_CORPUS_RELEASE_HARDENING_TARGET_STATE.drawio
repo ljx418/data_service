@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net" modified="2026-07-01T00:00:00.000Z" agent="codex" version="24.7.5">
+  <diagram id="v2_86_90_01" name="01 阶段目标与用户体验">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1_title" value="V2.86-V2.90 阶段目标：全量真实文档验收与发布闭环加固" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=24;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p1_legend" value="颜色说明：绿色=已实现可复用；蓝色=本阶段待新增；黄色=需人工确认；红色=阻断或禁止；灰色=外部条件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=16;" vertex="1" parent="1"><mxGeometry x="80" y="130" width="1440" height="55" as="geometry" /></mxCell>
+        <mxCell id="p1_current" value="当前事实&#xa;V2.81-V2.83 Route B 已 accepted&#xa;V2.84 质量治理 = needs_review&#xa;V2.85 release closure = structured_unavailable&#xa;完整 docs/V2.x 构建暴露 Section 错误&#xa;Route A 代表性资料未完成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="80" y="230" width="430" height="300" as="geometry" /></mxCell>
+        <mxCell id="p1_goal" value="目标体验&#xa;维护者能用全量真实文档完成导入、构建、检索、GraphRAG、Source trace、质量审查和发布出门判断&#xa;&#xa;审计者能看到真实证据、截图或 headless evidence、unresolved 原因和 false-green 防线" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=17;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="590" y="230" width="430" height="300" as="geometry" /></mxCell>
+        <mxCell id="p1_release" value="最终体验边界&#xa;Route A 缺失不能 final accepted&#xa;外部项目缺路径不能 accepted&#xa;human approval 缺失不能 release accepted&#xa;HTML extractor 失败不能隐藏&#xa;不得声称完整设计意图恢复" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="1090" y="230" width="430" height="300" as="geometry" /></mxCell>
+        <mxCell id="p1_v86" value="V2.86&#xa;全量 docs 构建加固" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="90" y="650" width="240" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_v87" value="V2.87&#xa;Route A 资料包验收" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="370" y="650" width="240" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_v88" value="V2.88&#xa;质量治理人工审查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="650" y="650" width="240" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_v89" value="V2.89&#xa;外部项目真实 E2E" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=16;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="930" y="650" width="240" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_v90" value="V2.90&#xa;Release gate 出门判断" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1210" y="650" width="240" height="90" as="geometry" /></mxCell>
+        <mxCell id="p1_e1" value="补强为可审计闭环" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p1_current" target="p1_goal"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p1_e2" value="缺一项不出门" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#B85450;" edge="1" parent="1" source="p1_goal" target="p1_release"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_02" name="02 当前架构到目标架构差异">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p2_title" value="当前架构到目标架构差异：复用 V2.81-V2.85 能力，补齐全量文档、Route A、质量审查和出门门禁" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p2_current" value="当前已实现实体&#xa;Knowledge Console 静态前端&#xa;WorkspaceRuntime / source / session&#xa;query / graph / source trace API&#xa;real_document_acceptance/service.py&#xa;HTTP / CLI / MCP build-read surface&#xa;V2.81-V2.85 artifacts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="80" y="200" width="420" height="360" as="geometry" /></mxCell>
+        <mxCell id="p2_gap" value="当前缺口&#xa;全量 docs/V2.x 构建未 accepted&#xa;HTML extractor Section 错误&#xa;Route A 用户资料缺失&#xa;质量治理缺人工 review&#xa;外部项目缺路径&#xa;human approval 缺失&#xa;npm audit 风险待记录" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="590" y="200" width="420" height="360" as="geometry" /></mxCell>
+        <mxCell id="p2_target" value="目标新增实体&#xa;Full Corpus E2E Runner&#xa;HTML Extractor Hardening&#xa;Route A Acceptance Pack&#xa;Quality Review Recorder&#xa;External Project Closure&#xa;Release Gate Aggregator&#xa;Dependency / worktree hygiene audit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="1100" y="200" width="420" height="360" as="geometry" /></mxCell>
+        <mxCell id="p2_e1" value="已提供小样本真实验收基础" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p2_current" target="p2_gap"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_e2" value="转成下一阶段实现落点" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p2_gap" target="p2_target"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p2_forbidden" value="拒绝不清晰设计&#xa;不允许只有概念模块&#xa;不允许无 artifact 的 accepted&#xa;不允许把 unavailable 算 accepted&#xa;不允许隐藏 HTML 解析失败" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="360" y="650" width="880" height="140" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_03" name="03 代码实体分层与交互关系">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p3_title" value="代码实体分层与交互：真实资料进入 workspace，验收服务生成 artifacts，release gate 汇总状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p3_ui" value="用户入口&#xa;backend/app/static/knowledge_console&#xa;维护者首页 / 状态面板&#xa;导入 / 查询 / 图谱 / 来源追踪" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="80" y="170" width="320" height="170" as="geometry" /></mxCell>
+        <mxCell id="p3_api" value="公开接口层&#xa;code_assets_real_document_acceptance.py&#xa;cli_code_real_document_acceptance.py&#xa;mcp_code_real_document_acceptance_tools.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="480" y="170" width="360" height="170" as="geometry" /></mxCell>
+        <mxCell id="p3_service" value="当前验收服务&#xa;real_document_acceptance/service.py&#xa;build_sample_contract&#xa;build_real_e2e&#xa;build_retrieval_trace&#xa;build_quality&#xa;build_release_closure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="920" y="170" width="360" height="220" as="geometry" /></mxCell>
+        <mxCell id="p3_store" value="数据与产物&#xa;workspace/*&#xa;source / session / graph / query result&#xa;real_document_acceptance/* artifacts&#xa;docs/V2.x/V2_81_85_* evidence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="80" y="540" width="360" height="200" as="geometry" /></mxCell>
+        <mxCell id="p3_new" value="待新增独立包&#xa;real_document_full_corpus_release/&#xa;- full_corpus.py&#xa;- route_a_acceptance.py&#xa;- quality_review.py&#xa;- external_project_closure.py&#xa;- release_gate.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="560" y="520" width="350" height="220" as="geometry" /></mxCell>
+        <mxCell id="p3_gate" value="出门聚合&#xa;Route A / Route B&#xa;全量 docs E2E&#xa;质量 review&#xa;外部项目状态&#xa;restore / dependency / approval" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1040" y="520" width="370" height="220" as="geometry" /></mxCell>
+        <mxCell id="p3_e1" value="调用 build/read" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p3_ui" target="p3_api"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_e2" value="适配到 service" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p3_api" target="p3_service"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_e3" value="读写 artifacts" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p3_service" target="p3_store"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_e4" value="复用并扩展" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p3_store" target="p3_new"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p3_e5" value="汇总 release status" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p3_new" target="p3_gate"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_04" name="04 全量真实文档 E2E 验收路径">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p4_title" value="全量真实文档 E2E：从 docs/V2.x 到 Wiki、检索、GraphRAG、Source trace 和失败分类" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p4_1" value="1 选择资料源&#xa;docs/V2.x 全量真实文档&#xa;排除临时文件和资源叉文件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="80" y="180" width="240" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_2" value="2 导入 workspace&#xa;source refs&#xa;repo-relative path&#xa;redaction scan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="370" y="180" width="240" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_3" value="3 解析构建&#xa;Markdown / HTML / JSON / drawio&#xa;记录 parser failure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="660" y="180" width="240" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_4" value="4 HTML 风险点&#xa;Section 未定义错误&#xa;不能隐藏&#xa;修复或 structured_blocker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=15;" vertex="1" parent="1"><mxGeometry x="950" y="180" width="240" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_5" value="5 查询与图谱&#xa;query result&#xa;GraphRAG boundary note&#xa;不声称 full call graph" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="1240" y="180" width="240" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_6" value="6 Source trace&#xa;source refs&#xa;unit evidence&#xa;artifact refs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="280" y="520" width="260" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_7" value="7 验收报告&#xa;full_corpus_run.json&#xa;parser_failures.json&#xa;full_corpus_report.md" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="670" y="520" width="260" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_8" value="8 状态输出&#xa;accepted 或 structured_blocker&#xa;不可用原因&#xa;next action" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;" vertex="1" parent="1"><mxGeometry x="1060" y="520" width="260" height="130" as="geometry" /></mxCell>
+        <mxCell id="p4_e1" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_1" target="p4_2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p4_e2" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_2" target="p4_3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p4_e3" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_3" target="p4_4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p4_e4" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_4" target="p4_5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p4_e5" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_5" target="p4_6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p4_e6" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_6" target="p4_7"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p4_e7" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p4_7" target="p4_8"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_05" name="05 Route A 代表性资料人工验收">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p5_title" value="Route A 人工验收：用户代表性真实资料必须独立于 Route B 小样本完成" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p5_missing" value="当前状态&#xa;用户代表性真实资料未提供&#xa;人工验收未完成&#xa;状态必须保持 needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="80" y="190" width="360" height="190" as="geometry" /></mxCell>
+        <mxCell id="p5_contract" value="资料包合同&#xa;sample_pack_contract.json&#xa;来源类型&#xa;脱敏规则&#xa;用途边界&#xa;验收路径" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="520" y="190" width="330" height="220" as="geometry" /></mxCell>
+        <mxCell id="p5_run" value="人工体验路径&#xa;导入真实资料&#xa;查看 Wiki&#xa;执行检索&#xa;查看 GraphRAG&#xa;追溯 Source trace&#xa;记录截图证据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="930" y="190" width="330" height="250" as="geometry" /></mxCell>
+        <mxCell id="p5_record" value="人工验收记录&#xa;manual_acceptance_record.md&#xa;截图 refs&#xa;reviewer decision&#xa;unresolved reason&#xa;release impact" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="520" y="560" width="360" height="220" as="geometry" /></mxCell>
+        <mxCell id="p5_forbid" value="禁止&#xa;Route B 替代 Route A&#xa;mock-only 写 accepted&#xa;无脱敏说明写 accepted&#xa;无人工确认写 release accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="980" y="570" width="390" height="200" as="geometry" /></mxCell>
+        <mxCell id="p5_e1" value="提供后进入合同" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p5_missing" target="p5_contract"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_e2" value="执行体验" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p5_contract" target="p5_run"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_e3" value="落人工证据" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p5_run" target="p5_record"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p5_e4" value="未满足则阻断" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#B85450;" edge="1" parent="1" source="p5_record" target="p5_forbid"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_06" name="06 质量治理与纠错审查">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p6_title" value="质量治理与纠错审查：自动建议必须进入人工 review，不能直接 accepted" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p6_current" value="当前 V2.84 状态&#xa;quality_governance_review.json 已有自动产物&#xa;correction_acceptance_report.md 已有建议&#xa;缺人工 quality review&#xa;状态 = needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="80" y="190" width="390" height="230" as="geometry" /></mxCell>
+        <mxCell id="p6_review" value="待新增人工审查&#xa;human_quality_review.json&#xa;reviewer decision&#xa;evidence refs&#xa;reject reason&#xa;next action" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="590" y="190" width="360" height="230" as="geometry" /></mxCell>
+        <mxCell id="p6_history" value="纠错决策历史&#xa;correction_decision_history.jsonl&#xa;accept / reject / needs_review&#xa;每条建议有 evidence 或 unresolved" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="1070" y="190" width="380" height="230" as="geometry" /></mxCell>
+        <mxCell id="p6_rule" value="规则影响复核&#xa;rule_effect_review.md&#xa;上游 hash 只读校验&#xa;不改写原始 artifact&#xa;保留弱证据和矛盾项" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="360" y="560" width="390" height="210" as="geometry" /></mxCell>
+        <mxCell id="p6_gate" value="验收门槛&#xa;无人工审查 = needs_review&#xa;无 evidence = needs_review&#xa;改写上游 artifact = blocker&#xa;隐藏 unresolved = false-green" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="880" y="560" width="390" height="210" as="geometry" /></mxCell>
+        <mxCell id="p6_e1" value="进入人工审查" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p6_current" target="p6_review"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_e2" value="记录逐条决策" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p6_review" target="p6_history"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_e3" value="复核规则影响" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p6_history" target="p6_rule"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p6_e4" value="汇入验收门禁" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#B85450;" edge="1" parent="1" source="p6_rule" target="p6_gate"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_07" name="07 开发及验收计划">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p7_title" value="开发及验收计划：每个子阶段先审计，再实现，再 E2E，再 PRD 规格检视" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p7_86" value="V2.86 全量文档&#xa;效果：维护者能跑完整 docs/V2.x E2E&#xa;验收：构建成功或 structured_blocker&#xa;证据：full_corpus_run / parser_failures / report" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="80" y="170" width="280" height="190" as="geometry" /></mxCell>
+        <mxCell id="p7_87" value="V2.87 Route A&#xa;效果：用户代表性资料可人工验收&#xa;验收：资料包、脱敏、截图、签核&#xa;缺资料：needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="390" y="170" width="280" height="190" as="geometry" /></mxCell>
+        <mxCell id="p7_88" value="V2.88 质量审查&#xa;效果：质量建议可被人类接受或拒绝&#xa;验收：human_quality_review / decision_history&#xa;缺审查：needs_review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="700" y="170" width="280" height="190" as="geometry" /></mxCell>
+        <mxCell id="p7_89" value="V2.89 外部项目&#xa;效果：每个外部项目状态可审计&#xa;验收：真实 E2E 或 structured_unavailable&#xa;缺路径：不能 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1010" y="170" width="280" height="190" as="geometry" /></mxCell>
+        <mxCell id="p7_90" value="V2.90 出门门禁&#xa;效果：一屏判断 release 是否可出门&#xa;验收：release_gate_summary / readiness_report&#xa;缺 approval：不能 final accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="640" y="500" width="320" height="200" as="geometry" /></mxCell>
+        <mxCell id="p7_audit" value="每阶段固定动作&#xa;1 开发计划和验收计划落盘&#xa;2 pre-implementation audit 无 fatal/major&#xa;3 实现后 focused tests&#xa;4 真实 E2E&#xa;5 PRD/spec review&#xa;6 false-green audit&#xa;7 acceptance audit report" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1050" y="500" width="400" height="250" as="geometry" /></mxCell>
+        <mxCell id="p7_e1" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p7_86" target="p7_87"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_e2" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p7_87" target="p7_88"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_e3" endArrow="block" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p7_88" target="p7_89"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_e4" value="汇总" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p7_89" target="p7_90"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="p7_e5" value="每阶段重复执行" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="p7_audit" target="p7_90"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2_86_90_08" name="08 里程碑、验收门槛与出门条件">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p8_title" value="里程碑、验收门槛与出门条件：真实资料、质量审查、外部项目、人工审批缺一不可" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#17365D;fontSize=23;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="40" width="1500" height="70" as="geometry" /></mxCell>
+        <mxCell id="p8_m1" value="M1 V2.86&#xa;全量 docs E2E&#xa;构建成功或 blocker 明确" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="70" y="160" width="260" height="120" as="geometry" /></mxCell>
+        <mxCell id="p8_m2" value="M2 V2.87&#xa;Route A 资料包&#xa;脱敏、截图、人工记录" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;" vertex="1" parent="1"><mxGeometry x="370" y="160" width="260" height="120" as="geometry" /></mxCell>
+        <mxCell id="p8_m3" value="M3 V2.88&#xa;质量治理审查&#xa;逐条建议有人工结论" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;" vertex="1" parent="1"><mxGeometry x="670" y="160" width="260" height="120" as="geometry" /></mxCell>
+        <mxCell id="p8_m4" value="M4 V2.89&#xa;外部项目闭环&#xa;真实 E2E 或 structured unavailable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=15;" vertex="1" parent="1"><mxGeometry x="970" y="160" width="260" height="120" as="geometry" /></mxCell>
+        <mxCell id="p8_m5" value="M5 V2.90&#xa;最终 release gate&#xa;审批、恢复、依赖、工作树" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;" vertex="1" parent="1"><mxGeometry x="1270" y="160" width="260" height="120" as="geometry" /></mxCell>
+        <mxCell id="p8_gate" value="最终 accepted 必要条件&#xa;Route A accepted&#xa;Route B accepted&#xa;全量 docs E2E accepted 或有批准的 scope exception&#xa;Source trace 可追溯&#xa;质量治理有人工审查&#xa;外部项目不可用不计 accepted&#xa;restore / smoke / dependency 状态可审计&#xa;human release approval 已记录&#xa;false-green audit 无 fatal/major&#xa;protected legacy 文件无未批准 diff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="120" y="420" width="620" height="350" as="geometry" /></mxCell>
+        <mxCell id="p8_block" value="阻断 final release accepted&#xa;Route A 缺失&#xa;HTML extractor 失败不可审计&#xa;quality review 缺人工确认&#xa;外部项目缺路径却被计 accepted&#xa;human approval 缺失&#xa;隐藏 needs_review / structured_unavailable / structured_blocker&#xa;声称 full call graph、runtime topology、data/control flow、type inference 或完整设计意图恢复" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="850" y="420" width="620" height="350" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
