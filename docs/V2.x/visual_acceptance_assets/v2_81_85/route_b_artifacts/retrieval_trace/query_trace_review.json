@@ -1,0 +1,206 @@
+{
+  "schema_version": "v2.81-85",
+  "workspace_id": "v28185-real-docs",
+  "codebase_id": "data-service-v28185-real-docs",
+  "phase": "V2.83",
+  "artifact_type": "query_trace_review",
+  "generated_at": "2026-07-01T04:42:13.130037Z",
+  "artifact_refs": [
+    {
+      "type": "query_trace_review",
+      "artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/retrieval_trace/query_trace_review.json"
+    },
+    {
+      "type": "graphrag_review",
+      "artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/retrieval_trace/graphrag_review.json"
+    },
+    {
+      "type": "source_trace_review",
+      "artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/retrieval_trace/source_trace_review.md"
+    }
+  ],
+  "evidence_refs": [
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_GAP_ANALYSIS.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_MILESTONES_AND_EXIT_GATES.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_157_161_DETAILED_IMPLEMENTATION_PACKAGE.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRD.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRE_IMPLEMENTATION_AUDIT_REPORT.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_RISK_REDUCTION_AND_TECHNICAL_ROUTE_REVIEW.md"
+  ],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [
+    "knowledge_code_real_document_acceptance_retrieval_trace_read"
+  ],
+  "rows": [
+    {
+      "query_id": "query_1",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_2",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_3",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_4",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_5",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_GAP_ANALYSIS.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_GAP_ANALYSIS.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_6",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_7",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_MILESTONES_AND_EXIT_GATES.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_MILESTONES_AND_EXIT_GATES.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_8",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_157_161_DETAILED_IMPLEMENTATION_PACKAGE.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_157_161_DETAILED_IMPLEMENTATION_PACKAGE.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_9",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_10",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRD.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRD.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_11",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRE_IMPLEMENTATION_AUDIT_REPORT.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRE_IMPLEMENTATION_AUDIT_REPORT.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    },
+    {
+      "query_id": "query_12",
+      "query_text": "真实文档资料验收",
+      "status": "accepted",
+      "source_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_RISK_REDUCTION_AND_TECHNICAL_ROUTE_REVIEW.md"
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_RISK_REDUCTION_AND_TECHNICAL_ROUTE_REVIEW.md"
+      ],
+      "trace_status": "accepted",
+      "boundary_notes": "retrieval is evidence-backed for imported real project documents; it is not a complete semantic understanding claim"
+    }
+  ],
+  "status": "accepted",
+  "summary": {
+    "accepted_count": 12,
+    "needs_review_count": 0,
+    "structured_unavailable_count": 0,
+    "structured_blocker_count": 0
+  }
+}

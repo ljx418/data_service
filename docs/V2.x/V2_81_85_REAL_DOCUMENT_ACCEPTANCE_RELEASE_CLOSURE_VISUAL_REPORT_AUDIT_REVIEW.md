@@ -22,8 +22,10 @@ The report was returned for repair because it did not make the following evidenc
 The visual report now references and summarizes:
 
 - implementation commit under audit: `c89ad3f`;
+- human audit packet index: `docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_HUMAN_AUDIT_PACKET_INDEX.md`;
 - `docs/V2.x/visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md`
 - `docs/V2.x/visual_acceptance_assets/v2_81_85/visual_evidence_manifest.json`
+- `docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifact_snapshot_manifest.json`
 - `docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md`
 - `docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md`
 
@@ -39,6 +41,22 @@ The verification log records:
 - `git diff --check` exit code
 - manifest JSON parse result
 - screenshot file dimensions
+- committed Route B artifact snapshot hashes and sizes
+
+## Additional Repair After Second Review
+
+A second audit found that the report referenced `workspace/v28185-real-docs/...` runtime artifacts that are not part of the git commit. This was not enough for a remote human reviewer to inspect the Route B evidence directly.
+
+Repair:
+
+- committed a sanitized Route B artifact snapshot under `docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/`;
+- added `docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifact_snapshot_manifest.json`;
+- ran a sensitivity scan for local paths, tokens, secrets, passwords, raw tracebacks, and private markers;
+- added `docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_HUMAN_AUDIT_PACKET_INDEX.md`.
+
+## Evidence Timing Note
+
+`verification_evidence_20260701.md` was generated before the evidence file itself was added to git, so its `git status --short` block records that file as untracked. That line is expected for the evidence-generation moment. It is not evidence that the implementation commit under audit contained uncommitted business-code changes.
 
 ## Final Audit Judgement
 

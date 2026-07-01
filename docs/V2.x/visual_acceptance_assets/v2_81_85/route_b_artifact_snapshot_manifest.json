@@ -1,0 +1,21 @@
+{
+  "schema_version": "v2.81-85-route-b-artifact-snapshot",
+  "generated_at": "2026-07-01T13:35:00+08:00",
+  "source_root": "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance",
+  "snapshot_root": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts",
+  "sensitivity_scan": "Artifact snapshot scan for machine-local paths, credential material, exception dumps, and key-block markers returned no matches.",
+  "files": [
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/quality/correction_acceptance_report.md", "sha256": "142745a4438ab387e04ed9932375522409bc1c5f5bd2287342f17c7fe6ba029d", "bytes": 154},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/quality/quality_governance_review.json", "sha256": "7bd954f706ccd4cec0f9c9bc82eb162ef119d235ee1f8873de07361613cc6d74", "bytes": 5167},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/real_e2e/import_run.json", "sha256": "3016bf4feac1af6d7bceaeec054b554421d115a3b33989e09bf784ee9f09c5e9", "bytes": 10105},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/real_e2e/real_document_e2e_report.md", "sha256": "9a6277fe35d8470ed0f5627963ef8b4c364e4dc737ef8f2608a8a5ef360ceeb4", "bytes": 200},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/real_e2e/wiki_artifact_review.json", "sha256": "9322bc8c1d4ca0cbb9b7cb0f43ba286aa7d372fc5a47cf37604f83dad68c78de", "bytes": 9286},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/release_closure/final_manual_acceptance_report.md", "sha256": "137df8a9f134fd27603dae1162d19bd6bb80497994d513f0c29293d688c3aebc", "bytes": 374},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/release_closure/release_closure_rerun.json", "sha256": "173b0edb2bdb2638217f28944587b38347e632555a840fd3fadf0096dc849229", "bytes": 14985},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/retrieval_trace/graphrag_review.json", "sha256": "966edbf998204d1202403adbea08b552450454b1d5b3f7d37b59799ddb3007f0", "bytes": 6763},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/retrieval_trace/query_trace_review.json", "sha256": "582dca52bc727677dbb2419724f272e306f9ae6e3b96dc4937f1444c14b1fe80", "bytes": 9322},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/retrieval_trace/source_trace_review.md", "sha256": "e14bdeff1acfa26bf674afd55bc1b52c13bcc89327d62413e23bdd581c76803d", "bytes": 290},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/sample_contract/manual_scenario_plan.md", "sha256": "c492b5972c79d4e6ef4ad255fa983236772ebbe9212d690e1b28f011ad43c25d", "bytes": 2248},
+    {"path": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/sample_contract/sample_contract.json", "sha256": "fa103d1a9a07486a7bd157ecafe6f39299d250eeed1188d7ccbbc4f9bc967227", "bytes": 11144}
+  ]
+}

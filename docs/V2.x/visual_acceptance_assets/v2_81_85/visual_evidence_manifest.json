@@ -7,12 +7,13 @@
   "capture_mode": "headless_chrome",
   "source_page": "docs/V2.x/visual_acceptance_assets/v2_81_85/scenario_capture.html",
   "verification_log": "docs/V2.x/visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md",
+  "route_b_artifact_snapshot_manifest": "docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifact_snapshot_manifest.json",
   "fallback_note": "Linux Playwright Chromium could not launch because libnspr4.so was unavailable. Screenshots were captured with Windows Chrome in headless mode, so no visible browser focus was required for capture.",
   "overall_result": "partial_accepted",
   "release_result": "not_accepted",
   "audit_adequacy_review": {
     "initial_visual_report_status": "insufficient_for_complete_human_audit",
-    "repair_status": "repaired_with_verification_log_and_audit_mapping",
+    "repair_status": "repaired_with_verification_log_artifact_snapshot_and_audit_mapping",
     "repair_reason": "The initial HTML report was readable but did not embed direct command exit evidence, commit/remote sync evidence, protected-file evidence, and PRD-to-test traceability strongly enough for independent human audit."
   },
   "screenshots": [

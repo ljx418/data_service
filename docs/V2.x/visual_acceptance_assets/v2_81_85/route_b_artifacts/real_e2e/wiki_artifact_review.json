@@ -1,0 +1,170 @@
+{
+  "schema_version": "v2.81-85",
+  "workspace_id": "v28185-real-docs",
+  "codebase_id": "data-service-v28185-real-docs",
+  "phase": "V2.82",
+  "artifact_type": "wiki_artifact_review",
+  "generated_at": "2026-07-01T04:42:13.085252Z",
+  "artifact_refs": [
+    {
+      "type": "import_run",
+      "artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/import_run.json"
+    },
+    {
+      "type": "wiki_artifact_review",
+      "artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki_artifact_review.json"
+    },
+    {
+      "type": "real_document_e2e_report",
+      "artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/real_document_e2e_report.md"
+    }
+  ],
+  "evidence_refs": [
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_GAP_ANALYSIS.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_MILESTONES_AND_EXIT_GATES.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_157_161_DETAILED_IMPLEMENTATION_PACKAGE.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRD.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRE_IMPLEMENTATION_AUDIT_REPORT.md",
+    "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_RISK_REDUCTION_AND_TECHNICAL_ROUTE_REVIEW.md"
+  ],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [],
+  "rows": [
+    {
+      "source_id": "doc_6b56580952f8",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_6b56580952f8",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_156ecdaf73d5",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_156ecdaf73d5",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_4192ad9d1b22",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_4192ad9d1b22",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_a1aa4c196fdc",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_a1aa4c196fdc",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_10c3421a6e7d",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_10c3421a6e7d",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_GAP_ANALYSIS.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_404bfc52ee2c",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_404bfc52ee2c",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_f693f10c750e",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_f693f10c750e",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_MILESTONES_AND_EXIT_GATES.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_053662f791bc",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_053662f791bc",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_157_161_DETAILED_IMPLEMENTATION_PACKAGE.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_28990a1735f1",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_28990a1735f1",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_390ffaebe06d",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_390ffaebe06d",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRD.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_ab47a5a65b92",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_ab47a5a65b92",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_PRE_IMPLEMENTATION_AUDIT_REPORT.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    },
+    {
+      "source_id": "doc_a20cbf2649e9",
+      "status": "accepted",
+      "wiki_artifact_ref": "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_a20cbf2649e9",
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_RISK_REDUCTION_AND_TECHNICAL_ROUTE_REVIEW.md"
+      ],
+      "review_note": "repo documentation was available for automated artifact review; no raw document text is persisted in this public payload"
+    }
+  ],
+  "wiki_artifact_refs": [
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_6b56580952f8",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_156ecdaf73d5",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_4192ad9d1b22",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_a1aa4c196fdc",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_10c3421a6e7d",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_404bfc52ee2c",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_f693f10c750e",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_053662f791bc",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_28990a1735f1",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_390ffaebe06d",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_ab47a5a65b92",
+    "real_document_acceptance://data-service-v28185-real-docs/real_e2e/wiki/doc_a20cbf2649e9"
+  ],
+  "status": "accepted",
+  "summary": {
+    "accepted_count": 12,
+    "needs_review_count": 0,
+    "structured_unavailable_count": 0,
+    "structured_blocker_count": 0
+  }
+}

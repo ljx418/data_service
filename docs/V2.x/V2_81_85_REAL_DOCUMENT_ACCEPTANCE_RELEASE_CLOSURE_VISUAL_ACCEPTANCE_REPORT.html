@@ -154,7 +154,7 @@
       </div>
       <div class="card ok">
         <h3>补强后判定</h3>
-        <p>已补充机器可复核证据日志和审查充分性说明，本 HTML 与证据索引组合后可以支撑阶段级人工审计。</p>
+        <p>已补充机器可复核证据日志、Route B 产物快照和审查充分性说明，本 HTML 与证据索引组合后可以支撑阶段级人工审计。</p>
         <p>补强文件：<code>visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md</code></p>
       </div>
     </div>
@@ -165,8 +165,10 @@
       <tr><td>构建与格式</td><td><code>compileall</code>、<code>git diff --check</code> 退出码为 0。</td><td><span class="badge accepted">可复核</span></td></tr>
       <tr><td>受保护文件</td><td><code>git diff --name-only HEAD^ HEAD -- backend/app/api/v1/data_service.py backend/data_service/service.py</code> 输出为空。</td><td><span class="badge accepted">可复核</span></td></tr>
       <tr><td>截图证据</td><td>8 张 PNG 均为 <code>1280x720</code>，由 headless Chrome 生成。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>Route B 产物快照</td><td>已提交到 <code>visual_acceptance_assets/v2_81_85/route_b_artifacts/</code>，并有 sha256 manifest。</td><td><span class="badge accepted">可复核</span></td></tr>
       <tr><td>最终发布边界</td><td>V2.84 为 <code>needs_review</code>，V2.85 为 <code>structured_unavailable</code>。</td><td><span class="badge accepted">未虚假放行</span></td></tr>
     </table>
+    <div class="note">证据时序说明：<code>verification_evidence_20260701.md</code> 生成时尚未加入 git，所以该日志的 <code>git status --short</code> 会显示该日志自身为 untracked。这是证据生成时序，不代表实现提交存在未提交业务代码。</div>
   </section>
 
   <section class="section">
@@ -216,6 +218,7 @@ workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_do
 workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/source_trace_review.md
 workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/quality/quality_governance_review.json
 workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/release_closure/release_closure_rerun.json</div>
+    <p>为支持远端人类审计，已将脱敏后的 Route B 产物快照提交到 <code>docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifacts/</code>，校验清单见 <code>route_b_artifact_snapshot_manifest.json</code>。</p>
   </section>
 
   <section class="section">
@@ -305,6 +308,8 @@ backend/tests/test_public_surface_guard.py</div>
       <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_VISUAL_ACCEPTANCE_REPORT.html</code></td><td>本可视化验收报告。</td></tr>
       <tr><td><code>docs/V2.x/visual_acceptance_assets/v2_81_85/visual_evidence_manifest.json</code></td><td>截图和运行证据索引。</td></tr>
       <tr><td><code>docs/V2.x/visual_acceptance_assets/v2_81_85/verification_evidence_20260701.md</code></td><td>命令、退出码、提交同步、protected 文件和截图尺寸证据日志。</td></tr>
+      <tr><td><code>docs/V2.x/visual_acceptance_assets/v2_81_85/route_b_artifact_snapshot_manifest.json</code></td><td>已提交 Route B 产物快照的 hash、大小和脱敏扫描说明。</td></tr>
+      <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_HUMAN_AUDIT_PACKET_INDEX.md</code></td><td>人类审计路径索引，说明应按什么顺序复核本阶段自动化开发。</td></tr>
       <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_VISUAL_REPORT_AUDIT_REVIEW.md</code></td><td>本 HTML 报告的充分性复核和修复说明。</td></tr>
     </table>
   </section>
