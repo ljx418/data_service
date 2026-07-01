@@ -122,6 +122,11 @@
       "release_blocking": true
     },
     {
+      "risk": "manual experience acceptance did not use real document materials; mind-map direction is basically OK but real-document UX acceptance is not accepted",
+      "status": "needs_review",
+      "release_blocking": true
+    },
+    {
       "risk": "target architecture document does not repeat every prohibited over-claim phrase even though PRD/pre-audit/drawio/final audit do",
       "status": "needs_review",
       "release_blocking": false
@@ -130,6 +135,6 @@
   "audit_verdict": {
     "stage_implementation": "accepted",
     "final_release": "not accepted",
-    "reason": "external project availability and human approval remain open"
+    "reason": "external project availability, human approval, and real-document manual UX acceptance remain open"
   }
 }

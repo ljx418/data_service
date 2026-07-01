@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V2.81-V2.85 真实文档资料验收与发布闭环可视化场景</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --ink: #14202b;
+      --muted: #5e6b76;
+      --line: #d8e0e7;
+      --panel: #ffffff;
+      --ok: #0f7b55;
+      --review: #9a5b00;
+      --unavail: #9c2436;
+      --blue: #2456a6;
+      --ok-bg: #e8f7ef;
+      --review-bg: #fff4de;
+      --unavail-bg: #f8e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    .page { width: min(1280px, 100%); margin: 0 auto; padding: 28px; }
+    .hero {
+      min-height: 520px;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      padding: 42px;
+      color: #fff;
+      background: #1f2a33;
+      border-radius: 10px;
+    }
+    h1 { margin: 0; font-size: 34px; letter-spacing: 0; }
+    h2 { margin: 0 0 16px; font-size: 24px; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: 0; }
+    p { margin: 6px 0; }
+    .hero p { color: #d9e3ea; font-size: 17px; max-width: 920px; }
+    .section {
+      min-height: 680px;
+      margin-top: 24px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .card {
+      min-height: 120px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .ok { background: var(--ok-bg); }
+    .review { background: var(--review-bg); }
+    .unavail { background: var(--unavail-bg); }
+    .label { color: var(--muted); font-size: 13px; }
+    .value { margin-top: 6px; font-weight: 700; font-size: 25px; overflow-wrap: anywhere; }
+    .badge {
+      display: inline-block;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .accepted { color: var(--ok); }
+    .needs-review { color: var(--review); }
+    .structured-unavailable { color: var(--unavail); }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 9px 10px; text-align: left; vertical-align: top; }
+    th { background: #edf2f5; }
+    code { background: #eef2f5; border: 1px solid #d8e0e6; border-radius: 4px; padding: 1px 5px; }
+    .flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+    .step { min-height: 180px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fff; }
+    .note { border-left: 4px solid var(--review); background: #fff8e8; padding: 12px 14px; margin: 14px 0; }
+    @media (max-width: 900px) {
+      .page { padding: 16px; }
+      .grid, .grid.two, .grid.five, .flow { grid-template-columns: 1fr; }
+      .hero { min-height: 560px; padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero" id="overview">
+      <div>
+        <div class="badge accepted">Route B 自动化验收</div>
+        <h1>V2.81-V2.85 真实文档资料验收与发布闭环</h1>
+        <p>本场景页用于 Headless 截图取证。数据来源为本仓库 <code>docs/</code> 真实项目文档，不使用 mock-only 文档。</p>
+        <p>审计结论：V2.81-V2.83 Route B 自动化工程验收通过；V2.84 保持 <code>needs_review</code>；V2.85 保持 <code>structured_unavailable</code>。最终 release 未 accepted。</p>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <h2>目标架构与当前实现</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>当前实现实体</h3>
+          <p><code>backend/data_service/code_assets/real_document_acceptance/</code></p>
+          <p><code>mcp_code_real_document_acceptance_tools.py</code></p>
+          <p><code>cli_code_real_document_acceptance.py</code></p>
+          <p><code>code_assets_real_document_acceptance.py</code></p>
+        </div>
+        <div class="card">
+          <h3>目标架构职责</h3>
+          <p>真实资料样本契约、真实 E2E、检索/GraphRAG/Source trace、质量治理、发布闭环重跑。</p>
+          <p>所有 public payload 保留 unresolved，不把文档 claim 当 code fact。</p>
+        </div>
+      </div>
+      <table>
+        <tr><th>接口面</th><th>当前实现</th><th>验收状态</th></tr>
+        <tr><td>MCP</td><td>10 个 <code>knowledge_code_real_document_acceptance_*_build/read</code></td><td><span class="badge accepted">guard 覆盖</span></td></tr>
+        <tr><td>CLI</td><td><code>data_service code real-document-acceptance ...</code></td><td><span class="badge accepted">parser 覆盖</span></td></tr>
+        <tr><td>HTTP</td><td><code>/api/workspaces/{workspace_id}/codebases/{codebase_id}/real-document-acceptance/*</code></td><td><span class="badge accepted">guard 覆盖</span></td></tr>
+      </table>
+    </section>
+
+    <section class="section" id="sample-contract">
+      <h2>V2.81 样本契约</h2>
+      <div class="grid">
+        <div class="card ok"><div class="label">状态</div><div class="value">accepted</div><p>Route B 仓库真实项目文档。</p></div>
+        <div class="card ok"><div class="label">产物</div><div class="value">2</div><p><code>sample_contract.json</code>、<code>manual_scenario_plan.md</code></p></div>
+        <div class="card review"><div class="label">边界</div><div class="value">Route A needs_review</div><p>用户代表性资料未提供。</p></div>
+      </div>
+      <div class="note">mock-only 或 synthetic 文档不能作为真实资料 accepted evidence。</div>
+    </section>
+
+    <section class="section" id="real-e2e">
+      <h2>V2.82 真实资料导入与 Wiki 验收</h2>
+      <div class="grid">
+        <div class="card ok"><div class="label">导入状态</div><div class="value">accepted</div><p>使用 <code>repo://docs/...</code> 引用。</p></div>
+        <div class="card ok"><div class="label">Wiki review</div><div class="value">accepted</div><p>生成 artifact refs，不写入原始敏感正文。</p></div>
+        <div class="card ok"><div class="label">产物</div><div class="value">3</div><p>import、wiki review、E2E report。</p></div>
+      </div>
+      <div class="note">截图不能替代真实资料导入结果和 artifact refs。</div>
+    </section>
+
+    <section class="section" id="retrieval-trace">
+      <h2>V2.83 检索、GraphRAG 与 Source trace</h2>
+      <div class="grid">
+        <div class="card ok"><div class="label">检索体验</div><div class="value">accepted</div><p>accepted row 必须有 source/evidence refs。</p></div>
+        <div class="card ok"><div class="label">Source trace</div><div class="value">accepted</div><p>Route B 查询可追溯到 repo 文档引用。</p></div>
+        <div class="card ok"><div class="label">GraphRAG 边界</div><div class="value">已约束</div><p>不声称完整调用图或运行拓扑。</p></div>
+      </div>
+      <table>
+        <tr><th>禁止声明</th><th>当前处理</th></tr>
+        <tr><td>full call graph / runtime topology / data-control flow / type inference</td><td>报告写明 GraphRAG 仅为文档证据关系审查。</td></tr>
+      </table>
+    </section>
+
+    <section class="section" id="quality-governance">
+      <h2>V2.84 质量治理与纠错验收</h2>
+      <div class="grid">
+        <div class="card review"><div class="label">总状态</div><div class="value">needs_review</div><p>缺少人工质量 review。</p></div>
+        <div class="card ok"><div class="label">Source trace quality</div><div class="value">accepted</div><p>Route B trace evidence 可见。</p></div>
+        <div class="card review"><div class="label">Human review</div><div class="value">needs_review</div><p>不能虚假写成 accepted。</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="release-closure">
+      <h2>V2.85 发布闭环重跑</h2>
+      <div class="grid">
+        <div class="card unavail"><div class="label">最终 release</div><div class="value">structured_unavailable</div><p>外部项目路径缺失。</p></div>
+        <div class="card review"><div class="label">Human approval</div><div class="value">needs_review</div><p>人工签核未记录。</p></div>
+        <div class="card unavail"><div class="label">外部项目</div><div class="value">unavailable</div><p><code>codexPat</code>、<code>HarnessOS</code>、<code>Navia</code> 未提供路径。</p></div>
+      </div>
+      <div class="note">最终 release accepted 被正确阻断；不可用项没有计入 accepted。</div>
+    </section>
+
+    <section class="section" id="user-path">
+      <h2>用户可体验路径</h2>
+      <div class="flow">
+        <div class="step"><h3>1. 选择真实资料</h3><p>Route B 使用仓库 <code>docs/</code>。</p><span class="badge accepted">accepted</span></div>
+        <div class="step"><h3>2. 导入与构建</h3><p>生成 import run 和 Wiki review。</p><span class="badge accepted">accepted</span></div>
+        <div class="step"><h3>3. 检索追溯</h3><p>查询结果绑定 source refs。</p><span class="badge accepted">accepted</span></div>
+        <div class="step"><h3>4. 质量治理</h3><p>人工质量 review 未闭环。</p><span class="badge needs-review">needs_review</span></div>
+        <div class="step"><h3>5. 出门判断</h3><p>外部项目和人工签核阻断。</p><span class="badge structured-unavailable">structured_unavailable</span></div>
+      </div>
+    </section>
+  </div>
+  <script>
+    (function () {
+      var id = window.location.hash ? window.location.hash.slice(1) : "";
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (!target) return;
+      document.body.innerHTML = '<div class="page">' + target.outerHTML + '</div>';
+      window.scrollTo(0, 0);
+    })();
+  </script>
+</body>
+</html>

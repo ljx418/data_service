@@ -17,6 +17,7 @@ from .v1.code_assets_stabilization_e2e_portal import router as code_assets_stabi
 from .v1.code_assets_external_e2e_portal_delivery import router as code_assets_external_e2e_portal_delivery_target_router
 from .v1.code_assets_agent_memory_release import router as code_assets_agent_memory_release_target_router
 from .v1.code_assets_project_acceptance_hardening import router as code_assets_project_acceptance_hardening_target_router
+from .v1.code_assets_real_document_acceptance import router as code_assets_real_document_acceptance_target_router
 from .v1.code_assets import router as code_assets_target_router
 from .v1.data_service import target_router as data_service_target_router
 from .v1.research_notebook import provider_router as research_notebook_provider_router
@@ -39,6 +40,7 @@ api_router.include_router(code_assets_stabilization_e2e_portal_target_router)
 api_router.include_router(code_assets_external_e2e_portal_delivery_target_router)
 api_router.include_router(code_assets_agent_memory_release_target_router)
 api_router.include_router(code_assets_project_acceptance_hardening_target_router)
+api_router.include_router(code_assets_real_document_acceptance_target_router)
 api_router.include_router(research_notebook_target_router)
 api_router.include_router(research_notebook_provider_router)
 api_router.include_router(v1_router, prefix="/v1")

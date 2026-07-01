@@ -407,6 +407,7 @@ Expected: 0 0</pre>
         <tbody>
           <tr><td>外部项目真实路径</td><td><span class="badge structured-unavailable">structured_unavailable</span></td><td>提供 `codexPat`、`HarnessOS`、`Navia` 可读 repo path 后 rerun V2.77/V2.80。</td></tr>
           <tr><td>高风险人工审批</td><td><span class="badge needs-review">needs_review</span></td><td>由人类维护者记录 release approval evidence。</td></tr>
+          <tr><td>真实文档资料人工验收</td><td><span class="badge needs-review">needs_review</span></td><td>思维导图/可视化理解方向基本 OK，但本轮人工验收未使用真实文档资料；需用真实资料补跑导入、解析、检索/GraphRAG、Source trace 或质量治理关键路径后才能 accepted。</td></tr>
           <tr><td>目标架构边界声明密度</td><td><span class="badge needs-review">needs_review</span></td><td>后续可在 target architecture 中重复列出 full-call-graph 等禁止声明。</td></tr>
           <tr><td>旧依赖 warnings</td><td><span class="badge needs-review">needs_review</span></td><td>不阻断本阶段，但应保留在 warning governance 后续计划中。</td></tr>
         </tbody>
@@ -417,7 +418,7 @@ Expected: 0 0</pre>
       <h2>12. 最终评价</h2>
       <p>本报告 v1 因缺少 commit、命令、public surface 明细、代码实体映射和人工复核清单，被打回补强。v2 补齐主体证据后，又发现实现提交与报告修订提交混写风险；v3 移除报告修订提交硬编码，只保留实现提交和报告归属复核命令。</p>
       <p>阶段性结论：V2.76-V2.80 项目验收硬化能力在当前本地 data_service 真实项目范围内通过代码检视、文档审计、功能检查、focused tests、真实 E2E 和 headless 可视化截图验收。</p>
-      <p>出门边界：最终 release 仍不能 accepted；外部项目真实路径和人工审批必须继续保持可见 blocker / needs_review。</p>
+      <p>出门边界：最终 release 仍不能 accepted；外部项目真实路径、人工审批、真实文档资料人工验收必须继续保持可见 blocker / needs_review。</p>
     </section>
   </div>
 </body>

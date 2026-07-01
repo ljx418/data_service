@@ -44,3 +44,17 @@ Implementation accepted for this stage. Final product release remains gated by e
 - `needs_review`, `structured_unavailable`, and `structured_blocker` are not rewritten to accepted.
 - External project unavailability remains structured and visible.
 - Human approval remains required for high-risk final release closure.
+
+## Human Experience Acceptance Addendum
+
+2026-06-30 human review feedback:
+
+- The mind-map / visual understanding direction is basically acceptable.
+- The manual acceptance session did not use real document materials for an end-to-end knowledge workflow.
+- This means the manual experience evidence is `needs_review` for real-document acceptance. It must not be used as an `accepted` claim for real document ingestion, parsing, retrieval, GraphRAG, source trace, or quality-governance user experience.
+
+Required follow-up:
+
+- Rerun manual acceptance with real document materials.
+- Capture the real-material scenario path, screenshots, evidence refs, failures or structured unavailable reasons, and a false-green audit.
+- Until that rerun exists, final release and real-document manual UX acceptance remain not accepted.

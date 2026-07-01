@@ -122,3 +122,17 @@ git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py
 ## 3. 审计意见
 
 当前文档阶段目标是 pass for implementation guidance，不能写成 pass for implementation acceptance。开始写代码前仍必须为每个子阶段生成 phase-specific development plan、acceptance plan、pre-implementation audit，并关闭 fatal/major 审计意见。
+
+## 4. 人工体验验收补充结论
+
+2026-06-30 人工体验反馈：
+
+- 思维导图/可视化理解方向基本 OK。
+- 本轮人工验收没有使用真实业务文档资料完成端到端体验验证。
+- 因此，本轮人工体验只能作为交互方向和信息架构方向的 `needs_review` 证据，不能写成真实文档资料验收 `accepted`。
+
+后续补验要求：
+
+- 使用真实文档资料导入知识库，至少覆盖真实文档导入、解析、Wiki artifact、GraphRAG/检索、Source trace、质量治理或纠错链路中的关键路径。
+- 补验报告必须记录真实资料来源类型、导入方式、执行步骤、截图证据、失败/不可用原因和 false-green audit。
+- 在补验完成前，不得声明“人工真实文档资料验收通过”或“维护者真实资料体验已完整 accepted”。

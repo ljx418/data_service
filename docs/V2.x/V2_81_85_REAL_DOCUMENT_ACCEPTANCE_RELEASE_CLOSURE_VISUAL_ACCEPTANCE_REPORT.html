@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V2.81-V2.85 自动化可视化验收报告</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --panel: #ffffff;
+      --ink: #17212b;
+      --muted: #5a6672;
+      --line: #d9e1e8;
+      --ok: #0b7a54;
+      --warn: #9a5b00;
+      --bad: #9b2034;
+      --blue: #2058a8;
+      --ok-bg: #e8f7ef;
+      --warn-bg: #fff5df;
+      --bad-bg: #f9e8ec;
+      --blue-bg: #eaf1fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      line-height: 1.58;
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 30px 22px 56px; }
+    header {
+      padding: 34px;
+      color: #fff;
+      background: #1f2a33;
+      border-radius: 8px;
+    }
+    h1, h2, h3 { margin: 0; letter-spacing: 0; }
+    h1 { font-size: 32px; }
+    h2 { margin-bottom: 14px; font-size: 23px; }
+    h3 { margin-bottom: 8px; font-size: 17px; }
+    p { margin: 7px 0; }
+    a { color: var(--blue); }
+    code {
+      padding: 1px 5px;
+      border: 1px solid #d6dee6;
+      border-radius: 4px;
+      background: #eef2f5;
+      overflow-wrap: anywhere;
+    }
+    .lead { max-width: 980px; color: #d8e2ea; font-size: 16px; }
+    .section {
+      margin-top: 22px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      min-height: 116px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .ok { background: var(--ok-bg); }
+    .warn { background: var(--warn-bg); }
+    .bad { background: var(--bad-bg); }
+    .blue { background: var(--blue-bg); }
+    .metric { color: var(--muted); font-size: 13px; }
+    .value { margin-top: 4px; font-size: 24px; font-weight: 700; overflow-wrap: anywhere; }
+    .badge {
+      display: inline-block;
+      padding: 3px 9px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .accepted { color: var(--ok); }
+    .needs-review { color: var(--warn); }
+    .unavailable { color: var(--bad); }
+    table { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 10px 11px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: #edf2f6; }
+    figure { margin: 0; }
+    figure img {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; }
+    .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .note { margin-top: 14px; padding: 12px 14px; border-left: 4px solid var(--warn); background: #fff9eb; }
+    .pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7f9fb;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 13px;
+    }
+    @media (max-width: 900px) {
+      main { padding: 16px; }
+      header { padding: 24px; }
+      .grid, .grid.two, .shots { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="badge accepted">自动化验收报告</span>
+    <h1>V2.81-V2.85 真实文档资料验收与发布闭环</h1>
+    <p class="lead">本报告基于原始 PRD、目标架构、阶段审计文档、focused tests、真实仓库文档 Route B E2E 和 Headless 截图证据生成。报告只声明已有证据能支持的结论，不把文档描述、截图或 mock-only 内容当作实现事实。</p>
+  </header>
+
+  <section class="section">
+    <h2>验收结论</h2>
+    <div class="grid">
+      <div class="card ok">
+        <div class="metric">V2.81-V2.83</div>
+        <div class="value">Route B accepted</div>
+        <p>仓库 <code>docs/</code> 真实项目文档已完成样本契约、导入/Wiki、检索/GraphRAG/Source trace 自动化验收。</p>
+      </div>
+      <div class="card warn">
+        <div class="metric">V2.84</div>
+        <div class="value">needs_review</div>
+        <p>质量治理链路保留人工质量 review 缺口，未虚假转为 accepted。</p>
+      </div>
+      <div class="card bad">
+        <div class="metric">V2.85 / Final release</div>
+        <div class="value">not accepted</div>
+        <p>外部项目路径和 human approval 缺失，发布闭环保持 <code>structured_unavailable</code>。</p>
+      </div>
+    </div>
+    <div class="note">最终评价：本阶段自动化 Route B 证据闭环有效，但不能替代用户代表性真实资料人工验收，也不能声明最终 release accepted。</div>
+  </section>
+
+  <section class="section">
+    <h2>目标架构与当前实现</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>当前新增实现实体</h3>
+        <p><code>backend/data_service/code_assets/real_document_acceptance/</code></p>
+        <p><code>backend/data_service/mcp_code_real_document_acceptance_tools.py</code></p>
+        <p><code>backend/data_service/cli_code_real_document_acceptance.py</code></p>
+        <p><code>backend/app/api/v1/code_assets_real_document_acceptance.py</code></p>
+      </div>
+      <div class="card">
+        <h3>目标架构职责</h3>
+        <p>真实资料样本契约、真实文档 E2E、检索/GraphRAG/Source trace、质量治理审查、发布闭环重跑。</p>
+        <p>所有产物保留 <code>needs_review</code>、<code>structured_unavailable</code> 和 evidence refs。</p>
+      </div>
+    </div>
+    <table>
+      <tr><th>接口面</th><th>实现情况</th><th>审计结论</th></tr>
+      <tr><td>MCP</td><td><code>knowledge_code_real_document_acceptance_*_build/read</code></td><td><span class="badge accepted">public surface guard 覆盖</span></td></tr>
+      <tr><td>CLI</td><td><code>python -m data_service code real-document-acceptance ...</code></td><td><span class="badge accepted">parser 与 focused tests 覆盖</span></td></tr>
+      <tr><td>HTTP</td><td><code>/api/workspaces/{workspace_id}/codebases/{codebase_id}/real-document-acceptance/*</code></td><td><span class="badge accepted">独立 route，未改 legacy 大文件</span></td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>阶段验收矩阵</h2>
+    <table>
+      <tr><th>阶段</th><th>用户可感知体验</th><th>状态</th><th>证据与边界</th></tr>
+      <tr><td>V2.81</td><td>维护者确认真实资料样本、脱敏和截图标准。</td><td><span class="badge accepted">Route B accepted</span></td><td>仓库真实文档样本契约已生成；Route A 用户资料仍 <code>needs_review</code>。</td></tr>
+      <tr><td>V2.82</td><td>维护者看到真实资料导入、Wiki artifact 与 E2E 报告。</td><td><span class="badge accepted">Route B accepted</span></td><td>使用 <code>repo://docs/...</code> 引用，不使用 mock-only 文档。</td></tr>
+      <tr><td>V2.83</td><td>维护者可查看查询结果、GraphRAG 摘要和来源追溯。</td><td><span class="badge accepted">Route B accepted</span></td><td>只做文档证据关系审查，不声明 full call graph 或 runtime topology。</td></tr>
+      <tr><td>V2.84</td><td>维护者查看质量治理和纠错建议。</td><td><span class="badge needs-review">needs_review</span></td><td>缺少人工质量 review，不能 accepted。</td></tr>
+      <tr><td>V2.85</td><td>维护者查看发布闭环重跑和出门判断。</td><td><span class="badge unavailable">structured_unavailable</span></td><td>外部项目路径与 human approval 缺失，最终 release 不放行。</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>真实数据与产物证据</h2>
+    <p>真实 Route B 数据来自本仓库文档目录，生成产物位于工作区运行产物目录，不作为最终发布 accepted 的替代证据。</p>
+    <div class="pre">workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/sample_contract/sample_contract.json
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/real_e2e/import_run.json
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/real_e2e/wiki_artifact_review.json
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/query_trace_review.json
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/graphrag_review.json
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/source_trace_review.md
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/quality/quality_governance_review.json
+workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/release_closure/release_closure_rerun.json</div>
+  </section>
+
+  <section class="section">
+    <h2>自动化截图证据</h2>
+    <p>优先使用 Headless。Linux Playwright Chromium 因缺少 <code>libnspr4.so</code> 无法启动，随后使用 Windows Chrome headless 方式截图；截图过程没有打开可见浏览器窗口。</p>
+    <div class="shots">
+      <figure><img src="visual_acceptance_assets/v2_81_85/overview.png" alt="阶段总览截图" /><figcaption>阶段总览：Route B 部分通过、最终 release 未 accepted。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/architecture.png" alt="架构实现截图" /><figcaption>目标架构与当前实现：列出代码实体和接口面。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/sample_contract.png" alt="样本契约截图" /><figcaption>V2.81：真实资料样本契约，Route A 保持 needs_review。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/real_e2e.png" alt="真实 E2E 截图" /><figcaption>V2.82：真实资料导入与 Wiki artifact review。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/retrieval_trace.png" alt="检索追溯截图" /><figcaption>V2.83：检索、GraphRAG 和 Source trace，边界声明可见。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/quality_governance.png" alt="质量治理截图" /><figcaption>V2.84：质量治理缺少人工 review，保持 needs_review。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/release_closure.png" alt="发布闭环截图" /><figcaption>V2.85：外部项目与人工签核缺失，保持 structured_unavailable。</figcaption></figure>
+      <figure><img src="visual_acceptance_assets/v2_81_85/user_path.png" alt="用户路径截图" /><figcaption>维护者最小体验路径：选择资料、导入、追溯、质量治理、出门判断。</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>执行命令与检查</h2>
+    <div class="pre">backend/.venv/bin/python -m pytest -q backend/tests/test_v2_81_real_document_sample_contract.py backend/tests/test_v2_82_real_document_import_wiki.py backend/tests/test_v2_83_retrieval_graphrag_source_trace.py backend/tests/test_v2_84_quality_governance_real_document.py backend/tests/test_v2_85_release_closure_rerun.py backend/tests/test_public_surface_guard.py
+backend/.venv/bin/python -m compileall backend/data_service backend/app/api backend/tests
+git diff --check
+git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</div>
+    <p>截图完整性检查：8 张 PNG 均为 <code>1280x720</code>，像素统计非空白。证据索引见 <code>docs/V2.x/visual_acceptance_assets/v2_81_85/visual_evidence_manifest.json</code>。</p>
+  </section>
+
+  <section class="section">
+    <h2>PRD / 规格检视</h2>
+    <table>
+      <tr><th>PRD 要求</th><th>当前结论</th></tr>
+      <tr><td>使用真实文档资料验收，不做虚假验收。</td><td>Route B 使用本仓库 <code>docs/</code> 真实项目文档；未提供用户代表性 Route A 文档，因此 Route A 不 accepted。</td></tr>
+      <tr><td>保留 unresolved 状态。</td><td><code>needs_review</code>、<code>structured_unavailable</code> 均保留在阶段报告和本报告中。</td></tr>
+      <tr><td>GraphRAG 与 Source trace 不做过度承诺。</td><td>报告明确不声明 full call graph、runtime topology、data/control flow 或 type inference。</td></tr>
+      <tr><td>最终发布需要外部项目状态和 human approval。</td><td>缺少 <code>codexPat</code>、<code>HarnessOS</code>、<code>Navia</code> 路径和 human approval，最终 release 阻断。</td></tr>
+      <tr><td>保护 legacy 大文件。</td><td>新增独立模块和 adapter，最终命令包含 protected diff check。</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>False-green 审计</h2>
+    <div class="grid">
+      <div class="card ok"><h3>已防止</h3><p>没有把 mock-only、截图文案或文档 claim 当作 accepted code fact。</p></div>
+      <div class="card warn"><h3>仍需人工处理</h3><p>用户代表性真实资料、人类质量 review、human release approval。</p></div>
+      <div class="card bad"><h3>阻断项</h3><p>外部项目真实路径缺失，最终 release 不能 accepted。</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>审计文件索引</h2>
+    <table>
+      <tr><th>文件</th><th>用途</th></tr>
+      <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FINAL_ACCEPTANCE_AUDIT_REPORT.md</code></td><td>阶段最终验收审计。</td></tr>
+      <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_FULL_COVERAGE_MATRIX.md</code></td><td>PRD 能力、artifact 和验收状态矩阵。</td></tr>
+      <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_DOCUMENT_AUDIT_REPORT.md</code></td><td>文档一致性和支撑度审计。</td></tr>
+      <tr><td><code>docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_VISUAL_ACCEPTANCE_REPORT.html</code></td><td>本可视化验收报告。</td></tr>
+      <tr><td><code>docs/V2.x/visual_acceptance_assets/v2_81_85/visual_evidence_manifest.json</code></td><td>截图和运行证据索引。</td></tr>
+    </table>
+  </section>
+</main>
+</body>
+</html>

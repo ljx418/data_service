@@ -1,0 +1,101 @@
+{
+  "schema_version": "v2.81-85-visual-evidence",
+  "generated_at": "2026-07-01T12:45:00+08:00",
+  "stage": "V2.81-V2.85 Real Document Acceptance Release Closure",
+  "capture_mode": "headless_chrome",
+  "source_page": "docs/V2.x/visual_acceptance_assets/v2_81_85/scenario_capture.html",
+  "fallback_note": "Linux Playwright Chromium could not launch because libnspr4.so was unavailable. Screenshots were captured with Windows Chrome in headless mode, so no visible browser focus was required for capture.",
+  "overall_result": "partial_accepted",
+  "release_result": "not_accepted",
+  "screenshots": [
+    {
+      "id": "overview",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/overview.png",
+      "size": "1280x720",
+      "purpose": "阶段总览与非最终放行结论"
+    },
+    {
+      "id": "architecture",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/architecture.png",
+      "size": "1280x720",
+      "purpose": "目标架构与当前实现实体"
+    },
+    {
+      "id": "sample_contract",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/sample_contract.png",
+      "size": "1280x720",
+      "purpose": "V2.81 真实资料样本契约验收"
+    },
+    {
+      "id": "real_e2e",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/real_e2e.png",
+      "size": "1280x720",
+      "purpose": "V2.82 真实资料导入与 Wiki artifact 验收"
+    },
+    {
+      "id": "retrieval_trace",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/retrieval_trace.png",
+      "size": "1280x720",
+      "purpose": "V2.83 检索、GraphRAG 与 Source trace 验收"
+    },
+    {
+      "id": "quality_governance",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/quality_governance.png",
+      "size": "1280x720",
+      "purpose": "V2.84 质量治理 needs_review 证据"
+    },
+    {
+      "id": "release_closure",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/release_closure.png",
+      "size": "1280x720",
+      "purpose": "V2.85 发布闭环 structured_unavailable 证据"
+    },
+    {
+      "id": "user_path",
+      "path": "docs/V2.x/visual_acceptance_assets/v2_81_85/user_path.png",
+      "size": "1280x720",
+      "purpose": "维护者最小体验路径"
+    }
+  ],
+  "real_route_b_artifacts": [
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/sample_contract/sample_contract.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/sample_contract/manual_scenario_plan.md",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/real_e2e/import_run.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/real_e2e/wiki_artifact_review.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/real_e2e/real_document_e2e_report.md",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/query_trace_review.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/graphrag_review.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/retrieval_trace/source_trace_review.md",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/quality/quality_governance_review.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/quality/correction_acceptance_report.md",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/release_closure/release_closure_rerun.json",
+    "workspace/v28185-real-docs/assets/codebase/data-service-v28185-real-docs/real_document_acceptance/release_closure/final_manual_acceptance_report.md"
+  ],
+  "phase_results": [
+    {
+      "phase": "V2.81",
+      "status": "accepted_for_route_b",
+      "reason": "仓库 docs/ 真实项目文档样本契约已生成，用户代表性 Route A 仍为 needs_review。"
+    },
+    {
+      "phase": "V2.82",
+      "status": "accepted_for_route_b",
+      "reason": "真实仓库文档导入、Wiki artifact review 和 E2E report 已生成。"
+    },
+    {
+      "phase": "V2.83",
+      "status": "accepted_for_route_b",
+      "reason": "检索、GraphRAG 和 Source trace 均保留 evidence/source refs，未声明完整调用图或运行拓扑。"
+    },
+    {
+      "phase": "V2.84",
+      "status": "needs_review",
+      "reason": "缺少人工质量 review，不能 accepted。"
+    },
+    {
+      "phase": "V2.85",
+      "status": "structured_unavailable",
+      "reason": "外部项目路径与 human approval 缺失，最终 release 不能 accepted。"
+    }
+  ]
+}
