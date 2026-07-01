@@ -54,6 +54,16 @@ Repair:
 - ran a sensitivity scan for local paths, tokens, secrets, passwords, raw tracebacks, and private markers;
 - added `docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_HUMAN_AUDIT_PACKET_INDEX.md`.
 
+## Readability Repair After Third Review
+
+A third audit found that the evidence chain was complete, but the human entry point still used English headings and the visual report did not make the shortest review path prominent enough.
+
+Repair:
+
+- rewrote `docs/V2.x/V2_81_85_REAL_DOCUMENT_ACCEPTANCE_RELEASE_CLOSURE_HUMAN_AUDIT_PACKET_INDEX.md` in Chinese;
+- added a shortest human audit path section to the HTML report;
+- clarified the relationship between the implementation commit `c89ad3f` and later audit evidence repair commits.
+
 ## Evidence Timing Note
 
 `verification_evidence_20260701.md` was generated before the evidence file itself was added to git, so its `git status --short` block records that file as untracked. That line is expected for the evidence-generation moment. It is not evidence that the implementation commit under audit contained uncommitted business-code changes.

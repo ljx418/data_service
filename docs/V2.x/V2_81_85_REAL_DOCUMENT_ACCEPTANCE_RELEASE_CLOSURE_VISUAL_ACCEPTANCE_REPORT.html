@@ -160,7 +160,7 @@
     </div>
     <table>
       <tr><th>审计项</th><th>补强证据</th><th>状态</th></tr>
-      <tr><td>提交与远端同步</td><td>被审计实现提交为 <code>c89ad3f</code>；证据日志中 <code>HEAD...origin/main</code> 为 <code>0 0</code>。</td><td><span class="badge accepted">可复核</span></td></tr>
+      <tr><td>提交与远端同步</td><td>业务实现提交为 <code>c89ad3f</code>；审计证据补强提交为 <code>1d90d47</code> 和 <code>601605f</code>；证据日志中 <code>HEAD...origin/main</code> 为 <code>0 0</code>。</td><td><span class="badge accepted">可复核</span></td></tr>
       <tr><td>focused tests</td><td>V2.81-V2.85 focused tests + public surface guard 退出码为 0。</td><td><span class="badge accepted">可复核</span></td></tr>
       <tr><td>构建与格式</td><td><code>compileall</code>、<code>git diff --check</code> 退出码为 0。</td><td><span class="badge accepted">可复核</span></td></tr>
       <tr><td>受保护文件</td><td><code>git diff --name-only HEAD^ HEAD -- backend/app/api/v1/data_service.py backend/data_service/service.py</code> 输出为空。</td><td><span class="badge accepted">可复核</span></td></tr>
@@ -169,6 +169,18 @@
       <tr><td>最终发布边界</td><td>V2.84 为 <code>needs_review</code>，V2.85 为 <code>structured_unavailable</code>。</td><td><span class="badge accepted">未虚假放行</span></td></tr>
     </table>
     <div class="note">证据时序说明：<code>verification_evidence_20260701.md</code> 生成时尚未加入 git，所以该日志的 <code>git status --short</code> 会显示该日志自身为 untracked。这是证据生成时序，不代表实现提交存在未提交业务代码。</div>
+  </section>
+
+  <section class="section">
+    <h2>人类最短审计路径</h2>
+    <table>
+      <tr><th>步骤</th><th>审计动作</th><th>判断标准</th></tr>
+      <tr><td>1</td><td>先读 <code>HUMAN_AUDIT_PACKET_INDEX.md</code>。</td><td>确认审计范围、提交关系、不可放行边界。</td></tr>
+      <tr><td>2</td><td>打开本 HTML，查看结论、架构、截图、测试映射和 false-green 审计。</td><td>能快速判断 V2.81-V2.83 Route B 通过，V2.84/V2.85 未放行。</td></tr>
+      <tr><td>3</td><td>检查 <code>route_b_artifact_snapshot_manifest.json</code> 和 <code>route_b_artifacts/</code>。</td><td>确认 Route B 产物内容已提交，远端审计者无需依赖本机 workspace。</td></tr>
+      <tr><td>4</td><td>检查 <code>verification_evidence_20260701.md</code>。</td><td>确认 focused tests、compileall、diff check、截图尺寸和 protected 文件检查的退出码。</td></tr>
+      <tr><td>5</td><td>对照 PRD、Coverage Matrix、阶段验收报告。</td><td>确认没有把 <code>needs_review</code>、<code>structured_unavailable</code> 写成 accepted。</td></tr>
+    </table>
   </section>
 
   <section class="section">
