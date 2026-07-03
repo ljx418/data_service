@@ -1,0 +1,246 @@
+{
+  "schema_version": "v2.96-100-visual-e2e",
+  "source": "real default CLI against current data_service repository",
+  "status_summary": {
+    "V2.96 CLI Gap": "accepted",
+    "V2.97 Route A": "needs_review",
+    "V2.98 Quality": "needs_review",
+    "V2.99 External": "structured_unavailable",
+    "V2.100 Release": "structured_unavailable"
+  },
+  "items": [
+    {
+      "label": "V2.96 CLI Gap",
+      "status": "accepted",
+      "artifact_refs": [
+        {
+          "type": "cli_surface_result",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/cli_gap_closure/cli_surface_result.json"
+        }
+      ],
+      "evidence_refs": [
+        "command://default-cli-e2e"
+      ],
+      "unresolved": []
+    },
+    {
+      "label": "V2.97 Route A",
+      "status": "needs_review",
+      "artifact_refs": [
+        {
+          "type": "material_scan",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/route_a_evidence/material_scan.json"
+        },
+        {
+          "type": "redaction_audit",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/route_a_evidence/redaction_audit.json"
+        },
+        {
+          "type": "evidence_capture_manifest",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/route_a_evidence/evidence_capture_manifest.json"
+        },
+        {
+          "type": "manual_confirmation_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/route_a_evidence/manual_confirmation_queue.md"
+        }
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md",
+        "command://headless-doc-check"
+      ],
+      "unresolved": [
+        {
+          "id": "route_a_manual_confirmation",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "Route A manual confirmation is not accepted",
+          "evidence_refs": [],
+          "next_action": "record reviewer confirmation"
+        }
+      ]
+    },
+    {
+      "label": "V2.98 Quality",
+      "status": "needs_review",
+      "artifact_refs": [
+        {
+          "type": "risk_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/quality_workbench/risk_queue.json"
+        },
+        {
+          "type": "decision_recommendations",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/quality_workbench/decision_recommendations.json"
+        },
+        {
+          "type": "human_decision_backlog",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/quality_workbench/human_decision_backlog.md"
+        }
+      ],
+      "evidence_refs": [
+        "repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md"
+      ],
+      "unresolved": [
+        {
+          "id": "v296_spec_alignment",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "high-risk quality recommendation needs human decision",
+          "evidence_refs": [
+            "repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md"
+          ],
+          "next_action": "record reviewer decision"
+        }
+      ]
+    },
+    {
+      "label": "V2.99 External",
+      "status": "structured_unavailable",
+      "artifact_refs": [
+        {
+          "type": "project_paths",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/external_path_registry/project_paths.json"
+        },
+        {
+          "type": "project_smoke_matrix",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/external_path_registry/project_smoke_matrix.json"
+        },
+        {
+          "type": "unavailable_resolution",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/external_path_registry/unavailable_resolution.md"
+        }
+      ],
+      "evidence_refs": [
+        "command://external_path/data_service"
+      ],
+      "unresolved": [
+        {
+          "id": "codexPat",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "project path is missing or unreadable",
+          "evidence_refs": [],
+          "next_action": "provide readable project path and smoke command"
+        },
+        {
+          "id": "HarnessOS",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "project path is missing or unreadable",
+          "evidence_refs": [],
+          "next_action": "provide readable project path and smoke command"
+        },
+        {
+          "id": "Navia",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "project path is missing or unreadable",
+          "evidence_refs": [],
+          "next_action": "provide readable project path and smoke command"
+        }
+      ]
+    },
+    {
+      "label": "V2.100 Release",
+      "status": "structured_unavailable",
+      "artifact_refs": [
+        {
+          "type": "evidence_summary",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/release_evidence_gate/evidence_summary.json"
+        },
+        {
+          "type": "final_release_gate",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/release_evidence_gate/final_release_gate.md"
+        },
+        {
+          "type": "false_green_recheck",
+          "artifact_ref": "automated_evidence_closure://data-service-v296-100/release_evidence_gate/false_green_recheck.md"
+        }
+      ],
+      "evidence_refs": [
+        "command://default-cli-e2e",
+        "repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md",
+        "command://headless-doc-check",
+        "repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md",
+        "command://external_path/data_service",
+        "review://prd-spec"
+      ],
+      "unresolved": [
+        {
+          "id": "route_a_manual_confirmation",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "Route A manual confirmation is not accepted",
+          "evidence_refs": [],
+          "next_action": "record reviewer confirmation"
+        },
+        {
+          "id": "v296_spec_alignment",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "high-risk quality recommendation needs human decision",
+          "evidence_refs": [
+            "repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md"
+          ],
+          "next_action": "record reviewer decision"
+        },
+        {
+          "id": "codexPat",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "project path is missing or unreadable",
+          "evidence_refs": [],
+          "next_action": "provide readable project path and smoke command"
+        },
+        {
+          "id": "HarnessOS",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "project path is missing or unreadable",
+          "evidence_refs": [],
+          "next_action": "provide readable project path and smoke command"
+        },
+        {
+          "id": "Navia",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "project path is missing or unreadable",
+          "evidence_refs": [],
+          "next_action": "provide readable project path and smoke command"
+        },
+        {
+          "id": "v95_release_finalizer",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "v95_release_finalizer artifact is missing",
+          "evidence_refs": [],
+          "next_action": "build v95_release_finalizer artifact"
+        },
+        {
+          "id": "dependency_hygiene",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "dependency_hygiene is not accepted",
+          "evidence_refs": [],
+          "next_action": "provide dependency_hygiene evidence"
+        },
+        {
+          "id": "restore_smoke",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "restore_smoke is not accepted",
+          "evidence_refs": [],
+          "next_action": "provide restore_smoke evidence"
+        },
+        {
+          "id": "human_approval",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "human_approval is not accepted",
+          "evidence_refs": [],
+          "next_action": "provide human_approval evidence"
+        }
+      ]
+    }
+  ],
+  "false_green_note": "Release remains non-accepted when Route A manual confirmation, quality decision, external paths, dependency hygiene, restore smoke, V2.95 finalizer, or human approval are missing."
+}

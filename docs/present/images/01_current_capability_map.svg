@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">data_service 当前能力分类图</title>
+  <desc id="desc">按已验收、受限完成、规划中、No-Go 分类展示当前项目能力。此图是可审计 SVG 草图，不是 imag2 输出。</desc>
+  <rect width="1600" height="900" fill="#f7f8fb"/>
+  <text x="70" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">data_service 当前可完成功能</text>
+  <text x="70" y="112" font-family="Arial, sans-serif" font-size="17" fill="#5b6472">状态来自本地 docs、workspace artifacts 与阶段验收报告。SVG 草图，不是 imag2 输出。</text>
+  <g transform="translate(70 160)">
+    <rect x="0" y="0" width="345" height="560" rx="14" fill="#dff3e5" stroke="#5f9f72"/>
+    <text x="24" y="44" font-size="26" font-weight="700" font-family="Arial" fill="#164728">已验收</text>
+    <text x="24" y="92" font-size="18" font-family="Arial" fill="#203127">• 文档导入、摘要、LLMWiki</text>
+    <text x="24" y="130" font-size="18" font-family="Arial" fill="#203127">• GraphRAG / Distill 产物</text>
+    <text x="24" y="168" font-size="18" font-family="Arial" fill="#203127">• Knowledge Console 静态入口</text>
+    <text x="24" y="206" font-size="18" font-family="Arial" fill="#203127">• MCP / HTTP surface inventory</text>
+    <text x="24" y="244" font-size="18" font-family="Arial" fill="#203127">• V2.86-V2.95 focused tests</text>
+    <text x="48" y="282" font-size="18" font-family="Arial" fill="#203127">27 passed, 16 warnings</text>
+    <text x="24" y="320" font-size="18" font-family="Arial" fill="#203127">• protected legacy diff clean</text>
+  </g>
+  <g transform="translate(445 160)">
+    <rect x="0" y="0" width="345" height="560" rx="14" fill="#fff1d6" stroke="#c18a20"/>
+    <text x="24" y="44" font-size="26" font-weight="700" font-family="Arial" fill="#6b4700">受限完成</text>
+    <text x="24" y="92" font-size="18" font-family="Arial" fill="#3d3320">• Runtime：pytest 可复跑</text>
+    <text x="48" y="130" font-size="18" font-family="Arial" fill="#3d3320">venv 创建失败</text>
+    <text x="24" y="168" font-size="18" font-family="Arial" fill="#3d3320">• Route A：结构已实现</text>
+    <text x="48" y="206" font-size="18" font-family="Arial" fill="#3d3320">缺真实资料与人工验收</text>
+    <text x="24" y="244" font-size="18" font-family="Arial" fill="#3d3320">• Quality：缺 reviewer decision</text>
+    <text x="24" y="282" font-size="18" font-family="Arial" fill="#3d3320">• External：data_service 可跑</text>
+    <text x="48" y="320" font-size="18" font-family="Arial" fill="#3d3320">三外部项目缺路径</text>
+    <text x="24" y="358" font-size="18" font-family="Arial" fill="#3d3320">• Release gate：能阻断假验收</text>
+  </g>
+  <g transform="translate(820 160)">
+    <rect x="0" y="0" width="345" height="560" rx="14" fill="#e4efff" stroke="#6d91c4"/>
+    <text x="24" y="44" font-size="26" font-weight="700" font-family="Arial" fill="#173d70">规划中</text>
+    <text x="24" y="92" font-size="18" font-family="Arial" fill="#23344f">• 默认 shell CLI gap closure</text>
+    <text x="24" y="130" font-size="18" font-family="Arial" fill="#23344f">• Route A 自动脱敏审计包</text>
+    <text x="24" y="168" font-size="18" font-family="Arial" fill="#23344f">• 质量人工决策工作台</text>
+    <text x="24" y="206" font-size="18" font-family="Arial" fill="#23344f">• 外部项目路径配置与 E2E</text>
+    <text x="24" y="244" font-size="18" font-family="Arial" fill="#23344f">• dependency hygiene gate</text>
+    <text x="24" y="282" font-size="18" font-family="Arial" fill="#23344f">• 更少人工的证据采集流程</text>
+  </g>
+  <g transform="translate(1195 160)">
+    <rect x="0" y="0" width="345" height="560" rx="14" fill="#ffe2df" stroke="#be5b53"/>
+    <text x="24" y="44" font-size="26" font-weight="700" font-family="Arial" fill="#7f1d1d">No-Go</text>
+    <text x="24" y="92" font-size="18" font-family="Arial" fill="#472220">• 不声明完整设计意图恢复</text>
+    <text x="24" y="130" font-size="18" font-family="Arial" fill="#472220">• 不声明 full call graph</text>
+    <text x="24" y="168" font-size="18" font-family="Arial" fill="#472220">• 不声明 runtime topology</text>
+    <text x="24" y="206" font-size="18" font-family="Arial" fill="#472220">• 不把 docs claim 当 code fact</text>
+    <text x="24" y="244" font-size="18" font-family="Arial" fill="#472220">• 不把 unresolved 写 accepted</text>
+    <text x="24" y="282" font-size="18" font-family="Arial" fill="#472220">• 不用 Full Corpus 替代 Route A</text>
+  </g>
+  <rect x="70" y="765" width="1470" height="70" rx="16" fill="#172033"/>
+  <text x="100" y="810" font-size="24" font-weight="700" font-family="Arial" fill="#ffffff">结论：阶段实现范围通过；最终发布仍为 structured_blocker，阻断项必须保留。</text>
+</svg>

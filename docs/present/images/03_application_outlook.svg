@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">data_service 应用前景与生态连接图</title>
+  <desc id="desc">展示 data_service 作为证据驱动知识层与 MCP、GraphRAG、Agent memory 生态的连接方向。此图是可审计 SVG 草图，不是 imag2 输出。</desc>
+  <rect width="1600" height="900" fill="#f8faf7"/>
+  <text x="70" y="72" font-family="Arial" font-size="34" font-weight="700" fill="#172033">应用前景：Agent 长期记忆 + 项目验收证据层</text>
+  <text x="70" y="112" font-family="Arial" font-size="17" fill="#5b6472">本图包含后续可扩展方向；虚线表示规划或生态连接，不代表当前已完整实现。</text>
+  <g font-family="Arial">
+    <rect x="70" y="180" width="330" height="450" rx="18" fill="#eef0f3" stroke="#7b8493"/>
+    <text x="100" y="225" font-size="24" font-weight="700" fill="#253043">输入</text>
+    <text x="100" y="275" font-size="19" fill="#253043">• 本地代码仓库</text>
+    <text x="100" y="318" font-size="19" fill="#253043">• docs / PRD / 验收文档</text>
+    <text x="100" y="361" font-size="19" fill="#253043">• workspace 多项目产物</text>
+    <text x="100" y="404" font-size="19" fill="#253043">• Route A 用户真实资料</text>
+    <text x="100" y="447" font-size="19" fill="#253043">• 人工质量决策</text>
+    <rect x="560" y="145" width="480" height="520" rx="22" fill="#e6f0ff" stroke="#6d91c4" stroke-width="2"/>
+    <text x="610" y="198" font-size="27" font-weight="700" fill="#173d70">data_service Evidence Layer</text>
+    <text x="610" y="250" font-size="20" fill="#243044">• 文档导入与 normalized source</text>
+    <text x="610" y="292" font-size="20" fill="#243044">• Summary / LLMWiki / GraphRAG / Distill</text>
+    <text x="610" y="334" font-size="20" fill="#243044">• Source trace 与 evidence refs</text>
+    <text x="610" y="376" font-size="20" fill="#243044">• MCP / HTTP / CLI 公开接口</text>
+    <text x="610" y="418" font-size="20" fill="#243044">• Release gate / false-green audit</text>
+    <text x="610" y="500" font-size="18" fill="#6b4700">当前限制：CLI gap、Route A、质量人工决策、外部路径、human approval。</text>
+    <rect x="1190" y="180" width="340" height="450" rx="18" fill="#e9f6ec" stroke="#5f9f72"/>
+    <text x="1220" y="225" font-size="24" font-weight="700" fill="#164728">可落地场景</text>
+    <text x="1220" y="275" font-size="19" fill="#203127">• Coding Agent 长期项目记忆</text>
+    <text x="1220" y="318" font-size="19" fill="#203127">• 维护者首页和状态面板</text>
+    <text x="1220" y="361" font-size="19" fill="#203127">• 迁移 / 重构验收</text>
+    <text x="1220" y="404" font-size="19" fill="#203127">• 多项目 E2E 审计</text>
+    <text x="1220" y="447" font-size="19" fill="#203127">• 企业知识库与合规证据包</text>
+  </g>
+  <g stroke="#435063" stroke-width="3" fill="none" marker-end="url(#arrow2)">
+    <defs><marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#435063"/></marker></defs>
+    <path d="M400 405 L560 405"/>
+    <path d="M1040 405 L1190 405"/>
+  </g>
+  <g stroke="#9b6a1c" stroke-width="2.5" stroke-dasharray="8 8" fill="none">
+    <path d="M790 665 C760 735 710 780 620 800"/>
+    <path d="M835 665 C875 735 920 780 1015 800"/>
+  </g>
+  <text x="300" y="810" font-family="Arial" font-size="18" fill="#6b4700">生态参考：MCP 工具/资源协议、GraphRAG、LlamaIndex/LangGraph memory。连接方向需后续实现与验收。</text>
+</svg>

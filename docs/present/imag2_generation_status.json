@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-07-03",
+  "requested_model": "host-terminal imag2",
+  "status": "blocked",
+  "reason": "No imag2 command was found in PATH or Windows host command lookup; Garden GPT Image 2 mode is B-or-C with no local API key.",
+  "non_fake_policy": "The SVG files in docs/present/images are audit-friendly layout drafts, not imag2 outputs. They must not be represented as AI-generated images.",
+  "prompt_files": [
+    "docs/present/imag2_prompts/01_current_capability_map.md",
+    "docs/present/imag2_prompts/02_target_experience_storyboard.md",
+    "docs/present/imag2_prompts/03_application_outlook.md"
+  ],
+  "fallback_visuals": [
+    "docs/present/images/01_current_capability_map.svg",
+    "docs/present/images/01_current_capability_map.png",
+    "docs/present/images/02_target_experience_storyboard.svg",
+    "docs/present/images/02_target_experience_storyboard.png",
+    "docs/present/images/03_application_outlook.svg",
+    "docs/present/images/03_application_outlook.png"
+  ]
+}

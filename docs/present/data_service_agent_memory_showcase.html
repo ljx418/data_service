@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>data_service Agent 记忆与验收展示报告</title>
+  <style>
+    :root{--ink:#172033;--muted:#596273;--line:#d9dee8;--ok:#dff3e5;--ok-border:#5f9f72;--warn:#fff1d6;--warn-border:#c18a20;--block:#ffe2df;--block-border:#be5b53;--blue:#e6f0ff;--blue-border:#6d91c4;--gray:#eef0f3;--bg:#f7f8fb}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",Arial,sans-serif;line-height:1.62}header{background:#172033;color:white;padding:44px 56px}header h1{margin:0 0 12px;font-size:34px;letter-spacing:0}header p{max-width:1040px;margin:0;color:#d7deea}.wrap{max-width:1180px;margin:0 auto;padding:34px 24px 70px}.section{background:white;border:1px solid var(--line);border-radius:10px;padding:28px;margin:0 0 22px;box-shadow:0 8px 24px rgba(17,24,39,.05)}h2{margin:0 0 16px;font-size:24px}h3{margin:22px 0 10px;font-size:18px}.lead{font-size:18px;color:#313b4f}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{border:1px solid var(--line);border-radius:8px;padding:16px;background:#fbfcfe}.card.ok{background:var(--ok);border-color:var(--ok-border)}.card.warn{background:var(--warn);border-color:var(--warn-border)}.card.block{background:var(--block);border-color:var(--block-border)}.card.blue{background:var(--blue);border-color:var(--blue-border)}.metric{font-size:28px;font-weight:700;margin:4px 0}.badge{display:inline-block;border-radius:999px;padding:2px 9px;font-size:13px;border:1px solid var(--line);background:white}.badge.ok{background:var(--ok);border-color:var(--ok-border)}.badge.warn{background:var(--warn);border-color:var(--warn-border)}.badge.block{background:var(--block);border-color:var(--block-border)}.badge.blue{background:var(--blue);border-color:var(--blue-border)}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border-bottom:1px solid var(--line);padding:11px 10px;text-align:left;vertical-align:top}th{font-size:14px;color:#445066;background:#f2f4f8}.note{border-left:4px solid var(--warn-border);padding:12px 14px;background:#fffaf0;color:#4c3a18}.blocknote{border-left:4px solid var(--block-border);padding:12px 14px;background:#fff6f5;color:#55231f}.imgs{display:grid;grid-template-columns:1fr;gap:18px}.imgs figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}.imgs img{width:100%;display:block}.imgs figcaption{padding:12px 14px;color:#4f596b;font-size:14px;background:#f7f8fb}code{background:#eef1f6;padding:2px 5px;border-radius:4px}pre{background:#101827;color:#e6edf7;border-radius:8px;padding:14px;overflow:auto}.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}a{color:#1f5fa8}@media(max-width:900px){.grid,.cols{grid-template-columns:1fr}header{padding:34px 24px}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>data_service Agent 记忆与验收展示报告</h1>
+  <p>面向其它 Agent、ChatBox 和人类审计者的快速理解页。报告基于本地 docs、workspace 产物与阶段验收报告；外部资料只用于应用前景。当前不声明 final release accepted。</p>
+</header>
+<main class="wrap">
+  <section class="section">
+    <h2>1. 一句话定位</h2>
+    <p class="lead">data_service 当前更接近“证据驱动的项目知识层与验收门禁层”：它能把文档、工作区产物、MCP/HTTP surface、测试结果和 release gate 状态组织成 Agent 可读的长期上下文，但仍不能替代高风险人工确认。</p>
+    <div class="grid">
+      <div class="card ok"><h3>自动化范围</h3><div class="metric">通过</div><p>V2.86-V2.95 focused tests 与 public surface guard 通过。</p></div>
+      <div class="card warn"><h3>人工依赖</h3><div class="metric">存在</div><p>Route A、质量决策、human approval 仍需真实证据。</p></div>
+      <div class="card block"><h3>最终出门</h3><div class="metric">阻断</div><p>final release gate 当前为 structured_blocker。</p></div>
+      <div class="card blue"><h3>展示图状态</h3><div class="metric">待 imag2</div><p>终端未发现 imag2，本页图为 SVG 草图。</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>2. 当前可完成功能分类</h2>
+    <div class="imgs">
+      <figure>
+        <img src="images/01_current_capability_map.svg" alt="当前能力分类图">
+        <figcaption>内容图草图：按已验收、受限完成、规划中、No-Go 分类。不是 imag2 输出。</figcaption>
+      </figure>
+    </div>
+    <table>
+      <thead><tr><th>分类</th><th>能力</th><th>当前判断</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge ok">已验收</span></td><td>文档导入、摘要、LLMWiki、GraphRAG/Distill 产物、Knowledge Console 静态入口、MCP/HTTP inventory、focused tests、protected legacy diff</td><td>有本地测试和 artifact 证据支撑。</td></tr>
+        <tr><td><span class="badge warn">受限完成</span></td><td>runtime restore、Route A、质量决策、外部项目 E2E、release gate</td><td>代码结构与报告能力存在，但真实资料、人工决策或外部路径不足。</td></tr>
+        <tr><td><span class="badge blue">规划中</span></td><td>默认 shell CLI gap、Route A 自动化脱敏、质量人工决策工作台、外部项目路径治理、dependency hygiene</td><td>适合作为下一阶段候选目标。</td></tr>
+        <tr><td><span class="badge block">No-Go</span></td><td>完整设计意图恢复、full call graph、runtime topology、data/control flow、type inference、把 unresolved 写 accepted</td><td>明确禁止，防止 false-green。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>3. 目标形态与使用路径</h2>
+    <div class="imgs">
+      <figure>
+        <img src="images/02_target_experience_storyboard.svg" alt="目标体验组图">
+        <figcaption>目标体验草图：维护者、Agent、审计者围绕证据和 release gate 协作。不是 imag2 输出。</figcaption>
+      </figure>
+    </div>
+    <div class="cols">
+      <div>
+        <h3>维护者路径</h3>
+        <ol>
+          <li>打开 Knowledge Console 或 HTML 审查报告。</li>
+          <li>查看 runtime、Route A、Quality、External Project、Release Gate 状态。</li>
+          <li>只在高风险缺口处补真实资料、人工决策或路径。</li>
+          <li>复跑验收命令，确认 false-green audit 未放行阻断项。</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Agent 路径</h3>
+        <ol>
+          <li>通过 MCP/HTTP 读取 persisted artifacts。</li>
+          <li>把 evidence_refs、unresolved、next_actions 作为上下文。</li>
+          <li>避免把文档 claim 当代码事实。</li>
+          <li>在缺证据时保持 needs_review 或 structured_unavailable。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>4. 应用前景</h2>
+    <div class="imgs">
+      <figure>
+        <img src="images/03_application_outlook.svg" alt="应用前景与生态连接图">
+        <figcaption>应用前景草图：作为 Agent 长期记忆、项目验收、迁移审计和企业知识证据层。不是 imag2 输出。</figcaption>
+      </figure>
+    </div>
+    <p>结合本地文档和外部官方/开源资料，data_service 的合理落地方向是：把本地项目资料构造成可追溯、可审计、可由 Agent 调用的证据层，而不是直接承诺“理解完整系统”。</p>
+    <ul>
+      <li><strong>MCP 对接方向：</strong>当前项目已有 MCP tool surface；MCP 官方资料把工具、资源等作为模型可交互上下文接口，适合承接 Agent 调用。</li>
+      <li><strong>GraphRAG 方向：</strong>Microsoft GraphRAG 开源方案说明了图增强检索的生态路线；data_service 已有 GraphRAG 类产物，但不能声明完全等价。</li>
+      <li><strong>Agent memory 方向：</strong>LlamaIndex 与 LangGraph 均有 memory 相关官方文档；data_service 可以作为项目级长期记忆后端候选，但需要补稳定 API、权限、清理和增量更新能力。</li>
+      <li><strong>企业审计方向：</strong>当前 release gate、false-green audit、source trace 和状态枚举可发展为迁移/重构/合规验收证据包。</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>5. 本地证据索引</h2>
+    <table>
+      <thead><tr><th>证据</th><th>路径</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>阶段审计报告</td><td><code>docs/V2.x/V2_91_95_REAL_ACCEPTANCE_CLOSURE_AND_RESTORE_ENVIRONMENT_STAGE_ACCEPTANCE_AUDIT_REPORT.md</code></td><td>说明实现范围通过，但 final release 未 accepted。</td></tr>
+        <tr><td>最终可视化审查报告</td><td><code>docs/V2.x/V2_91_95_REAL_ACCEPTANCE_CLOSURE_AND_RESTORE_ENVIRONMENT_VISUAL_ACCEPTANCE_REPORT.html</code></td><td>包含截图证据、复现命令和阻断语义。</td></tr>
+        <tr><td>Release gate artifact</td><td><code>workspace/v2_91_95_real_acceptance_e2e/assets/codebase/data_service_v29195/real_acceptance_closure/release_finalizer/final_gate_summary.json</code></td><td>当前 status 为 structured_blocker。</td></tr>
+        <tr><td>Workspace 项目样本</td><td><code>workspace/data_service_docs_demo</code>、<code>workspace/v2_86_90_manual_experience</code>、<code>workspace/v2_91_95_real_acceptance_e2e</code></td><td>用于本地多项目/多阶段理解与验收。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>6. imag2 生图状态</h2>
+    <p class="blocknote"><strong>未完成 imag2 出图。</strong> 本机未发现 <code>imag2</code> 命令，`gpt-image-2` 技能检测为 B/C 模式且无本地 API key。因此本页内三张图是可审计 SVG 草图，不是 AI 生图产物，不能当作“已按 imag2 生成”的证据。</p>
+    <p>已落盘可直接交给宿主 imag2 的提示词：</p>
+    <ul>
+      <li><code>docs/present/imag2_prompts/01_current_capability_map.md</code></li>
+      <li><code>docs/present/imag2_prompts/02_target_experience_storyboard.md</code></li>
+      <li><code>docs/present/imag2_prompts/03_application_outlook.md</code></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>7. 外部资料来源</h2>
+    <p>以下只支撑应用前景，不作为当前代码实现证据。</p>
+    <ul>
+      <li><a href="https://modelcontextprotocol.io/">Model Context Protocol official docs</a></li>
+      <li><a href="https://modelcontextprotocol.io/docs/concepts/tools">MCP tools concept</a></li>
+      <li><a href="https://modelcontextprotocol.io/docs/concepts/resources">MCP resources concept</a></li>
+      <li><a href="https://github.com/microsoft/graphrag">Microsoft GraphRAG GitHub repository</a></li>
+      <li><a href="https://docs.llamaindex.ai/en/stable/module_guides/deploying/agents/memory/">LlamaIndex memory documentation</a></li>
+      <li><a href="https://langchain-ai.github.io/langgraph/concepts/memory/">LangGraph memory documentation</a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>8. 给其它 Agent / ChatBox 的快速结论</h2>
+    <pre><code>data_service 可以作为证据驱动的项目知识层、Agent 长期上下文候选和验收门禁层继续演进。
+当前自动化实现范围通过，但 final release 未 accepted。
+不要声明完整设计意图恢复、full call graph、runtime topology、data/control flow 或 type inference。
+不要把 needs_review / structured_unavailable / structured_blocker 写成 accepted。
+下一步优先补：imag2 出图环境、默认 shell CLI gap、Route A 真实资料、质量人工决策、外部项目路径、dependency hygiene、human approval。</code></pre>
+  </section>
+</main>
+</body>
+</html>

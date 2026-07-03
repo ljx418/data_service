@@ -302,6 +302,16 @@ V2_CODEBASE_TOOLS = {
     "knowledge_code_real_acceptance_closure_external_project_closure_read",
     "knowledge_code_real_acceptance_closure_release_finalizer_build",
     "knowledge_code_real_acceptance_closure_release_finalizer_read",
+    "knowledge_code_automated_evidence_closure_cli_gap_build",
+    "knowledge_code_automated_evidence_closure_cli_gap_read",
+    "knowledge_code_automated_evidence_closure_route_a_evidence_build",
+    "knowledge_code_automated_evidence_closure_route_a_evidence_read",
+    "knowledge_code_automated_evidence_closure_quality_workbench_build",
+    "knowledge_code_automated_evidence_closure_quality_workbench_read",
+    "knowledge_code_automated_evidence_closure_external_path_build",
+    "knowledge_code_automated_evidence_closure_external_path_read",
+    "knowledge_code_automated_evidence_closure_release_gate_build",
+    "knowledge_code_automated_evidence_closure_release_gate_read",
 }
 V2_TARGET_ROUTE_ADDITIONS = {
     ("POST", "/api/ocr/provider/health"),
@@ -534,6 +544,16 @@ V2_TARGET_ROUTE_ADDITIONS = {
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/real-acceptance-closure/external-project-closure"),
     ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/real-acceptance-closure/release-finalizer/build"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/real-acceptance-closure/release-finalizer"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/cli-gap/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/cli-gap"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/route-a-evidence/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/route-a-evidence"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/quality-workbench/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/quality-workbench"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/external-path/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/external-path"),
+    ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/release-gate/build"),
+    ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/release-gate"),
     ("POST", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/build"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/report"),
     ("GET", "/api/workspaces/{workspace_id}/codebases/{codebase_id}/architecture/intent/context-pack"),
@@ -736,7 +756,7 @@ def test_v16a_knowledge_cli_parser_matches_v15_public_surface_baseline():
             expected_nested[command] = sorted(set(expected_nested[command]) | set(additions or []))
 
     assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code"}
-    expected_nested["code"] = ["agent-memory-release", "agent-productization", "architecture", "architecture-intent", "archive", "coding-agent", "context-pack", "describe", "devwiki", "external-e2e-portal-delivery", "graph", "human-agent-deepening", "import", "inventory", "list", "overview", "platform", "project-acceptance-hardening", "quality", "real-acceptance-closure", "real-document-acceptance", "real-document-full-corpus-release", "snapshot", "stabilization-e2e-portal", "symbols", "trace"]
+    expected_nested["code"] = ["agent-memory-release", "agent-productization", "architecture", "architecture-intent", "archive", "automated-evidence-closure", "coding-agent", "context-pack", "describe", "devwiki", "external-e2e-portal-delivery", "graph", "human-agent-deepening", "import", "inventory", "list", "overview", "platform", "project-acceptance-hardening", "quality", "real-acceptance-closure", "real-document-acceptance", "real-document-full-corpus-release", "snapshot", "stabilization-e2e-portal", "symbols", "trace"]
     assert current_inventory == expected_nested
 
 

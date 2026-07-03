@@ -1,0 +1,72 @@
+[
+  {
+    "file": "01_overview.png",
+    "title": "总览状态",
+    "proof": "展示实现范围通过、最终 release gate 未全绿和各子阶段状态。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 83736,
+    "sha256": "92c9315072f2dcbcc00b438d87fe116d05865f101378ac80f61d5767f0fa4f43",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  },
+  {
+    "file": "02_architecture.png",
+    "title": "目标架构与当前实现",
+    "proof": "同步 drawio 后的实体状态：已实现、受限完成、No-Go 明确。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 81044,
+    "sha256": "0ed1fc7eb5bcd3726f1b61f119c84a8620f8f011251d06631997c658f2c595b4",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  },
+  {
+    "file": "03_user_path.png",
+    "title": "用户场景体验路径",
+    "proof": "维护者从 CLI 到 release gate 能看到真实证据和阻断原因。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 72410,
+    "sha256": "63c31070fdca25e530cf6320b4ae36a000b0369d7907f70d9a4fb07191e14dc0",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  },
+  {
+    "file": "04_acceptance_matrix.png",
+    "title": "验收矩阵",
+    "proof": "实现面通过，最终出门门槛没有放宽。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 51729,
+    "sha256": "992b078688be69c7ca7a68bfaf1859d0060280300c25ceebcee96d3f8e230c2d",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  },
+  {
+    "file": "05_evidence_manifest.png",
+    "title": "证据与复现清单",
+    "proof": "所有核心结论绑定命令、测试日志、artifact refs 或 unresolved reason。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 70584,
+    "sha256": "df4bf27d30f527f32a557eff88402bfa44f96083733c8ca3db26fe51c631d384",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  },
+  {
+    "file": "06_false_green.png",
+    "title": "No-Go 与 False-green 审计",
+    "proof": "默认寻找问题，不做幻想式通过。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 88171,
+    "sha256": "c7e7da60d5ba94569c08d26f3d6de4b27fcfcb82313b8db4422c76372ecb4691",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  },
+  {
+    "file": "07_reproduction.png",
+    "title": "完整复现命令",
+    "proof": "人类或其他 Agent 可按命令复核，不依赖历史对话。",
+    "width": 1440,
+    "height": 1400,
+    "bytes": 66065,
+    "sha256": "3b8f659dd3cc4cc23ef3faeddab9d70996c28de309dbeec0530bdc98eba11e7a",
+    "capture_method": "fallback_pillow_render_due_to_playwright_missing_libnspr4"
+  }
+]

@@ -269,6 +269,7 @@ def _build_parser(*, prog: str = "data_service") -> argparse.ArgumentParser:
     graphrag_execute = subparsers.add_parser("graphrag-execute", help="Run delegated app.graphrag execution for a workspace")
     _add_workspace_argument(graphrag_execute)
 
+    add_code_parser(subparsers)
     _add_query_parser(subparsers)
     _add_quality_parser(subparsers)
 

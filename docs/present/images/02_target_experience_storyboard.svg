@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">data_service 目标体验组图</title>
+  <desc id="desc">展示维护者、Agent、审计者如何使用 data_service。此图是可审计 SVG 草图，不是 imag2 输出。</desc>
+  <rect width="1600" height="900" fill="#fbfbf8"/>
+  <text x="72" y="72" font-family="Arial" font-size="34" font-weight="700" fill="#172033">目标形态：证据驱动的 Agent 项目记忆与验收层</text>
+  <text x="72" y="112" font-family="Arial" font-size="17" fill="#5b6472">从真实资料到 Release Gate，减少人工猜测，只保留高风险确认。</text>
+  <g font-family="Arial" font-size="16" fill="#243044">
+    <g transform="translate(70 185)">
+      <rect width="220" height="420" rx="16" fill="#e5eefb" stroke="#6d91c4"/>
+      <text x="22" y="42" font-size="22" font-weight="700">1. 打开控制台</text>
+      <text x="22" y="90">输入：workspace</text>
+      <text x="22" y="126">看到：release 状态</text>
+      <text x="22" y="162">看到：阻断项</text>
+      <text x="22" y="198">目标：少读文档也能</text>
+      <text x="22" y="230">知道当前能否出门</text>
+    </g>
+    <g transform="translate(315 185)">
+      <rect width="220" height="420" rx="16" fill="#f3f7e8" stroke="#7e9e4f"/>
+      <text x="22" y="42" font-size="22" font-weight="700">2. 绑定资料</text>
+      <text x="22" y="90">docs/V2.x</text>
+      <text x="22" y="126">workspace 产物</text>
+      <text x="22" y="162">Route A 资料包</text>
+      <text x="22" y="198">人工质量决策</text>
+    </g>
+    <g transform="translate(560 185)">
+      <rect width="220" height="420" rx="16" fill="#fff1d6" stroke="#c18a20"/>
+      <text x="22" y="42" font-size="22" font-weight="700">3. 构建产物</text>
+      <text x="22" y="90">Summary</text>
+      <text x="22" y="126">LLMWiki</text>
+      <text x="22" y="162">GraphRAG</text>
+      <text x="22" y="198">Distill</text>
+      <text x="22" y="234">Source Trace</text>
+    </g>
+    <g transform="translate(805 185)">
+      <rect width="220" height="420" rx="16" fill="#e9e6f7" stroke="#8371bf"/>
+      <text x="22" y="42" font-size="22" font-weight="700">4. Agent 读取</text>
+      <text x="22" y="90">MCP tools</text>
+      <text x="22" y="126">HTTP routes</text>
+      <text x="22" y="162">evidence refs</text>
+      <text x="22" y="198">next actions</text>
+      <text x="22" y="234">needs_review</text>
+    </g>
+    <g transform="translate(1050 185)">
+      <rect width="220" height="420" rx="16" fill="#eef0f3" stroke="#777f8e"/>
+      <text x="22" y="42" font-size="22" font-weight="700">5. 审计闭环</text>
+      <text x="22" y="90">人工 decision</text>
+      <text x="22" y="126">外部项目路径</text>
+      <text x="22" y="162">E2E 状态</text>
+      <text x="22" y="198">false-green audit</text>
+    </g>
+    <g transform="translate(1295 185)">
+      <rect width="220" height="420" rx="16" fill="#ffe2df" stroke="#be5b53"/>
+      <text x="22" y="42" font-size="22" font-weight="700">6. 出门判断</text>
+      <text x="22" y="90">accepted</text>
+      <text x="22" y="126">needs_review</text>
+      <text x="22" y="162">structured_unavailable</text>
+      <text x="22" y="198">structured_blocker</text>
+      <text x="22" y="234">当前：不能 final accepted</text>
+    </g>
+  </g>
+  <g stroke="#435063" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#435063"/></marker></defs>
+    <path d="M290 395 L315 395"/><path d="M535 395 L560 395"/><path d="M780 395 L805 395"/><path d="M1025 395 L1050 395"/><path d="M1270 395 L1295 395"/>
+  </g>
+  <rect x="210" y="690" width="1180" height="86" rx="16" fill="#172033"/>
+  <text x="250" y="726" font-family="Arial" font-size="22" font-weight="700" fill="#fff">目标体验：让 Agent 和维护者用证据判断项目状态，而不是依赖长文档和人工猜测。</text>
+  <text x="250" y="760" font-family="Arial" font-size="18" fill="#d9e1ef">高风险项仍需人工确认；缺证据时系统必须自然停在 needs_review / structured_unavailable / structured_blocker。</text>
+</svg>

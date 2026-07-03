@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>V2.96-V2.100 自动化证据闭环阶段验收报告</title>
+<style>
+  :root {
+    --bg: #f7f8fb;
+    --panel: #ffffff;
+    --ink: #172033;
+    --muted: #667085;
+    --line: #d7dce5;
+    --ok: #1f7a4d;
+    --review: #996c00;
+    --unavailable: #7a3f13;
+    --blocker: #9d174d;
+    --blue: #2557a7;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  header { background: #0f2747; color: white; padding: 34px 44px 28px; }
+  header h1 { margin: 0 0 12px; font-size: 30px; letter-spacing: 0; }
+  header p { margin: 4px 0; color: #d9e5f7; max-width: 1180px; }
+  main { max-width: 1220px; margin: 0 auto; padding: 28px 24px 56px; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 22px; margin: 18px 0; }
+  h2 { margin: 0 0 14px; font-size: 22px; }
+  h3 { margin: 18px 0 8px; font-size: 17px; }
+  .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .metric { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fbfcff; min-height: 112px; }
+  .metric strong { display: block; font-size: 20px; margin-bottom: 6px; }
+  .badge { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; border: 1px solid transparent; }
+  .ok { color: var(--ok); background: #e9f8ef; border-color: #a7dfbd; }
+  .review { color: var(--review); background: #fff6d7; border-color: #e7c461; }
+  .unavailable { color: var(--unavailable); background: #fff0e4; border-color: #e2ad85; }
+  .blocker, .failed { color: var(--blocker); background: #ffe7ef; border-color: #e7a0ba; }
+  .neutral { color: #344054; background: #eef2f7; border-color: #c7d0dd; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { border: 1px solid var(--line); padding: 10px; vertical-align: top; text-align: left; }
+  th { background: #eef3fb; }
+  .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+  figure img { width: 100%; display: block; background: #f2f4f7; }
+  figcaption { padding: 12px; color: var(--muted); font-size: 14px; }
+  .mono, code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+  pre { white-space: pre-wrap; background: #101828; color: #f2f4f7; padding: 14px; border-radius: 8px; overflow: auto; max-height: 360px; }
+  .warn { border-left: 5px solid #d9822b; background: #fff7ed; }
+  .okbox { border-left: 5px solid var(--ok); background: #effaf3; }
+  .path { color: var(--blue); font-weight: 700; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  @media (max-width: 900px) { .grid, .figures { grid-template-columns: 1fr; } header { padding: 24px; } main { padding: 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>V2.96-V2.100 自动化证据闭环阶段验收报告</h1>
+  <p>生成时间：2026-07-04T06:13:37 Asia/Shanghai</p>
+  <p>结论边界：本阶段代码实现、focused tests、真实 CLI E2E、文档审计和 drawio 同步已完成；最终 release gate 因 Route A 人工确认、质量人工决策、外部项目路径、依赖卫生和 human approval 等高风险项未满足，不能声明全绿 accepted。</p>
+</header>
+<main>
+<section class='okbox'>
+  <h2>一页结论</h2>
+  <div class='grid'>
+    <div class='metric'><strong><span class='badge ok'>实现范围通过</span></strong>V2.96-V2.100 已落地独立代码包、CLI/MCP/HTTP surface、artifact contract 和 focused tests。</div>
+    <div class='metric'><strong><span class='badge ok'>13 passed</span></strong>focused tests + public surface guard 通过，日志见 <span class='mono'>docs/V2.x/visual_acceptance_assets/v2_96_100/focused_tests.log</span>。</div>
+    <div class='metric'><strong><span class='badge unavailable'>最终出门未全绿</span></strong>未把 needs_review / structured_unavailable 写成 accepted，避免虚假验收。</div>
+    <div class='metric'><strong><span class='badge review'>人工只处理高风险</span></strong>Route A 确认、质量决策、外部路径和发布批准仍需真实输入或明确阻断。</div>
+  </div>
+</section>
+
+<section>
+  <h2>目标架构与当前实现</h2>
+  <p>目标架构从 V2.96-V2.100 文档和 drawio 同步而来：Default CLI Gap Closure、Route A Evidence Automation、Quality Decision Minimization、External Project E2E Governance、Automated Release Evidence Gate 形成证据闭环。当前实现以独立包 <span class='path'>backend/data_service/code_assets/automated_evidence_closure/</span> 为核心，并通过 CLI、MCP、HTTP adapter 暴露能力。</p>
+  <table>
+    <thead><tr><th>架构实体</th><th>当前实现状态</th><th>验收边界</th></tr></thead>
+    <tbody>
+      <tr><td>Default CLI Entrypoint Adapter</td><td><span class='badge ok'>accepted</span> 默认 shell CLI 可进入 code command surface。</td><td>不修改受保护 legacy 大文件。</td></tr>
+      <tr><td>Route A Evidence Automation</td><td><span class='badge review'>needs_review</span> 已生成资料扫描、脱敏审查、截图/证据 manifest、人工确认队列。</td><td>缺真实人工确认时不能 accepted。</td></tr>
+      <tr><td>Quality Decision Workbench</td><td><span class='badge review'>needs_review</span> 已生成风险队列、建议、人工决策 backlog。</td><td>自动建议不能替代 reviewer decision。</td></tr>
+      <tr><td>External Project E2E Governance</td><td><span class='badge unavailable'>structured_unavailable</span> data_service 可用，codexPat/HarnessOS/Navia 缺可读路径。</td><td>缺路径项目不能 accepted。</td></tr>
+      <tr><td>Automated Release Evidence Gate</td><td><span class='badge unavailable'>structured_unavailable</span> 已聚合 release evidence、final gate 和 false-green recheck。</td><td>任何高风险项缺失时 final release 不能 accepted。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>真实 E2E 状态矩阵</h2>
+  <p>本轮 E2E 使用当前 data_service 仓库作为真实项目输入，通过默认 CLI 构建 V2.96-V2.100 artifacts。状态如下：</p>
+  <table>
+    <thead><tr><th>子阶段</th><th>状态</th><th>产物数</th><th>证据数</th><th>未闭合原因</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>V2.96 CLI Gap</td>
+        <td><span class='badge ok'>accepted</span></td>
+        <td>1</td>
+        <td>1</td>
+        <td>无</td>
+      </tr>
+      <tr>
+        <td>V2.97 Route A</td>
+        <td><span class='badge review'>needs_review</span></td>
+        <td>4</td>
+        <td>2</td>
+        <td>route_a_manual_confirmation: Route A manual confirmation is not accepted</td>
+      </tr>
+      <tr>
+        <td>V2.98 Quality</td>
+        <td><span class='badge review'>needs_review</span></td>
+        <td>3</td>
+        <td>1</td>
+        <td>v296_spec_alignment: high-risk quality recommendation needs human decision</td>
+      </tr>
+      <tr>
+        <td>V2.99 External</td>
+        <td><span class='badge unavailable'>structured_unavailable</span></td>
+        <td>3</td>
+        <td>1</td>
+        <td>codexPat: project path is missing or unreadable; HarnessOS: project path is missing or unreadable; Navia: project path is missing or unreadable</td>
+      </tr>
+      <tr>
+        <td>V2.100 Release</td>
+        <td><span class='badge unavailable'>structured_unavailable</span></td>
+        <td>3</td>
+        <td>6</td>
+        <td>route_a_manual_confirmation: Route A manual confirmation is not accepted; v296_spec_alignment: high-risk quality recommendation needs human decision; codexPat: project path is missing or unreadable; HarnessOS: project path is missing or unreadable; Navia: project path is missing or unreadable; v95_release_finalizer: v95_release_finalizer artifact is missing; dependency_hygiene: dependency_hygiene is not accepted; restore_smoke: restore_smoke is not accepted; human_approval: human_approval is not accepted</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class='warn'>
+  <h2>截图与自动化限制说明</h2>
+  <p>Playwright headless 截图已尝试执行，但当前系统 Chromium headless shell 缺少 libnspr4.so；sudo 安装系统依赖需要密码，未执行提权安装。因此本报告内 PNG 为 Pillow 根据审计场景生成的替代视觉证据，不声明为浏览器截图。</p>
+  <p>因此，本报告的图像用于“快速理解和审计导航”，不是浏览器真实交互截图。真实验收依据仍是 focused tests、CLI E2E 输出、artifact refs、日志和未闭合项记录。</p>
+</section>
+
+<section>
+  <h2>用户场景体验路径证据</h2>
+  <div class='figures'>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/01_overview.png' alt='总览状态'>
+        <figcaption>
+          <strong>总览状态</strong><br>
+          展示实现范围通过、最终 release gate 未全绿和各子阶段状态。<br>
+          <span class='mono'>sha256: 92c9315072f2dcbc...</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/02_architecture.png' alt='目标架构与当前实现'>
+        <figcaption>
+          <strong>目标架构与当前实现</strong><br>
+          同步 drawio 后的实体状态：已实现、受限完成、No-Go 明确。<br>
+          <span class='mono'>sha256: 0ed1fc7eb5bcd372...</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/03_user_path.png' alt='用户场景体验路径'>
+        <figcaption>
+          <strong>用户场景体验路径</strong><br>
+          维护者从 CLI 到 release gate 能看到真实证据和阻断原因。<br>
+          <span class='mono'>sha256: 63c31070fdca25e5...</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/04_acceptance_matrix.png' alt='验收矩阵'>
+        <figcaption>
+          <strong>验收矩阵</strong><br>
+          实现面通过，最终出门门槛没有放宽。<br>
+          <span class='mono'>sha256: 992b078688be69c7...</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/05_evidence_manifest.png' alt='证据与复现清单'>
+        <figcaption>
+          <strong>证据与复现清单</strong><br>
+          所有核心结论绑定命令、测试日志、artifact refs 或 unresolved reason。<br>
+          <span class='mono'>sha256: df4bf27d30f527f3...</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/06_false_green.png' alt='No-Go 与 False-green 审计'>
+        <figcaption>
+          <strong>No-Go 与 False-green 审计</strong><br>
+          默认寻找问题，不做幻想式通过。<br>
+          <span class='mono'>sha256: c7e7da60d5ba9456...</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='docs/V2.x/visual_acceptance_assets/v2_96_100/07_reproduction.png' alt='完整复现命令'>
+        <figcaption>
+          <strong>完整复现命令</strong><br>
+          人类或其他 Agent 可按命令复核，不依赖历史对话。<br>
+          <span class='mono'>sha256: 3b8f659dd3cc4cc2...</span>
+        </figcaption>
+      </figure></div>
+</section>
+
+<section>
+  <h2>未闭合高风险项</h2>
+  <p>这些项是出门验收不能全绿的直接原因。它们不是实现遗漏，而是 PRD 明确要求不能由自动化伪造的真实输入或人工确认。</p>
+  <ul>
+          <li><strong>route_a_manual_confirmation</strong> <span class='badge review'>needs_review</span><br>
+          原因：Route A manual confirmation is not accepted<br>
+          下一步：record reviewer confirmation</li>
+          <li><strong>v296_spec_alignment</strong> <span class='badge review'>needs_review</span><br>
+          原因：high-risk quality recommendation needs human decision<br>
+          下一步：record reviewer decision</li>
+          <li><strong>codexPat</strong> <span class='badge unavailable'>structured_unavailable</span><br>
+          原因：project path is missing or unreadable<br>
+          下一步：provide readable project path and smoke command</li>
+          <li><strong>HarnessOS</strong> <span class='badge unavailable'>structured_unavailable</span><br>
+          原因：project path is missing or unreadable<br>
+          下一步：provide readable project path and smoke command</li>
+          <li><strong>Navia</strong> <span class='badge unavailable'>structured_unavailable</span><br>
+          原因：project path is missing or unreadable<br>
+          下一步：provide readable project path and smoke command</li>
+          <li><strong>v95_release_finalizer</strong> <span class='badge review'>needs_review</span><br>
+          原因：v95_release_finalizer artifact is missing<br>
+          下一步：build v95_release_finalizer artifact</li>
+          <li><strong>dependency_hygiene</strong> <span class='badge review'>needs_review</span><br>
+          原因：dependency_hygiene is not accepted<br>
+          下一步：provide dependency_hygiene evidence</li>
+          <li><strong>restore_smoke</strong> <span class='badge review'>needs_review</span><br>
+          原因：restore_smoke is not accepted<br>
+          下一步：provide restore_smoke evidence</li>
+          <li><strong>human_approval</strong> <span class='badge review'>needs_review</span><br>
+          原因：human_approval is not accepted<br>
+          下一步：provide human_approval evidence</li></ul>
+</section>
+
+<section>
+  <h2>验收命令与结果</h2>
+  <h3>Focused Tests</h3>
+  <pre>.............                                                            [100%]
+=============================== warnings summary ===============================
+tests/test_v2_96_default_cli_gap_closure.py::test_v296_default_shell_cli_accepts_code_command
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /home/administrator/.local/lib/python3.12/site-packages/httpx/_client.py:680: DeprecationWarning: The &#x27;app&#x27; shortcut is now deprecated. Use the explicit style &#x27;transport=WSGITransport(app=...)&#x27; instead.
+    warnings.warn(message, DeprecationWarning)
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/storage.py:85: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    (self.SCHEMA_VERSION, datetime.utcnow().isoformat())
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/engine.py:77: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    run_started_at = datetime.utcnow()
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/engine.py:312: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    created_at=datetime.utcnow(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/engine.py:313: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    updated_at=datetime.utcnow(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/engine.py:767: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    &quot;updated_at&quot;: datetime.utcnow().isoformat(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/engine.py:745: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    &quot;generated_at&quot;: datetime.utcnow().isoformat(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/compiler/llm_compiler.py:407: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    updated_at=datetime.utcnow(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/compiler/llm_compiler.py:408: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    compiled_at=datetime.utcnow(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/compiler/llm_compiler.py:42: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    fallback_page.compiled_at = datetime.utcnow()
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/storage.py:424: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    datetime.utcnow().isoformat(),
+
+tests/test_public_surface_guard.py::test_v16a_target_http_contract_smoke_matches_legacy_contracts
+  /mnt/c/workspace/data_service/backend/app/llmwiki/compiler/llm_compiler.py:144: DeprecationWarning: datetime.datetime.utcnow() is deprecated a</pre>
+  <h3>Compileall</h3>
+  <pre>Listing &#x27;backend/data_service&#x27;...
+Listing &#x27;backend/data_service/code_assets&#x27;...
+Listing &#x27;backend/data_service/code_assets/agent_memory_release&#x27;...
+Listing &#x27;backend/data_service/code_assets/agent_productization&#x27;...
+Listing &#x27;backend/data_service/code_assets/architecture&#x27;...
+Listing &#x27;backend/data_service/code_assets/architecture_intent&#x27;...
+Listing &#x27;backend/data_service/code_assets/automated_evidence_closure&#x27;...
+Listing &#x27;backend/data_service/code_assets/coding_agent&#x27;...
+Listing &#x27;backend/data_service/code_assets/coding_agent_navigation&#x27;...
+Listing &#x27;backend/data_service/code_assets/coding_agent_v2_16&#x27;...
+Listing &#x27;backend/data_service/code_assets/context&#x27;...
+Listing &#x27;backend/data_service/code_assets/devwiki&#x27;...
+Listing &#x27;backend/data_service/code_assets/doc_grounded_architecture&#x27;...
+Listing &#x27;backend/data_service/code_assets/external_e2e_portal_delivery&#x27;...
+Listing &#x27;backend/data_service/code_assets/graph&#x27;...
+Listing &#x27;backend/data_service/code_assets/human_agent_deepening&#x27;...
+Listing &#x27;backend/data_service/code_assets/platform&#x27;...
+Listing &#x27;backend/data_service/code_assets/project_acceptance_hardening&#x27;...
+Listing &#x27;backend/data_service/code_assets/quality&#x27;...
+Listing &#x27;backend/data_service/code_assets/real_acceptance_closure&#x27;...
+Listing &#x27;backend/data_service/code_assets/real_document_acceptance&#x27;...
+Listing &#x27;backend/data_service/code_assets/real_document_full_corpus_release&#x27;...
+Listing &#x27;backend/data_service/code_assets/stabilization_e2e_portal&#x27;...
+Listing &#x27;backend/data_service/research_notebook&#x27;...
+Listing &#x27;backend/data_service/research_notebook/artifacts&#x27;...
+Listing &#x27;backend/data_service/research_notebook/providers&#x27;...
+Listing &#x27;backend/app/api&#x27;...
+Listing &#x27;backend/app/api/v1&#x27;...
+Listing &#x27;backend/tests&#x27;...
+Listing &#x27;backend/tests/fixtures&#x27;...
+Listing &#x27;backend/tests/fixtures/research_notebook&#x27;...
+Listing &#x27;backend/tests/fixtures/research_notebook/document_units&#x27;...
+Listing &#x27;backend/tests/fixtures/research_notebook/evidence_spans&#x27;...
+Listing &#x27;backend/tests/fixtures/research_notebook/source_preview&#x27;...
+</pre>
+  <h3>git diff --check</h3>
+  <pre>no whitespace errors</pre>
+  <h3>受保护 legacy 文件 diff</h3>
+  <pre>no diff in backend/app/api/v1/data_service.py or backend/data_service/service.py</pre>
+</section>
+
+<section>
+  <h2>复现入口</h2>
+  <ul>
+    <li>PRD：<span class='path'>docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md</span></li>
+    <li>目标架构：<span class='path'>docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md</span></li>
+    <li>drawio：<span class='path'>docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_TARGET_STATE.drawio</span></li>
+    <li>阶段验收审计：<span class='path'>docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_ACCEPTANCE_AUDIT_REPORT.md</span></li>
+    <li>视觉证据 manifest：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json</span></li>
+    <li>真实 CLI E2E 摘要：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/real_cli_e2e_summary.json</span></li>
+  </ul>
+  <pre>PYTHONPATH=backend pytest -q backend/tests/test_v2_96_default_cli_gap_closure.py   backend/tests/test_v2_97_route_a_evidence_automation.py   backend/tests/test_v2_98_quality_decision_minimization.py   backend/tests/test_v2_99_external_project_e2e_governance.py   backend/tests/test_v2_100_automated_release_evidence_gate.py   backend/tests/test_public_surface_guard.py
+
+PYTHONPATH=backend python3 -m compileall backend/data_service backend/app/api backend/tests
+git diff --check
+git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</pre>
+</section>
+
+<section>
+  <h2>审计评价</h2>
+  <p><strong>通过：</strong>本阶段自动化开发范围已实现并通过 focused tests、真实 CLI E2E、PRD/spec review、false-green audit、drawio 目标架构同步和受保护文件检查。</p>
+  <p><strong>不通过：</strong>最终 release 出门条件未全绿，原因是若干 PRD 明确要求的高风险真实输入或人工确认仍缺失。本报告没有将这些项伪造为 accepted。</p>
+</section>
+</main>
+</body>
+</html>
