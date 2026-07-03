@@ -52,5 +52,14 @@
     "height": 1200,
     "bytes": 90058,
     "sha256": "91a256cf44c9064e61b9f89553aba43f32dc3f8183810644c13fe38c335659dc"
+  },
+  {
+    "file": "07_reproduction_commands.png",
+    "title": "完整复现命令附录",
+    "proof": "展示 focused tests、compileall、diff、CLI gap、Git/远端和截图 manifest 的完整可复制复核命令。",
+    "width": 1440,
+    "height": 1600,
+    "bytes": 87470,
+    "sha256": "e6e91450442a6684f2fe2dc3b045ef3e351385cd36cd8cc508b852f8962f9fc0"
   }
 ]
