@@ -39,7 +39,7 @@ class RouteAAcceptanceService:
                 unresolved_item(
                     "needs_review",
                     "Route A user representative real materials or manual acceptance evidence are not complete",
-                    item_id="route_a_representative_materials",
+                    item_id="route_a_materials",
                     next_action="provide representative materials, redaction review, screenshots or headless evidence, and reviewer decision",
                 )
             )
@@ -58,6 +58,7 @@ class RouteAAcceptanceService:
         contract.update(
             {
                 "source_type": state.get("source_type") or ("user_representative" if has_material else "structured_unavailable"),
+                "route": "Route A",
                 "sample_pack_ref": state.get("sample_pack_ref") or "",
                 "redaction_policy_ref": state.get("redaction_policy_ref") or "",
                 "acceptance_scope": state.get("acceptance_scope") or "Route A representative real-document UX acceptance",

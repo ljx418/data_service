@@ -51,7 +51,7 @@ class QualityReviewClosureService:
             unresolved.append(unresolved_item("needs_review", "V2.84 quality artifact is missing or empty", item_id="quality_artifact", next_action="build V2.84 quality artifact"))
         for decision in decisions:
             if decision["decision"] == "needs_review":
-                unresolved.append(unresolved_item("needs_review", "human decision is required for quality recommendation", item_id=decision["recommendation_id"], next_action=decision["next_action"]))
+                unresolved.append(unresolved_item("needs_review", "human decision is required for quality recommendation", item_id="quality_review_decisions", next_action=decision["next_action"]))
         review = base_artifact(
             workspace_id=self.workspace_id,
             codebase_id=codebase_id,
@@ -68,6 +68,7 @@ class QualityReviewClosureService:
             {
                 "reviewer": state.get("reviewer") or ("human" if status == "accepted" else "structured_unavailable"),
                 "upstream_status": upstream_status,
+                "upstream_artifact_ref": "real_document_acceptance://quality/quality_governance_review.json",
                 "upstream_hash": upstream_hash,
                 "hash_unchanged": True,
                 "decisions": decisions,
@@ -93,7 +94,7 @@ class QualityReviewClosureService:
             "phase": "V2.88",
             "artifact_type": "quality_governance_human_review",
             "status": str(review.get("status") or "needs_review"),
-            "data": {"human_quality_review": review, "correction_decision_history": history, "rule_effect_review": report},
+            "data": {"human_quality_review": review, "correction_decision_history": history, "rule_effect_review": review, "rule_effect_review_report": report},
             "summary": dict(review.get("summary") or {}),
             "artifact_refs": refs,
             "evidence_refs": list(review.get("evidence_refs") or []),
@@ -104,7 +105,7 @@ class QualityReviewClosureService:
 
 
 def _decisions(recommendations: list[dict[str, Any]], state: dict[str, Any]) -> list[dict[str, Any]]:
-    provided = {str(item.get("recommendation_id")): item for item in state.get("decisions") or [] if isinstance(item, dict)}
+    provided = {str(item.get("recommendation_id") or item.get("check_id")): item for item in state.get("decisions") or [] if isinstance(item, dict)}
     decisions = []
     for idx, rec in enumerate(recommendations, start=1):
         rec_id = str(rec.get("check_id") or rec.get("recommendation_id") or f"recommendation_{idx}")

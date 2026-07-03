@@ -58,7 +58,7 @@ class CodebaseAsset:
     workspace_id: str
     codebase_id: str
     name: str
-    root_path: str
+    root_path: Path | str
     status: str = CodebaseStatus.ACTIVE.value
     created_at: str = ""
     updated_at: str = ""
@@ -75,7 +75,7 @@ class CodebaseAsset:
             workspace_id=str(payload.get("workspace_id") or ""),
             codebase_id=str(payload.get("codebase_id") or ""),
             name=str(payload.get("name") or payload.get("codebase_id") or ""),
-            root_path=str(payload.get("root_path") or ""),
+            root_path=Path(str(payload.get("root_path") or "")),
             status=str(payload.get("status") or CodebaseStatus.ACTIVE.value),
             created_at=str(payload.get("created_at") or ""),
             updated_at=str(payload.get("updated_at") or ""),
@@ -91,7 +91,7 @@ class CodebaseAsset:
             "workspace_id": self.workspace_id,
             "codebase_id": self.codebase_id,
             "name": self.name,
-            "root_path": self.root_path,
+            "root_path": str(self.root_path),
             "status": self.status,
             "created_at": self.created_at,
             "updated_at": self.updated_at,

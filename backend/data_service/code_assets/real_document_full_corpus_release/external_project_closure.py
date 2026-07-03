@@ -65,7 +65,7 @@ class ExternalProjectE2EClosureService:
             unresolved=unresolved,
             status=e2e_status,
         )
-        e2e.update({"records": records, "summary": status_summary(records)})
+        e2e.update({"records": records, "project_rows": records, "summary": status_summary(records)})
         diagnosis = _diagnosis(projects, records)
         _apply_redaction(manifest, e2e, diagnosis)
         write_external_project(self.workspace, codebase_id, manifest, e2e, diagnosis)

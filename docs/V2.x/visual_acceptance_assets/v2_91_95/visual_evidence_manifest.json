@@ -1,0 +1,47 @@
+[
+  {
+    "file": "01_overview.png",
+    "title": "总览状态",
+    "proof": "展示实现范围通过、最终 release gate 阻断和各子阶段状态。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 63364,
+    "sha256": "29b043270314271b456657d1407e10edfd96d40c8590bd74e4eda8be7669349c"
+  },
+  {
+    "file": "02_architecture.png",
+    "title": "目标架构与当前实现",
+    "proof": "展示 public surface、服务实现层、证据层和边界。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 82657,
+    "sha256": "ff89b044612d9067eb555b5edc5d3c99397f6279d829406795f4679774fc1a9f"
+  },
+  {
+    "file": "03_user_path.png",
+    "title": "用户场景体验路径",
+    "proof": "展示维护者从恢复环境到出门判断的真实体验链路。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 69580,
+    "sha256": "551c1101eeffad781479e9cbf6d4658788ddc67dc0c261240b9c3a18104f2e45"
+  },
+  {
+    "file": "04_acceptance_matrix.png",
+    "title": "验收矩阵",
+    "proof": "展示 runtime 命令、release gate 检查和真实阻断项。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 105333,
+    "sha256": "c72df3a61b9fe80bc3246a5d2f7c4d4837bdbcd22565685585d4aec21381bb39"
+  },
+  {
+    "file": "05_evidence_manifest.png",
+    "title": "证据与复现清单",
+    "proof": "展示测试、编译、diff、legacy guard、CLI caveat 和外部项目状态。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 69668,
+    "sha256": "93c7a7d1bccf666c67e945eb6b46838163e67a423c087adff73c1e526a940c5c"
+  }
+]

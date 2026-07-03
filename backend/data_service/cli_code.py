@@ -21,6 +21,7 @@ from .cli_code_agent_memory_release import add_agent_memory_release_parser, agen
 from .cli_code_project_acceptance_hardening import add_project_acceptance_hardening_parser, project_acceptance_hardening_tool_payload
 from .cli_code_real_document_acceptance import add_real_document_acceptance_parser, real_document_acceptance_tool_payload
 from .cli_code_real_document_full_corpus_release import add_real_document_full_corpus_release_parser, real_document_full_corpus_release_tool_payload
+from .cli_code_real_acceptance_closure import add_real_acceptance_closure_parser, real_acceptance_closure_tool_payload
 from .mcp_code_tools import handle_code_tool
 from .mcp_common import blocked, envelope
 from .mcp_workspace_runtime import WorkspaceRuntime
@@ -113,6 +114,7 @@ def add_code_parser(subparsers: argparse._SubParsersAction) -> None:
     add_project_acceptance_hardening_parser(code_subparsers)
     add_real_document_acceptance_parser(code_subparsers)
     add_real_document_full_corpus_release_parser(code_subparsers)
+    add_real_acceptance_closure_parser(code_subparsers)
 
     code_describe = code_subparsers.add_parser("describe", help="Describe one codebase asset")
     code_describe.add_argument("--workspace-root", help="Managed workspace root; overrides DATA_SERVICE_WORKSPACE_ROOT for this command")
@@ -127,7 +129,7 @@ def add_code_parser(subparsers: argparse._SubParsersAction) -> None:
 
 
 def run_code_command(args: argparse.Namespace) -> int:
-    if args.code_command not in {"import", "list", "snapshot", "inventory", "symbols", "trace", "overview", "context-pack", "devwiki", "graph", "quality", "architecture", "architecture-intent", "coding-agent", "platform", "agent-productization", "human-agent-deepening", "stabilization-e2e-portal", "external-e2e-portal-delivery", "agent-memory-release", "project-acceptance-hardening", "real-document-acceptance", "real-document-full-corpus-release", "describe", "archive"}:
+    if args.code_command not in {"import", "list", "snapshot", "inventory", "symbols", "trace", "overview", "context-pack", "devwiki", "graph", "quality", "architecture", "architecture-intent", "coding-agent", "platform", "agent-productization", "human-agent-deepening", "stabilization-e2e-portal", "external-e2e-portal-delivery", "agent-memory-release", "project-acceptance-hardening", "real-document-acceptance", "real-document-full-corpus-release", "real-acceptance-closure", "describe", "archive"}:
         raise ValueError(f"Unknown code command: {args.code_command}")
 
     root = Path(args.workspace_root).expanduser() if getattr(args, "workspace_root", None) else None
@@ -260,6 +262,8 @@ def run_code_command(args: argparse.Namespace) -> int:
         tool_name, payload_args = real_document_acceptance_tool_payload(args)
     elif args.code_command == "real-document-full-corpus-release":
         tool_name, payload_args = real_document_full_corpus_release_tool_payload(args)
+    elif args.code_command == "real-acceptance-closure":
+        tool_name, payload_args = real_acceptance_closure_tool_payload(args)
     elif args.code_command == "describe":
         tool_name = "knowledge_codebase_describe"
         payload_args = {

@@ -44,6 +44,7 @@ class FullCorpusE2EHardeningService:
                         "path": row["repo_relative_path"],
                         "parser": row["parser"],
                         "category": row["failure_category"],
+                        "failure_category": row["failure_category"],
                         "message": row["message"],
                         "status": row["status"],
                         "next_action": row["next_action"],
@@ -71,12 +72,14 @@ class FullCorpusE2EHardeningService:
         run.update(
             {
                 "source_root": "docs/V2.x",
+                "input_scope": "docs/V2.x",
                 "included_files": [row["repo_relative_path"] for row in rows],
                 "excluded_files": _excluded_notes(source_root),
                 "processed_count": len(rows),
                 "accepted_count": sum(1 for row in rows if row["status"] == "accepted"),
                 "failure_count": len(failures),
                 "rows": rows,
+                "graph_claim_boundary": "document evidence relationship only; does not claim full call graph, runtime topology, data/control flow, type inference, or complete design intent recovery",
                 "summary": status_summary(rows),
             }
         )
