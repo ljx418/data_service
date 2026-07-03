@@ -43,5 +43,14 @@
     "height": 1200,
     "bytes": 69668,
     "sha256": "93c7a7d1bccf666c67e945eb6b46838163e67a423c087adff73c1e526a940c5c"
+  },
+  {
+    "file": "06_audit_index.png",
+    "title": "审计索引与提交证据",
+    "proof": "展示实现提交、远端复核命令、完整文件索引入口、raw artifact 边界和关键阻断语义。",
+    "width": 1440,
+    "height": 1200,
+    "bytes": 86903,
+    "sha256": "1f50d263e7e4356daa062143cc2f7710fc208247a4324d849e672732e33334d1"
   }
 ]
