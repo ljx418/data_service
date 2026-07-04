@@ -340,6 +340,128 @@ git diff --check
 git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</pre>
 </section>
 
+
+<section>
+  <h2>审计包完整性判定</h2>
+  <p>本报告已按“人类可独立审计”要求修订：不依赖历史对话，不要求审计者先理解全部源码；先给结论边界，再给代码实体、public surface、PRD 到测试映射、真实 E2E、证据路径、未闭合项和复现步骤。</p>
+  <table>
+    <thead><tr><th>审计要求</th><th>当前报告状态</th><th>证据位置</th></tr></thead>
+    <tbody>
+      <tr><td>能看懂本阶段目标和边界</td><td><span class='badge ok'>已补齐</span></td><td>一页结论、目标架构与当前实现、未闭合高风险项</td></tr>
+      <tr><td>能定位实际代码实体</td><td><span class='badge ok'>已补齐</span></td><td>代码实体与分层关系表</td></tr>
+      <tr><td>能复核 CLI/MCP/HTTP 对外能力</td><td><span class='badge ok'>已补齐</span></td><td>Public Surface 审计清单</td></tr>
+      <tr><td>能从 PRD 功能点追到测试</td><td><span class='badge ok'>已补齐</span></td><td>PRD 到 focused test 映射表</td></tr>
+      <tr><td>能复核真实 E2E 与限制</td><td><span class='badge ok'>已补齐</span></td><td>真实 E2E 状态矩阵、截图与自动化限制说明、证据文件 manifest</td></tr>
+      <tr><td>能识别 false-green 风险</td><td><span class='badge ok'>已补齐</span></td><td>No-Go 与 False-green 审计、未闭合高风险项</td></tr>
+      <tr><td>能复现验收命令</td><td><span class='badge ok'>已补齐</span></td><td>验收命令与结果、人工审计步骤</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>提交与审计基线</h2>
+  <table>
+    <tbody>
+      <tr><th>实现基线提交</th><td><span class='mono'>1b166a0 feat: close v2.96 v2.100 automated evidence</span></td></tr>
+      <tr><th>远端仓库</th><td><span class='mono'>https://github.com/ljx418/data_service.git</span></td></tr>
+      <tr><th>分支</th><td><span class='mono'>main</span></td></tr>
+      <tr><th>受保护 legacy 文件</th><td><span class='mono'>backend/app/api/v1/data_service.py</span>、<span class='mono'>backend/data_service/service.py</span>，本阶段无 diff。</td></tr>
+      <tr><th>报告限制</th><td>本报告允许声明“实现范围通过”，不允许声明 final release 全绿 accepted。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>代码实体与分层关系</h2>
+  <p>以下是本阶段可审计的具体代码实体。审计时应以这些文件和测试为代码事实，不以文档描述替代实现事实。</p>
+  <table>
+    <thead><tr><th>层级</th><th>文件/实体</th><th>职责</th><th>状态</th></tr></thead>
+    <tbody>
+      <tr><td>核心领域包</td><td><span class='mono'>backend/data_service/code_assets/automated_evidence_closure/shared.py</span></td><td>统一 schema、状态语义、artifact refs、unresolved 结构和 public payload 基础。</td><td><span class='badge ok'>已实现</span></td></tr>
+      <tr><td>持久化</td><td><span class='mono'>persistence.py</span></td><td>将 artifacts 写入 workspace 管理目录，read tool 只读取已落盘产物。</td><td><span class='badge ok'>已实现</span></td></tr>
+      <tr><td>V2.96</td><td><span class='mono'>cli_gap.py</span></td><td>生成默认 CLI gap closure 证据，验证 shell CLI 入口可用。</td><td><span class='badge ok'>accepted</span></td></tr>
+      <tr><td>V2.97</td><td><span class='mono'>route_a_evidence.py</span></td><td>生成 Route A 资料扫描、脱敏审查、证据 capture manifest、人工确认队列。</td><td><span class='badge review'>needs_review</span></td></tr>
+      <tr><td>V2.98</td><td><span class='mono'>quality_workbench.py</span></td><td>生成质量风险队列、自动建议和高风险人工决策 backlog。</td><td><span class='badge review'>needs_review</span></td></tr>
+      <tr><td>V2.99</td><td><span class='mono'>external_path_registry.py</span></td><td>记录外部项目路径、smoke matrix、unavailable resolution。</td><td><span class='badge unavailable'>structured_unavailable</span></td></tr>
+      <tr><td>V2.100</td><td><span class='mono'>release_evidence_gate.py</span></td><td>聚合阶段证据、final release gate 和 false-green recheck。</td><td><span class='badge unavailable'>structured_unavailable</span></td></tr>
+      <tr><td>CLI adapter</td><td><span class='mono'>backend/data_service/cli_code_automated_evidence_closure.py</span></td><td>注册 <span class='mono'>python -m data_service code automated-evidence-closure</span> 命令组。</td><td><span class='badge ok'>已实现</span></td></tr>
+      <tr><td>MCP adapter</td><td><span class='mono'>backend/data_service/mcp_code_automated_evidence_closure_tools.py</span></td><td>注册 build/read MCP tools，保持 Agent 可调用 surface。</td><td><span class='badge ok'>已实现</span></td></tr>
+      <tr><td>HTTP adapter</td><td><span class='mono'>backend/app/api/v1/code_assets_automated_evidence_closure.py</span></td><td>注册 build/read HTTP routes，复用统一 v2 envelope。</td><td><span class='badge ok'>已实现</span></td></tr>
+      <tr><td>注册点</td><td><span class='mono'>backend/data_service/__main__.py</span>、<span class='mono'>backend/data_service/cli_code.py</span>、<span class='mono'>backend/data_service/mcp_code_tools.py</span>、<span class='mono'>backend/app/api/__init__.py</span></td><td>接入现有插件式入口。</td><td><span class='badge ok'>已实现</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Public Surface 审计清单</h2>
+  <h3>CLI 命令组</h3>
+  <pre>python -m data_service code automated-evidence-closure cli-gap-build --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure cli-gap-read --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure route-a-evidence-build --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure route-a-evidence-read --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure quality-workbench-build --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure quality-workbench-read --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure external-path-build --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure external-path-read --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure release-gate-build --workspace-id WORKSPACE --codebase-id CODEBASE
+python -m data_service code automated-evidence-closure release-gate-read --workspace-id WORKSPACE --codebase-id CODEBASE</pre>
+  <h3>MCP tools</h3>
+  <pre>knowledge_code_automated_evidence_closure_cli_gap_build/read
+knowledge_code_automated_evidence_closure_route_a_evidence_build/read
+knowledge_code_automated_evidence_closure_quality_workbench_build/read
+knowledge_code_automated_evidence_closure_external_path_build/read
+knowledge_code_automated_evidence_closure_release_gate_build/read</pre>
+  <h3>HTTP routes</h3>
+  <pre>POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/cli-gap[/build]
+POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/route-a-evidence[/build]
+POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/quality-workbench[/build]
+POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/external-path[/build]
+POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/release-gate[/build]</pre>
+</section>
+
+<section>
+  <h2>PRD 到测试覆盖映射</h2>
+  <table>
+    <thead><tr><th>PRD 目标</th><th>实现文件</th><th>Focused test</th><th>当前验收状态</th></tr></thead>
+    <tbody>
+      <tr><td>V2.96 Default CLI Gap Closure</td><td><span class='mono'>cli_gap.py</span> + CLI adapter</td><td><span class='mono'>backend/tests/test_v2_96_default_cli_gap_closure.py</span></td><td><span class='badge ok'>accepted</span></td></tr>
+      <tr><td>V2.97 Route A Evidence Automation</td><td><span class='mono'>route_a_evidence.py</span></td><td><span class='mono'>backend/tests/test_v2_97_route_a_evidence_automation.py</span></td><td><span class='badge review'>needs_review</span>，缺真实人工确认</td></tr>
+      <tr><td>V2.98 Human Quality Decision Minimization</td><td><span class='mono'>quality_workbench.py</span></td><td><span class='mono'>backend/tests/test_v2_98_quality_decision_minimization.py</span></td><td><span class='badge review'>needs_review</span>，缺 reviewer decision</td></tr>
+      <tr><td>V2.99 External Project E2E Governance</td><td><span class='mono'>external_path_registry.py</span></td><td><span class='mono'>backend/tests/test_v2_99_external_project_e2e_governance.py</span></td><td><span class='badge unavailable'>structured_unavailable</span>，外部路径缺失</td></tr>
+      <tr><td>V2.100 Automated Release Evidence Gate</td><td><span class='mono'>release_evidence_gate.py</span></td><td><span class='mono'>backend/tests/test_v2_100_automated_release_evidence_gate.py</span></td><td><span class='badge unavailable'>structured_unavailable</span>，阻断项未清零</td></tr>
+      <tr><td>Public surface regression</td><td>CLI/MCP/HTTP 注册点</td><td><span class='mono'>backend/tests/test_public_surface_guard.py</span></td><td><span class='badge ok'>accepted</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>人工审计步骤</h2>
+  <ol>
+    <li>打开 PRD 与目标架构，确认本阶段目标只覆盖 V2.96-V2.100，不扩大到 full call graph、runtime topology、data/control flow 或 type inference。</li>
+    <li>检查本报告“代码实体与分层关系”，确认每个目标实体都有明确文件路径和测试。</li>
+    <li>运行“验收命令与结果”中的 pytest、compileall、diff check 和受保护 legacy 文件 diff。</li>
+    <li>打开 <span class='mono'>docs/V2.x/visual_acceptance_assets/v2_96_100/real_cli_e2e_summary.json</span>，确认状态矩阵与本报告一致。</li>
+    <li>打开 <span class='mono'>docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json</span>，确认图像证据 sha256、生成方式和限制说明一致。</li>
+    <li>检查未闭合高风险项：只允许保持 <span class='mono'>needs_review</span>、<span class='mono'>structured_unavailable</span> 或 <span class='mono'>structured_blocker</span>，不得人工改成 accepted。</li>
+    <li>抽查 CLI/MCP/HTTP surface：build tool 必须写入 artifact refs，read tool 必须读取已落盘 artifact，不重新制造事实。</li>
+    <li>最终审计结论只能写为“实现范围通过，final release 未全绿”，除非 Route A、质量决策、外部路径、依赖卫生和 human approval 等真实阻断项另行补齐。</li>
+  </ol>
+</section>
+
+<section>
+  <h2>本阶段变更文件索引</h2>
+  <p>本阶段实现提交共 73 个文件变更。审计者可按下列分组抽查，不需要从 Git diff 中自行猜测文件归属。</p>
+  <ul>
+    <li><strong>核心代码：</strong><span class='mono'>backend/data_service/code_assets/automated_evidence_closure/</span></li>
+    <li><strong>CLI/MCP/HTTP adapter：</strong><span class='mono'>backend/data_service/cli_code_automated_evidence_closure.py</span>、<span class='mono'>backend/data_service/mcp_code_automated_evidence_closure_tools.py</span>、<span class='mono'>backend/app/api/v1/code_assets_automated_evidence_closure.py</span></li>
+    <li><strong>入口注册：</strong><span class='mono'>backend/data_service/__main__.py</span>、<span class='mono'>backend/data_service/cli_code.py</span>、<span class='mono'>backend/data_service/mcp_code_tools.py</span>、<span class='mono'>backend/app/api/__init__.py</span></li>
+    <li><strong>测试：</strong><span class='mono'>backend/tests/test_v2_96_default_cli_gap_closure.py</span> 至 <span class='mono'>backend/tests/test_v2_100_automated_release_evidence_gate.py</span>，以及 <span class='mono'>backend/tests/test_public_surface_guard.py</span></li>
+    <li><strong>规格与验收文档：</strong><span class='mono'>docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_*.md</span>、阶段文档、drawio 和本 HTML 报告</li>
+    <li><strong>可视化证据：</strong><span class='mono'>docs/V2.x/visual_acceptance_assets/v2_96_100/</span></li>
+    <li><strong>对外展示材料：</strong><span class='mono'>docs/present/</span></li>
+  </ul>
+</section>
+
 <section>
   <h2>审计评价</h2>
   <p><strong>通过：</strong>本阶段自动化开发范围已实现并通过 focused tests、真实 CLI E2E、PRD/spec review、false-green audit、drawio 目标架构同步和受保护文件检查。</p>
