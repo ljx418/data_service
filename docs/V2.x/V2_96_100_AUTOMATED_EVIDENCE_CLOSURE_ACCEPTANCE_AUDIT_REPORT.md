@@ -94,3 +94,30 @@ Observed result:
 - Documentation consistency after implementation: pass after coverage matrix synchronization.
 - Final release exit: not pass, by design, because non-accepted high-risk inputs are preserved.
 - Human review target: inspect `V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_TARGET_STATE.drawio` and the visual acceptance report before considering release approval.
+
+## Full Green Acceptance Decision
+
+Decision: reject full-green stage acceptance.
+
+This audit does not allow the statement "V2.96-V2.100 automated development is fully complete and final release accepted".
+
+Reasons:
+
+- Route A remains `needs_review` because representative user material and manual confirmation are not accepted.
+- Quality governance remains `needs_review` because high-risk reviewer decisions are not accepted.
+- External project governance remains `structured_unavailable` because codexPat, HarnessOS, and Navia readable paths are not available.
+- Release gate remains `structured_unavailable` because upstream non-accepted states, dependency hygiene, restore smoke, V2.95 finalizer evidence, and human approval are not all accepted.
+- Final release accepted would require converting non-accepted states to accepted, which is explicitly forbidden by the PRD and false-green rules.
+
+Allowed statement:
+
+- V2.96-V2.100 implemented-and-tested scope is complete for the documented automation package.
+- Final release exit is blocked by high-risk real-input and human-approval evidence.
+
+Returned-to-development scope:
+
+- Keep the current implementation.
+- Add or collect real Route A representative material and reviewer confirmation.
+- Record quality reviewer decisions.
+- Provide codexPat, HarnessOS, and Navia readable project paths plus scoped smoke commands, or maintain structured unavailable with owner and next action.
+- Add dependency hygiene, restore smoke, and human approval evidence before any final release accepted claim.

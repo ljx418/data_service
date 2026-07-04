@@ -58,3 +58,37 @@
 - 不允许用自动质量建议替代 reviewer decision。
 - 不允许把外部项目 path missing 计入 accepted。
 - 不允许把服务启动成功等同于 restore smoke accepted。
+
+## 7. Post-implementation architecture reconciliation
+
+本节记录实现后的架构事实，用于避免把早期 planning baseline 误读为当前代码事实。
+
+### 7.1 当前已落地实体
+
+| 实体 | 当前状态 | 代码事实 |
+| --- | --- | --- |
+| Default CLI Entrypoint Adapter | 已实现并测试 | `backend/data_service/__main__.py`、`backend/data_service/cli_code.py` 已能通过默认 shell CLI 访问 `code automated-evidence-closure` 命令族 |
+| Automated Evidence Closure package | 已实现并测试 | `backend/data_service/code_assets/automated_evidence_closure/` |
+| Route A Evidence Automator | 已实现，最终验收仍需人工确认 | `backend/data_service/code_assets/automated_evidence_closure/route_a_evidence.py` |
+| Quality Decision Workbench | 已实现，最终验收仍需 reviewer decision | `backend/data_service/code_assets/automated_evidence_closure/quality_workbench.py` |
+| External Project Path Registry | 已实现，外部项目缺路径时保持 `structured_unavailable` | `backend/data_service/code_assets/automated_evidence_closure/external_path_registry.py` |
+| Automated Release Evidence Gate | 已实现，final release 仍非全绿 | `backend/data_service/code_assets/automated_evidence_closure/release_evidence_gate.py` |
+| CLI adapter | 已实现并测试 | `backend/data_service/cli_code_automated_evidence_closure.py` |
+| MCP adapter | 已实现并测试 | `backend/data_service/mcp_code_automated_evidence_closure_tools.py` |
+| HTTP adapter | 已实现并测试 | `backend/app/api/v1/code_assets_automated_evidence_closure.py` |
+
+### 7.2 当前 public surface
+
+- CLI：`python -m data_service code automated-evidence-closure <command>`。
+- MCP：`knowledge_code_automated_evidence_closure_*_build/read`。
+- HTTP：`/api/workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-closure/...`。
+
+V2.91-V2.95 的 `real-acceptance-closure` surface 仍作为上游历史阶段能力保留；V2.96-V2.100 的新增实现不再声明为“待新增”，而是以 `automated_evidence_closure` 独立包承载。
+
+### 7.3 验收声明边界
+
+- 可以声明：V2.96-V2.100 文档完整支撑范围内的代码实体、CLI/MCP/HTTP surface、artifact persistence、focused tests 和命令级 E2E 证据已实现。
+- 不可以声明：本阶段 final release 全绿 accepted。
+- 不可以声明：本阶段自动化开发阶段已全部完成到出门验收全绿状态。
+
+拒绝全绿的原因不是 focused tests 失败，而是 PRD 明确要求保留的高风险真实输入缺口仍存在：Route A 人工确认、quality reviewer decision、codexPat/HarnessOS/Navia 外部路径、dependency hygiene、restore smoke 和 human approval。

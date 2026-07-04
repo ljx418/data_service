@@ -476,6 +476,24 @@ POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-c
   </ul>
 </section>
 
+
+<section class='warn'>
+  <h2>验收声明决策表</h2>
+  <p><strong>决策：拒绝声明本阶段自动化开发阶段已全部完成并 final release 全绿 accepted。</strong></p>
+  <p>本报告允许声明“V2.96-V2.100 文档完整支撑范围内的实现与测试范围已完成”，但不允许声明“本阶段出门验收全绿”或“final release accepted”。</p>
+  <table>
+    <thead><tr><th>验收识别场景</th><th>检查结果</th><th>是否允许全绿声明</th></tr></thead>
+    <tbody>
+      <tr><td>架构实现与 drawio 不一致</td><td>drawio 已同步到当前实现；Markdown 目标架构已追加 post-implementation reconciliation，明确 <span class='mono'>automated_evidence_closure</span> 为当前代码事实。</td><td><span class='badge review'>仍不允许</span></td></tr>
+      <tr><td>承诺开发内容未实现</td><td>CLI/MCP/HTTP、核心服务、artifact persistence、focused tests 已实现；但 Route A、Quality、External、Release Gate 的最终 accepted 依赖真实输入，不可伪造。</td><td><span class='badge review'>仍不允许</span></td></tr>
+      <tr><td>验收测试阻塞</td><td>focused tests 通过，compileall 通过，diff 检查通过；业务验收 gate 存在 <span class='mono'>needs_review</span> 与 <span class='mono'>structured_unavailable</span>。</td><td><span class='badge review'>不允许</span></td></tr>
+      <tr><td>开发计划未全部完成</td><td>实现范围完成；出门验收计划中的 Route A 人工确认、quality reviewer decision、外部项目路径、dependency hygiene、restore smoke、human approval 未全部完成。</td><td><span class='badge review'>不允许</span></td></tr>
+      <tr><td>偏离 PRD 规格</td><td>未扩大项目理解承诺，未把 non-accepted 写成 accepted；拒绝全绿声明符合 PRD。</td><td><span class='badge review'>不允许全绿，只允许实现范围通过</span></td></tr>
+    </tbody>
+  </table>
+  <p>打回范围：不是回滚当前实现，而是将 final release acceptance 打回到补证/开发闭环阶段，直到 Route A、Quality、External、dependency hygiene、restore smoke 和 human approval 具备真实证据。</p>
+</section>
+
 <section>
   <h2>审计评价</h2>
   <p><strong>通过：</strong>本阶段自动化开发范围已实现并通过 focused tests、真实 CLI E2E、PRD/spec review、false-green audit、drawio 目标架构同步和受保护文件检查。</p>
