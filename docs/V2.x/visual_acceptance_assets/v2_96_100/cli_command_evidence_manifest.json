@@ -1,0 +1,595 @@
+{
+  "schema_version": "v2.96-100-cli-command-evidence",
+  "generated_at": "2026-07-04T13:02:03",
+  "workspace_root_placeholder": "<workspace-root>",
+  "repo_root_placeholder": "<repo-root>",
+  "source": "default shell CLI against real local data_service repository after codebase import",
+  "commands": [
+    {
+      "label": "codebase import real data_service repository",
+      "command_template": "python3 -m data_service code import --workspace-root <workspace-root> --workspace-id v296100-audit --path <repo-root> --codebase-id data-service-v296100-audit --name 'data_service V2.96 audit'",
+      "exit_code": 0,
+      "stdout_sha256": "6250ad4826c7a531ac98dded3dfd1192c36b8ed81e98309b4c028b6e4ac07904",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"codebase\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"artifact_ref\": \"codebase://data-service-v296100-audit\"\n    }\n  ],\n  \"next_actions\": [\n    \"knowledge_codebase_snapshot\",\n    \"knowledge_project_inventory\"\n  ],\n  \"data\": {\n    \"codebase\": {\n      \"schema_version\": \"v2.0\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"name\": \"data_service V2.96 audit\",\n      \"status\": \"active\",\n      \"created_at\": \"2026-07-04T05:01:44.756603Z\",\n      \"updated_at\": \"2026-07-04T05:01:44.756603Z\",\n      \"archived_at\": null,\n      \"archive_reason\": \"\",\n      \"metadata\": {},\n      \"scan_policy\": {\n        \"respect_gitignore\": true,\n        \"include\": [],\n        \"exclude\": [\n          \".git/**\",\n          \".venv/**\",\n          \"node_modules/**\",\n          \"dist/**\",\n          \"build/**\",\n          \"__pycache__/**\"\n        ],\n        \"max_file_size_mb\": 2,\n        \"binary_policy\": \"skip\"\n      }\n    },\n    \"created\": true,\n    \"v2\": {\n      \"ok\": true,\n      \"schema_version\": \"v2.0\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"snapshot_id\": null,\n      \"data\": {\n        \"codebase\": {\n          \"schema_version\": \"v2.0\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"name\": \"data_service V2.96 audit\",\n          \"status\": \"active\",\n          \"created_at\": \"2026-07-04T05:01:44.756603Z\",\n          \"updated_at\": \"2026-07-04T05:01:44.756603Z\",\n          \"archived_at\": null,\n          \"archive_reason\": \"\",\n          \"metadata\": {},\n          \"scan_policy\": {\n            \"respect_gitignore\": true,\n            \"include\": [],\n            \"exclude\": [\n              \".git/**\",\n              \".venv/**\",\n              \"node_modules/**\",\n              \"dist/**\",\n              \"build/**\",\n              \"__pycache__/**\"\n            ],\n            \"max_file_size_mb\": 2,\n            \"binary_policy\": \"skip\"\n          }\n        },\n        \"created\": true\n      },\n      \"artifact_refs\": [\n        {\n          \"type\": \"codebase\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"artifact_ref\": \"codebase://data-service-v296100-audit\"\n        }\n      ],\n      \"warnings\": [],\n",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "codebase",
+          "codebase_id": "data-service-v296100-audit",
+          "artifact_ref": "codebase://data-service-v296100-audit"
+        }
+      ],
+      "next_actions": [
+        "knowledge_codebase_snapshot",
+        "knowledge_project_inventory"
+      ],
+      "unresolved_count": 0,
+      "v2_ok": true
+    },
+    {
+      "label": "V2.96 cli-gap-build",
+      "command_template": "python3 -m data_service code automated-evidence-closure cli-gap-build --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit --cli-state-json '{\"shell_command\": {\"status\": \"accepted\", \"command_ref\": \"command://python-m-data-service-code-automated-evidence-closure-help\"}, \"parser_inventory\": {\"status\": \"accepted\", \"command_ref\": \"pytest://test_v2_96_default_cli_gap_closure\"}, \"mcp_inventory\": {\"status\": \"accepted\", \"command_ref\": \"pytest://test_public_surface_guard\"}, \"http_inventory\": {\"status\": \"accepted\", \"command_ref\": \"pytest://test_public_surface_guard\"}, \"evidence_refs\": [\"command://python-m-data-service-code-help\", \"pytest://v2_96_focused\"]}'",
+      "exit_code": 0,
+      "stdout_sha256": "06cd9154b9a1dbd065e18da731ddfba542f16a89db18604c610facd267ee95dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"cli_surface_result\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json\"\n    }\n  ],\n  \"next_actions\": [\n    \"knowledge_code_automated_evidence_closure_cli_gap_read\"\n  ],\n  \"data\": {\n    \"automated_evidence_cli_gap\": {\n      \"ok\": true,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"cli_gap_closure\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.96\",\n      \"status\": \"accepted\",\n      \"data\": {\n        \"cli_surface_result\": {\n          \"ok\": true,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.96\",\n          \"artifact_type\": \"cli_surface_result\",\n          \"generated_at\": \"2026-07-04T05:01:46.383190Z\",\n          \"status\": \"accepted\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"cli_surface_result\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"command://python-m-data-service-code-help\",\n            \"pytest://v2_96_focused\"\n          ],\n          \"warnings\": [],\n          \"unresolved\": [],\n          \"next_actions\": [\n            \"knowledge_code_automated_evidence_closure_cli_gap_read\"\n          ],\n          \"data\": {\n            \"default_shell_command\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"command://python-m-data-service-code-automated-evidence-closure-help\"\n            },\n            \"parser_inventory\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"pytest://test_v2_96_default_cli_gap_closure\"\n            },\n            \"mcp_inventory\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"pytest://test_public_surface_guard\"\n            },\n            \"http_inventory\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"pytest://test_public_surface_guard\"\n            },\n            \"gap_status\": \"accepted\"\n          },\n          \"summary\": {\n            \"accepted_count\": 4,\n            \"needs_review_count\": 0,\n         ",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "cli_surface_result",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_cli_gap_read"
+      ],
+      "unresolved_count": 0,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_cli_gap",
+      "payload_status": "accepted",
+      "payload_phase": "V2.96",
+      "payload_artifact_type": "cli_gap_closure",
+      "payload_artifact_refs": [
+        {
+          "type": "cli_surface_result",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json"
+        }
+      ],
+      "payload_unresolved_count": 0
+    },
+    {
+      "label": "V2.96 cli-gap-read",
+      "command_template": "python3 -m data_service code automated-evidence-closure cli-gap-read --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit",
+      "exit_code": 0,
+      "stdout_sha256": "1d39ce74ce782f252c5f74c8ba0385b7c4fae6f6fbc99cc4ff04c94fecbea590",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"cli_surface_result\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json\"\n    }\n  ],\n  \"next_actions\": [],\n  \"data\": {\n    \"automated_evidence_cli_gap\": {\n      \"ok\": true,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"cli_gap_closure\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.96\",\n      \"status\": \"accepted\",\n      \"data\": {\n        \"cli_surface_result\": {\n          \"ok\": true,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.96\",\n          \"artifact_type\": \"cli_surface_result\",\n          \"generated_at\": \"2026-07-04T05:01:46.383190Z\",\n          \"status\": \"accepted\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"cli_surface_result\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"command://python-m-data-service-code-help\",\n            \"pytest://v2_96_focused\"\n          ],\n          \"warnings\": [],\n          \"unresolved\": [],\n          \"next_actions\": [\n            \"knowledge_code_automated_evidence_closure_cli_gap_read\"\n          ],\n          \"data\": {\n            \"default_shell_command\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"command://python-m-data-service-code-automated-evidence-closure-help\"\n            },\n            \"parser_inventory\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"pytest://test_v2_96_default_cli_gap_closure\"\n            },\n            \"mcp_inventory\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"pytest://test_public_surface_guard\"\n            },\n            \"http_inventory\": {\n              \"status\": \"accepted\",\n              \"command_ref\": \"pytest://test_public_surface_guard\"\n            },\n            \"gap_status\": \"accepted\"\n          },\n          \"summary\": {\n            \"accepted_count\": 4,\n            \"needs_review_count\": 0,\n            \"structured_unavailable_count\": 0,\n            \"structured_bl",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "cli_surface_result",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_cli_gap_read"
+      ],
+      "unresolved_count": 0,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_cli_gap",
+      "payload_status": "accepted",
+      "payload_phase": "V2.96",
+      "payload_artifact_type": "cli_gap_closure",
+      "payload_artifact_refs": [
+        {
+          "type": "cli_surface_result",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/cli_gap_closure/cli_surface_result.json"
+        }
+      ],
+      "payload_unresolved_count": 0
+    },
+    {
+      "label": "V2.97 route-a-evidence-build",
+      "command_template": "python3 -m data_service code automated-evidence-closure route-a-evidence-build --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit --material-state-json '{\"materials\": [{\"material_id\": \"route_a_candidate_1\", \"source_type\": \"repo_doc\", \"source_ref\": \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\", \"redaction_status\": \"needs_review\", \"evidence_refs\": [\"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\"]}], \"redaction\": {\"status\": \"needs_review\", \"policy_ref\": \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\", \"risk\": \"needs_review\"}, \"evidence_capture\": {\"status\": \"accepted\", \"method\": \"headless_or_screenshot_refs\", \"evidence_refs\": [\"repo://docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json\"]}, \"manual_confirmation\": {\"decision\": \"needs_review\"}, \"evidence_refs\": [\"repo://docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json\"]}'",
+      "exit_code": 0,
+      "stdout_sha256": "09e49f269584f7937a035e5952aef3346d6ec27cbca461e60ea883701dd4f142",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"material_scan\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json\"\n    },\n    {\n      \"type\": \"redaction_audit\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json\"\n    },\n    {\n      \"type\": \"evidence_capture_manifest\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json\"\n    },\n    {\n      \"type\": \"manual_confirmation_queue\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md\"\n    }\n  ],\n  \"next_actions\": [\n    \"knowledge_code_automated_evidence_closure_route_a_evidence_read\"\n  ],\n  \"data\": {\n    \"automated_evidence_route_a\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"route_a_evidence\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.97\",\n      \"status\": \"needs_review\",\n      \"data\": {\n        \"material_scan\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.97\",\n          \"artifact_type\": \"route_a_material_scan\",\n          \"generated_at\": \"2026-07-04T05:01:51.423448Z\",\n          \"status\": \"needs_review\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"material_scan\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json\"\n            },\n            {\n              \"type\": \"redaction_audit\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json\"\n            },\n            {\n              \"type\": \"evidence_capture_manifest\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json\"\n            },\n            {\n              \"type\": \"manual_confirmation_queue\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "material_scan",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json"
+        },
+        {
+          "type": "redaction_audit",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json"
+        },
+        {
+          "type": "evidence_capture_manifest",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json"
+        },
+        {
+          "type": "manual_confirmation_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_route_a_evidence_read"
+      ],
+      "unresolved_count": 2,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_route_a",
+      "payload_status": "needs_review",
+      "payload_phase": "V2.97",
+      "payload_artifact_type": "route_a_evidence",
+      "payload_artifact_refs": [
+        {
+          "type": "material_scan",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json"
+        },
+        {
+          "type": "redaction_audit",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json"
+        },
+        {
+          "type": "evidence_capture_manifest",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json"
+        },
+        {
+          "type": "manual_confirmation_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md"
+        }
+      ],
+      "payload_unresolved_count": 2
+    },
+    {
+      "label": "V2.97 route-a-evidence-read",
+      "command_template": "python3 -m data_service code automated-evidence-closure route-a-evidence-read --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit",
+      "exit_code": 0,
+      "stdout_sha256": "5cc74c6dfb8b6635bc645f9315e85f7bf2367a968df6a1e5eacf32cab1d4089c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"material_scan\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json\"\n    },\n    {\n      \"type\": \"redaction_audit\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json\"\n    },\n    {\n      \"type\": \"evidence_capture_manifest\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json\"\n    },\n    {\n      \"type\": \"manual_confirmation_queue\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md\"\n    }\n  ],\n  \"next_actions\": [],\n  \"data\": {\n    \"automated_evidence_route_a\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"route_a_evidence\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.97\",\n      \"status\": \"needs_review\",\n      \"data\": {\n        \"material_scan\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.97\",\n          \"artifact_type\": \"route_a_material_scan\",\n          \"generated_at\": \"2026-07-04T05:01:51.423448Z\",\n          \"status\": \"needs_review\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"material_scan\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json\"\n            },\n            {\n              \"type\": \"redaction_audit\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json\"\n            },\n            {\n              \"type\": \"evidence_capture_manifest\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json\"\n            },\n            {\n              \"type\": \"manual_confirmation_queue\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md\"\n            }\n          ],\n          \"evidence_refs\": [\n       ",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "material_scan",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json"
+        },
+        {
+          "type": "redaction_audit",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json"
+        },
+        {
+          "type": "evidence_capture_manifest",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json"
+        },
+        {
+          "type": "manual_confirmation_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_route_a_evidence_read"
+      ],
+      "unresolved_count": 2,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_route_a",
+      "payload_status": "needs_review",
+      "payload_phase": "V2.97",
+      "payload_artifact_type": "route_a_evidence",
+      "payload_artifact_refs": [
+        {
+          "type": "material_scan",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/material_scan.json"
+        },
+        {
+          "type": "redaction_audit",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/redaction_audit.json"
+        },
+        {
+          "type": "evidence_capture_manifest",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/evidence_capture_manifest.json"
+        },
+        {
+          "type": "manual_confirmation_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/route_a_evidence/manual_confirmation_queue.md"
+        }
+      ],
+      "payload_unresolved_count": 2
+    },
+    {
+      "label": "V2.98 quality-workbench-build",
+      "command_template": "python3 -m data_service code automated-evidence-closure quality-workbench-build --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit --decision-state-json '{\"recommendations\": [{\"recommendation_id\": \"v296_spec_alignment\", \"risk_level\": \"high\", \"recommended_decision\": \"needs_review\", \"evidence_refs\": [\"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\"]}], \"human_decisions\": []}'",
+      "exit_code": 0,
+      "stdout_sha256": "3b60abdbd14b4afaaf174f5a4c75b296ee9f10fad751fc8a9c9d748134a9dc8f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"risk_queue\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json\"\n    },\n    {\n      \"type\": \"decision_recommendations\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json\"\n    },\n    {\n      \"type\": \"human_decision_backlog\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md\"\n    }\n  ],\n  \"next_actions\": [\n    \"knowledge_code_automated_evidence_closure_quality_workbench_read\"\n  ],\n  \"data\": {\n    \"automated_evidence_quality_workbench\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"quality_workbench\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.98\",\n      \"status\": \"needs_review\",\n      \"data\": {\n        \"risk_queue\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.98\",\n          \"artifact_type\": \"quality_risk_queue\",\n          \"generated_at\": \"2026-07-04T05:01:54.811890Z\",\n          \"status\": \"needs_review\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"risk_queue\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json\"\n            },\n            {\n              \"type\": \"decision_recommendations\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json\"\n            },\n            {\n              \"type\": \"human_decision_backlog\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\"\n          ],\n          \"warnings\": [],\n          \"unresolved\": [\n            {\n              \"id\": \"v296_spec_alignment\",\n              \"kind\": \"needs_review\",\n              \"status\": \"needs_review\",\n              \"reason\": \"high-risk ",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "risk_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json"
+        },
+        {
+          "type": "decision_recommendations",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json"
+        },
+        {
+          "type": "human_decision_backlog",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_quality_workbench_read"
+      ],
+      "unresolved_count": 1,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_quality_workbench",
+      "payload_status": "needs_review",
+      "payload_phase": "V2.98",
+      "payload_artifact_type": "quality_workbench",
+      "payload_artifact_refs": [
+        {
+          "type": "risk_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json"
+        },
+        {
+          "type": "decision_recommendations",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json"
+        },
+        {
+          "type": "human_decision_backlog",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md"
+        }
+      ],
+      "payload_unresolved_count": 1
+    },
+    {
+      "label": "V2.98 quality-workbench-read",
+      "command_template": "python3 -m data_service code automated-evidence-closure quality-workbench-read --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit",
+      "exit_code": 0,
+      "stdout_sha256": "4dea4b33055de77f9e3f5da768271f7fcf47621fa81490d872693a42be9e0283",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"risk_queue\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json\"\n    },\n    {\n      \"type\": \"decision_recommendations\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json\"\n    },\n    {\n      \"type\": \"human_decision_backlog\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md\"\n    }\n  ],\n  \"next_actions\": [],\n  \"data\": {\n    \"automated_evidence_quality_workbench\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"quality_workbench\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.98\",\n      \"status\": \"needs_review\",\n      \"data\": {\n        \"risk_queue\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.98\",\n          \"artifact_type\": \"quality_risk_queue\",\n          \"generated_at\": \"2026-07-04T05:01:54.811890Z\",\n          \"status\": \"needs_review\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"risk_queue\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json\"\n            },\n            {\n              \"type\": \"decision_recommendations\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json\"\n            },\n            {\n              \"type\": \"human_decision_backlog\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\"\n          ],\n          \"warnings\": [],\n          \"unresolved\": [\n            {\n              \"id\": \"v296_spec_alignment\",\n              \"kind\": \"needs_review\",\n              \"status\": \"needs_review\",\n              \"reason\": \"high-risk quality recommendation needs human decision\",\n              \"evidence_refs",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "risk_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json"
+        },
+        {
+          "type": "decision_recommendations",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json"
+        },
+        {
+          "type": "human_decision_backlog",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_quality_workbench_read"
+      ],
+      "unresolved_count": 1,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_quality_workbench",
+      "payload_status": "needs_review",
+      "payload_phase": "V2.98",
+      "payload_artifact_type": "quality_workbench",
+      "payload_artifact_refs": [
+        {
+          "type": "risk_queue",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/risk_queue.json"
+        },
+        {
+          "type": "decision_recommendations",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/decision_recommendations.json"
+        },
+        {
+          "type": "human_decision_backlog",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/quality_workbench/human_decision_backlog.md"
+        }
+      ],
+      "payload_unresolved_count": 1
+    },
+    {
+      "label": "V2.99 external-path-build",
+      "command_template": "python3 -m data_service code automated-evidence-closure external-path-build --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit --project-state-json '{\"project_paths\": {\"data_service\": \"<repo-root>\"}, \"smoke_commands\": {\"data_service\": \"python3 -c \\\"from pathlib import Path; assert Path('\"'\"'backend'\"'\"').exists()\\\"\"}}'",
+      "exit_code": 0,
+      "stdout_sha256": "81f664e8e4328d2f4b8b6ae7503c1084785627cdd5c708be948b79f9e10e6f73",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"project_paths\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json\"\n    },\n    {\n      \"type\": \"project_smoke_matrix\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json\"\n    },\n    {\n      \"type\": \"unavailable_resolution\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md\"\n    }\n  ],\n  \"next_actions\": [\n    \"knowledge_code_automated_evidence_closure_external_path_read\"\n  ],\n  \"data\": {\n    \"automated_evidence_external_path\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"external_path_registry\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.99\",\n      \"status\": \"structured_unavailable\",\n      \"data\": {\n        \"project_paths\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.99\",\n          \"artifact_type\": \"external_project_paths\",\n          \"generated_at\": \"2026-07-04T05:01:58.094030Z\",\n          \"status\": \"structured_unavailable\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"project_paths\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json\"\n            },\n            {\n              \"type\": \"project_smoke_matrix\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json\"\n            },\n            {\n              \"type\": \"unavailable_resolution\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"command://external_path/data_service\"\n          ],\n          \"warnings\": [],\n          \"unresolved\": [\n            {\n              \"id\": \"codexPat\",\n              \"kind\": \"structured_unavailable\",\n              \"status\": \"structured_unavailable\",\n",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "project_paths",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json"
+        },
+        {
+          "type": "project_smoke_matrix",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json"
+        },
+        {
+          "type": "unavailable_resolution",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_external_path_read"
+      ],
+      "unresolved_count": 3,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_external_path",
+      "payload_status": "structured_unavailable",
+      "payload_phase": "V2.99",
+      "payload_artifact_type": "external_path_registry",
+      "payload_artifact_refs": [
+        {
+          "type": "project_paths",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json"
+        },
+        {
+          "type": "project_smoke_matrix",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json"
+        },
+        {
+          "type": "unavailable_resolution",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md"
+        }
+      ],
+      "payload_unresolved_count": 3
+    },
+    {
+      "label": "V2.99 external-path-read",
+      "command_template": "python3 -m data_service code automated-evidence-closure external-path-read --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit",
+      "exit_code": 0,
+      "stdout_sha256": "53cd091f8ac7f0f292b34eb40660cf1c469e11bc729e3e2f5632774b4ea10b01",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"project_paths\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json\"\n    },\n    {\n      \"type\": \"project_smoke_matrix\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json\"\n    },\n    {\n      \"type\": \"unavailable_resolution\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md\"\n    }\n  ],\n  \"next_actions\": [],\n  \"data\": {\n    \"automated_evidence_external_path\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"external_path_registry\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.99\",\n      \"status\": \"structured_unavailable\",\n      \"data\": {\n        \"project_paths\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.99\",\n          \"artifact_type\": \"external_project_paths\",\n          \"generated_at\": \"2026-07-04T05:01:58.094030Z\",\n          \"status\": \"structured_unavailable\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"project_paths\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json\"\n            },\n            {\n              \"type\": \"project_smoke_matrix\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json\"\n            },\n            {\n              \"type\": \"unavailable_resolution\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"command://external_path/data_service\"\n          ],\n          \"warnings\": [],\n          \"unresolved\": [\n            {\n              \"id\": \"codexPat\",\n              \"kind\": \"structured_unavailable\",\n              \"status\": \"structured_unavailable\",\n              \"reason\": \"project path is missing or unreadable\",\n     ",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "project_paths",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json"
+        },
+        {
+          "type": "project_smoke_matrix",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json"
+        },
+        {
+          "type": "unavailable_resolution",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_external_path_read"
+      ],
+      "unresolved_count": 3,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_external_path",
+      "payload_status": "structured_unavailable",
+      "payload_phase": "V2.99",
+      "payload_artifact_type": "external_path_registry",
+      "payload_artifact_refs": [
+        {
+          "type": "project_paths",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_paths.json"
+        },
+        {
+          "type": "project_smoke_matrix",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/project_smoke_matrix.json"
+        },
+        {
+          "type": "unavailable_resolution",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/external_path_registry/unavailable_resolution.md"
+        }
+      ],
+      "payload_unresolved_count": 3
+    },
+    {
+      "label": "V2.100 release-gate-build",
+      "command_template": "python3 -m data_service code automated-evidence-closure release-gate-build --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit --gate-state-json '{\"dependency_hygiene_state\": {\"status\": \"needs_review\", \"evidence_refs\": [\"log://npm-audit-not-rerun\"]}, \"restore_smoke_state\": {\"status\": \"needs_review\", \"evidence_refs\": [\"log://restore-smoke-not-rerun\"]}, \"prd_spec_review_state\": {\"status\": \"accepted\", \"evidence_refs\": [\"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_ACCEPTANCE_AUDIT_REPORT.md\"]}, \"human_approval_state\": {\"status\": \"needs_review\", \"evidence_refs\": []}}'",
+      "exit_code": 0,
+      "stdout_sha256": "d34fb9677fc519b9edb21df115e1c9b4f1ccde8600ebfff0f36a625a7e37cd74",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"evidence_summary\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json\"\n    },\n    {\n      \"type\": \"final_release_gate\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md\"\n    },\n    {\n      \"type\": \"false_green_recheck\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md\"\n    }\n  ],\n  \"next_actions\": [\n    \"knowledge_code_automated_evidence_closure_release_gate_read\"\n  ],\n  \"data\": {\n    \"automated_evidence_release_gate\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"release_evidence_gate\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.100\",\n      \"status\": \"structured_unavailable\",\n      \"data\": {\n        \"evidence_summary\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.100\",\n          \"artifact_type\": \"release_evidence_summary\",\n          \"generated_at\": \"2026-07-04T05:02:01.498834Z\",\n          \"status\": \"structured_unavailable\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"evidence_summary\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json\"\n            },\n            {\n              \"type\": \"final_release_gate\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md\"\n            },\n            {\n              \"type\": \"false_green_recheck\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"command://python-m-data-service-code-help\",\n            \"pytest://v2_96_focused\",\n            \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\",\n            \"repo://docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json\",\n      ",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "evidence_summary",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json"
+        },
+        {
+          "type": "final_release_gate",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md"
+        },
+        {
+          "type": "false_green_recheck",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_release_gate_read"
+      ],
+      "unresolved_count": 10,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_release_gate",
+      "payload_status": "structured_unavailable",
+      "payload_phase": "V2.100",
+      "payload_artifact_type": "release_evidence_gate",
+      "payload_artifact_refs": [
+        {
+          "type": "evidence_summary",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json"
+        },
+        {
+          "type": "final_release_gate",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md"
+        },
+        {
+          "type": "false_green_recheck",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md"
+        }
+      ],
+      "payload_unresolved_count": 10
+    },
+    {
+      "label": "V2.100 release-gate-read",
+      "command_template": "python3 -m data_service code automated-evidence-closure release-gate-read --workspace-root <workspace-root> --workspace-id v296100-audit --codebase-id data-service-v296100-audit",
+      "exit_code": 0,
+      "stdout_sha256": "afd612f911636cf240d009acc965626e6eefd784269aa8baa67eb2e905990767",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_excerpt": "{\n  \"workspace_id\": \"v296100-audit\",\n  \"operation_id\": null,\n  \"status\": \"ok\",\n  \"warnings\": [],\n  \"artifact_refs\": [\n    {\n      \"type\": \"evidence_summary\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json\"\n    },\n    {\n      \"type\": \"final_release_gate\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md\"\n    },\n    {\n      \"type\": \"false_green_recheck\",\n      \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md\"\n    }\n  ],\n  \"next_actions\": [],\n  \"data\": {\n    \"automated_evidence_release_gate\": {\n      \"ok\": false,\n      \"schema_version\": \"v2.96-100\",\n      \"artifact_type\": \"release_evidence_gate\",\n      \"workspace_id\": \"v296100-audit\",\n      \"codebase_id\": \"data-service-v296100-audit\",\n      \"phase\": \"V2.100\",\n      \"status\": \"structured_unavailable\",\n      \"data\": {\n        \"evidence_summary\": {\n          \"ok\": false,\n          \"schema_version\": \"v2.96-100\",\n          \"workspace_id\": \"v296100-audit\",\n          \"codebase_id\": \"data-service-v296100-audit\",\n          \"phase\": \"V2.100\",\n          \"artifact_type\": \"release_evidence_summary\",\n          \"generated_at\": \"2026-07-04T05:02:01.498834Z\",\n          \"status\": \"structured_unavailable\",\n          \"artifact_refs\": [\n            {\n              \"type\": \"evidence_summary\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json\"\n            },\n            {\n              \"type\": \"final_release_gate\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md\"\n            },\n            {\n              \"type\": \"false_green_recheck\",\n              \"artifact_ref\": \"automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md\"\n            }\n          ],\n          \"evidence_refs\": [\n            \"command://python-m-data-service-code-help\",\n            \"pytest://v2_96_focused\",\n            \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\",\n            \"repo://docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json\",\n            \"repo://docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_PRD.md\",",
+      "stderr_excerpt": "",
+      "workspace_id": "v296100-audit",
+      "status": "ok",
+      "artifact_refs": [
+        {
+          "type": "evidence_summary",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json"
+        },
+        {
+          "type": "final_release_gate",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md"
+        },
+        {
+          "type": "false_green_recheck",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md"
+        }
+      ],
+      "next_actions": [
+        "knowledge_code_automated_evidence_closure_release_gate_read"
+      ],
+      "unresolved_count": 10,
+      "v2_ok": true,
+      "payload_key": "automated_evidence_release_gate",
+      "payload_status": "structured_unavailable",
+      "payload_phase": "V2.100",
+      "payload_artifact_type": "release_evidence_gate",
+      "payload_artifact_refs": [
+        {
+          "type": "evidence_summary",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/evidence_summary.json"
+        },
+        {
+          "type": "final_release_gate",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/final_release_gate.md"
+        },
+        {
+          "type": "false_green_recheck",
+          "artifact_ref": "automated_evidence_closure://data-service-v296100-audit/release_evidence_gate/false_green_recheck.md"
+        }
+      ],
+      "payload_unresolved_count": 10
+    }
+  ],
+  "persisted_artifact_tree": [
+    {
+      "workspace_relative_path": "v296100-audit/.data_service_workspace.json",
+      "bytes": 284,
+      "sha256": "ee90c29e767508c6dcaad9ae681d76eaeade2eec0aaaa002c41e48decdea6900"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/cli_gap_closure/cli_surface_result.json",
+      "bytes": 1423,
+      "sha256": "daa104471cb5e676fb22f613f5fcad7b3a2f86b491a0b682c1c032a9a31b4ddd"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/external_path_registry/project_paths.json",
+      "bytes": 3336,
+      "sha256": "20a4f943eccb893fd32192dd3cbd0569e9b0adf74b3d9af7a6bda3dd8e194742"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/external_path_registry/project_smoke_matrix.json",
+      "bytes": 3103,
+      "sha256": "e30b38627c00e1eaa8f69da6a9ddf1e0ce7f4a4391a257eb8ab74e2747efdd40"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/external_path_registry/unavailable_resolution.md",
+      "bytes": 453,
+      "sha256": "7ce2a1e9b3e887deaf09d22a3cce33b0e258e9d2b2ff3dd5a57bf86faab27699"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/quality_workbench/decision_recommendations.json",
+      "bytes": 1740,
+      "sha256": "812e9d734334ac33222832904057772291eae9d29516ddf0c591ae83f81c0e52"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/quality_workbench/human_decision_backlog.md",
+      "bytes": 194,
+      "sha256": "c4c126811d032ef79c523ed276b32fabe70a41e85177d2f3f1bdcd9ae4272586"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/quality_workbench/risk_queue.json",
+      "bytes": 1960,
+      "sha256": "f4c55b1de8bb366ac1fd1384e8c812049945a55c707073130f6f5e91c400d2e0"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/release_evidence_gate/evidence_summary.json",
+      "bytes": 15258,
+      "sha256": "3ed5aa22049ecb1d1096c7cda5e99692bbd615de608d6681501a6620aebd735e"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/release_evidence_gate/false_green_recheck.md",
+      "bytes": 570,
+      "sha256": "6a95198629867c90c954abdcf4c43859ba53bb8d6df9f6c383d0eb839ba1f9ea"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/release_evidence_gate/final_release_gate.md",
+      "bytes": 586,
+      "sha256": "2e126a31cdad2c0c3796d14afdfbab4d464692cc5acf6da502cde08e5a3e3453"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/route_a_evidence/evidence_capture_manifest.json",
+      "bytes": 2070,
+      "sha256": "69a62c81994aa40293fbc1ecc8a27f0e10973283b668d7bfe33b179b662ea1f3"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/route_a_evidence/manual_confirmation_queue.md",
+      "bytes": 295,
+      "sha256": "19e37a9dac115ceba6381e7cbd09b12898d3cf20047bd5d0bf7674bc4482b621"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/route_a_evidence/material_scan.json",
+      "bytes": 2728,
+      "sha256": "3d0ffbe1b258cfdea356b0efe89271abdff3710b913282dddaa5e6913a5ea2b3"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/automated_evidence_closure/route_a_evidence/redaction_audit.json",
+      "bytes": 1953,
+      "sha256": "1428fe7ee4f06adc02ec5af79335ac24bce6f8134b8447c99a0790978dd71743"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/data-service-v296100-audit/codebase.json",
+      "bytes": 651,
+      "sha256": "a37134217ef7d62995830a5e77ff5c11987e64b9d6e950ae3579cc496837d15d"
+    },
+    {
+      "workspace_relative_path": "v296100-audit/assets/codebase/index.json",
+      "bytes": 373,
+      "sha256": "2e57d537445e5827fe2b1fff170b3b19898e559620ee9aca661383a2a8428994"
+    }
+  ],
+  "status_boundary": "accepted statuses are preserved only where command evidence supports them; needs_review and structured_unavailable remain non-accepted"
+}

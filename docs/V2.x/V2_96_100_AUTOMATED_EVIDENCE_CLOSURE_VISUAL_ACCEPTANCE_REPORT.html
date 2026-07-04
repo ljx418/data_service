@@ -332,6 +332,8 @@ Listing &#x27;backend/tests/fixtures/research_notebook/source_preview&#x27;...
     <li>阶段验收审计：<span class='path'>docs/V2.x/V2_96_100_AUTOMATED_EVIDENCE_CLOSURE_ACCEPTANCE_AUDIT_REPORT.md</span></li>
     <li>视觉证据 manifest：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/visual_evidence_manifest.json</span></li>
     <li>真实 CLI E2E 摘要：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/real_cli_e2e_summary.json</span></li>
+    <li>命令级 CLI E2E 证据：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/cli_command_evidence_manifest.json</span></li>
+    <li>compileall 日志：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/compileall.log</span></li>
   </ul>
   <pre>PYTHONPATH=backend pytest -q backend/tests/test_v2_96_default_cli_gap_closure.py   backend/tests/test_v2_97_route_a_evidence_automation.py   backend/tests/test_v2_98_quality_decision_minimization.py   backend/tests/test_v2_99_external_project_e2e_governance.py   backend/tests/test_v2_100_automated_release_evidence_gate.py   backend/tests/test_public_surface_guard.py
 
@@ -340,6 +342,18 @@ git diff --check
 git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</pre>
 </section>
 
+
+
+<section>
+  <h2>命令级 E2E 证据</h2>
+  <p>为避免报告只给汇总结论，本轮补充了默认 shell CLI 的命令级证据 manifest。该 manifest 使用真实本地 data_service 仓库先执行 <span class='mono'>code import</span>，再顺序执行 V2.96-V2.100 的 build/read 命令，保存退出码、payload 状态、artifact refs、输出哈希和持久化 artifact 树哈希。</p>
+  <p>证据文件：<span class='path'>docs/V2.x/visual_acceptance_assets/v2_96_100/cli_command_evidence_manifest.json</span></p>
+  <table>
+    <thead><tr><th>命令</th><th>退出码</th><th>payload 状态</th><th>阶段</th><th>artifact type</th><th>未闭合数</th></tr></thead>
+    <tbody><tr><td>codebase import real data_service repository</td><td>0</td><td><span class='badge ok'>ok</span></td><td></td><td></td><td>0</td></tr><tr><td>V2.96 cli-gap-build</td><td>0</td><td><span class='badge ok'>accepted</span></td><td>V2.96</td><td>cli_gap_closure</td><td>0</td></tr><tr><td>V2.96 cli-gap-read</td><td>0</td><td><span class='badge ok'>accepted</span></td><td>V2.96</td><td>cli_gap_closure</td><td>0</td></tr><tr><td>V2.97 route-a-evidence-build</td><td>0</td><td><span class='badge review'>needs_review</span></td><td>V2.97</td><td>route_a_evidence</td><td>2</td></tr><tr><td>V2.97 route-a-evidence-read</td><td>0</td><td><span class='badge review'>needs_review</span></td><td>V2.97</td><td>route_a_evidence</td><td>2</td></tr><tr><td>V2.98 quality-workbench-build</td><td>0</td><td><span class='badge review'>needs_review</span></td><td>V2.98</td><td>quality_workbench</td><td>1</td></tr><tr><td>V2.98 quality-workbench-read</td><td>0</td><td><span class='badge review'>needs_review</span></td><td>V2.98</td><td>quality_workbench</td><td>1</td></tr><tr><td>V2.99 external-path-build</td><td>0</td><td><span class='badge unavailable'>structured_unavailable</span></td><td>V2.99</td><td>external_path_registry</td><td>3</td></tr><tr><td>V2.99 external-path-read</td><td>0</td><td><span class='badge unavailable'>structured_unavailable</span></td><td>V2.99</td><td>external_path_registry</td><td>3</td></tr><tr><td>V2.100 release-gate-build</td><td>0</td><td><span class='badge unavailable'>structured_unavailable</span></td><td>V2.100</td><td>release_evidence_gate</td><td>10</td></tr><tr><td>V2.100 release-gate-read</td><td>0</td><td><span class='badge unavailable'>structured_unavailable</span></td><td>V2.100</td><td>release_evidence_gate</td><td>10</td></tr></tbody>
+  </table>
+  <p>审计边界：manifest 内的路径已用 <span class='mono'>&lt;repo-root&gt;</span> 和 <span class='mono'>&lt;workspace-root&gt;</span> 占位，避免把本机绝对路径当作公共 artifact。状态仍保留 <span class='mono'>needs_review</span> 和 <span class='mono'>structured_unavailable</span>，未伪造成 accepted。</p>
+</section>
 
 <section>
   <h2>审计包完整性判定</h2>
@@ -351,7 +365,7 @@ git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py</
       <tr><td>能定位实际代码实体</td><td><span class='badge ok'>已补齐</span></td><td>代码实体与分层关系表</td></tr>
       <tr><td>能复核 CLI/MCP/HTTP 对外能力</td><td><span class='badge ok'>已补齐</span></td><td>Public Surface 审计清单</td></tr>
       <tr><td>能从 PRD 功能点追到测试</td><td><span class='badge ok'>已补齐</span></td><td>PRD 到 focused test 映射表</td></tr>
-      <tr><td>能复核真实 E2E 与限制</td><td><span class='badge ok'>已补齐</span></td><td>真实 E2E 状态矩阵、截图与自动化限制说明、证据文件 manifest</td></tr>
+      <tr><td>能复核真实 E2E 与限制</td><td><span class='badge ok'>已补齐</span></td><td>真实 E2E 状态矩阵、命令级 E2E 证据、截图与自动化限制说明、证据文件 manifest</td></tr>
       <tr><td>能识别 false-green 风险</td><td><span class='badge ok'>已补齐</span></td><td>No-Go 与 False-green 审计、未闭合高风险项</td></tr>
       <tr><td>能复现验收命令</td><td><span class='badge ok'>已补齐</span></td><td>验收命令与结果、人工审计步骤</td></tr>
     </tbody>
