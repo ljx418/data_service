@@ -477,6 +477,21 @@ POST/GET /workspaces/{workspace_id}/codebases/{codebase_id}/automated-evidence-c
 </section>
 
 
+
+<section>
+  <h2>配套设计文档一致性复核</h2>
+  <p>2026-07-06 复核时发现 PRD、目标架构和 GAP 文档中仍有文档阶段规划语言，可能让审计者误以为 V2.96-V2.100 仍未实现或仍使用旧 surface。已修订为实现后事实：</p>
+  <table>
+    <thead><tr><th>文档</th><th>修订后的审计事实</th><th>验收影响</th></tr></thead>
+    <tbody>
+      <tr><td>PRD</td><td>默认 CLI 事实改为 <span class='mono'>automated-evidence-closure</span> 命令族已实现并有命令级证据；PRD 文档本身不实现代码的历史表述已改为实现后边界说明。</td><td>消除 PRD 与实际实现的措辞冲突。</td></tr>
+      <tr><td>Target Architecture</td><td>目标补强实体状态改为已实现 / needs_review / structured_unavailable；Public Surface 改为当前 <span class='mono'>automated_evidence_closure</span> 独立包、CLI/MCP/HTTP adapter。</td><td>与 drawio 和代码实体一致。</td></tr>
+      <tr><td>Gap Analysis</td><td>默认 CLI gap 改为已修复；剩余 gap 聚焦 Route A、Quality、External、Release Gate 的真实输入和人工确认。</td><td>支持拒绝 final release 全绿声明。</td></tr>
+    </tbody>
+  </table>
+  <p>复核结论：配套设计文档现在支持“实现与测试范围完成”声明，但仍不支持“本阶段出门验收全绿 / final release accepted”声明。</p>
+</section>
+
 <section class='warn'>
   <h2>验收声明决策表</h2>
   <p><strong>决策：拒绝声明本阶段自动化开发阶段已全部完成并 final release 全绿 accepted。</strong></p>

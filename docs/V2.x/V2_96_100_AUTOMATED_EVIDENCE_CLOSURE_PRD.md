@@ -16,7 +16,7 @@ V2.96-V2.100 承接 V2.91-V2.95 的阶段验收结论：文档完整支撑范围
 | 能力 | 当前事实 | 下一阶段目标 |
 | --- | --- | --- |
 | Focused tests | V2.86-V2.95 focused tests 与 public surface guard 通过 | 保持回归可复跑，并覆盖 V2.96-V2.100 |
-| 默认 shell CLI | `python -m data_service code real-acceptance-closure --help` 仍被 legacy parser 拒绝 | 修复默认入口或调整文档命令，使 shell CLI 有真实 accepted 证据 |
+| 默认 shell CLI | 文档阶段曾记录 `python -m data_service code real-acceptance-closure --help` 被 legacy parser 拒绝；实现后已新增 `automated-evidence-closure` 默认 CLI 入口并具备命令级证据 | 使用 `python -m data_service code automated-evidence-closure <command>` 作为 V2.96-V2.100 真实验收入口 |
 | Route A | 结构已实现，缺真实资料、脱敏、截图/headless evidence、人工验收 | 自动生成 Route A 证据包，人类只确认高风险项 |
 | Quality Review | 结构已实现，缺 reviewer decision | 自动预审建议并生成最小人工决策队列 |
 | External Project E2E | data_service 可跑，codexPat/HarnessOS/Navia 缺路径 | 提供路径配置、可读性检查、E2E 或 structured unavailable 决议 |
@@ -27,7 +27,7 @@ V2.96-V2.100 承接 V2.91-V2.95 的阶段验收结论：文档完整支撑范围
 
 | 阶段 | 名称 | 目标体验 |
 | --- | --- | --- |
-| V2.96 | Default CLI Gap Closure | 维护者能通过默认 shell CLI 访问 real-acceptance-closure 命令族，或看到明确不可用原因 |
+| V2.96 | Default CLI Gap Closure | 维护者能通过默认 shell CLI 访问 automated-evidence-closure 命令族，或看到明确不可用原因 |
 | V2.97 | Route A Evidence Automation | 维护者提供真实资料后，系统自动完成资料清单、脱敏检查、截图/headless evidence 和人工最小确认记录 |
 | V2.98 | Human Quality Decision Minimization | 系统自动汇总质量建议、证据、风险等级和推荐决策，人类只处理高风险或证据不足项 |
 | V2.99 | External Project E2E Governance | 维护者能配置外部项目路径，系统自动检查可读性、执行 scoped smoke/E2E 或形成 unavailable 决议 |
@@ -72,7 +72,7 @@ Coding Agent 应能：
 
 ## 6. Out of Scope
 
-- 不做代码实现。
+- PRD 文档本身不直接实现代码；实际开发阶段已按本 PRD 和实现蓝图落地 `automated_evidence_closure` 独立包、CLI/MCP/HTTP adapter、focused tests 和命令级 E2E 证据。
 - 不自动删除任何工作树文件。
 - 不默认修改 `backend/app/api/v1/data_service.py` 或 `backend/data_service/service.py`。
 - 不用展示图、文档描述、mock-only、sample-only 证据作为 accepted。
@@ -86,3 +86,22 @@ Coding Agent 应能：
 3. 文档明确 V2.96-V2.100 是 implementation guidance，不是 implementation acceptance。
 4. coverage matrix 明确 accepted、needs_review、structured_unavailable、structured_blocker 的证据门槛。
 5. `docs/present/` 被标注为理解材料，不作为代码验收证据。
+
+## 8. Post-implementation acceptance boundary
+
+实现后允许声明：
+
+- V2.96-V2.100 文档完整支撑范围内的代码实体、public surface、artifact persistence、focused tests 和命令级 E2E 证据已完成。
+
+实现后不允许声明：
+
+- 本阶段出门验收全绿。
+- final release accepted。
+- Route A、Quality、External 或 Release Gate 的 non-accepted 状态已经被人工或自动证据闭合。
+
+拒绝全绿的原因：
+
+- Route A 仍需用户代表性真实资料与人工确认。
+- Quality 仍需 high-risk reviewer decision。
+- codexPat、HarnessOS、Navia 仍需真实可读路径或保持 structured unavailable。
+- dependency hygiene、restore smoke 和 human approval 仍需真实证据。
