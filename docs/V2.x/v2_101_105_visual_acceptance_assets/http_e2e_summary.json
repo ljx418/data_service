@@ -1,0 +1,47 @@
+{
+  "schema_version": "v2.101-105.visual_acceptance.http_summary",
+  "service": {
+    "host": "127.0.0.1",
+    "port": 8013,
+    "reason": "port 8003 was already occupied by an older local process during audit"
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/knowledge?view=portfolio",
+      "http_status": 200,
+      "judgment": "available"
+    },
+    {
+      "method": "POST",
+      "path": "/api/workspaces/v2_101_105_real/portfolio/scan",
+      "http_status": 200,
+      "response_status": "accepted",
+      "project_count": 18,
+      "judgment": "accepted for scan"
+    },
+    {
+      "method": "POST",
+      "path": "/api/workspaces/v2_101_105_real/portfolio/build",
+      "http_status": 200,
+      "response_status": "structured_unavailable",
+      "implementation_status": "accepted",
+      "portfolio_final_status": "structured_unavailable",
+      "judgment": "bounded implementation accepted; final portfolio not accepted"
+    },
+    {
+      "method": "GET",
+      "path": "/api/workspaces/v2_101_105_real/portfolio",
+      "http_status": 200,
+      "response_status": "structured_unavailable",
+      "implementation_status": "accepted",
+      "portfolio_final_status": "structured_unavailable",
+      "judgment": "read model available with non-accepted blockers retained"
+    }
+  ],
+  "false_green_guard": {
+    "ui_available_does_not_equal_final_acceptance": true,
+    "structured_unavailable_not_counted_as_accepted": true,
+    "needs_review_not_counted_as_accepted": true
+  }
+}

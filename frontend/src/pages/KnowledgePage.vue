@@ -96,6 +96,84 @@
         </section>
       </template>
 
+      <template v-if="activeWorkbench === 'portfolio'">
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Workspace Portfolio</p>
+              <h2>项目组合知识化</h2>
+            </div>
+            <div class="button-row">
+              <button class="btn-secondary small" :disabled="portfolioLoading" @click="loadPortfolio">读取</button>
+              <button class="btn-primary small" :disabled="portfolioLoading" @click="buildPortfolio">
+                {{ portfolioLoading ? '构建中...' : '构建项目组合' }}
+              </button>
+            </div>
+          </div>
+          <div class="metric-rail" aria-label="项目组合状态">
+            <div class="metric-tile">
+              <span>implementation_status</span>
+              <strong>{{ portfolioStatusHeader.implementation_status || 'needs_review' }}</strong>
+              <small>{{ portfolioStatusHeader.primary_next_action || 'run portfolio build' }}</small>
+            </div>
+            <div class="metric-tile">
+              <span>portfolio_final_status</span>
+              <strong>{{ portfolioStatusHeader.portfolio_final_status || 'needs_review' }}</strong>
+              <small>阻断 {{ portfolioStatusHeader.blocker_count || 0 }}</small>
+            </div>
+            <div class="metric-tile">
+              <span>项目分类</span>
+              <strong>{{ portfolioRegistrySummary.code_project_count || 0 }} / {{ portfolioRegistrySummary.doc_project_count || 0 }} / {{ portfolioRegistrySummary.media_corpus_count || 0 }}</strong>
+              <small>code / docs / media</small>
+            </div>
+            <div class="metric-tile">
+              <span>媒体 readiness</span>
+              <strong>{{ portfolioMediaSummary.ocr_provider_status || 'structured_unavailable' }}</strong>
+              <small>OCR required {{ portfolioMediaSummary.ocr_required_count || 0 }}</small>
+            </div>
+          </div>
+          <div v-if="portfolioError" class="empty-box">{{ portfolioError }}</div>
+          <div class="subsection">
+            <div class="list-item-head">
+              <h3>Project Registry Summary</h3>
+              <span class="muted">workspace_id {{ portfolioWorkspaceId }}</span>
+            </div>
+            <div class="stack-list compact-list">
+              <div v-for="project in portfolioProjectRows.slice(0, 20)" :key="project.project_id" class="list-item static-item">
+                <div class="list-item-head">
+                  <span class="pill">{{ project.classification }}</span>
+                  <span class="pill" :class="{ warning: project.status !== 'accepted' }">{{ project.status }}</span>
+                </div>
+                <div class="item-title">{{ project.display_name }}</div>
+                <div class="item-body">{{ project.path_ref }}</div>
+                <div class="head-pills compact">
+                  <span class="pill">evidence {{ (project.evidence_refs || []).length }}</span>
+                  <span class="pill">next {{ (project.next_actions || [])[0] || 'review' }}</span>
+                </div>
+              </div>
+              <div v-if="!portfolioProjectRows.length" class="empty-box">尚未读取到项目组合 artifact。点击“构建项目组合”会使用真实 /mnt/c/workspace 扫描。</div>
+            </div>
+          </div>
+          <div class="subsection">
+            <div class="list-item-head">
+              <h3>Release Gate Panel</h3>
+              <span class="muted">不隐藏 non-accepted 状态</span>
+            </div>
+            <div class="stack-list compact-list">
+              <div v-for="item in portfolioUnresolved.slice(0, 12)" :key="item.id || item.reason" class="list-item static-item">
+                <div class="list-item-head">
+                  <span class="pill warning">{{ item.kind || item.status }}</span>
+                  <span class="muted">{{ item.id }}</span>
+                </div>
+                <div class="item-body">{{ item.reason }}</div>
+                <div class="item-body">next: {{ item.next_action }}</div>
+              </div>
+              <div v-if="!portfolioUnresolved.length" class="empty-box">当前 release gate 没有 unresolved 项；仍需以 focused tests 和真实 E2E 为准。</div>
+            </div>
+          </div>
+        </section>
+      </template>
+
       <template v-if="activeWorkbench === 'sources'">
       <section id="workspace-manager" class="card card--workspace-manager">
         <div class="section-head">
@@ -1490,6 +1568,7 @@ import {
 import {
   buildKnowledgeCorrectionPlan,
   buildKnowledgeCorrectionRules,
+  buildWorkspacePortfolio,
   cancelKnowledgeBuild,
   createKnowledgeWorkspace,
   describeKnowledgeWorkspace,
@@ -1503,6 +1582,7 @@ import {
   fetchKnowledgePage,
   fetchKnowledgeSourceTrace,
   fetchKnowledgeSummary,
+  fetchWorkspacePortfolio,
   importKnowledgeSources,
   listKnowledgeSources,
   listKnowledgeWorkspaces,
@@ -1511,6 +1591,7 @@ import {
   resetKnowledgeWorkspace,
   reviewKnowledgeCorrectionRule,
   scanKnowledgeDirectories,
+  scanWorkspacePortfolio,
   startKnowledgeBuild,
   submitKnowledgeFeedback,
   type KnowledgeBuildOperation,
@@ -1525,6 +1606,7 @@ import {
   type KnowledgeSourceRecord,
   type KnowledgeSourceTraceResponse,
   type KnowledgeWorkspaceRecord,
+  type WorkspacePortfolioResponse,
   type QueryMode,
 } from '@/api/dataService'
 
@@ -1538,8 +1620,10 @@ const sessionScope = ref(urlParams.get('scope') === 'session' || Boolean(urlPara
 const sessionWorkspaceId = ref(urlParams.get('workspace_id') || 'meeting-knowledge')
 const sessionId = ref(urlParams.get('session_id') || '')
 const initialView = urlParams.get('view')
-const initialWorkbench = initialView === 'mcp'
+const initialWorkbench: 'overview' | 'portfolio' | 'sources' | 'quality' | 'explore' | 'mcp' = initialView === 'mcp'
   ? 'mcp'
+  : initialView === 'portfolio'
+  ? 'portfolio'
   : initialView === 'graph' || window.location.hash === '#graph-panel'
   ? 'explore'
   : sessionScope.value
@@ -1571,7 +1655,7 @@ const queryText = ref('ComfyUI')
 const topK = ref(8)
 const queryAnswer = ref('切换查询模式并输入关键字后，这里会显示聚合回答。')
 const summaryTab = ref<'markdown' | 'json'>('markdown')
-const activeWorkbench = ref<'overview' | 'sources' | 'quality' | 'explore' | 'mcp'>(initialWorkbench)
+const activeWorkbench = ref<'overview' | 'portfolio' | 'sources' | 'quality' | 'explore' | 'mcp'>(initialWorkbench)
 const selectedPageSlug = ref('')
 const selectedPageTitle = ref('')
 const selectedPageMarkdown = ref('')
@@ -1596,6 +1680,11 @@ const selectedMcpGroup = ref('Core')
 const selectedMcpToolName = ref('knowledge_query')
 const mcpPayloadText = ref('')
 const selectedMcpErrorScenario = ref('missing_required')
+const portfolioWorkspaceId = 'v2_101_105_real'
+const portfolioRoot = '/mnt/c/workspace'
+const portfolioBundle = ref<WorkspacePortfolioResponse | null>(null)
+const portfolioLoading = ref(false)
+const portfolioError = ref('')
 
 const summaryLoading = ref(false)
 const graphLoading = ref(false)
@@ -1994,7 +2083,15 @@ const recommendedActionLabel = computed(() => {
 })
 const recommendedActionDisabled = computed(() => buildOperationLoading.value || directoryScanLoading.value || ingestLoading.value)
 const refreshKnowledgeButtonLabel = computed(() => buildOperationBusy.value ? '任务处理中...' : '刷新知识库')
+const portfolioPayload = computed(() => portfolioBundle.value?.data?.workspace_portfolio || null)
+const portfolioReadModel = computed(() => portfolioPayload.value?.data?.knowledge_portfolio_read_model || {})
+const portfolioStatusHeader = computed(() => portfolioReadModel.value.status_header || {})
+const portfolioRegistrySummary = computed(() => portfolioReadModel.value.registry_summary || {})
+const portfolioMediaSummary = computed(() => portfolioReadModel.value.media_summary || {})
+const portfolioProjectRows = computed(() => portfolioReadModel.value.project_rows || [])
+const portfolioUnresolved = computed(() => portfolioPayload.value?.unresolved || portfolioReadModel.value.release_gate?.no_go_findings || [])
 const activeWorkbenchTitle = computed(() => {
+  if (activeWorkbench.value === 'portfolio') return '当前项目组合'
   if (activeWorkbench.value === 'sources') return '当前工作区'
   if (activeWorkbench.value === 'quality') return '当前质量焦点'
   if (activeWorkbench.value === 'explore') return '当前探索范围'
@@ -2002,6 +2099,7 @@ const activeWorkbenchTitle = computed(() => {
   return '当前总览'
 })
 const activeWorkbenchHeadline = computed(() => {
+  if (activeWorkbench.value === 'portfolio') return portfolioStatusHeader.value.implementation_status || '读取 workspace 项目组合状态'
   if (activeWorkbench.value === 'sources') return selectedDistillSource.value?.title || '管理来源对象与追溯链路'
   if (activeWorkbench.value === 'quality') return lowSignalAuditFailedCount.value ? '优先处理低信号审计失败项' : '审核反馈规则与修复动作'
   if (activeWorkbench.value === 'explore') return queryText.value.trim() || '输入问题后开始查询'
@@ -2009,6 +2107,7 @@ const activeWorkbenchHeadline = computed(() => {
   return knowledgeHealthTitle.value
 })
 const activeWorkbenchDetail = computed(() => {
+  if (activeWorkbench.value === 'portfolio') return `final ${portfolioStatusHeader.value.portfolio_final_status || 'needs_review'}，unresolved ${portfolioUnresolved.value.length}`
   if (activeWorkbench.value === 'sources') return selectedSourceTrace.value ? `${sourceTraceSummary.value.unit_count || 0} 个 units，${sourceTracePages.value.length} 个页面，${sourceTraceNodes.value.length} 个图谱节点` : sourceStatusSummary.value
   if (activeWorkbench.value === 'quality') return `${feedbackSummary.value.feedback_count || 0} 条反馈，${correctionSummary.value.rule_count || 0} 条规则，${lowSignalAuditFailedCount.value} 项未通过审计`
   if (activeWorkbench.value === 'explore') return queryResults.value.length ? queryBreakdown.value : '查询结果会关联页面、实体、关系和 distill unit'
@@ -2020,6 +2119,11 @@ const workbenchTabs = computed(() => [
     key: 'overview' as const,
     label: '总览',
     detail: buildOperationBusy.value ? buildStatusLabel.value : `${directoryScanSummary.value.pending_count || 0} 个待刷新变更`,
+  },
+  {
+    key: 'portfolio' as const,
+    label: '项目组合',
+    detail: portfolioStatusHeader.value.implementation_status || 'workspace portfolio',
   },
   {
     key: 'sources' as const,
@@ -2656,6 +2760,34 @@ async function retryRefreshOperation() {
   await startRefreshOperation(buildOperation.value?.data.mode || buildMode.value)
 }
 
+async function loadPortfolio() {
+  portfolioLoading.value = true
+  portfolioError.value = ''
+  try {
+    portfolioBundle.value = await fetchWorkspacePortfolio(portfolioWorkspaceId)
+  } catch (error) {
+    portfolioError.value = `项目组合尚未构建或读取失败：${String(error)}`
+  } finally {
+    portfolioLoading.value = false
+  }
+}
+
+async function buildPortfolio() {
+  portfolioLoading.value = true
+  portfolioError.value = ''
+  try {
+    await scanWorkspacePortfolio(portfolioWorkspaceId, portfolioRoot)
+    portfolioBundle.value = await buildWorkspacePortfolio(portfolioWorkspaceId, portfolioRoot)
+    showToast('项目组合 artifacts 已构建')
+  } catch (error) {
+    console.error(error)
+    portfolioError.value = `项目组合构建失败：${String(error)}`
+    showToast(portfolioError.value, 'error')
+  } finally {
+    portfolioLoading.value = false
+  }
+}
+
 async function refreshAll() {
   try {
     if (!sessionScope.value) {
@@ -2674,6 +2806,9 @@ async function refreshAll() {
     }
     if (activeWorkbench.value === 'explore' && !graphData.value.nodes.length && !graphLoading.value) {
       await loadGraph()
+    }
+    if (activeWorkbench.value === 'portfolio') {
+      await loadPortfolio()
     }
     lastUpdated.value = new Date().toLocaleTimeString('zh-CN')
     showToast('工作台数据已刷新')

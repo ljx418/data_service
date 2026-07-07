@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" modified="2026-07-07T00:00:00.000Z" agent="codex" version="24.7.17" type="device">
+  <diagram id="v2101-p1" name="01 阶段目标与体验">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p1_title" value="V2.101-V2.105 Workspace 项目组合知识化&#xa;目标：用 data_service 理解 /mnt/c/workspace 下多个项目与纯资料目录，形成可复跑、可审计、可查询的知识资产" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=20;fontStyle=1;align=center;spacing=12;" vertex="1" parent="1"><mxGeometry x="80" y="40" width="1440" height="90" as="geometry"/></mxCell>
+        <mxCell id="p1_f1" value="功能 1：Workspace 项目组合发现&#xa;按一级目录识别 code_project / doc_project / media_corpus / ignored / needs_review / structured_unavailable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="100" y="190" width="420" height="210" as="geometry"/></mxCell>
+        <mxCell id="p1_f2" value="功能 2：文档与多媒体资料建库&#xa;项目 docs、PPTX、PDF、DOCX、YAML、HTML、Markdown 等文本可抽取资料进入 source candidate matrix；图片和扫描件保留 OCR 缺口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="590" y="190" width="420" height="210" as="geometry"/></mxCell>
+        <mxCell id="p1_f3" value="功能 3：/knowledge 真实验收闭环&#xa;控制台读取 persisted artifacts，展示首页状态、项目列表、项目详情、媒体 readiness、next actions、release gate，不硬编码结论" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="1080" y="190" width="420" height="210" as="geometry"/></mxCell>
+        <mxCell id="p1_user" value="目标体验&#xa;维护者：首页看到 PortfolioStatusHeader、ProjectRegistrySummary、BuildRunSummary、MediaReadinessSummary、NextActionsList，快速判断哪些项目可用、哪些资料缺 OCR 或路径。&#xa;Agent：通过 CLI/MCP/HTTP 读取同一组 artifact refs、query entrypoints、project brief refs、context availability 和 next actions。&#xa;审计者：复跑真实扫描、有界建库、UI 截图和 false-green audit。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;align=left;spacing=14;" vertex="1" parent="1"><mxGeometry x="160" y="500" width="1280" height="240" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2101-p2" name="02 当前到目标架构">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p2_cur" value="当前已实现实体（绿色）&#xa;code_assets/registry.py&#xa;code_assets/snapshot.py&#xa;code_assets/inventory.py&#xa;code_assets/symbols.py&#xa;code_assets/overview.py&#xa;code_assets/context/service.py&#xa;DataService ingest/query&#xa;llmwiki extractors&#xa;基础 /knowledge 静态控制台&#xa;workspace_portfolio 有界实现" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="80" y="120" width="420" height="440" as="geometry"/></mxCell>
+        <mxCell id="p2_need" value="本阶段已交付实体（绿色）&#xa;workspace_portfolio/service.py&#xa;workspace_portfolio/shared.py&#xa;workspace_portfolio/persistence.py&#xa;project brief artifact&#xa;source candidate matrix&#xa;media readiness&#xa;release_gate / false_green_audit&#xa;cli_portfolio.py&#xa;mcp_workspace_portfolio_tools.py&#xa;workspace_portfolio HTTP router" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="590" y="120" width="430" height="440" as="geometry"/></mxCell>
+        <mxCell id="p2_modify" value="需修改实体（紫色）&#xa;frontend/src/pages/KnowledgePage.vue：承载 portfolio panel&#xa;frontend/src/api/portfolio.ts：读取 HTTP read model&#xa;PortfolioStatusHeader / ProjectRegistrySummary / BuildRunSummary / MediaReadinessSummary / ProjectDetailDrawer / ReleaseGatePanel&#xa;后端 app router 注册点（优先插件式）&#xa;public surface guard 期望清单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1110" y="120" width="410" height="300" as="geometry"/></mxCell>
+        <mxCell id="p2_limited" value="受限能力（红色）&#xa;OCR provider 当前不可用时：图片/扫描 PDF/图片型 PPT 不能 accepted&#xa;LibreOffice/soffice 不可用时：legacy .ppt 转换不能 accepted&#xa;UI 截图不能替代 build/query/source trace&#xa;有界构建外的项目必须 needs_review，不能计入 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1110" y="430" width="410" height="220" as="geometry"/></mxCell>
+        <mxCell id="p2_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p2_cur" target="p2_need"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p2_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p2_need" target="p2_modify"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2101-p3" name="03 代码实体分层关系">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p3_entry" value="入口层&#xa;CLI：python -m data_service portfolio ...&#xa;MCP：knowledge_workspace_portfolio_*&#xa;HTTP：/api/workspaces/{workspace_id}/portfolio/*&#xa;UI：/knowledge portfolio panel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="80" y="60" width="1440" height="120" as="geometry"/></mxCell>
+        <mxCell id="p3_adapter" value="Adapter 层（已实现）&#xa;cli_portfolio.py&#xa;mcp_workspace_portfolio_tools.py&#xa;workspace_portfolio.py HTTP router&#xa;frontend/src/api/dataService.ts portfolio client&#xa;KnowledgePage.vue portfolio panel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="120" y="240" width="360" height="230" as="geometry"/></mxCell>
+        <mxCell id="p3_service" value="Portfolio Service 层（有界已实现）&#xa;service.py：扫描、分类、建库编排、source matrix、media readiness、release gate、HTML report&#xa;shared.py：状态、后缀、路径脱敏&#xa;persistence.py：portfolio artifacts&#xa;后续可再拆 discovery/classifier/builder 等模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="600" y="230" width="420" height="280" as="geometry"/></mxCell>
+        <mxCell id="p3_existing" value="复用能力层（已实现）&#xa;code_assets registry/snapshot/inventory/symbols/overview/context&#xa;DataService ingest/query/source trace&#xa;llmwiki extractors&#xa;research_notebook OCR provider health" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1140" y="240" width="360" height="240" as="geometry"/></mxCell>
+        <mxCell id="p3_persist" value="Persistence 层&#xa;workspace/{workspace_id}/portfolio/project_registry.json&#xa;source_candidate_matrix.json&#xa;media_readiness.json&#xa;project_build_runs.json&#xa;portfolio_index.json&#xa;release_gate.json&#xa;portfolio_report.html" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="300" y="610" width="1000" height="190" as="geometry"/></mxCell>
+        <mxCell id="p3_e1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p3_entry" target="p3_adapter"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p3_adapter" target="p3_service"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p3_service" target="p3_existing"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p3_e4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p3_service" target="p3_persist"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2101-p4" name="04 数据流与证据流">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p4_root" value="真实输入&#xa;/mnt/c/workspace/*&#xa;只读扫描，不写入外部项目" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=center;" vertex="1" parent="1"><mxGeometry x="80" y="330" width="260" height="120" as="geometry"/></mxCell>
+        <mxCell id="p4_scan" value="扫描与分类&#xa;project_registry.json&#xa;classification evidence&#xa;ignored reason" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=center;" vertex="1" parent="1"><mxGeometry x="430" y="320" width="270" height="140" as="geometry"/></mxCell>
+        <mxCell id="p4_build" value="建库编排&#xa;有界 code asset build&#xa;project brief / overview 可用性&#xa;docs/media readiness&#xa;ingest/source trace 只在 accepted 时必需" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=center;" vertex="1" parent="1"><mxGeometry x="790" y="220" width="270" height="140" as="geometry"/></mxCell>
+        <mxCell id="p4_media" value="媒体 readiness&#xa;PPT/PDF/DOCX/YAML 文本抽取&#xa;图片/扫描件 OCR_REQUIRED" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=15;align=center;" vertex="1" parent="1"><mxGeometry x="790" y="470" width="270" height="150" as="geometry"/></mxCell>
+        <mxCell id="p4_index" value="组合索引&#xa;portfolio_index.json&#xa;query entrypoints&#xa;artifact refs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=center;" vertex="1" parent="1"><mxGeometry x="1160" y="320" width="270" height="140" as="geometry"/></mxCell>
+        <mxCell id="p4_ui" value="/knowledge 与 HTML 报告&#xa;只读 persisted artifacts&#xa;首页状态、项目列表、项目详情、媒体 readiness、release gate&#xa;显示 accepted/non-accepted/next actions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=15;align=center;" vertex="1" parent="1"><mxGeometry x="610" y="690" width="460" height="150" as="geometry"/></mxCell>
+        <mxCell id="p4_e1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p4_root" target="p4_scan"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p4_scan" target="p4_build"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e3" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p4_scan" target="p4_media"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p4_build" target="p4_index"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e5" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p4_media" target="p4_index"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="p4_e6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#666666;endArrow=block;" edge="1" parent="1" source="p4_index" target="p4_ui"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2101-p5" name="05 开发与验收计划">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p5_v101" value="V2.101 Discovery&#xa;输出：project_registry / discovery_report&#xa;体验：知道 workspace 下有哪些项目和资料目录" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="80" y="120" width="270" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_v102" value="V2.102 Builder&#xa;输出：project_build_runs / portfolio_index&#xa;体验：Agent 能读取项目 code asset、project brief、可用 context refs 或结构化缺口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="380" y="120" width="270" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_v103" value="V2.103 Media Intake&#xa;输出：source_candidate_matrix / media_readiness&#xa;体验：知道哪些资料可入库，哪些缺 OCR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="680" y="120" width="270" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_v104" value="V2.104 Console&#xa;输出：/knowledge portfolio panel / screenshots&#xa;体验：首页状态面板、项目表、详情抽屉、媒体 readiness、release gate 全部来自 API/artifact" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="980" y="120" width="270" height="190" as="geometry"/></mxCell>
+        <mxCell id="p5_v105" value="V2.105 Gate&#xa;输出：release_gate / false_green_audit / portfolio_report&#xa;体验：知道能否出门和补证路径" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=15;align=left;spacing=10;" vertex="1" parent="1"><mxGeometry x="1280" y="120" width="270" height="170" as="geometry"/></mxCell>
+        <mxCell id="p5_start" value="每阶段开始前&#xa;development plan&#xa;acceptance plan&#xa;pre-implementation audit&#xa;关闭 fatal / major" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="170" y="480" width="520" height="180" as="geometry"/></mxCell>
+        <mxCell id="p5_end" value="每阶段结束后&#xa;focused tests&#xa;真实 /mnt/c/workspace E2E&#xa;PRD/spec review&#xa;false-green audit&#xa;acceptance audit report" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="900" y="470" width="520" height="210" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2101-p6" name="06 验收门槛与出门条件">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p6_accept" value="Accepted 必须满足&#xa;真实 workspace scan&#xa;真实 code asset artifacts / project brief&#xa;docs ingest accepted 时必须有 query/source trace&#xa;真实 API/CLI/MCP result&#xa;Headless UI 截图只证明展示&#xa;PRD/spec review 与 false-green audit 通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="90" y="100" width="430" height="300" as="geometry"/></mxCell>
+        <mxCell id="p6_non" value="不能 accepted 的情况&#xa;scan 成功但无 build evidence&#xa;UI 截图替代建库证据&#xa;OCR 不可用却声称理解图片&#xa;docs claim 写成 code fact&#xa;不可读目录 silent skip&#xa;non-accepted 被计入 accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="590" y="100" width="430" height="300" as="geometry"/></mxCell>
+        <mxCell id="p6_exit" value="出门条件&#xa;V2.101-V2.105 focused tests 通过&#xa;真实 /mnt/c/workspace E2E 有证据&#xa;/knowledge portfolio panel 有 headless 截图：首页状态、项目列表、详情、媒体 readiness、release gate&#xa;release_gate 同时输出 implementation_status 与 portfolio_final_status&#xa;portfolio_report.html 可读且中文&#xa;阻断项必须保留" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="1090" y="100" width="430" height="370" as="geometry"/></mxCell>
+        <mxCell id="p6_user" value="用户能达成的目标体验&#xa;在 /knowledge 首页看清 workspace 项目组合状态；进入项目详情看到证据、项目简报和可用上下文入口；看到哪些资料可入库、哪些需要 OCR 或人工确认；通过 release gate 区分“本阶段功能已实现”和“项目组合资料是否全绿”。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=18;align=center;spacing=14;" vertex="1" parent="1"><mxGeometry x="170" y="560" width="1260" height="180" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v2101-p7" name="07 No-Go 与风险">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="p7_no1" value="No-Go 1：不做完整项目意图恢复&#xa;只做 evidence-backed code artifacts、project brief、可用 context refs 或结构化缺口，不声称完整设计意图、full call graph、runtime topology、data/control flow、type inference。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="100" y="100" width="620" height="170" as="geometry"/></mxCell>
+        <mxCell id="p7_no2" value="No-Go 2：不把多媒体缺口伪造成完成&#xa;图片、扫描 PDF、图片型 PPT 必须有 OCR/视觉证据；否则是 ocr_required、needs_review 或 structured_unavailable。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="880" y="100" width="620" height="170" as="geometry"/></mxCell>
+        <mxCell id="p7_no3" value="No-Go 3：不修改外部项目&#xa;扫描和建库只读执行，不能自动写入、删除、移动或格式化 /mnt/c/workspace 下被扫描项目。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="100" y="350" width="620" height="170" as="geometry"/></mxCell>
+        <mxCell id="p7_no4" value="No-Go 4：不让 UI 变成事实来源&#xa;/knowledge 和 HTML report 只能展示 persisted artifacts；截图只证明展示路径，不能替代 build/query/source trace；API/artifact 缺失时不能回退到 demo data。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=16;align=left;spacing=12;" vertex="1" parent="1"><mxGeometry x="880" y="350" width="620" height="190" as="geometry"/></mxCell>
+        <mxCell id="p7_ref" value="GitHub CLI 借鉴边界&#xa;采用命令族、薄入口、adapter 和 API façade 思路；不引入不可信 extension 执行模型，不覆盖现有 ingest/code/query 语义。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=17;align=center;spacing=14;" vertex="1" parent="1"><mxGeometry x="250" y="640" width="1100" height="140" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

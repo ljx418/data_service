@@ -1,5 +1,6 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || ''
 const BASE_URL = `${API_BASE_URL}/api/v1/knowledge`
+const API_ROOT = `${API_BASE_URL}/api`
 const KNOWLEDGE_API_KEY = import.meta.env.VITE_DATA_SERVICE_API_KEY || ''
 
 export type QueryMode = 'llmwiki' | 'graphrag' | 'hybrid'
@@ -282,6 +283,27 @@ export interface KnowledgeSourceRecord {
   extractor_available?: boolean
 }
 
+export interface WorkspacePortfolioResponse {
+  workspace_id: string
+  status: string
+  data: {
+    workspace_portfolio: {
+      status: string
+      summary: Record<string, any>
+      data: {
+        knowledge_portfolio_read_model?: Record<string, any>
+        project_registry?: Record<string, any> | null
+        media_readiness?: Record<string, any> | null
+        project_build_runs?: Record<string, any> | null
+        release_gate?: Record<string, any> | null
+      }
+      artifact_refs: Array<Record<string, any>>
+      unresolved: Array<Record<string, any>>
+      next_actions: string[]
+    }
+  }
+}
+
 async function postJson<T>(endpoint: string, body: Record<string, any>): Promise<T> {
   const headers: Record<string, string> = { 'Content-Type': 'application/json' }
   if (KNOWLEDGE_API_KEY) {
@@ -300,6 +322,52 @@ async function postJson<T>(endpoint: string, body: Record<string, any>): Promise
   }
 
   return response.json() as Promise<T>
+}
+
+async function apiPostJson<T>(endpoint: string, body: Record<string, any>): Promise<T> {
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' }
+  if (KNOWLEDGE_API_KEY) {
+    headers['X-API-Key'] = KNOWLEDGE_API_KEY
+  }
+  const response = await fetch(`${API_ROOT}${endpoint}`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify(body),
+  })
+  if (!response.ok) {
+    const message = await response.text()
+    throw new Error(message || `Request failed: ${response.status}`)
+  }
+  return response.json() as Promise<T>
+}
+
+async function apiGetJson<T>(endpoint: string): Promise<T> {
+  const headers: Record<string, string> = {}
+  if (KNOWLEDGE_API_KEY) {
+    headers['X-API-Key'] = KNOWLEDGE_API_KEY
+  }
+  const response = await fetch(`${API_ROOT}${endpoint}`, { headers })
+  if (!response.ok) {
+    const message = await response.text()
+    throw new Error(message || `Request failed: ${response.status}`)
+  }
+  return response.json() as Promise<T>
+}
+
+export function scanWorkspacePortfolio(workspaceId: string, root = '/mnt/c/workspace', limit = 40) {
+  return apiPostJson<WorkspacePortfolioResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio/scan`, { root, limit })
+}
+
+export function buildWorkspacePortfolio(workspaceId: string, root = '/mnt/c/workspace', limit = 40, maxCodeProjects = 1) {
+  return apiPostJson<WorkspacePortfolioResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio/build`, {
+    root,
+    limit,
+    max_code_projects: maxCodeProjects,
+  })
+}
+
+export function fetchWorkspacePortfolio(workspaceId: string) {
+  return apiGetJson<WorkspacePortfolioResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio`)
 }
 
 export function fetchKnowledgeSummary(workspace: string) {

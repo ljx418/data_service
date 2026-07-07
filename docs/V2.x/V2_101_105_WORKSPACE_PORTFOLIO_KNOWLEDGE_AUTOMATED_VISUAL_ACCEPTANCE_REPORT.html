@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V2.101-V2.105 自动化验收审计报告</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --line: #d8dee8;
+      --ok: #16794c;
+      --warn: #a15c00;
+      --bad: #b42318;
+      --info: #175cd3;
+    }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.58 Arial, "Microsoft YaHei", sans-serif; }
+    header { padding: 28px 36px; background: #111827; color: #fff; }
+    header h1 { margin: 0 0 8px; font-size: 28px; }
+    header p { margin: 0; color: #cbd5e1; }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px; }
+    section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 22px; margin-bottom: 18px; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    h3 { margin: 18px 0 8px; font-size: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .card { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fbfcfe; }
+    .label { display: block; color: var(--muted); font-size: 12px; }
+    .value { display: block; margin-top: 4px; font-weight: 700; font-size: 20px; }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+    .info { color: var(--info); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid var(--line); padding: 9px 10px; text-align: left; vertical-align: top; }
+    th { background: #f1f5f9; }
+    code, pre { font-family: Consolas, "Liberation Mono", monospace; }
+    pre { white-space: pre-wrap; background: #0f172a; color: #e2e8f0; padding: 14px; border-radius: 8px; overflow: auto; }
+    .note { color: var(--muted); }
+    .evidence { border-left: 4px solid var(--info); padding: 10px 14px; background: #eff6ff; margin: 10px 0; }
+    .blocker { border-left: 4px solid var(--warn); padding: 10px 14px; background: #fffbeb; margin: 10px 0; }
+    .no-go { border-left: 4px solid var(--bad); padding: 10px 14px; background: #fef3f2; margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>V2.101-V2.105 Workspace 项目组合知识化自动化验收审计报告</h1>
+    <p>报告语言：中文。报告性质：阶段性自动化验收与可视化审计，不伪造截图，不声明完整项目设计意图恢复。</p>
+  </header>
+  <main>
+    <section>
+      <h2>1. 总体验收结论</h2>
+      <div class="grid">
+        <div class="card"><span class="label">implementation_status</span><span class="value ok">accepted</span></div>
+        <div class="card"><span class="label">portfolio_final_status</span><span class="value warn">structured_unavailable</span></div>
+        <div class="card"><span class="label">真实扫描项目数</span><span class="value">18</span></div>
+        <div class="card"><span class="label">未闭环阻断项</span><span class="value warn">104</span></div>
+      </div>
+      <div class="blocker">
+        结论：本阶段文档支撑范围内的有界实现已通过验收；但不能声明项目组合最终全绿。OCR/provider、文档 ingest/source trace、未构建项目仍保留为真实缺口。
+      </div>
+    </section>
+
+    <section>
+      <h2>2. 原始 PRD / 目标架构审计</h2>
+      <table>
+        <tr><th>审计项</th><th>结论</th><th>证据</th></tr>
+        <tr><td>Workspace 项目组合发现</td><td class="ok">已实现</td><td>真实 `/mnt/c/workspace` scan：18 个项目、9 个 ignored。</td></tr>
+        <tr><td>有界 Project Knowledge Builder</td><td class="ok">已实现</td><td>1 个真实代码项目 accepted；17 个项目保留 needs_review。</td></tr>
+        <tr><td>Document / Media Readiness</td><td class="ok">已实现 readiness</td><td>OCR required 86；OCR provider 为 structured_unavailable。</td></tr>
+        <tr><td>/knowledge Portfolio Panel</td><td class="ok">实现路径存在</td><td>`/knowledge?view=portfolio` HTTP 200；API 在 8013 返回 portfolio read model。</td></tr>
+        <tr><td>Release Gate</td><td class="ok">已实现</td><td>顶层 status 与 `portfolio_final_status=structured_unavailable` 一致。</td></tr>
+        <tr><td>Drawio 目标架构同步</td><td class="ok">已同步</td><td>drawio 7 页，XML parse OK，已把“待新增”同步为“已实现/有界已实现”。</td></tr>
+        <tr><td>出门条件是否全绿</td><td class="warn">非全绿</td><td>`implementation_status=accepted`，但 `portfolio_final_status=structured_unavailable`。</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. 自动化测试结果</h2>
+      <pre>PYTHONPATH=backend pytest -q \
+backend/tests/test_v2_101_workspace_portfolio_discovery.py \
+backend/tests/test_v2_102_project_knowledge_builder.py \
+backend/tests/test_v2_103_document_media_intake.py \
+backend/tests/test_v2_104_knowledge_console_portfolio.py \
+backend/tests/test_v2_105_portfolio_release_gate.py \
+backend/tests/test_public_surface_guard.py
+
+Result: 10 passed, 16 warnings</pre>
+      <pre>PYTHONPATH=backend python3 -m compileall -q backend/data_service backend/app/api backend/tests
+Result: pass
+
+npm --prefix frontend run build
+Result: pass
+
+git diff --check
+Result: pass
+
+git diff -- backend/app/api/v1/data_service.py backend/data_service/service.py
+Result: no diff</pre>
+      <p class="note">warnings 为 TestClient/httpx 和 datetime.utcnow deprecation，不作为通过证据，也未阻断本阶段验收。</p>
+    </section>
+
+    <section>
+      <h2>4. 真实 Workspace E2E</h2>
+      <pre>CLI E2E:
+scan status=accepted
+project_count=18
+classification_counts={'media_corpus': 4, 'code_project': 11, 'needs_review': 2, 'doc_project': 1}
+
+build/read/report status=structured_unavailable
+implementation_status=accepted
+portfolio_final_status=structured_unavailable
+accepted_project_count=1
+needs_review_count=17
+ocr_provider_status=structured_unavailable
+conversion_provider_status=needs_review
+ocr_required_count=86
+unresolved=104</pre>
+      <pre>HTTP E2E on audit service port 8013:
+/knowledge?view=portfolio => 200
+POST /api/workspaces/v2_101_105_real/portfolio/scan => accepted
+POST /api/workspaces/v2_101_105_real/portfolio/build => structured_unavailable
+GET  /api/workspaces/v2_101_105_real/portfolio => structured_unavailable</pre>
+    </section>
+
+    <section>
+      <h2>5. 可视化截图证据</h2>
+      <div class="no-go">
+        Headless 截图未生成。原因：Python Playwright 可用，但内置 Chromium 启动失败，缺少系统库 `libnspr4.so`。根据用户要求，本报告不使用弹窗或焦点抢占方式强行截图，也不伪造截图。
+      </div>
+      <table>
+        <tr><th>证据项</th><th>状态</th><th>路径 / 说明</th></tr>
+        <tr><td>Playwright 截图结果</td><td class="warn">structured_unavailable</td><td>`docs/V2.x/v2_101_105_visual_acceptance_assets/screenshot_result.json`</td></tr>
+        <tr><td>CLI E2E 摘要</td><td class="ok">available</td><td>`docs/V2.x/v2_101_105_visual_acceptance_assets/cli_e2e_summary.json`</td></tr>
+        <tr><td>HTTP E2E 摘要</td><td class="ok">available</td><td>`docs/V2.x/v2_101_105_visual_acceptance_assets/http_e2e_summary.json`</td></tr>
+      </table>
+      <p class="note">`.tmp` 下的原始临时文件仅用于本地执行过程核对，清理工作树前会移除；可提交审计证据以本节列出的 docs 目录文件为准。若后续需要真实截图，请先安装 headless Chromium 运行依赖或提供可用 Chrome/ChromeCli，再重新执行截图验收。</p>
+    </section>
+
+    <section>
+      <h2>6. 用户场景体验路径</h2>
+      <table>
+        <tr><th>场景</th><th>用户动作</th><th>当前可达成体验</th><th>状态</th></tr>
+        <tr><td>维护者首页</td><td>打开 `/knowledge?view=portfolio`</td><td>页面可打开，读取 portfolio read model 的设计已实现。</td><td class="ok">实现通过</td></tr>
+        <tr><td>项目组合扫描</td><td>运行 portfolio scan</td><td>看到 18 个真实 workspace 项目分类和 ignored reason。</td><td class="ok">验收通过</td></tr>
+        <tr><td>有界代码建库</td><td>运行 portfolio build</td><td>1 个真实代码项目 accepted，17 个项目进入 needs_review。</td><td class="ok">有界通过</td></tr>
+        <tr><td>媒体资料 readiness</td><td>查看 media readiness</td><td>OCR/provider 缺口可见，图片/扫描资料未被伪 accepted。</td><td class="warn">非全绿</td></tr>
+        <tr><td>Release Gate</td><td>查看 release gate</td><td>区分 implementation accepted 与 portfolio final structured_unavailable。</td><td class="ok">防 false-green 通过</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>7. False-green 审计</h2>
+      <ul>
+        <li>未把 scan-only evidence 当作完整项目理解。</li>
+        <li>未把 UI 截图或页面可打开当作 build evidence。</li>
+        <li>未把 OCR 缺失的图片/扫描件写成 accepted。</li>
+        <li>未把 docs claim 写成 code fact。</li>
+        <li>未构建项目保留 needs_review，没有 silent skip。</li>
+        <li>顶层 status 没有伪装成 accepted，而是保持 structured_unavailable。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. 最终评价</h2>
+      <p><strong class="ok">可以声明：</strong> V2.101-V2.105 bounded implementation 已通过阶段性验收。</p>
+      <p><strong class="bad">不可以声明：</strong> workspace 内全部项目和全部文档/媒体资料已完整理解或最终全绿。</p>
+      <p><strong>验收重点：</strong> 真实数据、状态分级、drawio 目标同步、public surface guard、防 false-green、受保护文件未改动。</p>
+    </section>
+  </main>
+</body>
+</html>

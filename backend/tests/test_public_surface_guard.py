@@ -312,8 +312,16 @@ V2_CODEBASE_TOOLS = {
     "knowledge_code_automated_evidence_closure_external_path_read",
     "knowledge_code_automated_evidence_closure_release_gate_build",
     "knowledge_code_automated_evidence_closure_release_gate_read",
+    "knowledge_workspace_portfolio_scan",
+    "knowledge_workspace_portfolio_build",
+    "knowledge_workspace_portfolio_read",
+    "knowledge_workspace_portfolio_report",
 }
 V2_TARGET_ROUTE_ADDITIONS = {
+    ("POST", "/api/workspaces/{workspace_id}/portfolio/scan"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio/build"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio/report"),
     ("POST", "/api/ocr/provider/health"),
     ("POST", "/api/ocr/provider/execution"),
     ("POST", "/api/tts/provider/health"),
@@ -755,8 +763,9 @@ def test_v16a_knowledge_cli_parser_matches_v15_public_surface_baseline():
             expected_nested.setdefault(command, [])
             expected_nested[command] = sorted(set(expected_nested[command]) | set(additions or []))
 
-    assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code"}
+    assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code", "portfolio"}
     expected_nested["code"] = ["agent-memory-release", "agent-productization", "architecture", "architecture-intent", "archive", "automated-evidence-closure", "coding-agent", "context-pack", "describe", "devwiki", "external-e2e-portal-delivery", "graph", "human-agent-deepening", "import", "inventory", "list", "overview", "platform", "project-acceptance-hardening", "quality", "real-acceptance-closure", "real-document-acceptance", "real-document-full-corpus-release", "snapshot", "stabilization-e2e-portal", "symbols", "trace"]
+    expected_nested["portfolio"] = ["build", "read", "report", "scan"]
     assert current_inventory == expected_nested
 
 

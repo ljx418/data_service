@@ -9,6 +9,7 @@ from .mcp_quality_tools import QUALITY_TOOL_SPECS, RULE_STATUSES
 from .mcp_session_tools import SESSION_TOOL_SPECS
 from .mcp_source_tools import SOURCE_TOOL_SPECS
 from .mcp_workspace_tools import WORKSPACE_TOOL_SPECS
+from .mcp_workspace_portfolio_tools import WORKSPACE_PORTFOLIO_TOOL_SPECS
 from .models import QueryMode
 
 
@@ -133,6 +134,7 @@ def all_tool_specs() -> list[dict]:
         *V2_TOOL_SPECS,
         *CODE_TOOL_SPECS,
         *WORKSPACE_TOOL_SPECS,
+        *WORKSPACE_PORTFOLIO_TOOL_SPECS,
         *SOURCE_TOOL_SPECS,
         *BUILD_TOOL_SPECS,
         *SESSION_TOOL_SPECS,

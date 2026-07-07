@@ -2115,6 +2115,68 @@ V2 的产品目标不是“做一个代码 RAG”，而是：
 
 ---
 
+# 24. V2.101-V2.105 下一阶段：Workspace 项目组合知识化
+
+## 24.1 背景
+
+当前 V2 已能对单个 codebase 生成 registry、snapshot、inventory、symbols、overview、context pack，也能对本地文档执行 ingest/query/source trace。但 `/knowledge` 还不能真实验收“按 `/mnt/c/workspace/*` 文件夹维度理解多个项目和纯资料目录”的目标。下一阶段默认采用有界真实扫描和有界真实建库：context pack、overview、source trace 作为可用时的增强证据或 ingest accepted 条件，不作为每个项目默认全量承诺。
+
+下一阶段必须把以下三个剩余能力写入产品目标：
+
+1. Workspace 项目组合发现：按一级目录发现代码项目、文档项目、媒体资料库、忽略项和待审项。
+2. 文档和多媒体资料建库：将项目 docs、PPTX、PDF、DOCX、YAML、HTML、Markdown 等可抽取文本资料纳入 source candidate matrix；图片、扫描件和图片型 PPT 在 OCR 不可用时保留 `ocr_required` 或 `structured_unavailable`。
+3. `/knowledge` 真实验收闭环：知识运营台必须展示 persisted artifacts 的项目组合状态、建库状态、OCR 缺口、next actions 和 release gate，不得硬编码验收结论。
+
+## 24.2 GitHub CLI 参考设计
+
+本阶段借鉴 GitHub CLI 的产品结构，而不是复制其实现：
+
+- GitHub CLI 官方仓库将 `gh` 定位为把 GitHub 工作流带到终端和代码旁边的命令行工具。
+- GitHub CLI 手册将命令分为 core、Actions 和 additional commands。
+- `gh alias` 支持组合常用命令。
+- `gh extension` 通过外部 `gh-*` 可执行文件扩展命令，但不允许覆盖 core commands，且扩展不由 GitHub 背书。
+- GitHub 官方博客说明 `gh api` 可作为通用 API façade，处理认证、参数、JSON、分页、缓存和输出格式。
+
+转化到 data_service：
+
+- 新增 `portfolio` 命令族，保持入口薄、命令清晰。
+- 采用 adapter 插拔思想，但不默认执行外部不可信插件。
+- 保持 CLI/MCP/HTTP build/read/report parity。
+- 所有事实通过 persisted artifacts 暴露，UI 不制造事实。
+- `/knowledge` 维护者首页必须展示 portfolio status、project registry summary、build run summary、media readiness summary 和 next actions；这些面板只能读取 HTTP/API persisted artifact，不得成为事实来源。
+
+## 24.3 下一阶段文档基线
+
+阶段文档入口：
+
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_PRD.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_PROTOTYPE_UX_SPEC.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_TARGET_ARCHITECTURE.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_TEST_AND_E2E_MAPPING.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_GAP_ANALYSIS.md`
+- `docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_MILESTONES_AND_EXIT_GATES.md`
+
+## 24.4 验收边界
+
+可以声明：
+
+- 本阶段文档可支撑下一阶段自动化开发指导。
+- 后续实现可围绕真实 `/mnt/c/workspace` 执行项目组合发现、文档/媒体建库和 `/knowledge` 真实验收。
+- 后续实现可采用有界 scan/build 参数，并对未构建项目输出 `needs_review` 和 next action。
+
+不可以声明：
+
+- V2.101-V2.105 已实现。
+- 任意 workspace 项目已被完整理解。
+- 图片或扫描件在 OCR 不可用时已被理解。
+- `/knowledge` 截图可替代真实 build evidence；source trace 只在文档 ingest accepted 时作为必需证据。
+
+---
+
 # Codex Review Notes
 
 ## 建议 1：补充与当前基线的对齐关系

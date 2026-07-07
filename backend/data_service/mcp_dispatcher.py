@@ -17,6 +17,7 @@ from .mcp_source_tools import SOURCE_TOOL_NAMES, handle_source_tool
 from .mcp_tool_registry import V2_TOOL_MAP
 from .mcp_workspace_runtime import WorkspaceRuntime
 from .mcp_workspace_tools import WORKSPACE_TOOL_NAMES, handle_workspace_tool
+from .mcp_workspace_portfolio_tools import WORKSPACE_PORTFOLIO_TOOL_NAMES, handle_workspace_portfolio_tool
 from .service import DataService
 from .session_service import normalize_workspace_arg
 
@@ -93,6 +94,16 @@ class MCPToolDispatcher:
                 workspace_meta_path=self.workspace_runtime.workspace_meta_path,
                 workspace_root=self.workspace_runtime.workspace_root,
                 write_json=write_json,
+            )
+
+        if name in WORKSPACE_PORTFOLIO_TOOL_NAMES:
+            return handle_workspace_portfolio_tool(
+                name,
+                arguments,
+                blocked=blocked,
+                envelope=envelope,
+                ensure_workspace_meta=self.workspace_runtime.ensure_workspace_meta,
+                resolve_workspace=self.workspace_runtime.resolve_workspace,
             )
 
         if name in SOURCE_TOOL_NAMES:

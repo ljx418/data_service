@@ -1,0 +1,40 @@
+{
+  "schema_version": "v2.101-105.visual_acceptance.cli_summary",
+  "generated_from": "real CLI E2E commands executed on /mnt/c/workspace",
+  "workspace_id": "v2_101_105_real",
+  "root": "/mnt/c/workspace",
+  "commands": [
+    "PYTHONPATH=backend python3 -m data_service portfolio scan --workspace-id v2_101_105_real --root /mnt/c/workspace --limit 40",
+    "PYTHONPATH=backend python3 -m data_service portfolio build --workspace-id v2_101_105_real --root /mnt/c/workspace --limit 40 --max-code-projects 1",
+    "PYTHONPATH=backend python3 -m data_service portfolio read --workspace-id v2_101_105_real",
+    "PYTHONPATH=backend python3 -m data_service portfolio report --workspace-id v2_101_105_real"
+  ],
+  "observed": {
+    "scan_status": "accepted",
+    "build_status": "structured_unavailable",
+    "read_status": "structured_unavailable",
+    "report_status": "structured_unavailable",
+    "implementation_status": "accepted",
+    "portfolio_final_status": "structured_unavailable",
+    "project_count": 18,
+    "ignored_count": 9,
+    "classification_counts": {
+      "media_corpus": 4,
+      "code_project": 11,
+      "needs_review": 2,
+      "doc_project": 1
+    },
+    "accepted_project_count": 1,
+    "accepted_count": 1,
+    "needs_review_count": 17,
+    "ocr_provider_status": "structured_unavailable",
+    "conversion_provider_status": "needs_review",
+    "ocr_required_count": 86,
+    "unresolved_count": 104
+  },
+  "audit_judgment": {
+    "bounded_implementation": "accepted",
+    "portfolio_final": "structured_unavailable",
+    "false_green_rejected": true
+  }
+}
