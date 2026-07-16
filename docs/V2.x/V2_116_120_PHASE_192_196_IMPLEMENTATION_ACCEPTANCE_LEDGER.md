@@ -13,6 +13,7 @@ safe_build_true_execution=not_executed
 false_green_audit=pass
 protected_legacy_files_unchanged=pass
 visual_acceptance_report=docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_VISUAL_ACCEPTANCE_REPORT.html
+drawio_state_synced=docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_STATE.drawio
 ```
 
 本轮实现完成 V2.116-V2.120 文档完整支撑范围内的受控自动化开发：schema bundle validation、lineage-bound run、Decision Set / Decision Snapshot、OCR anchor/provider closure、Source Trace 同源证据、Headless UI evidence、Safe Build proposal governance、Final Gate rerun、CLI/MCP/HTTP/read-only UI surface。
@@ -142,6 +143,18 @@ Visual result:
 portfolio_final_status=structured_unavailable, lineage-bound run_id, artifact statuses,
 and unresolved evidence. OpenAPI UI screenshot remained in loading state and is retained
 only as a browser-state finding; public surface evidence comes from /openapi.json parsing.
+```
+
+Drawio sync result:
+
+```text
+docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_STATE.drawio
+was updated after implementation audit to replace implementation-planning statuses with
+the latest implementation state:
+implementation_delivery_status=accepted
+portfolio_final_status=structured_unavailable
+focused_tests=14 passed
+final portfolio accepted remains not_pass
 ```
 
 ## 5. PRD / Spec Review
