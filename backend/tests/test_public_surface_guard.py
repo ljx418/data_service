@@ -316,12 +316,36 @@ V2_CODEBASE_TOOLS = {
     "knowledge_workspace_portfolio_build",
     "knowledge_workspace_portfolio_read",
     "knowledge_workspace_portfolio_report",
+    "knowledge_workspace_portfolio_final_evidence_plan",
+    "knowledge_workspace_portfolio_final_evidence_build",
+    "knowledge_workspace_portfolio_final_evidence_read",
+    "knowledge_workspace_portfolio_final_evidence_report",
+    "knowledge_workspace_portfolio_final_acceptance_plan",
+    "knowledge_workspace_portfolio_final_acceptance_build",
+    "knowledge_workspace_portfolio_final_acceptance_read",
+    "knowledge_workspace_portfolio_final_acceptance_report",
+    "knowledge_workspace_portfolio_real_evidence_plan",
+    "knowledge_workspace_portfolio_real_evidence_build",
+    "knowledge_workspace_portfolio_real_evidence_read",
+    "knowledge_workspace_portfolio_real_evidence_report",
 }
 V2_TARGET_ROUTE_ADDITIONS = {
     ("POST", "/api/workspaces/{workspace_id}/portfolio/scan"),
     ("POST", "/api/workspaces/{workspace_id}/portfolio/build"),
     ("GET", "/api/workspaces/{workspace_id}/portfolio"),
     ("GET", "/api/workspaces/{workspace_id}/portfolio/report"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio-final-evidence/plan"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio-final-evidence/build"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio-final-evidence"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio-final-evidence/report"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio-final-acceptance/plan"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio-final-acceptance/build"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio-final-acceptance"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio-final-acceptance/report"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio-real-evidence/plan"),
+    ("POST", "/api/workspaces/{workspace_id}/portfolio-real-evidence/build"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio-real-evidence"),
+    ("GET", "/api/workspaces/{workspace_id}/portfolio-real-evidence/report"),
     ("POST", "/api/ocr/provider/health"),
     ("POST", "/api/ocr/provider/execution"),
     ("POST", "/api/tts/provider/health"),
@@ -763,9 +787,12 @@ def test_v16a_knowledge_cli_parser_matches_v15_public_surface_baseline():
             expected_nested.setdefault(command, [])
             expected_nested[command] = sorted(set(expected_nested[command]) | set(additions or []))
 
-    assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code", "portfolio"}
+    assert set(current_inventory) == set(baseline["top_level_commands"]) | {"code", "portfolio", "portfolio-final-evidence", "portfolio-final-acceptance", "portfolio-real-evidence"}
     expected_nested["code"] = ["agent-memory-release", "agent-productization", "architecture", "architecture-intent", "archive", "automated-evidence-closure", "coding-agent", "context-pack", "describe", "devwiki", "external-e2e-portal-delivery", "graph", "human-agent-deepening", "import", "inventory", "list", "overview", "platform", "project-acceptance-hardening", "quality", "real-acceptance-closure", "real-document-acceptance", "real-document-full-corpus-release", "snapshot", "stabilization-e2e-portal", "symbols", "trace"]
     expected_nested["portfolio"] = ["build", "read", "report", "scan"]
+    expected_nested["portfolio-final-evidence"] = ["build", "plan", "read", "report"]
+    expected_nested["portfolio-final-acceptance"] = ["build", "plan", "read", "report"]
+    expected_nested["portfolio-real-evidence"] = ["build", "plan", "read", "report"]
     assert current_inventory == expected_nested
 
 

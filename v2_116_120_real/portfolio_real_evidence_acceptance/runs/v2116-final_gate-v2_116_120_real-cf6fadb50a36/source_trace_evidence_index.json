@@ -1,0 +1,2333 @@
+{
+  "schema_version": "v2.116-120",
+  "workspace_id": "v2_116_120_real",
+  "run_id": "v2116-final_gate-v2_116_120_real-cf6fadb50a36",
+  "run_type": "final_gate",
+  "lineage_root_id": "d06a296052932bbdf4a954a7",
+  "parent_run_ids": [
+    "v2116-proposal-v2_116_120_real-1253a212d0f3",
+    "v2116-execution-v2_116_120_real-5a2ec7b0e3c2"
+  ],
+  "source_run_refs": [],
+  "artifact_id": "source_trace_evidence_index",
+  "artifact_type": "source_trace_evidence_index",
+  "phase": "V2.117",
+  "generated_at": "2026-07-16T10:47:37.369501Z",
+  "producer": {
+    "name": "workspace_portfolio_real_evidence_acceptance",
+    "version": "1"
+  },
+  "input_manifest_ref": "runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/input_manifest.json",
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "upstream_final_acceptance": {
+      "build_runtime_diagnosis.json": "3d8078c67e919f0fa1bd21f84a6e15d88ee2023b77f947b2f6946bfbf7abadb9",
+      "final_acceptance_gate.json": "c5134ea9fa66bef632a912a71a00fedc61753ec38af4fa554bdd56cc2a126744",
+      "media_artifact_manifest.json": "4a67016b0058c05f2131082276512f3d00ed17d0cf591dd2f9ffb9695f551a02",
+      "media_execution_results.json": "8ca3e3a58e85310bd523f6363ffa530d7e0575b81b2a6e53ae66a6ad3d7cc111",
+      "ocr_sample_qualification.json": "665b894bfb508d26b504af29903ca0c0ba892b3d46013bc0a5343bad5604733d",
+      "safe_build_execution.json": "c8dc4d218d9c077224e529297795a0d457fe578e9f7878b30bd9837f21985783",
+      "safe_build_queue.json": "f0f909b198f14f35c86994f843bd1f0d798440096b5eaa939aa89c8c12e7a1dd",
+      "source_trace_audit.json": "816ecd17c200056e7e3c6528ae008f25b8eab1e8b5d93beb5a6d3808aff1fab7",
+      "source_trace_execution.json": "1bf1cf18724bd177ba5169abaae3cff40c523d04529452d2bfd0f36d86ece28d",
+      "ui_evidence_capture.json": "fbe2d5b831247d058e177b394145899034deb860933ad91da6ac8d84fafd9bea",
+      "ui_screenshot_manifest.json": "29041844c8968de91653c3a1671533bbbbf05f1e876ee2e28a1df2b0f700477f"
+    },
+    "documents": {
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PRD.md": "c3b0ce49457f5e0563915edfe6a78fd10758910d09dde34fe2e71156afa8c216",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_ARCHITECTURE.md": "1199a6ea0a4087e4344178927e0218ccaf6d2d1170bf5b87523b97b399d6bf92",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_SCHEMA_BUNDLE.json": "64177198d0861141c041c1a4e2fea499a388ba641739dd5d764810b11c943a9e"
+    }
+  },
+  "artifact_refs": [
+    "portfolio_real_evidence_acceptance/runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/source_trace_evidence_index.json"
+  ],
+  "evidence_refs": [],
+  "artifact_status": "accepted",
+  "warnings": [],
+  "unresolved": [],
+  "data": {
+    "rows": [
+      {
+        "document_id": "migration.md",
+        "source_id": "migration.md",
+        "source_content_hash": "5e2a44912a9017d147a337a11dea3d3ad1731fd3b0e6adaf1500f1b6fbdc86d0",
+        "import_artifact_id": "import://migration.md",
+        "query_id": "query://migration.md",
+        "query_text_hash": "6776d82f0634e69030624f4ec1885ac82793e711fef2bebdf0c9075dc7ecf40d",
+        "query_result_ref": "query://migration.md",
+        "query_result_source_ids": [
+          "migration.md"
+        ],
+        "trace_id": "trace://migration.md",
+        "trace_source_id": "migration.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/MIGRATION.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "reload.md",
+        "source_id": "reload.md",
+        "source_content_hash": "29b5283d27957a258aef3226b7137413a3fab339a4f4b04b78f04831f4ec4a1c",
+        "import_artifact_id": "import://reload.md",
+        "query_id": "query://reload.md",
+        "query_text_hash": "4a851ba2848e8acdf4ef227b32a37aaf0fd42931ebfeeb430805e2b722ca4ad7",
+        "query_result_ref": "query://reload.md",
+        "query_result_source_ids": [
+          "reload.md"
+        ],
+        "trace_id": "trace://reload.md",
+        "trace_source_id": "reload.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/reload.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--.html",
+        "source_id": "0--.html",
+        "source_content_hash": "20c7359cf620cc8441160f69d2805c4b55524dc88c029a7ab341011c607c8db6",
+        "import_artifact_id": "import://0--.html",
+        "query_id": "query://0--.html",
+        "query_text_hash": "bc6abaf526b50fbaf31d6de02577bac4af3e2aab29b65d8e70a3d0e882488809",
+        "query_result_ref": "query://0--.html",
+        "query_result_source_ids": [
+          "0--.html"
+        ],
+        "trace_id": "trace://0--.html",
+        "trace_source_id": "0--.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/组图预览.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--.html",
+        "source_id": "0--.html",
+        "source_content_hash": "40ebc7d9f287cb6d59333c7024780c7f37a77573acb31ed9e813ad2062e66a46",
+        "import_artifact_id": "import://0--.html",
+        "query_id": "query://0--.html",
+        "query_text_hash": "ef11255397d9abba8a8f4b6a11949076fd90807a41e8c6735e5c62f0bdfe207b",
+        "query_result_ref": "query://0--.html",
+        "query_result_source_ids": [
+          "0--.html"
+        ],
+        "trace_id": "trace://0--.html",
+        "trace_source_id": "0--.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/进展展示.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--.md",
+        "source_id": "0--.md",
+        "source_content_hash": "ec40794a19f444abd4b87418032c38cd71fba6237ee630ea77259afcff4df15c",
+        "import_artifact_id": "import://0--.md",
+        "query_id": "query://0--.md",
+        "query_text_hash": "bd070ca02635e53f0bb22992cd18c15e797908d437a8c08d90b38bbf44143b11",
+        "query_result_ref": "query://0--.md",
+        "query_result_source_ids": [
+          "0--.md"
+        ],
+        "trace_id": "trace://0--.md",
+        "trace_source_id": "0--.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/项目宣讲资料总览.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-.html",
+        "source_id": "0--01-codexpat-agent-desktop-pet-.html",
+        "source_content_hash": "d6b2ff8bb48045fef190b2dad952891e6e52cdb4bffda6b1840c7531086efea7",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-.html",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-.html",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-.html"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-.html",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-.md",
+        "source_content_hash": "7a6ac53ea438dee03c8ff2fe2b4715f5a7acdd7bdf39d6fe99cd5123200ba73f",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "source_content_hash": "c7a5ce76eedf6a4771bf95daf1de5eee680fc8d85da6624f0c78e58fd249ca0a",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "query_text_hash": "4e470784d2b92e1205a983f0c7fc06a49497f0db93a54a4ddce8a7b23d9cd77c",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/content-manifest.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "source_content_hash": "7730a9fff09e8ed0e60bbfdef943fb350724209f52848a8b16b6484572f96bc6",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "query_text_hash": "d91464f239567bb039a53881700056dfbe55c9dd0fcb79a67c9f6508c943bcf7",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/00-cover.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "source_content_hash": "a0509b2214b823497eb8b79f0d6c42b9ee3709ca3a87b31a800179e90753cd8c",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "query_text_hash": "fbcf2ebac5a7be293019918c0e24b61f3f9ddb0863ef154b84d7b1915db8bbe6",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning."
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/01-product-positioning.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "source_content_hash": "b37c979e4a11ee070eea753014afd5e8953d80abe4bdb2b0148982faadbab56a",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "query_text_hash": "1bc1f93826c8df6f87184a58314812d69dd138d9f0313f6a13338e4bb97c1e25",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/02-current-accepted.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "source_content_hash": "cf6001b0fab3b7a4ac7fa100323c69c4bfb59bf17d5482e1799d67bc784c9b24",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "query_text_hash": "fdd14df4dddd7645007e764177974542b09fb1abd3f46a65f18e92f0b0581895",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/03-current-limited.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "source_content_hash": "d73d945257222b1b449bfcd93dae8de68f389c10855aff2dde8585af19c4a103",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "query_text_hash": "77526af6a6833708fff91a96f9e8726645b9590c7c1a877f84a1917a427f945b",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/04-current-planned.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "source_content_hash": "f3760eaf1ab44b24f0b79873f76db629a1e47af094e642d654b6290e5f09284d",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "query_text_hash": "4429a9e819ec795bb2d1b6cebbb32bfff5b2197202b4a94da20ebd737101ccbb",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/05-current-no-go.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "source_content_hash": "5defb910ccdf467826737ec73a7f6a7664106ce6aa9c43059557971ae77374ae",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "query_text_hash": "1ff6bd5d016fb6a4ba9d34ecba7e6939cbb1d9deb47dc4672bfc003f83fa3059",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/06-target-first-run.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "source_content_hash": "599a6de64ec4ba0bdd84b26df4e87a5b179457d328924b8a6d6bf230aa554fdf",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "query_text_hash": "dfba3ae5826e6469f481c8b0ff2716b090ee38a7f6833bc9e74e27b02b8e612e",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/07-target-codex-flow.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "source_content_hash": "a894ac26b16874ec0fe35243a5a4f5e22e635b4df8f478b7aa48dff4f51ed87f",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "query_text_hash": "670c64cda608d87b3b9e6a75de9377f8ba7b428322d515b9dd447e9f34064058",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/08-target-interaction.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "source_content_hash": "26a93e5d7ad3769cb3dda40a29078b7733b5c95790bf3dd32f7abeb72907faa7",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "query_text_hash": "fc95ffc9358e0b9f5cef35140e33de5658a102bec783429dcd8491fe5d8f4c29",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/09-target-gallery.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "source_content_hash": "c43e1ed010c2caa4ad81c4f1b755a95ff02a1d418fbae7729f1529bb74a81682",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "query_text_hash": "35cea337c290740a7e20addd79918e5216951df5ccd8d4fa033d0b9eb72f51fe",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/10-application-scenarios.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "source_content_hash": "92c1bc48d01a8a11040f0532712f6dc9623badeb6f5d534963d90a21f6d3575f",
+        "import_artifact_id": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "query_id": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "query_text_hash": "87df9de5126ea4634a168e026ebbacf0fde0417e27e9c9054f89c3185dc2a5cb",
+        "query_result_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "query_result_source_ids": [
+          "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md"
+        ],
+        "trace_id": "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "trace_source_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/prompts/11-ecosystem-outlook.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--02-data-service-architecture-intelligence-.html",
+        "source_id": "0--02-data-service-architecture-intelligence-.html",
+        "source_content_hash": "61b7b5fa79462447b876075c10c2c31cf443394dfdcf99822d0f81dc8c8fdd2f",
+        "import_artifact_id": "import://0--02-data-service-architecture-intelligence-.html",
+        "query_id": "query://0--02-data-service-architecture-intelligence-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--02-data-service-architecture-intelligence-.html",
+        "query_result_source_ids": [
+          "0--02-data-service-architecture-intelligence-.html"
+        ],
+        "trace_id": "trace://0--02-data-service-architecture-intelligence-.html",
+        "trace_source_id": "0--02-data-service-architecture-intelligence-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--02-data-service-architecture-intelligence-.md",
+        "source_id": "0--02-data-service-architecture-intelligence-.md",
+        "source_content_hash": "1ac4be6c7b0e8e95b26e88dd20e6b0713d0a9734e93c657183b8af1773e45f7c",
+        "import_artifact_id": "import://0--02-data-service-architecture-intelligence-.md",
+        "query_id": "query://0--02-data-service-architecture-intelligence-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--02-data-service-architecture-intelligence-.md",
+        "query_result_source_ids": [
+          "0--02-data-service-architecture-intelligence-.md"
+        ],
+        "trace_id": "trace://0--02-data-service-architecture-intelligence-.md",
+        "trace_source_id": "0--02-data-service-architecture-intelligence-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-.html",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-.html",
+        "source_content_hash": "264f8e906cfc1779f00f38c86a3fa73ac9454919e29d5398a0a4602f6b388bf9",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-.html",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-.html",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-.html"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-.html",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-.md",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-.md",
+        "source_content_hash": "feb0c504a68081d09c3de8626ca7ae4c4b53faa2559b97bb49e30ef153697ab5",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-.md",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-.md",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-.md"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-.md",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "source_content_hash": "ff2863c0424cb1911916e81989519230407695f50a33e02fc1920ce023e2fcc6",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "query_text_hash": "6931526e416a94b65910c18de5afa6b6216c3efe88c697b8c0a70599da1faaee",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/manifest.json"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "source_content_hash": "bc7625494de8078bd8b205e5aa31f62cc0689c7442b110cd2b60046c6c552ec2",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "query_text_hash": "d82ab49f91a6ba1662d933820377bd073d4da4fb04bd2911a20ecfde554cdd93",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/README.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "source_content_hash": "5b68185dd04617aebeec923d4f4ea2bf002fc199b7266829cd1d6cc61f283381",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "query_text_hash": "245cf2503e4a1af73ded112dfb4ff2fa7244c363299ba89aef0cd95a6d4618d5",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/01-current-capability-map.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "source_content_hash": "e8131bb2d8cfc312d4fd2fa2600e33684b847faaa055f450c2c989d9d41995b2",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "query_text_hash": "c6ab88ee9e30e64936070185c0a50522784fc9a3b180e8750ba484df845f215e",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/02-accepted-capabilities.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "source_content_hash": "67365d7884727cb27b9563cc69f2ce90f4dc5796aaa352ed36fa53c0dc07fbff",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "query_text_hash": "ae21270625ac8e34098ba1825a8ed6f780ed10dcbc14c5d050b9fac42bded394",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/03-limited-and-planned-capabilities.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "source_content_hash": "5930de83fb4e677be0e3af676094249d20ba219ceaea22b9e94460f809679417",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "query_text_hash": "e8d7707c1cd49ca67ade1ce7a7ea920a6112841a3e676159fb5a698db836a0fd",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/04-no-go-boundaries.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "source_content_hash": "785818c87614e208765f71f8c431f4ab52cee6ee905624b9e253fe080ff61007",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "query_text_hash": "160da6f4eda23aeda7a11210df93093ebff6083e07dea88ab379ea20e2cefad2",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/05-target-architecture-seven-planes.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "source_content_hash": "4c94e3862deadc7f1cd382acb95e5f323b81a18ff23e1358a705e2d70387a862",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "query_text_hash": "699a61af2753b03b08f09dbf398845184068f2b8fb7f5c7aef8decaf8c23e8ff",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/06-user-flow-console.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "source_content_hash": "1a11d03372f77700562ebabb0f3e5516f084fe424a2e4a8ed4dc6fa405fcf0de",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "query_text_hash": "732d2811dd1853caffa83fa4a853b0d57ba1d8e81bb1b533665acb38ba22beab",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/07-user-flow-proposal-confirmation.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "source_content_hash": "afcd1d5d3042c094990d12c76d1868d7ecd356bf97a27ee69183e3cc7a66e494",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "query_text_hash": "9d78d46ef975b90f4cd25b5637cb59d29e1e1c350fe0ada6e202cbca54a2a040",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/08-user-flow-evidence-review.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "source_content_hash": "000780b2026e80679da55e6f9612dfd86f251357509c84b09d7186a7c2616f14",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "query_text_hash": "95bc3d9b4ae6960c0d8644821b842d77349fc88e263503de1e06ea89316ed5dd",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/09-application-scenarios-map.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "source_content_hash": "d3f804ecc335aee4cea6e9a05acfea6c944dfc5279c8d02543e0a89d2dcf97e8",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "query_text_hash": "86c37693ca19e457a2e3b57da8f2bbaeefe0aedbc8c0a8baffbfcd4802f46984",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/10-open-source-comparison.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "source_content_hash": "d8b3a6c1b7f8d3112e9e5daf0954a8b5e9ef28128d7644d8b9f3cc88b50081af",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "query_text_hash": "3355f0db9fc81b509e9e9920a43b187e0091c0c82670bf34db6c601299fbf20b",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/11-future-roadmap-headless-v5.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "source_content_hash": "495e6b850c80d88c403a75afbe40a7195b687a8ccfd1ff5b162cc0f277cf1788",
+        "import_artifact_id": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "query_id": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "query_text_hash": "076340c8758a7bb0a33d4cecb9f104501337c5ed414f6b7df1eb8a79be649aa1",
+        "query_result_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "query_result_source_ids": [
+          "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s"
+        ],
+        "trace_id": "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "trace_source_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/prompts/12-executive-summary.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--04-research-notebook-source-grounded-workbench-.html",
+        "source_id": "0--04-research-notebook-source-grounded-workbench-.html",
+        "source_content_hash": "541d192d7b0fda585620225bbfcdec7778e25739f0db79fdd29c69de1ceeab76",
+        "import_artifact_id": "import://0--04-research-notebook-source-grounded-workbench-.html",
+        "query_id": "query://0--04-research-notebook-source-grounded-workbench-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--04-research-notebook-source-grounded-workbench-.html",
+        "query_result_source_ids": [
+          "0--04-research-notebook-source-grounded-workbench-.html"
+        ],
+        "trace_id": "trace://0--04-research-notebook-source-grounded-workbench-.html",
+        "trace_source_id": "0--04-research-notebook-source-grounded-workbench-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--04-research-notebook-source-grounded-workbench-.md",
+        "source_id": "0--04-research-notebook-source-grounded-workbench-.md",
+        "source_content_hash": "090fa5a68cfbecb04b2761c2c3f94d5a3397916958341a62dc6488fce4da0efa",
+        "import_artifact_id": "import://0--04-research-notebook-source-grounded-workbench-.md",
+        "query_id": "query://0--04-research-notebook-source-grounded-workbench-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--04-research-notebook-source-grounded-workbench-.md",
+        "query_result_source_ids": [
+          "0--04-research-notebook-source-grounded-workbench-.md"
+        ],
+        "trace_id": "trace://0--04-research-notebook-source-grounded-workbench-.md",
+        "trace_source_id": "0--04-research-notebook-source-grounded-workbench-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--05-meeting-voice-assistant-session-knowledge-.html",
+        "source_id": "0--05-meeting-voice-assistant-session-knowledge-.html",
+        "source_content_hash": "3eb4822ea1718ffa283b892761d0b4360cb455b640bcb7520ab4c87d9e5c06f7",
+        "import_artifact_id": "import://0--05-meeting-voice-assistant-session-knowledge-.html",
+        "query_id": "query://0--05-meeting-voice-assistant-session-knowledge-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--05-meeting-voice-assistant-session-knowledge-.html",
+        "query_result_source_ids": [
+          "0--05-meeting-voice-assistant-session-knowledge-.html"
+        ],
+        "trace_id": "trace://0--05-meeting-voice-assistant-session-knowledge-.html",
+        "trace_source_id": "0--05-meeting-voice-assistant-session-knowledge-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--05-meeting-voice-assistant-session-knowledge-.md",
+        "source_id": "0--05-meeting-voice-assistant-session-knowledge-.md",
+        "source_content_hash": "41b6e950dd44283fa8604e237e84536613083a9e3a369b7aa076f9abbb6c707e",
+        "import_artifact_id": "import://0--05-meeting-voice-assistant-session-knowledge-.md",
+        "query_id": "query://0--05-meeting-voice-assistant-session-knowledge-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--05-meeting-voice-assistant-session-knowledge-.md",
+        "query_result_source_ids": [
+          "0--05-meeting-voice-assistant-session-knowledge-.md"
+        ],
+        "trace_id": "trace://0--05-meeting-voice-assistant-session-knowledge-.md",
+        "trace_source_id": "0--05-meeting-voice-assistant-session-knowledge-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-.html",
+        "source_id": "0--06-foodmap-local-food-journal-map-.html",
+        "source_content_hash": "1cb6362e8d0d4c59782cab1e377ad583279fd3c150f8490dafa66104f96c4eb0",
+        "import_artifact_id": "import://0--06-foodmap-local-food-journal-map-.html",
+        "query_id": "query://0--06-foodmap-local-food-journal-map-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--06-foodmap-local-food-journal-map-.html",
+        "query_result_source_ids": [
+          "0--06-foodmap-local-food-journal-map-.html"
+        ],
+        "trace_id": "trace://0--06-foodmap-local-food-journal-map-.html",
+        "trace_source_id": "0--06-foodmap-local-food-journal-map-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-.md",
+        "source_id": "0--06-foodmap-local-food-journal-map-.md",
+        "source_content_hash": "f853c87e7afea988c14854202d6b031bd4dc772e5bda105767c5dd81030056da",
+        "import_artifact_id": "import://0--06-foodmap-local-food-journal-map-.md",
+        "query_id": "query://0--06-foodmap-local-food-journal-map-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--06-foodmap-local-food-journal-map-.md",
+        "query_result_source_ids": [
+          "0--06-foodmap-local-food-journal-map-.md"
+        ],
+        "trace_id": "trace://0--06-foodmap-local-food-journal-map-.md",
+        "trace_source_id": "0--06-foodmap-local-food-journal-map-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "source_content_hash": "4e5dcad8d66f1e0502c89fae6806410745a7c608e24b1e852e4e82fe4be15010",
+        "import_artifact_id": "import://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "query_id": "query://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "query_text_hash": "10290960dff44270dc8f0c85f668474af980e90944acaa451b33a78a96579476",
+        "query_result_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "query_result_source_ids": [
+          "0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md"
+        ],
+        "trace_id": "trace://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "trace_source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/generation-status.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "source_content_hash": "48268317940b5b6254f170db68a85da81c3c09fc979d8a9596a19b2b7c20d762",
+        "import_artifact_id": "import://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "query_id": "query://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "query_text_hash": "989a22bf196a053be075fd272cc8e2515ec41505ebb2f754b57143668ca95c8d",
+        "query_result_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "query_result_source_ids": [
+          "0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md"
+        ],
+        "trace_id": "trace://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "trace_source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/prompts.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "source_content_hash": "277b9a6aa5d38b0f96886292cd4562f1c095b1f896dbf6b49a28f307593ab7ae",
+        "import_artifact_id": "import://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "query_id": "query://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "query_text_hash": "88d11d28a7553a76fe93395d1acda013b93ff7293ce6cbb762bb1b9a27645842",
+        "query_result_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "query_result_source_ids": [
+          "0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md"
+        ],
+        "trace_id": "trace://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "trace_source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/qa-checklist.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "source_content_hash": "18078a73447ea26052b2b88b1052dc18c087abf8b128dca622da8bf2d0089d27",
+        "import_artifact_id": "import://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "query_id": "query://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "query_text_hash": "7345257fd033770bd0a257bbe1ddbee87bbc7c89da9be6eb7659e568848b549a",
+        "query_result_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "query_result_source_ids": [
+          "0--06-foodmap-local-food-journal-map-outside-gallery-sources.md"
+        ],
+        "trace_id": "trace://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "trace_source_id": "0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/sources.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-.html",
+        "source_id": "0--07-navia-page-companion-agent-.html",
+        "source_content_hash": "c35079f0919035dd13ffc41d0aec3a5cf7c8a18c7f32bea568be5fd0153e2597",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-.html",
+        "query_id": "query://0--07-navia-page-companion-agent-.html",
+        "query_text_hash": "a4512c2c742843cbeeb68bfa56b41bda6c37816baab8f5ce0f6ec7faa4cfcd10",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-.html",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-.html"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-.html",
+        "trace_source_id": "0--07-navia-page-companion-agent-.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/深度介绍.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-.md",
+        "source_id": "0--07-navia-page-companion-agent-.md",
+        "source_content_hash": "3db4e9ac6f5630fbb3ccd771751980ecdb0c63f3c9d23b1225e3b76491e9b0af",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-.md",
+        "query_id": "query://0--07-navia-page-companion-agent-.md",
+        "query_text_hash": "4e5942be74e596af4dfdfd1ca429a387cfde99bfdbc8198075d4fe633d868809",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-.md",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-.md"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-.md",
+        "trace_source_id": "0--07-navia-page-companion-agent-.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/项目介绍.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "source_content_hash": "0f9638ac7e2bec768e645c134c954e6406209e9470fd61f04161fc0f2291848e",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "query_text_hash": "29c72c1f5097d22600f52fc3dac7fccefdbc2db64be0ef80613787d2f5271c2e",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/navia-image-set-manifest.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "source_content_hash": "a4c290806b0654cc6ab0b259074412697740b69b141c6037ad66989d7df12eda",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "query_text_hash": "19175cd739b017e64a0fe27f3ef8a62968b1366d42b68f51b1afb4cf9680579b",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-sources.json"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/sources.json"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "source_content_hash": "f6949c13d73d912298ec42bce959ea01e61e76eb98c5a6906563dcecac91bc26",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "query_text_hash": "c8a81ab825ffb4eb603d786ec2690b65721538d9da69a02a1011420b73ac686b",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/00-cover-navia-overview.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "source_content_hash": "afebfa3ce493efb302ab29f1e3f48acff6c7e0406b3ce5092d945e989d6a4396",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "query_text_hash": "661fcf04b6f1ffd677ce404adc65d4a48dff52095f0bb2a06e4de337da688a10",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/01-current-status-matrix.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "source_content_hash": "91966992e6f7f9a30d2ce334bc5c3ee6333f8ebacbd4793e6fe6c974d5ac0938",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "query_text_hash": "c6ab88ee9e30e64936070185c0a50522784fc9a3b180e8750ba484df845f215e",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/02-accepted-capabilities.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "source_content_hash": "c80a3ecb329595b4d283969340060dd756a7e56388880761749e267d4eca4cfa",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "query_text_hash": "e9db3a64e10ea6024e281adec0d6dad190f94fdb6683dc4a64f0d7b9e60fbbb8",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/03-limited-completion.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "source_content_hash": "f5536d142caef170594337c7ca43aea7ec4df1f648df25069655583139fe8162",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "query_text_hash": "27a6ef9fadc875e01038f6e2378c910c9d4c1e50d44f9ff81f21bb9eb3ca1b1b",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/04-planned-roadmap.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "source_content_hash": "142d059a18482b487a115fc8154534cfeee67258cd1dbe354717f5abe60e63c3",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "query_text_hash": "1823377798cb5ee1770244a74cb4d7707673ea84a971ef0f3cca6cc317f143a1",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/05-no-go-boundaries.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "source_content_hash": "3f2f5252b59cee112e8ececf28ce6bb185c36d7543f033c0da9658bef74a8031",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "query_text_hash": "004e79b866d531c304954e7bc38a3d9afb828871fb05c6b0d0dd5e59bdf037f2",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey."
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/06-target-user-journey.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "source_content_hash": "d948c4386c5c378670cacbe634a2458efe04c81cf0925ae68a5a9314eb76130d",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "query_text_hash": "1e1d7d82714899168617c39c42dfa2e8d84a43edf53f291de16b7be69231f2d6",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/07-target-ui-states.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "source_content_hash": "8f72dc9b009cab25b02f747427c7824b23efa439adaf9599d217e807e57064e5",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "query_text_hash": "86ce659aa9a926b396cacc740f9de4dcac6c75501c4f3dd50701403b395142c8",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/08-v12-module-architecture.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "source_content_hash": "a31d26c130075fd62437276c42e1e0d6c62beeb05ef3bc091ec8ecb0f0465850",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "query_text_hash": "57b0eb88a6c2ccf075fa2a62f0171c02ee3f773aeb16cf70f112650d5869819b",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/09-application-scenes.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "source_content_hash": "2c67d25a20eba004762793b6b90fd69798939cf5220b627d78cb262ce83623b9",
+        "import_artifact_id": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "query_id": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "query_text_hash": "198a62d8b6d16db6aeab43f571fcb52d60e46a7d82b80089f23ea53b08cfb232",
+        "query_result_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "query_result_source_ids": [
+          "0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect"
+        ],
+        "trace_id": "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "trace_source_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/prompts/10-open-source-prospects.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-codexpat.html",
+        "source_id": "0--assets-generated-prd-visuals-html-codexpat.html",
+        "source_content_hash": "8fc4d973e5e2dacd9818cbaa9a6246d65e3f23abc7f6b3bc0e2390b595679900",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-codexpat.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-codexpat.html",
+        "query_text_hash": "35f36442c53584ca23b54f24655f47b5531ac1b8b68bc3c148ceb9ad2cc17b26",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-codexpat.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-codexpat.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-codexpat.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-codexpat.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/codexpat.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-data-service.html",
+        "source_id": "0--assets-generated-prd-visuals-html-data-service.html",
+        "source_content_hash": "9c475a5f0b6ac43a64a61ee746f42eca7275f22478e140088498005f7f693827",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-data-service.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-data-service.html",
+        "query_text_hash": "b48f828838b698185b60171e1559a1b0cd7080fc9760b87597424436bfea94bc",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-data-service.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-data-service.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-data-service.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-data-service.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/data-service.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-foodmap.html",
+        "source_id": "0--assets-generated-prd-visuals-html-foodmap.html",
+        "source_content_hash": "be27814491c5c61822a306133b4eef894053587239bde2cda7f3ceadcf9aeca6",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-foodmap.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-foodmap.html",
+        "query_text_hash": "448df63f4550a7fc2ea2b8f9b122e961e0eb446a2ec58099d5defff976624ca3",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-foodmap.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-foodmap.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-foodmap.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-foodmap.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/foodmap.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-harnessos.html",
+        "source_id": "0--assets-generated-prd-visuals-html-harnessos.html",
+        "source_content_hash": "08943db9f7a329dcb9089745f71924967fa3b5c667a8ec4b89dee816bc9db074",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-harnessos.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-harnessos.html",
+        "query_text_hash": "b83bd83b54cdd760c21111e1f3cef2401c6d7889952fb93127fdccb5933537c9",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-harnessos.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-harnessos.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-harnessos.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-harnessos.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/harnessos.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-meeting.html",
+        "source_id": "0--assets-generated-prd-visuals-html-meeting.html",
+        "source_content_hash": "5435562b2a5f1e15affecbd7c51eba49e30a22703461f6d10623cc7bb859ee62",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-meeting.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-meeting.html",
+        "query_text_hash": "fd50d1402facf957fb009ea4a5bf988ec39c8d1fcffabfccb7ff91051d6b2d5d",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-meeting.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-meeting.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-meeting.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-meeting.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/meeting.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-navia.html",
+        "source_id": "0--assets-generated-prd-visuals-html-navia.html",
+        "source_content_hash": "5c2b8ed6f9f90a95b968dfdadfcd6cc8dc364bba8c0bb6c3b239336243baa1ca",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-navia.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-navia.html",
+        "query_text_hash": "fb3c2cca03c27dd364131ab0f1eaa6e490a29ba77a92203f47274b904efce9fd",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-navia.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-navia.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-navia.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-navia.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/navia.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-research-notebook.html",
+        "source_id": "0--assets-generated-prd-visuals-html-research-notebook.html",
+        "source_content_hash": "233c5041d90568d30d64286e80cff6113e2ade241233d7b6190803c568ec0f20",
+        "import_artifact_id": "import://0--assets-generated-prd-visuals-html-research-notebook.html",
+        "query_id": "query://0--assets-generated-prd-visuals-html-research-notebook.html",
+        "query_text_hash": "bf022f8e6619e3a2fec8c6f2c71d5f2425c828fcc40429fb2bb10ddd4e72aed6",
+        "query_result_ref": "query://0--assets-generated-prd-visuals-html-research-notebook.html",
+        "query_result_source_ids": [
+          "0--assets-generated-prd-visuals-html-research-notebook.html"
+        ],
+        "trace_id": "trace://0--assets-generated-prd-visuals-html-research-notebook.html",
+        "trace_source_id": "0--assets-generated-prd-visuals-html-research-notebook.html",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/html/research-notebook.html"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "source_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "source_content_hash": "08536f0728a6db8ec199fe766af3af9f8724ff5f258934543b7317636877a836",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "query_id": "query://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "query_text_hash": "51dac2558b3e1861ab122b1f8b523a2fcbf25b37395f11d37f1ad89b2360ddec",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/01-codexPat-agent-desktop-pet-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "source_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "source_content_hash": "f3b1dde5c002a67fe10df77813a62f2f1dccc7e740805f6fb380a0f4301048cb",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "query_id": "query://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "query_text_hash": "b75658f460bda358e296e7f0af96c90124dbe34b0e3b84237e01e3b466b578d2",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/01-codexPat-agent-desktop-pet-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "source_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "source_content_hash": "177f4091bc9e945ca115178ab711d25719d5d1b0a0bf05e6f5c81e9fcd778662",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "query_id": "query://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "query_text_hash": "87c3dbd72419bb197b93d4ba7d4f8fbea17074bd8064fb5ad20a9725bba1d290",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/02-data-service-architecture-intelligence-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "source_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "source_content_hash": "d7dd628d027117debefd9a22d9c36fbbec738265d2c5c77fcbb2ded99cf5fbd1",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "query_id": "query://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "query_text_hash": "3c2cfde2aaaada6f5e6221a82d1e3140c00dc6f50a7c9e915c14ad92c31cf145",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/02-data-service-architecture-intelligence-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "source_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "source_content_hash": "c446507711a45b35d55212e9a85c19ab01a85b7fadde46c08a8c1064e97eb20d",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "query_id": "query://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "query_text_hash": "349aea6560dc881d884906f985e43abf2bf74fe680e828cff7393ddcb4115132",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/03-harnessOS-controlled-agent-workflow-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "source_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "source_content_hash": "842aa59ad59b03d5bdbd4925342e9a6bbde7e6bca61fec3aaa7a1b61b91ab1d0",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "query_id": "query://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "query_text_hash": "2b47b2c2d97906ec082ad605b8b1c662661dca430ba833397d03281ae01d9acc",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/03-harnessOS-controlled-agent-workflow-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "source_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "source_content_hash": "f20b048972d4f968041257bf0e574aa5412781567f295edde57117355cf36a7b",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "query_id": "query://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "query_text_hash": "73cb6c9e6682ff357f40e110014b492326d76a5145ffe9291a919a7005f682ac",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/04-research-notebook-source-grounded-workbench-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "source_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "source_content_hash": "793cbb44582e3559f5235d339baa0df7e134c508591be2842a69d235141cf05b",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "query_id": "query://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "query_text_hash": "cf2867eafa8384c165031b5cd3865ce706397d4021deab872edc32831d2a0c83",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/04-research-notebook-source-grounded-workbench-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "source_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "source_content_hash": "aa89e0e3b1eb91bcc2714f2c045b19436a065fa48d6e2e80372db193a493ff9e",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "query_id": "query://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "query_text_hash": "cad3ebca3240e7c343874cbe3f595c3a5d82820235599f1421e060806d28fb99",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/05-meeting-voice-assistant-session-knowledge-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "source_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "source_content_hash": "4c4f8b818868468eb0095501b2e3f83434ae92be88c5e58ab16ec54e516b4cbc",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "query_id": "query://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "query_text_hash": "b32f8541c22f67d9a5281350439154fe3b16114b4742be78b590c184122a9f61",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/05-meeting-voice-assistant-session-knowledge-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "source_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "source_content_hash": "d5a0d3f8a6bfcf4dc5c36b9b437160135786256fe6be198ab21cc7db0024550c",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "query_id": "query://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "query_text_hash": "9c2d14da640b0d804aa1a8d1b6770d2c3933e66aca574581cc4605fe9d256230",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/06-foodMap-local-food-journal-map-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "source_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "source_content_hash": "0127d40cd92f4458e7f2036d2596315e317eed7f11bea3a7e93200a75bc385a3",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "query_id": "query://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "query_text_hash": "9c2a7b0c83a11a602db49225ca51ddca17994cb3fc080bcd3e0edeb949421030",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/06-foodMap-local-food-journal-map-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "source_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "source_content_hash": "78fbff6d5fadb2b972e3c38feb685914436d4de83cd376f119d094566f508227",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "query_id": "query://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "query_text_hash": "43cde709e192bc747d960ee9c3817af44a9a63fbdd3f9216566315487b08f08f",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/07-navia-page-companion-agent-deep-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "source_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "source_content_hash": "297230cb2806338b59cb953d62d9b83cc3db26bc7e7575964b5c4228c24baf01",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "query_id": "query://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "query_text_hash": "146f4b8c465e56d785e37cbfc64fdfb319d9cb1b21d4fd620c8a8ab9794cf6e7",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/07-navia-page-companion-agent-prd-grounded-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "source_id": "0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "source_content_hash": "8a273a45b70bbdef3c0a2a1417830b6d5edd63ed65bc38a13b1e4e49e094b76c",
+        "import_artifact_id": "import://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "query_id": "query://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "query_text_hash": "b076be654d8c7bc5ed91f9bf20ffbf3436abc561c553c0fc93e7519fc54e7dcd",
+        "query_result_ref": "query://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "query_result_source_ids": [
+          "0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md"
+        ],
+        "trace_id": "trace://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "trace_source_id": "0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/garden-gpt-image-2/prompt/project-showcase-rich-visuals-20260605.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-content-manifest.md",
+        "source_id": "0--outside-agent-desktop-pet-content-manifest.md",
+        "source_content_hash": "c7a5ce76eedf6a4771bf95daf1de5eee680fc8d85da6624f0c78e58fd249ca0a",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-content-manifest.md",
+        "query_id": "query://0--outside-agent-desktop-pet-content-manifest.md",
+        "query_text_hash": "4e470784d2b92e1205a983f0c7fc06a49497f0db93a54a4ddce8a7b23d9cd77c",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-content-manifest.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-content-manifest.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-content-manifest.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-content-manifest.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/content-manifest.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "source_content_hash": "7730a9fff09e8ed0e60bbfdef943fb350724209f52848a8b16b6484572f96bc6",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "query_text_hash": "d91464f239567bb039a53881700056dfbe55c9dd0fcb79a67c9f6508c943bcf7",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-00-cover.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/00-cover.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "source_content_hash": "a0509b2214b823497eb8b79f0d6c42b9ee3709ca3a87b31a800179e90753cd8c",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "query_text_hash": "fbcf2ebac5a7be293019918c0e24b61f3f9ddb0863ef154b84d7b1915db8bbe6",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-01-product-positioning.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/01-product-positioning.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "source_content_hash": "b37c979e4a11ee070eea753014afd5e8953d80abe4bdb2b0148982faadbab56a",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "query_text_hash": "1bc1f93826c8df6f87184a58314812d69dd138d9f0313f6a13338e4bb97c1e25",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-02-current-accepted.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/02-current-accepted.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "source_content_hash": "cf6001b0fab3b7a4ac7fa100323c69c4bfb59bf17d5482e1799d67bc784c9b24",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "query_text_hash": "fdd14df4dddd7645007e764177974542b09fb1abd3f46a65f18e92f0b0581895",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-03-current-limited.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/03-current-limited.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "source_content_hash": "d73d945257222b1b449bfcd93dae8de68f389c10855aff2dde8585af19c4a103",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "query_text_hash": "77526af6a6833708fff91a96f9e8726645b9590c7c1a877f84a1917a427f945b",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-04-current-planned.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/04-current-planned.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "source_content_hash": "f3760eaf1ab44b24f0b79873f76db629a1e47af094e642d654b6290e5f09284d",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "query_text_hash": "4429a9e819ec795bb2d1b6cebbb32bfff5b2197202b4a94da20ebd737101ccbb",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-05-current-no-go.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/05-current-no-go.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "source_content_hash": "5defb910ccdf467826737ec73a7f6a7664106ce6aa9c43059557971ae77374ae",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "query_text_hash": "1ff6bd5d016fb6a4ba9d34ecba7e6939cbb1d9deb47dc4672bfc003f83fa3059",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-06-target-first-run.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/06-target-first-run.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "source_content_hash": "599a6de64ec4ba0bdd84b26df4e87a5b179457d328924b8a6d6bf230aa554fdf",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "query_text_hash": "dfba3ae5826e6469f481c8b0ff2716b090ee38a7f6833bc9e74e27b02b8e612e",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/07-target-codex-flow.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "source_content_hash": "a894ac26b16874ec0fe35243a5a4f5e22e635b4df8f478b7aa48dff4f51ed87f",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "query_text_hash": "670c64cda608d87b3b9e6a75de9377f8ba7b428322d515b9dd447e9f34064058",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-08-target-interaction.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/08-target-interaction.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "source_content_hash": "26a93e5d7ad3769cb3dda40a29078b7733b5c95790bf3dd32f7abeb72907faa7",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "query_text_hash": "fc95ffc9358e0b9f5cef35140e33de5658a102bec783429dcd8491fe5d8f4c29",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-09-target-gallery.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/09-target-gallery.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "source_content_hash": "c43e1ed010c2caa4ad81c4f1b755a95ff02a1d418fbae7729f1529bb74a81682",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "query_text_hash": "35cea337c290740a7e20addd79918e5216951df5ccd8d4fa033d0b9eb72f51fe",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-10-application-scenarios.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/10-application-scenarios.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "source_id": "0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "source_content_hash": "92c1bc48d01a8a11040f0532712f6dc9623badeb6f5d534963d90a21f6d3575f",
+        "import_artifact_id": "import://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "query_id": "query://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "query_text_hash": "87df9de5126ea4634a168e026ebbacf0fde0417e27e9c9054f89c3185dc2a5cb",
+        "query_result_ref": "query://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "query_result_source_ids": [
+          "0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md"
+        ],
+        "trace_id": "trace://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "trace_source_id": "0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/prompts/11-ecosystem-outlook.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-generation-status.md",
+        "source_id": "0--outside-foodmap-generation-status.md",
+        "source_content_hash": "4e5dcad8d66f1e0502c89fae6806410745a7c608e24b1e852e4e82fe4be15010",
+        "import_artifact_id": "import://0--outside-foodmap-generation-status.md",
+        "query_id": "query://0--outside-foodmap-generation-status.md",
+        "query_text_hash": "10290960dff44270dc8f0c85f668474af980e90944acaa451b33a78a96579476",
+        "query_result_ref": "query://0--outside-foodmap-generation-status.md",
+        "query_result_source_ids": [
+          "0--outside-foodmap-generation-status.md"
+        ],
+        "trace_id": "trace://0--outside-foodmap-generation-status.md",
+        "trace_source_id": "0--outside-foodmap-generation-status.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/foodMap/generation-status.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-prompts.md",
+        "source_id": "0--outside-foodmap-prompts.md",
+        "source_content_hash": "48268317940b5b6254f170db68a85da81c3c09fc979d8a9596a19b2b7c20d762",
+        "import_artifact_id": "import://0--outside-foodmap-prompts.md",
+        "query_id": "query://0--outside-foodmap-prompts.md",
+        "query_text_hash": "989a22bf196a053be075fd272cc8e2515ec41505ebb2f754b57143668ca95c8d",
+        "query_result_ref": "query://0--outside-foodmap-prompts.md",
+        "query_result_source_ids": [
+          "0--outside-foodmap-prompts.md"
+        ],
+        "trace_id": "trace://0--outside-foodmap-prompts.md",
+        "trace_source_id": "0--outside-foodmap-prompts.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/foodMap/prompts.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-qa-checklist.md",
+        "source_id": "0--outside-foodmap-qa-checklist.md",
+        "source_content_hash": "277b9a6aa5d38b0f96886292cd4562f1c095b1f896dbf6b49a28f307593ab7ae",
+        "import_artifact_id": "import://0--outside-foodmap-qa-checklist.md",
+        "query_id": "query://0--outside-foodmap-qa-checklist.md",
+        "query_text_hash": "88d11d28a7553a76fe93395d1acda013b93ff7293ce6cbb762bb1b9a27645842",
+        "query_result_ref": "query://0--outside-foodmap-qa-checklist.md",
+        "query_result_source_ids": [
+          "0--outside-foodmap-qa-checklist.md"
+        ],
+        "trace_id": "trace://0--outside-foodmap-qa-checklist.md",
+        "trace_source_id": "0--outside-foodmap-qa-checklist.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/foodMap/qa-checklist.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-sources.md",
+        "source_id": "0--outside-foodmap-sources.md",
+        "source_content_hash": "18078a73447ea26052b2b88b1052dc18c087abf8b128dca622da8bf2d0089d27",
+        "import_artifact_id": "import://0--outside-foodmap-sources.md",
+        "query_id": "query://0--outside-foodmap-sources.md",
+        "query_text_hash": "7345257fd033770bd0a257bbe1ddbee87bbc7c89da9be6eb7659e568848b549a",
+        "query_result_ref": "query://0--outside-foodmap-sources.md",
+        "query_result_source_ids": [
+          "0--outside-foodmap-sources.md"
+        ],
+        "trace_id": "trace://0--outside-foodmap-sources.md",
+        "trace_source_id": "0--outside-foodmap-sources.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/foodMap/sources.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-manifest.json",
+        "source_id": "0--outside-harnessos-manifest.json",
+        "source_content_hash": "ff2863c0424cb1911916e81989519230407695f50a33e02fc1920ce023e2fcc6",
+        "import_artifact_id": "import://0--outside-harnessos-manifest.json",
+        "query_id": "query://0--outside-harnessos-manifest.json",
+        "query_text_hash": "6931526e416a94b65910c18de5afa6b6216c3efe88c697b8c0a70599da1faaee",
+        "query_result_ref": "query://0--outside-harnessos-manifest.json",
+        "query_result_source_ids": [
+          "0--outside-harnessos-manifest.json"
+        ],
+        "trace_id": "trace://0--outside-harnessos-manifest.json",
+        "trace_source_id": "0--outside-harnessos-manifest.json",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/manifest.json"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-readme.md",
+        "source_id": "0--outside-harnessos-readme.md",
+        "source_content_hash": "bc7625494de8078bd8b205e5aa31f62cc0689c7442b110cd2b60046c6c552ec2",
+        "import_artifact_id": "import://0--outside-harnessos-readme.md",
+        "query_id": "query://0--outside-harnessos-readme.md",
+        "query_text_hash": "d82ab49f91a6ba1662d933820377bd073d4da4fb04bd2911a20ecfde554cdd93",
+        "query_result_ref": "query://0--outside-harnessos-readme.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-readme.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-readme.md",
+        "trace_source_id": "0--outside-harnessos-readme.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/README.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-01-current-capability-map.md",
+        "source_id": "0--outside-harnessos-prompts-01-current-capability-map.md",
+        "source_content_hash": "5b68185dd04617aebeec923d4f4ea2bf002fc199b7266829cd1d6cc61f283381",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-01-current-capability-map.md",
+        "query_id": "query://0--outside-harnessos-prompts-01-current-capability-map.md",
+        "query_text_hash": "245cf2503e4a1af73ded112dfb4ff2fa7244c363299ba89aef0cd95a6d4618d5",
+        "query_result_ref": "query://0--outside-harnessos-prompts-01-current-capability-map.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-01-current-capability-map.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-01-current-capability-map.md",
+        "trace_source_id": "0--outside-harnessos-prompts-01-current-capability-map.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/01-current-capability-map.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "source_id": "0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "source_content_hash": "e8131bb2d8cfc312d4fd2fa2600e33684b847faaa055f450c2c989d9d41995b2",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "query_id": "query://0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "query_text_hash": "c6ab88ee9e30e64936070185c0a50522784fc9a3b180e8750ba484df845f215e",
+        "query_result_ref": "query://0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-02-accepted-capabilities.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "trace_source_id": "0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/02-accepted-capabilities.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "source_id": "0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "source_content_hash": "67365d7884727cb27b9563cc69f2ce90f4dc5796aaa352ed36fa53c0dc07fbff",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "query_id": "query://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "query_text_hash": "ae21270625ac8e34098ba1825a8ed6f780ed10dcbc14c5d050b9fac42bded394",
+        "query_result_ref": "query://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "trace_source_id": "0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/03-limited-and-planned-capabilities.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "source_id": "0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "source_content_hash": "5930de83fb4e677be0e3af676094249d20ba219ceaea22b9e94460f809679417",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "query_id": "query://0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "query_text_hash": "e8d7707c1cd49ca67ade1ce7a7ea920a6112841a3e676159fb5a698db836a0fd",
+        "query_result_ref": "query://0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-04-no-go-boundaries.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "trace_source_id": "0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/04-no-go-boundaries.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "source_id": "0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "source_content_hash": "785818c87614e208765f71f8c431f4ab52cee6ee905624b9e253fe080ff61007",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "query_id": "query://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "query_text_hash": "160da6f4eda23aeda7a11210df93093ebff6083e07dea88ab379ea20e2cefad2",
+        "query_result_ref": "query://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-05-target-architecture-seven-planes.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "trace_source_id": "0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/05-target-architecture-seven-planes.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-06-user-flow-console.md",
+        "source_id": "0--outside-harnessos-prompts-06-user-flow-console.md",
+        "source_content_hash": "4c94e3862deadc7f1cd382acb95e5f323b81a18ff23e1358a705e2d70387a862",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-06-user-flow-console.md",
+        "query_id": "query://0--outside-harnessos-prompts-06-user-flow-console.md",
+        "query_text_hash": "699a61af2753b03b08f09dbf398845184068f2b8fb7f5c7aef8decaf8c23e8ff",
+        "query_result_ref": "query://0--outside-harnessos-prompts-06-user-flow-console.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-06-user-flow-console.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-06-user-flow-console.md",
+        "trace_source_id": "0--outside-harnessos-prompts-06-user-flow-console.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/06-user-flow-console.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "source_id": "0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "source_content_hash": "1a11d03372f77700562ebabb0f3e5516f084fe424a2e4a8ed4dc6fa405fcf0de",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "query_id": "query://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "query_text_hash": "732d2811dd1853caffa83fa4a853b0d57ba1d8e81bb1b533665acb38ba22beab",
+        "query_result_ref": "query://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "trace_source_id": "0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/07-user-flow-proposal-confirmation.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "source_id": "0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "source_content_hash": "afcd1d5d3042c094990d12c76d1868d7ecd356bf97a27ee69183e3cc7a66e494",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "query_id": "query://0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "query_text_hash": "9d78d46ef975b90f4cd25b5637cb59d29e1e1c350fe0ada6e202cbca54a2a040",
+        "query_result_ref": "query://0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-08-user-flow-evidence-review.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "trace_source_id": "0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/08-user-flow-evidence-review.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "source_id": "0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "source_content_hash": "000780b2026e80679da55e6f9612dfd86f251357509c84b09d7186a7c2616f14",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "query_id": "query://0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "query_text_hash": "95bc3d9b4ae6960c0d8644821b842d77349fc88e263503de1e06ea89316ed5dd",
+        "query_result_ref": "query://0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-09-application-scenarios-map.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "trace_source_id": "0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/09-application-scenarios-map.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "source_id": "0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "source_content_hash": "d3f804ecc335aee4cea6e9a05acfea6c944dfc5279c8d02543e0a89d2dcf97e8",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "query_id": "query://0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "query_text_hash": "86c37693ca19e457a2e3b57da8f2bbaeefe0aedbc8c0a8baffbfcd4802f46984",
+        "query_result_ref": "query://0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-10-open-source-comparison.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "trace_source_id": "0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/10-open-source-comparison.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "source_id": "0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "source_content_hash": "d8b3a6c1b7f8d3112e9e5daf0954a8b5e9ef28128d7644d8b9f3cc88b50081af",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "query_id": "query://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "query_text_hash": "3355f0db9fc81b509e9e9920a43b187e0091c0c82670bf34db6c601299fbf20b",
+        "query_result_ref": "query://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "trace_source_id": "0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/11-future-roadmap-headless-v5.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-12-executive-summary.md",
+        "source_id": "0--outside-harnessos-prompts-12-executive-summary.md",
+        "source_content_hash": "495e6b850c80d88c403a75afbe40a7195b687a8ccfd1ff5b162cc0f277cf1788",
+        "import_artifact_id": "import://0--outside-harnessos-prompts-12-executive-summary.md",
+        "query_id": "query://0--outside-harnessos-prompts-12-executive-summary.md",
+        "query_text_hash": "076340c8758a7bb0a33d4cecb9f104501337c5ed414f6b7df1eb8a79be649aa1",
+        "query_result_ref": "query://0--outside-harnessos-prompts-12-executive-summary.md",
+        "query_result_source_ids": [
+          "0--outside-harnessos-prompts-12-executive-summary.md"
+        ],
+        "trace_id": "trace://0--outside-harnessos-prompts-12-executive-summary.md",
+        "trace_source_id": "0--outside-harnessos-prompts-12-executive-summary.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/harnessOS/prompts/12-executive-summary.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-navia-image-set-manifest.md",
+        "source_id": "0--outside-navia-navia-image-set-manifest.md",
+        "source_content_hash": "0f9638ac7e2bec768e645c134c954e6406209e9470fd61f04161fc0f2291848e",
+        "import_artifact_id": "import://0--outside-navia-navia-image-set-manifest.md",
+        "query_id": "query://0--outside-navia-navia-image-set-manifest.md",
+        "query_text_hash": "29c72c1f5097d22600f52fc3dac7fccefdbc2db64be0ef80613787d2f5271c2e",
+        "query_result_ref": "query://0--outside-navia-navia-image-set-manifest.md",
+        "query_result_source_ids": [
+          "0--outside-navia-navia-image-set-manifest.md"
+        ],
+        "trace_id": "trace://0--outside-navia-navia-image-set-manifest.md",
+        "trace_source_id": "0--outside-navia-navia-image-set-manifest.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/navia/navia-image-set-manifest.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-sources.json",
+        "source_id": "0--outside-navia-sources.json",
+        "source_content_hash": "a4c290806b0654cc6ab0b259074412697740b69b141c6037ad66989d7df12eda",
+        "import_artifact_id": "import://0--outside-navia-sources.json",
+        "query_id": "query://0--outside-navia-sources.json",
+        "query_text_hash": "19175cd739b017e64a0fe27f3ef8a62968b1366d42b68f51b1afb4cf9680579b",
+        "query_result_ref": "query://0--outside-navia-sources.json",
+        "query_result_source_ids": [
+          "0--outside-navia-sources.json"
+        ],
+        "trace_id": "trace://0--outside-navia-sources.json",
+        "trace_source_id": "0--outside-navia-sources.json",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/navia/sources.json"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-prompts-00-cover-navia-overview.md",
+        "source_id": "0--outside-navia-prompts-00-cover-navia-overview.md",
+        "source_content_hash": "f6949c13d73d912298ec42bce959ea01e61e76eb98c5a6906563dcecac91bc26",
+        "import_artifact_id": "import://0--outside-navia-prompts-00-cover-navia-overview.md",
+        "query_id": "query://0--outside-navia-prompts-00-cover-navia-overview.md",
+        "query_text_hash": "c8a81ab825ffb4eb603d786ec2690b65721538d9da69a02a1011420b73ac686b",
+        "query_result_ref": "query://0--outside-navia-prompts-00-cover-navia-overview.md",
+        "query_result_source_ids": [
+          "0--outside-navia-prompts-00-cover-navia-overview.md"
+        ],
+        "trace_id": "trace://0--outside-navia-prompts-00-cover-navia-overview.md",
+        "trace_source_id": "0--outside-navia-prompts-00-cover-navia-overview.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/navia/prompts/00-cover-navia-overview.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-prompts-01-current-status-matrix.md",
+        "source_id": "0--outside-navia-prompts-01-current-status-matrix.md",
+        "source_content_hash": "afebfa3ce493efb302ab29f1e3f48acff6c7e0406b3ce5092d945e989d6a4396",
+        "import_artifact_id": "import://0--outside-navia-prompts-01-current-status-matrix.md",
+        "query_id": "query://0--outside-navia-prompts-01-current-status-matrix.md",
+        "query_text_hash": "661fcf04b6f1ffd677ce404adc65d4a48dff52095f0bb2a06e4de337da688a10",
+        "query_result_ref": "query://0--outside-navia-prompts-01-current-status-matrix.md",
+        "query_result_source_ids": [
+          "0--outside-navia-prompts-01-current-status-matrix.md"
+        ],
+        "trace_id": "trace://0--outside-navia-prompts-01-current-status-matrix.md",
+        "trace_source_id": "0--outside-navia-prompts-01-current-status-matrix.md",
+        "trace_evidence_refs": [
+          "<workspace-root>/0-阶段展示/outside/navia/prompts/01-current-status-matrix.md"
+        ],
+        "same_source_assertion": "matched",
+        "row_acceptance_status": "accepted"
+      }
+    ]
+  }
+}

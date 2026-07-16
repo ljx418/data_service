@@ -1,0 +1,638 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_116_120_real",
+  "phase": "V2.106",
+  "artifact_type": "coverage_state_closure",
+  "artifact_id": "coverage_state_closure",
+  "run_id": "v2106-v2_116_120_real-f11a1ebf7855",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-16T08:21:50.416370Z",
+  "source_snapshot_id": "dafaedfe1a0d987ee6d0364c",
+  "workspace_fingerprint": "dafaedfe1a0d987ee6d0364c",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f",
+      "source_candidate_matrix.json": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c",
+      "media_readiness.json": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f",
+      "project_build_runs.json": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1",
+      "portfolio_index.json": "bb80f4a1474dbc51e3eedd9fe38bd5f1cf504ce42b2bc5ceff16e542b67aa914",
+      "release_gate.json": "baa0d2888e6aff5cd3e7a0489b2c06ad826b5a2c405c68bc7630b1bb13d7bbca",
+      "false_green_audit.md": "8a4ab1eac2002525f38c2e6fbb981bd87875f0c0651c6df96eedf91986618b9c",
+      "portfolio_report.html": "41498e257bb95b5630ba150c3d4ce04e5b2e4f6a3157a1f035d9ea463759e878"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "74f1689da7ad7431b059b39819971f69ef78e124989842dbac2058a8861bb29f",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "coverage_state_closure",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/coverage_state_closure.json"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+      "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+      "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+      "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+      "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/portfolio_index.json",
+      "sha256": "bb80f4a1474dbc51e3eedd9fe38bd5f1cf504ce42b2bc5ceff16e542b67aa914"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/release_gate.json",
+      "sha256": "baa0d2888e6aff5cd3e7a0489b2c06ad826b5a2c405c68bc7630b1bb13d7bbca"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/false_green_audit.md",
+      "sha256": "8a4ab1eac2002525f38c2e6fbb981bd87875f0c0651c6df96eedf91986618b9c"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/portfolio_report.html",
+      "sha256": "41498e257bb95b5630ba150c3d4ce04e5b2e4f6a3157a1f035d9ea463759e878"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md",
+      "sha256": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md",
+      "sha256": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html",
+      "sha256": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md",
+      "sha256": "74f1689da7ad7431b059b39819971f69ef78e124989842dbac2058a8861bb29f"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md",
+      "sha256": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio",
+      "sha256": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  ],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "coverage:item",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "coverage row is not directly accepted by current evidence",
+      "next_action": "attach focused test, E2E, PRD review, and false-green evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "coverage:item",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "coverage row is not directly accepted by current evidence",
+      "next_action": "attach focused test, E2E, PRD review, and false-green evidence",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "coverage:item",
+        "requirement_id": "能力",
+        "capability": "阶段",
+        "documented_status": "planned",
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reconciliation": "kept non-accepted until direct evidence is present"
+      },
+      {
+        "stable_id": "coverage:workspace",
+        "requirement_id": "Workspace 一级目录发现",
+        "capability": "V2.101",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:item",
+        "requirement_id": "项目分类证据",
+        "capability": "V2.101",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:item",
+        "requirement_id": "忽略/不可用记录",
+        "capability": "V2.101",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:build",
+        "requirement_id": "代码项目 build 编排",
+        "capability": "V2.102",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:docs-ingest-readiness",
+        "requirement_id": "项目 docs ingest/readiness",
+        "capability": "V2.102",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:portfolio-index",
+        "requirement_id": "Portfolio index",
+        "capability": "V2.102",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:readiness",
+        "requirement_id": "文档格式 readiness",
+        "capability": "V2.103",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:ocr-readiness",
+        "requirement_id": "图片/OCR readiness",
+        "capability": "V2.103",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:item",
+        "requirement_id": "扫描件/图片型资料阻断",
+        "capability": "V2.103",
+        "documented_status": "structured_unavailable",
+        "execution_status": "succeeded",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reconciliation": "kept non-accepted until direct evidence is present"
+      },
+      {
+        "stable_id": "coverage:item",
+        "requirement_id": "维护者首页状态面板",
+        "capability": "V2.104",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:knowledge-portfolio-panel",
+        "requirement_id": "`/knowledge` portfolio panel",
+        "capability": "V2.104",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:item",
+        "requirement_id": "项目详情体验",
+        "capability": "V2.104",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:readiness",
+        "requirement_id": "媒体 readiness 体验",
+        "capability": "V2.104",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:html-portfolio-report",
+        "requirement_id": "HTML portfolio report",
+        "capability": "V2.104",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:release-gate",
+        "requirement_id": "Release gate 聚合",
+        "capability": "V2.105",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      },
+      {
+        "stable_id": "coverage:false-green-audit",
+        "requirement_id": "False-green audit",
+        "capability": "V2.105",
+        "documented_status": "accepted",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+            "sha256": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+            "sha256": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+            "sha256": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f"
+          },
+          {
+            "type": "baseline_artifact",
+            "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+            "sha256": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1"
+          }
+        ],
+        "reconciliation": "baseline evidence confirmed"
+      }
+    ],
+    "summary": {
+      "accepted_count": 15,
+      "needs_review_count": 1,
+      "structured_unavailable_count": 1,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

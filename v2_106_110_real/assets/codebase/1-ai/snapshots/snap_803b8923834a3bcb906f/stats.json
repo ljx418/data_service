@@ -1,0 +1,54 @@
+{
+  "schema_version": "v2.0",
+  "file_count": 404,
+  "tracked_record_count": 461,
+  "skipped_count": 57,
+  "loc_total": 107125,
+  "languages": {
+    "css": {
+      "files": 1,
+      "loc": 248,
+      "bytes": 5449
+    },
+    "drawio": {
+      "files": 3,
+      "loc": 538,
+      "bytes": 45260
+    },
+    "html": {
+      "files": 13,
+      "loc": 6796,
+      "bytes": 370129
+    },
+    "javascript": {
+      "files": 59,
+      "loc": 12817,
+      "bytes": 482859
+    },
+    "json": {
+      "files": 30,
+      "loc": 20871,
+      "bytes": 13439184
+    },
+    "markdown": {
+      "files": 195,
+      "loc": 48191,
+      "bytes": 1663974
+    },
+    "python": {
+      "files": 100,
+      "loc": 17081,
+      "bytes": 1139121
+    },
+    "typescript": {
+      "files": 2,
+      "loc": 531,
+      "bytes": 20700
+    },
+    "yaml": {
+      "files": 1,
+      "loc": 52,
+      "bytes": 1053
+    }
+  }
+}

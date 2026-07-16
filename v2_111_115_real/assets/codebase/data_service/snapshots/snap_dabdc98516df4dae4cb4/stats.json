@@ -1,0 +1,64 @@
+{
+  "schema_version": "v2.0",
+  "file_count": 1869,
+  "tracked_record_count": 1882,
+  "skipped_count": 13,
+  "loc_total": 284997,
+  "languages": {
+    "css": {
+      "files": 2,
+      "loc": 38,
+      "bytes": 36479
+    },
+    "drawio": {
+      "files": 35,
+      "loc": 5202,
+      "bytes": 770107
+    },
+    "html": {
+      "files": 40,
+      "loc": 5230,
+      "bytes": 631552
+    },
+    "javascript": {
+      "files": 1,
+      "loc": 63,
+      "bytes": 321429
+    },
+    "json": {
+      "files": 103,
+      "loc": 29416,
+      "bytes": 1134799
+    },
+    "markdown": {
+      "files": 1077,
+      "loc": 110373,
+      "bytes": 4075570
+    },
+    "python": {
+      "files": 601,
+      "loc": 126305,
+      "bytes": 5939087
+    },
+    "text": {
+      "files": 2,
+      "loc": 15,
+      "bytes": 284
+    },
+    "toml": {
+      "files": 1,
+      "loc": 38,
+      "bytes": 865
+    },
+    "typescript": {
+      "files": 4,
+      "loc": 2291,
+      "bytes": 69897
+    },
+    "vue": {
+      "files": 3,
+      "loc": 6026,
+      "bytes": 203038
+    }
+  }
+}

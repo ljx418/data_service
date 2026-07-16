@@ -1,0 +1,704 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_116_120_real",
+  "phase": "V2.108",
+  "artifact_type": "full_build_queue",
+  "artifact_id": "full_build_queue",
+  "run_id": "v2106-v2_116_120_real-f11a1ebf7855",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-16T08:21:50.557986Z",
+  "source_snapshot_id": "dafaedfe1a0d987ee6d0364c",
+  "workspace_fingerprint": "dafaedfe1a0d987ee6d0364c",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "e885a2171e03f6948caa6ea4d363ba2961183536b30d4fd890b5a6e42445893f",
+      "source_candidate_matrix.json": "255ee146c53f935a76ef060ba658504ec78cec8d95667513c850dbcab8e7584c",
+      "media_readiness.json": "25da886d3d91704fb5a3063ae6e07209b5c1c3a52510a8a602053839cace474f",
+      "project_build_runs.json": "4a219ffcda42c22f52dc8c28906b6463f9eeac6275e2a9b27a96f7299dc5a8b1",
+      "portfolio_index.json": "bb80f4a1474dbc51e3eedd9fe38bd5f1cf504ce42b2bc5ceff16e542b67aa914",
+      "release_gate.json": "baa0d2888e6aff5cd3e7a0489b2c06ad826b5a2c405c68bc7630b1bb13d7bbca",
+      "false_green_audit.md": "8a4ab1eac2002525f38c2e6fbb981bd87875f0c0651c6df96eedf91986618b9c",
+      "portfolio_report.html": "41498e257bb95b5630ba150c3d4ce04e5b2e4f6a3157a1f035d9ea463759e878"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "74f1689da7ad7431b059b39819971f69ef78e124989842dbac2058a8861bb29f",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "full_build_queue",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/full_build_queue.json"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    }
+  ],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "build:0",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:1-ai",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:2-chatcut",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:codexpat",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:financial-asset-manager",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:foodmap",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:harnessos",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:interview_service",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:meeting-voice-assistant",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:navia",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:research-notebook",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:scripts",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:voice_service",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:xpert",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    },
+    {
+      "id": "build:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "project is not accepted in full build governance queue",
+      "next_action": "run approved bounded build or mark structured unavailable with reason",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "build:0",
+        "project_id": "0",
+        "display_name": "0-阶段展示",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:1-ai",
+        "project_id": "1-ai",
+        "display_name": "1-AI教案",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:2-chatcut",
+        "project_id": "2-chatcut",
+        "display_name": "2-ChatCut",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:codexpat",
+        "project_id": "codexpat",
+        "display_name": "codexPat",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:data_service",
+        "project_id": "data_service",
+        "display_name": "data_service",
+        "classification": "code_project",
+        "queue_state": "executed_in_baseline",
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "baseline_status": "accepted",
+        "artifact_refs": [
+          {
+            "type": "codebase",
+            "artifact_ref": "codebase://data_service"
+          },
+          {
+            "type": "snapshot",
+            "artifact_ref": "snapshot://data_service/snap_387288cc9c797df44892"
+          },
+          {
+            "type": "portfolio_brief",
+            "artifact_ref": "workspace_portfolio://portfolio/project_briefs/data_service_snap_387288cc9c797df44892.json"
+          }
+        ],
+        "command_refs": [
+          "portfolio_build:code_asset_pipeline"
+        ],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:financial-asset-manager",
+        "project_id": "financial-asset-manager",
+        "display_name": "financial-asset-manager",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:foodmap",
+        "project_id": "foodmap",
+        "display_name": "foodMap",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:harnessos",
+        "project_id": "harnessos",
+        "display_name": "harnessOS",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:interview_service",
+        "project_id": "interview_service",
+        "display_name": "interview_service",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:meeting-voice-assistant",
+        "project_id": "meeting-voice-assistant",
+        "display_name": "meeting-voice-assistant",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:navia",
+        "project_id": "navia",
+        "display_name": "navia",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:research-notebook",
+        "project_id": "research-notebook",
+        "display_name": "research-notebook",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:scripts",
+        "project_id": "scripts",
+        "display_name": "scripts",
+        "classification": "needs_review",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:voice_service",
+        "project_id": "voice_service",
+        "display_name": "voice_service",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:xpert",
+        "project_id": "xpert",
+        "display_name": "xpert",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "baseline_status": "structured_unavailable",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "我在城市的深海里漂流",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "技术分享",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "知识库",
+        "classification": "doc_project",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "音频资料",
+        "classification": "needs_review",
+        "queue_state": "non_code_source_intake_required",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "baseline_status": "needs_review",
+        "artifact_refs": [],
+        "command_refs": [],
+        "evidence_refs": []
+      }
+    ],
+    "summary": {
+      "accepted_count": 1,
+      "needs_review_count": 8,
+      "structured_unavailable_count": 10,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0,
+      "total_queue_count": 19,
+      "max_code_projects": 3
+    },
+    "security_model": {
+      "external_build_scripts_executed": false,
+      "workspace_mutation_allowed": false,
+      "execution_mode": "read_only_import_snapshot_inventory_symbols"
+    }
+  }
+}

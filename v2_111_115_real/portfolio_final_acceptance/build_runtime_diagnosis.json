@@ -1,0 +1,240 @@
+{
+  "ok": false,
+  "schema_version": "v2.111-115",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.114",
+  "artifact_type": "build_runtime_diagnosis",
+  "artifact_id": "build_runtime_diagnosis",
+  "run_id": "v2111-v2_111_115_real-f05b4ffce907",
+  "producer_name": "workspace_portfolio_final_acceptance",
+  "producer_version": "1",
+  "generated_at": "2026-07-13T13:43:33.561862Z",
+  "source_snapshot_id": "0234921d17b4fb98201e2a4b",
+  "workspace_fingerprint": "0234921d17b4fb98201e2a4b",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/final_release_gate.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/media_evidence_matrix.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ocr_provider_health.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/document_source_trace_closure.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/full_build_queue.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/project_build_diagnosis.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ui_evidence_capture.json"
+    }
+  ],
+  "input_hashes": {},
+  "artifact_refs": [
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/build_runtime_diagnosis.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "diagnosis:execution:build:0",
+        "project_id": "0",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:1-ai",
+        "project_id": "1-ai",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:2-chatcut",
+        "project_id": "2-chatcut",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:codexpat",
+        "project_id": "codexpat",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:data_service",
+        "project_id": "data_service",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:financial-asset-manager",
+        "project_id": "financial-asset-manager",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:foodmap",
+        "project_id": "foodmap",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:harnessos",
+        "project_id": "harnessos",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:interview_service",
+        "project_id": "interview_service",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:meeting-voice-assistant",
+        "project_id": "meeting-voice-assistant",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:navia",
+        "project_id": "navia",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:research-notebook",
+        "project_id": "research-notebook",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:scripts",
+        "project_id": "scripts",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:voice_service",
+        "project_id": "voice_service",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:xpert",
+        "project_id": "xpert",
+        "failure_category": "command_rejected",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:project",
+        "project_id": "project",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:project",
+        "project_id": "project",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:project",
+        "project_id": "project",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      },
+      {
+        "stable_id": "diagnosis:execution:build:project",
+        "project_id": "project",
+        "failure_category": "needs_review",
+        "acceptance_status": "structured_unavailable",
+        "execution_status": "skipped",
+        "reason": "unapproved project command was not executed",
+        "next_action": "approve safe command allowlist or keep project non-accepted"
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 11,
+      "structured_unavailable_count": 8,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

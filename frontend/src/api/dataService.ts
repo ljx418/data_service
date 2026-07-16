@@ -304,6 +304,47 @@ export interface WorkspacePortfolioResponse {
   }
 }
 
+export interface WorkspacePortfolioFinalEvidenceResponse {
+  workspace_id: string
+  status: string
+  data: {
+    workspace_portfolio_final_evidence: {
+      status: string
+      implementation_status?: string
+      portfolio_final_status?: string
+      summary: Record<string, any>
+      data: {
+        final_release_gate?: Record<string, any> | null
+        full_build_queue?: Record<string, any> | null
+        media_evidence_matrix?: Record<string, any> | null
+        document_source_trace_closure?: Record<string, any> | null
+        ui_evidence_capture?: Record<string, any> | null
+      }
+      artifact_refs: Array<Record<string, any>>
+      unresolved: Array<Record<string, any>>
+      next_actions: string[]
+    }
+  }
+}
+
+export interface WorkspacePortfolioRealEvidenceResponse {
+  workspace_id: string
+  status: string
+  data: {
+    workspace_portfolio_real_evidence: {
+      status: string
+      implementation_delivery_status?: string
+      portfolio_final_status?: string
+      run_id?: string
+      latest?: Record<string, any>
+      data: Record<string, any>
+      artifact_refs: string[]
+      unresolved: Array<Record<string, any>>
+      next_actions: string[]
+    }
+  }
+}
+
 async function postJson<T>(endpoint: string, body: Record<string, any>): Promise<T> {
   const headers: Record<string, string> = { 'Content-Type': 'application/json' }
   if (KNOWLEDGE_API_KEY) {
@@ -368,6 +409,31 @@ export function buildWorkspacePortfolio(workspaceId: string, root = '/mnt/c/work
 
 export function fetchWorkspacePortfolio(workspaceId: string) {
   return apiGetJson<WorkspacePortfolioResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio`)
+}
+
+export function buildWorkspacePortfolioFinalEvidence(workspaceId: string, root = '/mnt/c/workspace', limit = 40, maxCodeProjects = 3) {
+  return apiPostJson<WorkspacePortfolioFinalEvidenceResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio-final-evidence/build`, {
+    root,
+    limit,
+    max_code_projects: maxCodeProjects,
+  })
+}
+
+export function fetchWorkspacePortfolioFinalEvidence(workspaceId: string) {
+  return apiGetJson<WorkspacePortfolioFinalEvidenceResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio-final-evidence`)
+}
+
+export function buildWorkspacePortfolioRealEvidence(workspaceId: string, root = '/mnt/c/workspace', limit = 40, maxCodeProjects = 3) {
+  return apiPostJson<WorkspacePortfolioRealEvidenceResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio-real-evidence/build`, {
+    root,
+    limit,
+    max_code_projects: maxCodeProjects,
+    headless: true,
+  })
+}
+
+export function fetchWorkspacePortfolioRealEvidence(workspaceId: string) {
+  return apiGetJson<WorkspacePortfolioRealEvidenceResponse>(`/workspaces/${encodeURIComponent(workspaceId)}/portfolio-real-evidence`)
 }
 
 export function fetchKnowledgeSummary(workspace: string) {

@@ -1,0 +1,120 @@
+{
+  "schema_version": "v2.116-120",
+  "workspace_id": "v2_116_120_real",
+  "run_id": "v2116-final_gate-v2_116_120_real-cf6fadb50a36",
+  "run_type": "final_gate",
+  "lineage_root_id": "d06a296052932bbdf4a954a7",
+  "parent_run_ids": [
+    "v2116-proposal-v2_116_120_real-1253a212d0f3",
+    "v2116-execution-v2_116_120_real-5a2ec7b0e3c2"
+  ],
+  "source_run_refs": [],
+  "artifact_id": "safe_build_allowlist",
+  "artifact_type": "safe_build_allowlist",
+  "phase": "V2.119",
+  "generated_at": "2026-07-16T10:47:59.356497Z",
+  "producer": {
+    "name": "workspace_portfolio_real_evidence_acceptance",
+    "version": "1"
+  },
+  "input_manifest_ref": "runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/input_manifest.json",
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "upstream_final_acceptance": {
+      "build_runtime_diagnosis.json": "3d8078c67e919f0fa1bd21f84a6e15d88ee2023b77f947b2f6946bfbf7abadb9",
+      "final_acceptance_gate.json": "c5134ea9fa66bef632a912a71a00fedc61753ec38af4fa554bdd56cc2a126744",
+      "media_artifact_manifest.json": "4a67016b0058c05f2131082276512f3d00ed17d0cf591dd2f9ffb9695f551a02",
+      "media_execution_results.json": "8ca3e3a58e85310bd523f6363ffa530d7e0575b81b2a6e53ae66a6ad3d7cc111",
+      "ocr_sample_qualification.json": "665b894bfb508d26b504af29903ca0c0ba892b3d46013bc0a5343bad5604733d",
+      "safe_build_execution.json": "c8dc4d218d9c077224e529297795a0d457fe578e9f7878b30bd9837f21985783",
+      "safe_build_queue.json": "f0f909b198f14f35c86994f843bd1f0d798440096b5eaa939aa89c8c12e7a1dd",
+      "source_trace_audit.json": "816ecd17c200056e7e3c6528ae008f25b8eab1e8b5d93beb5a6d3808aff1fab7",
+      "source_trace_execution.json": "1bf1cf18724bd177ba5169abaae3cff40c523d04529452d2bfd0f36d86ece28d",
+      "ui_evidence_capture.json": "fbe2d5b831247d058e177b394145899034deb860933ad91da6ac8d84fafd9bea",
+      "ui_screenshot_manifest.json": "29041844c8968de91653c3a1671533bbbbf05f1e876ee2e28a1df2b0f700477f"
+    },
+    "documents": {
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PRD.md": "c3b0ce49457f5e0563915edfe6a78fd10758910d09dde34fe2e71156afa8c216",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_ARCHITECTURE.md": "1199a6ea0a4087e4344178927e0218ccaf6d2d1170bf5b87523b97b399d6bf92",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_SCHEMA_BUNDLE.json": "64177198d0861141c041c1a4e2fea499a388ba641739dd5d764810b11c943a9e"
+    }
+  },
+  "artifact_refs": [
+    "portfolio_real_evidence_acceptance/runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/safe_build_allowlist.json"
+  ],
+  "evidence_refs": [],
+  "artifact_status": "needs_review",
+  "warnings": [],
+  "unresolved": [
+    {
+      "kind": "needs_review",
+      "item_id": "1-ai",
+      "reason": "safe_build_allowlist row is not accepted",
+      "next_action": "review safe_build_allowlist evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "codexpat",
+      "reason": "safe_build_allowlist row is not accepted",
+      "next_action": "review safe_build_allowlist evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "codexpat-apps-desktop",
+      "reason": "safe_build_allowlist row is not accepted",
+      "next_action": "review safe_build_allowlist evidence",
+      "evidence_refs": []
+    }
+  ],
+  "data": {
+    "commands": [
+      {
+        "command_id": "1-ai",
+        "project_id": "1-ai",
+        "proposal_run_id": "v2116-proposal-v2_116_120_real-1253a212d0f3",
+        "decision_set_id": "decision-820995a4eeae109d",
+        "argv": [
+          "npm",
+          "test"
+        ],
+        "cwd_policy": "managed_sandbox_working_copy",
+        "normalized_binding_digest": "1f1e5d3c9697589389df38f29108a7ce593fb370f3e1c7beb7fae31009d1fe0a",
+        "sandbox_policy_digest": "6194e8d19af3781ec3993566006f41b94b65d17423339b9ba71604618bdbc306",
+        "project_input_hash": "8367280c8db6ec83930aec753d8f006224b4e49145562ba2d27cb1d1d8d2a6d1",
+        "approval_status": "needs_review"
+      },
+      {
+        "command_id": "codexpat",
+        "project_id": "codexpat",
+        "proposal_run_id": "v2116-proposal-v2_116_120_real-1253a212d0f3",
+        "decision_set_id": "decision-820995a4eeae109d",
+        "argv": [
+          "npm",
+          "test"
+        ],
+        "cwd_policy": "managed_sandbox_working_copy",
+        "normalized_binding_digest": "6a7c50b4395c3a1bd40be922ef0ec82e137fdb6fc70d8b0a5aad754a2754a4eb",
+        "sandbox_policy_digest": "6194e8d19af3781ec3993566006f41b94b65d17423339b9ba71604618bdbc306",
+        "project_input_hash": "11378dc4c5110364590447b457d6b75d49f42b421dfe16d7e4dbdfa67d718506",
+        "approval_status": "needs_review"
+      },
+      {
+        "command_id": "codexpat-apps-desktop",
+        "project_id": "codexpat-apps-desktop",
+        "proposal_run_id": "v2116-proposal-v2_116_120_real-1253a212d0f3",
+        "decision_set_id": "decision-820995a4eeae109d",
+        "argv": [
+          "npm",
+          "test"
+        ],
+        "cwd_policy": "managed_sandbox_working_copy",
+        "normalized_binding_digest": "59b16841fefb09b42bceeae2a4de84d542582f89e6da72d89273623fa523de74",
+        "sandbox_policy_digest": "6194e8d19af3781ec3993566006f41b94b65d17423339b9ba71604618bdbc306",
+        "project_input_hash": "2a84378c4113d26f1627342eb1a5c8e42766aea715c41edf5cc89539ae3bfe0d",
+        "approval_status": "needs_review"
+      }
+    ]
+  }
+}

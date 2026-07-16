@@ -1,0 +1,1757 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.109",
+  "artifact_type": "document_source_trace_closure",
+  "artifact_id": "document_source_trace_closure",
+  "run_id": "v2106-v2_111_115_real-1675212805a5",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-13T13:42:02.849665Z",
+  "source_snapshot_id": "24d7007d0cfc5978207e8c00",
+  "workspace_fingerprint": "24d7007d0cfc5978207e8c00",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "1e417df7a35c123db783b665b85098138bef25410199e6a62b6846f8fdc182b5",
+      "source_candidate_matrix.json": "0bb4e5a99153829ddc162b597a780b782b751ddd349e5f7fb6e0e0356c1ce4d7",
+      "media_readiness.json": "d9059e9fcdf4b04dcdcc2659bc47d3b0baacf4d54a4b5df117d2af268661f7ef",
+      "project_build_runs.json": "de5ff4449dbd060987a64643e6d30efe5b97e136a76ae81020f9f14a306cc3f3",
+      "portfolio_index.json": "61e2588e939fcbf89527f7b3f1b85eb351032a92a9c33cdcbee13fa3ee741417",
+      "release_gate.json": "57ba5d7fe9531624311e3ebc4f3283f631703408d16d1ec86430b87583b965b2",
+      "false_green_audit.md": "8a4ab1eac2002525f38c2e6fbb981bd87875f0c0651c6df96eedf91986618b9c",
+      "portfolio_report.html": "dc9541c4cba8c69b6e2339e0461b765d8038c6f53967f12bfbd1f1eb490048f1"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "74f1689da7ad7431b059b39819971f69ef78e124989842dbac2058a8861bb29f",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "document_source_trace_closure",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/document_source_trace_closure.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "trace:0:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:0:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:0:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:0:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:1-ai:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:1-ai:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:1-ai:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:1-ai:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:1-ai:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:1-ai:yml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:2-chatcut:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:2-chatcut:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:2-chatcut:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:gif",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:codexpat:yaml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:data_service:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:data_service:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:data_service:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:financial-asset-manager:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:financial-asset-manager:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:financial-asset-manager:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:financial-asset-manager:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:financial-asset-manager:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:foodmap:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:foodmap:jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:foodmap:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:foodmap:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:foodmap:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:foodmap:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:harnessos:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:harnessos:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:harnessos:pdf",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:harnessos:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:yaml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:interview_service:yml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:meeting-voice-assistant:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:meeting-voice-assistant:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:meeting-voice-assistant:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:meeting-voice-assistant:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:meeting-voice-assistant:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:meeting-voice-assistant:yml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:navia:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:navia:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:navia:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:navia:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:research-notebook:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:research-notebook:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:research-notebook:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:research-notebook:pdf",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:research-notebook:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:voice_service:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:voice_service:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:voice_service:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:voice_service:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:voice_service:yaml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:yaml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:xpert:yml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:csv",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:csv",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:yaml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    },
+    {
+      "id": "trace:project:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source import/query/source-trace chain is incomplete",
+      "next_action": "run real source import and source trace verification",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "trace:0:html",
+        "project_id": "0",
+        "source_format": "html",
+        "source_count": 16,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:0:json",
+        "project_id": "0",
+        "source_format": "json",
+        "source_count": 4,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:0:md",
+        "project_id": "0",
+        "source_format": "md",
+        "source_count": 107,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:0:png",
+        "project_id": "0",
+        "source_format": "png",
+        "source_count": 142,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:1-ai:html",
+        "project_id": "1-ai",
+        "source_format": "html",
+        "source_count": 14,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:1-ai:json",
+        "project_id": "1-ai",
+        "source_format": "json",
+        "source_count": 33,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:1-ai:md",
+        "project_id": "1-ai",
+        "source_format": "md",
+        "source_count": 213,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:1-ai:png",
+        "project_id": "1-ai",
+        "source_format": "png",
+        "source_count": 66,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:1-ai:txt",
+        "project_id": "1-ai",
+        "source_format": "txt",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:1-ai:yml",
+        "project_id": "1-ai",
+        "source_format": "yml",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:2-chatcut:json",
+        "project_id": "2-chatcut",
+        "source_format": "json",
+        "source_count": 2,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:2-chatcut:md",
+        "project_id": "2-chatcut",
+        "source_format": "md",
+        "source_count": 2,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:2-chatcut:png",
+        "project_id": "2-chatcut",
+        "source_format": "png",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:gif",
+        "project_id": "codexpat",
+        "source_format": "gif",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:html",
+        "project_id": "codexpat",
+        "source_format": "html",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:jpeg",
+        "project_id": "codexpat",
+        "source_format": "jpeg",
+        "source_count": 17,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:jpg",
+        "project_id": "codexpat",
+        "source_format": "jpg",
+        "source_count": 3,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:json",
+        "project_id": "codexpat",
+        "source_format": "json",
+        "source_count": 26,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:md",
+        "project_id": "codexpat",
+        "source_format": "md",
+        "source_count": 144,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:png",
+        "project_id": "codexpat",
+        "source_format": "png",
+        "source_count": 291,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:codexpat:yaml",
+        "project_id": "codexpat",
+        "source_format": "yaml",
+        "source_count": 2,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:data_service:html",
+        "project_id": "data_service",
+        "source_format": "html",
+        "source_count": 9,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:data_service:json",
+        "project_id": "data_service",
+        "source_format": "json",
+        "source_count": 196,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:data_service:md",
+        "project_id": "data_service",
+        "source_format": "md",
+        "source_count": 580,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:financial-asset-manager:html",
+        "project_id": "financial-asset-manager",
+        "source_format": "html",
+        "source_count": 11,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:financial-asset-manager:json",
+        "project_id": "financial-asset-manager",
+        "source_format": "json",
+        "source_count": 296,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:financial-asset-manager:md",
+        "project_id": "financial-asset-manager",
+        "source_format": "md",
+        "source_count": 95,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:financial-asset-manager:png",
+        "project_id": "financial-asset-manager",
+        "source_format": "png",
+        "source_count": 19,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:financial-asset-manager:txt",
+        "project_id": "financial-asset-manager",
+        "source_format": "txt",
+        "source_count": 3,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:foodmap:html",
+        "project_id": "foodmap",
+        "source_format": "html",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:foodmap:jpeg",
+        "project_id": "foodmap",
+        "source_format": "jpeg",
+        "source_count": 42,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:foodmap:json",
+        "project_id": "foodmap",
+        "source_format": "json",
+        "source_count": 19,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:foodmap:md",
+        "project_id": "foodmap",
+        "source_format": "md",
+        "source_count": 241,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:foodmap:png",
+        "project_id": "foodmap",
+        "source_format": "png",
+        "source_count": 148,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:foodmap:txt",
+        "project_id": "foodmap",
+        "source_format": "txt",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:harnessos:json",
+        "project_id": "harnessos",
+        "source_format": "json",
+        "source_count": 33,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:harnessos:md",
+        "project_id": "harnessos",
+        "source_format": "md",
+        "source_count": 42,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:harnessos:pdf",
+        "project_id": "harnessos",
+        "source_format": "pdf",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:harnessos:txt",
+        "project_id": "harnessos",
+        "source_format": "txt",
+        "source_count": 2,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:html",
+        "project_id": "interview_service",
+        "source_format": "html",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:json",
+        "project_id": "interview_service",
+        "source_format": "json",
+        "source_count": 31,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:md",
+        "project_id": "interview_service",
+        "source_format": "md",
+        "source_count": 77,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:png",
+        "project_id": "interview_service",
+        "source_format": "png",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:txt",
+        "project_id": "interview_service",
+        "source_format": "txt",
+        "source_count": 5,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:yaml",
+        "project_id": "interview_service",
+        "source_format": "yaml",
+        "source_count": 5,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:interview_service:yml",
+        "project_id": "interview_service",
+        "source_format": "yml",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:meeting-voice-assistant:html",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "html",
+        "source_count": 11,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:meeting-voice-assistant:json",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "json",
+        "source_count": 367,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:meeting-voice-assistant:md",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "md",
+        "source_count": 153,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:meeting-voice-assistant:png",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "png",
+        "source_count": 3,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:meeting-voice-assistant:txt",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "txt",
+        "source_count": 10,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:meeting-voice-assistant:yml",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "yml",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:navia:html",
+        "project_id": "navia",
+        "source_format": "html",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:navia:json",
+        "project_id": "navia",
+        "source_format": "json",
+        "source_count": 722,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:navia:md",
+        "project_id": "navia",
+        "source_format": "md",
+        "source_count": 9,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:navia:txt",
+        "project_id": "navia",
+        "source_format": "txt",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:research-notebook:html",
+        "project_id": "research-notebook",
+        "source_format": "html",
+        "source_count": 5,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:research-notebook:json",
+        "project_id": "research-notebook",
+        "source_format": "json",
+        "source_count": 367,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:research-notebook:md",
+        "project_id": "research-notebook",
+        "source_format": "md",
+        "source_count": 322,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:research-notebook:pdf",
+        "project_id": "research-notebook",
+        "source_format": "pdf",
+        "source_count": 2,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:research-notebook:txt",
+        "project_id": "research-notebook",
+        "source_format": "txt",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:voice_service:json",
+        "project_id": "voice_service",
+        "source_format": "json",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:voice_service:md",
+        "project_id": "voice_service",
+        "source_format": "md",
+        "source_count": 9,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:voice_service:png",
+        "project_id": "voice_service",
+        "source_format": "png",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:voice_service:txt",
+        "project_id": "voice_service",
+        "source_format": "txt",
+        "source_count": 5,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:voice_service:yaml",
+        "project_id": "voice_service",
+        "source_format": "yaml",
+        "source_count": 4,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:html",
+        "project_id": "xpert",
+        "source_format": "html",
+        "source_count": 4,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:json",
+        "project_id": "xpert",
+        "source_format": "json",
+        "source_count": 54,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:md",
+        "project_id": "xpert",
+        "source_format": "md",
+        "source_count": 21,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:png",
+        "project_id": "xpert",
+        "source_format": "png",
+        "source_count": 4,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:txt",
+        "project_id": "xpert",
+        "source_format": "txt",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:yaml",
+        "project_id": "xpert",
+        "source_format": "yaml",
+        "source_count": 59,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:xpert:yml",
+        "project_id": "xpert",
+        "source_format": "yml",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:csv",
+        "project_id": "project",
+        "source_format": "csv",
+        "source_count": 3,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:html",
+        "project_id": "project",
+        "source_format": "html",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:jpg",
+        "project_id": "project",
+        "source_format": "jpg",
+        "source_count": 400,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:md",
+        "project_id": "project",
+        "source_format": "md",
+        "source_count": 32,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:png",
+        "project_id": "project",
+        "source_format": "png",
+        "source_count": 36,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:txt",
+        "project_id": "project",
+        "source_format": "txt",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:csv",
+        "project_id": "project",
+        "source_format": "csv",
+        "source_count": 6,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:html",
+        "project_id": "project",
+        "source_format": "html",
+        "source_count": 4,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:jpg",
+        "project_id": "project",
+        "source_format": "jpg",
+        "source_count": 367,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:json",
+        "project_id": "project",
+        "source_format": "json",
+        "source_count": 16,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:md",
+        "project_id": "project",
+        "source_format": "md",
+        "source_count": 73,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:png",
+        "project_id": "project",
+        "source_format": "png",
+        "source_count": 128,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:txt",
+        "project_id": "project",
+        "source_format": "txt",
+        "source_count": 2,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:yaml",
+        "project_id": "project",
+        "source_format": "yaml",
+        "source_count": 1,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:json",
+        "project_id": "project",
+        "source_format": "json",
+        "source_count": 443,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "trace:project:md",
+        "project_id": "project",
+        "source_format": "md",
+        "source_count": 174,
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "import_evidence_present": false,
+        "source_trace_present": false,
+        "evidence_refs": []
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 71,
+      "structured_unavailable_count": 18,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

@@ -1,0 +1,2369 @@
+{
+  "ok": false,
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.103",
+  "artifact_type": "source_candidate_matrix",
+  "generated_at": "2026-07-13T13:41:38.362760Z",
+  "status": "structured_unavailable",
+  "artifact_refs": [
+    {
+      "type": "source_candidate_matrix",
+      "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "0_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_gif",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "data_service_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "data_service_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "data_service_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_csv",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_csv",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "rows": [
+    {
+      "project_id": "0",
+      "source_format": "html",
+      "source_count": 16,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "0",
+      "source_format": "json",
+      "source_count": 4,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "0",
+      "source_format": "md",
+      "source_count": 107,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "0",
+      "source_format": "png",
+      "source_count": 142,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "1-ai",
+      "source_format": "html",
+      "source_count": 14,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "source_format": "json",
+      "source_count": 33,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "source_format": "md",
+      "source_count": 213,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "source_format": "png",
+      "source_count": 66,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "source_format": "txt",
+      "source_count": 6,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "source_format": "yml",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "2-chatcut",
+      "source_format": "json",
+      "source_count": 2,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "2-chatcut",
+      "source_format": "md",
+      "source_count": 2,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "2-chatcut",
+      "source_format": "png",
+      "source_count": 1,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "gif",
+      "source_count": 1,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "html",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "jpeg",
+      "source_count": 17,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "jpg",
+      "source_count": 3,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "json",
+      "source_count": 26,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "md",
+      "source_count": 144,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "png",
+      "source_count": 291,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "source_format": "yaml",
+      "source_count": 2,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "data_service",
+      "source_format": "html",
+      "source_count": 9,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "data_service",
+      "source_format": "json",
+      "source_count": 196,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "data_service",
+      "source_format": "md",
+      "source_count": 580,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "source_format": "html",
+      "source_count": 11,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "source_format": "json",
+      "source_count": 296,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "source_format": "md",
+      "source_count": 95,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "source_format": "png",
+      "source_count": 19,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "source_format": "txt",
+      "source_count": 3,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "source_format": "html",
+      "source_count": 6,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "source_format": "jpeg",
+      "source_count": 42,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "source_format": "json",
+      "source_count": 19,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "source_format": "md",
+      "source_count": 241,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "source_format": "png",
+      "source_count": 148,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "source_format": "txt",
+      "source_count": 6,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "source_format": "json",
+      "source_count": 33,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "source_format": "md",
+      "source_count": 42,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "source_format": "pdf",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "source_format": "txt",
+      "source_count": 2,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "html",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "json",
+      "source_count": 31,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "md",
+      "source_count": 77,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "png",
+      "source_count": 6,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "txt",
+      "source_count": 5,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "yaml",
+      "source_count": 5,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "source_format": "yml",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "source_format": "html",
+      "source_count": 11,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "source_format": "json",
+      "source_count": 367,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "source_format": "md",
+      "source_count": 153,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "source_format": "png",
+      "source_count": 3,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "source_format": "txt",
+      "source_count": 10,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "source_format": "yml",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "navia",
+      "source_format": "html",
+      "source_count": 6,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "navia",
+      "source_format": "json",
+      "source_count": 722,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "navia",
+      "source_format": "md",
+      "source_count": 9,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "navia",
+      "source_format": "txt",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "source_format": "html",
+      "source_count": 5,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "source_format": "json",
+      "source_count": 367,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "source_format": "md",
+      "source_count": 322,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "source_format": "pdf",
+      "source_count": 2,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "source_format": "txt",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "voice_service",
+      "source_format": "json",
+      "source_count": 6,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "voice_service",
+      "source_format": "md",
+      "source_count": 9,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "voice_service",
+      "source_format": "png",
+      "source_count": 6,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "voice_service",
+      "source_format": "txt",
+      "source_count": 5,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "voice_service",
+      "source_format": "yaml",
+      "source_count": 4,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "html",
+      "source_count": 4,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "json",
+      "source_count": 54,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "md",
+      "source_count": 21,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "png",
+      "source_count": 4,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "txt",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "yaml",
+      "source_count": 59,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "source_format": "yml",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "source_format": "csv",
+      "source_count": 3,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "html",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "jpg",
+      "source_count": 400,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "md",
+      "source_count": 32,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "png",
+      "source_count": 36,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "txt",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "csv",
+      "source_count": 6,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "html",
+      "source_count": 4,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "jpg",
+      "source_count": 367,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "json",
+      "source_count": 16,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "md",
+      "source_count": 73,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "png",
+      "source_count": 128,
+      "extractor_available": false,
+      "import_plan": "provider_readiness_required",
+      "status": "structured_unavailable",
+      "unsupported_reason": "OCR or vision provider evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "txt",
+      "source_count": 2,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "yaml",
+      "source_count": 1,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "json",
+      "source_count": 443,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    },
+    {
+      "project_id": "project",
+      "source_format": "md",
+      "source_count": 174,
+      "extractor_available": true,
+      "import_plan": "data_service_ingest",
+      "status": "needs_review",
+      "unsupported_reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "evidence_refs": []
+    }
+  ],
+  "summary": {
+    "accepted_count": 0,
+    "needs_review_count": 71,
+    "structured_unavailable_count": 18,
+    "structured_blocker_count": 0,
+    "failed_count": 0
+  }
+}

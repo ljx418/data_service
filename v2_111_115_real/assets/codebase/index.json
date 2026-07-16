@@ -1,0 +1,13 @@
+{
+  "schema_version": "v2.0",
+  "items": [
+    {
+      "codebase_id": "data_service",
+      "name": "data_service",
+      "status": "active",
+      "root_path_hash": "0b042143c92e1b9fad4d8c1d324ee826f4980c806d2596b3c9ae1f44cc1c72a0",
+      "created_at": "2026-07-13T13:41:38.373807Z",
+      "updated_at": "2026-07-13T13:41:38.373807Z"
+    }
+  ]
+}

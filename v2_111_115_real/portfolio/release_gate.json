@@ -1,0 +1,925 @@
+{
+  "ok": false,
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.105",
+  "artifact_type": "release_gate",
+  "generated_at": "2026-07-13T13:41:38.362760Z",
+  "status": "structured_unavailable",
+  "artifact_refs": [
+    {
+      "type": "release_gate",
+      "artifact_ref": "workspace_portfolio://portfolio/release_gate.json"
+    },
+    {
+      "type": "false_green_audit",
+      "artifact_ref": "workspace_portfolio://portfolio/false_green_audit.md"
+    },
+    {
+      "type": "portfolio_report",
+      "artifact_ref": "workspace_portfolio://portfolio/portfolio_report.html"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "scripts_classification",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "no code, docs, or media markers found",
+      "next_action": "review workspace directory classification",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_classification",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "no code, docs, or media markers found",
+      "next_action": "review workspace directory classification",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_gif",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "data_service_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "data_service_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "data_service_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_csv",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_csv",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR or vision provider evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "extractor readiness recorded; ingest/query/source trace evidence required before accepted",
+      "next_action": "configure OCR/provider or mark out of scope",
+      "evidence_refs": []
+    },
+    {
+      "id": "ocr_provider",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence is required before media rows can be accepted",
+      "next_action": "configure local OCR/provider or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [
+    "open /knowledge portfolio panel",
+    "review OCR/provider readiness",
+    "review non-accepted project rows"
+  ],
+  "implementation_status": "accepted",
+  "portfolio_final_status": "structured_unavailable",
+  "final_status": "structured_unavailable",
+  "phase_statuses": {
+    "V2.101": "accepted",
+    "V2.102": "structured_unavailable",
+    "V2.103": "structured_unavailable",
+    "V2.104": "needs_review",
+    "V2.105": "needs_review"
+  },
+  "ui_evidence_status": "needs_review",
+  "false_green_audit_status": "accepted",
+  "blocker_summary": {
+    "accepted_count": 1,
+    "needs_review_count": 2,
+    "structured_unavailable_count": 2,
+    "structured_blocker_count": 0,
+    "failed_count": 0
+  },
+  "summary": {
+    "implementation_status": "accepted",
+    "portfolio_final_status": "structured_unavailable",
+    "accepted_project_count": 1,
+    "accepted_count": 1,
+    "needs_review_count": 8,
+    "structured_unavailable_count": 10,
+    "structured_blocker_count": 0,
+    "failed_count": 0
+  }
+}

@@ -97,7 +97,7 @@
       </template>
 
       <template v-if="activeWorkbench === 'portfolio'">
-        <section class="card">
+        <section class="card card--portfolio">
           <div class="section-head">
             <div>
               <p class="section-kicker">Workspace Portfolio</p>
@@ -107,6 +107,14 @@
               <button class="btn-secondary small" :disabled="portfolioLoading" @click="loadPortfolio">读取</button>
               <button class="btn-primary small" :disabled="portfolioLoading" @click="buildPortfolio">
                 {{ portfolioLoading ? '构建中...' : '构建项目组合' }}
+              </button>
+              <button class="btn-secondary small" :disabled="portfolioFinalEvidenceLoading" @click="loadPortfolioFinalEvidence">读取闭环</button>
+              <button class="btn-primary small" :disabled="portfolioFinalEvidenceLoading" @click="buildPortfolioFinalEvidence">
+                {{ portfolioFinalEvidenceLoading ? '闭环中...' : '构建证据闭环' }}
+              </button>
+              <button class="btn-secondary small" :disabled="portfolioRealEvidenceLoading" @click="loadPortfolioRealEvidence">读取真实证据</button>
+              <button class="btn-primary small" :disabled="portfolioRealEvidenceLoading" @click="buildPortfolioRealEvidence">
+                {{ portfolioRealEvidenceLoading ? '验收中...' : '构建真实证据' }}
               </button>
             </div>
           </div>
@@ -133,6 +141,93 @@
             </div>
           </div>
           <div v-if="portfolioError" class="empty-box">{{ portfolioError }}</div>
+          <div v-if="portfolioFinalEvidenceError" class="empty-box">{{ portfolioFinalEvidenceError }}</div>
+          <div v-if="portfolioRealEvidenceError" class="empty-box">{{ portfolioRealEvidenceError }}</div>
+          <div class="subsection">
+            <div class="list-item-head">
+              <h3>V2.106-V2.110 Final Evidence Gate</h3>
+              <span class="muted">只展示 persisted artifacts，不隐藏 non-accepted</span>
+            </div>
+            <div class="metric-rail" aria-label="最终证据闭环状态">
+              <div class="metric-tile">
+                <span>implementation_status</span>
+                <strong>{{ portfolioFinalGateData.implementation_status || portfolioFinalEvidencePayload?.implementation_status || 'needs_review' }}</strong>
+                <small>代码实现与产物生成状态</small>
+              </div>
+              <div class="metric-tile">
+                <span>portfolio_final_status</span>
+                <strong>{{ portfolioFinalGateData.portfolio_final_status || portfolioFinalEvidencePayload?.portfolio_final_status || 'needs_review' }}</strong>
+                <small>缺 OCR / UI / source trace 时不得 accepted</small>
+              </div>
+              <div class="metric-tile">
+                <span>high risk unresolved</span>
+                <strong>{{ portfolioFinalGateData.summary?.high_risk_unresolved_count || portfolioFinalUnresolved.length || 0 }}</strong>
+                <small>阻断与人工复核项</small>
+              </div>
+              <div class="metric-tile">
+                <span>queue rows</span>
+                <strong>{{ portfolioFinalQueueRows.length || 0 }}</strong>
+                <small>完整项目队列，不以有界执行冒充全绿</small>
+              </div>
+            </div>
+            <div class="stack-list compact-list">
+              <div v-for="(status, name) in portfolioFinalPhaseStatuses" :key="name" class="list-item static-item">
+                <div class="list-item-head">
+                  <span class="pill">{{ name }}</span>
+                  <span class="pill" :class="{ warning: status !== 'accepted' }">{{ status }}</span>
+                </div>
+              </div>
+              <div v-if="!Object.keys(portfolioFinalPhaseStatuses).length" class="empty-box">尚未读取到 final evidence gate。点击“构建证据闭环”会基于真实 workspace artifacts 生成。</div>
+            </div>
+          </div>
+          <div class="subsection" data-testid="portfolio-real-evidence-panel">
+            <div class="list-item-head">
+              <h3>V2.116-V2.120 Real Evidence Acceptance</h3>
+              <span class="muted">workspace_id {{ portfolioRealEvidenceWorkspaceId }} · 只读展示 schema、lineage、OCR、Source、UI、Safe Build 与 Final Gate</span>
+            </div>
+            <div class="metric-rail" aria-label="真实证据验收状态">
+              <div class="metric-tile">
+                <span>implementation_delivery_status</span>
+                <strong>{{ portfolioRealEvidencePayload?.implementation_delivery_status || 'needs_review' }}</strong>
+                <small>机制交付状态</small>
+              </div>
+              <div class="metric-tile">
+                <span>portfolio_final_status</span>
+                <strong>{{ portfolioRealEvidencePayload?.portfolio_final_status || 'needs_review' }}</strong>
+                <small>non-accepted 不计入出门</small>
+              </div>
+              <div class="metric-tile">
+                <span>run_id</span>
+                <strong>{{ portfolioRealEvidencePayload?.run_id || 'not_built' }}</strong>
+                <small>lineage-bound run</small>
+              </div>
+              <div class="metric-tile">
+                <span>unresolved</span>
+                <strong>{{ portfolioRealEvidenceUnresolved.length }}</strong>
+                <small>人工复核/不可用/阻断</small>
+              </div>
+            </div>
+            <div class="stack-list compact-list">
+              <div v-for="artifact in portfolioRealEvidenceArtifacts" :key="artifact.name" class="list-item static-item">
+                <div class="list-item-head">
+                  <span class="pill">{{ artifact.name }}</span>
+                  <span class="pill" :class="{ warning: artifact.status !== 'accepted' }">{{ artifact.status }}</span>
+                </div>
+                <div class="item-body">{{ artifact.summary }}</div>
+              </div>
+              <div v-if="!portfolioRealEvidenceArtifacts.length" class="empty-box">尚未读取到 V2.116-V2.120 real evidence artifact。点击“构建真实证据”会基于真实 workspace 生成。</div>
+            </div>
+            <div class="stack-list compact-list">
+              <div v-for="item in portfolioRealEvidenceUnresolved.slice(0, 8)" :key="item.item_id || item.reason" class="list-item static-item">
+                <div class="list-item-head">
+                  <span class="pill warning">{{ item.kind }}</span>
+                  <span class="muted">{{ item.item_id }}</span>
+                </div>
+                <div class="item-body">{{ item.reason }}</div>
+                <div class="item-body">next: {{ item.next_action }}</div>
+              </div>
+            </div>
+          </div>
           <div class="subsection">
             <div class="list-item-head">
               <h3>Project Registry Summary</h3>
@@ -1569,6 +1664,8 @@ import {
   buildKnowledgeCorrectionPlan,
   buildKnowledgeCorrectionRules,
   buildWorkspacePortfolio,
+  buildWorkspacePortfolioFinalEvidence,
+  buildWorkspacePortfolioRealEvidence,
   cancelKnowledgeBuild,
   createKnowledgeWorkspace,
   describeKnowledgeWorkspace,
@@ -1583,6 +1680,8 @@ import {
   fetchKnowledgeSourceTrace,
   fetchKnowledgeSummary,
   fetchWorkspacePortfolio,
+  fetchWorkspacePortfolioFinalEvidence,
+  fetchWorkspacePortfolioRealEvidence,
   importKnowledgeSources,
   listKnowledgeSources,
   listKnowledgeWorkspaces,
@@ -1607,6 +1706,8 @@ import {
   type KnowledgeSourceTraceResponse,
   type KnowledgeWorkspaceRecord,
   type WorkspacePortfolioResponse,
+  type WorkspacePortfolioFinalEvidenceResponse,
+  type WorkspacePortfolioRealEvidenceResponse,
   type QueryMode,
 } from '@/api/dataService'
 
@@ -1681,10 +1782,17 @@ const selectedMcpToolName = ref('knowledge_query')
 const mcpPayloadText = ref('')
 const selectedMcpErrorScenario = ref('missing_required')
 const portfolioWorkspaceId = 'v2_101_105_real'
+const portfolioRealEvidenceWorkspaceId = 'v2_116_120_real'
 const portfolioRoot = '/mnt/c/workspace'
 const portfolioBundle = ref<WorkspacePortfolioResponse | null>(null)
+const portfolioFinalEvidenceBundle = ref<WorkspacePortfolioFinalEvidenceResponse | null>(null)
+const portfolioRealEvidenceBundle = ref<WorkspacePortfolioRealEvidenceResponse | null>(null)
 const portfolioLoading = ref(false)
+const portfolioFinalEvidenceLoading = ref(false)
+const portfolioRealEvidenceLoading = ref(false)
 const portfolioError = ref('')
+const portfolioFinalEvidenceError = ref('')
+const portfolioRealEvidenceError = ref('')
 
 const summaryLoading = ref(false)
 const graphLoading = ref(false)
@@ -2090,6 +2198,28 @@ const portfolioRegistrySummary = computed(() => portfolioReadModel.value.registr
 const portfolioMediaSummary = computed(() => portfolioReadModel.value.media_summary || {})
 const portfolioProjectRows = computed(() => portfolioReadModel.value.project_rows || [])
 const portfolioUnresolved = computed(() => portfolioPayload.value?.unresolved || portfolioReadModel.value.release_gate?.no_go_findings || [])
+const portfolioFinalEvidencePayload = computed(() => portfolioFinalEvidenceBundle.value?.data?.workspace_portfolio_final_evidence || null)
+const portfolioFinalGate = computed(() => portfolioFinalEvidencePayload.value?.data?.final_release_gate || {})
+const portfolioFinalGateData = computed(() => portfolioFinalGate.value?.data || {})
+const portfolioFinalPhaseStatuses = computed(() => portfolioFinalGateData.value.phase_statuses || {})
+const portfolioFinalUnresolved = computed(() => portfolioFinalEvidencePayload.value?.unresolved || portfolioFinalGate.value?.unresolved || [])
+const portfolioFinalQueueRows = computed(() => portfolioFinalEvidencePayload.value?.data?.full_build_queue?.data?.rows || [])
+const portfolioRealEvidencePayload = computed(() => portfolioRealEvidenceBundle.value?.data?.workspace_portfolio_real_evidence || null)
+const portfolioRealEvidenceUnresolved = computed(() => portfolioRealEvidencePayload.value?.unresolved || [])
+const portfolioRealEvidenceArtifacts = computed(() => {
+  const data = portfolioRealEvidencePayload.value?.data || {}
+  return Object.entries(data)
+    .filter(([, value]) => value && typeof value === 'object' && 'artifact_status' in (value as Record<string, any>))
+    .map(([name, value]) => {
+      const artifact = value as Record<string, any>
+      const rows = artifact.data?.rows || artifact.data?.commands || artifact.data?.scenarios || artifact.data?.screenshots || []
+      return {
+        name,
+        status: artifact.artifact_status || 'needs_review',
+        summary: `${artifact.phase || 'phase'} · rows ${Array.isArray(rows) ? rows.length : 0}`,
+      }
+    })
+})
 const activeWorkbenchTitle = computed(() => {
   if (activeWorkbench.value === 'portfolio') return '当前项目组合'
   if (activeWorkbench.value === 'sources') return '当前工作区'
@@ -2788,6 +2918,60 @@ async function buildPortfolio() {
   }
 }
 
+async function loadPortfolioFinalEvidence() {
+  portfolioFinalEvidenceLoading.value = true
+  portfolioFinalEvidenceError.value = ''
+  try {
+    portfolioFinalEvidenceBundle.value = await fetchWorkspacePortfolioFinalEvidence(portfolioWorkspaceId)
+  } catch (error) {
+    portfolioFinalEvidenceError.value = `证据闭环尚未构建或读取失败：${String(error)}`
+  } finally {
+    portfolioFinalEvidenceLoading.value = false
+  }
+}
+
+async function buildPortfolioFinalEvidence() {
+  portfolioFinalEvidenceLoading.value = true
+  portfolioFinalEvidenceError.value = ''
+  try {
+    portfolioFinalEvidenceBundle.value = await buildWorkspacePortfolioFinalEvidence(portfolioWorkspaceId, portfolioRoot)
+    showToast('V2.106-V2.110 证据闭环 artifacts 已构建')
+  } catch (error) {
+    console.error(error)
+    portfolioFinalEvidenceError.value = `证据闭环构建失败：${String(error)}`
+    showToast(portfolioFinalEvidenceError.value, 'error')
+  } finally {
+    portfolioFinalEvidenceLoading.value = false
+  }
+}
+
+async function loadPortfolioRealEvidence() {
+  portfolioRealEvidenceLoading.value = true
+  portfolioRealEvidenceError.value = ''
+  try {
+    portfolioRealEvidenceBundle.value = await fetchWorkspacePortfolioRealEvidence(portfolioRealEvidenceWorkspaceId)
+  } catch (error) {
+    portfolioRealEvidenceError.value = `真实证据尚未构建或读取失败：${String(error)}`
+  } finally {
+    portfolioRealEvidenceLoading.value = false
+  }
+}
+
+async function buildPortfolioRealEvidence() {
+  portfolioRealEvidenceLoading.value = true
+  portfolioRealEvidenceError.value = ''
+  try {
+    portfolioRealEvidenceBundle.value = await buildWorkspacePortfolioRealEvidence(portfolioRealEvidenceWorkspaceId, portfolioRoot)
+    showToast('V2.116-V2.120 真实证据 artifacts 已构建')
+  } catch (error) {
+    console.error(error)
+    portfolioRealEvidenceError.value = `真实证据构建失败：${String(error)}`
+    showToast(portfolioRealEvidenceError.value, 'error')
+  } finally {
+    portfolioRealEvidenceLoading.value = false
+  }
+}
+
 async function refreshAll() {
   try {
     if (!sessionScope.value) {
@@ -2809,6 +2993,8 @@ async function refreshAll() {
     }
     if (activeWorkbench.value === 'portfolio') {
       await loadPortfolio()
+      await loadPortfolioFinalEvidence()
+      await loadPortfolioRealEvidence()
     }
     lastUpdated.value = new Date().toLocaleTimeString('zh-CN')
     showToast('工作台数据已刷新')
@@ -4267,6 +4453,24 @@ button.list-item {
 
 .metric-tile.tone-info {
   border-color: rgba(56, 189, 248, 0.3);
+}
+
+.card--portfolio {
+  grid-column: 1 / -1;
+}
+
+.card--portfolio .metric-rail {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card--portfolio .metric-tile {
+  min-width: 0;
+}
+
+.card--portfolio .metric-tile strong,
+.card--portfolio .metric-tile span,
+.card--portfolio .metric-tile small {
+  overflow-wrap: anywhere;
 }
 
 .card {

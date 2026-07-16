@@ -1,0 +1,10 @@
+{
+  "schema_version": "v2.116-120",
+  "workspace_id": "v2_116_120_real",
+  "current_run_id": "v2116-final_gate-v2_116_120_real-cf6fadb50a36",
+  "current_run_type": "final_gate",
+  "current_run_ref": "runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/final_portfolio_acceptance_gate.json",
+  "current_run_hash": "22ffc3a81afaa3b89f726a456ac52af2d6a57fa3c6f09764646b9f2868149fef",
+  "updated_at": "2026-07-16T10:47:59.585732Z",
+  "completeness_check_ref": "runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/final_portfolio_false_green_audit.md"
+}

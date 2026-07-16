@@ -1,0 +1,13 @@
+{"schema_version": "v2.0", "code": "SENSITIVE_SKIPPED", "path": "backend/app/.env.example", "message": "Sensitive-looking file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "backend/app/graphrag/service/session_relation_extractor.py", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V1.6/README.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V1.6/current-vs-target-gap.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_PRD.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_16_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_16_PHASE_76_82_DETAILED_IMPLEMENTATION_PACKAGE.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_1_SELF_AUDIT_SHOWCASE.html", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_25_30_ARCHITECTURE_INTENT_TARGET_STATE.drawio", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_71_75_STAGE_VISUAL_ACCEPTANCE_REPORT.html", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_PROJECT_BASELINE.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/V2.x/V2_PROJECT_INTELLIGENCE_PRD.md", "message": "Binary file skipped", "severity": "warning"}
+{"schema_version": "v2.0", "code": "BINARY_SKIPPED", "path": "docs/present/data_service_agent_memory_showcase.html", "message": "Binary file skipped", "severity": "warning"}

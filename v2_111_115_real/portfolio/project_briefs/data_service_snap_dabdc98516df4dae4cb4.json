@@ -1,0 +1,62 @@
+{
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_111_115_real",
+  "project_id": "data_service",
+  "display_name": "data_service",
+  "codebase_id": "data_service",
+  "snapshot_id": "snap_dabdc98516df4dae4cb4",
+  "generated_at": "2026-07-13T13:41:38.362760Z",
+  "status": "accepted",
+  "summary": {
+    "surface_count": 814,
+    "capability_count": 15,
+    "symbol_count": 7117,
+    "import_count": 6840,
+    "python_file_count": 601,
+    "syntax_error_count": 0,
+    "warnings": []
+  },
+  "boundaries": [
+    "portfolio brief is derived from snapshot, inventory, and symbols artifacts",
+    "portfolio brief does not claim full call graph, runtime topology, data/control flow, or type inference",
+    "documentation claims remain evidence refs, not code facts"
+  ],
+  "artifact_refs": [
+    {
+      "type": "codebase",
+      "artifact_ref": "codebase://data_service"
+    },
+    {
+      "type": "snapshot",
+      "artifact_ref": "snapshot://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_surfaces",
+      "artifact_ref": "inventory-surfaces://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_capabilities",
+      "artifact_ref": "inventory-capabilities://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_alignment",
+      "artifact_ref": "inventory-alignment://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_summary",
+      "artifact_ref": "inventory-summary://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "symbols",
+      "artifact_ref": "symbols://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "imports",
+      "artifact_ref": "imports://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "symbol_summary",
+      "artifact_ref": "symbol-summary://data_service/snap_dabdc98516df4dae4cb4"
+    }
+  ]
+}

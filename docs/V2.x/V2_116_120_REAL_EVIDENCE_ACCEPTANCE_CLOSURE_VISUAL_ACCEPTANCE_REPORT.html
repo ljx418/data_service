@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<title>V2.116-V2.120 阶段性自动化验收报告</title>
+<style>
+:root { color-scheme: light; --bg:#f7f9fc; --ink:#102033; --muted:#5d6b7c; --line:#d9e2ee; --card:#fff; --ok:#0f766e; --warn:#b45309; --bad:#b91c1c; --blue:#1d4ed8; }
+* { box-sizing:border-box; } body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei',sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+header { padding:32px 40px 20px; background:#101827; color:white; } header h1 { margin:0 0 8px; font-size:30px; } header p { margin:0; color:#cbd5e1; }
+main { max-width:1280px; margin:0 auto; padding:24px; } section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px; margin:0 0 18px; }
+h2 { margin:0 0 14px; font-size:20px; } h3 { margin:16px 0 8px; font-size:16px; } .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+.card { border:1px solid var(--line); border-radius:8px; padding:14px; background:#fbfdff; } .card span { display:block; color:var(--muted); font-size:12px; } .card strong { display:block; margin-top:6px; font-size:22px; overflow-wrap:anywhere; }
+.pill { display:inline-flex; align-items:center; min-height:24px; padding:3px 9px; border-radius:999px; background:#e5e7eb; font-weight:700; font-size:12px; } .ok { color:white; background:var(--ok); } .warn { color:#fff; background:var(--warn); } .bad { color:white; background:var(--bad); }
+table { width:100%; border-collapse:collapse; font-size:13px; } th,td { text-align:left; vertical-align:top; padding:9px; border-bottom:1px solid var(--line); } th { background:#eef4fb; } code { background:#eef2f7; padding:2px 5px; border-radius:4px; }
+figure { margin:14px 0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:white; } figure img { display:block; width:100%; height:auto; } figcaption { padding:10px 12px; color:var(--muted); border-top:1px solid var(--line); }
+.note { border-left:4px solid var(--blue); padding:10px 12px; background:#eff6ff; } .warnbox { border-left:4px solid var(--warn); padding:10px 12px; background:#fff7ed; } ul { margin:8px 0 0 20px; padding:0; }
+@media (max-width:900px) { .grid { grid-template-columns:1fr 1fr; } main { padding:14px; } } @media (max-width:560px) { .grid { grid-template-columns:1fr; } header { padding:22px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>V2.116-V2.120 Real Evidence Acceptance Closure 阶段性自动化验收报告</h1>
+  <p>生成时间：2026-07-16 18:59:46 · 语言：中文 · 证据来源：focused tests、真实 workspace E2E、HTTP public surface、Headless Chrome 截图</p>
+</header>
+<main>
+<section>
+  <h2>验收结论</h2>
+  <div class='grid'>
+    <div class='card'><span>implementation_delivery_status</span><strong><span class='pill ok'>accepted</span></strong></div>
+    <div class='card'><span>portfolio_final_status</span><strong><span class='pill warn'>structured_unavailable</span></strong></div>
+    <div class='card'><span>run_id</span><strong>v2116-final_gate-v2_116_120_real-cf6fadb50a36</strong></div>
+    <div class='card'><span>unresolved count</span><strong>1</strong></div>
+  </div>
+  <p class='warnbox'><strong>不得声明本阶段最终项目组合出门全绿。</strong> 当前实现机制、schema、lineage、read-only UI、HTTP/CLI/MCP surface 与 focused tests 已通过；但真实 portfolio final 仍是 <code>structured_unavailable</code>，因为仍存在 non-accepted 证据项。报告不把 <code>needs_review</code>、<code>structured_unavailable</code> 或 <code>structured_blocker</code> 写成 accepted。</p>
+</section>
+<section>
+  <h2>目标架构与当前实现</h2>
+  <table><thead><tr><th>架构实体</th><th>当前实现</th><th>验收判断</th></tr></thead><tbody>
+    <tr><td>独立后端包</td><td><code>backend/data_service/workspace_portfolio_real_evidence_acceptance/</code>，包含 shared、persistence、OCR、Source Trace、UI Capture、Safe Build、Decision、Release Gate。</td><td><span class='pill ok'>实现</span></td></tr>
+    <tr><td>Public Surface</td><td>CLI <code>portfolio-real-evidence</code>、HTTP <code>/api/workspaces/{workspace_id}/portfolio-real-evidence</code>、MCP tools 注册。</td><td><span class='pill ok'>实现</span></td></tr>
+    <tr><td>Run Lineage</td><td><code>runs/{run_id}</code>、<code>latest.json</code>、source run refs、artifact refs。</td><td><span class='pill ok'>实现</span></td></tr>
+    <tr><td>Read-only UI</td><td><code>/knowledge?view=portfolio</code> 可只读展示 V2.116-V2.120 状态、run_id、artifact 状态与 unresolved。</td><td><span class='pill ok'>实现</span></td></tr>
+    <tr><td>Safe Build</td><td>当前仅 proposal / skipped；未执行真实外部 build，符合文档红线。</td><td><span class='pill warn'>受限完成</span></td></tr>
+    <tr><td>Final Gate</td><td>机制交付 accepted，但项目组合最终出门仍保留 <code>structured_unavailable</code>。</td><td><span class='pill warn'>未最终 accepted</span></td></tr>
+  </tbody></table>
+</section>
+<section>
+  <h2>自动化命令与结果</h2>
+  <table><thead><tr><th>命令</th><th>结果</th></tr></thead><tbody>
+    <tr><td><code>PYTHONPATH=backend pytest -q backend/tests/test_v2_116_ocr_anchor_provider_closure.py ... backend/tests/test_public_surface_guard.py</code></td><td><span class='pill ok'>14 passed</span>，15 个既有 deprecation warnings。</td></tr>
+    <tr><td><code>npm --prefix frontend run build</code></td><td><span class='pill ok'>passed</span>，产物写入 <code>backend/app/static/knowledge_console/</code>。</td></tr>
+    <tr><td><code>PYTHONPATH=backend python3 -m compileall -q backend/data_service backend/app/api backend/tests</code></td><td><span class='pill ok'>passed</span></td></tr>
+    <tr><td><code>git diff --check</code></td><td><span class='pill ok'>passed</span></td></tr>
+    <tr><td><code>git diff --exit-code -- backend/app/api/v1/data_service.py backend/data_service/service.py</code></td><td><span class='pill ok'>passed</span>，受保护 legacy 大文件未修改。</td></tr>
+    <tr><td>真实 workspace E2E：<code>python3 -m data_service portfolio-real-evidence build --workspace-id v2_116_120_real --root /mnt/c/workspace --max-code-projects 3 --headless</code></td><td><span class='pill ok'>机制交付 accepted</span>，<span class='pill warn'>portfolio final structured_unavailable</span>。</td></tr>
+  </tbody></table>
+</section>
+<section>
+  <h2>Headless 可视化证据</h2>
+  <figure><img src='v2_116_120_visual_evidence/01_knowledge_portfolio_page.png' alt='知识运营台项目组合页面截图'><figcaption>图 1：Headless Chrome 捕获的 <code>/knowledge?view=portfolio</code>。页面显示 V2.116-V2.120 的 accepted / structured_unavailable / run_id / unresolved，且未隐藏 non-accepted。</figcaption></figure>
+  <figure><img src='v2_116_120_visual_evidence/02_portfolio_real_evidence_api.png' alt='portfolio real evidence API 截图'><figcaption>图 2：HTTP read API 的原始 JSON 响应截图。用于证明后端 public surface 可以读取 persisted artifacts。</figcaption></figure>
+  <figure><img src='v2_116_120_visual_evidence/02_backend_openapi_page.png' alt='OpenAPI loading 截图'><figcaption>图 3：OpenAPI 页面截图停留在 loading 状态，不作为接口文档完整渲染证据；接口清单来自 <code>/openapi.json</code> 解析。</figcaption></figure>
+</section>
+<section>
+  <h2>Artifact 状态</h2>
+  <table><thead><tr><th>artifact</th><th>status</th><th>artifact_id</th><th>摘要</th></tr></thead><tbody><tr><td>evidence_decision_snapshot</td><td><span class='pill warn'>needs_review</span></td><td>evidence_decision_snapshot</td><td></td></tr>
+<tr><td>final_portfolio_acceptance_gate</td><td><span class='pill warn'>structured_unavailable</span></td><td>final_portfolio_acceptance_gate</td><td></td></tr>
+<tr><td>input_manifest</td><td><span class='pill ok'>accepted</span></td><td>input_manifest</td><td></td></tr>
+<tr><td>ocr_anchor_registry</td><td><span class='pill warn'>needs_review</span></td><td>ocr_anchor_registry</td><td></td></tr>
+<tr><td>ocr_provider_execution</td><td><span class='pill warn'>structured_unavailable</span></td><td>ocr_provider_execution</td><td></td></tr>
+<tr><td>safe_build_allowlist</td><td><span class='pill warn'>needs_review</span></td><td>safe_build_allowlist</td><td></td></tr>
+<tr><td>safe_build_execution_results</td><td><span class='pill warn'>needs_review</span></td><td>safe_build_execution_results</td><td></td></tr>
+<tr><td>source_trace_batch_results</td><td><span class='pill ok'>accepted</span></td><td>source_trace_batch_results</td><td></td></tr>
+<tr><td>source_trace_evidence_index</td><td><span class='pill ok'>accepted</span></td><td>source_trace_evidence_index</td><td></td></tr>
+<tr><td>ui_capture_results</td><td><span class='pill warn'>structured_unavailable</span></td><td>ui_capture_results</td><td></td></tr>
+<tr><td>ui_screenshot_manifest</td><td><span class='pill warn'>structured_unavailable</span></td><td>ui_screenshot_manifest</td><td></td></tr></tbody></table>
+</section>
+<section>
+  <h2>未完成 / 不可声明 Accepted 的内容</h2>
+  <table><thead><tr><th>kind</th><th>item</th><th>reason</th><th>next action</th></tr></thead><tbody><tr><td>needs_review</td><td>final_portfolio_acceptance_gate</td><td>needs_review evidence remains; structured_unavailable evidence remains</td><td>resolve non-accepted evidence rows and rerun final gate</td></tr></tbody></table>
+  <ul>
+    <li>Safe Build 仍不执行真实外部项目命令，只生成/保留受控 proposal 或 skipped 结果。</li>
+    <li>OCR、Source Trace 和 UI 证据仍需根据真实材料补齐 non-accepted 行；缺失项不得被算入 final accepted。</li>
+    <li>服务部署需要设置 <code>DATA_SERVICE_WORKSPACE_ROOT=/mnt/c/workspace/data_service</code>，否则 CLI 和 HTTP 可能读取不同 workspace root。</li>
+  </ul>
+</section>
+<section>
+  <h2>审计重点</h2>
+  <div class='note'>本报告重点检查：功能是否完整实现、测试是否覆盖阶段功能点、PRD/目标架构/drawio 概念是否一致、public surface 是否可达、是否存在把 non-accepted 伪装成 accepted 的 false-green 风险。</div>
+  <p>结论：可以声明 V2.116-V2.120 在“文档完备支撑范围内的受控实现机制”已完成并通过 focused tests；不能声明最终 portfolio release accepted。</p>
+</section>
+</main>
+</body>
+</html>

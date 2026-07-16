@@ -1,0 +1,3069 @@
+{
+  "ok": false,
+  "schema_version": "v2.111-115",
+  "workspace_id": "v2_116_120_real",
+  "phase": "V2.111",
+  "artifact_type": "media_artifact_manifest",
+  "artifact_id": "media_artifact_manifest",
+  "run_id": "v2111-v2_116_120_real-4361eb68002a",
+  "producer_name": "workspace_portfolio_final_acceptance",
+  "producer_version": "1",
+  "generated_at": "2026-07-16T08:22:07.907584Z",
+  "source_snapshot_id": "151c099c811389e8d51fe69f",
+  "workspace_fingerprint": "151c099c811389e8d51fe69f",
+  "status": "needs_review",
+  "acceptance_status": "needs_review",
+  "input_artifact_refs": [
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/final_release_gate.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/media_evidence_matrix.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ocr_provider_health.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/document_source_trace_closure.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/full_build_queue.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/project_build_diagnosis.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ui_evidence_capture.json"
+    }
+  ],
+  "input_hashes": {},
+  "artifact_refs": [
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/media_artifact_manifest.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:0",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-01-experience.png",
+            "sha256": "26bd0f07546e611d79a58a48d3d96f9ed753303e07629b8fdd14822b8244cc5e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:1",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-02-capability-map.png",
+            "sha256": "6fe2a6e507165ef80964c9c0cc4024ed21c574af93305d815f6a413b060fabe0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:2",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-03-future-scenario.png",
+            "sha256": "1b2ef7aad54689059a9cdf09c1c859f3f66e2b665858c42e0d26efc0a9f82810"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:3",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/00-cover.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/00-cover.png",
+            "sha256": "bd2f7e09ff4face739fb7e0f1705696d9512d25692844d7aca39e33dc36cf646"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:4",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/01-product-positioning.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/01-product-positioning.png",
+            "sha256": "9d1df836d9e018ec35347dced4ea1b14e25f85bbe04ea8659f7fa1dc101961da"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:5",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/02-current-accepted.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/02-current-accepted.png",
+            "sha256": "99ec1c3f3400871fc6e247ee235c95b2821a2f463899b3a8dce26f3c5a6ca38c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:6",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/03-current-limited.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/03-current-limited.png",
+            "sha256": "c3816ee3070a68d69b06c8a7c532ce730042ccd496f44e54589720b297740502"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:7",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/04-current-planned.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/04-current-planned.png",
+            "sha256": "db38fc5a05fd3d4ae58e1209a8cedb8432d254e44435edc3113d55607a1fbf6e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:8",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/05-current-no-go.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/05-current-no-go.png",
+            "sha256": "465cbf5ce9e0ab2854951b20aad62fbdb5d9bdfd10c296e3f8519fbb7438329d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:9",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/06-target-first-run.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/06-target-first-run.png",
+            "sha256": "62942f0421a7e0896a43d082e0862094151b4ffe0ae19e037a7ca71fe89af8ab"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:10",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/07-target-codex-flow.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/07-target-codex-flow.png",
+            "sha256": "ae97e294b58aa535e812393ef9e4fc829ab7628f3e85938613e85bf5b22c3229"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:11",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/08-target-interaction.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/08-target-interaction.png",
+            "sha256": "fffb9896c2f27bc2db494c25b8b4a9f5f41c6c79154214b129fcbadb06a103d2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:12",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/09-target-gallery.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/09-target-gallery.png",
+            "sha256": "f87eae75ca4e1680608aa49f3cf37b184dd98eb1ee219e0e4e546e7a68779a1f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:13",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/10-application-scenarios.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/10-application-scenarios.png",
+            "sha256": "6681e95c4a1caa66abb04369c1607485038386f07f5572e8c6627ee7c387b836"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:14",
+        "input_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/11-ecosystem-outlook.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/11-ecosystem-outlook.png",
+            "sha256": "df35693ef6e98759d9aaa0599b40b3a37c42ac654439438c8efcde3c9b4e6e48"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:15",
+        "input_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-01-experience.png",
+            "sha256": "95a2d8c980b4c09d66424c50aa8dedd254283db8c373459635a7c836e67f6eec"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:16",
+        "input_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-02-capability-map.png",
+            "sha256": "571b74f53b06c740543391e416483cab52a20317e02bbd373d99124b7784aae0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:17",
+        "input_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-03-future-scenario.png",
+            "sha256": "3e9a0050a8f70978ae70acc82194376b3599178766a1c6dc06fd3b86b89fbf21"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:18",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-01-experience.png",
+            "sha256": "4ab607e7ae0ba5b9c626f9847425a379a70aaec7f9d7829cce85c51007230d0f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:19",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-02-capability-map.png",
+            "sha256": "519d80aa7b27ce52306099d6d59342991049999282471f02b2d050f3cc7c419c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:20",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-03-future-scenario.png",
+            "sha256": "ed9981d86d2046fb3dc02ca5460fa9790e29a72ad2fc9822cd8ed4a2e58570ff"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:21",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/01-current-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/01-current-capability-map.png",
+            "sha256": "46ef4c0878c3028e328ddc7f5351681e38d146ad60fd15f784a9c7ece8e9fad2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:22",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/02-accepted-capabilities.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/02-accepted-capabilities.png",
+            "sha256": "96daee96eacc095d8e593ae3429268e95b5703db424df91ac23f1efb51ae146e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:23",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/03-limited-and-planned-capabilities.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/03-limited-and-planned-capabilities.png",
+            "sha256": "64811b478f13a399813f87ce1a161daf73b85593e6374f913b9561015c16090b"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:24",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/04-no-go-boundaries.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/04-no-go-boundaries.png",
+            "sha256": "d361b5fbc7151f03de01cba91a8f24f40ac2f6a99275e16f4438dfef69117796"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:25",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/05-target-architecture-seven-planes.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/05-target-architecture-seven-planes.png",
+            "sha256": "cd8309b7be8ca9e9035c7ecd755c7e6a972be870e5330874803f3ec8a2a7ddbf"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:26",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/06-user-flow-console.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/06-user-flow-console.png",
+            "sha256": "739ad32aa39158110db437dacb35c87a6a7c3fdaaeafb99b785ce07962d9df28"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:27",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/07-user-flow-proposal-confirmation.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/07-user-flow-proposal-confirmation.png",
+            "sha256": "dad6f1cb41f32cc4f26fd16889320d7c9f043c82a254c8e2852775c4092d399f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:28",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/08-user-flow-evidence-review.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/08-user-flow-evidence-review.png",
+            "sha256": "17c878a4d1461ba3213af8a89879cd3d5781b76b5adec700cf7788bda5f38c84"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:29",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/09-application-scenarios-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/09-application-scenarios-map.png",
+            "sha256": "b22470def0f5d3e40596cc6d85186ffad7edae51b965d0fae4bea5451b966a22"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:30",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/10-open-source-comparison.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/10-open-source-comparison.png",
+            "sha256": "8acae1b24f4c6b86411221e7744a1495bef2fbefa332d2278ee651d707dba967"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:31",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/11-future-roadmap-headless-v5.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/11-future-roadmap-headless-v5.png",
+            "sha256": "d84bdb23c665a3a07ff8602bb545bc4519eeaebf4748d6779a5a1f97e0af9eb5"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:32",
+        "input_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/12-executive-summary.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/12-executive-summary.png",
+            "sha256": "b7649dc9ef856e359c1bbeb7028bdb8c4ad5179c6cd5296ad871b20d3f2e4d0d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:33",
+        "input_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-01-experience.png",
+            "sha256": "a8ef1ff1d34986ac222b2abc24e9eaf75ecb91592976cbcf11cea4b241075196"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:34",
+        "input_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-02-capability-map.png",
+            "sha256": "367a77b92be92ef9327cc2099aaf67aeb716ef9856a6631c8c05b8568db3c6a9"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:35",
+        "input_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-03-future-scenario.png",
+            "sha256": "50a0a06e0f674c2487d84b22a22b3107009354673d9915c1437517af8d8029f2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:36",
+        "input_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-01-experience.png",
+            "sha256": "5e5d094fffa84d5d88fb33868e106190a38ef554c07085c727d35edd4c312edf"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:37",
+        "input_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-02-capability-map.png",
+            "sha256": "09bc35a432c010faf4a8b51926fe5e890a7de56b1a11bb009950f7c98e974297"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:38",
+        "input_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-03-future-scenario.png",
+            "sha256": "d56b6681ae9ab8e4514b1c96758cefd529a937f9e110093dddba2bd9307c7278"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:39",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-01-experience.png",
+            "sha256": "d06fdba4f14d615dc158688c9845782817f0000b784452ee07bb91e2c463f45f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:40",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-02-capability-map.png",
+            "sha256": "79eab951a364a33c6a376ea704a29fd8cc88d88524058ce81b77049aeefd0db0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:41",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-03-future-scenario.png",
+            "sha256": "3dfcfc1690ddc4bf4b3869611a76cc1d03d6165043b1813d8ff400d14bebf8eb"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:42",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/00-overview.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/00-overview.png",
+            "sha256": "0ec3f66a3e97b603efc7d56ca80a91130c18f12c861fbbb463a9feb6f36fec51"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:43",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/01-status-accepted.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/01-status-accepted.png",
+            "sha256": "37e2f4c69ccc9560b96f6f0dc9549e65e51e012f2d926b843f6223a93a7d2368"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:44",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/02-status-limited.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/02-status-limited.png",
+            "sha256": "6e71c3b8ff2fff044648b62674d98e0c5df29d8115e72ee18f3033c838d532cd"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:45",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/03-status-planned.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/03-status-planned.png",
+            "sha256": "c46bed6129e610de610e8c6a76a195184c76cbb87175b35a2f7f8661f8e26bc2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:46",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/04-status-nogo.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/04-status-nogo.png",
+            "sha256": "62ed39785043db19f25174f1cdbb61120c7e7c070e843be9d4fe27ab2ac938fc"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:47",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/05-target-map-first.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/05-target-map-first.png",
+            "sha256": "a8111a6d24e4598906c57adccde09bd723d21a6cc9236af8abd3e916eb215158"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:48",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/06-target-record-loop.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/06-target-record-loop.png",
+            "sha256": "a0d54cf748a620ca5396ed3d6b4bbe5b44031b8d9285276ec4dea8ff6fe3b62e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:49",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/07-target-recommendation-loop.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/07-target-recommendation-loop.png",
+            "sha256": "39d28a0cce56e34dfa667b1779daf415ada22c7a3c5a17dacd7dde613b6ae996"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:50",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/08-target-share-agent.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/08-target-share-agent.png",
+            "sha256": "d3bf4fd7cca3ad6211e931c4c72487ac308e8a4ffe03450e23216d523c66275c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:51",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/09-prospect-personal-travel.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/09-prospect-personal-travel.png",
+            "sha256": "d25898a8d426576cd56ecf5233cab524c3f91e9dc3f837f228e0ec8052613bbd"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:52",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/10-prospect-city-poi-quality.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/10-prospect-city-poi-quality.png",
+            "sha256": "2686c2e4d2b6b8f7541b200a80ffaa537b5f77bce130f395d6f90211b84c8fc0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:53",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/11-prospect-local-first-toolkit.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/11-prospect-local-first-toolkit.png",
+            "sha256": "e3ad83f24f4797f365b95b510fe4e69e97b27742d708fc2a827ef065c0d47022"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:54",
+        "input_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/12-prospect-open-source-roadmap.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/12-prospect-open-source-roadmap.png",
+            "sha256": "047161d6f2206363004e45a84b6a462e8a3000afbdab893348f12f57d3df1d01"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:55",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-01-experience.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-01-experience.png",
+            "sha256": "ac27b6e3fc10d01a50c420e429c0cbe319e7b55fefe2c95efb906ea25ef47987"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:56",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-02-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-02-capability-map.png",
+            "sha256": "93dd4943d09d46260e77d66000347da9b39f338e405bb72142da1b95e877d2fc"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:57",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-03-future-scenario.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-03-future-scenario.png",
+            "sha256": "2c9f21bb153ed10f525833c6bdcb3f9b809ade3ce2a5696aceb1e3cd87459b29"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:58",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/00-cover-navia-overview.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/00-cover-navia-overview.png",
+            "sha256": "6f6d6d1b7d46fe699cafe7340fbf3e1682cb1e8237ecbbb6f02ca0d3e329c237"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:59",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/01-current-status-matrix.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/01-current-status-matrix.png",
+            "sha256": "e201bc4adf9c1427052325d92cd1e5a49a633e928e31173169487f82b5592490"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:60",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/02-accepted-capabilities.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/02-accepted-capabilities.png",
+            "sha256": "5ed7a240f0b1d974e6a1c0ff057bdc590cbde132dbff17aa1d10580e80eac9fa"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:61",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/03-limited-completion.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/03-limited-completion.png",
+            "sha256": "6b0c98a18a979d4f0e42d92288438f8ba1719b38d9f4b21eafc8ce5fa39197b7"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:62",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/04-planned-roadmap.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/04-planned-roadmap.png",
+            "sha256": "0d13540ee9201ec0b5d93fb0ff720c106f9f0ff7c7e9ef00ea88dc39faf717fe"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:63",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/05-no-go-boundaries.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/05-no-go-boundaries.png",
+            "sha256": "7b9bfde52c44a01e2fbe22d967fe3e748cf47e6dac2052b21df29b56350901d4"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:64",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/06-target-user-journey.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/06-target-user-journey.png",
+            "sha256": "6d991950707a0c6911c4d101c38e9fd60c65e6b876d38f42da1e5a16fc38892c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:65",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/07-target-ui-states.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/07-target-ui-states.png",
+            "sha256": "543ddaec03fb40c5f93e30e5a15989a9af68f6a8fa1e133cae81ba6c0cc303cc"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:66",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/08-v12-module-architecture.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/08-v12-module-architecture.png",
+            "sha256": "4091ed47e80ec846d6bcab5e2ff6d58e51a2c1e280c71535afbb57cf3f1ac42f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:67",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/09-application-scenes.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/09-application-scenes.png",
+            "sha256": "f6541e99a1cfd0d9aaa841eb1a00ec0f4f50a869696ae0a31e42e3dba977953b"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:68",
+        "input_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/10-open-source-prospects.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/10-open-source-prospects.png",
+            "sha256": "35a91d3d30da922ae50293ed44e5f04c7d7d1a198afea6f22430663822d07b11"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:69",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/codexpat.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/codexpat.png",
+            "sha256": "1948199a118f274ce575be46c03a849d1663f8432d7bf9694db3c31df77c421f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:70",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/data-service.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/data-service.png",
+            "sha256": "0eafb721e15a162b4b9922e4086bcc30e6d397978712cf50b41458e84b00e213"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:71",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/foodmap.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/foodmap.png",
+            "sha256": "c34ae67bc5ebf3f2e4914f9f10d7a2ddbe790bd421864fc673dfeaff39dec8a7"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:72",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/harnessos.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/harnessos.png",
+            "sha256": "db3a46f9d3efb00702a6167d655266555acd925f6077f73f2959606c45e1ac2f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:73",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/meeting.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/meeting.png",
+            "sha256": "cac1806bad043cca5a54a69067faaf2feaeae4b4a427f9943d767a658de206fa"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:74",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/navia.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/navia.png",
+            "sha256": "7a0cd3acab931b86f149a4747008f947bf25aa69e610351f87debacc0689e8a1"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:75",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/research-notebook.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/research-notebook.png",
+            "sha256": "703490ab076e6f1c3718de7b4ec89dffabc028ca333ac779d3cbbf1f7884e3c0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:76",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/v10-16-runtime-desktop.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/v10-16-runtime-desktop.png",
+            "sha256": "70e95f0f084bc7abf9a79d61d51a76aa666a629dc0f4654bebf19c889269d8e9"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:77",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/v10-acceptance-showcase.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/v10-acceptance-showcase.png",
+            "sha256": "4687ae478853f566422f0deb47d5e72caffd3a5f70e1cd217c81fb4be89acf50"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:78",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/work-cat-contact-sheet.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/work-cat-contact-sheet.png",
+            "sha256": "755313a533238a5cccc4a08cc233341ea20a19ade7b81227890bca45920556fd"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:79",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/data-service/console-default.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/data-service/console-default.png",
+            "sha256": "3611fdff89e59e3c131ddc8b389e8952733079fedd80a4686c67f0bda9cabd91"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:80",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/data-service/console-graph.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/data-service/console-graph.png",
+            "sha256": "4b447bfa4242195648c6aad90fd9ba10d3ccd65c7ed1b2585fcbbc4860423dff"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:81",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/foodmap/live-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/foodmap/live-map.png",
+            "sha256": "c69eb35f59928a3bc978fe4bb27958abf2e993743c24c91fee66ae94ceb6c7e2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:82",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/governance-evidence.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/governance-evidence.png",
+            "sha256": "6760817d5418c1ad39a624f6dbc289a6e3421e39c346a8241d70a7f68d4581e7"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:83",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/running-board.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/running-board.png",
+            "sha256": "c420259f506687726e5538631245201b264493e5751608fc05ed91478d570388"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:84",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/workflow-studio-overview.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/workflow-studio-overview.png",
+            "sha256": "ffa70d2880e8b16e717c98ee4658773966f4d9cc4fd6ca559c2708187420598f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:85",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/meeting/architecture.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/meeting/architecture.png",
+            "sha256": "0f9bf0b062990ef1222cb8bb4b3add98fff4d616f3b1ee41661c0241b2c0bb69"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:86",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/floating-default.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/floating-default.png",
+            "sha256": "5443214d2301477a0f2563353c034441fab6d1adcedd702cfb118948a5f34f86"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:87",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/mobile-overlay.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/mobile-overlay.png",
+            "sha256": "8ab8b02ff4c238b691f20275086193147a61c5867b4e1cbb0eebad962d1da3cd"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:88",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/panel-440-push.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/panel-440-push.png",
+            "sha256": "4fe6304df283428c642e7c800d96d3d4e9421ccfb8324f9c4bec5ac9c8cafe1e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:89",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/research-notebook/live-workbench.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/research-notebook/live-workbench.png",
+            "sha256": "83dfb86e22623b62ca1344734f46abbe9e4347d7092b3a9e0497c7cd341eb0ed"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:90",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/agent-workflow.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/agent-workflow.png",
+            "sha256": "6c5569b3ba3b0b01017a26878948d6b4ab3c86080e4d1bd258400e9a7ce091c5"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:91",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/foodmap-journal.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/foodmap-journal.png",
+            "sha256": "1ad407666a6920dee75fd6b2612230238ec2faf2a23d0b6da1242a46144dfe42"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:92",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/research-notebook.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/research-notebook.png",
+            "sha256": "ebb249e481ab79facec93144ac2723cde5c78a4d0284810dbddbc971d9597bac"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:93",
+        "input_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/showcase-hero.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/showcase-hero.png",
+            "sha256": "42169be145b17a37a4ef6f582e7c9f4cea8e11744a12129d0d328dbf3e9e805b"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:94",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/00-cover.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/00-cover.png",
+            "sha256": "bd2f7e09ff4face739fb7e0f1705696d9512d25692844d7aca39e33dc36cf646"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:95",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/01-product-positioning.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/01-product-positioning.png",
+            "sha256": "9d1df836d9e018ec35347dced4ea1b14e25f85bbe04ea8659f7fa1dc101961da"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:96",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/02-current-accepted.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/02-current-accepted.png",
+            "sha256": "99ec1c3f3400871fc6e247ee235c95b2821a2f463899b3a8dce26f3c5a6ca38c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:97",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/03-current-limited.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/03-current-limited.png",
+            "sha256": "c3816ee3070a68d69b06c8a7c532ce730042ccd496f44e54589720b297740502"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:98",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/04-current-planned.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/04-current-planned.png",
+            "sha256": "db38fc5a05fd3d4ae58e1209a8cedb8432d254e44435edc3113d55607a1fbf6e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:99",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/05-current-no-go.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/05-current-no-go.png",
+            "sha256": "465cbf5ce9e0ab2854951b20aad62fbdb5d9bdfd10c296e3f8519fbb7438329d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:100",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/06-target-first-run.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/06-target-first-run.png",
+            "sha256": "62942f0421a7e0896a43d082e0862094151b4ffe0ae19e037a7ca71fe89af8ab"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:101",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/07-target-codex-flow.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/07-target-codex-flow.png",
+            "sha256": "ae97e294b58aa535e812393ef9e4fc829ab7628f3e85938613e85bf5b22c3229"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:102",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/08-target-interaction.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/08-target-interaction.png",
+            "sha256": "fffb9896c2f27bc2db494c25b8b4a9f5f41c6c79154214b129fcbadb06a103d2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:103",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/09-target-gallery.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/09-target-gallery.png",
+            "sha256": "f87eae75ca4e1680608aa49f3cf37b184dd98eb1ee219e0e4e546e7a68779a1f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:104",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/10-application-scenarios.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/10-application-scenarios.png",
+            "sha256": "6681e95c4a1caa66abb04369c1607485038386f07f5572e8c6627ee7c387b836"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:105",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/11-ecosystem-outlook.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/11-ecosystem-outlook.png",
+            "sha256": "df35693ef6e98759d9aaa0599b40b3a37c42ac654439438c8efcde3c9b4e6e48"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:106",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/00-overview.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/00-overview.png",
+            "sha256": "0ec3f66a3e97b603efc7d56ca80a91130c18f12c861fbbb463a9feb6f36fec51"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:107",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/01-status-accepted.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/01-status-accepted.png",
+            "sha256": "37e2f4c69ccc9560b96f6f0dc9549e65e51e012f2d926b843f6223a93a7d2368"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:108",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/02-status-limited.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/02-status-limited.png",
+            "sha256": "6e71c3b8ff2fff044648b62674d98e0c5df29d8115e72ee18f3033c838d532cd"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:109",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/03-status-planned.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/03-status-planned.png",
+            "sha256": "c46bed6129e610de610e8c6a76a195184c76cbb87175b35a2f7f8661f8e26bc2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:110",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/04-status-nogo.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/04-status-nogo.png",
+            "sha256": "62ed39785043db19f25174f1cdbb61120c7e7c070e843be9d4fe27ab2ac938fc"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:111",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/05-target-map-first.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/05-target-map-first.png",
+            "sha256": "a8111a6d24e4598906c57adccde09bd723d21a6cc9236af8abd3e916eb215158"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:112",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/06-target-record-loop.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/06-target-record-loop.png",
+            "sha256": "a0d54cf748a620ca5396ed3d6b4bbe5b44031b8d9285276ec4dea8ff6fe3b62e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:113",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/07-target-recommendation-loop.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/07-target-recommendation-loop.png",
+            "sha256": "39d28a0cce56e34dfa667b1779daf415ada22c7a3c5a17dacd7dde613b6ae996"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:114",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/08-target-share-agent.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/08-target-share-agent.png",
+            "sha256": "d3bf4fd7cca3ad6211e931c4c72487ac308e8a4ffe03450e23216d523c66275c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:115",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/09-prospect-personal-travel.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/09-prospect-personal-travel.png",
+            "sha256": "d25898a8d426576cd56ecf5233cab524c3f91e9dc3f837f228e0ec8052613bbd"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:116",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/10-prospect-city-poi-quality.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/10-prospect-city-poi-quality.png",
+            "sha256": "2686c2e4d2b6b8f7541b200a80ffaa537b5f77bce130f395d6f90211b84c8fc0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:117",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/11-prospect-local-first-toolkit.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/11-prospect-local-first-toolkit.png",
+            "sha256": "e3ad83f24f4797f365b95b510fe4e69e97b27742d708fc2a827ef065c0d47022"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:118",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/foodMap/12-prospect-open-source-roadmap.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/foodMap/12-prospect-open-source-roadmap.png",
+            "sha256": "047161d6f2206363004e45a84b6a462e8a3000afbdab893348f12f57d3df1d01"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:119",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/01-current-capability-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/01-current-capability-map.png",
+            "sha256": "46ef4c0878c3028e328ddc7f5351681e38d146ad60fd15f784a9c7ece8e9fad2"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:120",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/02-accepted-capabilities.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/02-accepted-capabilities.png",
+            "sha256": "96daee96eacc095d8e593ae3429268e95b5703db424df91ac23f1efb51ae146e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:121",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/03-limited-and-planned-capabilities.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/03-limited-and-planned-capabilities.png",
+            "sha256": "64811b478f13a399813f87ce1a161daf73b85593e6374f913b9561015c16090b"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:122",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/04-no-go-boundaries.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/04-no-go-boundaries.png",
+            "sha256": "d361b5fbc7151f03de01cba91a8f24f40ac2f6a99275e16f4438dfef69117796"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:123",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/05-target-architecture-seven-planes.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/05-target-architecture-seven-planes.png",
+            "sha256": "cd8309b7be8ca9e9035c7ecd755c7e6a972be870e5330874803f3ec8a2a7ddbf"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:124",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/06-user-flow-console.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/06-user-flow-console.png",
+            "sha256": "739ad32aa39158110db437dacb35c87a6a7c3fdaaeafb99b785ce07962d9df28"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:125",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/07-user-flow-proposal-confirmation.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/07-user-flow-proposal-confirmation.png",
+            "sha256": "dad6f1cb41f32cc4f26fd16889320d7c9f043c82a254c8e2852775c4092d399f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:126",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/08-user-flow-evidence-review.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/08-user-flow-evidence-review.png",
+            "sha256": "17c878a4d1461ba3213af8a89879cd3d5781b76b5adec700cf7788bda5f38c84"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:127",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/09-application-scenarios-map.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/09-application-scenarios-map.png",
+            "sha256": "b22470def0f5d3e40596cc6d85186ffad7edae51b965d0fae4bea5451b966a22"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:128",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/10-open-source-comparison.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/10-open-source-comparison.png",
+            "sha256": "8acae1b24f4c6b86411221e7744a1495bef2fbefa332d2278ee651d707dba967"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:129",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/11-future-roadmap-headless-v5.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/11-future-roadmap-headless-v5.png",
+            "sha256": "d84bdb23c665a3a07ff8602bb545bc4519eeaebf4748d6779a5a1f97e0af9eb5"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:130",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/12-executive-summary.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/12-executive-summary.png",
+            "sha256": "b7649dc9ef856e359c1bbeb7028bdb8c4ad5179c6cd5296ad871b20d3f2e4d0d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:131",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/00-cover-navia-overview.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/00-cover-navia-overview.png",
+            "sha256": "6f6d6d1b7d46fe699cafe7340fbf3e1682cb1e8237ecbbb6f02ca0d3e329c237"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:132",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/01-current-status-matrix.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/01-current-status-matrix.png",
+            "sha256": "e201bc4adf9c1427052325d92cd1e5a49a633e928e31173169487f82b5592490"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:133",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/02-accepted-capabilities.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/02-accepted-capabilities.png",
+            "sha256": "5ed7a240f0b1d974e6a1c0ff057bdc590cbde132dbff17aa1d10580e80eac9fa"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:134",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/03-limited-completion.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/03-limited-completion.png",
+            "sha256": "6b0c98a18a979d4f0e42d92288438f8ba1719b38d9f4b21eafc8ce5fa39197b7"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:135",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/04-planned-roadmap.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/04-planned-roadmap.png",
+            "sha256": "0d13540ee9201ec0b5d93fb0ff720c106f9f0ff7c7e9ef00ea88dc39faf717fe"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:136",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/05-no-go-boundaries.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/05-no-go-boundaries.png",
+            "sha256": "7b9bfde52c44a01e2fbe22d967fe3e748cf47e6dac2052b21df29b56350901d4"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:137",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/06-target-user-journey.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/06-target-user-journey.png",
+            "sha256": "6d991950707a0c6911c4d101c38e9fd60c65e6b876d38f42da1e5a16fc38892c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:138",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/07-target-ui-states.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/07-target-ui-states.png",
+            "sha256": "543ddaec03fb40c5f93e30e5a15989a9af68f6a8fa1e133cae81ba6c0cc303cc"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:139",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/08-v12-module-architecture.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/08-v12-module-architecture.png",
+            "sha256": "4091ed47e80ec846d6bcab5e2ff6d58e51a2c1e280c71535afbb57cf3f1ac42f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:140",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/09-application-scenes.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/09-application-scenes.png",
+            "sha256": "f6541e99a1cfd0d9aaa841eb1a00ec0f4f50a869696ae0a31e42e3dba977953b"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:0:.png:141",
+        "input_ref": "<workspace-root>/0-阶段展示/outside/navia/images/10-open-source-prospects.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/0-阶段展示/outside/navia/images/10-open-source-prospects.png",
+            "sha256": "35a91d3d30da922ae50293ed44e5f04c7d7d1a198afea6f22430663822d07b11"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:142",
+        "input_ref": "<workspace-root>/1-AI教案/dist/images/gpt-generation.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/dist/images/gpt-generation.png",
+            "sha256": "ddd419ffc6fae01875277cdbd92c3a6306549778f57cd49255ea6561265efb48"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:143",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/01_outline_9_topics.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/01_outline_9_topics.png",
+            "sha256": "fed982d6573ebed98efd714300b25d7884d878bb73b9ab0b5fb83dd7fd9f6578"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:144",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/02_t1_lesson_view.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/02_t1_lesson_view.png",
+            "sha256": "87c979966c8608f45401d9ed21a82b3c760f386da2e36e0990921c94f6bd681c"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:145",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/03_l01_25_nodes.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/03_l01_25_nodes.png",
+            "sha256": "ee8b28226285a3b0ccdbd69933339e55ae14ea8445b20772c4c67d4775c6a6e3"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:146",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/03_l01_concept_code_ref.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/03_l01_concept_code_ref.png",
+            "sha256": "55b1deea1e4ea5502c8ebbf2ab84ca319c58990c69a3ee5b5e3c950db6be5001"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:147",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/04_dark_mode.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/04_dark_mode.png",
+            "sha256": "abfd6de7704be3673678feed87949162a358ae77e489f643f7540a8c254c3b68"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:148",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/04_l01_dragged.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/04_l01_dragged.png",
+            "sha256": "7933fd38c23fb3d982c482f7ceed1317b53d1908ebb66d70af1c1aba44ed5516"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:149",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/05_force_layout_movement.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/05_force_layout_movement.png",
+            "sha256": "18438c17e034e1bfe583f6ec0ba06dd3510bec18dade34cef14f204860f73d58"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:150",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/05_token_counter_v1.1.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/05_token_counter_v1.1.png",
+            "sha256": "b1248f43db3f3efb435a9af5735f50ff0c488dca69e7ddf88a2342e7920d4193"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:151",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/06_kg_topic_filter.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/06_kg_topic_filter.png",
+            "sha256": "35c04666085190778f8b296fed41263b38410cf41adcfa51761bed8feac2a371"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:152",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/L13_broken_image.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/L13_broken_image.png",
+            "sha256": "fd248e73ae5be3428ffb60ebb14421c6102e0b5d1d681e74a4d2a56382d32db6"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:153",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/L25_model.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/L25_model.png",
+            "sha256": "340d14ba2f3de4308186ebb05f7e0ca6aaa46e3fb3ef8c486e20fc1d2504bd9d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:154",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/home.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/home.png",
+            "sha256": "f3d60263f011ad1eec4b8cc2942d345c5bdfcd2c7acfaba803db96c283c77d71"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:155",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/lesson_L25.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/lesson_L25.png",
+            "sha256": "8a25b9d55cb2047e16aa05e9c3eaa4d494f8cf7463e66212d3c1d494960eaa88"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:156",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/lesson_L25_image.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/lesson_L25_image.png",
+            "sha256": "2e268a80dcbdf6ab42b039725f9fe9b6cc0e9954e5dcd963cd34f30fc5761f03"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:157",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/lesson_L25_image_final.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/blank-fix/lesson_L25_image_final.png",
+            "sha256": "2e268a80dcbdf6ab42b039725f9fe9b6cc0e9954e5dcd963cd34f30fc5761f03"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:158",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/01-home.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/01-home.png",
+            "sha256": "f3d60263f011ad1eec4b8cc2942d345c5bdfcd2c7acfaba803db96c283c77d71"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:159",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/02-learning-track.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/02-learning-track.png",
+            "sha256": "a61dc3f09fa324adf506a941b6ed7207481975abac8f6455f1a5341c4cb94fe4"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:160",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/03-models-hub.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/03-models-hub.png",
+            "sha256": "3d608aab02431c5aa838c600eae323ed47500cf587aa44a314b8ea252f5bcaf8"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:161",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/04-models-radar.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/04-models-radar.png",
+            "sha256": "556c9bd6077f73ecea89cf3992df310747b6688b2632422be56b104cf003f076"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:162",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/05-L25-dashboard.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/05-L25-dashboard.png",
+            "sha256": "6c51bdd70bd161fd98215b3f14c202bb5ff53a2e102d4ae9a32bdf9ec3c7cf0a"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:163",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/06-L25-model-special.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/06-L25-model-special.png",
+            "sha256": "340d14ba2f3de4308186ebb05f7e0ca6aaa46e3fb3ef8c486e20fc1d2504bd9d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:164",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/07-L25-content.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/07-L25-content.png",
+            "sha256": "d34733db6c5ee6c297bc1a3bf3e021bc6905467aa27ab0dfe776176bd49b5516"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:165",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/08-L25-concept.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/08-L25-concept.png",
+            "sha256": "6c51bdd70bd161fd98215b3f14c202bb5ff53a2e102d4ae9a32bdf9ec3c7cf0a"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:166",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/09-L25-pre-quiz.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/09-L25-pre-quiz.png",
+            "sha256": "3e939af60565161e3d5e491caae2bac2d531390c3b4b5421ded0daea501f6df4"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:167",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/10-L25-post-quiz.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/10-L25-post-quiz.png",
+            "sha256": "7bebbd54a8372be3cf8549b2708b7fa3f11f72482565f44f28421599681282db"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:168",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/11-lesson-L25.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/11-lesson-L25.png",
+            "sha256": "2e268a80dcbdf6ab42b039725f9fe9b6cc0e9954e5dcd963cd34f30fc5761f03"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:169",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/12-lesson-L100.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/12-lesson-L100.png",
+            "sha256": "e4261734cc6ff718f2fac0af46edeff97d636b38bf33ab99f9ac3cdbf5d0f770"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:170",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/13-lesson-L13.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/13-lesson-L13.png",
+            "sha256": "9ab306e0c1b8b725466d65fe863433eebc04111102463c4a1ff8d6481523c6e8"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:171",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/14-tools-rag.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/14-tools-rag.png",
+            "sha256": "541be31f3c181827de0a70499fe73d0de66dbf5e2097b06c1bbd07f8dd1059b8"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:172",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/15-tools-token.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/15-tools-token.png",
+            "sha256": "d3da85a730e042cacbf3082a36e371bc465f59fdee24bdedcc920ec8e2b44eb7"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:173",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/16-chatbox.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/16-chatbox.png",
+            "sha256": "c1b35dc7f017c762911a9db3e1b7e9509a1abdaaa77b8748ce1d148dd71d791f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:174",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/17-assessment.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/17-assessment.png",
+            "sha256": "2b660e18ad39dcc5f7d4e8f9524e698ac3a3adf0ea227f6c269aec5ba36d0dfc"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:175",
+        "input_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/18-progress.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/audit/polish-4-final/screenshots/18-progress.png",
+            "sha256": "519cc63112a2ca4ae9820bdf3c3cec4111b3da26af6e43731b8b286ad9e7d79a"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:176",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/01-目标vs当前架构总览.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/01-目标vs当前架构总览.png",
+            "sha256": "f5bc999bee4b8037f52317385111f9cf31413abfd627e70146f7b6864f1ed52f"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:177",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/02-6层架构详细对比.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/02-6层架构详细对比.png",
+            "sha256": "05ffa8116851b733423980e901e6f632010396653fc3430afa6cc87a42b5960d"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:178",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/03-9工具v1.0路线.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/03-9工具v1.0路线.png",
+            "sha256": "ddae733e37e4805b5ad85c33fd77372aed7c6587e0eca0385ffced729346e050"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:179",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/04-W3-W8开发计划.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/04-W3-W8开发计划.png",
+            "sha256": "55d9cda6a38a5c9689de63c7f5c5089b3be398615336cd01ca8f98505218ccaa"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:180",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/05-W3-W8-Gantt.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/05-W3-W8-Gantt.png",
+            "sha256": "1a111b1f842a3004a3caac0506ee00f9d6e6e14b66f348bd850c8f2d6b650ee0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:181",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/06-9主题验收门槛.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/06-9主题验收门槛.png",
+            "sha256": "87cd5bee7c9730bb465b86a11a7f10e03e226723f580ae03bdb3900cf1837c64"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:182",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/07-9工具+SPA验收.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/07-9工具+SPA验收.png",
+            "sha256": "cc9aef20436656d0a5a780f2ff0230562e105efb3a343ac97410c383888106d4"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:183",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/08-用户体验+风险.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/08-用户体验+风险.png",
+            "sha256": "d505e62126a5332c9ba3c9dec5417bf3dafcfc177c2ab9aab0373074f6ca19f1"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:184",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/01_home.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/01_home.png",
+            "sha256": "702cf6a7949778bd6667b5fd7b428017e31cc34f9eb49871c0388eda94994daf"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:185",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/02_assessment.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/02_assessment.png",
+            "sha256": "2077ae8b030d8c60f93b2656cc95606b368e0349c4720416426f04d737366c2e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:186",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/03_learning_path.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/03_learning_path.png",
+            "sha256": "86f54d03643b906193d92411c3a3c3124d2ffd61635668fcca7c13882b44755a"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:187",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/04_outline.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/04_outline.png",
+            "sha256": "160da589128ef5f0fc3860814f87aa3fea1005099ceee1f22644625ea640b27e"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:188",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/05_lesson_l01.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/05_lesson_l01.png",
+            "sha256": "380309f7744357a2f5a0a05fe380c6a75b6c2a31b285ddcfbe65699a02035349"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:189",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/06_ai_tutor.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/06_ai_tutor.png",
+            "sha256": "99d147132eed6aaa718fcd6f39797084234a6b8be3aa1b9d85fcdda27dba56de"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:190",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/07_forgetting.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/07_forgetting.png",
+            "sha256": "64b721e15dc7096bb5b44e95facbb7e809377581e35db7e3911978b3480ff638"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:191",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/08_analytics.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/08_analytics.png",
+            "sha256": "1bcfc3cf9af8b70a4691dc2b322a63e5b7cf882ca685300f4138bae5e3ebadb0"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:192",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/09_achievements.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/09_achievements.png",
+            "sha256": "91b78fcac5fb3cb7764a7f88aaac1c287e23da6581af1f9f311d98633962346b"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:193",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11__chatbox.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11__chatbox.png",
+            "sha256": "704be62f811b7da4907e2a00d8ba1c22bf76a7d302c98229432bdf0377708787"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:194",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11__chatbox_after_click.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11__chatbox_after_click.png",
+            "sha256": "0ae428ba542260908cf95fae0b825796f50694601af60c9dfe895efaa9a99926"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:195",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11__outline.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11__outline.png",
+            "sha256": "b45099be2b4b02d856e9f68704e5e57bbbd25ef56d3822300bca80f43909fad6"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:196",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v10_mindmap.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v10_mindmap.png",
+            "sha256": "bb575119643007d9324b95eb400fb0220c48854239cac0c20b879fdbc60ed3a8"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:197",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v10_t2_active.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v10_t2_active.png",
+            "sha256": "6f65aca24063dda9eed17d34eb361d29e743d93637d5718b8950e1137c8eca38"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:198",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v2__chatbox.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v2__chatbox.png",
+            "sha256": "704be62f811b7da4907e2a00d8ba1c22bf76a7d302c98229432bdf0377708787"
+          }
+        ]
+      },
+      {
+        "stable_id": "manifest:media-exec:ocr-sample:1-ai:.png:199",
+        "input_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v2__outline.png",
+        "output_ref": "",
+        "format": "png",
+        "redaction_policy": "repo-relative or safe path ref only",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [
+          {
+            "type": "file_hash",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs/diagrams/p10_screenshots/p11v2__outline.png",
+            "sha256": "b45099be2b4b02d856e9f68704e5e57bbbd25ef56d3822300bca80f43909fad6"
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 200,
+      "structured_unavailable_count": 0,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

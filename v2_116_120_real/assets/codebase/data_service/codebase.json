@@ -1,0 +1,29 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_116_120_real",
+  "codebase_id": "data_service",
+  "name": "data_service",
+  "root_path": "/mnt/c/workspace/data_service",
+  "status": "active",
+  "created_at": "2026-07-16T08:20:56.126130Z",
+  "updated_at": "2026-07-16T08:20:56.126130Z",
+  "archived_at": null,
+  "archive_reason": "",
+  "metadata": {
+    "source": "workspace_portfolio"
+  },
+  "scan_policy": {
+    "respect_gitignore": true,
+    "include": [],
+    "exclude": [
+      ".git/**",
+      ".venv/**",
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "__pycache__/**"
+    ],
+    "max_file_size_mb": 2,
+    "binary_policy": "skip"
+  }
+}

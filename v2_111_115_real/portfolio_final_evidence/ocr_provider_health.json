@@ -1,0 +1,117 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.107",
+  "artifact_type": "ocr_provider_health",
+  "artifact_id": "ocr_provider_health",
+  "run_id": "v2106-v2_111_115_real-1675212805a5",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-13T13:42:02.837731Z",
+  "source_snapshot_id": "24d7007d0cfc5978207e8c00",
+  "workspace_fingerprint": "24d7007d0cfc5978207e8c00",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "1e417df7a35c123db783b665b85098138bef25410199e6a62b6846f8fdc182b5",
+      "source_candidate_matrix.json": "0bb4e5a99153829ddc162b597a780b782b751ddd349e5f7fb6e0e0356c1ce4d7",
+      "media_readiness.json": "d9059e9fcdf4b04dcdcc2659bc47d3b0baacf4d54a4b5df117d2af268661f7ef",
+      "project_build_runs.json": "de5ff4449dbd060987a64643e6d30efe5b97e136a76ae81020f9f14a306cc3f3",
+      "portfolio_index.json": "61e2588e939fcbf89527f7b3f1b85eb351032a92a9c33cdcbee13fa3ee741417",
+      "release_gate.json": "57ba5d7fe9531624311e3ebc4f3283f631703408d16d1ec86430b87583b965b2",
+      "false_green_audit.md": "8a4ab1eac2002525f38c2e6fbb981bd87875f0c0651c6df96eedf91986618b9c",
+      "portfolio_report.html": "dc9541c4cba8c69b6e2339e0461b765d8038c6f53967f12bfbd1f1eb490048f1"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "74f1689da7ad7431b059b39819971f69ef78e124989842dbac2058a8861bb29f",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "ocr_provider_health",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ocr_provider_health.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "provider:tesseract",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "tesseract is unavailable",
+      "next_action": "install provider or keep media OCR rows structured_unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "provider:pdftoppm",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "pdftoppm is unavailable",
+      "next_action": "install provider or keep media OCR rows structured_unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "provider:soffice",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "soffice is unavailable",
+      "next_action": "install provider or keep media OCR rows structured_unavailable",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "providers": [
+      {
+        "stable_id": "provider:tesseract",
+        "provider": "tesseract",
+        "capability": "image_ocr",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "path_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "provider:pdftoppm",
+        "provider": "pdftoppm",
+        "capability": "pdf_rasterize",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "path_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "provider:soffice",
+        "provider": "soffice",
+        "capability": "office_conversion",
+        "execution_status": "unavailable",
+        "acceptance_status": "structured_unavailable",
+        "path_ref": "",
+        "evidence_refs": []
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 0,
+      "structured_unavailable_count": 3,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

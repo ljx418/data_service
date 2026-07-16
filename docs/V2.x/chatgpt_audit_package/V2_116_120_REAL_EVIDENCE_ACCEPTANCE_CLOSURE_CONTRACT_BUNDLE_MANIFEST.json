@@ -1,0 +1,140 @@
+{
+  "schema_version": "v2.116-120",
+  "manifest_type": "contract_bundle_manifest",
+  "generated_at": "2026-07-16T00:00:00+08:00",
+  "bundle_status": "normative_for_implementation_guidance",
+  "audit_package_max_files": 20,
+  "status": {
+    "documentation_status": "pass_for_implementation_guidance",
+    "low_risk_scaffolding_readiness": "pass",
+    "guided_phase_implementation_readiness": "pass",
+    "safe_build_true_execution_readiness": "not_pass_until_sandbox_verified",
+    "autonomous_implementation_readiness": "not_pass",
+    "continuous_v2_116_120_auto_implementation": "not_approved",
+    "implementation_acceptance": "not_pass",
+    "portfolio_final_acceptance": "not_pass",
+    "major_document_gap": "closed_for_implementation_guidance"
+  },
+  "audit_questions": [
+    "文档是否已达到 pass_for_implementation_guidance，可进入受控阶段实现？",
+    "schema bundle、lineage-bound run、decision snapshot、测试 oracle 是否足以支撑下一阶段自动化开发与分阶段验收？",
+    "Safe Build 真执行继续阻断直到 sandbox verified 是否表达清楚？",
+    "是否仍存在需要继续打回文档阶段的大规模缺口？"
+  ],
+  "files": [
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PRD.md",
+      "sha256": "c3b0ce49457f5e0563915edfe6a78fd10758910d09dde34fe2e71156afa8c216",
+      "classification": "normative",
+      "authority_priority": 1
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_ARCHITECTURE.md",
+      "sha256": "1199a6ea0a4087e4344178927e0218ccaf6d2d1170bf5b87523b97b399d6bf92",
+      "classification": "normative",
+      "authority_priority": 2
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_SCHEMA_BUNDLE.json",
+      "sha256": "64177198d0861141c041c1a4e2fea499a388ba641739dd5d764810b11c943a9e",
+      "classification": "normative",
+      "authority_priority": 3
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_ARTIFACT_SCHEMA_AND_RUN_LINEAGE_SPEC.md",
+      "sha256": "4513ae035a01cb62f683d51ebbb74e7a159715020ab273b8544cf746e3dad805",
+      "classification": "normative",
+      "authority_priority": 4
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_STATUS_ALGEBRA_AND_DECISION_APPROVAL_SPEC.md",
+      "sha256": "34f46d742afa7dd8f127c04a3ff536e7d01dd5e8161cfc705bd3fd752603983b",
+      "classification": "normative",
+      "authority_priority": 5
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_SAFE_BUILD_SECURITY_AND_RUNTIME_SPEC.md",
+      "sha256": "b4a5e99f9fba9a7792f26977d787740c362afaafd8cd90fdce0ab123cdadb350",
+      "classification": "normative",
+      "authority_priority": 6
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PROTOTYPE_UX_AND_HEADLESS_ACCEPTANCE_SPEC.md",
+      "sha256": "3ccb398cde53278d3ccffabebbf2d4d36662c3ffff313b5b9b37ea25b184822b",
+      "classification": "normative",
+      "authority_priority": 7
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PUBLIC_SURFACE_REGISTRATION_AND_UPSTREAM_COMPATIBILITY_SPEC.md",
+      "sha256": "83dfa158d8b1fbb0a552d0a6a8fdcc5e882f3b73d51405d2f200d37ae61849c5",
+      "classification": "normative",
+      "authority_priority": 8
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md",
+      "sha256": "3f0bc34ba9aa82cbfd58e8bb1493b40402eacd244d1710b2a957632fcd9e6870",
+      "classification": "normative",
+      "authority_priority": 9
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md",
+      "sha256": "dee3d7609c7519cf8820dc33174caad5319e0bcb9fadd9e5f212b8084160a478",
+      "classification": "normative",
+      "authority_priority": 10
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md",
+      "sha256": "d82429f7466863589cd72fbb41dea51bf6c369942df2ebfaddb583b6916c7c4c",
+      "classification": "normative",
+      "authority_priority": 11
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_FULL_COVERAGE_MATRIX.md",
+      "sha256": "e90edb39a2cc2b0248c8693109d5e1300a0c3a9a913cbb9f52b9649af6c1cf8e",
+      "classification": "normative",
+      "authority_priority": 12
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_MILESTONES_AND_EXIT_GATES.md",
+      "sha256": "9a42fb901ec18f15a380674b0bc9428890e3b0330d9db917606391c939da276c",
+      "classification": "normative",
+      "authority_priority": 13
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TEST_AND_E2E_MAPPING.md",
+      "sha256": "ac15b82e56afb8965ad3ebbf12ea2ca6acea99326d981b4af59a86b5d4a0f92d",
+      "classification": "normative",
+      "authority_priority": 14
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_DETAILED_TEST_FIXTURES_AND_NEGATIVE_CASES.md",
+      "sha256": "6f19d2fb3d07c029bebff3b73e2da9e56ce9e13d7ed622e2014b88c7d71ecf6c",
+      "classification": "normative",
+      "authority_priority": 15
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_GAP_ANALYSIS.md",
+      "sha256": "182880beae5c5c6d625da777938911b9d960efe85d24cb3fb7840fa238810f5e",
+      "classification": "audit",
+      "authority_priority": 16
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_DOCUMENT_AUDIT_REPORT.md",
+      "sha256": "ecc27341b43823e7cfd5ecfb327c7fb50b044959ec49e55fef96086c5c76016c",
+      "classification": "audit",
+      "authority_priority": 17
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PRE_IMPLEMENTATION_AUDIT_REPORT.md",
+      "sha256": "eba5bbe863d3ec6de803d46e69015cf2124419af45f7ab45e87cfd8fa607e84a",
+      "classification": "audit",
+      "authority_priority": 18
+    },
+    {
+      "path": "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_STATE.drawio",
+      "sha256": "23ce254383e68578bc504e17af6bec2063e157449bf78733ef0e4fce21e7bb21",
+      "classification": "visual_contract",
+      "authority_priority": 19
+    }
+  ]
+}

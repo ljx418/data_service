@@ -2175,6 +2175,270 @@ V2 的产品目标不是“做一个代码 RAG”，而是：
 - 图片或扫描件在 OCR 不可用时已被理解。
 - `/knowledge` 截图可替代真实 build evidence；source trace 只在文档 ingest accepted 时作为必需证据。
 
+## 24.5 V2.101-V2.105 implementation closure update
+
+截至 V2.101-V2.105 验收完成后，状态更新为：
+
+- 可以声明 `implementation_status=accepted`。
+- 不可以声明 `portfolio_final_status=accepted`。
+- 真实 `/mnt/c/workspace` 扫描发现 18 个项目/目录，1 个代码项目在有界 build 中 accepted，17 个项目仍为 `needs_review`。
+- OCR/provider 缺失导致图片、扫描 PDF、图片型 PPT 仍为 `structured_unavailable`。
+- 文档 ingest/query/source trace 尚未覆盖全部 source candidates。
+- Headless screenshot evidence 因本地 Chromium 缺少 `libnspr4.so` 标记为 `structured_unavailable`。
+
+该状态不代表项目组合最终全绿。后续阶段必须继续保留 `needs_review`、`structured_unavailable` 和 `structured_blocker`，不得把这些状态计入 accepted。
+
+---
+
+# 25. V2.106-V2.110 下一阶段：Workspace Portfolio Final Evidence Closure
+
+## 25.1 背景
+
+V2.101-V2.105 已完成项目组合知识化的有界实现，但 release gate 正确拒绝了最终全绿。V2.106-V2.110 的目标不是扩大代码理解承诺，而是把未闭环证据转成可复跑、可审计、可明确阻断的 final evidence closure。
+
+下一阶段必须处理五类缺口：
+
+1. V2.101-V2.105 文档状态回填，避免 coverage matrix、目标架构和 drawio 与实现状态不一致。
+2. OCR/provider 和多媒体资料证据闭环。
+3. 多项目 full build governance，支持缓存、超时、失败隔离、增量复跑和未构建项目的 next action。
+4. 文档 ingest/query/source trace 全链路验收。
+5. Portfolio final release gate，聚合项目、媒体、文档、UI、public surface 和 false-green audit。
+
+## 25.2 阶段目标
+
+| 阶段 | 名称 | 目标体验 |
+| --- | --- | --- |
+| V2.106 | Coverage Matrix and Architecture State Closure | 维护者能看到哪些能力已实现、哪些仍非 accepted，drawio 与实现状态一致 |
+| V2.107 | OCR and Media Evidence Closure | 维护者能看到每个图片/扫描件/PPT 的 OCR/provider 状态、失败分类和补证路径 |
+| V2.108 | Full Workspace Project Build Governance | Agent 能对多个 workspace 项目执行可复跑、有界、可诊断的 build 调度 |
+| V2.109 | Document Ingest / Query / Source Trace Closure | 审计者能追踪每个 accepted 文档资料从 source import 到 query/source trace 的证据 |
+| V2.110 | Portfolio Final Release Gate | 系统能判断 portfolio 是否 final accepted；若不能，给出可审计阻断原因 |
+
+## 25.3 验收边界
+
+可以声明：
+
+- 文档已支撑 V2.106-V2.110 后续自动化开发。
+- 后续实现可以围绕真实 `/mnt/c/workspace` 执行 final evidence closure。
+- OCR、全量 build、source trace、UI screenshot 都有结构化通过或结构化阻断路径。
+
+不可以声明：
+
+- V2.106-V2.110 已实现。
+- OCR/provider 缺失时媒体内容已被理解。
+- 未构建项目已被 accepted。
+- UI 或 HTML report 可替代 build/source trace evidence。
+- `portfolio_final_status` 可以在高风险 blocker 存在时 accepted。
+
+## 25.4 文档基线
+
+阶段文档入口：
+
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_FULL_COVERAGE_MATRIX.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TEST_AND_E2E_MAPPING.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_MILESTONES_AND_EXIT_GATES.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_GAP_ANALYSIS.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PHASE_182_186_DETAILED_DEVELOPMENT_AND_ACCEPTANCE_PACKAGE.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_RISK_CLOSURE_AUDIT_REPORT.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_ARTIFACT_SCHEMA_AND_ID_CONTRACTS.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_STATUS_ALGEBRA_AND_FINAL_GATE_DECISION_TABLE.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_BUILD_EXECUTION_SECURITY_AND_RUNTIME_SPEC.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_RUN_LINEAGE_PERSISTENCE_AND_STALENESS_SPEC.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_REQUIREMENT_TEST_EVIDENCE_TRACEABILITY_MATRIX.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_BASELINE_EVIDENCE_PACKAGE.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PUBLIC_SURFACE_INTERFACE_CONTRACT.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PROTOTYPE_UX_SPEC.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_EXTERNAL_AUDIT_RESPONSE_AND_P0_CLOSURE_REPORT.md`
+- `docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio`
+
+## 25.5 外部审计修订结论
+
+外部审计指出：早期 “文档审查通过、95%+ 支撑、无 major finding” 的判断偏乐观。该意见已采纳。
+
+修订后状态：
+
+```text
+implementation_guidance_status=pass_after_P0_contract_closure
+autonomous_implementation_readiness=conditional_pass_for_phase_182_only
+continuous_phase_182_186_auto_implementation=not_approved_until_phase_182_acceptance
+prototype_prd_alignment=prototype_spec_pass_not_implementation_evidence
+architecture_status=detailed_contracts_pass_for_guidance
+implementation_acceptance=not_pass
+```
+
+V2.106-V2.110 进入实际开发前，必须先实例化 Phase 182 的 development plan、acceptance plan 和 pre-implementation audit，并验证 baseline evidence package。
+
+---
+
+# 26. V2.111-V2.115 下一阶段：Workspace Portfolio Final Acceptance Closure
+
+## 26.1 背景
+
+V2.106-V2.110 已实现 final evidence closure machinery，并通过 focused tests、public surface guard、前端构建、compileall、真实 `/mnt/c/workspace` 有界 E2E。当前真实 gate 结论是：
+
+```text
+implementation_status=accepted
+portfolio_final_status=structured_unavailable
+high_risk_unresolved_count=164
+```
+
+这表示闭环机器已实现，但 portfolio final release 仍未 accepted。V2.111-V2.115 的目标是把 remaining high-risk evidence gaps 转成真实执行证据或明确结构化阻断，直到 release gate 可以给出可信的 final accepted 或可信的 non-accepted 原因。
+
+本阶段仍不得声明：
+
+- 已完整恢复复杂项目设计意图。
+- 已具备 full call graph、runtime topology、data/control flow 或 type inference。
+- OCR 缺失的图片、扫描 PDF、图片型 PPT 已被理解。
+- 只有 PPT/PDF/DOCX 直接文本抽取结果时 OCR 已被验收。
+- 没有真实可 OCR 文本样本时 V2.111 或 final release 不可以 accepted。
+- 有界 build 等于全量项目 accepted。
+- UI 截图、HTML report、drawio 或 docs claim 可替代 source/build evidence。
+- `needs_review`、`structured_unavailable`、`structured_blocker` 不可计入 accepted。
+
+## 26.2 阶段目标
+
+| 阶段 | 名称 | 目标体验 |
+| --- | --- | --- |
+| V2.111 | OCR / Media Provider Real Execution Closure | 维护者能看到每个媒体资料是否具备真实 OCR 样本资格、是否完成真实 OCR/转换，失败时有 provider、命令、原因和补证动作 |
+| V2.112 | Document Ingest / Query / Source Trace Full Closure | 审计者能追踪 accepted 文档从 import 到 query 到 source trace 的完整证据链 |
+| V2.113 | Headless UI Evidence Capture Closure | 维护者能看到 `/knowledge` final evidence panel 的真实截图证据或结构化浏览器阻断 |
+| V2.114 | Safe Multi-project Build Runtime Governance | Agent 能安全、有界、可恢复地调度多个 workspace 项目，不运行未批准的危险命令 |
+| V2.115 | Final Portfolio Release Gate Rerun and Packaging | 系统重新聚合 V2.111-V2.114 证据，判断 portfolio 是否 final accepted，并输出可审计交付包 |
+
+## 26.3 验收边界
+
+可以声明：
+
+- V2.111-V2.115 文档进入 `pass for implementation guidance` 后，可开始阶段级 pre-implementation audit。
+- OCR、source trace、UI、multi-project build 都有真实执行或结构化阻断路径。
+- OCR accepted 必须具备真实可 OCR 样本资格和 OCR 输出证据；直接文本抽取只能作为 conversion/text extraction evidence。
+- final release gate 的 accepted 判定必须由真实 artifacts 和 false-green audit 支撑。
+
+不可以声明：
+
+- V2.111-V2.115 已实现。
+- `portfolio_final_status=accepted`，除非所有高风险行 accepted 或被批准 `out_of_scope`。
+- 缺 provider、缺 source trace、缺截图、缺 sandbox 时可以 accepted。
+
+## 26.4 文档基线
+
+阶段文档入口：
+
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_PRD.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_TARGET_ARCHITECTURE.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_IMPLEMENTATION_BLUEPRINT_AND_ACCEPTANCE_SPEC.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_FULL_COVERAGE_MATRIX.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_TEST_AND_E2E_MAPPING.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_MILESTONES_AND_EXIT_GATES.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_GAP_ANALYSIS.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_PRE_IMPLEMENTATION_AUDIT_REPORT.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_DOCUMENT_AUDIT_REPORT.md`
+- `docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_TARGET_STATE.drawio`
+
+## 26.5 架构设计取向
+
+采用 modular monolith extension，而不是拆成独立服务。原因：
+
+- 当前系统已有 workspace、source registry、MCP/HTTP/CLI、query/source trace 和 portfolio artifacts。
+- 证据闭环需要强一致读取同一 managed workspace 下的 artifacts。
+- 独立服务会增加部署、权限、artifact lineage 和回放复杂度，当前收益不足。
+
+新增实现必须优先落在独立包，不默认修改 legacy 大文件：
+
+```text
+backend/data_service/workspace_portfolio_final_acceptance/
+```
+
+计划实体包括：
+
+- Media Execution Provider。
+- Source Trace Closure Runner。
+- Headless UI Evidence Runner。
+- Safe Project Build Runtime。
+- Final Acceptance Rerun Gate。
+
+## 27. V2.116-V2.120 Real Evidence Acceptance Closure
+
+V2.111-V2.115 已完成最终验收闭环的实现面，但真实项目组合出门状态仍为：
+
+```text
+implementation_status=accepted
+portfolio_final_status=structured_unavailable
+high_risk_unresolved_count=140
+```
+
+V2.116-V2.120 的目标不是扩大项目理解承诺，而是把仍阻断 final accepted 的真实证据缺口拆成可复跑、可审计、可拒绝虚假通过的开发与验收链路。
+
+### 27.1 当前事实基线
+
+| 能力 | 当前状态 | 下一阶段目标 |
+| --- | --- | --- |
+| OCR/media | 已扫描真实候选文件并计算 hash，但无合格 OCR 文本锚点 | 建立 OCR anchor registry、provider execution 和样本资格验收 |
+| Source trace | 保留缺失 import/query/source_trace 的结构化不可用行 | 批量闭合 in-scope 文档 source chain，不把文件存在当 source trace |
+| UI evidence | HTML report 可生成，headless screenshot 未完成 | 生成无焦点抢占截图或结构化浏览器阻断 |
+| Safe build | build queue 已保留，未批准命令不执行 | 建立 allowlist、审批状态、执行结果和日志脱敏证据 |
+| Final gate | final status 可信保持 non-accepted | 聚合全部真实证据，只有高风险项 accepted 或 approved out_of_scope 后才 final accepted |
+
+### 27.2 阶段拆分
+
+| 阶段 | 名称 | 用户可体验结果 |
+| --- | --- | --- |
+| V2.116 | OCR Anchor and Provider Closure | 维护者看到每个 OCR 候选文件的来源、hash、文本锚点、provider 执行结果和补证动作 |
+| V2.117 | Source Trace Batch Closure | 审计者能按文档行查看 import artifact、query result、source trace refs 和缺失原因 |
+| V2.118 | Headless UI Visual Acceptance | 维护者能看到 `/knowledge` 或最终 HTML report 的真实截图证据；失败时看到浏览器依赖诊断 |
+| V2.119 | Safe Build Allowlist Governance | Agent 只能执行已批准命令，并看到 timeout、cache、stdout/stderr 截断、脱敏和 retry/resume 证据 |
+| V2.120 | Final Portfolio Acceptance Rerun | 系统重新聚合 OCR、source trace、UI、safe build 和 false-green audit，输出 final accepted 或可信 non-accepted |
+
+### 27.3 架构取向
+
+采用 modular monolith extension，目标实现优先落在独立包：
+
+```text
+backend/data_service/workspace_portfolio_real_evidence_acceptance/
+```
+
+计划实体包括：
+
+- OCR Anchor Registry。
+- OCR Provider Runner。
+- Source Trace Batch Runner。
+- Headless UI Capture Runner。
+- Safe Build Allowlist Runner。
+- Evidence Decision Registry。
+- Final Portfolio Acceptance Gate。
+
+默认不得修改：
+
+```text
+backend/app/api/v1/data_service.py
+backend/data_service/service.py
+```
+
+### 27.4 出门边界
+
+本阶段文档和后续实现均不得声明：
+
+- 完整恢复复杂项目设计意图。
+- full call graph、runtime topology、data/control flow 或 type inference。
+- OCR provider readiness 等价于 OCR accepted。
+- HTML report、drawio 或 docs claim 等价于 UI/source/build evidence。
+- 有界 build 等价于全量项目 accepted。
+- `needs_review`、`structured_unavailable`、`structured_blocker`、`failed` 可计入 accepted。
+
+Final accepted 的最低条件：
+
+1. OCR 高风险项 accepted 或有明确 approved out_of_scope。
+2. Source trace in-scope 行具备 import/query/source trace refs。
+3. UI evidence 对 portfolio final accepted 必须有 accepted screenshot manifest，或有明确 approved out_of_scope；结构化浏览器阻断只能支撑 implementation delivery accepted，不能支撑 portfolio final accepted。
+4. Safe build 只执行 allowlist 命令；未批准命令不执行。
+5. Final gate 绑定真实 artifact、focused tests、真实 E2E、PRD/spec review 和 false-green audit。
+
 ---
 
 # Codex Review Notes

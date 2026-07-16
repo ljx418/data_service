@@ -1,0 +1,55 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_111_115_real",
+  "codebase_id": "data_service",
+  "snapshot_id": "snap_dabdc98516df4dae4cb4",
+  "created_at": "2026-07-13T13:42:00.736708Z",
+  "surface_counts": {
+    "api_client_call": 2,
+    "cli_command": 63,
+    "frontend_page": 3,
+    "http_api": 410,
+    "mcp_tool": 336
+  },
+  "surface_count": 814,
+  "capability_count": 15,
+  "unresolved_count": 186,
+  "unresolved_ratio": 0.2285012285012285,
+  "golden_checks": {
+    "http": {
+      "passed": true,
+      "missing": []
+    },
+    "mcp": {
+      "passed": true,
+      "missing": []
+    },
+    "cli": {
+      "passed": true,
+      "missing": []
+    },
+    "capabilities": {
+      "passed": true,
+      "missing": []
+    }
+  },
+  "alignment_capability_count": 15,
+  "artifact_refs": [
+    {
+      "type": "inventory_surfaces",
+      "artifact_ref": "inventory-surfaces://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_capabilities",
+      "artifact_ref": "inventory-capabilities://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_alignment",
+      "artifact_ref": "inventory-alignment://data_service/snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "type": "inventory_summary",
+      "artifact_ref": "inventory-summary://data_service/snap_dabdc98516df4dae4cb4"
+    }
+  ]
+}

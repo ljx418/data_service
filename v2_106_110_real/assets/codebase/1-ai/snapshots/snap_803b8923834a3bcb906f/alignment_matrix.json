@@ -1,0 +1,28 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_106_110_real",
+  "codebase_id": "1-ai",
+  "snapshot_id": "snap_803b8923834a3bcb906f",
+  "created_at": "2026-07-10T04:59:21.569833Z",
+  "capabilities": {},
+  "surface_count": 0,
+  "capability_count": 0,
+  "artifact_refs": [
+    {
+      "type": "inventory_surfaces",
+      "artifact_ref": "inventory-surfaces://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_capabilities",
+      "artifact_ref": "inventory-capabilities://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_alignment",
+      "artifact_ref": "inventory-alignment://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_summary",
+      "artifact_ref": "inventory-summary://1-ai/snap_803b8923834a3bcb906f"
+    }
+  ]
+}

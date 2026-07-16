@@ -1,0 +1,93 @@
+# V2.106-V2.110 False-Green Recheck
+
+Final status: `structured_unavailable`
+Implementation status: `accepted`
+
+## Rejected False-Green Paths
+- documentation claim alone is not accepted evidence
+- scan-only discovery is not full source trace closure
+- bounded queue execution cannot imply full workspace accepted
+- missing UI screenshot/headless evidence remains structured_unavailable
+- missing OCR provider remains structured_unavailable
+
+## Unresolved
+- `needs_review` coverage:item: coverage row is not directly accepted by current evidence
+- `needs_review` coverage:item: coverage row is not directly accepted by current evidence
+- `needs_review` architecture:knowledge-final-evidence-panel: architecture entity is not fully accepted
+- `structured_unavailable` architecture:ocr-execution-provider: architecture entity is not fully accepted
+- `structured_unavailable` provider:tesseract: tesseract is unavailable
+- `structured_unavailable` provider:pdftoppm: pdftoppm is unavailable
+- `structured_unavailable` provider:soffice: soffice is unavailable
+- `needs_review` media:0:html: source trace/import evidence required
+- `needs_review` media:0:json: source trace/import evidence required
+- `needs_review` media:0:md: source trace/import evidence required
+- `structured_unavailable` media:0:png: OCR/provider evidence required
+- `structured_unavailable` media:1-ai:png: OCR/provider evidence required
+- `needs_review` media:2-chatcut:json: source trace/import evidence required
+- `needs_review` media:2-chatcut:md: source trace/import evidence required
+- `structured_unavailable` media:2-chatcut:png: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:gif: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:jpeg: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:jpg: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:png: OCR/provider evidence required
+- `structured_unavailable` media:financial-asset-manager:png: OCR/provider evidence required
+- `structured_unavailable` media:foodmap:jpeg: OCR/provider evidence required
+- `structured_unavailable` media:foodmap:png: OCR/provider evidence required
+- `structured_unavailable` media:harnessos:pdf: OCR/provider evidence required
+- `structured_unavailable` media:interview_service:png: OCR/provider evidence required
+- `structured_unavailable` media:meeting-voice-assistant:png: OCR/provider evidence required
+- `structured_unavailable` media:research-notebook:pdf: OCR/provider evidence required
+- `structured_unavailable` media:voice_service:png: OCR/provider evidence required
+- `structured_unavailable` media:xpert:png: OCR/provider evidence required
+- `needs_review` media:project:csv: source trace/import evidence required
+- `needs_review` media:project:html: source trace/import evidence required
+- `structured_unavailable` media:project:jpg: OCR/provider evidence required
+- `needs_review` media:project:md: source trace/import evidence required
+- `structured_unavailable` media:project:png: OCR/provider evidence required
+- `needs_review` media:project:txt: source trace/import evidence required
+- `needs_review` media:project:csv: source trace/import evidence required
+- `needs_review` media:project:html: source trace/import evidence required
+- `structured_unavailable` media:project:jpg: OCR/provider evidence required
+- `needs_review` media:project:json: source trace/import evidence required
+- `needs_review` media:project:md: source trace/import evidence required
+- `structured_unavailable` media:project:png: OCR/provider evidence required
+- `needs_review` media:project:txt: source trace/import evidence required
+- `needs_review` media:project:yaml: source trace/import evidence required
+- `needs_review` media:project:json: source trace/import evidence required
+- `needs_review` media:project:md: source trace/import evidence required
+- `needs_review` build:0: project is not accepted in full build governance queue
+- `structured_unavailable` build:1-ai: project is not accepted in full build governance queue
+- `needs_review` build:2-chatcut: project is not accepted in full build governance queue
+- `structured_unavailable` build:codexpat: project is not accepted in full build governance queue
+- `structured_unavailable` build:financial-asset-manager: project is not accepted in full build governance queue
+- `structured_unavailable` build:foodmap: project is not accepted in full build governance queue
+- `structured_unavailable` build:harnessos: project is not accepted in full build governance queue
+- `structured_unavailable` build:interview_service: project is not accepted in full build governance queue
+- `needs_review` build:meeting-voice-assistant: project is not accepted in full build governance queue
+- `structured_unavailable` build:navia: project is not accepted in full build governance queue
+- `structured_unavailable` build:research-notebook: project is not accepted in full build governance queue
+- `needs_review` build:scripts: project is not accepted in full build governance queue
+- `structured_unavailable` build:voice_service: project is not accepted in full build governance queue
+- `structured_unavailable` build:xpert: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` diagnosis:0: document/media folder requires explicit source import or media evidence
+- `structured_unavailable` diagnosis:1-ai: baseline build did not produce accepted evidence
+- `needs_review` diagnosis:2-chatcut: document/media folder requires explicit source import or media evidence
+- `structured_unavailable` diagnosis:codexpat: baseline build did not produce accepted evidence
+- `structured_unavailable` diagnosis:financial-asset-manager: baseline build did not produce accepted evidence
+- `structured_unavailable` diagnosis:foodmap: baseline build did not produce accepted evidence
+- `structured_unavailable` diagnosis:harnessos: baseline build did not produce accepted evidence
+- `structured_unavailable` diagnosis:interview_service: baseline build did not produce accepted evidence
+- `needs_review` diagnosis:meeting-voice-assistant: document/media folder requires explicit source import or media evidence
+- `structured_unavailable` diagnosis:navia: baseline build did not produce accepted evidence
+- `structured_unavailable` diagnosis:research-notebook: baseline build did not produce accepted evidence
+- `needs_review` diagnosis:scripts: document/media folder requires explicit source import or media evidence
+- `structured_unavailable` diagnosis:voice_service: baseline build did not produce accepted evidence
+- `structured_unavailable` diagnosis:xpert: baseline build did not produce accepted evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence

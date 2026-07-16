@@ -1,0 +1,83 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_106_110_real",
+  "phase": "V2.109",
+  "artifact_type": "ui_evidence_capture",
+  "artifact_id": "ui_evidence_capture",
+  "run_id": "v2106-v2_106_110_real-a75e876073ce",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-10T05:01:25.352580Z",
+  "source_snapshot_id": "434acc6eae57db4a87285409",
+  "workspace_fingerprint": "434acc6eae57db4a87285409",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "ceb6610ce42a497c4b3fe640335d5df237ea88da6c398f7553af5df5ee1bf7ff",
+      "source_candidate_matrix.json": "0f61819ca7a7c824c7e1aa8ae4fd326cc8d127a51a11df8aac26df1fc7af66c4",
+      "media_readiness.json": "c5d97afd415114d1e7c80c12ebb7d60d59d3ef065916f2d35d5b56b4344c6c27",
+      "project_build_runs.json": "a9b7a157d865e9c36fffff6343fe332df1835ea84e8b452047020d7fa3c3ff55",
+      "portfolio_index.json": "046fa05338a03900c66d523b6302bc1cae29111e6d46f3be6f1fc06aa36b0192",
+      "release_gate.json": "78b700752df296465a57416485d65e476dfa39c2806ca958462a73a1987c06ba",
+      "false_green_audit.md": "6b1e2a99c67950f143bc672f3fff630c9a193639c3e4eddd44503955f8fc8907",
+      "portfolio_report.html": "ebb0765e20cbef9aa40ef055971e769c17a4fd03390c54ba4979f12a533825cc"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "ef04ffe18b50dacfdd215009f2da527bd2601c44610e082e2b70b4ee39fe673c",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "ui_evidence_capture",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ui_evidence_capture.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "ui:knowledge-final-evidence-panel",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "headless browser capture is executed by phase audit/report task, not by build artifact generation",
+      "next_action": "run visual acceptance report and attach screenshots",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "ui:knowledge-final-evidence-panel",
+        "scenario": "open /knowledge portfolio final evidence panel",
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "screenshot_refs": [],
+        "reason": "headless browser capture is executed by phase audit/report task, not by build artifact generation",
+        "next_action": "run visual acceptance report and attach screenshots"
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 0,
+      "structured_unavailable_count": 1,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

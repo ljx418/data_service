@@ -1,0 +1,93 @@
+# V2.106-V2.110 False-Green Recheck
+
+Final status: `structured_unavailable`
+Implementation status: `accepted`
+
+## Rejected False-Green Paths
+- documentation claim alone is not accepted evidence
+- scan-only discovery is not full source trace closure
+- bounded queue execution cannot imply full workspace accepted
+- missing UI screenshot/headless evidence remains structured_unavailable
+- missing OCR provider remains structured_unavailable
+
+## Unresolved
+- `needs_review` coverage:item: coverage row is not directly accepted by current evidence
+- `needs_review` coverage:item: coverage row is not directly accepted by current evidence
+- `needs_review` architecture:knowledge-final-evidence-panel: architecture entity is not fully accepted
+- `structured_unavailable` architecture:ocr-execution-provider: architecture entity is not fully accepted
+- `structured_unavailable` provider:tesseract: tesseract is unavailable
+- `structured_unavailable` provider:pdftoppm: pdftoppm is unavailable
+- `structured_unavailable` provider:soffice: soffice is unavailable
+- `needs_review` media:0:html: source trace/import evidence required
+- `needs_review` media:0:json: source trace/import evidence required
+- `needs_review` media:0:md: source trace/import evidence required
+- `structured_unavailable` media:0:png: OCR/provider evidence required
+- `structured_unavailable` media:1-ai:png: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:gif: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:jpeg: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:jpg: OCR/provider evidence required
+- `structured_unavailable` media:codexpat:png: OCR/provider evidence required
+- `structured_unavailable` media:financial-asset-manager:png: OCR/provider evidence required
+- `structured_unavailable` media:foodmap:jpeg: OCR/provider evidence required
+- `structured_unavailable` media:foodmap:png: OCR/provider evidence required
+- `structured_unavailable` media:harnessos:pdf: OCR/provider evidence required
+- `structured_unavailable` media:interview_service:png: OCR/provider evidence required
+- `structured_unavailable` media:meeting-voice-assistant:png: OCR/provider evidence required
+- `structured_unavailable` media:research-notebook:pdf: OCR/provider evidence required
+- `structured_unavailable` media:voice_service:png: OCR/provider evidence required
+- `structured_unavailable` media:xpert:png: OCR/provider evidence required
+- `needs_review` media:project:csv: source trace/import evidence required
+- `needs_review` media:project:html: source trace/import evidence required
+- `structured_unavailable` media:project:jpg: OCR/provider evidence required
+- `needs_review` media:project:md: source trace/import evidence required
+- `structured_unavailable` media:project:png: OCR/provider evidence required
+- `needs_review` media:project:txt: source trace/import evidence required
+- `needs_review` media:project:csv: source trace/import evidence required
+- `needs_review` media:project:html: source trace/import evidence required
+- `structured_unavailable` media:project:jpg: OCR/provider evidence required
+- `needs_review` media:project:json: source trace/import evidence required
+- `needs_review` media:project:md: source trace/import evidence required
+- `structured_unavailable` media:project:png: OCR/provider evidence required
+- `needs_review` media:project:txt: source trace/import evidence required
+- `needs_review` media:project:yaml: source trace/import evidence required
+- `needs_review` media:project:json: source trace/import evidence required
+- `needs_review` media:project:md: source trace/import evidence required
+- `needs_review` build:0: project is not accepted in full build governance queue
+- `needs_review` build:1-ai: project is not accepted in full build governance queue
+- `needs_review` build:codexpat: project is not accepted in full build governance queue
+- `needs_review` build:data_service: project is not accepted in full build governance queue
+- `needs_review` build:financial-asset-manager: project is not accepted in full build governance queue
+- `needs_review` build:foodmap: project is not accepted in full build governance queue
+- `needs_review` build:harnessos: project is not accepted in full build governance queue
+- `needs_review` build:interview_service: project is not accepted in full build governance queue
+- `needs_review` build:meeting-voice-assistant: project is not accepted in full build governance queue
+- `needs_review` build:navia: project is not accepted in full build governance queue
+- `needs_review` build:research-notebook: project is not accepted in full build governance queue
+- `needs_review` build:scripts: project is not accepted in full build governance queue
+- `needs_review` build:voice_service: project is not accepted in full build governance queue
+- `needs_review` build:xpert: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` build:project: project is not accepted in full build governance queue
+- `needs_review` diagnosis:0: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:1-ai: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:codexpat: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:data_service: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:financial-asset-manager: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:foodmap: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:harnessos: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:interview_service: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:meeting-voice-assistant: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:navia: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:research-notebook: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:scripts: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:voice_service: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:xpert: bounded run limit preserved queue row without treating it as accepted
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` diagnosis:project: document/media folder requires explicit source import or media evidence
+- `needs_review` trace:0:html: source import/query/source-trace chain is incomplete
+- `needs_review` trace:0:json: source import/query/source-trace chain is incomplete
+- `needs_review` trace:0:md: source import/query/source-trace chain is incomplete

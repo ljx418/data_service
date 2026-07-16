@@ -1,0 +1,1854 @@
+{
+  "schema_version": "v2.116-120",
+  "workspace_id": "v2_116_120_real",
+  "run_id": "v2116-final_gate-v2_116_120_real-cf6fadb50a36",
+  "run_type": "final_gate",
+  "lineage_root_id": "d06a296052932bbdf4a954a7",
+  "parent_run_ids": [
+    "v2116-proposal-v2_116_120_real-1253a212d0f3",
+    "v2116-execution-v2_116_120_real-5a2ec7b0e3c2"
+  ],
+  "source_run_refs": [],
+  "artifact_id": "ocr_anchor_registry",
+  "artifact_type": "ocr_anchor_registry",
+  "phase": "V2.116",
+  "generated_at": "2026-07-16T10:47:28.972132Z",
+  "producer": {
+    "name": "workspace_portfolio_real_evidence_acceptance",
+    "version": "1"
+  },
+  "input_manifest_ref": "runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/input_manifest.json",
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "upstream_final_acceptance": {
+      "build_runtime_diagnosis.json": "3d8078c67e919f0fa1bd21f84a6e15d88ee2023b77f947b2f6946bfbf7abadb9",
+      "final_acceptance_gate.json": "c5134ea9fa66bef632a912a71a00fedc61753ec38af4fa554bdd56cc2a126744",
+      "media_artifact_manifest.json": "4a67016b0058c05f2131082276512f3d00ed17d0cf591dd2f9ffb9695f551a02",
+      "media_execution_results.json": "8ca3e3a58e85310bd523f6363ffa530d7e0575b81b2a6e53ae66a6ad3d7cc111",
+      "ocr_sample_qualification.json": "665b894bfb508d26b504af29903ca0c0ba892b3d46013bc0a5343bad5604733d",
+      "safe_build_execution.json": "c8dc4d218d9c077224e529297795a0d457fe578e9f7878b30bd9837f21985783",
+      "safe_build_queue.json": "f0f909b198f14f35c86994f843bd1f0d798440096b5eaa939aa89c8c12e7a1dd",
+      "source_trace_audit.json": "816ecd17c200056e7e3c6528ae008f25b8eab1e8b5d93beb5a6d3808aff1fab7",
+      "source_trace_execution.json": "1bf1cf18724bd177ba5169abaae3cff40c523d04529452d2bfd0f36d86ece28d",
+      "ui_evidence_capture.json": "fbe2d5b831247d058e177b394145899034deb860933ad91da6ac8d84fafd9bea",
+      "ui_screenshot_manifest.json": "29041844c8968de91653c3a1671533bbbbf05f1e876ee2e28a1df2b0f700477f"
+    },
+    "documents": {
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PRD.md": "c3b0ce49457f5e0563915edfe6a78fd10758910d09dde34fe2e71156afa8c216",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_ARCHITECTURE.md": "1199a6ea0a4087e4344178927e0218ccaf6d2d1170bf5b87523b97b399d6bf92",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_SCHEMA_BUNDLE.json": "64177198d0861141c041c1a4e2fea499a388ba641739dd5d764810b11c943a9e"
+    }
+  },
+  "artifact_refs": [
+    "portfolio_real_evidence_acceptance/runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/ocr_anchor_registry.json"
+  ],
+  "evidence_refs": [],
+  "artifact_status": "needs_review",
+  "warnings": [],
+  "unresolved": [
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-deep-images-deep-01-experience.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-deep-images-deep-02-capability-map.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-deep-images-deep-03-future-scenario.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-00-cover.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-01-product-positioning.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-02-current-accepted.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-03-current-limited.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-04-current-planned.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-05-current-no-go.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-06-target-first-run.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-07-target-codex-flow.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-08-target-interaction.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-09-target-gallery.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-10-application-scenarios.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-11-ecosystem-outlook.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--02-data-service-architecture-intelligence-deep-images-deep-01-experience.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--02-data-service-architecture-intelligence-deep-images-deep-02-capability-map.",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--02-data-service-architecture-intelligence-deep-images-deep-03-future-scenario",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-deep-images-deep-01-experience.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-deep-images-deep-02-capability-map.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-deep-images-deep-03-future-scenario.pn",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-01-current-capa",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-02-accepted-cap",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-03-limited-and-",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-04-no-go-bounda",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-05-target-archi",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-06-user-flow-co",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-07-user-flow-pr",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-08-user-flow-ev",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-09-application-",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-10-open-source-",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-11-future-roadm",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-12-executive-su",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--04-research-notebook-source-grounded-workbench-deep-images-deep-01-experience",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--04-research-notebook-source-grounded-workbench-deep-images-deep-02-capability",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--04-research-notebook-source-grounded-workbench-deep-images-deep-03-future-sce",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--05-meeting-voice-assistant-session-knowledge-deep-images-deep-01-experience.p",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--05-meeting-voice-assistant-session-knowledge-deep-images-deep-02-capability-m",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--05-meeting-voice-assistant-session-knowledge-deep-images-deep-03-future-scena",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-deep-images-deep-01-experience.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-deep-images-deep-02-capability-map.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-deep-images-deep-03-future-scenario.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-00-overview.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-01-status-accepted.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-02-status-limited.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-03-status-planned.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-04-status-nogo.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-05-target-map-first.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-06-target-record-loop.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-07-target-recommendation-lo",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-08-target-share-agent.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-09-prospect-personal-travel",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-10-prospect-city-poi-qualit",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-11-prospect-local-first-too",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--06-foodmap-local-food-journal-map-outside-gallery-12-prospect-open-source-roa",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-deep-images-deep-01-experience.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-deep-images-deep-02-capability-map.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-deep-images-deep-03-future-scenario.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-00-cover-navia-overview.",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-01-current-status-matrix",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-02-accepted-capabilities",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-03-limited-completion.pn",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-04-planned-roadmap.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-05-no-go-boundaries.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-06-target-user-journey.p",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-07-target-ui-states.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-08-v12-module-architectu",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-09-application-scenes.pn",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--07-navia-page-companion-agent-outside-gallery-images-10-open-source-prospects",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-codexpat.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-data-service.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-foodmap.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-harnessos.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-meeting.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-navia.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-generated-prd-visuals-research-notebook.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-codexpat-v10-16-runtime-desktop.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-codexpat-v10-acceptance-showcase.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-codexpat-work-cat-contact-sheet.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-data-service-console-default.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-data-service-console-graph.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-foodmap-live-map.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-harnessos-governance-evidence.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-harnessos-running-board.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-harnessos-workflow-studio-overview.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-meeting-architecture.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-navia-floating-default.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-navia-mobile-overlay.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-navia-panel-440-push.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-project-evidence-research-notebook-live-workbench.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-rich-visuals-agent-workflow.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-rich-visuals-foodmap-journal.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-rich-visuals-research-notebook.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--assets-rich-visuals-showcase-hero.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-00-cover.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-01-product-positioning.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-02-current-accepted.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-03-current-limited.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-04-current-planned.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-05-current-no-go.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-06-target-first-run.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-07-target-codex-flow.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-08-target-interaction.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-09-target-gallery.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-10-application-scenarios.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-agent-desktop-pet-11-ecosystem-outlook.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-00-overview.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-01-status-accepted.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-02-status-limited.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-03-status-planned.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-04-status-nogo.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-05-target-map-first.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-06-target-record-loop.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-07-target-recommendation-loop.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-08-target-share-agent.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-09-prospect-personal-travel.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-10-prospect-city-poi-quality.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-11-prospect-local-first-toolkit.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-foodmap-12-prospect-open-source-roadmap.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    },
+    {
+      "kind": "needs_review",
+      "item_id": "0--outside-harnessos-images-01-current-capability-map.png",
+      "reason": "ocr_anchor row is not accepted",
+      "next_action": "review ocr_anchor evidence",
+      "evidence_refs": []
+    }
+  ],
+  "data": {
+    "rows": [
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-deep-images-deep-01-experience.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-01-experience.png",
+        "sha256": "26bd0f07546e611d79a58a48d3d96f9ed753303e07629b8fdd14822b8244cc5e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-deep-images-deep-02-capability-map.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-02-capability-map.png",
+        "sha256": "6fe2a6e507165ef80964c9c0cc4024ed21c574af93305d815f6a413b060fabe0",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-deep-images-deep-03-future-scenario.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-03-future-scenario.png",
+        "sha256": "1b2ef7aad54689059a9cdf09c1c859f3f66e2b665858c42e0d26efc0a9f82810",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-00-cover.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/00-cover.png",
+        "sha256": "bd2f7e09ff4face739fb7e0f1705696d9512d25692844d7aca39e33dc36cf646",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-01-product-positioning.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/01-product-positioning.png",
+        "sha256": "9d1df836d9e018ec35347dced4ea1b14e25f85bbe04ea8659f7fa1dc101961da",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-02-current-accepted.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/02-current-accepted.png",
+        "sha256": "99ec1c3f3400871fc6e247ee235c95b2821a2f463899b3a8dce26f3c5a6ca38c",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-03-current-limited.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/03-current-limited.png",
+        "sha256": "c3816ee3070a68d69b06c8a7c532ce730042ccd496f44e54589720b297740502",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-04-current-planned.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/04-current-planned.png",
+        "sha256": "db38fc5a05fd3d4ae58e1209a8cedb8432d254e44435edc3113d55607a1fbf6e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-05-current-no-go.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/05-current-no-go.png",
+        "sha256": "465cbf5ce9e0ab2854951b20aad62fbdb5d9bdfd10c296e3f8519fbb7438329d",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-06-target-first-run.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/06-target-first-run.png",
+        "sha256": "62942f0421a7e0896a43d082e0862094151b4ffe0ae19e037a7ca71fe89af8ab",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-07-target-codex-flow.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/07-target-codex-flow.png",
+        "sha256": "ae97e294b58aa535e812393ef9e4fc829ab7628f3e85938613e85bf5b22c3229",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-08-target-interaction.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/08-target-interaction.png",
+        "sha256": "fffb9896c2f27bc2db494c25b8b4a9f5f41c6c79154214b129fcbadb06a103d2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-09-target-gallery.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/09-target-gallery.png",
+        "sha256": "f87eae75ca4e1680608aa49f3cf37b184dd98eb1ee219e0e4e546e7a68779a1f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-10-application-scenarios.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/10-application-scenarios.png",
+        "sha256": "6681e95c4a1caa66abb04369c1607485038386f07f5572e8c6627ee7c387b836",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-11-ecosystem-outlook.png",
+        "source_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/11-ecosystem-outlook.png",
+        "sha256": "df35693ef6e98759d9aaa0599b40b3a37c42ac654439438c8efcde3c9b4e6e48",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--02-data-service-architecture-intelligence-deep-images-deep-01-experience.png",
+        "source_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-01-experience.png",
+        "sha256": "95a2d8c980b4c09d66424c50aa8dedd254283db8c373459635a7c836e67f6eec",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--02-data-service-architecture-intelligence-deep-images-deep-02-capability-map.",
+        "source_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-02-capability-map.png",
+        "sha256": "571b74f53b06c740543391e416483cab52a20317e02bbd373d99124b7784aae0",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--02-data-service-architecture-intelligence-deep-images-deep-03-future-scenario",
+        "source_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-03-future-scenario.png",
+        "sha256": "3e9a0050a8f70978ae70acc82194376b3599178766a1c6dc06fd3b86b89fbf21",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-deep-images-deep-01-experience.png",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-01-experience.png",
+        "sha256": "4ab607e7ae0ba5b9c626f9847425a379a70aaec7f9d7829cce85c51007230d0f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-deep-images-deep-02-capability-map.png",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-02-capability-map.png",
+        "sha256": "519d80aa7b27ce52306099d6d59342991049999282471f02b2d050f3cc7c419c",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-deep-images-deep-03-future-scenario.pn",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-03-future-scenario.png",
+        "sha256": "ed9981d86d2046fb3dc02ca5460fa9790e29a72ad2fc9822cd8ed4a2e58570ff",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-01-current-capa",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/01-current-capability-map.png",
+        "sha256": "46ef4c0878c3028e328ddc7f5351681e38d146ad60fd15f784a9c7ece8e9fad2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-02-accepted-cap",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/02-accepted-capabilities.png",
+        "sha256": "96daee96eacc095d8e593ae3429268e95b5703db424df91ac23f1efb51ae146e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-03-limited-and-",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/03-limited-and-planned-capabilities.png",
+        "sha256": "64811b478f13a399813f87ce1a161daf73b85593e6374f913b9561015c16090b",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-04-no-go-bounda",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/04-no-go-boundaries.png",
+        "sha256": "d361b5fbc7151f03de01cba91a8f24f40ac2f6a99275e16f4438dfef69117796",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-05-target-archi",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/05-target-architecture-seven-planes.png",
+        "sha256": "cd8309b7be8ca9e9035c7ecd755c7e6a972be870e5330874803f3ec8a2a7ddbf",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-06-user-flow-co",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/06-user-flow-console.png",
+        "sha256": "739ad32aa39158110db437dacb35c87a6a7c3fdaaeafb99b785ce07962d9df28",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-07-user-flow-pr",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/07-user-flow-proposal-confirmation.png",
+        "sha256": "dad6f1cb41f32cc4f26fd16889320d7c9f043c82a254c8e2852775c4092d399f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-08-user-flow-ev",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/08-user-flow-evidence-review.png",
+        "sha256": "17c878a4d1461ba3213af8a89879cd3d5781b76b5adec700cf7788bda5f38c84",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-09-application-",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/09-application-scenarios-map.png",
+        "sha256": "b22470def0f5d3e40596cc6d85186ffad7edae51b965d0fae4bea5451b966a22",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-10-open-source-",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/10-open-source-comparison.png",
+        "sha256": "8acae1b24f4c6b86411221e7744a1495bef2fbefa332d2278ee651d707dba967",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-11-future-roadm",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/11-future-roadmap-headless-v5.png",
+        "sha256": "d84bdb23c665a3a07ff8602bb545bc4519eeaebf4748d6779a5a1f97e0af9eb5",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-images-12-executive-su",
+        "source_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/12-executive-summary.png",
+        "sha256": "b7649dc9ef856e359c1bbeb7028bdb8c4ad5179c6cd5296ad871b20d3f2e4d0d",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--04-research-notebook-source-grounded-workbench-deep-images-deep-01-experience",
+        "source_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-01-experience.png",
+        "sha256": "a8ef1ff1d34986ac222b2abc24e9eaf75ecb91592976cbcf11cea4b241075196",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--04-research-notebook-source-grounded-workbench-deep-images-deep-02-capability",
+        "source_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-02-capability-map.png",
+        "sha256": "367a77b92be92ef9327cc2099aaf67aeb716ef9856a6631c8c05b8568db3c6a9",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--04-research-notebook-source-grounded-workbench-deep-images-deep-03-future-sce",
+        "source_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-03-future-scenario.png",
+        "sha256": "50a0a06e0f674c2487d84b22a22b3107009354673d9915c1437517af8d8029f2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--05-meeting-voice-assistant-session-knowledge-deep-images-deep-01-experience.p",
+        "source_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-01-experience.png",
+        "sha256": "5e5d094fffa84d5d88fb33868e106190a38ef554c07085c727d35edd4c312edf",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--05-meeting-voice-assistant-session-knowledge-deep-images-deep-02-capability-m",
+        "source_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-02-capability-map.png",
+        "sha256": "09bc35a432c010faf4a8b51926fe5e890a7de56b1a11bb009950f7c98e974297",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--05-meeting-voice-assistant-session-knowledge-deep-images-deep-03-future-scena",
+        "source_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-03-future-scenario.png",
+        "sha256": "d56b6681ae9ab8e4514b1c96758cefd529a937f9e110093dddba2bd9307c7278",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-deep-images-deep-01-experience.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-01-experience.png",
+        "sha256": "d06fdba4f14d615dc158688c9845782817f0000b784452ee07bb91e2c463f45f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-deep-images-deep-02-capability-map.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-02-capability-map.png",
+        "sha256": "79eab951a364a33c6a376ea704a29fd8cc88d88524058ce81b77049aeefd0db0",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-deep-images-deep-03-future-scenario.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-03-future-scenario.png",
+        "sha256": "3dfcfc1690ddc4bf4b3869611a76cc1d03d6165043b1813d8ff400d14bebf8eb",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-00-overview.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/00-overview.png",
+        "sha256": "0ec3f66a3e97b603efc7d56ca80a91130c18f12c861fbbb463a9feb6f36fec51",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-01-status-accepted.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/01-status-accepted.png",
+        "sha256": "37e2f4c69ccc9560b96f6f0dc9549e65e51e012f2d926b843f6223a93a7d2368",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-02-status-limited.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/02-status-limited.png",
+        "sha256": "6e71c3b8ff2fff044648b62674d98e0c5df29d8115e72ee18f3033c838d532cd",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-03-status-planned.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/03-status-planned.png",
+        "sha256": "c46bed6129e610de610e8c6a76a195184c76cbb87175b35a2f7f8661f8e26bc2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-04-status-nogo.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/04-status-nogo.png",
+        "sha256": "62ed39785043db19f25174f1cdbb61120c7e7c070e843be9d4fe27ab2ac938fc",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-05-target-map-first.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/05-target-map-first.png",
+        "sha256": "a8111a6d24e4598906c57adccde09bd723d21a6cc9236af8abd3e916eb215158",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-06-target-record-loop.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/06-target-record-loop.png",
+        "sha256": "a0d54cf748a620ca5396ed3d6b4bbe5b44031b8d9285276ec4dea8ff6fe3b62e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-07-target-recommendation-lo",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/07-target-recommendation-loop.png",
+        "sha256": "39d28a0cce56e34dfa667b1779daf415ada22c7a3c5a17dacd7dde613b6ae996",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-08-target-share-agent.png",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/08-target-share-agent.png",
+        "sha256": "d3bf4fd7cca3ad6211e931c4c72487ac308e8a4ffe03450e23216d523c66275c",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-09-prospect-personal-travel",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/09-prospect-personal-travel.png",
+        "sha256": "d25898a8d426576cd56ecf5233cab524c3f91e9dc3f837f228e0ec8052613bbd",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-10-prospect-city-poi-qualit",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/10-prospect-city-poi-quality.png",
+        "sha256": "2686c2e4d2b6b8f7541b200a80ffaa537b5f77bce130f395d6f90211b84c8fc0",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-11-prospect-local-first-too",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/11-prospect-local-first-toolkit.png",
+        "sha256": "e3ad83f24f4797f365b95b510fe4e69e97b27742d708fc2a827ef065c0d47022",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--06-foodmap-local-food-journal-map-outside-gallery-12-prospect-open-source-roa",
+        "source_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/outside-gallery/12-prospect-open-source-roadmap.png",
+        "sha256": "047161d6f2206363004e45a84b6a462e8a3000afbdab893348f12f57d3df1d01",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-deep-images-deep-01-experience.png",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-01-experience.png",
+        "sha256": "ac27b6e3fc10d01a50c420e429c0cbe319e7b55fefe2c95efb906ea25ef47987",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-deep-images-deep-02-capability-map.png",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-02-capability-map.png",
+        "sha256": "93dd4943d09d46260e77d66000347da9b39f338e405bb72142da1b95e877d2fc",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-deep-images-deep-03-future-scenario.png",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/deep-images/deep-03-future-scenario.png",
+        "sha256": "2c9f21bb153ed10f525833c6bdcb3f9b809ade3ce2a5696aceb1e3cd87459b29",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-00-cover-navia-overview.",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/00-cover-navia-overview.png",
+        "sha256": "6f6d6d1b7d46fe699cafe7340fbf3e1682cb1e8237ecbbb6f02ca0d3e329c237",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-01-current-status-matrix",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/01-current-status-matrix.png",
+        "sha256": "e201bc4adf9c1427052325d92cd1e5a49a633e928e31173169487f82b5592490",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-02-accepted-capabilities",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/02-accepted-capabilities.png",
+        "sha256": "5ed7a240f0b1d974e6a1c0ff057bdc590cbde132dbff17aa1d10580e80eac9fa",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-03-limited-completion.pn",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/03-limited-completion.png",
+        "sha256": "6b0c98a18a979d4f0e42d92288438f8ba1719b38d9f4b21eafc8ce5fa39197b7",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-04-planned-roadmap.png",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/04-planned-roadmap.png",
+        "sha256": "0d13540ee9201ec0b5d93fb0ff720c106f9f0ff7c7e9ef00ea88dc39faf717fe",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-05-no-go-boundaries.png",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/05-no-go-boundaries.png",
+        "sha256": "7b9bfde52c44a01e2fbe22d967fe3e748cf47e6dac2052b21df29b56350901d4",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-06-target-user-journey.p",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/06-target-user-journey.png",
+        "sha256": "6d991950707a0c6911c4d101c38e9fd60c65e6b876d38f42da1e5a16fc38892c",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-07-target-ui-states.png",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/07-target-ui-states.png",
+        "sha256": "543ddaec03fb40c5f93e30e5a15989a9af68f6a8fa1e133cae81ba6c0cc303cc",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-08-v12-module-architectu",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/08-v12-module-architecture.png",
+        "sha256": "4091ed47e80ec846d6bcab5e2ff6d58e51a2c1e280c71535afbb57cf3f1ac42f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-09-application-scenes.pn",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/09-application-scenes.png",
+        "sha256": "f6541e99a1cfd0d9aaa841eb1a00ec0f4f50a869696ae0a31e42e3dba977953b",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--07-navia-page-companion-agent-outside-gallery-images-10-open-source-prospects",
+        "source_ref": "<workspace-root>/0-阶段展示/07-navia-page-companion-agent/outside-gallery/images/10-open-source-prospects.png",
+        "sha256": "35a91d3d30da922ae50293ed44e5f04c7d7d1a198afea6f22430663822d07b11",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-codexpat.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/codexpat.png",
+        "sha256": "1948199a118f274ce575be46c03a849d1663f8432d7bf9694db3c31df77c421f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-data-service.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/data-service.png",
+        "sha256": "0eafb721e15a162b4b9922e4086bcc30e6d397978712cf50b41458e84b00e213",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-foodmap.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/foodmap.png",
+        "sha256": "c34ae67bc5ebf3f2e4914f9f10d7a2ddbe790bd421864fc673dfeaff39dec8a7",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-harnessos.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/harnessos.png",
+        "sha256": "db3a46f9d3efb00702a6167d655266555acd925f6077f73f2959606c45e1ac2f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-meeting.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/meeting.png",
+        "sha256": "cac1806bad043cca5a54a69067faaf2feaeae4b4a427f9943d767a658de206fa",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-navia.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/navia.png",
+        "sha256": "7a0cd3acab931b86f149a4747008f947bf25aa69e610351f87debacc0689e8a1",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-generated-prd-visuals-research-notebook.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/generated-prd-visuals/research-notebook.png",
+        "sha256": "703490ab076e6f1c3718de7b4ec89dffabc028ca333ac779d3cbbf1f7884e3c0",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-codexpat-v10-16-runtime-desktop.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/v10-16-runtime-desktop.png",
+        "sha256": "70e95f0f084bc7abf9a79d61d51a76aa666a629dc0f4654bebf19c889269d8e9",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-codexpat-v10-acceptance-showcase.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/v10-acceptance-showcase.png",
+        "sha256": "4687ae478853f566422f0deb47d5e72caffd3a5f70e1cd217c81fb4be89acf50",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-codexpat-work-cat-contact-sheet.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/codexpat/work-cat-contact-sheet.png",
+        "sha256": "755313a533238a5cccc4a08cc233341ea20a19ade7b81227890bca45920556fd",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-data-service-console-default.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/data-service/console-default.png",
+        "sha256": "3611fdff89e59e3c131ddc8b389e8952733079fedd80a4686c67f0bda9cabd91",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-data-service-console-graph.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/data-service/console-graph.png",
+        "sha256": "4b447bfa4242195648c6aad90fd9ba10d3ccd65c7ed1b2585fcbbc4860423dff",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-foodmap-live-map.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/foodmap/live-map.png",
+        "sha256": "c69eb35f59928a3bc978fe4bb27958abf2e993743c24c91fee66ae94ceb6c7e2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-harnessos-governance-evidence.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/governance-evidence.png",
+        "sha256": "6760817d5418c1ad39a624f6dbc289a6e3421e39c346a8241d70a7f68d4581e7",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-harnessos-running-board.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/running-board.png",
+        "sha256": "c420259f506687726e5538631245201b264493e5751608fc05ed91478d570388",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-harnessos-workflow-studio-overview.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/harnessos/workflow-studio-overview.png",
+        "sha256": "ffa70d2880e8b16e717c98ee4658773966f4d9cc4fd6ca559c2708187420598f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-meeting-architecture.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/meeting/architecture.png",
+        "sha256": "0f9bf0b062990ef1222cb8bb4b3add98fff4d616f3b1ee41661c0241b2c0bb69",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-navia-floating-default.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/floating-default.png",
+        "sha256": "5443214d2301477a0f2563353c034441fab6d1adcedd702cfb118948a5f34f86",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-navia-mobile-overlay.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/mobile-overlay.png",
+        "sha256": "8ab8b02ff4c238b691f20275086193147a61c5867b4e1cbb0eebad962d1da3cd",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-navia-panel-440-push.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/navia/panel-440-push.png",
+        "sha256": "4fe6304df283428c642e7c800d96d3d4e9421ccfb8324f9c4bec5ac9c8cafe1e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-project-evidence-research-notebook-live-workbench.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/project-evidence/research-notebook/live-workbench.png",
+        "sha256": "83dfb86e22623b62ca1344734f46abbe9e4347d7092b3a9e0497c7cd341eb0ed",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-rich-visuals-agent-workflow.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/agent-workflow.png",
+        "sha256": "6c5569b3ba3b0b01017a26878948d6b4ab3c86080e4d1bd258400e9a7ce091c5",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-rich-visuals-foodmap-journal.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/foodmap-journal.png",
+        "sha256": "1ad407666a6920dee75fd6b2612230238ec2faf2a23d0b6da1242a46144dfe42",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-rich-visuals-research-notebook.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/research-notebook.png",
+        "sha256": "ebb249e481ab79facec93144ac2723cde5c78a4d0284810dbddbc971d9597bac",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--assets-rich-visuals-showcase-hero.png",
+        "source_ref": "<workspace-root>/0-阶段展示/assets/rich-visuals/showcase-hero.png",
+        "sha256": "42169be145b17a37a4ef6f582e7c9f4cea8e11744a12129d0d328dbf3e9e805b",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-00-cover.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/00-cover.png",
+        "sha256": "bd2f7e09ff4face739fb7e0f1705696d9512d25692844d7aca39e33dc36cf646",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-01-product-positioning.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/01-product-positioning.png",
+        "sha256": "9d1df836d9e018ec35347dced4ea1b14e25f85bbe04ea8659f7fa1dc101961da",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-02-current-accepted.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/02-current-accepted.png",
+        "sha256": "99ec1c3f3400871fc6e247ee235c95b2821a2f463899b3a8dce26f3c5a6ca38c",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-03-current-limited.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/03-current-limited.png",
+        "sha256": "c3816ee3070a68d69b06c8a7c532ce730042ccd496f44e54589720b297740502",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-04-current-planned.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/04-current-planned.png",
+        "sha256": "db38fc5a05fd3d4ae58e1209a8cedb8432d254e44435edc3113d55607a1fbf6e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-05-current-no-go.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/05-current-no-go.png",
+        "sha256": "465cbf5ce9e0ab2854951b20aad62fbdb5d9bdfd10c296e3f8519fbb7438329d",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-06-target-first-run.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/06-target-first-run.png",
+        "sha256": "62942f0421a7e0896a43d082e0862094151b4ffe0ae19e037a7ca71fe89af8ab",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-07-target-codex-flow.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/07-target-codex-flow.png",
+        "sha256": "ae97e294b58aa535e812393ef9e4fc829ab7628f3e85938613e85bf5b22c3229",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-08-target-interaction.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/08-target-interaction.png",
+        "sha256": "fffb9896c2f27bc2db494c25b8b4a9f5f41c6c79154214b129fcbadb06a103d2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-09-target-gallery.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/09-target-gallery.png",
+        "sha256": "f87eae75ca4e1680608aa49f3cf37b184dd98eb1ee219e0e4e546e7a68779a1f",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-10-application-scenarios.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/10-application-scenarios.png",
+        "sha256": "6681e95c4a1caa66abb04369c1607485038386f07f5572e8c6627ee7c387b836",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-agent-desktop-pet-11-ecosystem-outlook.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/agent-desktop-pet/11-ecosystem-outlook.png",
+        "sha256": "df35693ef6e98759d9aaa0599b40b3a37c42ac654439438c8efcde3c9b4e6e48",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-00-overview.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/00-overview.png",
+        "sha256": "0ec3f66a3e97b603efc7d56ca80a91130c18f12c861fbbb463a9feb6f36fec51",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-01-status-accepted.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/01-status-accepted.png",
+        "sha256": "37e2f4c69ccc9560b96f6f0dc9549e65e51e012f2d926b843f6223a93a7d2368",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-02-status-limited.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/02-status-limited.png",
+        "sha256": "6e71c3b8ff2fff044648b62674d98e0c5df29d8115e72ee18f3033c838d532cd",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-03-status-planned.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/03-status-planned.png",
+        "sha256": "c46bed6129e610de610e8c6a76a195184c76cbb87175b35a2f7f8661f8e26bc2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-04-status-nogo.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/04-status-nogo.png",
+        "sha256": "62ed39785043db19f25174f1cdbb61120c7e7c070e843be9d4fe27ab2ac938fc",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-05-target-map-first.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/05-target-map-first.png",
+        "sha256": "a8111a6d24e4598906c57adccde09bd723d21a6cc9236af8abd3e916eb215158",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-06-target-record-loop.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/06-target-record-loop.png",
+        "sha256": "a0d54cf748a620ca5396ed3d6b4bbe5b44031b8d9285276ec4dea8ff6fe3b62e",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-07-target-recommendation-loop.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/07-target-recommendation-loop.png",
+        "sha256": "39d28a0cce56e34dfa667b1779daf415ada22c7a3c5a17dacd7dde613b6ae996",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-08-target-share-agent.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/08-target-share-agent.png",
+        "sha256": "d3bf4fd7cca3ad6211e931c4c72487ac308e8a4ffe03450e23216d523c66275c",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-09-prospect-personal-travel.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/09-prospect-personal-travel.png",
+        "sha256": "d25898a8d426576cd56ecf5233cab524c3f91e9dc3f837f228e0ec8052613bbd",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-10-prospect-city-poi-quality.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/10-prospect-city-poi-quality.png",
+        "sha256": "2686c2e4d2b6b8f7541b200a80ffaa537b5f77bce130f395d6f90211b84c8fc0",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-11-prospect-local-first-toolkit.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/11-prospect-local-first-toolkit.png",
+        "sha256": "e3ad83f24f4797f365b95b510fe4e69e97b27742d708fc2a827ef065c0d47022",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-foodmap-12-prospect-open-source-roadmap.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/foodMap/12-prospect-open-source-roadmap.png",
+        "sha256": "047161d6f2206363004e45a84b6a462e8a3000afbdab893348f12f57d3df1d01",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      },
+      {
+        "media_id": "0--outside-harnessos-images-01-current-capability-map.png",
+        "source_ref": "<workspace-root>/0-阶段展示/outside/harnessOS/images/01-current-capability-map.png",
+        "sha256": "46ef4c0878c3028e328ddc7f5351681e38d146ad60fd15f784a9c7ece8e9fad2",
+        "ocr_anchor": "",
+        "anchor_text_hash": "",
+        "row_acceptance_status": "needs_review"
+      }
+    ]
+  }
+}

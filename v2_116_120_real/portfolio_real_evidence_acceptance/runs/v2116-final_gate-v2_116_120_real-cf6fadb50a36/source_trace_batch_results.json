@@ -1,0 +1,1133 @@
+{
+  "schema_version": "v2.116-120",
+  "workspace_id": "v2_116_120_real",
+  "run_id": "v2116-final_gate-v2_116_120_real-cf6fadb50a36",
+  "run_type": "final_gate",
+  "lineage_root_id": "d06a296052932bbdf4a954a7",
+  "parent_run_ids": [
+    "v2116-proposal-v2_116_120_real-1253a212d0f3",
+    "v2116-execution-v2_116_120_real-5a2ec7b0e3c2"
+  ],
+  "source_run_refs": [],
+  "artifact_id": "source_trace_batch_results",
+  "artifact_type": "source_trace_batch_results",
+  "phase": "V2.117",
+  "generated_at": "2026-07-16T10:47:37.369427Z",
+  "producer": {
+    "name": "workspace_portfolio_real_evidence_acceptance",
+    "version": "1"
+  },
+  "input_manifest_ref": "runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/input_manifest.json",
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "upstream_final_acceptance": {
+      "build_runtime_diagnosis.json": "3d8078c67e919f0fa1bd21f84a6e15d88ee2023b77f947b2f6946bfbf7abadb9",
+      "final_acceptance_gate.json": "c5134ea9fa66bef632a912a71a00fedc61753ec38af4fa554bdd56cc2a126744",
+      "media_artifact_manifest.json": "4a67016b0058c05f2131082276512f3d00ed17d0cf591dd2f9ffb9695f551a02",
+      "media_execution_results.json": "8ca3e3a58e85310bd523f6363ffa530d7e0575b81b2a6e53ae66a6ad3d7cc111",
+      "ocr_sample_qualification.json": "665b894bfb508d26b504af29903ca0c0ba892b3d46013bc0a5343bad5604733d",
+      "safe_build_execution.json": "c8dc4d218d9c077224e529297795a0d457fe578e9f7878b30bd9837f21985783",
+      "safe_build_queue.json": "f0f909b198f14f35c86994f843bd1f0d798440096b5eaa939aa89c8c12e7a1dd",
+      "source_trace_audit.json": "816ecd17c200056e7e3c6528ae008f25b8eab1e8b5d93beb5a6d3808aff1fab7",
+      "source_trace_execution.json": "1bf1cf18724bd177ba5169abaae3cff40c523d04529452d2bfd0f36d86ece28d",
+      "ui_evidence_capture.json": "fbe2d5b831247d058e177b394145899034deb860933ad91da6ac8d84fafd9bea",
+      "ui_screenshot_manifest.json": "29041844c8968de91653c3a1671533bbbbf05f1e876ee2e28a1df2b0f700477f"
+    },
+    "documents": {
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_PRD.md": "c3b0ce49457f5e0563915edfe6a78fd10758910d09dde34fe2e71156afa8c216",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_TARGET_ARCHITECTURE.md": "1199a6ea0a4087e4344178927e0218ccaf6d2d1170bf5b87523b97b399d6bf92",
+      "docs/V2.x/V2_116_120_REAL_EVIDENCE_ACCEPTANCE_CLOSURE_SCHEMA_BUNDLE.json": "64177198d0861141c041c1a4e2fea499a388ba641739dd5d764810b11c943a9e"
+    }
+  },
+  "artifact_refs": [
+    "portfolio_real_evidence_acceptance/runs/v2116-final_gate-v2_116_120_real-cf6fadb50a36/source_trace_batch_results.json"
+  ],
+  "evidence_refs": [],
+  "artifact_status": "accepted",
+  "warnings": [],
+  "unresolved": [],
+  "data": {
+    "rows": [
+      {
+        "document_id": "migration.md",
+        "import_ref": "import://migration.md",
+        "query_ref": "query://migration.md",
+        "source_trace_refs": [
+          "trace://migration.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "reload.md",
+        "import_ref": "import://reload.md",
+        "query_ref": "query://reload.md",
+        "source_trace_refs": [
+          "trace://reload.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--.html",
+        "import_ref": "import://0--.html",
+        "query_ref": "query://0--.html",
+        "source_trace_refs": [
+          "trace://0--.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--.html",
+        "import_ref": "import://0--.html",
+        "query_ref": "query://0--.html",
+        "source_trace_refs": [
+          "trace://0--.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--.md",
+        "import_ref": "import://0--.md",
+        "query_ref": "query://0--.md",
+        "source_trace_refs": [
+          "trace://0--.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-.html",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-.html",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-.html",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-content-manifest.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-00-cover.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning.",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-01-product-positioning."
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-02-current-accepted.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-03-current-limited.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-04-current-planned.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-05-current-no-go.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-06-target-first-run.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-07-target-codex-flow.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-08-target-interaction.m"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-09-target-gallery.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-10-application-scenario"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "import_ref": "import://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "query_ref": "query://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md",
+        "source_trace_refs": [
+          "trace://0--01-codexpat-agent-desktop-pet-outside-gallery-prompts-11-ecosystem-outlook.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--02-data-service-architecture-intelligence-.html",
+        "import_ref": "import://0--02-data-service-architecture-intelligence-.html",
+        "query_ref": "query://0--02-data-service-architecture-intelligence-.html",
+        "source_trace_refs": [
+          "trace://0--02-data-service-architecture-intelligence-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--02-data-service-architecture-intelligence-.md",
+        "import_ref": "import://0--02-data-service-architecture-intelligence-.md",
+        "query_ref": "query://0--02-data-service-architecture-intelligence-.md",
+        "source_trace_refs": [
+          "trace://0--02-data-service-architecture-intelligence-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-.html",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-.html",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-.html",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-.md",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-.md",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-.md",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-manifest.json"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-readme.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-01-current-cap"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-02-accepted-ca"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-03-limited-and"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-04-no-go-bound"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-05-target-arch"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-06-user-flow-c"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-07-user-flow-p"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-08-user-flow-e"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-09-application"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-10-open-source"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-11-future-road"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "import_ref": "import://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "query_ref": "query://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s",
+        "source_trace_refs": [
+          "trace://0--03-harnessos-controlled-agent-workflow-outside-gallery-prompts-12-executive-s"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--04-research-notebook-source-grounded-workbench-.html",
+        "import_ref": "import://0--04-research-notebook-source-grounded-workbench-.html",
+        "query_ref": "query://0--04-research-notebook-source-grounded-workbench-.html",
+        "source_trace_refs": [
+          "trace://0--04-research-notebook-source-grounded-workbench-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--04-research-notebook-source-grounded-workbench-.md",
+        "import_ref": "import://0--04-research-notebook-source-grounded-workbench-.md",
+        "query_ref": "query://0--04-research-notebook-source-grounded-workbench-.md",
+        "source_trace_refs": [
+          "trace://0--04-research-notebook-source-grounded-workbench-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--05-meeting-voice-assistant-session-knowledge-.html",
+        "import_ref": "import://0--05-meeting-voice-assistant-session-knowledge-.html",
+        "query_ref": "query://0--05-meeting-voice-assistant-session-knowledge-.html",
+        "source_trace_refs": [
+          "trace://0--05-meeting-voice-assistant-session-knowledge-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--05-meeting-voice-assistant-session-knowledge-.md",
+        "import_ref": "import://0--05-meeting-voice-assistant-session-knowledge-.md",
+        "query_ref": "query://0--05-meeting-voice-assistant-session-knowledge-.md",
+        "source_trace_refs": [
+          "trace://0--05-meeting-voice-assistant-session-knowledge-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-.html",
+        "import_ref": "import://0--06-foodmap-local-food-journal-map-.html",
+        "query_ref": "query://0--06-foodmap-local-food-journal-map-.html",
+        "source_trace_refs": [
+          "trace://0--06-foodmap-local-food-journal-map-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-.md",
+        "import_ref": "import://0--06-foodmap-local-food-journal-map-.md",
+        "query_ref": "query://0--06-foodmap-local-food-journal-map-.md",
+        "source_trace_refs": [
+          "trace://0--06-foodmap-local-food-journal-map-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "import_ref": "import://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "query_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md",
+        "source_trace_refs": [
+          "trace://0--06-foodmap-local-food-journal-map-outside-gallery-generation-status.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "import_ref": "import://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "query_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md",
+        "source_trace_refs": [
+          "trace://0--06-foodmap-local-food-journal-map-outside-gallery-prompts.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "import_ref": "import://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "query_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md",
+        "source_trace_refs": [
+          "trace://0--06-foodmap-local-food-journal-map-outside-gallery-qa-checklist.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "import_ref": "import://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "query_ref": "query://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md",
+        "source_trace_refs": [
+          "trace://0--06-foodmap-local-food-journal-map-outside-gallery-sources.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-.html",
+        "import_ref": "import://0--07-navia-page-companion-agent-.html",
+        "query_ref": "query://0--07-navia-page-companion-agent-.html",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-.md",
+        "import_ref": "import://0--07-navia-page-companion-agent-.md",
+        "query_ref": "query://0--07-navia-page-companion-agent-.md",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-navia-image-set-manifest.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-sources.json",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-sources.json"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-00-cover-navia-overview"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-01-current-status-matri"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-02-accepted-capabilitie"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-03-limited-completion.m"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-04-planned-roadmap.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-05-no-go-boundaries.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey.",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-06-target-user-journey."
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-07-target-ui-states.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-08-v12-module-architect"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-09-application-scenes.m"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "import_ref": "import://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "query_ref": "query://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect",
+        "source_trace_refs": [
+          "trace://0--07-navia-page-companion-agent-outside-gallery-prompts-10-open-source-prospect"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-codexpat.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-codexpat.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-codexpat.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-codexpat.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-data-service.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-data-service.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-data-service.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-data-service.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-foodmap.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-foodmap.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-foodmap.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-foodmap.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-harnessos.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-harnessos.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-harnessos.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-harnessos.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-meeting.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-meeting.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-meeting.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-meeting.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-navia.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-navia.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-navia.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-navia.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--assets-generated-prd-visuals-html-research-notebook.html",
+        "import_ref": "import://0--assets-generated-prd-visuals-html-research-notebook.html",
+        "query_ref": "query://0--assets-generated-prd-visuals-html-research-notebook.html",
+        "source_trace_refs": [
+          "trace://0--assets-generated-prd-visuals-html-research-notebook.html"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-deep-visuals-20260605"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-01-codexpat-agent-desktop-pet-prd-grounded-visuals-"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-deep-visu"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-02-data-service-architecture-intelligence-prd-groun"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-deep-visuals"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-03-harnessos-controlled-agent-workflow-prd-grounded"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-deep"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-04-research-notebook-source-grounded-workbench-prd-"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-deep-v"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-05-meeting-voice-assistant-session-knowledge-prd-gr"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-deep-visuals-2026"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-06-foodmap-local-food-journal-map-prd-grounded-visu"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-deep-visuals-20260605"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-07-navia-page-companion-agent-prd-grounded-visuals-"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "import_ref": "import://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "query_ref": "query://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md",
+        "source_trace_refs": [
+          "trace://0--garden-gpt-image-2-prompt-project-showcase-rich-visuals-20260605.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-content-manifest.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-content-manifest.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-content-manifest.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-content-manifest.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-00-cover.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-00-cover.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-01-product-positioning.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-01-product-positioning.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-02-current-accepted.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-02-current-accepted.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-03-current-limited.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-03-current-limited.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-04-current-planned.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-04-current-planned.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-05-current-no-go.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-05-current-no-go.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-06-target-first-run.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-06-target-first-run.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-07-target-codex-flow.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-08-target-interaction.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-08-target-interaction.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-09-target-gallery.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-09-target-gallery.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-10-application-scenarios.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "import_ref": "import://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "query_ref": "query://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md",
+        "source_trace_refs": [
+          "trace://0--outside-agent-desktop-pet-prompts-11-ecosystem-outlook.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-generation-status.md",
+        "import_ref": "import://0--outside-foodmap-generation-status.md",
+        "query_ref": "query://0--outside-foodmap-generation-status.md",
+        "source_trace_refs": [
+          "trace://0--outside-foodmap-generation-status.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-prompts.md",
+        "import_ref": "import://0--outside-foodmap-prompts.md",
+        "query_ref": "query://0--outside-foodmap-prompts.md",
+        "source_trace_refs": [
+          "trace://0--outside-foodmap-prompts.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-qa-checklist.md",
+        "import_ref": "import://0--outside-foodmap-qa-checklist.md",
+        "query_ref": "query://0--outside-foodmap-qa-checklist.md",
+        "source_trace_refs": [
+          "trace://0--outside-foodmap-qa-checklist.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-foodmap-sources.md",
+        "import_ref": "import://0--outside-foodmap-sources.md",
+        "query_ref": "query://0--outside-foodmap-sources.md",
+        "source_trace_refs": [
+          "trace://0--outside-foodmap-sources.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-manifest.json",
+        "import_ref": "import://0--outside-harnessos-manifest.json",
+        "query_ref": "query://0--outside-harnessos-manifest.json",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-manifest.json"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-readme.md",
+        "import_ref": "import://0--outside-harnessos-readme.md",
+        "query_ref": "query://0--outside-harnessos-readme.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-readme.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-01-current-capability-map.md",
+        "import_ref": "import://0--outside-harnessos-prompts-01-current-capability-map.md",
+        "query_ref": "query://0--outside-harnessos-prompts-01-current-capability-map.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-01-current-capability-map.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "import_ref": "import://0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "query_ref": "query://0--outside-harnessos-prompts-02-accepted-capabilities.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-02-accepted-capabilities.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "import_ref": "import://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "query_ref": "query://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-03-limited-and-planned-capabilities.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "import_ref": "import://0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "query_ref": "query://0--outside-harnessos-prompts-04-no-go-boundaries.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-04-no-go-boundaries.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "import_ref": "import://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "query_ref": "query://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-05-target-architecture-seven-planes.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-06-user-flow-console.md",
+        "import_ref": "import://0--outside-harnessos-prompts-06-user-flow-console.md",
+        "query_ref": "query://0--outside-harnessos-prompts-06-user-flow-console.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-06-user-flow-console.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "import_ref": "import://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "query_ref": "query://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-07-user-flow-proposal-confirmation.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "import_ref": "import://0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "query_ref": "query://0--outside-harnessos-prompts-08-user-flow-evidence-review.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-08-user-flow-evidence-review.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "import_ref": "import://0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "query_ref": "query://0--outside-harnessos-prompts-09-application-scenarios-map.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-09-application-scenarios-map.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "import_ref": "import://0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "query_ref": "query://0--outside-harnessos-prompts-10-open-source-comparison.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-10-open-source-comparison.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "import_ref": "import://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "query_ref": "query://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-11-future-roadmap-headless-v5.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-harnessos-prompts-12-executive-summary.md",
+        "import_ref": "import://0--outside-harnessos-prompts-12-executive-summary.md",
+        "query_ref": "query://0--outside-harnessos-prompts-12-executive-summary.md",
+        "source_trace_refs": [
+          "trace://0--outside-harnessos-prompts-12-executive-summary.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-navia-image-set-manifest.md",
+        "import_ref": "import://0--outside-navia-navia-image-set-manifest.md",
+        "query_ref": "query://0--outside-navia-navia-image-set-manifest.md",
+        "source_trace_refs": [
+          "trace://0--outside-navia-navia-image-set-manifest.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-sources.json",
+        "import_ref": "import://0--outside-navia-sources.json",
+        "query_ref": "query://0--outside-navia-sources.json",
+        "source_trace_refs": [
+          "trace://0--outside-navia-sources.json"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-prompts-00-cover-navia-overview.md",
+        "import_ref": "import://0--outside-navia-prompts-00-cover-navia-overview.md",
+        "query_ref": "query://0--outside-navia-prompts-00-cover-navia-overview.md",
+        "source_trace_refs": [
+          "trace://0--outside-navia-prompts-00-cover-navia-overview.md"
+        ],
+        "row_acceptance_status": "accepted"
+      },
+      {
+        "document_id": "0--outside-navia-prompts-01-current-status-matrix.md",
+        "import_ref": "import://0--outside-navia-prompts-01-current-status-matrix.md",
+        "query_ref": "query://0--outside-navia-prompts-01-current-status-matrix.md",
+        "source_trace_refs": [
+          "trace://0--outside-navia-prompts-01-current-status-matrix.md"
+        ],
+        "row_acceptance_status": "accepted"
+      }
+    ]
+  }
+}

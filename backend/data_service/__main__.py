@@ -9,6 +9,9 @@ from pathlib import Path
 
 from .cli_code import add_code_parser, run_code_command
 from .cli_portfolio import add_portfolio_parser, run_portfolio_command
+from .cli_portfolio_final_acceptance import add_portfolio_final_acceptance_parser, run_portfolio_final_acceptance_command
+from .cli_portfolio_final_evidence import add_portfolio_final_evidence_parser, run_portfolio_final_evidence_command
+from .cli_portfolio_real_evidence import add_portfolio_real_evidence_parser, run_portfolio_real_evidence_command
 from .models import GraphExecutionOwner, QueryMode
 from .distill_contract import run_distill_contract
 from .graph_community_contract import graph_community_payload
@@ -272,6 +275,9 @@ def _build_parser(*, prog: str = "data_service") -> argparse.ArgumentParser:
 
     add_code_parser(subparsers)
     add_portfolio_parser(subparsers)
+    add_portfolio_final_evidence_parser(subparsers)
+    add_portfolio_final_acceptance_parser(subparsers)
+    add_portfolio_real_evidence_parser(subparsers)
     _add_query_parser(subparsers)
     _add_quality_parser(subparsers)
 
@@ -291,6 +297,9 @@ def _build_knowledge_parser() -> argparse.ArgumentParser:
     _add_trace_lifecycle_parser(subparsers)
     add_code_parser(subparsers)
     add_portfolio_parser(subparsers)
+    add_portfolio_final_evidence_parser(subparsers)
+    add_portfolio_final_acceptance_parser(subparsers)
+    add_portfolio_real_evidence_parser(subparsers)
     _add_query_parser(subparsers)
     _add_quality_parser(subparsers)
     return parser
@@ -596,6 +605,12 @@ def _run_parsed_args(args: argparse.Namespace) -> int:
         return run_code_command(args)
     if args.command == "portfolio":
         return run_portfolio_command(args)
+    if args.command == "portfolio-final-evidence":
+        return run_portfolio_final_evidence_command(args)
+    if args.command == "portfolio-final-acceptance":
+        return run_portfolio_final_acceptance_command(args)
+    if args.command == "portfolio-real-evidence":
+        return run_portfolio_real_evidence_command(args)
 
     service = DataService(Path(args.workspace))
 

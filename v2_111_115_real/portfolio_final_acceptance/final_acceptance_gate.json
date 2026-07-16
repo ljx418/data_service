@@ -1,0 +1,1733 @@
+{
+  "ok": false,
+  "schema_version": "v2.111-115",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.115",
+  "artifact_type": "final_acceptance_gate",
+  "artifact_id": "final_acceptance_gate",
+  "run_id": "v2111-v2_111_115_real-f05b4ffce907",
+  "producer_name": "workspace_portfolio_final_acceptance",
+  "producer_version": "1",
+  "generated_at": "2026-07-13T13:43:33.561888Z",
+  "source_snapshot_id": "0234921d17b4fb98201e2a4b",
+  "workspace_fingerprint": "0234921d17b4fb98201e2a4b",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "final_release_gate.json": "7fdf4f87581f79485cfe692ebbe9acdffb3ea2336ef41f61ac048d5e70e4df36",
+      "media_evidence_matrix.json": "e7d533b9bc903bb5c6b0026188829cab77c72a5fd05f0353c7d61f3bc70a29c3",
+      "ocr_provider_health.json": "ec14d5bb854071eccddd13fb2f31857a89fe5cc11b64874c1584691d2bbd474d",
+      "document_source_trace_closure.json": "7e57007d603db2e8f47816c90ba7bdf8a2e87ac1a487579a10806299a483cadd",
+      "full_build_queue.json": "13b1554956b18c88adecaad049950bb9599d550d6c3d02245dd95db22890ab57",
+      "project_build_diagnosis.json": "277568713f297da738d6ae7702e37b3bc8f5ac8ef2e4447fbdcb6478bfd827b5",
+      "ui_evidence_capture.json": "2331f3f1a0227d885ecc185c2034c67a04c7ae5106e42b58443e82fc289ca71f"
+    },
+    "documents": {
+      "docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_PRD.md": "1f85595eae8644e02e0ae323192b7c1d9af73c61217eae575da08aa6afe92ff9",
+      "docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_TARGET_ARCHITECTURE.md": "3ec75bea36037fce933585abe4e02ffbf4e5241c9f6a73537790da4d8ccee15e",
+      "docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_DEVELOPMENT_AND_ACCEPTANCE_PLAN.md": "8c6fc9ee30edc92ce16496889a0839541a0d9bbefce227261b66df478a6c61d3",
+      "docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_PHASE_READINESS_AND_SCHEMA_CONTRACTS.md": "1f9e1d04412c1eae70db0bdcad20010e9e61391e7409ae0ff1a2fe6423613497",
+      "docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_TEST_AND_E2E_MAPPING.md": "2fa5392873c650a0349b518ce4bab48180e0356b365bebf6285319b88ef584f1",
+      "docs/V2.x/V2_111_115_WORKSPACE_PORTFOLIO_FINAL_ACCEPTANCE_TARGET_STATE.drawio": "7e66fb3a7ae690289971c22de82a2086168b601f0439ed3e3bf669dc7d141164"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/ocr_sample_qualification.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/media_execution_results.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/media_artifact_manifest.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/source_trace_execution.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/source_trace_audit.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/ui_evidence_capture.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/ui_screenshot_manifest.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/safe_build_queue.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/safe_build_execution.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/build_runtime_diagnosis.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/final_acceptance_gate.json"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/final_acceptance_false_green_audit.md"
+    },
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/final_acceptance_report.html"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "ocr-sample:0:.png:0",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-01-experience.png",
+          "sha256": "26bd0f07546e611d79a58a48d3d96f9ed753303e07629b8fdd14822b8244cc5e"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:1",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-02-capability-map.png",
+          "sha256": "6fe2a6e507165ef80964c9c0cc4024ed21c574af93305d815f6a413b060fabe0"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:2",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-03-future-scenario.png",
+          "sha256": "1b2ef7aad54689059a9cdf09c1c859f3f66e2b665858c42e0d26efc0a9f82810"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:3",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/00-cover.png",
+          "sha256": "bd2f7e09ff4face739fb7e0f1705696d9512d25692844d7aca39e33dc36cf646"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:4",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/01-product-positioning.png",
+          "sha256": "9d1df836d9e018ec35347dced4ea1b14e25f85bbe04ea8659f7fa1dc101961da"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:5",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/02-current-accepted.png",
+          "sha256": "99ec1c3f3400871fc6e247ee235c95b2821a2f463899b3a8dce26f3c5a6ca38c"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:6",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/03-current-limited.png",
+          "sha256": "c3816ee3070a68d69b06c8a7c532ce730042ccd496f44e54589720b297740502"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:7",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/04-current-planned.png",
+          "sha256": "db38fc5a05fd3d4ae58e1209a8cedb8432d254e44435edc3113d55607a1fbf6e"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:8",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/05-current-no-go.png",
+          "sha256": "465cbf5ce9e0ab2854951b20aad62fbdb5d9bdfd10c296e3f8519fbb7438329d"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:9",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/06-target-first-run.png",
+          "sha256": "62942f0421a7e0896a43d082e0862094151b4ffe0ae19e037a7ca71fe89af8ab"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:10",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/07-target-codex-flow.png",
+          "sha256": "ae97e294b58aa535e812393ef9e4fc829ab7628f3e85938613e85bf5b22c3229"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:11",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/08-target-interaction.png",
+          "sha256": "fffb9896c2f27bc2db494c25b8b4a9f5f41c6c79154214b129fcbadb06a103d2"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:12",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/09-target-gallery.png",
+          "sha256": "f87eae75ca4e1680608aa49f3cf37b184dd98eb1ee219e0e4e546e7a68779a1f"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:13",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/10-application-scenarios.png",
+          "sha256": "6681e95c4a1caa66abb04369c1607485038386f07f5572e8c6627ee7c387b836"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:14",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/11-ecosystem-outlook.png",
+          "sha256": "df35693ef6e98759d9aaa0599b40b3a37c42ac654439438c8efcde3c9b4e6e48"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:15",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-01-experience.png",
+          "sha256": "95a2d8c980b4c09d66424c50aa8dedd254283db8c373459635a7c836e67f6eec"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:16",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-02-capability-map.png",
+          "sha256": "571b74f53b06c740543391e416483cab52a20317e02bbd373d99124b7784aae0"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:17",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-03-future-scenario.png",
+          "sha256": "3e9a0050a8f70978ae70acc82194376b3599178766a1c6dc06fd3b86b89fbf21"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:18",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-01-experience.png",
+          "sha256": "4ab607e7ae0ba5b9c626f9847425a379a70aaec7f9d7829cce85c51007230d0f"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:19",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-02-capability-map.png",
+          "sha256": "519d80aa7b27ce52306099d6d59342991049999282471f02b2d050f3cc7c419c"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:20",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-03-future-scenario.png",
+          "sha256": "ed9981d86d2046fb3dc02ca5460fa9790e29a72ad2fc9822cd8ed4a2e58570ff"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:21",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/01-current-capability-map.png",
+          "sha256": "46ef4c0878c3028e328ddc7f5351681e38d146ad60fd15f784a9c7ece8e9fad2"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:22",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/02-accepted-capabilities.png",
+          "sha256": "96daee96eacc095d8e593ae3429268e95b5703db424df91ac23f1efb51ae146e"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:23",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/03-limited-and-planned-capabilities.png",
+          "sha256": "64811b478f13a399813f87ce1a161daf73b85593e6374f913b9561015c16090b"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:24",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/04-no-go-boundaries.png",
+          "sha256": "d361b5fbc7151f03de01cba91a8f24f40ac2f6a99275e16f4438dfef69117796"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:25",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/05-target-architecture-seven-planes.png",
+          "sha256": "cd8309b7be8ca9e9035c7ecd755c7e6a972be870e5330874803f3ec8a2a7ddbf"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:26",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/06-user-flow-console.png",
+          "sha256": "739ad32aa39158110db437dacb35c87a6a7c3fdaaeafb99b785ce07962d9df28"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:27",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/07-user-flow-proposal-confirmation.png",
+          "sha256": "dad6f1cb41f32cc4f26fd16889320d7c9f043c82a254c8e2852775c4092d399f"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:28",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/08-user-flow-evidence-review.png",
+          "sha256": "17c878a4d1461ba3213af8a89879cd3d5781b76b5adec700cf7788bda5f38c84"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:29",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/09-application-scenarios-map.png",
+          "sha256": "b22470def0f5d3e40596cc6d85186ffad7edae51b965d0fae4bea5451b966a22"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:30",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/10-open-source-comparison.png",
+          "sha256": "8acae1b24f4c6b86411221e7744a1495bef2fbefa332d2278ee651d707dba967"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:31",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/11-future-roadmap-headless-v5.png",
+          "sha256": "d84bdb23c665a3a07ff8602bb545bc4519eeaebf4748d6779a5a1f97e0af9eb5"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:32",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/12-executive-summary.png",
+          "sha256": "b7649dc9ef856e359c1bbeb7028bdb8c4ad5179c6cd5296ad871b20d3f2e4d0d"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:33",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-01-experience.png",
+          "sha256": "a8ef1ff1d34986ac222b2abc24e9eaf75ecb91592976cbcf11cea4b241075196"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:34",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-02-capability-map.png",
+          "sha256": "367a77b92be92ef9327cc2099aaf67aeb716ef9856a6631c8c05b8568db3c6a9"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:35",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-03-future-scenario.png",
+          "sha256": "50a0a06e0f674c2487d84b22a22b3107009354673d9915c1437517af8d8029f2"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:36",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-01-experience.png",
+          "sha256": "5e5d094fffa84d5d88fb33868e106190a38ef554c07085c727d35edd4c312edf"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:37",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-02-capability-map.png",
+          "sha256": "09bc35a432c010faf4a8b51926fe5e890a7de56b1a11bb009950f7c98e974297"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:38",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-03-future-scenario.png",
+          "sha256": "d56b6681ae9ab8e4514b1c96758cefd529a937f9e110093dddba2bd9307c7278"
+        }
+      ]
+    },
+    {
+      "id": "ocr-sample:0:.png:39",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "image candidate requires human text anchor before OCR accepted",
+      "next_action": "provide real OCR text anchor or mark out of scope",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-01-experience.png",
+          "sha256": "d06fdba4f14d615dc158688c9845782817f0000b784452ee07bb91e2c463f45f"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:0",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-01-experience.png",
+          "sha256": "26bd0f07546e611d79a58a48d3d96f9ed753303e07629b8fdd14822b8244cc5e"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:1",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-02-capability-map.png",
+          "sha256": "6fe2a6e507165ef80964c9c0cc4024ed21c574af93305d815f6a413b060fabe0"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:2",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/deep-images/deep-03-future-scenario.png",
+          "sha256": "1b2ef7aad54689059a9cdf09c1c859f3f66e2b665858c42e0d26efc0a9f82810"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:3",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/00-cover.png",
+          "sha256": "bd2f7e09ff4face739fb7e0f1705696d9512d25692844d7aca39e33dc36cf646"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:4",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/01-product-positioning.png",
+          "sha256": "9d1df836d9e018ec35347dced4ea1b14e25f85bbe04ea8659f7fa1dc101961da"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:5",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/02-current-accepted.png",
+          "sha256": "99ec1c3f3400871fc6e247ee235c95b2821a2f463899b3a8dce26f3c5a6ca38c"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:6",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/03-current-limited.png",
+          "sha256": "c3816ee3070a68d69b06c8a7c532ce730042ccd496f44e54589720b297740502"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:7",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/04-current-planned.png",
+          "sha256": "db38fc5a05fd3d4ae58e1209a8cedb8432d254e44435edc3113d55607a1fbf6e"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:8",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/05-current-no-go.png",
+          "sha256": "465cbf5ce9e0ab2854951b20aad62fbdb5d9bdfd10c296e3f8519fbb7438329d"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:9",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/06-target-first-run.png",
+          "sha256": "62942f0421a7e0896a43d082e0862094151b4ffe0ae19e037a7ca71fe89af8ab"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:10",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/07-target-codex-flow.png",
+          "sha256": "ae97e294b58aa535e812393ef9e4fc829ab7628f3e85938613e85bf5b22c3229"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:11",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/08-target-interaction.png",
+          "sha256": "fffb9896c2f27bc2db494c25b8b4a9f5f41c6c79154214b129fcbadb06a103d2"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:12",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/09-target-gallery.png",
+          "sha256": "f87eae75ca4e1680608aa49f3cf37b184dd98eb1ee219e0e4e546e7a68779a1f"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:13",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/10-application-scenarios.png",
+          "sha256": "6681e95c4a1caa66abb04369c1607485038386f07f5572e8c6627ee7c387b836"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:14",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/01-codexPat-agent-desktop-pet/outside-gallery/11-ecosystem-outlook.png",
+          "sha256": "df35693ef6e98759d9aaa0599b40b3a37c42ac654439438c8efcde3c9b4e6e48"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:15",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-01-experience.png",
+          "sha256": "95a2d8c980b4c09d66424c50aa8dedd254283db8c373459635a7c836e67f6eec"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:16",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-02-capability-map.png",
+          "sha256": "571b74f53b06c740543391e416483cab52a20317e02bbd373d99124b7784aae0"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:17",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/02-data-service-architecture-intelligence/deep-images/deep-03-future-scenario.png",
+          "sha256": "3e9a0050a8f70978ae70acc82194376b3599178766a1c6dc06fd3b86b89fbf21"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:18",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-01-experience.png",
+          "sha256": "4ab607e7ae0ba5b9c626f9847425a379a70aaec7f9d7829cce85c51007230d0f"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:19",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-02-capability-map.png",
+          "sha256": "519d80aa7b27ce52306099d6d59342991049999282471f02b2d050f3cc7c419c"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:20",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/deep-images/deep-03-future-scenario.png",
+          "sha256": "ed9981d86d2046fb3dc02ca5460fa9790e29a72ad2fc9822cd8ed4a2e58570ff"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:21",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/01-current-capability-map.png",
+          "sha256": "46ef4c0878c3028e328ddc7f5351681e38d146ad60fd15f784a9c7ece8e9fad2"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:22",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/02-accepted-capabilities.png",
+          "sha256": "96daee96eacc095d8e593ae3429268e95b5703db424df91ac23f1efb51ae146e"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:23",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/03-limited-and-planned-capabilities.png",
+          "sha256": "64811b478f13a399813f87ce1a161daf73b85593e6374f913b9561015c16090b"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:24",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/04-no-go-boundaries.png",
+          "sha256": "d361b5fbc7151f03de01cba91a8f24f40ac2f6a99275e16f4438dfef69117796"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:25",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/05-target-architecture-seven-planes.png",
+          "sha256": "cd8309b7be8ca9e9035c7ecd755c7e6a972be870e5330874803f3ec8a2a7ddbf"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:26",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/06-user-flow-console.png",
+          "sha256": "739ad32aa39158110db437dacb35c87a6a7c3fdaaeafb99b785ce07962d9df28"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:27",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/07-user-flow-proposal-confirmation.png",
+          "sha256": "dad6f1cb41f32cc4f26fd16889320d7c9f043c82a254c8e2852775c4092d399f"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:28",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/08-user-flow-evidence-review.png",
+          "sha256": "17c878a4d1461ba3213af8a89879cd3d5781b76b5adec700cf7788bda5f38c84"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:29",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/09-application-scenarios-map.png",
+          "sha256": "b22470def0f5d3e40596cc6d85186ffad7edae51b965d0fae4bea5451b966a22"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:30",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/10-open-source-comparison.png",
+          "sha256": "8acae1b24f4c6b86411221e7744a1495bef2fbefa332d2278ee651d707dba967"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:31",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/11-future-roadmap-headless-v5.png",
+          "sha256": "d84bdb23c665a3a07ff8602bb545bc4519eeaebf4748d6779a5a1f97e0af9eb5"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:32",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/03-harnessOS-controlled-agent-workflow/outside-gallery/images/12-executive-summary.png",
+          "sha256": "b7649dc9ef856e359c1bbeb7028bdb8c4ad5179c6cd5296ad871b20d3f2e4d0d"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:33",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-01-experience.png",
+          "sha256": "a8ef1ff1d34986ac222b2abc24e9eaf75ecb91592976cbcf11cea4b241075196"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:34",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-02-capability-map.png",
+          "sha256": "367a77b92be92ef9327cc2099aaf67aeb716ef9856a6631c8c05b8568db3c6a9"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:35",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/04-research-notebook-source-grounded-workbench/deep-images/deep-03-future-scenario.png",
+          "sha256": "50a0a06e0f674c2487d84b22a22b3107009354673d9915c1437517af8d8029f2"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:36",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-01-experience.png",
+          "sha256": "5e5d094fffa84d5d88fb33868e106190a38ef554c07085c727d35edd4c312edf"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:37",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-02-capability-map.png",
+          "sha256": "09bc35a432c010faf4a8b51926fe5e890a7de56b1a11bb009950f7c98e974297"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:38",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/05-meeting-voice-assistant-session-knowledge/deep-images/deep-03-future-scenario.png",
+          "sha256": "d56b6681ae9ab8e4514b1c96758cefd529a937f9e110093dddba2bd9307c7278"
+        }
+      ]
+    },
+    {
+      "id": "media-exec:ocr-sample:0:.png:39",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "OCR sample is not qualified",
+      "next_action": "install provider, qualify OCR sample, or keep non-accepted",
+      "evidence_refs": [
+        {
+          "type": "file_hash",
+          "artifact_ref": "<workspace-root>/0-阶段展示/06-foodMap-local-food-journal-map/deep-images/deep-01-experience.png",
+          "sha256": "d06fdba4f14d615dc158688c9845782817f0000b784452ee07bb91e2c463f45f"
+        }
+      ]
+    },
+    {
+      "id": "source-trace:trace-0-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-0-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-0-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-0-png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-1-ai-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-1-ai-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-1-ai-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-1-ai-png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-1-ai-txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-1-ai-yml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-2-chatcut-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-2-chatcut-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-2-chatcut-png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-gif",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-codexpat-yaml",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-data_service-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-data_service-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-data_service-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-financial-asset-manager-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-financial-asset-manager-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-financial-asset-manager-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-financial-asset-manager-png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-financial-asset-manager-txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-foodmap-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-foodmap-jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-foodmap-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-foodmap-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-foodmap-png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-foodmap-txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-harnessos-json",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-harnessos-md",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-harnessos-pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-harnessos-txt",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "source-trace:trace-interview_service-html",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "source import/query/source trace evidence is not available for this row",
+      "next_action": "run source import, query, and source trace closure",
+      "evidence_refs": []
+    },
+    {
+      "id": "ui:knowledge-final-acceptance-panel",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "headless browser capture requires a running service and browser automation; no focus-stealing browser was launched",
+      "next_action": "run visual acceptance with headless browser and attach screenshots",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:0",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:1-ai",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:2-chatcut",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:codexpat",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:data_service",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:financial-asset-manager",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:foodmap",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:harnessos",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:interview_service",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:meeting-voice-assistant",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:navia",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:research-notebook",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:scripts",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:voice_service",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:xpert",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:project",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:project",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:project",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    },
+    {
+      "id": "execution:build:project",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "unapproved project command was not executed",
+      "next_action": "approve safe command allowlist or keep project non-accepted",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [
+    "review final_acceptance_report.html",
+    "qualify real OCR samples or keep OCR non-accepted",
+    "capture headless UI screenshots",
+    "approve safe build command allowlist",
+    "rerun final acceptance gate"
+  ],
+  "data": {
+    "implementation_status": "accepted",
+    "portfolio_final_status": "structured_unavailable",
+    "phase_statuses": {
+      "ocr_sample_qualification": "needs_review",
+      "media_execution_results": "needs_review",
+      "media_artifact_manifest": "needs_review",
+      "source_trace_execution": "structured_unavailable",
+      "source_trace_audit": "structured_unavailable",
+      "ui_evidence_capture": "structured_unavailable",
+      "ui_screenshot_manifest": "structured_unavailable",
+      "safe_build_queue": "needs_review",
+      "safe_build_execution": "structured_unavailable",
+      "build_runtime_diagnosis": "structured_unavailable"
+    },
+    "high_risk_unresolved_count": 140,
+    "mixed_run_rejected": false,
+    "summary": {
+      "implementation_status": "accepted",
+      "portfolio_final_status": "structured_unavailable",
+      "high_risk_unresolved_count": 140,
+      "artifact_count": 10
+    },
+    "false_green_rejections": [
+      "OCR sample qualification cannot be replaced by provider readiness or direct text extraction",
+      "source file existence cannot replace source import/query/source trace",
+      "HTML report cannot replace UI screenshot evidence",
+      "bounded or unapproved build execution cannot imply full portfolio accepted",
+      "needs_review, structured_unavailable, structured_blocker, and failed are not accepted"
+    ]
+  }
+}

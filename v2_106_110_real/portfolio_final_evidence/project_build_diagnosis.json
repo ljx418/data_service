@@ -1,0 +1,453 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_106_110_real",
+  "phase": "V2.108",
+  "artifact_type": "project_build_diagnosis",
+  "artifact_id": "project_build_diagnosis",
+  "run_id": "v2106-v2_106_110_real-a75e876073ce",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-10T05:01:25.349270Z",
+  "source_snapshot_id": "434acc6eae57db4a87285409",
+  "workspace_fingerprint": "434acc6eae57db4a87285409",
+  "status": "needs_review",
+  "acceptance_status": "needs_review",
+  "input_artifact_refs": [
+    {
+      "type": "full_build_queue",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/full_build_queue.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "ceb6610ce42a497c4b3fe640335d5df237ea88da6c398f7553af5df5ee1bf7ff",
+      "source_candidate_matrix.json": "0f61819ca7a7c824c7e1aa8ae4fd326cc8d127a51a11df8aac26df1fc7af66c4",
+      "media_readiness.json": "c5d97afd415114d1e7c80c12ebb7d60d59d3ef065916f2d35d5b56b4344c6c27",
+      "project_build_runs.json": "a9b7a157d865e9c36fffff6343fe332df1835ea84e8b452047020d7fa3c3ff55",
+      "portfolio_index.json": "046fa05338a03900c66d523b6302bc1cae29111e6d46f3be6f1fc06aa36b0192",
+      "release_gate.json": "78b700752df296465a57416485d65e476dfa39c2806ca958462a73a1987c06ba",
+      "false_green_audit.md": "6b1e2a99c67950f143bc672f3fff630c9a193639c3e4eddd44503955f8fc8907",
+      "portfolio_report.html": "ebb0765e20cbef9aa40ef055971e769c17a4fd03390c54ba4979f12a533825cc"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "ef04ffe18b50dacfdd215009f2da527bd2601c44610e082e2b70b4ee39fe673c",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "project_build_diagnosis",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/project_build_diagnosis.json"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    }
+  ],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "diagnosis:0",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:1-ai",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:codexpat",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:data_service",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:financial-asset-manager",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:foodmap",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:harnessos",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:interview_service",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:meeting-voice-assistant",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:navia",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:research-notebook",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:scripts",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:voice_service",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:xpert",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "bounded run limit preserved queue row without treating it as accepted",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    },
+    {
+      "id": "diagnosis:project",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media folder requires explicit source import or media evidence",
+      "next_action": "review queue row and collect missing evidence",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "diagnosis:0",
+        "project_id": "0",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:1-ai",
+        "project_id": "1-ai",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:codexpat",
+        "project_id": "codexpat",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:data_service",
+        "project_id": "data_service",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:financial-asset-manager",
+        "project_id": "financial-asset-manager",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:foodmap",
+        "project_id": "foodmap",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:harnessos",
+        "project_id": "harnessos",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:interview_service",
+        "project_id": "interview_service",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:meeting-voice-assistant",
+        "project_id": "meeting-voice-assistant",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:navia",
+        "project_id": "navia",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:research-notebook",
+        "project_id": "research-notebook",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:scripts",
+        "project_id": "scripts",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:voice_service",
+        "project_id": "voice_service",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:xpert",
+        "project_id": "xpert",
+        "failure_category": "deferred_by_limit",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "bounded run limit preserved queue row without treating it as accepted",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:project",
+        "project_id": "project",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:project",
+        "project_id": "project",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:project",
+        "project_id": "project",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      },
+      {
+        "stable_id": "diagnosis:project",
+        "project_id": "project",
+        "failure_category": "non_code_source_intake_required",
+        "acceptance_status": "needs_review",
+        "execution_status": "skipped",
+        "reason": "document/media folder requires explicit source import or media evidence",
+        "next_action": "review queue row and collect missing evidence"
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 18,
+      "structured_unavailable_count": 0,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

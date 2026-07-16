@@ -1,0 +1,87 @@
+{
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_106_110_real",
+  "project_id": "1-ai",
+  "display_name": "1-AI教案",
+  "codebase_id": "1-ai",
+  "snapshot_id": "snap_803b8923834a3bcb906f",
+  "generated_at": "2026-07-10T04:58:07.759026Z",
+  "status": "accepted",
+  "summary": {
+    "surface_count": 0,
+    "capability_count": 0,
+    "symbol_count": 209,
+    "import_count": 201,
+    "python_file_count": 100,
+    "syntax_error_count": 4,
+    "warnings": [
+      {
+        "path": "build_l113_l114.py",
+        "code": "SYNTAX_ERROR",
+        "message": "'[' was never closed (<unknown>, line 39)",
+        "line": 39
+      },
+      {
+        "path": "scripts/gen_w6a_t7.py",
+        "code": "SYNTAX_ERROR",
+        "message": "unterminated string literal (detected at line 89) (<unknown>, line 89)",
+        "line": 89
+      },
+      {
+        "path": "scripts/write_w7_gap_recovery.py",
+        "code": "SYNTAX_ERROR",
+        "message": "unmatched ')' (<unknown>, line 107)",
+        "line": 107
+      },
+      {
+        "path": "scripts/write_w8_gap_recovery.py",
+        "code": "SYNTAX_ERROR",
+        "message": "unmatched ')' (<unknown>, line 109)",
+        "line": 109
+      }
+    ]
+  },
+  "boundaries": [
+    "portfolio brief is derived from snapshot, inventory, and symbols artifacts",
+    "portfolio brief does not claim full call graph, runtime topology, data/control flow, or type inference",
+    "documentation claims remain evidence refs, not code facts"
+  ],
+  "artifact_refs": [
+    {
+      "type": "codebase",
+      "artifact_ref": "codebase://1-ai"
+    },
+    {
+      "type": "snapshot",
+      "artifact_ref": "snapshot://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_surfaces",
+      "artifact_ref": "inventory-surfaces://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_capabilities",
+      "artifact_ref": "inventory-capabilities://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_alignment",
+      "artifact_ref": "inventory-alignment://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_summary",
+      "artifact_ref": "inventory-summary://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "symbols",
+      "artifact_ref": "symbols://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "imports",
+      "artifact_ref": "imports://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "symbol_summary",
+      "artifact_ref": "symbol-summary://1-ai/snap_803b8923834a3bcb906f"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_106_110_real",
+  "codebase_id": "1-ai",
+  "snapshot_id": "snap_803b8923834a3bcb906f",
+  "created_at": "2026-07-10T04:59:21.569855Z",
+  "surface_counts": {},
+  "surface_count": 0,
+  "capability_count": 0,
+  "unresolved_count": 0,
+  "unresolved_ratio": 1.0,
+  "golden_checks": {
+    "http": {
+      "passed": false,
+      "missing": [
+        "GET /api/workspaces/{workspace_id}/graph/neighbors",
+        "POST /api/v1/knowledge/query",
+        "POST /api/workspaces/{workspace_id}/build/start",
+        "POST /api/workspaces/{workspace_id}/codebases",
+        "POST /api/workspaces/{workspace_id}/codebases/{codebase_id}/quality/feedback",
+        "POST /api/workspaces/{workspace_id}/codebases/{codebase_id}/snapshots",
+        "POST /api/workspaces/{workspace_id}/query",
+        "POST /api/workspaces/{workspace_id}/sources"
+      ]
+    },
+    "mcp": {
+      "passed": false,
+      "missing": [
+        "knowledge_build_start",
+        "knowledge_code_quality_feedback",
+        "knowledge_codebase_import",
+        "knowledge_codebase_snapshot",
+        "knowledge_graph_neighbors",
+        "knowledge_quality_summary",
+        "knowledge_query_v2",
+        "knowledge_source_import"
+      ]
+    },
+    "cli": {
+      "passed": false,
+      "missing": [
+        "knowledge build start",
+        "knowledge code import",
+        "knowledge code quality feedback",
+        "knowledge code snapshot",
+        "knowledge graph neighbors",
+        "knowledge quality summary",
+        "knowledge query",
+        "knowledge source import"
+      ]
+    },
+    "capabilities": {
+      "passed": false,
+      "missing": [
+        "agent_context_pack",
+        "build",
+        "codebase_import",
+        "codebase_snapshot",
+        "graph",
+        "project_overview",
+        "quality",
+        "query",
+        "source_import",
+        "source_trace"
+      ]
+    }
+  },
+  "alignment_capability_count": 0,
+  "artifact_refs": [
+    {
+      "type": "inventory_surfaces",
+      "artifact_ref": "inventory-surfaces://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_capabilities",
+      "artifact_ref": "inventory-capabilities://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_alignment",
+      "artifact_ref": "inventory-alignment://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "inventory_summary",
+      "artifact_ref": "inventory-summary://1-ai/snap_803b8923834a3bcb906f"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_106_110_real",
+  "codebase_id": "1-ai",
+  "snapshot_id": "snap_803b8923834a3bcb906f",
+  "created_at": "2026-07-10T04:59:21.814224Z",
+  "symbol_count": 209,
+  "import_count": 201,
+  "symbols_by_kind": {
+    "function": 109,
+    "module": 100
+  },
+  "python_file_count": 100,
+  "parsed_file_count": 96,
+  "syntax_error_count": 4,
+  "warnings": [
+    {
+      "path": "build_l113_l114.py",
+      "code": "SYNTAX_ERROR",
+      "message": "'[' was never closed (<unknown>, line 39)",
+      "line": 39
+    },
+    {
+      "path": "scripts/gen_w6a_t7.py",
+      "code": "SYNTAX_ERROR",
+      "message": "unterminated string literal (detected at line 89) (<unknown>, line 89)",
+      "line": 89
+    },
+    {
+      "path": "scripts/write_w7_gap_recovery.py",
+      "code": "SYNTAX_ERROR",
+      "message": "unmatched ')' (<unknown>, line 107)",
+      "line": 107
+    },
+    {
+      "path": "scripts/write_w8_gap_recovery.py",
+      "code": "SYNTAX_ERROR",
+      "message": "unmatched ')' (<unknown>, line 109)",
+      "line": 109
+    }
+  ],
+  "golden_checks": {
+    "symbols": {
+      "passed": false,
+      "missing": [
+        "backend.app.api.v1.code_assets.build_codebase_inventory",
+        "backend.data_service.cli_code.run_code_command",
+        "backend.data_service.code_assets.inventory.CodebaseInventoryService",
+        "backend.data_service.mcp_code_tools.handle_code_tool"
+      ]
+    },
+    "imports": {
+      "passed": false,
+      "missing": [
+        [
+          "backend.data_service.mcp_code_tools",
+          "backend.data_service.code_assets.inventory"
+        ]
+      ]
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "symbols",
+      "artifact_ref": "symbols://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "imports",
+      "artifact_ref": "imports://1-ai/snap_803b8923834a3bcb906f"
+    },
+    {
+      "type": "symbol_summary",
+      "artifact_ref": "symbol-summary://1-ai/snap_803b8923834a3bcb906f"
+    }
+  ]
+}

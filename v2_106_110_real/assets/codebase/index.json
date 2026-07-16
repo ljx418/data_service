@@ -1,0 +1,29 @@
+{
+  "schema_version": "v2.0",
+  "items": [
+    {
+      "codebase_id": "1-ai",
+      "name": "1-AI教案",
+      "status": "active",
+      "root_path_hash": "d1c1565e504b54c21aa63f075b194631746a1dd957cfbdc6449352ebbe853123",
+      "created_at": "2026-07-10T04:58:33.043668Z",
+      "updated_at": "2026-07-10T04:58:33.043668Z"
+    },
+    {
+      "codebase_id": "codexpat",
+      "name": "codexPat",
+      "status": "active",
+      "root_path_hash": "127c7dc8705721e1aadef3b16c0df5f5596bc0c56e3bcd65670ad24388c1ae54",
+      "created_at": "2026-07-10T04:59:21.857574Z",
+      "updated_at": "2026-07-10T04:59:21.857574Z"
+    },
+    {
+      "codebase_id": "data_service",
+      "name": "data_service",
+      "status": "active",
+      "root_path_hash": "0b042143c92e1b9fad4d8c1d324ee826f4980c806d2596b3c9ae1f44cc1c72a0",
+      "created_at": "2026-07-10T04:58:07.770602Z",
+      "updated_at": "2026-07-10T04:58:07.770602Z"
+    }
+  ]
+}

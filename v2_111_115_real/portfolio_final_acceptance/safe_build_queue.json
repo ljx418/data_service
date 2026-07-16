@@ -1,0 +1,464 @@
+{
+  "ok": false,
+  "schema_version": "v2.111-115",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.114",
+  "artifact_type": "safe_build_queue",
+  "artifact_id": "safe_build_queue",
+  "run_id": "v2111-v2_111_115_real-f05b4ffce907",
+  "producer_name": "workspace_portfolio_final_acceptance",
+  "producer_version": "1",
+  "generated_at": "2026-07-13T13:43:33.561811Z",
+  "source_snapshot_id": "0234921d17b4fb98201e2a4b",
+  "workspace_fingerprint": "0234921d17b4fb98201e2a4b",
+  "status": "needs_review",
+  "acceptance_status": "needs_review",
+  "input_artifact_refs": [
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/final_release_gate.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/media_evidence_matrix.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ocr_provider_health.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/document_source_trace_closure.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/full_build_queue.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/project_build_diagnosis.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ui_evidence_capture.json"
+    }
+  ],
+  "input_hashes": {},
+  "artifact_refs": [
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/safe_build_queue.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "build:0",
+        "project_id": "0",
+        "display_name": "0-阶段展示",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "67380121b1189b9c",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:1-ai",
+        "project_id": "1-ai",
+        "display_name": "1-AI教案",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "2bbfc4684d3a7bfa",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:2-chatcut",
+        "project_id": "2-chatcut",
+        "display_name": "2-ChatCut",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "5ca00f58e69c710d",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:codexpat",
+        "project_id": "codexpat",
+        "display_name": "codexPat",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "a186d46d20a4b1ba",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:data_service",
+        "project_id": "data_service",
+        "display_name": "data_service",
+        "classification": "code_project",
+        "queue_state": "executed_in_baseline",
+        "allowlist_status": "needs_review",
+        "cache_key": "7419d4e16de9bfec",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:financial-asset-manager",
+        "project_id": "financial-asset-manager",
+        "display_name": "financial-asset-manager",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "44376f07b3c24c0d",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:foodmap",
+        "project_id": "foodmap",
+        "display_name": "foodMap",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "873a5c76a04e2beb",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:harnessos",
+        "project_id": "harnessos",
+        "display_name": "harnessOS",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "51e2c17368190c47",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:interview_service",
+        "project_id": "interview_service",
+        "display_name": "interview_service",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "4d8288aaa81945cd",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:meeting-voice-assistant",
+        "project_id": "meeting-voice-assistant",
+        "display_name": "meeting-voice-assistant",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "e6d03c799da0b1c0",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:navia",
+        "project_id": "navia",
+        "display_name": "navia",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "0491e947e8a5be0f",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:research-notebook",
+        "project_id": "research-notebook",
+        "display_name": "research-notebook",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "21152944d884ec92",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:scripts",
+        "project_id": "scripts",
+        "display_name": "scripts",
+        "classification": "needs_review",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "4ae7c805f9989065",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:voice_service",
+        "project_id": "voice_service",
+        "display_name": "voice_service",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "4827b69cdb0adc25",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:xpert",
+        "project_id": "xpert",
+        "display_name": "xpert",
+        "classification": "code_project",
+        "queue_state": "diagnosed_not_accepted",
+        "allowlist_status": "needs_review",
+        "cache_key": "0b37aac720f574a7",
+        "execution_status": "queued",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ]
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "我在城市的深海里漂流",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "cb1bdde6d23c0a58",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "技术分享",
+        "classification": "media_corpus",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "cb1bdde6d23c0a58",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "知识库",
+        "classification": "doc_project",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "cb1bdde6d23c0a58",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      },
+      {
+        "stable_id": "build:project",
+        "project_id": "project",
+        "display_name": "音频资料",
+        "classification": "needs_review",
+        "queue_state": "non_code_source_intake_required",
+        "allowlist_status": "needs_review",
+        "cache_key": "cb1bdde6d23c0a58",
+        "execution_status": "skipped",
+        "acceptance_status": "needs_review",
+        "command_ref": "",
+        "evidence_refs": []
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 19,
+      "structured_unavailable_count": 0,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    },
+    "runtime_policy": {
+      "run_unapproved_commands": false,
+      "write_to_scanned_project": false
+    }
+  }
+}

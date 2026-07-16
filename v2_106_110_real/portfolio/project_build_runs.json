@@ -1,0 +1,518 @@
+{
+  "ok": false,
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_106_110_real",
+  "phase": "V2.102",
+  "artifact_type": "project_build_runs",
+  "generated_at": "2026-07-10T05:01:25.111471Z",
+  "status": "needs_review",
+  "artifact_refs": [
+    {
+      "type": "project_build_runs",
+      "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "data_service_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "0_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_build_deferred",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "code project was discovered but not built in this bounded portfolio run",
+      "next_action": "increase max_code_projects or run a project-specific build",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "runs": [
+    {
+      "project_id": "data_service",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "data_service_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "0",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "0_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "1-ai_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "codexpat_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "financial-asset-manager_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "foodmap_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "harnessos_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "interview_service_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "meeting-voice-assistant_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "navia",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "navia_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "research-notebook_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "scripts",
+      "classification": "needs_review",
+      "status": "needs_review",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": []
+    },
+    {
+      "project_id": "voice_service",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "voice_service_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "classification": "code_project",
+      "status": "needs_review",
+      "build_steps": [
+        "classified_as_code_project"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "xpert_build_deferred",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "code project was discovered but not built in this bounded portfolio run",
+          "next_action": "increase max_code_projects or run a project-specific build",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "project_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "project_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "doc_project",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "project_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "needs_review",
+      "status": "needs_review",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": []
+    }
+  ],
+  "summary": {
+    "accepted_count": 0,
+    "needs_review_count": 18,
+    "structured_unavailable_count": 0,
+    "structured_blocker_count": 0,
+    "failed_count": 0
+  }
+}

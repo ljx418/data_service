@@ -1,0 +1,534 @@
+{
+  "ok": false,
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_111_115_real",
+  "phase": "V2.102",
+  "artifact_type": "project_build_runs",
+  "generated_at": "2026-07-13T13:41:38.362760Z",
+  "status": "structured_unavailable",
+  "artifact_refs": [
+    {
+      "type": "project_build_runs",
+      "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "0_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "1-ai_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "2-chatcut_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "codexpat_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "financial-asset-manager_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "foodmap_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "harnessos_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "interview_service_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "meeting-voice-assistant_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "navia_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "research-notebook_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "voice_service_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "xpert_build",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "code project build unavailable: ValueError",
+      "next_action": "review project path, dependencies, or scan policy",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_docs",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "document/media ingest requires explicit source import acceptance",
+      "next_action": "run source import for accepted text extractable rows",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "runs": [
+    {
+      "project_id": "data_service",
+      "classification": "code_project",
+      "status": "accepted",
+      "build_steps": [
+        "import",
+        "snapshot",
+        "inventory",
+        "symbols",
+        "portfolio_brief"
+      ],
+      "artifact_refs": [
+        {
+          "type": "codebase",
+          "artifact_ref": "codebase://data_service"
+        },
+        {
+          "type": "snapshot",
+          "artifact_ref": "snapshot://data_service/snap_dabdc98516df4dae4cb4"
+        },
+        {
+          "type": "portfolio_brief",
+          "artifact_ref": "workspace_portfolio://portfolio/project_briefs/data_service_snap_dabdc98516df4dae4cb4.json"
+        }
+      ],
+      "command_refs": [
+        "portfolio_build:code_asset_pipeline"
+      ],
+      "warnings": [
+        "trace/context pack intentionally not generated by portfolio build; no full call graph claim is made"
+      ],
+      "unresolved": [],
+      "codebase_id": "data_service",
+      "snapshot_id": "snap_dabdc98516df4dae4cb4"
+    },
+    {
+      "project_id": "0",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "0_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "1-ai_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "2-chatcut",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "2-chatcut_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "codexpat_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "financial-asset-manager_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "foodmap_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "harnessos_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "interview_service_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "meeting-voice-assistant_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "navia",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "navia_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "research-notebook_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "scripts",
+      "classification": "needs_review",
+      "status": "needs_review",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": []
+    },
+    {
+      "project_id": "voice_service",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "voice_service_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "classification": "code_project",
+      "status": "structured_unavailable",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "xpert_build",
+          "kind": "structured_unavailable",
+          "status": "structured_unavailable",
+          "reason": "code project build unavailable: ValueError",
+          "next_action": "review project path, dependencies, or scan policy",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "project_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "media_corpus",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "project_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "doc_project",
+      "status": "needs_review",
+      "build_steps": [
+        "source_candidate_matrix",
+        "media_readiness"
+      ],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": [
+        {
+          "id": "project_docs",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "document/media ingest requires explicit source import acceptance",
+          "next_action": "run source import for accepted text extractable rows",
+          "evidence_refs": []
+        }
+      ]
+    },
+    {
+      "project_id": "project",
+      "classification": "needs_review",
+      "status": "needs_review",
+      "build_steps": [],
+      "artifact_refs": [],
+      "command_refs": [],
+      "warnings": [],
+      "unresolved": []
+    }
+  ],
+  "summary": {
+    "accepted_count": 1,
+    "needs_review_count": 8,
+    "structured_unavailable_count": 10,
+    "structured_blocker_count": 0,
+    "failed_count": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "ok": false,
+  "schema_version": "v2.111-115",
+  "workspace_id": "v2_116_120_real",
+  "phase": "V2.113",
+  "artifact_type": "ui_screenshot_manifest",
+  "artifact_id": "ui_screenshot_manifest",
+  "run_id": "v2111-v2_116_120_real-4361eb68002a",
+  "producer_name": "workspace_portfolio_final_acceptance",
+  "producer_version": "1",
+  "generated_at": "2026-07-16T08:22:08.063252Z",
+  "source_snapshot_id": "151c099c811389e8d51fe69f",
+  "workspace_fingerprint": "151c099c811389e8d51fe69f",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/final_release_gate.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/media_evidence_matrix.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ocr_provider_health.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/document_source_trace_closure.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/full_build_queue.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/project_build_diagnosis.json"
+    },
+    {
+      "type": "baseline",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ui_evidence_capture.json"
+    }
+  ],
+  "input_hashes": {},
+  "artifact_refs": [
+    {
+      "type": "final_acceptance",
+      "artifact_ref": "workspace_portfolio_final_acceptance://portfolio_final_acceptance/ui_screenshot_manifest.json"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "screenshot:ui:knowledge-final-acceptance-panel",
+        "scenario": "open /knowledge portfolio final acceptance panel",
+        "screenshot_ref": "",
+        "screenshot_hash": null,
+        "acceptance_status": "structured_unavailable",
+        "non_accepted_visible": true
+      }
+    ],
+    "summary": {
+      "accepted_count": 0,
+      "needs_review_count": 0,
+      "structured_unavailable_count": 1,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    }
+  }
+}

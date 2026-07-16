@@ -1,0 +1,55 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_116_120_real",
+  "codebase_id": "data_service",
+  "snapshot_id": "snap_387288cc9c797df44892",
+  "created_at": "2026-07-16T08:21:46.162387Z",
+  "surface_counts": {
+    "api_client_call": 2,
+    "cli_command": 63,
+    "frontend_page": 2,
+    "http_api": 414,
+    "mcp_tool": 340
+  },
+  "surface_count": 821,
+  "capability_count": 15,
+  "unresolved_count": 185,
+  "unresolved_ratio": 0.22533495736906212,
+  "golden_checks": {
+    "http": {
+      "passed": true,
+      "missing": []
+    },
+    "mcp": {
+      "passed": true,
+      "missing": []
+    },
+    "cli": {
+      "passed": true,
+      "missing": []
+    },
+    "capabilities": {
+      "passed": true,
+      "missing": []
+    }
+  },
+  "alignment_capability_count": 15,
+  "artifact_refs": [
+    {
+      "type": "inventory_surfaces",
+      "artifact_ref": "inventory-surfaces://data_service/snap_387288cc9c797df44892"
+    },
+    {
+      "type": "inventory_capabilities",
+      "artifact_ref": "inventory-capabilities://data_service/snap_387288cc9c797df44892"
+    },
+    {
+      "type": "inventory_alignment",
+      "artifact_ref": "inventory-alignment://data_service/snap_387288cc9c797df44892"
+    },
+    {
+      "type": "inventory_summary",
+      "artifact_ref": "inventory-summary://data_service/snap_387288cc9c797df44892"
+    }
+  ]
+}

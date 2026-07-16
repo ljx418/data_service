@@ -1,0 +1,133 @@
+# V2.111-V2.115 False-Green Audit
+
+Final status: `structured_unavailable`
+Implementation status: `accepted`
+
+## Rejected False-Green Paths
+- OCR sample qualification cannot be replaced by provider readiness or direct text extraction
+- source file existence cannot replace source import/query/source trace
+- HTML report cannot replace UI screenshot evidence
+- bounded or unapproved build execution cannot imply full portfolio accepted
+- needs_review, structured_unavailable, structured_blocker, and failed are not accepted
+
+## Blocking Unresolved
+- `needs_review` ocr-sample:0:.png:0: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:1: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:2: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:3: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:4: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:5: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:6: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:7: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:8: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:9: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:10: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:11: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:12: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:13: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:14: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:15: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:16: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:17: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:18: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:19: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:20: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:21: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:22: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:23: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:24: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:25: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:26: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:27: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:28: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:29: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:30: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:31: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:32: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:33: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:34: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:35: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:36: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:37: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:38: image candidate requires human text anchor before OCR accepted
+- `needs_review` ocr-sample:0:.png:39: image candidate requires human text anchor before OCR accepted
+- `needs_review` media-exec:ocr-sample:0:.png:0: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:1: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:2: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:3: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:4: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:5: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:6: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:7: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:8: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:9: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:10: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:11: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:12: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:13: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:14: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:15: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:16: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:17: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:18: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:19: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:20: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:21: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:22: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:23: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:24: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:25: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:26: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:27: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:28: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:29: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:30: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:31: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:32: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:33: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:34: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:35: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:36: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:37: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:38: OCR sample is not qualified
+- `needs_review` media-exec:ocr-sample:0:.png:39: OCR sample is not qualified
+- `structured_unavailable` source-trace:trace-0-html: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-0-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-0-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-0-png: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-1-ai-html: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-1-ai-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-1-ai-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-1-ai-png: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-1-ai-txt: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-1-ai-yml: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-2-chatcut-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-2-chatcut-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-2-chatcut-png: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-gif: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-html: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-jpeg: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-jpg: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-png: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-codexpat-yaml: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-data_service-html: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-data_service-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-data_service-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-financial-asset-manager-html: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-financial-asset-manager-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-financial-asset-manager-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-financial-asset-manager-png: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-financial-asset-manager-txt: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-foodmap-html: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-foodmap-jpeg: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-foodmap-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-foodmap-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-foodmap-png: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-foodmap-txt: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-harnessos-json: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-harnessos-md: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-harnessos-pdf: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-harnessos-txt: source import/query/source trace evidence is not available for this row
+- `structured_unavailable` source-trace:trace-interview_service-html: source import/query/source trace evidence is not available for this row

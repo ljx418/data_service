@@ -1,0 +1,998 @@
+{
+  "ok": true,
+  "schema_version": "v2.101-105",
+  "workspace_id": "v2_106_110_real",
+  "phase": "V2.101",
+  "artifact_type": "project_registry",
+  "generated_at": "2026-07-10T05:00:48.040274Z",
+  "status": "accepted",
+  "artifact_refs": [
+    {
+      "type": "project_registry",
+      "artifact_ref": "workspace_portfolio://portfolio/project_registry.json"
+    },
+    {
+      "type": "discovery_report",
+      "artifact_ref": "workspace_portfolio://portfolio/discovery_report.md"
+    }
+  ],
+  "evidence_refs": [],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "scripts_classification",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "no code, docs, or media markers found",
+      "next_action": "review workspace directory classification",
+      "evidence_refs": []
+    },
+    {
+      "id": "project_classification",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "no code, docs, or media markers found",
+      "next_action": "review workspace directory classification",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "root_ref": "<workspace-root>/.",
+  "projects": [
+    {
+      "project_id": "0",
+      "display_name": "0-阶段展示",
+      "classification": "media_corpus",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/0-阶段展示",
+      "detected_markers": [],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 127,
+        "media_count": 142,
+        "image_count": 142,
+        "suffix_counts": {
+          ".mjs": 3,
+          ".html": 16,
+          ".md": 107,
+          ".json": 4,
+          ".png": 142,
+          ".svg": 21
+        }
+      },
+      "evidence_refs": [],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "1-ai",
+      "display_name": "1-AI教案",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/1-AI教案",
+      "detected_markers": [
+        "has_git",
+        "package.json",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/1-AI教案/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 265,
+        "media_count": 66,
+        "image_count": 66,
+        "suffix_counts": {
+          ".html": 14,
+          ".svg": 36,
+          ".md": 211,
+          ".py": 126,
+          ".txt": 6,
+          ".mjs": 66,
+          ".cjs": 1,
+          ".json": 33,
+          ".js": 26,
+          ".jsx": 34,
+          ".css": 1,
+          ".ts": 2,
+          "": 61,
+          ".pak": 58,
+          ".desktop": 1,
+          ".png": 66,
+          ".dat": 1,
+          ".so": 4,
+          ".1": 3,
+          ".bin": 2,
+          ".xml": 8,
+          ".4": 2,
+          ".7": 1,
+          ".6": 1,
+          ".yml": 1,
+          ".asar": 1,
+          ".webmanifest": 1,
+          ".ipynb": 24,
+          ".drawio": 3,
+          ".log": 6
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/1-AI教案/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "codexpat",
+      "display_name": "codexPat",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/codexPat",
+      "detected_markers": [
+        "has_git",
+        "package.json",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/codexPat/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 173,
+        "media_count": 312,
+        "image_count": 312,
+        "suffix_counts": {
+          ".json": 26,
+          ".yaml": 2,
+          ".md": 144,
+          ".toml": 1,
+          ".sh": 4,
+          ".mjs": 259,
+          ".py": 13,
+          ".ts": 27,
+          ".png": 291,
+          ".glb": 2,
+          ".gltf": 8,
+          ".jpg": 3,
+          ".jpeg": 17,
+          ".gif": 1,
+          ".html": 1,
+          ".drawio": 1
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/codexPat/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "data_service",
+      "display_name": "data_service",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/data_service",
+      "detected_markers": [
+        "has_git",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/data_service/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 785,
+        "media_count": 0,
+        "image_count": 0,
+        "suffix_counts": {
+          ".md": 580,
+          ".json": 196,
+          ".jsonl": 5,
+          ".html": 9,
+          ".db": 3,
+          ".bkp": 4,
+          ".drawio": 2,
+          ".db-journal": 1
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/data_service/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "financial-asset-manager",
+      "display_name": "financial-asset-manager",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/financial-asset-manager",
+      "detected_markers": [
+        "has_git",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 407,
+        "media_count": 19,
+        "image_count": 19,
+        "suffix_counts": {
+          ".xlsx": 2,
+          ".md": 95,
+          ".py": 2,
+          ".mjs": 8,
+          ".cmd": 1,
+          ".sh": 1,
+          ".json": 298,
+          ".log": 7,
+          ".pid": 2,
+          ".html": 11,
+          ".js": 2,
+          ".ts": 234,
+          ".tsx": 48,
+          ".css": 1,
+          ".drawio": 6,
+          ".txt": 3,
+          ".svg": 40,
+          ".png": 19,
+          ".zip": 1,
+          "": 1,
+          ".db": 15,
+          ".prisma": 1,
+          ".bak": 2
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "foodmap",
+      "display_name": "foodMap",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/foodMap",
+      "detected_markers": [
+        "has_git",
+        "package.json",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/foodMap/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 272,
+        "media_count": 190,
+        "image_count": 190,
+        "suffix_counts": {
+          ".html": 6,
+          ".json": 19,
+          ".ts": 56,
+          ".md": 241,
+          ".tsbuildinfo": 1,
+          ".tsx": 24,
+          ".css": 2,
+          ".mjs": 12,
+          ".webmanifest": 1,
+          ".js": 1,
+          ".svg": 1,
+          ".drawio": 3,
+          ".txt": 6,
+          ".bkp": 1,
+          ".ds_store": 1,
+          ".png": 148,
+          ".log": 11,
+          ".jpeg": 42
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/foodMap/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "harnessos",
+      "display_name": "harnessOS",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/harnessOS",
+      "detected_markers": [
+        "has_git",
+        "pyproject.toml",
+        "requirements.txt",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/harnessOS/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 78,
+        "media_count": 1,
+        "image_count": 0,
+        "suffix_counts": {
+          ".md": 42,
+          ".py": 683,
+          ".toml": 2,
+          ".txt": 2,
+          ".log": 2,
+          ".json": 33,
+          ".pdf": 1,
+          ".mjs": 3,
+          ".ts": 17,
+          ".sh": 3,
+          ".cjs": 1,
+          "": 2,
+          ".tsx": 9
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/harnessOS/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "interview_service",
+      "display_name": "interview_service",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/interview_service",
+      "detected_markers": [
+        "has_git",
+        "package.json",
+        "pyproject.toml",
+        "requirements.txt",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/interview_service/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 120,
+        "media_count": 6,
+        "image_count": 6,
+        "suffix_counts": {
+          ".yml": 1,
+          ".md": 77,
+          "": 4,
+          ".json": 31,
+          ".toml": 1,
+          ".txt": 5,
+          ".bash": 1,
+          ".py": 4,
+          ".yaml": 5,
+          ".bat": 1,
+          ".ps1": 1,
+          ".sh": 6,
+          ".ts": 628,
+          ".mjs": 13,
+          ".js": 5,
+          ".c": 3,
+          ".node": 4,
+          ".jsonl": 2,
+          ".png": 6,
+          ".css": 1,
+          ".html": 1
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/interview_service/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "meeting-voice-assistant",
+      "display_name": "meeting-voice-assistant",
+      "classification": "media_corpus",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/meeting-voice-assistant",
+      "detected_markers": [
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 542,
+        "media_count": 3,
+        "image_count": 3,
+        "suffix_counts": {
+          ".md": 153,
+          ".yml": 1,
+          "": 38,
+          ".sh": 5,
+          ".command": 2,
+          ".db": 1,
+          ".json": 367,
+          ".py": 122,
+          ".log": 6,
+          ".html": 11,
+          ".ts": 24,
+          ".vue": 21,
+          ".css": 3,
+          ".js": 3,
+          ".xml": 1,
+          ".png": 3,
+          ".drawio": 2,
+          ".ini": 1,
+          ".txt": 10,
+          ".cfg": 1,
+          ".1": 1,
+          ".so": 10,
+          ".pth": 2,
+          ".typed": 5,
+          ".pyi": 4,
+          ".pyx": 1,
+          ".c": 2
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "navia",
+      "display_name": "navia",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/navia",
+      "detected_markers": [
+        "has_git",
+        "requirements.txt",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/navia/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 739,
+        "media_count": 0,
+        "image_count": 0,
+        "suffix_counts": {
+          ".md": 9,
+          ".txt": 1,
+          ".py": 59,
+          ".json": 722,
+          ".cjs": 2,
+          ".html": 7
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/requirements.txt"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/navia/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "research-notebook",
+      "display_name": "research-notebook",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/research-notebook",
+      "detected_markers": [
+        "package.json",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/research-notebook/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 697,
+        "media_count": 2,
+        "image_count": 0,
+        "suffix_counts": {
+          ".js": 1,
+          ".html": 5,
+          ".json": 367,
+          ".md": 322,
+          ".ts": 16,
+          ".tsx": 22,
+          ".css": 3,
+          ".mjs": 51,
+          ".pdf": 2,
+          ".txt": 1,
+          ".drawio": 10
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/research-notebook/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "scripts",
+      "display_name": "scripts",
+      "classification": "needs_review",
+      "status": "needs_review",
+      "path_ref": "<workspace-root>/scripts",
+      "detected_markers": [],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 0,
+        "media_count": 0,
+        "image_count": 0,
+        "suffix_counts": {
+          ".sh": 3
+        }
+      },
+      "evidence_refs": [],
+      "unresolved": [
+        {
+          "id": "scripts_classification",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "no code, docs, or media markers found",
+          "next_action": "review workspace directory classification",
+          "evidence_refs": []
+        }
+      ],
+      "next_actions": [
+        "review classification"
+      ]
+    },
+    {
+      "project_id": "voice_service",
+      "display_name": "voice_service",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/voice_service",
+      "detected_markers": [
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 24,
+        "media_count": 6,
+        "image_count": 6,
+        "suffix_counts": {
+          ".toml": 1,
+          ".md": 9,
+          ".txt": 5,
+          ".sh": 1,
+          ".mvn": 2,
+          ".wav": 6,
+          ".yaml": 4,
+          ".json": 6,
+          ".pt": 3,
+          "": 2,
+          ".png": 6,
+          ".dict": 1,
+          ".bin": 1,
+          ".py": 15,
+          ".gz": 8,
+          ".whl": 81
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "xpert",
+      "display_name": "xpert",
+      "classification": "code_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/xpert",
+      "detected_markers": [
+        "has_git",
+        "package.json",
+        "docs_dir"
+      ],
+      "docs_refs": [
+        {
+          "artifact_ref": "<workspace-root>/xpert/docs",
+          "type": "docs_dir"
+        }
+      ],
+      "media_summary": {
+        "doc_count": 140,
+        "media_count": 4,
+        "image_count": 4,
+        "suffix_counts": {
+          ".md": 21,
+          ".yml": 1,
+          ".local": 1,
+          ".ts": 600,
+          ".js": 14,
+          "": 2,
+          ".json": 54,
+          ".yaml": 59,
+          ".css": 3,
+          ".mjs": 9,
+          ".cjs": 8,
+          ".sh": 1,
+          ".conf": 1,
+          ".xml": 1,
+          ".cts": 1,
+          ".html": 4,
+          ".png": 4,
+          ".svg": 10,
+          ".txt": 1,
+          ".py": 5
+        }
+      },
+      "evidence_refs": [
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/.git"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/package.json"
+        },
+        {
+          "type": "marker",
+          "artifact_ref": "<workspace-root>/xpert/docs"
+        }
+      ],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "project",
+      "display_name": "我在城市的深海里漂流",
+      "classification": "media_corpus",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/我在城市的深海里漂流",
+      "detected_markers": [],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 37,
+        "media_count": 436,
+        "image_count": 436,
+        "suffix_counts": {
+          ".md": 32,
+          ".mjs": 1,
+          ".py": 3,
+          ".jsonl": 1,
+          ".mp4": 20,
+          ".jpg": 400,
+          ".ppm": 138,
+          ".csv": 3,
+          ".html": 1,
+          ".txt": 1,
+          ".png": 36
+        }
+      },
+      "evidence_refs": [],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "project",
+      "display_name": "技术分享",
+      "classification": "media_corpus",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/技术分享",
+      "detected_markers": [],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 102,
+        "media_count": 495,
+        "image_count": 495,
+        "suffix_counts": {
+          ".md": 73,
+          ".zip": 1,
+          ".mjs": 1,
+          ".jsonl": 1,
+          ".mp4": 5,
+          ".csv": 6,
+          ".png": 128,
+          ".py": 5,
+          ".txt": 2,
+          ".json": 16,
+          ".html": 4,
+          ".jpg": 367,
+          ".yaml": 1,
+          ".js": 2,
+          ".ts": 43,
+          ".tsx": 42,
+          ".css": 42,
+          ".svg": 3,
+          ".sh": 1,
+          ".mp3": 57
+        }
+      },
+      "evidence_refs": [],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "project",
+      "display_name": "知识库",
+      "classification": "doc_project",
+      "status": "accepted",
+      "path_ref": "<workspace-root>/知识库",
+      "detected_markers": [],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 617,
+        "media_count": 0,
+        "image_count": 0,
+        "suffix_counts": {
+          ".json": 443,
+          ".md": 174,
+          ".db": 2,
+          ".jsonl": 2,
+          ".py": 1
+        }
+      },
+      "evidence_refs": [],
+      "unresolved": [],
+      "next_actions": [
+        "portfolio build"
+      ]
+    },
+    {
+      "project_id": "project",
+      "display_name": "音频资料",
+      "classification": "needs_review",
+      "status": "needs_review",
+      "path_ref": "<workspace-root>/音频资料",
+      "detected_markers": [],
+      "docs_refs": [],
+      "media_summary": {
+        "doc_count": 0,
+        "media_count": 0,
+        "image_count": 0,
+        "suffix_counts": {
+          ".mp3": 3
+        }
+      },
+      "evidence_refs": [],
+      "unresolved": [
+        {
+          "id": "project_classification",
+          "kind": "needs_review",
+          "status": "needs_review",
+          "reason": "no code, docs, or media markers found",
+          "next_action": "review workspace directory classification",
+          "evidence_refs": []
+        }
+      ],
+      "next_actions": [
+        "review classification"
+      ]
+    }
+  ],
+  "ignored": [
+    {
+      "display_name": ".DS_Store",
+      "path_ref": "<workspace-root>/.DS_Store",
+      "reason": "ignored hidden/cache/generated directory"
+    },
+    {
+      "display_name": ".git.meeting-voice-assistant.backup-20260625-105416",
+      "path_ref": "<workspace-root>/.git.meeting-voice-assistant.backup-20260625-105416",
+      "reason": "ignored hidden/cache/generated directory"
+    },
+    {
+      "display_name": ".gitattributes",
+      "path_ref": "<workspace-root>/.gitattributes",
+      "reason": "ignored hidden/cache/generated directory"
+    },
+    {
+      "display_name": ".gitignore",
+      "path_ref": "<workspace-root>/.gitignore",
+      "reason": "ignored hidden/cache/generated directory"
+    },
+    {
+      "display_name": ".npm-cache",
+      "path_ref": "<workspace-root>/.npm-cache",
+      "reason": "ignored hidden/cache/generated directory"
+    },
+    {
+      "display_name": ".openharness",
+      "path_ref": "<workspace-root>/.openharness",
+      "reason": "ignored hidden/cache/generated directory"
+    },
+    {
+      "display_name": "MIGRATION.md",
+      "path_ref": "<workspace-root>/MIGRATION.md",
+      "reason": "ignored non-directory workspace item"
+    },
+    {
+      "display_name": "reload.md",
+      "path_ref": "<workspace-root>/reload.md",
+      "reason": "ignored non-directory workspace item"
+    },
+    {
+      "display_name": "workspace-backup.zip",
+      "path_ref": "<workspace-root>/workspace-backup.zip",
+      "reason": "ignored non-directory workspace item"
+    }
+  ],
+  "summary": {
+    "project_count": 18,
+    "ignored_count": 9,
+    "classification_counts": {
+      "media_corpus": 4,
+      "code_project": 11,
+      "needs_review": 2,
+      "doc_project": 1
+    },
+    "accepted_count": 16,
+    "needs_review_count": 2,
+    "structured_unavailable_count": 0,
+    "structured_blocker_count": 0,
+    "failed_count": 0
+  }
+}

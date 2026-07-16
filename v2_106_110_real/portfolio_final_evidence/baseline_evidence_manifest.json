@@ -1,0 +1,245 @@
+{
+  "ok": true,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_106_110_real",
+  "phase": "V2.106",
+  "artifact_type": "baseline_evidence_manifest",
+  "artifact_id": "baseline_evidence_manifest",
+  "run_id": "v2106-v2_106_110_real-a75e876073ce",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-10T05:01:25.264572Z",
+  "source_snapshot_id": "434acc6eae57db4a87285409",
+  "workspace_fingerprint": "434acc6eae57db4a87285409",
+  "status": "accepted",
+  "acceptance_status": "accepted",
+  "input_artifact_refs": [],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "ceb6610ce42a497c4b3fe640335d5df237ea88da6c398f7553af5df5ee1bf7ff",
+      "source_candidate_matrix.json": "0f61819ca7a7c824c7e1aa8ae4fd326cc8d127a51a11df8aac26df1fc7af66c4",
+      "media_readiness.json": "c5d97afd415114d1e7c80c12ebb7d60d59d3ef065916f2d35d5b56b4344c6c27",
+      "project_build_runs.json": "a9b7a157d865e9c36fffff6343fe332df1835ea84e8b452047020d7fa3c3ff55",
+      "portfolio_index.json": "046fa05338a03900c66d523b6302bc1cae29111e6d46f3be6f1fc06aa36b0192",
+      "release_gate.json": "78b700752df296465a57416485d65e476dfa39c2806ca958462a73a1987c06ba",
+      "false_green_audit.md": "6b1e2a99c67950f143bc672f3fff630c9a193639c3e4eddd44503955f8fc8907",
+      "portfolio_report.html": "ebb0765e20cbef9aa40ef055971e769c17a4fd03390c54ba4979f12a533825cc"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "ef04ffe18b50dacfdd215009f2da527bd2601c44610e082e2b70b4ee39fe673c",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+      "sha256": "ceb6610ce42a497c4b3fe640335d5df237ea88da6c398f7553af5df5ee1bf7ff"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+      "sha256": "0f61819ca7a7c824c7e1aa8ae4fd326cc8d127a51a11df8aac26df1fc7af66c4"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+      "sha256": "c5d97afd415114d1e7c80c12ebb7d60d59d3ef065916f2d35d5b56b4344c6c27"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+      "sha256": "a9b7a157d865e9c36fffff6343fe332df1835ea84e8b452047020d7fa3c3ff55"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/portfolio_index.json",
+      "sha256": "046fa05338a03900c66d523b6302bc1cae29111e6d46f3be6f1fc06aa36b0192"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/release_gate.json",
+      "sha256": "78b700752df296465a57416485d65e476dfa39c2806ca958462a73a1987c06ba"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/false_green_audit.md",
+      "sha256": "6b1e2a99c67950f143bc672f3fff630c9a193639c3e4eddd44503955f8fc8907"
+    },
+    {
+      "type": "baseline_artifact",
+      "artifact_ref": "workspace_portfolio://portfolio/portfolio_report.html",
+      "sha256": "ebb0765e20cbef9aa40ef055971e769c17a4fd03390c54ba4979f12a533825cc"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md",
+      "sha256": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md",
+      "sha256": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html",
+      "sha256": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md",
+      "sha256": "ef04ffe18b50dacfdd215009f2da527bd2601c44610e082e2b70b4ee39fe673c"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md",
+      "sha256": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb"
+    },
+    {
+      "type": "document",
+      "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio",
+      "sha256": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  ],
+  "warnings": [],
+  "unresolved": [],
+  "next_actions": [],
+  "data": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "rows": [
+      {
+        "stable_id": "baseline:project_registry.json",
+        "artifact_ref": "workspace_portfolio://portfolio/project_registry.json",
+        "hash": "ceb6610ce42a497c4b3fe640335d5df237ea88da6c398f7553af5df5ee1bf7ff",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:source_candidate_matrix.json",
+        "artifact_ref": "workspace_portfolio://portfolio/source_candidate_matrix.json",
+        "hash": "0f61819ca7a7c824c7e1aa8ae4fd326cc8d127a51a11df8aac26df1fc7af66c4",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:media_readiness.json",
+        "artifact_ref": "workspace_portfolio://portfolio/media_readiness.json",
+        "hash": "c5d97afd415114d1e7c80c12ebb7d60d59d3ef065916f2d35d5b56b4344c6c27",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:project_build_runs.json",
+        "artifact_ref": "workspace_portfolio://portfolio/project_build_runs.json",
+        "hash": "a9b7a157d865e9c36fffff6343fe332df1835ea84e8b452047020d7fa3c3ff55",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:portfolio_index.json",
+        "artifact_ref": "workspace_portfolio://portfolio/portfolio_index.json",
+        "hash": "046fa05338a03900c66d523b6302bc1cae29111e6d46f3be6f1fc06aa36b0192",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:release_gate.json",
+        "artifact_ref": "workspace_portfolio://portfolio/release_gate.json",
+        "hash": "78b700752df296465a57416485d65e476dfa39c2806ca958462a73a1987c06ba",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:false_green_audit.md",
+        "artifact_ref": "workspace_portfolio://portfolio/false_green_audit.md",
+        "hash": "6b1e2a99c67950f143bc672f3fff630c9a193639c3e4eddd44503955f8fc8907",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "baseline:portfolio_report.html",
+        "artifact_ref": "workspace_portfolio://portfolio/portfolio_report.html",
+        "hash": "ebb0765e20cbef9aa40ef055971e769c17a4fd03390c54ba4979f12a533825cc",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "V2.106-V2.110 baseline"
+      },
+      {
+        "stable_id": "doc:docs-v2.x-v2_101_105_workspace_portfolio_knowledge_full_coverage_matrix.md",
+        "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md",
+        "hash": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "spec and architecture review"
+      },
+      {
+        "stable_id": "doc:docs-v2.x-v2_101_105_workspace_portfolio_knowledge_acceptance_audit_report.md",
+        "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md",
+        "hash": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "spec and architecture review"
+      },
+      {
+        "stable_id": "doc:docs-v2.x-v2_101_105_workspace_portfolio_knowledge_automated_visual_acceptance_r",
+        "artifact_ref": "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html",
+        "hash": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "spec and architecture review"
+      },
+      {
+        "stable_id": "doc:docs-v2.x-v2_106_110_workspace_portfolio_final_evidence_closure_prd.md",
+        "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md",
+        "hash": "ef04ffe18b50dacfdd215009f2da527bd2601c44610e082e2b70b4ee39fe673c",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "spec and architecture review"
+      },
+      {
+        "stable_id": "doc:docs-v2.x-v2_106_110_workspace_portfolio_final_evidence_closure_target_architect",
+        "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md",
+        "hash": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "spec and architecture review"
+      },
+      {
+        "stable_id": "doc:docs-v2.x-v2_106_110_workspace_portfolio_final_evidence_closure_target_state.dra",
+        "artifact_ref": "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio",
+        "hash": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05",
+        "acceptance_status": "accepted",
+        "execution_status": "succeeded",
+        "required_for": "spec and architecture review"
+      }
+    ],
+    "summary": {
+      "accepted_count": 14,
+      "needs_review_count": 0,
+      "structured_unavailable_count": 0,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    },
+    "mixed_run_rejected": false
+  }
+}

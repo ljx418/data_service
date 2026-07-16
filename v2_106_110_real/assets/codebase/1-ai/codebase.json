@@ -1,0 +1,29 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_106_110_real",
+  "codebase_id": "1-ai",
+  "name": "1-AI教案",
+  "root_path": "/mnt/c/workspace/1-AI教案",
+  "status": "active",
+  "created_at": "2026-07-10T04:58:33.043668Z",
+  "updated_at": "2026-07-10T04:58:33.043668Z",
+  "archived_at": null,
+  "archive_reason": "",
+  "metadata": {
+    "source": "workspace_portfolio"
+  },
+  "scan_policy": {
+    "respect_gitignore": true,
+    "include": [],
+    "exclude": [
+      ".git/**",
+      ".venv/**",
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "__pycache__/**"
+    ],
+    "max_file_size_mb": 2,
+    "binary_policy": "skip"
+  }
+}

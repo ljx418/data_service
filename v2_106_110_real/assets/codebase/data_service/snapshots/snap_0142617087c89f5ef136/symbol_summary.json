@@ -1,0 +1,43 @@
+{
+  "schema_version": "v2.0",
+  "workspace_id": "v2_106_110_real",
+  "codebase_id": "data_service",
+  "snapshot_id": "snap_0142617087c89f5ef136",
+  "created_at": "2026-07-10T04:58:32.913477Z",
+  "symbol_count": 7036,
+  "import_count": 6758,
+  "symbols_by_kind": {
+    "class": 285,
+    "function": 5173,
+    "method": 994,
+    "module": 584
+  },
+  "python_file_count": 584,
+  "parsed_file_count": 584,
+  "syntax_error_count": 0,
+  "warnings": [],
+  "golden_checks": {
+    "symbols": {
+      "passed": true,
+      "missing": []
+    },
+    "imports": {
+      "passed": true,
+      "missing": []
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "symbols",
+      "artifact_ref": "symbols://data_service/snap_0142617087c89f5ef136"
+    },
+    {
+      "type": "imports",
+      "artifact_ref": "imports://data_service/snap_0142617087c89f5ef136"
+    },
+    {
+      "type": "symbol_summary",
+      "artifact_ref": "symbol-summary://data_service/snap_0142617087c89f5ef136"
+    }
+  ]
+}

@@ -1,0 +1,2390 @@
+{
+  "ok": false,
+  "schema_version": "v2.106-110",
+  "workspace_id": "v2_106_110_real",
+  "phase": "V2.107",
+  "artifact_type": "media_evidence_matrix",
+  "artifact_id": "media_evidence_matrix",
+  "run_id": "v2106-v2_106_110_real-a75e876073ce",
+  "producer_name": "workspace_portfolio_final_evidence",
+  "producer_version": "1",
+  "generated_at": "2026-07-10T05:01:25.342785Z",
+  "source_snapshot_id": "434acc6eae57db4a87285409",
+  "workspace_fingerprint": "434acc6eae57db4a87285409",
+  "status": "structured_unavailable",
+  "acceptance_status": "structured_unavailable",
+  "input_artifact_refs": [
+    {
+      "type": "ocr_provider_health",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/ocr_provider_health.json"
+    },
+    {
+      "type": "baseline_evidence_manifest",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/baseline_evidence_manifest.json"
+    }
+  ],
+  "input_hashes": {
+    "root_ref": "path-ref://workspace-7c86348c",
+    "baseline_artifacts": {
+      "project_registry.json": "ceb6610ce42a497c4b3fe640335d5df237ea88da6c398f7553af5df5ee1bf7ff",
+      "source_candidate_matrix.json": "0f61819ca7a7c824c7e1aa8ae4fd326cc8d127a51a11df8aac26df1fc7af66c4",
+      "media_readiness.json": "c5d97afd415114d1e7c80c12ebb7d60d59d3ef065916f2d35d5b56b4344c6c27",
+      "project_build_runs.json": "a9b7a157d865e9c36fffff6343fe332df1835ea84e8b452047020d7fa3c3ff55",
+      "portfolio_index.json": "046fa05338a03900c66d523b6302bc1cae29111e6d46f3be6f1fc06aa36b0192",
+      "release_gate.json": "78b700752df296465a57416485d65e476dfa39c2806ca958462a73a1987c06ba",
+      "false_green_audit.md": "6b1e2a99c67950f143bc672f3fff630c9a193639c3e4eddd44503955f8fc8907",
+      "portfolio_report.html": "ebb0765e20cbef9aa40ef055971e769c17a4fd03390c54ba4979f12a533825cc"
+    },
+    "documents": {
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_FULL_COVERAGE_MATRIX.md": "a945bf9fe70f590e66074bb68edc2e45f23330da62caf1218703154b434b762c",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_ACCEPTANCE_AUDIT_REPORT.md": "fb0c1db7dc8adcf0ea17f4221c0c599e31a78083c56496edde1d85fb97fbc470",
+      "docs/V2.x/V2_101_105_WORKSPACE_PORTFOLIO_KNOWLEDGE_AUTOMATED_VISUAL_ACCEPTANCE_REPORT.html": "7daa8fb90d41086bd138731f6c62ceb13fbc02f1daba3b4cfc55ebbfe8e46248",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_PRD.md": "ef04ffe18b50dacfdd215009f2da527bd2601c44610e082e2b70b4ee39fe673c",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_ARCHITECTURE.md": "3350e47f29ae6c3e68b1672d29c023c915299a56795d3138d0d0ac597da65feb",
+      "docs/V2.x/V2_106_110_WORKSPACE_PORTFOLIO_FINAL_EVIDENCE_CLOSURE_TARGET_STATE.drawio": "74db46918532f76a6486132b85535aecc1eab7b668d3314c40de04ab7ee17d05"
+    }
+  },
+  "artifact_refs": [
+    {
+      "type": "media_evidence_matrix",
+      "artifact_ref": "workspace_portfolio_final_evidence://portfolio_final_evidence/media_evidence_matrix.json"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/1-AI教案/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/codexPat/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/data_service/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/foodMap/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/navia/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/research-notebook/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/docs"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/.git"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/package.json"
+    },
+    {
+      "type": "marker",
+      "artifact_ref": "<workspace-root>/xpert/docs"
+    }
+  ],
+  "warnings": [],
+  "unresolved": [
+    {
+      "id": "media:0:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:0:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:0:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:0:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:1-ai:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:codexpat:gif",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:codexpat:jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:codexpat:jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:codexpat:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:financial-asset-manager:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:foodmap:jpeg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:foodmap:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:harnessos:pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:interview_service:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:meeting-voice-assistant:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:research-notebook:pdf",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:voice_service:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:xpert:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:csv",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:csv",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:html",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:jpg",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:png",
+      "kind": "structured_unavailable",
+      "status": "structured_unavailable",
+      "reason": "OCR/provider evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:txt",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:yaml",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:json",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    },
+    {
+      "id": "media:project:md",
+      "kind": "needs_review",
+      "status": "needs_review",
+      "reason": "source trace/import evidence required",
+      "next_action": "run provider-backed OCR/import/source trace or keep structured unavailable",
+      "evidence_refs": []
+    }
+  ],
+  "next_actions": [],
+  "data": {
+    "rows": [
+      {
+        "stable_id": "media:0:html",
+        "project_id": "0",
+        "source_format": "html",
+        "source_count": 16,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:0:json",
+        "project_id": "0",
+        "source_format": "json",
+        "source_count": 4,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:0:md",
+        "project_id": "0",
+        "source_format": "md",
+        "source_count": 107,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:0:png",
+        "project_id": "0",
+        "source_format": "png",
+        "source_count": 142,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:1-ai:html",
+        "project_id": "1-ai",
+        "source_format": "html",
+        "source_count": 14,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:1-ai:json",
+        "project_id": "1-ai",
+        "source_format": "json",
+        "source_count": 33,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:1-ai:md",
+        "project_id": "1-ai",
+        "source_format": "md",
+        "source_count": 211,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:1-ai:png",
+        "project_id": "1-ai",
+        "source_format": "png",
+        "source_count": 66,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:1-ai:txt",
+        "project_id": "1-ai",
+        "source_format": "txt",
+        "source_count": 6,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:1-ai:yml",
+        "project_id": "1-ai",
+        "source_format": "yml",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/1-AI教案/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:gif",
+        "project_id": "codexpat",
+        "source_format": "gif",
+        "source_count": 1,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:html",
+        "project_id": "codexpat",
+        "source_format": "html",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:jpeg",
+        "project_id": "codexpat",
+        "source_format": "jpeg",
+        "source_count": 17,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:jpg",
+        "project_id": "codexpat",
+        "source_format": "jpg",
+        "source_count": 3,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:json",
+        "project_id": "codexpat",
+        "source_format": "json",
+        "source_count": 26,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:md",
+        "project_id": "codexpat",
+        "source_format": "md",
+        "source_count": 144,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:png",
+        "project_id": "codexpat",
+        "source_format": "png",
+        "source_count": 291,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:codexpat:yaml",
+        "project_id": "codexpat",
+        "source_format": "yaml",
+        "source_count": 2,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/codexPat/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:data_service:html",
+        "project_id": "data_service",
+        "source_format": "html",
+        "source_count": 9,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:data_service:json",
+        "project_id": "data_service",
+        "source_format": "json",
+        "source_count": 196,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:data_service:md",
+        "project_id": "data_service",
+        "source_format": "md",
+        "source_count": 580,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/data_service/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:financial-asset-manager:html",
+        "project_id": "financial-asset-manager",
+        "source_format": "html",
+        "source_count": 11,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:financial-asset-manager:json",
+        "project_id": "financial-asset-manager",
+        "source_format": "json",
+        "source_count": 298,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:financial-asset-manager:md",
+        "project_id": "financial-asset-manager",
+        "source_format": "md",
+        "source_count": 95,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:financial-asset-manager:png",
+        "project_id": "financial-asset-manager",
+        "source_format": "png",
+        "source_count": 19,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:financial-asset-manager:txt",
+        "project_id": "financial-asset-manager",
+        "source_format": "txt",
+        "source_count": 3,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/financial-asset-manager/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:foodmap:html",
+        "project_id": "foodmap",
+        "source_format": "html",
+        "source_count": 6,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:foodmap:jpeg",
+        "project_id": "foodmap",
+        "source_format": "jpeg",
+        "source_count": 42,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:foodmap:json",
+        "project_id": "foodmap",
+        "source_format": "json",
+        "source_count": 19,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:foodmap:md",
+        "project_id": "foodmap",
+        "source_format": "md",
+        "source_count": 241,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:foodmap:png",
+        "project_id": "foodmap",
+        "source_format": "png",
+        "source_count": 148,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:foodmap:txt",
+        "project_id": "foodmap",
+        "source_format": "txt",
+        "source_count": 6,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/foodMap/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:harnessos:json",
+        "project_id": "harnessos",
+        "source_format": "json",
+        "source_count": 33,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:harnessos:md",
+        "project_id": "harnessos",
+        "source_format": "md",
+        "source_count": 42,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:harnessos:pdf",
+        "project_id": "harnessos",
+        "source_format": "pdf",
+        "source_count": 1,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:harnessos:txt",
+        "project_id": "harnessos",
+        "source_format": "txt",
+        "source_count": 2,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/harnessOS/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:html",
+        "project_id": "interview_service",
+        "source_format": "html",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:json",
+        "project_id": "interview_service",
+        "source_format": "json",
+        "source_count": 31,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:md",
+        "project_id": "interview_service",
+        "source_format": "md",
+        "source_count": 77,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:png",
+        "project_id": "interview_service",
+        "source_format": "png",
+        "source_count": 6,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:txt",
+        "project_id": "interview_service",
+        "source_format": "txt",
+        "source_count": 5,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:yaml",
+        "project_id": "interview_service",
+        "source_format": "yaml",
+        "source_count": 5,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:interview_service:yml",
+        "project_id": "interview_service",
+        "source_format": "yml",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/interview_service/pyproject.toml"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:meeting-voice-assistant:html",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "html",
+        "source_count": 11,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:meeting-voice-assistant:json",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "json",
+        "source_count": 367,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:meeting-voice-assistant:md",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "md",
+        "source_count": 153,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:meeting-voice-assistant:png",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "png",
+        "source_count": 3,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:meeting-voice-assistant:txt",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "txt",
+        "source_count": 10,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:meeting-voice-assistant:yml",
+        "project_id": "meeting-voice-assistant",
+        "source_format": "yml",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/meeting-voice-assistant/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:navia:html",
+        "project_id": "navia",
+        "source_format": "html",
+        "source_count": 7,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:navia:json",
+        "project_id": "navia",
+        "source_format": "json",
+        "source_count": 722,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:navia:md",
+        "project_id": "navia",
+        "source_format": "md",
+        "source_count": 9,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:navia:txt",
+        "project_id": "navia",
+        "source_format": "txt",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/requirements.txt"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/navia/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:research-notebook:html",
+        "project_id": "research-notebook",
+        "source_format": "html",
+        "source_count": 5,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:research-notebook:json",
+        "project_id": "research-notebook",
+        "source_format": "json",
+        "source_count": 367,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:research-notebook:md",
+        "project_id": "research-notebook",
+        "source_format": "md",
+        "source_count": 322,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:research-notebook:pdf",
+        "project_id": "research-notebook",
+        "source_format": "pdf",
+        "source_count": 2,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:research-notebook:txt",
+        "project_id": "research-notebook",
+        "source_format": "txt",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/research-notebook/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:voice_service:json",
+        "project_id": "voice_service",
+        "source_format": "json",
+        "source_count": 6,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:voice_service:md",
+        "project_id": "voice_service",
+        "source_format": "md",
+        "source_count": 9,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:voice_service:png",
+        "project_id": "voice_service",
+        "source_format": "png",
+        "source_count": 6,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:voice_service:txt",
+        "project_id": "voice_service",
+        "source_format": "txt",
+        "source_count": 5,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:voice_service:yaml",
+        "project_id": "voice_service",
+        "source_format": "yaml",
+        "source_count": 4,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/pyproject.toml"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/voice_service/requirements.txt"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:xpert:html",
+        "project_id": "xpert",
+        "source_format": "html",
+        "source_count": 4,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:xpert:json",
+        "project_id": "xpert",
+        "source_format": "json",
+        "source_count": 54,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:xpert:md",
+        "project_id": "xpert",
+        "source_format": "md",
+        "source_count": 21,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:xpert:png",
+        "project_id": "xpert",
+        "source_format": "png",
+        "source_count": 4,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:xpert:txt",
+        "project_id": "xpert",
+        "source_format": "txt",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:xpert:yaml",
+        "project_id": "xpert",
+        "source_format": "yaml",
+        "source_count": 59,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:xpert:yml",
+        "project_id": "xpert",
+        "source_format": "yml",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "accepted",
+        "evidence_refs": [
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/.git"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/package.json"
+          },
+          {
+            "type": "marker",
+            "artifact_ref": "<workspace-root>/xpert/docs"
+          }
+        ],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:csv",
+        "project_id": "project",
+        "source_format": "csv",
+        "source_count": 3,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:html",
+        "project_id": "project",
+        "source_format": "html",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:jpg",
+        "project_id": "project",
+        "source_format": "jpg",
+        "source_count": 400,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:project:md",
+        "project_id": "project",
+        "source_format": "md",
+        "source_count": 32,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:png",
+        "project_id": "project",
+        "source_format": "png",
+        "source_count": 36,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:project:txt",
+        "project_id": "project",
+        "source_format": "txt",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:csv",
+        "project_id": "project",
+        "source_format": "csv",
+        "source_count": 6,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:html",
+        "project_id": "project",
+        "source_format": "html",
+        "source_count": 4,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:jpg",
+        "project_id": "project",
+        "source_format": "jpg",
+        "source_count": 367,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:project:json",
+        "project_id": "project",
+        "source_format": "json",
+        "source_count": 16,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:md",
+        "project_id": "project",
+        "source_format": "md",
+        "source_count": 73,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:png",
+        "project_id": "project",
+        "source_format": "png",
+        "source_count": 128,
+        "requires_ocr": true,
+        "execution_status": "skipped",
+        "acceptance_status": "structured_unavailable",
+        "evidence_refs": [],
+        "reason": "OCR/provider evidence required"
+      },
+      {
+        "stable_id": "media:project:txt",
+        "project_id": "project",
+        "source_format": "txt",
+        "source_count": 2,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:yaml",
+        "project_id": "project",
+        "source_format": "yaml",
+        "source_count": 1,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:json",
+        "project_id": "project",
+        "source_format": "json",
+        "source_count": 443,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      },
+      {
+        "stable_id": "media:project:md",
+        "project_id": "project",
+        "source_format": "md",
+        "source_count": 174,
+        "requires_ocr": false,
+        "execution_status": "succeeded",
+        "acceptance_status": "needs_review",
+        "evidence_refs": [],
+        "reason": "source trace/import evidence required"
+      }
+    ],
+    "summary": {
+      "accepted_count": 52,
+      "needs_review_count": 15,
+      "structured_unavailable_count": 19,
+      "structured_blocker_count": 0,
+      "out_of_scope_count": 0,
+      "failed_count": 0
+    },
+    "ocr_available": false
+  }
+}
